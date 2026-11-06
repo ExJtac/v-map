@@ -1,6 +1,6 @@
 # 2026 county pattern review
 
-Snapshot audit: November 6, 2026. Every one of the 3142 counties in the map atlas receives an explicit screen status. Yellow borders indicate **provisional exploratory review**, never a fraud finding, error determination or certified election outcome. Missing or unassessed data alone never produces a yellow border.
+Snapshot audit: November 6, 2026. Every one of the 3142 counties in the map atlas receives an explicit screen status. Dark purple borders indicate unusual shifts toward Democrats relative to state peers; dark green borders indicate unusual shifts toward Republicans. Participation-only patterns use dashed slate borders. All review borders indicate **provisional exploratory review**, never a fraud finding, error determination or certified election outcome. Missing or unassessed data alone never produces a review border.
 
 ## Criteria
 
@@ -479,4 +479,4 @@ Sources: [Pushbuild2026 TX official-source returns snapshot](https://raw.githubu
 
 ## Reproduction and source integrity
 
-Run `node scripts/build-2026-anomalies.mjs` and `node scripts/verify-2026-anomalies.mjs`. The audit uses existing local snapshots only, with `COUNTY_SOURCES` and `mergeElectionData` retaining source precedence, semantic contest identity and review holds. No new network, provider or paid API calls are made. `public/data/anomalies-2026.json` records every atlas county, assessed evidence, selected source IDs/dates, references, criteria and SHA-256 hashes for every loaded input. No candidate total is substituted for ballots, no absent count becomes zero, and no yellow finding is fabricated. The report is deterministic for identical inputs.
+Run `node scripts/build-2026-anomalies.mjs` and `node scripts/verify-2026-anomalies.mjs`. The audit uses existing local snapshots only, with `COUNTY_SOURCES` and `mergeElectionData` retaining source precedence, semantic contest identity and review holds. No new network, provider or paid API calls are made. `public/data/anomalies-2026.json` records every atlas county, assessed evidence, selected source IDs/dates, references, criteria and SHA-256 hashes for every loaded input. No candidate total is substituted for ballots, no absent count becomes zero, and no review finding is fabricated. The report is deterministic for identical inputs.

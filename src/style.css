@@ -674,7 +674,8 @@ h3 {
 }
 .map-tooltip {
   position: absolute;
-  pointer-events: none;
+  pointer-events: auto;
+  overscroll-behavior: contain;
   background: #244b39;
   color: #fff;
   padding: 8px 11px;
@@ -1735,6 +1736,7 @@ main {
   line-height: 1.35;
 }
 .map-tooltip:has(.county-tip-title) { max-height: 70%; overflow: auto; padding: 13px; }
+.close-map-tooltip { position: sticky; top: 0; z-index: 1; display: block; margin: 0 0 5px auto; width: 28px; height: 28px; border: 1px solid #ffffff80; border-radius: 5px; background: #244b39; color: white; font-size: 22px; line-height: 1; cursor: pointer; }
 .county-metrics-detail { grid-column: 1 / -1; width: 100%; min-width: 0; max-width: none; margin-top: 12px; padding: 12px; border: 1px solid #dce3de; border-radius: 8px; background: #f5f8f5; color: #244b39; font-size: 14px; }
 .county-tip-title { display: block; font-size: 16px; }
 .county-tip-population { margin-top: 5px; }
@@ -1747,17 +1749,29 @@ main {
 .county-tip-note { margin: 6px 0 0; opacity: .9; font-size: 12px; }
 
 /* Separate overlay keeps pattern highlights visible above selection styling. */
+:root { --pattern-democrat: #5b2182; --pattern-republican: #135b36; --pattern-neutral: #475569; }
+.pattern-democrat { --pattern-color: var(--pattern-democrat); }
+.pattern-republican { --pattern-color: var(--pattern-republican); }
+.pattern-neutral { --pattern-color: var(--pattern-neutral); }
 .pattern-outline {
   fill: none;
-  stroke: #eab308;
-  stroke-width: 3;
+  stroke: var(--pattern-color, var(--pattern-neutral));
+  stroke-width: 3.5;
   vector-effect: non-scaling-stroke;
   pointer-events: none;
 }
-.pattern-review-summary { margin: 12px 18px; padding: 14px; border: 1px solid #d7b64e; border-radius: 8px; background: #fff9e8; color: #394639; font-size: 14px; line-height: 1.5; }
+.pattern-outline.pattern-neutral { stroke-dasharray: 5 3; }
+.pattern-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 0 18px 14px; color: #34453c; font-size: 13px; line-height: 1.4; }
+.pattern-legend[hidden], .pattern-legend [hidden] { display: none; }
+.pattern-legend > span { display: inline-flex; align-items: center; gap: 7px; }
+.pattern-legend-title { flex-basis: 100%; font-weight: 650; }
+.pattern-legend small { flex-basis: 100%; font-size: 12px; color: #526359; }
+.pattern-swatch { width: 21px; height: 13px; border: 3px solid var(--pattern-color); border-radius: 3px; flex-shrink: 0; }
+.pattern-swatch.pattern-neutral { border-style: dashed; }
+.pattern-review-summary { margin: 12px 18px; padding: 14px; border: 1px solid #b7adca; border-radius: 8px; background: #f6f3fa; color: #394639; font-size: 14px; line-height: 1.5; }
 .pattern-review-summary p { margin: 7px 0; }
 .county-pattern-review { margin: 9px 0; padding: 9px 0; border-block: 1px solid currentColor; overflow-wrap: anywhere; }
-.county-pattern-review.has-pattern-flag { border: 2px solid #eab308; padding: 10px; border-radius: 6px; }
+.county-pattern-review.has-pattern-flag { border: 2px solid var(--pattern-color, var(--pattern-neutral)); padding: 10px; border-radius: 6px; }
 .pattern-flag-label { font-weight: 700; margin: 9px 0 3px; }
 .pattern-source, .pattern-source-links { font-size: 12px; line-height: 1.5; }
 .pattern-source-links { margin-top: 7px; }

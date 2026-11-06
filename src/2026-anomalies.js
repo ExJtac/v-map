@@ -110,6 +110,15 @@ export function reviewForCounty(report,office,fips) {
   const assessments=[county.participation,county.offices[office]],flags=assessments.flatMap(a=>a.flags);
   return {status:flags.length?'flagged':assessments.some(a=>a.status==='assessed')?'assessed':'not-assessed',flags,participationStatus:county.participation.status,officeStatus:county.offices[office].status,...(assessments.some(a=>a.reason)?{reason:assessments.filter(a=>a.reason).map(a=>a.reason).join(' ')}:{})};
 }
+// Direction is relative to same-state peers, matching the screening criterion.
+// Participation-only or conflicting flags must not be assigned to a party.
+export function patternDirection(flags = []) {
+  const directions = new Set(flags.filter(f => f.id?.endsWith('-symmetric-party-shift'))
+    .map(f => f.evidence?.peer?.distancePp)
+    .filter(value => Number.isFinite(value) && value !== 0)
+    .map(value => value > 0 ? 'democrat' : 'republican'));
+  return directions.size === 1 ? [...directions][0] : 'neutral';
+}
 export function stateReviewSummary(report,office,stateFips) {
   const rows=Object.entries(report?.counties||{}).filter(([f])=>f.startsWith(String(stateFips).padStart(2,'0'))).map(([f])=>reviewForCounty(report,office,f));
   return {countyCount:rows.length,flaggedCount:rows.filter(r=>r.status==='flagged').length,assessedCount:rows.filter(r=>r.status==='assessed').length,notAssessedCount:rows.filter(r=>r.status==='not-assessed').length,officeAssessedCount:rows.filter(r=>r.officeStatus==='assessed').length,participationAssessedCount:rows.filter(r=>r.participationStatus==='assessed').length,flagCount:rows.reduce((n,r)=>n+r.flags.length,0)};

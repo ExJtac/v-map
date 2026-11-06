@@ -249,6 +249,13 @@
               <span>Aa</span> Labels
             </button>
           </div>
+          <div id="pattern-legend" class="pattern-legend" aria-label="County review border legend" hidden>
+            <span class="pattern-legend-title">Unusual shift · county borders</span>
+            <span><i class="pattern-swatch pattern-democrat" aria-hidden="true"></i>Toward Democrats</span>
+            <span><i class="pattern-swatch pattern-republican" aria-hidden="true"></i>Toward Republicans</span>
+            <span id="pattern-neutral-key" hidden><i class="pattern-swatch pattern-neutral" aria-hidden="true"></i>Participation pattern</span>
+            <small>Relative to state peers · provisional review</small>
+          </div>
           <div class="map-stage" id="map-stage">
             <svg
               id="us-map"
@@ -263,7 +270,10 @@
                 <g id="county-labels" aria-hidden="true"></g>
               </g>
             </svg>
-            <div id="map-tooltip" class="map-tooltip" hidden></div>
+            <div id="map-tooltip" class="map-tooltip" role="region" aria-label="Map details" tabindex="0" hidden>
+              <button id="close-map-tooltip" class="close-map-tooltip" type="button" aria-label="Close map details">×</button>
+              <div id="map-tooltip-content"></div>
+            </div>
             <div
               class="map-controls"
               role="group"

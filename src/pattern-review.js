@@ -1,5 +1,5 @@
 import { appUrl } from './paths.js';
-import { reviewForCounty, stateReviewSummary } from './2026-anomalies.js';
+import { reviewForCounty, stateReviewSummary, patternDirection } from './2026-anomalies.js';
 import { countingStatus } from './counting-status.js';
 
 let report, request, failed = false;
@@ -24,6 +24,9 @@ export function initPatternReview(onReady) { loadReview().then(onReady); }
 export function hasPatternFlag(office, year, fips) {
   return active(office, year) && Boolean(report) && reviewForCounty(report, office, fips).flags.length > 0;
 }
+export function countyPatternDirection(office, year, fips) {
+  return hasPatternFlag(office, year, fips) ? patternDirection(reviewForCounty(report, office, fips).flags) : 'neutral';
+}
 function summaryFor(office, stateFips) {
   if (stateFips) return stateReviewSummary(report, office, stateFips);
   const reviews = Object.keys(report.counties).map(fips => reviewForCounty(report, office, fips));
@@ -47,11 +50,14 @@ function reportLink(container) {
 }
 export function updatePatternSummary({ office, year }, stateFips) {
   const box = document.querySelector('#pattern-review-summary');
+  const legend = document.querySelector('#pattern-legend');
+  legend.hidden = !active(office, year);
+  document.querySelector('#pattern-neutral-key').hidden = !report?.summary?.participation?.flagged;
   box.hidden = !active(office, year);
   if (box.hidden) return;
   box.replaceChildren(node('strong', '', '2026 county pattern review'));
   box.append(node('p', '', report ? summaryText(office, stateFips) : failed ? 'Review unavailable. Counties are not assessed.' : 'Loading county review…'));
-  box.append(node('p', '', 'Light colors: count not confirmed complete. Dark colors: source reports a final or complete count. Yellow borders: provisional statistical patterns to review. Unassessed counties have no yellow border.'));
+  box.append(node('p', '', 'Light fills: count not confirmed complete. Dark fills: source reports a final or complete count. Dark purple borders: unusual shift toward Democrats relative to state peers. Dark green borders: unusual shift toward Republicans relative to state peers. Unassessed counties have no review border.'));
   if (report) box.append(node('p', '', `Snapshot audit: ${report.auditDate}. Reporting progress and candidate changes can explain flags; a flag does not establish an error or wrongdoing.`));
   reportLink(box);
 }
@@ -78,7 +84,10 @@ export async function appendPatternReview(container, { office, year, id, rows = 
   } else {
     const review = reviewForCounty(data, office, id);
     box.classList.toggle('has-pattern-flag', review.flags.length > 0);
-    box.append(node('strong', '', review.flags.length ? 'Yellow border · provisional pattern review' : 'County pattern review'));
+    const direction = patternDirection(review.flags);
+    box.classList.add(`pattern-${direction}`);
+    const border = { democrat: 'Dark purple', republican: 'Dark green', neutral: 'Slate' }[direction];
+    box.append(node('strong', '', review.flags.length ? `${border} border · provisional pattern review` : 'County pattern review'));
     for (const flag of review.flags) {
       box.append(node('p', 'pattern-flag-label', flag.label));
       const details = node('details', 'pattern-evidence', '');

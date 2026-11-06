@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {buildPatternReview,peerScreen,reviewForCounty,stateReviewSummary,OFFICES} from '../src/2026-anomalies.js';
+import {buildPatternReview,peerScreen,reviewForCounty,stateReviewSummary,patternDirection,OFFICES} from '../src/2026-anomalies.js';
 import {buildActualReport,renderPatternReport} from './build-2026-anomalies.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 function fixture(n=12) {
@@ -38,6 +38,10 @@ let negative=buildPatternReview(f);assert.equal(negative.counties[target].office
 const pos=positive.counties[target].offices.governor.flags[0],neg=negative.counties[target].offices.governor.flags[0];
 assert.equal(pos.evidence.democratShareChangePp,-neg.evidence.democratShareChangePp);assert.equal(pos.evidence.peer.modifiedZ,neg.evidence.peer.modifiedZ===null?null:-neg.evidence.peer.modifiedZ);
 assert.match(pos.label,/Democrats relative to state peers/);assert.match(neg.label,/Republicans relative to state peers/);
+assert.equal(patternDirection([pos]), 'democrat');
+assert.equal(patternDirection([neg]), 'republican');
+assert.equal(patternDirection([{id:'participation-state-peer-and-own-history'}]), 'neutral');
+assert.equal(patternDirection([pos,neg]), 'neutral', 'Conflicting directions must not be assigned to one party');
 assert.equal(pos.evidence.democratCountChange,1500);assert.equal(pos.evidence.republicanCountChange,-1500);assert.equal(pos.provisional,true);
 for(const [name,mutate] of [
   ['held',f=>currentRow(f).sourceNeedsReview=true],['incomplete',f=>currentRow(f).incomplete=true],['null',f=>currentRow(f).candidates[0].votes=null],
@@ -50,6 +54,7 @@ for(const [name,mutate] of [
 f=shifted();f.mapCounties=f.mapCounties.slice(0,10);r=buildPatternReview(f);assert.equal(r.counties[target].offices.governor.status,'not-assessed','Nine other peers insufficient');
 f=shifted();f.elections['senate-2026']={...f.elections['governor-2026'],office:'senate'};f.elections['house-2026']={...f.elections['governor-2026'],office:'house'};r=buildPatternReview(f);assert.equal(r.summary.offices.senate.assessed,0);assert.equal(r.summary.offices.house.assessed,0,'No guessing complete district coverage');
 f=shifted();for(const row of f.elections['governor-2026'].results){row.candidates[0].votes=2000;row.candidates[1].votes=8000;}currentRow(f).candidates[0].votes=3500;currentRow(f).candidates[1].votes=6500;r=buildPatternReview(f);const flag=r.counties[target].offices.governor.flags[0];assert.equal(flag.evidence.democratShareChangePp,-15);assert.match(flag.label,/relative to state peers/,'Label does not imply an absolute positive shift');
+assert.equal(patternDirection([flag]), 'democrat', 'Border direction follows peer residual, including an absolute negative share change');
 assert.equal(peerScreen(51,Array(11).fill(30)).outside,true);assert.equal(peerScreen(39,Array(11).fill(30)).outside,false);
 const actual=buildActualReport(),again=buildActualReport(),saved=JSON.parse(fs.readFileSync(path.join(root,'public/data/anomalies-2026.json')));
 assert.deepEqual(actual,again,'Identical actual inputs yield deterministic report');assert.deepEqual(saved,actual,'Published report reconciles to current merged source data');

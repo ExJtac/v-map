@@ -9,7 +9,7 @@ import countyLabels from "./county-labels.json";
 import { createElectionView } from "./election-view.js";
 import { renderCountyMetrics, renderStateMetrics } from "./county-hover.js";
 import { initSupport } from "./support.js";
-import { initPatternReview, hasPatternFlag, updatePatternSummary } from './pattern-review.js';
+import { initPatternReview, hasPatternFlag, countyPatternDirection, updatePatternSummary } from './pattern-review.js';
 
 initSupport();
 
@@ -137,12 +137,32 @@ function fitFeature(geometry) {
       .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
   );
 }
-let tooltipToken = 0, tooltipKey = "", detailToken = 0, tooltipPoint = null;
+let tooltipToken = 0, tooltipKey = "", detailToken = 0, tooltipPoint = null, tooltipHideTimer;
+function cancelTooltipHide() { clearTimeout(tooltipHideTimer); }
 function hideTooltip() {
+  cancelTooltipHide();
   tooltipToken++;
   tooltipKey = "";
   $("#map-tooltip").hidden = true;
 }
+function leaveTooltip(event) {
+  if ($('#map-tooltip').contains(event.relatedTarget)) return;
+  cancelTooltipHide();
+  tooltipHideTimer = setTimeout(() => {
+    const tip = $('#map-tooltip');
+    if (!tip.matches(':hover') && !tip.contains(document.activeElement)) hideTooltip();
+  }, 300);
+}
+const tooltip = $('#map-tooltip');
+tooltip.addEventListener('pointerenter', cancelTooltipHide);
+tooltip.addEventListener('pointerleave', leaveTooltip);
+tooltip.addEventListener('focusin', cancelTooltipHide);
+tooltip.addEventListener('focusout', leaveTooltip);
+tooltip.addEventListener('wheel', event => event.stopPropagation(), { passive: true });
+tooltip.addEventListener('keydown', event => {
+  if (event.key === 'Escape') { event.stopPropagation(); hideTooltip(); }
+});
+$('#close-map-tooltip').addEventListener('click', hideTooltip);
 async function countyCard(container, geometry, tokenValid) {
   const context = elections.countyContext(geometry.id);
   if (context.loading) { container.textContent = "Loading county returns…"; return; }
@@ -182,15 +202,18 @@ function positionTooltip() {
 window.addEventListener("scroll", hideTooltip, { passive: true });
 function showTooltip(event, geometry, kind) {
   if (event.buttons) return;
+  cancelTooltipHide();
   const tip = $("#map-tooltip");
-  const rect = event.currentTarget?.getBoundingClientRect();
-  tooltipPoint = { x: Number.isFinite(event.clientX) ? event.clientX : (rect.left + rect.right) / 2, y: Number.isFinite(event.clientY) ? event.clientY : rect.top };
   const key = `${kind}:${geometry.id}`;
   if (tooltipKey !== key) {
+    const rect = event.currentTarget?.getBoundingClientRect();
+    tooltipPoint = { x: Number.isFinite(event.clientX) ? event.clientX : (rect.left + rect.right) / 2, y: Number.isFinite(event.clientY) ? event.clientY : rect.top };
     tooltipKey = key;
+    tip.scrollTop = 0;
+    const content = $('#map-tooltip-content');
     const token = ++tooltipToken;
-    if (kind === "county") countyCard(tip, geometry, () => token === tooltipToken).then(() => { if (token === tooltipToken) positionTooltip(); });
-    else stateCard(tip, geometry, () => token === tooltipToken).then(() => { if (token === tooltipToken) positionTooltip(); });
+    if (kind === "county") countyCard(content, geometry, () => token === tooltipToken).then(() => { if (token === tooltipToken) positionTooltip(); });
+    else stateCard(content, geometry, () => token === tooltipToken).then(() => { if (token === tooltipToken) positionTooltip(); });
   }
   tip.hidden = false;
   positionTooltip();
@@ -216,7 +239,7 @@ const paths = select("#states")
   })
   .on("keydown", (e, s) => keyboard(e, () => selectState(s)))
   .on("pointermove", (e, s) => showTooltip(e, s, "state"))
-  .on("pointerleave", hideTooltip);
+  .on("pointerleave", leaveTooltip);
 const labelPositions = {
   AK: [128, 524],
   HI: [308, 569],
@@ -279,7 +302,7 @@ function updateMap() {
   const context = elections?.countyContext('') || {};
   select('#pattern-outlines').selectAll('path')
     .data(stateCounties.filter(c => hasPatternFlag(context.office, context.year, c.id)), c => c.id)
-    .join('path').attr('class', 'pattern-outline').attr('d', path);
+    .join('path').attr('class', c => `pattern-outline pattern-${countyPatternDirection(context.office, context.year, c.id)}`).attr('d', path);
   updatePatternSummary(context, selectedState?.id);
   $("#map-status").textContent =
     countyError ||
@@ -419,9 +442,9 @@ async function selectState(state) {
       })
       .on("keydown", (e, c) => keyboard(e, () => selectCounty(c)))
       .on("pointermove", (e, c) => showTooltip(e, c, "county"))
-      .on("pointerleave", hideTooltip)
+      .on("pointerleave", leaveTooltip)
       .on("focus", (e, c) => showTooltip(e, c, "county"))
-      .on("blur", hideTooltip);
+      .on("blur", leaveTooltip);
     select("#county-labels")
       .selectAll("text")
       .data(stateCounties)
@@ -610,6 +633,10 @@ document.addEventListener("focusin", (e) => {
   if (!e.target.closest(".search-wrap")) closeSearch();
 });
 document.addEventListener("keydown", (e) => {
+  if (e.key === 'Escape' && !$('#map-tooltip').hidden) {
+    hideTooltip();
+    return;
+  }
   if (
     e.key === "/" &&
     !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)
