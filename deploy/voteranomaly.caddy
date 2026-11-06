@@ -1,0 +1,18 @@
+# Dedicated V-Map hostname; imported outside all existing site blocks.
+voteranomaly.com {
+    encode zstd gzip
+    handle /data/research-status.json {
+        root * /var/www/vmap-status
+        rewrite * /research-status.json
+        header Cache-Control "no-store"
+        file_server
+    }
+    handle {
+        root * /var/www/voteranomaly
+        header Cache-Control "no-cache"
+        file_server
+    }
+}
+www.voteranomaly.com {
+    redir https://voteranomaly.com{uri} permanent
+}
