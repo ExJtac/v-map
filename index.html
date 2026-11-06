@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f9f9" />
+    <meta
+      name="description"
+      content="Explore U.S. election history, from the national map to states and counties."
+    />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <title>V-Map — A fresh perspective</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="%BASE_URL%" class="brand" aria-label="V-Map home"
+        ><span class="brand-icon">V<span>·</span></span
+        >V-Map</a
+      >
+      <span class="header-caption">A fresh perspective.</span>
+      <a class="local-badge" href="https://github.com/ExJtac/v-map" target="_blank" rel="noreferrer"><span></span> Contribute on GitHub ↗</a>
+    </header>
+
+    <main>
+      <div class="page-heading">
+        <div>
+          <div class="eyebrow">PLACE. PEOPLE. PERSPECTIVE.</div>
+          <h1>Every place has a history.</h1>
+          <p>Explore election returns, one state and county at a time.</p>
+        </div>
+        <span class="country-tag"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <ellipse cx="12" cy="12" rx="4" ry="9" />
+            <path d="M3 12h18" /></svg
+          >United States</span
+        >
+      </div>
+
+      <section
+        class="current-election-banner"
+        id="current-election-banner"
+        aria-label="2026 election status"
+        hidden
+      >
+        <div>
+          <div class="eyebrow">2026 ELECTION SNAPSHOT</div>
+          <strong id="current-election-title"
+            >Reported results & current status</strong
+          >
+          <p id="current-election-summary"></p>
+          <p id="current-election-timestamp" class="current-timestamp"></p>
+        </div>
+        <button id="view-current-results">
+          View 2026 results <span aria-hidden="true">↗</span>
+        </button>
+      </section>
+      <section class="history-toolbar" aria-label="Election history controls">
+        <label class="office-field" for="election-office"
+          ><span class="section-label">ELECTION</span
+          ><select id="election-office">
+            <option value="president">President</option>
+            <option value="senate">U.S. Senate</option>
+            <option value="house">U.S. House</option>
+            <option value="governor">Governor</option>
+            <option value="geography">Map only</option>
+          </select></label
+        >
+        <div class="year-field">
+          <label for="election-year"
+            >AVAILABLE ELECTION YEARS
+            <output id="year-output" for="election-year">2024</output></label
+          ><input
+            id="election-year"
+            type="range"
+            min="0"
+            max="0"
+            step="1"
+            value="0"
+            disabled
+            aria-label="Election year with imported returns"
+            aria-valuetext="Loading election years"
+          />
+          <div class="year-ticks" id="year-ticks" aria-hidden="true"></div>
+          <small class="year-help">Years with imported returns</small>
+        </div>
+        <div class="year-stepper">
+          <button
+            id="previous-year"
+            aria-label="Previous imported election year"
+          >
+            ←</button
+          ><button id="next-year" aria-label="Next imported election year">
+            →
+          </button>
+        </div>
+        <div class="coverage-pill" id="coverage-pill" role="status">
+          Loading history…
+        </div>
+      </section>
+      <nav class="map-breadcrumbs" aria-label="Map location">
+        <button id="national-view" aria-current="page">United States</button
+        ><span id="state-crumb-separator" hidden>/</span
+        ><button id="state-crumb" hidden></button
+        ><span id="county-crumb-separator" hidden>/</span
+        ><span id="county-crumb" hidden aria-current="page"></span
+        ><button id="back-to-state" class="back-to-state" hidden>
+          ← Back to state
+        </button>
+      </nav>
+      <section class="workspace" aria-label="United States map explorer">
+        <aside class="sidebar">
+          <div class="sidebar-title">
+            <h2>Explore the map</h2>
+            <span class="small-tag">US</span>
+          </div>
+          <div class="search-wrap">
+            <label class="search-box" for="state-search"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="10.8" cy="10.8" r="6.8" />
+                <path d="m16 16 4 4" /></svg
+              ><input
+                id="state-search"
+                type="search"
+                aria-label="Search states"
+                placeholder="Find a state…"
+                autocomplete="off"
+                aria-controls="search-results"
+                aria-expanded="false"
+              /><kbd aria-hidden="true">/</kbd></label
+            >
+            <div id="search-results" class="search-results" hidden></div>
+          </div>
+          <div class="section-label" id="region-heading">REGION</div>
+          <div
+            class="region-list"
+            id="region-list"
+            role="group"
+            aria-label="Filter by region"
+          >
+            <button
+              class="region-button active"
+              data-region="all"
+              aria-pressed="true"
+            >
+              <span class="region-dot all"></span>All states<span
+                class="region-count"
+                >50</span
+              >
+            </button>
+            <button
+              class="region-button"
+              data-region="West"
+              aria-pressed="false"
+            >
+              <span class="region-dot west"></span>West<span
+                class="region-count"
+                >13</span
+              >
+            </button>
+            <button
+              class="region-button"
+              data-region="Midwest"
+              aria-pressed="false"
+            >
+              <span class="region-dot midwest"></span>Midwest<span
+                class="region-count"
+                >12</span
+              >
+            </button>
+            <button
+              class="region-button"
+              data-region="South"
+              aria-pressed="false"
+            >
+              <span class="region-dot south"></span>South<span
+                class="region-count"
+                >16</span
+              >
+            </button>
+            <button
+              class="region-button"
+              data-region="Northeast"
+              aria-pressed="false"
+            >
+              <span class="region-dot northeast"></span>Northeast<span
+                class="region-count"
+                >9</span
+              >
+            </button>
+          </div>
+          <div class="county-browser" id="county-browser" hidden>
+            <div class="county-heading">
+              <span class="section-label">COUNTIES & EQUIVALENTS</span
+              ><span id="county-count"></span>
+            </div>
+            <div id="county-list" aria-label="Counties in selected state"></div>
+          </div>
+          <div class="selection-card" id="selection-card" aria-live="polite">
+            <div class="selection-symbol" id="selection-symbol">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="m9 3 6 3 6-3v18l-6 3-6-3-6 3V6Z"
+                  transform="translate(0 -2) scale(.95)"
+                />
+                <path d="M9 3v16M15 6v16" />
+              </svg>
+            </div>
+            <div class="section-label" id="selection-label">
+              A PLACE TO BEGIN
+            </div>
+            <h3 id="selection-title">Pick a state.</h3>
+            <p id="selection-description">
+              Choose a state to zoom in and explore its counties.
+            </p>
+            <button id="clear-selection" class="text-button" hidden>
+              Back to United States <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div class="sidebar-foot">
+            <span class="tiny-compass">↗</span> A new point of view starts
+            here.
+          </div>
+        </aside>
+
+        <div class="map-panel">
+          <div class="map-topline">
+            <span
+              ><span class="live-dot"></span
+              ><span id="map-view-label">NATIONAL VIEW</span></span
+            ><button
+              id="labels-toggle"
+              class="labels-button"
+              aria-pressed="true"
+            >
+              <span>Aa</span> Labels
+            </button>
+          </div>
+          <div class="map-stage" id="map-stage">
+            <svg
+              id="us-map"
+              viewBox="-32 -24 1039 675"
+              aria-label="Interactive U.S. map. Select a state to zoom in, then select a county."
+            >
+              <title>United States of America</title>
+              <g id="map-content">
+                <g id="states"></g>
+                <g id="counties"></g>
+                <g id="state-labels" aria-hidden="true"></g>
+                <g id="county-labels" aria-hidden="true"></g>
+              </g>
+            </svg>
+            <div id="map-tooltip" class="map-tooltip" hidden></div>
+            <div
+              class="map-controls"
+              role="group"
+              aria-label="Map zoom controls"
+            >
+              <button id="zoom-in" aria-label="Zoom in">+</button
+              ><button id="zoom-out" aria-label="Zoom out">−</button
+              ><span></span
+              ><button id="reset-view" aria-label="Reset map view">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5" />
+                </svg>
+              </button>
+            </div>
+            <div class="map-compass" aria-hidden="true">
+              <span>N</span
+              ><svg viewBox="0 0 24 32">
+                <path d="m12 2 8 26-8-6-8 6Z" />
+                <path d="M12 2v20" />
+              </svg>
+            </div>
+            <div class="inset-note">Alaska & Hawaii shown as insets</div>
+          </div>
+          <div class="map-bottomline">
+            <span
+              ><span class="key-swatch"></span
+              ><span id="map-status" role="status"
+                >50 states to explore</span
+              ></span
+            ><span
+              >Scroll to zoom <span class="footer-divider">·</span> Drag to
+              move</span
+            >
+          </div>
+          <div class="election-legend" id="election-legend">
+            <span><i class="party-dot democrat"></i>Democratic</span
+            ><span><i class="party-dot republican"></i>Republican</span
+            ><span><i class="party-dot other"></i>Other / tied</span
+            ><span
+              ><i class="party-dot missing"></i>No data / flagged /
+              multiple</span
+            ><span class="legend-note">Color = most votes in one contest</span>
+          </div>
+        </div>
+      </section>
+      <section
+        class="election-panel"
+        aria-label="Historical election results"
+        aria-busy="true"
+      >
+        <div class="results-heading">
+          <div>
+            <div class="eyebrow" id="results-eyebrow">ELECTION HISTORY</div>
+            <h2 id="results-title">United States · President · 2024</h2>
+          </div>
+          <span class="results-level" id="results-level"
+            >National overview</span
+          >
+        </div>
+        <p class="coverage-note" id="coverage-note" role="status">
+          Loading locally stored election returns…
+        </p>
+        <div id="race-picker-wrap" hidden>
+          <label for="race-picker">Contest</label
+          ><select id="race-picker"></select>
+        </div>
+        <div class="race-grid" id="race-grid"></div>
+        <div class="results-sources" id="results-sources"></div>
+        <details class="history-notes">
+          <summary>About coverage & historical boundaries</summary>
+          <p>
+            Years run from 2006 through 2026. Only imported source records are
+            shown; an empty year does not prove that no election occurred. House
+            district results are kept separate from county results. The map uses
+            2017 county boundaries, so county changes and historical district
+            boundaries may not match every election year. Alaska boroughs,
+            Louisiana parishes, and independent cities appear as county
+            equivalents. Presidential colors represent popular votes, not
+            Electoral College outcomes.
+          </p>
+          <p>
+            County history spans presidential cycles from 2008–2024 and imported
+            Senate, House, and Governor contests from 2006 onward, including
+            off-cycle and recall elections. County House records identify each
+            county's portion of a district. Source-specific gaps and review
+            holds remain visible. D.C. has presidential records but no
+            selectable polygon.
+          </p>
+          <p>
+            2026 snapshots include published unofficial returns and source
+            update times. Precinct reporting progress is separate from ballot
+            completion and certification. This data snapshot updates when
+            source data are imported; it is not a continuously updating feed.
+            <a href="%BASE_URL%DATA-SOURCES.md" target="_blank" rel="noreferrer"
+              >View data sources and import coverage ↗</a
+            >
+            <a href="%BASE_URL%COUNTY-DATA-SOURCES.md" target="_blank" rel="noreferrer"
+              >2018 county source notes ↗</a
+            >
+          </p>
+        </details>
+      </section>
+      <footer class="page-footer">
+        <span>Twenty years. Thousands of local stories.</span
+        ><a
+          href="https://github.com/topojson/us-atlas"
+          target="_blank"
+          rel="noreferrer"
+          >2017 boundaries: U.S. Census via US Atlas
+          <span aria-hidden="true">↗</span></a
+        >
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

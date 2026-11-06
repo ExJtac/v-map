@@ -1,0 +1,15 @@
+import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import { yearsForOffice, yearIndex, stepYearIndex } from "../src/election-years.js";
+const manifest = JSON.parse(await readFile("public/data/elections/manifest.json", "utf8"));
+const president = yearsForOffice([manifest], "president");
+assert.deepEqual(president, [2008, 2012, 2016, 2020, 2024]);
+assert.equal(yearIndex(president, 2018), 2);
+assert.equal(president[stepYearIndex(president, 2, 1)], 2020);
+assert.equal(stepYearIndex(president, 0, -1), 0);
+assert.equal(stepYearIndex(president, president.length - 1, 1), 4);
+assert.equal(yearIndex(president, 2006), 0);
+assert(yearsForOffice([manifest], "senate").includes(2021));
+assert.deepEqual(yearsForOffice([{coverage: [{office: "house", year: 2019, rows: 0}, {office: "house", year: 2021, rows: 1}]}, manifest], "house").filter((y) => y % 2), [2021]);
+assert.equal(yearIndex([], 2024), -1);
+console.log("Election year coverage and navigation checks passed.");

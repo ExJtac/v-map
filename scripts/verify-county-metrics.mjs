@@ -1,0 +1,36 @@
+import assert from 'node:assert/strict';
+import { contestMetrics, compareContest, relativeChange, previousElectionYear, expectedPriorYear, populationAt, populationChange } from '../src/county-metrics.js';
+const row = { stateFips:'01', stage:'general', special:false, totalVotes:150, candidates:[{party:'Republican',votes:90},{party:'Democrat',votes:50},{party:'Other',votes:10}] };
+assert.deepEqual(contestMetrics(row), {total:150,republican:90,democrat:50});
+assert.equal(relativeChange(10, 0), null);
+assert.equal(previousElectionYear([2016,2020,2024],2024),2020);
+assert.equal(compareContest(row,[{...row,totalVotes:100}], 'president').total,50);
+assert.ok(compareContest(row,[row],'house').reason);
+assert.ok(compareContest(row,[row],'senate').reason);
+assert.ok(compareContest({...row,provisional:true},[row],'president').reason);
+assert.equal(contestMetrics({...row,sourceNeedsReview:true}),null);
+assert.equal(contestMetrics({...row,candidates:[{party:'Other',votes:150}]}).republican,null);
+assert.deepEqual(contestMetrics({...row,totalVotes:0,candidates:[{name:'R',party:'Republican',votes:0},{name:'D',party:'Democrat',votes:0}]}),{total:0,republican:0,democrat:0});
+const withUnknown = {...row,totalVotes:170,reportingCategories:[{name:'write-ins',category:'sourceWriteInEntries',votes:5},{name:'sv',category:'sourceReportingCategory',votes:15}]};
+assert.equal(contestMetrics(withUnknown).total,155);
+assert.equal(contestMetrics(withUnknown).sourceReportedTotal,170);
+assert.ok(compareContest(withUnknown,[row],'president').reason);
+
+assert.equal(expectedPriorYear({stateFips:'08'}, 'governor', 2022), 2018);
+assert.equal(expectedPriorYear({stateFips:'33'}, 'governor', 2022), 2020);
+assert.equal(expectedPriorYear({stateFips:'08', special:true}, 'governor', 2022), null);
+assert.equal(populationAt([{year:2025,value:5},{year:2023,value:3}],2024).year,2023);
+assert.equal(populationAt([{year:2025,value:5}],2024),null);
+assert.equal(relativeChange(50, 100), -50);
+assert.equal(relativeChange(5, -1), null);
+assert.equal(contestMetrics({...row, candidates:[{name:'A',party:'Republican',votes:null},{name:'B',party:'Democrat',votes:3}]}).republican, null);
+assert.equal(contestMetrics({...row, candidates:[{name:'A',party:'Republican',votes:90},{name:'B',party:'Democrat',votes:50},{name:'OTHER',party:'Republican',votes:10}]}).republican, 90);
+assert.equal(contestMetrics({...row, voteTotalMismatch:true}), null);
+assert.ok(compareContest(row,[{...row,sourceTotalConflict:true}], 'president').reason);
+assert.equal(expectedPriorYear({...row,contestType:'recall-question'}, 'governor', 2022), null);
+assert.equal(expectedPriorYear({...row,stage:'gen runoff'}, 'governor', 2022), null);
+assert.equal(populationChange({year:2020,value:110,sourceId:'b'},{year:2019,value:100,sourceId:'a'}), null);
+assert.equal(populationChange({year:2021,value:110,sourceId:'b'},{year:2020,value:100,sourceId:'b'}), 10);
+assert.equal(populationChange({year:2021,value:110,sourceId:'b'},{year:2019,value:100,sourceId:'b'}), null);
+
+console.log('County metric checks passed');

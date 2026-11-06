@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "electionYear": 2026,
+  "retrievedAt": "2026-11-06T19:21:15.867362+00:00",
+  "status": "unofficial-snapshot",
+  "offices": [
+    {
+      "office": "senate",
+      "statesWithReturns": 25,
+      "statesWithCountyReturns": 18,
+      "uniqueCounties": 1410,
+      "countyContestRecords": 1410,
+      "records": 1432,
+      "provisionalRecords": 1432,
+      "retrievedAt": "2026-11-06T19:21:15.383598+00:00"
+    },
+    {
+      "office": "house",
+      "statesWithReturns": 32,
+      "statesWithCountyReturns": 26,
+      "uniqueCounties": 1753,
+      "countyContestRecords": 2097,
+      "records": 2379,
+      "provisionalRecords": 2379,
+      "retrievedAt": "2026-11-06T19:20:47.256356+00:00"
+    },
+    {
+      "office": "governor",
+      "statesWithReturns": 24,
+      "statesWithCountyReturns": 18,
+      "uniqueCounties": 1230,
+      "countyContestRecords": 1230,
+      "records": 1252,
+      "provisionalRecords": 1252,
+      "retrievedAt": "2026-11-06T19:21:15.867362+00:00"
+    }
+  ],
+  "refreshMode": "local imported snapshot",
+  "certificationNote": "Provisional reported totals; source update times and reporting status are shown with each contest."
+}

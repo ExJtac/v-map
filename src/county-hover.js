@@ -1,0 +1,95 @@
+import { contestMetrics, compareContest, expectedPriorYear, populationAt, populationChange } from './county-metrics.js';
+import { loadElection, OFFICE_LABELS } from './election-data.js';
+import { loadCountySupplement, mergeElectionData } from './county-data.js';
+import { appUrl } from './paths.js';
+
+const previousCache = new Map();
+let populationPromise, turnoutPromise;
+function loadPopulation() {
+  if (!populationPromise) populationPromise = fetch(appUrl('/data/population/counties.json')).then(r => {
+    if (!r.ok || (r.headers.get('content-type') || '').includes('text/html')) throw new Error('Population unavailable');
+    return r.json();
+  }).catch(() => null);
+  return populationPromise;
+}
+function loadTurnout() {
+  if (!turnoutPromise) turnoutPromise = fetch(appUrl('/data/turnout/counties.json')).then(r => {
+    if (!r.ok || (r.headers.get('content-type') || '').includes('text/html')) throw new Error('Turnout unavailable');
+    return r.json();
+  }).catch(() => null);
+  return turnoutPromise;
+}
+function previousData(office, year) {
+  const key = `${office}-${year}`;
+  if (!previousCache.has(key)) previousCache.set(key, Promise.all([loadElection(office, year), loadCountySupplement(office, year)])
+    .then(([base, extra]) => mergeElectionData(base, extra)).catch(error => { previousCache.delete(key); throw error; }));
+  return previousCache.get(key);
+}
+const fmt = value => Number.isFinite(value) ? new Intl.NumberFormat('en-US').format(value) : 'N/A';
+const change = value => Number.isFinite(value) ? `${value >= 0 ? '+' : ''}${value.toFixed(1)}%` : 'N/A';
+const node = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; e.textContent = text; return e; };
+export async function renderCountyMetrics(container, { name, state, id, office, year, years, rows, population }, isCurrent = () => true) {
+  container.replaceChildren(node('strong', 'county-tip-title', `${name} · ${state}`));
+  let populationData;
+  try { populationData = await loadPopulation(); } catch { /* Other county facts remain available. */ }
+  if (!isCurrent()) return;
+  const records = populationData?.counties?.[id] || [];
+  const pop = populationAt(records, office === 'geography' ? null : year);
+  const popLine = node('div', 'county-tip-population', pop ? `Population: ${fmt(pop.value)} (${pop.referenceDate || pop.year} estimate)` : 'Population: unavailable');
+  const source = populationData?.sources?.[pop?.sourceId];
+  if (source?.url) { const a = node('a', 'county-tip-source', 'Source'); a.href = source.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; popLine.append(' · ', a); }
+  container.append(popLine);
+  if (pop?.note) container.append(node('p', 'county-tip-note', pop.note));
+  const priorPopulation = pop && records.find(r => r.year === pop.year - 1 && r.sourceId === pop.sourceId);
+  const popChange = populationChange(pop, priorPopulation);
+  if (popChange != null) container.append(node('div', 'county-tip-change', `Population ${change(popChange)} vs ${priorPopulation.year}`));
+  if (office === 'geography') return;
+  let turnout;
+  try { turnout = await loadTurnout(); } catch { /* No ballot-level source for this selection. */ }
+  if (!isCurrent()) return;
+  const regular = rows.some(row => !row.special && ['general', 'gen', 'g', 'general election'].includes(String(row.stage || 'general').toLowerCase()) && (!row.contestType || row.contestType === 'candidate'));
+  const ballot = regular && (turnout?.counties?.[id] || []).find(r => r.year === year && /^\d{4}-11-/.test(r.electionDate || '') && Number.isFinite(r.ballotsCast));
+  const ballotLine = node('div', 'county-tip-population', ballot ? `Countywide ballots cast · ${year}: ${fmt(ballot.ballotsCast)}${ballot.provisional || ballot.unofficial ? ' · unofficial' : ''}` : 'Ballots cast: unavailable');
+  const ballotSource = turnout?.sources?.[ballot?.sourceId];
+  if (ballotSource?.url) { const a = node('a', 'county-tip-source', 'Source'); a.href = ballotSource.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; ballotLine.append(' · ', a); }
+  container.append(ballotLine);
+  if (ballot?.sourceUpdatedAt) container.append(node('div', 'county-tip-note', `Source update: ${ballot.sourceUpdatedAt}`));
+  if (!rows.length) { container.append(node('p', 'county-tip-note', 'No county returns available for this election.')); return; }
+  const expectedYears = [...new Set(rows.map(row => expectedPriorYear(row, office, year)).filter(y => y != null))];
+  const priorByYear = new Map();
+  await Promise.all(expectedYears.map(async y => {
+    if (!years.includes(y)) return;
+    try { priorByYear.set(y, await previousData(office, y)); } catch { priorByYear.set(y, null); }
+  }));
+  if (!isCurrent()) return;
+  for (const row of rows) {
+    const card = node('div', 'county-tip-contest', '');
+    const contestTitle = row.contestType === 'recall-question' ? 'Recall question · Yes / No' : row.contestType === 'replacement-election' ? 'Conditional replacement vote' : OFFICE_LABELS[office];
+    const label = [contestTitle, office === 'house' ? `District ${row.district ?? '?'} · county portion` : '', row.seatId ? `Seat ${row.seatId}` : '', row.special ? 'Special' : '', row.stage || 'general', year].filter(Boolean).join(' · ');
+    card.append(node('div', 'county-tip-label', label));
+    if (row.sourceElectionOutcome) card.append(node('p', 'county-tip-note', row.sourceElectionOutcome));
+    const metrics = contestMetrics(row);
+    if (!metrics) { card.append(node('p', 'county-tip-note', 'Source needs review; counts withheld.')); container.append(card); continue; }
+    const priorYear = expectedPriorYear(row, office, year);
+    const prior = priorByYear.get(priorYear);
+    const priorRows = (prior?.results || []).filter(r => r.geoLevel === 'county' && r.countyFips === id);
+    const comparison = priorYear == null ? { reason: 'Comparable prior cycle cannot be established.' } : !prior ? { reason: 'Expected prior election returns unavailable.' } : compareContest(row, priorRows, office);
+    const entries = row.contestType === 'recall-question'
+      ? [['total', 'Reported votes on recall question'], ...row.candidates.filter(c => ['yes', 'no'].includes((c.name || '').toLowerCase())).map(c => [null, `${c.name} votes`, c.votes])]
+      : [['total', metrics.totalBasis ? 'Candidate / write-in votes' : row.contestType === 'replacement-election' ? 'Reported replacement votes' : `Reported votes for ${OFFICE_LABELS[office]}`], ['republican', 'Republican votes'], ['democrat', 'Democratic votes']];
+    for (const [key, title, choiceVotes] of entries) {
+      const line = node('div', 'county-tip-line', '');
+      line.append(node('span', '', title), node('b', '', fmt(key ? metrics[key] : choiceVotes)));
+      card.append(line);
+      if (!comparison.reason) card.append(node('div', 'county-tip-change', `${change(comparison[key])} vs ${priorYear}${comparison[key] == null ? ' · not comparable' : ''}`));
+    }
+    if (metrics.totalBasis) {
+      card.append(node('p', 'county-tip-note', `Source-reported contest total: ${fmt(metrics.sourceReportedTotal)}. Includes unclassified reporting fields; these are excluded from candidate / write-in votes above.`));
+    }
+    if (comparison.reason) card.append(node('p', 'county-tip-note', `Change: N/A · ${comparison.reason}${priorYear ? ` (${priorYear})` : ''}`));
+    if (row.provisional || row.unofficial || row.incomplete) card.append(node('p', 'county-tip-note', 'Partial or unofficial returns.'));
+    if (row.sourceTotalConflict || row.voteTotalMismatch) card.append(node('p', 'county-tip-note', 'Reported total and candidate totals differ; source needs review.'));
+    container.append(card);
+  }
+  container.append(node('p', 'county-tip-note', 'Contest votes are not a count of individual voters; totals can use different source bases. Other or unitemized votes are not assigned to a party.'));
+}

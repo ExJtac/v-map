@@ -1,0 +1,1689 @@
+:root {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #253c39;
+  background: #f7f9f9;
+  font-synthesis: none;
+  font-weight: 400;
+  font-size: 14px;
+  --green: #246c5e;
+  --muted: #80908c;
+  --line: #e6ece9;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+input {
+  font: inherit;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+button {
+  cursor: pointer;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid #69ad96;
+  outline-offset: 4px;
+}
+button {
+  color: inherit;
+}
+svg {
+  display: block;
+}
+button svg,
+.country-tag svg,
+.search-box svg,
+.selection-symbol svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+a {
+  color: inherit;
+}
+.site-header {
+  height: 86px;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  border-bottom: 1px solid var(--line);
+  gap: 32px;
+}
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 24px;
+  letter-spacing: -1px;
+  font-weight: 720;
+  text-decoration: none;
+}
+.brand-icon {
+  display: grid;
+  place-items: center;
+  position: relative;
+  background: #214f46;
+  color: white;
+  width: 35px;
+  height: 35px;
+  font-size: 23px;
+  border-radius: 10px;
+  font-weight: 500;
+  letter-spacing: -4px;
+  padding-right: 5px;
+}
+.brand-icon span {
+  color: #b0ddb2;
+  font-size: 30px;
+  position: absolute;
+  right: 6px;
+  bottom: 1px;
+}
+.header-caption {
+  font-size: 12px;
+  color: #87938f;
+  border-left: 1px solid #dce4e0;
+  padding-left: 28px;
+}
+.local-badge {
+  margin-left: auto;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  border: 1px solid #e0e8e3;
+  background: #fff;
+  padding: 7px 11px;
+  border-radius: 6px;
+  color: #65776e;
+  font-size: 11px;
+}
+.local-badge > span,
+.live-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #75a88d;
+  border-radius: 50%;
+}
+main {
+  max-width: 1600px;
+  margin: auto;
+  padding: 48px 5% 25px;
+}
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 650;
+  color: #629580;
+  margin-bottom: 12px;
+}
+h1 {
+  font-size: clamp(25px, 2.5vw, 36px);
+  font-weight: 550;
+  letter-spacing: -1.25px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+.page-heading p {
+  margin: 0;
+  color: #82908b;
+  font-size: 13px;
+}
+.country-tag {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-size: 12px;
+}
+.country-tag svg {
+  width: 17px;
+  height: 17px;
+  color: #78988c;
+}
+.workspace {
+  display: grid;
+  grid-template-columns: 255px minmax(0, 1fr);
+  border: 1px solid #e0e8e3;
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 5px 18px #1c443204;
+  min-height: 610px;
+}
+.sidebar {
+  padding: 26px 22px 18px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--line);
+  z-index: 2;
+}
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+h2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+.small-tag {
+  font-size: 9px;
+  color: #899891;
+  border: 1px solid #e2e8e4;
+  border-radius: 4px;
+  padding: 3px 5px;
+  letter-spacing: 1px;
+}
+.search-wrap {
+  position: relative;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #e3e9e5;
+  background: #fafbfa;
+  border-radius: 7px;
+  padding: 10px;
+}
+.search-box:focus-within {
+  border-color: #5b9c84;
+  box-shadow: 0 0 0 3px #5b9c8412;
+}
+.search-box svg {
+  width: 16px;
+  height: 16px;
+  color: #8a9b93;
+  flex-shrink: 0;
+}
+.search-box input {
+  min-width: 0;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0 !important;
+  font-size: 11px;
+  color: #344c42;
+}
+.search-box input::placeholder {
+  color: #8b9892;
+}
+.search-box kbd {
+  font: 10px inherit;
+  background: white;
+  border: 1px solid #e2e8e4;
+  border-radius: 3px;
+  padding: 1px 4px;
+  color: #9da9a2;
+}
+.search-results {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 47px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 28px #2440391c;
+  padding: 5px;
+  max-height: 260px;
+  overflow-y: auto;
+  z-index: 5;
+}
+.search-results button {
+  border: 0;
+  background: white;
+  text-align: left;
+  padding: 9px 7px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.search-results button:hover,
+.search-results button:focus-visible {
+  background: #edf5ef;
+}
+.search-results button span {
+  color: #8a9b93;
+}
+.no-results {
+  padding: 8px;
+  font-size: 12px;
+  color: #82918a;
+}
+.section-label {
+  font-size: 9px;
+  letter-spacing: 1.4px;
+  color: #8c9a94;
+  font-weight: 600;
+  margin: 29px 0 11px;
+}
+.region-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.region-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  text-align: left;
+  padding: 11px 10px;
+  font-size: 12px;
+  color: #718078;
+  gap: 10px;
+}
+.region-button:hover {
+  background: #f6f8f6;
+}
+.region-button.active {
+  background: #edf4ef;
+  color: #356551;
+  font-weight: 600;
+}
+.region-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #a9c5ae;
+}
+.region-dot.all {
+  background: #4e876e;
+}
+.region-dot.west {
+  background: #8eaf9e;
+}
+.region-dot.midwest {
+  background: #bacbab;
+}
+.region-dot.south {
+  background: #d2cbb0;
+}
+.region-dot.northeast {
+  background: #acbcc4;
+}
+.region-count {
+  margin-left: auto;
+  font-size: 10px;
+  color: #96a49a;
+  font-weight: 400;
+}
+.selection-card {
+  margin-top: 28px;
+  border-top: 1px solid var(--line);
+  padding-top: 23px;
+  min-height: 173px;
+}
+.selection-symbol {
+  width: 30px;
+  height: 30px;
+  background: #f0f5f1;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: #678c75;
+  font-size: 12px;
+  font-weight: 600;
+}
+.selection-symbol svg {
+  width: 17px;
+  height: 17px;
+}
+.selection-card .section-label {
+  margin: 16px 0 8px;
+  font-size: 8px;
+}
+h3 {
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  font-weight: 550;
+  margin: 0 0 8px;
+}
+.selection-card p {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #8a978f;
+  margin: 0;
+}
+.text-button {
+  padding: 12px 0 0;
+  background: none;
+  border: 0;
+  font-size: 10px;
+  color: #38705b;
+}
+.text-button span {
+  padding-left: 6px;
+}
+.sidebar-foot {
+  font-size: 9px;
+  color: #9ca79f;
+  margin-top: auto;
+  padding-top: 24px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.tiny-compass {
+  font-size: 15px;
+  color: #789a84;
+}
+.map-panel {
+  background: #f4f7f4;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+  background-image: radial-gradient(#6a8c6e1e 0.65px, transparent 0.65px);
+  background-size: 14px 14px;
+}
+.map-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px 24px;
+  gap: 12px;
+}
+.map-topline > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #7e9486;
+  letter-spacing: 1.3px;
+  font-size: 8px;
+  font-weight: 600;
+}
+.labels-button {
+  border: 1px solid #e0e8df;
+  background: #fbfdfb;
+  padding: 7px 9px;
+  border-radius: 6px;
+  font-size: 10px;
+  color: #819184;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.labels-button > span {
+  font-size: 11px;
+  font-weight: 600;
+  color: #50755a;
+}
+.labels-button[aria-pressed="false"] {
+  opacity: 0.6;
+}
+.map-stage {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  min-height: 400px;
+}
+#us-map {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  max-height: 650px;
+  touch-action: none;
+  cursor: grab;
+  overflow: hidden;
+}
+#us-map:active {
+  cursor: grabbing;
+}
+.state {
+  fill: #cbdcca;
+  stroke: #f8fbf6;
+  stroke-width: 1.1;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  transition:
+    fill 0.16s,
+    opacity 0.16s;
+  outline: none;
+}
+.state:hover,
+.state:focus-visible {
+  fill: #94b89c;
+  stroke: #699676;
+  stroke-width: 1.7;
+}
+.state.dimmed {
+  opacity: 0.24;
+}
+.state.selected {
+  fill: #3d7a5e;
+  stroke: #255c44;
+  stroke-width: 1.7;
+  opacity: 1;
+}
+.state-label {
+  font-size: 8px;
+  fill: #759478;
+  pointer-events: none;
+  text-anchor: middle;
+  dominant-baseline: central;
+  font-weight: 550;
+  letter-spacing: 0.4px;
+  transition: opacity 0.16s;
+}
+.state-label.selected {
+  fill: white;
+}
+.state-label.dimmed {
+  opacity: 0.25;
+}
+.hide-labels #state-labels {
+  visibility: hidden;
+}
+.map-controls {
+  position: absolute;
+  bottom: 30px;
+  right: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e0e8df;
+  border-radius: 8px;
+  box-shadow: 0 2px 7px #26433206;
+  padding: 3px;
+}
+.map-controls button {
+  display: grid;
+  place-items: center;
+  background: none;
+  border: 0;
+  width: 31px;
+  height: 31px;
+  font-size: 21px;
+  color: #667e6b;
+  border-radius: 4px;
+}
+.map-controls button:hover {
+  background: #eef4ed;
+}
+.map-controls button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.map-controls > span {
+  height: 1px;
+  width: 18px;
+  background: #e7ece5;
+  margin: 2px;
+}
+.map-controls svg {
+  width: 15px;
+  height: 15px;
+}
+.map-compass {
+  position: absolute;
+  top: 15px;
+  right: 32px;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  pointer-events: none;
+}
+.map-compass span {
+  font-size: 8px;
+  color: #839b88;
+}
+.map-compass svg {
+  width: 16px;
+  height: 23px;
+  fill: #afc2ad;
+  stroke: #849f85;
+  stroke-width: 0.7;
+}
+.inset-note {
+  position: absolute;
+  bottom: 25px;
+  left: 24px;
+  font-size: 8px;
+  color: #93a28f;
+  pointer-events: none;
+}
+.map-bottomline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 24px;
+  border-top: 1px solid #e0e8dd;
+  background: #f7faf6c4;
+  font-size: 9px;
+  color: #92a18e;
+}
+.map-bottomline > span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.key-swatch {
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: #b6ceb4;
+}
+.footer-divider {
+  padding: 0 7px;
+}
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 19px 1px;
+  font-size: 9px;
+  color: #99a59c;
+}
+.page-footer a {
+  text-decoration: none;
+}
+.page-footer a:hover {
+  text-decoration: underline;
+}
+.map-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #244b39;
+  color: #fff;
+  padding: 8px 11px;
+  font-size: 11px;
+  border-radius: 5px;
+  box-shadow: 0 3px 12px #1d432721;
+  z-index: 4;
+  white-space: nowrap;
+  max-width: 180px;
+}
+[hidden] {
+  display: none !important;
+}
+@media (min-width: 1600px) {
+  main {
+    padding-top: 60px;
+  }
+  .workspace {
+    min-height: 680px;
+  }
+  .sidebar {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  main {
+    padding: 32px 3% 20px;
+  }
+  .site-header {
+    padding: 0 3%;
+  }
+  .workspace {
+    grid-template-columns: 220px minmax(0, 1fr);
+    min-height: 570px;
+  }
+  .sidebar {
+    padding: 22px 16px 16px;
+  }
+  .map-topline {
+    padding: 18px;
+  }
+  .map-stage,
+  #us-map {
+    min-height: 370px;
+  }
+  .map-bottomline {
+    padding: 15px;
+    font-size: 8px;
+  }
+  .map-bottomline > span:last-child {
+    display: none;
+  }
+  .country-tag {
+    font-size: 10px;
+  }
+  .page-heading {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 680px) {
+  .site-header {
+    height: 70px;
+    padding: 0 5%;
+  }
+  .header-caption {
+    display: none;
+  }
+  .brand {
+    font-size: 22px;
+  }
+  .local-badge {
+    font-size: 9px;
+  }
+  main {
+    padding: 30px 5% 12px;
+  }
+  .page-heading {
+    align-items: flex-start;
+  }
+  .country-tag {
+    display: none;
+  }
+  h1 {
+    font-size: 27px;
+    letter-spacing: -1px;
+    max-width: 300px;
+  }
+  .page-heading p {
+    font-size: 11px;
+  }
+  .eyebrow {
+    font-size: 8px;
+  }
+  .workspace {
+    display: flex;
+    flex-direction: column;
+    border-radius: 11px;
+    min-height: 0;
+  }
+  .sidebar {
+    padding: 18px 17px 14px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .sidebar-title {
+    margin-bottom: 13px;
+  }
+  .sidebar > .section-label {
+    display: none;
+  }
+  .search-wrap {
+    margin-bottom: 12px;
+  }
+  .region-list {
+    flex-direction: row;
+    gap: 4px;
+    overflow-x: auto;
+    padding: 2px;
+  }
+  .region-button {
+    width: auto;
+    white-space: nowrap;
+    padding: 8px;
+    font-size: 10px;
+    gap: 6px;
+  }
+  .region-count {
+    display: none;
+  }
+  .region-dot {
+    width: 5px;
+    height: 5px;
+  }
+  .selection-card {
+    margin-top: 13px;
+    padding-top: 13px;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 30px 1fr auto;
+    gap: 3px 10px;
+    align-items: center;
+  }
+  .selection-symbol {
+    grid-row: 1/3;
+  }
+  .selection-card .section-label {
+    display: none;
+  }
+  .selection-card h3 {
+    font-size: 16px;
+    margin: 0;
+    grid-column: 2;
+  }
+  .selection-card p {
+    grid-column: 2;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  .text-button {
+    grid-column: 3;
+    grid-row: 1/3;
+    font-size: 9px;
+    padding: 0;
+  }
+  .sidebar-foot {
+    display: none;
+  }
+  .map-topline {
+    padding: 14px 15px;
+  }
+  .map-topline > span {
+    font-size: 7px;
+  }
+  .labels-button {
+    font-size: 9px;
+    padding: 6px;
+  }
+  .map-stage,
+  #us-map {
+    min-height: 315px;
+  }
+  .map-compass {
+    top: 0;
+    right: 18px;
+  }
+  .map-controls {
+    right: 12px;
+    bottom: 30px;
+  }
+  .map-controls button {
+    width: 25px;
+    height: 25px;
+  }
+  .inset-note {
+    font-size: 7px;
+    left: 15px;
+    bottom: 13px;
+  }
+  .map-bottomline {
+    padding: 13px 15px;
+  }
+  .page-footer {
+    font-size: 8px;
+    line-height: 1.7;
+    align-items: flex-start;
+  }
+  .page-footer > a {
+    max-width: 150px;
+    text-align: right;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Election history and geographic drill-down. */
+main {
+  padding-top: 34px;
+}
+.page-heading {
+  margin-bottom: 25px;
+}
+.workspace {
+  grid-template-columns: 265px minmax(0, 1fr);
+  min-height: 620px;
+}
+.sidebar {
+  padding: 22px 20px 18px;
+}
+.sidebar-title {
+  margin-bottom: 18px;
+}
+.selection-card {
+  margin-top: 20px;
+}
+.section-label {
+  margin-top: 22px;
+}
+.history-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 17px 22px;
+}
+.office-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 140px;
+}
+.office-field .section-label {
+  margin: 0;
+  font-size: 8px;
+}
+.office-field select {
+  border: 0;
+  background: transparent;
+  color: #2b5143;
+  font: 600 15px inherit;
+  min-height: 25px;
+  padding: 0 20px 0 0;
+  cursor: pointer;
+}
+.year-field {
+  flex: 1;
+  border-left: 1px solid var(--line);
+  padding-left: 26px;
+  max-width: 660px;
+}
+.year-field > label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #84958b;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.year-field output {
+  font-size: 17px;
+  letter-spacing: -0.5px;
+  color: #355c4a;
+  font-weight: 650;
+}
+.year-field input {
+  width: 100%;
+  height: 17px;
+  margin: 5px 0 3px;
+  accent-color: #407e62;
+  cursor: pointer;
+}
+.year-ticks {
+  position: relative;
+  height: 12px;
+  margin: 0 5px;
+  color: #95a397;
+  font-size: 8px;
+}
+.year-help {
+  color: #84958b;
+  font-size: 9px;
+}
+.year-ticks span {
+  position: absolute;
+  transform: translateX(-50%);
+}
+.year-ticks span:first-child {
+  transform: translateX(0);
+}
+.year-ticks span:last-child {
+  transform: translateX(-100%);
+}
+.year-stepper {
+  display: flex;
+  gap: 4px;
+}
+.year-stepper button {
+  background: #f7faf7;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  width: 29px;
+  height: 30px;
+}
+.year-stepper button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.coverage-pill {
+  margin-left: auto;
+  background: #eef5ef;
+  border: 1px solid #dceade;
+  color: #5b8065;
+  border-radius: 5px;
+  font-size: 9px;
+  padding: 7px 9px;
+  white-space: nowrap;
+}
+.coverage-warning {
+  background: #fbf5e9;
+  border-color: #eee3ce;
+  color: #90743d;
+}
+.map-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  font-size: 10px;
+  color: #91a095;
+  flex-wrap: wrap;
+  padding: 10px 2px;
+}
+.map-breadcrumbs button {
+  border: 0;
+  background: transparent;
+  padding: 5px 0;
+  font-size: 10px;
+  color: #748e7c;
+}
+.map-breadcrumbs button:hover {
+  text-decoration: underline;
+}
+.map-breadcrumbs button[aria-current="page"],
+#county-crumb {
+  color: #3f6f53;
+  font-weight: 600;
+}
+.map-breadcrumbs .back-to-state {
+  margin-left: auto;
+  background: #eaf1e9;
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: #52735a;
+}
+.county-browser {
+  margin-top: 20px;
+}
+.county-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #7b9480;
+  font-size: 10px;
+  margin-bottom: 9px;
+}
+.county-heading .section-label {
+  margin: 0;
+  font-size: 8px;
+}
+#county-list {
+  max-height: 203px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #c7d7c9 transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-right: 5px;
+}
+.county-list-button {
+  padding: 8px 9px;
+  flex-shrink: 0;
+  background: none;
+  border: 0;
+  border-radius: 5px;
+  font-size: 11px;
+  text-align: left;
+  color: #748979;
+}
+.county-list-button:hover {
+  background: #f0f5ef;
+}
+.county-list-button[aria-pressed="true"] {
+  background: #e6f0e7;
+  color: #356546;
+  font-weight: 600;
+}
+.state-view .state-label {
+  display: none;
+}
+.state-view .state.selected {
+  fill: #d5e2d0;
+  stroke: #477751;
+  stroke-width: 2;
+}
+.state-view .state.dimmed {
+  opacity: 0.13;
+}
+.county {
+  fill: #c6dcc3;
+  stroke: #fcfdfb;
+  stroke-width: 0.65;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  transition:
+    fill 0.15s,
+    opacity 0.15s;
+  outline: none;
+}
+.county:hover,
+.county:focus-visible {
+  fill: #82ae85;
+  stroke: #2b6743;
+  stroke-width: 1.6;
+}
+.county.selected {
+  fill: #528857;
+  stroke: #1c5637;
+  stroke-width: 2;
+}
+.county.county-dimmed {
+  opacity: 0.5;
+}
+.historical .county:hover,
+.historical .state:hover {
+  filter: brightness(0.92);
+  stroke: #335e49;
+  stroke-width: 1.7;
+}
+.historical .county.selected {
+  stroke: #214e37;
+  stroke-width: 2.5;
+}
+.historical .state-label {
+  fill: #42594c;
+}
+.county-label {
+  fill: #385c3e;
+  pointer-events: none;
+  text-anchor: middle;
+  dominant-baseline: central;
+  paint-order: stroke;
+  stroke: #ffffffb3;
+  stroke-width: 0.1px;
+  display: none;
+}
+.county-view .county-label.selected {
+  display: block;
+}
+.hide-labels #county-labels {
+  visibility: hidden;
+}
+.election-legend {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 13px 23px;
+  border-top: 1px solid #e1e8df;
+  background: #f9fbf8;
+  font-size: 9px;
+  color: #7b8d80;
+}
+.election-legend > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.party-dot {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #a496b7;
+}
+.democrat .party-dot,
+.party-dot.democrat {
+  background: #729cce;
+}
+.republican .party-dot,
+.party-dot.republican {
+  background: #d98a83;
+}
+.party-dot.missing {
+  background: #dce3de;
+}
+.legend-note {
+  font-size: 8px;
+  margin-left: auto;
+  color: #98a497;
+}
+.map-tooltip {
+  max-width: 260px;
+  white-space: normal;
+  line-height: 1.5;
+}
+.election-panel {
+  margin-top: 22px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: white;
+  padding: 26px;
+}
+.results-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.results-heading .eyebrow {
+  font-size: 8px;
+  margin-bottom: 8px;
+}
+.results-heading h2 {
+  font-size: 19px;
+  font-weight: 550;
+  letter-spacing: -0.4px;
+}
+.results-level {
+  font-size: 9px;
+  color: #829788;
+  background: #f1f6f0;
+  border-radius: 5px;
+  padding: 7px 9px;
+  white-space: nowrap;
+}
+.coverage-note {
+  font-size: 11px;
+  color: #7f9186;
+  line-height: 1.8;
+  margin: 15px 0 21px;
+  max-width: 880px;
+}
+.race-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+}
+.race-card {
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 20px;
+  min-width: 0;
+  max-height: 600px;
+  overflow: auto;
+}
+.race-card h3 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  margin-bottom: 17px;
+}
+.candidate-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 5px 12px;
+  margin: 17px 0;
+}
+.candidate-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  min-width: 0;
+  line-height: 1.5;
+}
+.candidate-name > span {
+  overflow-wrap: anywhere;
+}
+.candidate-votes {
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 3px;
+}
+.candidate-votes > span {
+  font-size: 9px;
+  color: #8d9e92;
+}
+.candidate-party {
+  font-size: 8px;
+  color: #91a297;
+  margin-left: 15px;
+}
+.vote-track {
+  grid-column: 1/-1;
+  height: 3px;
+  background: #f0f4f1;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.vote-track span {
+  display: block;
+  height: 100%;
+  background: #a496b7;
+}
+.democrat .vote-track span {
+  background: #729cce;
+}
+.republican .vote-track span {
+  background: #d98a83;
+}
+.race-total {
+  font-size: 9px;
+  color: #7f9385;
+  border-top: 1px solid var(--line);
+  padding-top: 13px;
+  margin: 18px 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.race-warning {
+  font-size: 10px;
+  background: #fcf7ed;
+  color: #9c7c45;
+  line-height: 1.8;
+  padding: 9px;
+  border-radius: 5px;
+}
+.race-basis {
+  font-size: 9px;
+  color: #8c9c91;
+  line-height: 1.7;
+}
+.official-source {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 9px;
+  color: #668b70;
+}
+.results-empty {
+  background: #f7faf6;
+  border: 1px dashed #dfe8dd;
+  border-radius: 8px;
+  padding: 23px;
+  grid-column: 1/-1;
+}
+.results-empty h3 {
+  font-size: 16px;
+}
+.results-empty p {
+  font-size: 11px;
+  color: #8b9d8d;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+.coverage-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 1/-1;
+  background: #f6f9f5;
+  border-radius: 8px;
+  padding: 22px;
+  gap: 20px;
+}
+.coverage-overview > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.coverage-overview strong {
+  font-size: 25px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  color: #51745a;
+}
+.coverage-overview span {
+  font-size: 9px;
+  color: #8fa08f;
+}
+.results-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 12px;
+  font-size: 9px;
+  line-height: 1.7;
+  color: #8b9b8f;
+  padding-top: 20px;
+}
+.results-sources a {
+  color: #65856e;
+}
+.snapshot-note {
+  flex-basis: 100%;
+  font-size: 8px;
+}
+.history-notes {
+  margin-top: 18px;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  font-size: 10px;
+  color: #8a9a8e;
+  line-height: 1.8;
+}
+.history-notes summary {
+  cursor: pointer;
+  color: #6c8673;
+}
+.history-notes p {
+  max-width: 1000px;
+}
+#race-picker-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  font-size: 11px;
+  color: #78927e;
+}
+#race-picker {
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  max-width: 100%;
+  color: #53755b;
+  background: #fafcf9;
+}
+@media (min-width: 1600px) {
+  main {
+    padding-top: 40px;
+  }
+  .workspace {
+    min-height: 660px;
+  }
+}
+@media (max-width: 1000px) {
+  .workspace {
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+  .history-toolbar {
+    gap: 15px;
+    padding: 15px;
+  }
+  .office-field {
+    min-width: 110px;
+  }
+  .year-field {
+    padding-left: 15px;
+  }
+  .coverage-pill {
+    font-size: 8px;
+  }
+  .election-legend {
+    gap: 10px;
+    padding: 12px 16px;
+  }
+  .legend-note {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+  .map-view-label {
+    max-width: 200px;
+  }
+  .map-topline {
+    padding: 17px;
+  }
+  .map-topline > span {
+    font-size: 7px;
+  }
+}
+@media (max-width: 680px) {
+  main {
+    padding-top: 25px;
+  }
+  .history-toolbar {
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 15px;
+  }
+  .office-field {
+    flex: 1;
+  }
+  .year-field {
+    flex-basis: 100%;
+    order: 3;
+    border: 0;
+    padding: 0;
+  }
+  .coverage-pill {
+    order: 2;
+    margin-left: 0;
+  }
+  .year-stepper {
+    order: 1;
+  }
+  .map-breadcrumbs {
+    gap: 7px;
+    font-size: 9px;
+    min-height: 44px;
+  }
+  .map-breadcrumbs button {
+    font-size: 9px;
+  }
+  .sidebar {
+    padding: 17px;
+  }
+  .county-browser {
+    margin-top: 3px;
+  }
+  .county-heading {
+    margin: 0 0 8px;
+  }
+  #county-list {
+    flex-direction: row;
+    max-height: 43px;
+    overflow: auto;
+    gap: 3px;
+    padding-bottom: 4px;
+  }
+  .county-list-button {
+    white-space: nowrap;
+    font-size: 10px;
+    padding: 8px;
+  }
+  .selection-card {
+    margin-top: 12px;
+    grid-template-columns: 30px minmax(0, 1fr);
+  }
+  .selection-card p {
+    grid-column: 2;
+  }
+  .text-button {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: start;
+    padding-top: 7px;
+  }
+  .map-topline {
+    gap: 8px;
+  }
+  .map-topline > span {
+    letter-spacing: 0.6px;
+    font-size: 7px;
+  }
+  .map-topline .labels-button {
+    flex-shrink: 0;
+  }
+  .map-stage,
+  #us-map {
+    min-height: 330px;
+  }
+  .election-legend {
+    gap: 10px;
+    font-size: 8px;
+  }
+  .legend-note {
+    font-size: 7px;
+  }
+  .election-panel {
+    padding: 20px 16px;
+    margin-top: 17px;
+  }
+  .results-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .results-heading h2 {
+    font-size: 17px;
+  }
+  .results-level {
+    font-size: 8px;
+  }
+  .coverage-note {
+    font-size: 10px;
+    margin: 13px 0 17px;
+  }
+  .coverage-overview {
+    gap: 12px;
+    padding: 18px 14px;
+  }
+  .coverage-overview strong {
+    font-size: 21px;
+  }
+  .coverage-overview span {
+    font-size: 8px;
+    line-height: 1.6;
+  }
+  .race-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .race-card {
+    padding: 16px;
+  }
+  .results-sources {
+    font-size: 8px;
+  }
+  .page-footer > a {
+    max-width: 155px;
+  }
+  .map-tooltip {
+    max-width: 200px;
+  }
+}
+
+.reporting-categories {
+  margin-top: 16px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+  font-size: 9px;
+  color: #87978b;
+  line-height: 1.7;
+}
+.reporting-categories summary {
+  cursor: pointer;
+  color: #6f8875;
+}
+.reporting-categories p {
+  margin: 7px 0;
+}
+
+.current-election-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 23px;
+  background: #edf3fa;
+  border: 1px solid #d9e4f2;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  color: #455f82;
+}
+.current-election-banner .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: #6a89ad;
+  margin: 0 0 8px;
+}
+.current-election-banner strong {
+  font-size: 16px;
+  font-weight: 550;
+  letter-spacing: -0.3px;
+}
+.current-election-banner p {
+  font-size: 10px;
+  line-height: 1.8;
+  margin: 8px 0 0;
+  color: #7188a1;
+}
+.current-election-banner .current-timestamp {
+  font-size: 9px;
+  color: #879aaf;
+}
+.current-election-banner button {
+  flex-shrink: 0;
+  border: 1px solid #cbd9ea;
+  background: #fff;
+  border-radius: 7px;
+  padding: 11px 14px;
+  font-size: 11px;
+  color: #5d7898;
+}
+.current-election-banner button:hover {
+  background: #f7faff;
+}
+.result-status {
+  display: inline-block;
+  border-radius: 4px;
+  background: #edf5ef;
+  color: #64846c;
+  padding: 5px 7px;
+  font-size: 9px;
+  margin-bottom: 8px;
+}
+.result-status.provisional {
+  background: #fbf0df;
+  color: #927039;
+}
+.source-update {
+  font-size: 9px;
+  color: #87978b;
+  line-height: 1.7;
+}
+.outcome-note {
+  padding: 10px;
+  background: #eef3f8;
+  color: #6d8098;
+  font-size: 10px;
+  line-height: 1.8;
+  border-radius: 6px;
+}
+@media (max-width: 680px) {
+  .current-election-banner {
+    padding: 17px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .current-election-banner strong {
+    font-size: 15px;
+  }
+  .current-election-banner button {
+    font-size: 10px;
+    padding: 9px 12px;
+  }
+  .current-election-banner p {
+    font-size: 9px;
+  }
+}
+
+/* County facts are contest returns, with comparison context kept visible. */
+.map-tooltip:has(.county-tip-title), .county-metrics-detail {
+  white-space: normal;
+  width: min(310px, 85vw);
+  max-width: 310px;
+  line-height: 1.35;
+}
+.map-tooltip:has(.county-tip-title) { max-height: 70%; overflow: auto; padding: 13px; }
+.county-metrics-detail { width: 100%; margin-top: 12px; padding: 12px; border: 1px solid #dce3de; border-radius: 8px; background: #f5f8f5; color: #244b39; font-size: 12px; }
+.county-tip-title { display: block; font-size: 14px; }
+.county-tip-population { margin-top: 5px; }
+.county-tip-contest { border-top: 1px solid currentColor; margin-top: 9px; padding-top: 8px; }
+.county-tip-label { font-weight: 700; margin-bottom: 5px; }
+.county-tip-line { display: flex; justify-content: space-between; gap: 14px; }
+.county-tip-change { text-align: right; opacity: .85; font-size: 10px; }
+.county-tip-note { margin: 6px 0 0; opacity: .9; font-size: 10px; }
