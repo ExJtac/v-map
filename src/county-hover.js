@@ -1,4 +1,4 @@
-import { contestMetrics, compareContest, expectedPriorYear, populationAt, regularNovemberBallot, ballotComparison, ballotsPerResident, contestVotesPerResident, votingMethodShares } from './county-metrics.js';
+import { contestMetrics, compareContest, expectedPriorYear, populationAt, regularNovemberBallot, ballotComparison, ballotsPerResident, contestVotesPerResident, votingMethodShares, isLargePartyChange, formatPartyChange } from './county-metrics.js';
 import { loadElection, OFFICE_LABELS } from './election-data.js';
 import { loadCountySupplement, mergeElectionData } from './county-data.js';
 import { appUrl } from './paths.js';
@@ -95,7 +95,13 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
       const line = node('div', 'county-tip-line', '');
       line.append(node('span', '', title), node('b', '', fmt(key ? metrics[key] : choiceVotes)));
       card.append(line);
-      if (!comparison.reason) card.append(node('div', 'county-tip-change', `Change in reported votes: ${change(comparison[key])} vs ${priorYear}${comparison[key] == null ? ' · not comparable' : ''}${comparison.provisional ? ' · provisional reported votes; counting continues' : ''}`));
+      if (!comparison.reason) {
+        const notable = ['democrat', 'republican'].includes(key) && isLargePartyChange(comparison[key]);
+        const changeLine = node('div', `county-tip-change${notable ? ' major-party-change' : ''}`, '');
+        changeLine.append(node(notable ? 'strong' : 'span', '', `Change in reported votes: ${formatPartyChange(comparison[key])} vs ${priorYear}${notable ? ' · large party change (>15%)' : ''}${comparison[key] == null ? ' · not comparable' : ''}`));
+        if (comparison.provisional) changeLine.append(node('span', 'change-caution', ' · provisional reported votes; counting continues'));
+        card.append(changeLine);
+      }
     }
     if (metrics.totalBasis) {
       card.append(node('p', 'county-tip-note', `Source-reported contest total: ${fmt(metrics.sourceReportedTotal)}. Includes unclassified reporting fields; these are excluded from candidate / write-in votes above.`));

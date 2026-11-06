@@ -120,8 +120,8 @@ const mapZoom = zoom()
 svg.call(mapZoom).on("dblclick.zoom", null);
 function moveTo(t) {
   svg.interrupt();
-  if (reducedMotion) svg.call(mapZoom.transform, t);
-  else svg.transition().duration(600).call(mapZoom.transform, t);
+  if (reducedMotion) { svg.call(mapZoom.transform, t); return Promise.resolve(true); }
+  return svg.transition().duration(600).call(mapZoom.transform, t).end().then(() => true, () => false);
 }
 function fitFeature(geometry) {
   const [[x0, y0], [x1, y1]] = path.bounds(geometry);
@@ -130,7 +130,7 @@ function fitFeature(geometry) {
     1,
     Math.min(400, 0.78 / Math.max((x1 - x0) / 1039, (y1 - y0) / 675)),
   );
-  moveTo(
+  return moveTo(
     zoomIdentity
       .translate(487.5, 313.5)
       .scale(k)
@@ -201,23 +201,22 @@ function positionTooltip() {
   tip.style.top = `${top - b.top}px`;
 }
 window.addEventListener("scroll", () => { if (!tooltipPinned) hideTooltip(); }, { passive: true });
-function showTooltip(event, geometry, kind) {
-  if (event.buttons || tooltipPinned) return;
-  cancelTooltipHide();
+async function openSelectedDetails(geometry, kind) {
+  if (kind === 'county' ? selectedCounty?.id !== geometry.id : selectedState?.id !== geometry.id || selectedCounty) return;
+  hideTooltip();
   const tip = $("#map-tooltip");
-  const key = `${kind}:${geometry.id}`;
-  if (tooltipKey !== key) {
-    const rect = event.currentTarget?.getBoundingClientRect();
-    tooltipPoint = { x: Number.isFinite(event.clientX) ? event.clientX : (rect.left + rect.right) / 2, y: Number.isFinite(event.clientY) ? event.clientY : rect.top };
-    tooltipKey = key;
-    tip.scrollTop = 0;
-    const content = $('#map-tooltip-content');
-    const token = ++tooltipToken;
-    if (kind === "county") countyCard(content, geometry, () => token === tooltipToken).then(() => { if (token === tooltipToken) positionTooltip(); });
-    else stateCard(content, geometry, () => token === tooltipToken).then(() => { if (token === tooltipToken) positionTooltip(); });
-  }
+  tooltipKey = `${kind}:${geometry.id}`;
+  tooltipPoint = { x: document.documentElement.clientWidth / 2, y: 24 };
+  tooltipPinned = true;
+  tip.scrollTop = 0;
   tip.hidden = false;
+  const token = ++tooltipToken;
+  const content = $('#map-tooltip-content');
+  if (kind === 'county') await countyCard(content, geometry, () => token === tooltipToken);
+  else await stateCard(content, geometry, () => token === tooltipToken);
+  if (token !== tooltipToken) return;
   positionTooltip();
+  tip.focus({ preventScroll: true });
 }
 function keyboard(event, callback) {
   if (event.key === "Enter" || event.key === " ") {
@@ -238,9 +237,7 @@ const paths = select("#states")
   .on("click", (e, s) => {
     if (!e.defaultPrevented) selectState(s);
   })
-  .on("keydown", (e, s) => keyboard(e, () => selectState(s)))
-  .on("pointermove", (e, s) => showTooltip(e, s, "state"))
-  .on("pointerleave", leaveTooltip);
+  .on("keydown", (e, s) => keyboard(e, () => selectState(s)));
 const labelPositions = {
   AK: [128, 524],
   HI: [308, 569],
@@ -406,7 +403,7 @@ async function loadCounties() {
     });
   return countyPromise;
 }
-async function selectState(state) {
+async function selectState(state, { showDetails = true } = {}) {
   const token = ++navigationToken;
   selectedState = state;
   selectedCounty = null;
@@ -421,7 +418,7 @@ async function selectState(state) {
   closeSearch();
   $("#state-search").value = "";
   hideTooltip();
-  fitFeature(state);
+  const viewReady = fitFeature(state);
   updateSelection();
   try {
     const counties = await loadCounties();
@@ -446,11 +443,7 @@ async function selectState(state) {
         e.stopPropagation();
         if (!e.defaultPrevented) selectCounty(c);
       })
-      .on("keydown", (e, c) => keyboard(e, () => selectCounty(c)))
-      .on("pointermove", (e, c) => showTooltip(e, c, "county"))
-      .on("pointerleave", leaveTooltip)
-      .on("focus", (e, c) => showTooltip(e, c, "county"))
-      .on("blur", leaveTooltip);
+      .on("keydown", (e, c) => keyboard(e, () => selectCounty(c)));
     select("#county-labels")
       .selectAll("text")
       .data(stateCounties)
@@ -479,6 +472,8 @@ async function selectState(state) {
       updateMap();
     }
   }
+  const completed = await viewReady;
+  if (completed && showDetails && token === navigationToken && selectedState?.id === state.id && !selectedCounty) await openSelectedDetails(state, 'state');
 }
 async function zoomToPatternCounty(fips) {
   const context = elections.countyContext('');
@@ -490,7 +485,7 @@ async function zoomToPatternCounty(fips) {
   status.textContent = `Loading county in ${state.properties.name}…`;
   let token = navigationToken;
   if (selectedState?.id !== state.id || countiesLoading || !stateCounties.length) {
-    const navigation = selectState(state);
+    const navigation = selectState(state, { showDetails: false });
     token = navigationToken;
     await navigation;
   }
@@ -498,22 +493,25 @@ async function zoomToPatternCounty(fips) {
   if (token !== navigationToken || current.office !== context.office || current.year !== context.year || selectedState?.id !== state.id) return;
   const county = stateCounties.find(county => county.id === fips);
   if (!county) { status.textContent = 'County boundaries could not load. Select the county again to retry.'; return; }
-  await selectCounty(county);
+  await selectCounty(county, { showDetails: false });
   const afterDetails = elections.countyContext('');
   if (token !== navigationToken || selectedCounty?.id !== fips || afterDetails.office !== context.office || afterDetails.year !== context.year) return;
   status.textContent = `${county.properties.name}, ${state.properties.name} selected.`;
   const panel = $('.map-panel');
   panel.focus({ preventScroll: true });
-  panel.scrollIntoView({ block: 'start', behavior: reducedMotion ? 'auto' : 'smooth' });
+  panel.scrollIntoView({ block: 'start', behavior: 'auto' });
+  await openSelectedDetails(county, 'county');
 }
-function selectCounty(county) {
+async function selectCounty(county, { showDetails = true } = {}) {
   if (!selectedState || county.id.slice(0, 2) !== selectedState.id) return;
   selectedCounty = county;
   closeSearch();
   $("#state-search").value = "";
   hideTooltip();
-  fitFeature(county);
-  return updateSelection();
+  const viewReady = fitFeature(county);
+  await updateSelection();
+  const completed = await viewReady;
+  if (completed && showDetails && selectedCounty?.id === county.id) await openSelectedDetails(county, 'county');
 }
 function returnToState() {
   if (selectedState) {

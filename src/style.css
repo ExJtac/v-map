@@ -1803,6 +1803,9 @@ main {
 #map-tooltip .county-tip-note, #map-tooltip .pattern-source, #map-tooltip .pattern-source-links { font-size: 13px; line-height: 1.5; }
 #map-tooltip .county-tip-line { font-size: 14px; }
 .contest-population-ratio { font-weight: 600; }
+.major-party-change { margin: 6px 0; padding: 9px 11px; border-left: 4px solid #bd7900; border-radius: 5px; background: #fff0bf; color: #47320b; text-align: left; opacity: 1; line-height: 1.5; }
+.major-party-change strong { font-weight: 800; }
+.major-party-change .change-caution { display: block; font-weight: 400; font-size: 12px; }
 @media (max-width: 680px) {
   .pattern-county-browser { grid-column: 1 / -1; min-width: 0; }
   #pattern-county-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }

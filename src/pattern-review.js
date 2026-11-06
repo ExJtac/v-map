@@ -2,6 +2,7 @@ import { appUrl } from './paths.js';
 import { reviewForCounty, stateReviewSummary, patternDirection } from './2026-anomalies.js';
 import { countingStatus } from './counting-status.js';
 import { OFFICE_LABELS } from './election-data.js';
+import { isLargePartyChange, formatPartyChange } from './county-metrics.js';
 
 let report, request, failed = false;
 const active = (office, year) => year === 2026 && office !== 'geography';
@@ -129,6 +130,14 @@ function appendOfficeChecks(box, assessment, criteria) {
   const shareEvidence = share?.evidence || assessment?.evidence;
   if (share?.status === 'assessed' && Number.isFinite(shareEvidence?.democratShareChangePp)) {
     const e = shareEvidence, threshold = criteria.minDistancePp, zThreshold = criteria.modifiedZThreshold;
+    for (const [party, value] of [['Democratic', e.democratCountChangePercent], ['Republican', e.republicanCountChangePercent]]) {
+      if (isLargePartyChange(value)) {
+        const marker = node('p', 'major-party-change', '');
+        marker.append(node('strong', '', `Large reported ${party} vote-count change: ${formatPartyChange(value)} vs ${e.baselineYear} · exceeds 15%.`));
+        box.append(marker);
+      }
+    }
+    box.append(node('p', 'county-tip-note', 'Changes greater than 15% are highlighted for review. Statistical borders use separate peer-comparison rules; absence of a border does not establish that a result is normal or explain its cause.'));
     box.append(node('p', 'county-tip-note county-border-metric', `Border metric · Democratic two-party share: ${e.priorDemocratTwoPartyShare.toFixed(1)}% → ${e.currentDemocratTwoPartyShare.toFixed(1)}%, a ${pp(e.democratShareChangePp)} change vs ${e.baselineYear}. State peer median change: ${pp(e.peer.peerMedian)}; gap from peers: ${pp(e.peer.distancePp)}.`));
     const peers = assessment?.partyGrowth?.evidence?.parties;
     box.append(node('p', 'county-tip-note', peers

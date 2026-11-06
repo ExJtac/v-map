@@ -28,6 +28,14 @@ export function relativeChange(current, previous) {
   return Number.isFinite(current) && Number.isFinite(previous) && previous > 0
     ? (current - previous) / previous * 100 : null;
 }
+export function isLargePartyChange(value) {
+  return Number.isFinite(value) && Math.abs(value) > 15;
+}
+export function formatPartyChange(value) {
+  if (!Number.isFinite(value)) return 'N/A';
+  const digits = Math.abs(value) > 15 && Math.abs(value) < 15.05 ? 2 : 1;
+  return `${value >= 0 ? '+' : ''}${value.toFixed(digits)}%`;
+}
 export function compareContest(row, priorRows, office) {
   if (office === 'house') return { reason: 'House district boundaries may have changed; comparison unavailable.' };
   if (office === 'senate' && !row.seatId) return { reason: 'Senate seat identity is unavailable for comparison.' };
