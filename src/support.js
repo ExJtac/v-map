@@ -10,8 +10,6 @@ export function initSupport() {
   const open = document.querySelector('#support-open-wallet');
   const headerQr = document.querySelector('#header-support-qr');
   const headerStatus = document.querySelector('#header-support-status');
-  input.value = wallet.invoice;
-  open.href = `lightning:${wallet.invoice}`;
   const expiry = new Intl.DateTimeFormat('en-US', {
     timeZone: 'America/Denver', month: 'long', day: 'numeric', year: 'numeric',
     hour: 'numeric', minute: '2-digit',
@@ -20,34 +18,33 @@ export function initSupport() {
     timeZone: 'America/Denver', month: 'short', day: 'numeric',
   }).format(new Date(wallet.expiresAt));
   let expiryTimer;
-
   function refresh() {
     clearTimeout(expiryTimer);
     const remaining = Date.parse(wallet.expiresAt) - Date.now();
-    const active = remaining > 0;
-    actions.hidden = qr.hidden = details.hidden = !active;
-    if (headerQr) headerQr.hidden = !active;
-    if (headerStatus) headerStatus.textContent = active
-      ? `Lightning · expires ${shortExpiry}` : 'Payment request expired';
-    status.textContent = active
-      ? `Lightning payment request · expires ${expiry} Mountain time`
-      : 'This payment request has expired. Please check back for a new support link.';
-    if (active) expiryTimer = setTimeout(refresh, Math.min(remaining + 1, 2147483647));
-    return active;
+    const lightningActive = remaining > 0;
+    const request = lightningActive ? wallet.paymentRequest : `bitcoin:${wallet.bitcoinAddress}`;
+    input.value = request;
+    open.href = request;
+    actions.hidden = qr.hidden = details.hidden = false;
+    if (headerQr) headerQr.hidden = false;
+    if (headerStatus) headerStatus.textContent = lightningActive
+      ? `Bitcoin + Lightning · Lightning expires ${shortExpiry}` : 'Bitcoin on-chain';
+    status.textContent = lightningActive
+      ? `Bitcoin address available · optional Lightning invoice expires ${expiry} Mountain time`
+      : 'The Lightning option has expired. The Bitcoin address remains available; wallet links and copied requests now use on-chain Bitcoin.';
+    if (lightningActive) expiryTimer = setTimeout(refresh, Math.min(remaining + 1, 2147483647));
+    return request;
   }
-  open.addEventListener('click', event => {
-    if (!refresh()) event.preventDefault();
-  });
+  open.addEventListener('click', refresh);
   document.querySelector('#support-copy-invoice').addEventListener('click', async () => {
-    if (!refresh()) return;
+    const request = refresh();
     try {
-      await navigator.clipboard.writeText(wallet.invoice);
-      feedback.textContent = 'Payment request copied.';
+      await navigator.clipboard.writeText(request);
+      feedback.textContent = 'Bitcoin payment request copied.';
     } catch {
       details.open = true;
-      input.focus();
-      input.select();
-      feedback.textContent = 'Select and copy the payment request below.';
+      input.focus(); input.select();
+      feedback.textContent = 'Select and copy the Bitcoin payment request below.';
     }
   });
   document.addEventListener('visibilitychange', refresh);

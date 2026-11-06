@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f7f9f9" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K67FPGPPG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7K67FPGPPG');
+    </script>
     <meta
       name="description"
       content="Explore U.S. election history, from the national map to states and counties."
@@ -39,14 +46,14 @@
         >
         </div>
         <aside class="header-support" aria-labelledby="header-support-heading">
-          <a id="header-support-qr" href="%BASE_URL%support/rumble-lightning-qr.jpeg" target="_blank" rel="noreferrer" aria-label="Enlarge the support QR code">
-            <img src="%BASE_URL%support/rumble-lightning-qr.jpeg" alt="Rumble Wallet Lightning support QR code" width="840" height="810" />
+          <a id="header-support-qr" href="%BASE_URL%support/bitcoin-support-qr.jpeg" target="_blank" rel="noreferrer" aria-label="Enlarge the support QR code">
+            <img src="%BASE_URL%support/bitcoin-support-qr.jpeg" alt="Bitcoin support QR code" width="1190" height="1219" />
           </a>
           <div>
             <a id="header-support-heading" class="header-support-heading" href="#support">Support the app</a>
             <p>Help fund the research and platform.</p>
-            <span>Rumble Wallet</span>
-            <small id="header-support-status">Lightning · expires Dec 6</small>
+            <span>Bitcoin</span>
+            <small id="header-support-status">Bitcoin + Lightning</small>
             <a class="header-support-more" href="#support">Payment options ↗</a>
           </div>
         </aside>
@@ -389,23 +396,23 @@
           <div class="eyebrow">KEEP V-MAP GROWING</div>
           <h2 id="support-heading">Support the research and platform</h2>
           <p>Help us research election returns, fill data gaps, and keep V-Map available to everyone.</p>
-          <div class="support-wallet-label">Rumble Wallet <span aria-hidden="true">·</span> Bitcoin Lightning</div>
-          <p class="support-instructions">Scan the QR code with a Lightning-compatible wallet, or open the payment request on this device. Choose the amount you’d like to contribute.</p>
+          <div class="support-wallet-label">Bitcoin <span aria-hidden="true">·</span> On-chain + Lightning</div>
+          <p class="support-instructions">Scan with a Bitcoin wallet or open the request on this device. The QR includes a Bitcoin address and an optional Lightning invoice. Choose the amount you’d like to contribute.</p>
           <div id="support-payment-actions" class="support-actions" hidden>
             <a id="support-open-wallet" class="support-primary">Open in wallet ↗</a>
             <button id="support-copy-invoice" type="button">Copy payment request</button>
           </div>
-          <p id="support-invoice-status" class="support-meta">Lightning payment request · expires December 6, 2026</p>
-          <p class="support-meta">This is a time-limited payment request. If your wallet reports it as paid or expired, check back for a new support link.</p>
+          <p id="support-invoice-status" class="support-meta">Bitcoin address with an optional Lightning payment request</p>
+          <p class="support-meta">The Bitcoin address has no invoice expiry. The optional Lightning invoice expires separately; its status is shown above.</p>
           <p id="support-copy-status" class="support-copy-status" role="status" aria-live="polite"></p>
           <details id="support-invoice-details" class="support-details" hidden>
             <summary>View payment request</summary>
-            <textarea id="support-invoice" readonly aria-label="Lightning payment request" rows="4" spellcheck="false"></textarea>
+            <textarea id="support-invoice" readonly aria-label="Bitcoin payment request" rows="4" spellcheck="false"></textarea>
           </details>
         </div>
         <figure id="support-qr" class="support-qr">
-          <a href="%BASE_URL%support/rumble-lightning-qr.jpeg" target="_blank" rel="noreferrer" aria-label="View Rumble Wallet Lightning QR code at full size">
-            <img src="%BASE_URL%support/rumble-lightning-qr.jpeg" alt="Rumble Wallet Bitcoin Lightning payment request QR code" width="840" height="810" loading="lazy" />
+          <a href="%BASE_URL%support/bitcoin-support-qr.jpeg" target="_blank" rel="noreferrer" aria-label="View Bitcoin support QR code at full size">
+            <img src="%BASE_URL%support/bitcoin-support-qr.jpeg" alt="Bitcoin payment request QR code" width="1190" height="1219" loading="lazy" />
           </a>
           <figcaption>Scan to support V-Map <span>Tap for the full-size QR code ↗</span></figcaption>
         </figure>
