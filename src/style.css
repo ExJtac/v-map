@@ -410,6 +410,7 @@ h3 {
   color: #789a84;
 }
 .map-panel {
+  align-self: start;
   background: #f4f7f4;
   display: flex;
   flex-direction: column;
@@ -1762,3 +1763,5 @@ main {
 .pattern-source-links { margin-top: 7px; }
 .pattern-source-links a, .pattern-source { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 .count-status { font-weight: 600; }
+.pattern-evidence { margin-top: 8px; }
+.pattern-evidence summary { cursor: pointer; font-size: 13px; font-weight: 600; }

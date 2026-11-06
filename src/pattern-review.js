@@ -80,13 +80,16 @@ export async function appendPatternReview(container, { office, year, id, rows = 
     box.classList.toggle('has-pattern-flag', review.flags.length > 0);
     box.append(node('strong', '', review.flags.length ? 'Yellow border · provisional pattern review' : 'County pattern review'));
     for (const flag of review.flags) {
-      box.append(node('p', 'pattern-flag-label', flag.label), node('p', 'county-tip-note', flagEvidence(flag)));
+      box.append(node('p', 'pattern-flag-label', flag.label));
+      const details = node('details', 'pattern-evidence', '');
+      details.append(node('summary', '', 'Why this county is flagged'), node('p', 'county-tip-note', flagEvidence(flag)));
       const links = node('div', 'pattern-source-links', 'Sources: ');
       for (const [i, source] of flag.sources.entries()) {
         const a = node('a', '', source.title); a.href = source.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
         if (i) links.append(' · '); links.append(a);
       }
-      box.append(links);
+      details.append(links);
+      box.append(details);
     }
     box.append(node('p', 'county-tip-note', `Participation check: ${review.participationStatus === 'assessed' ? 'assessed' : 'not assessed'}. Office comparison: ${review.officeStatus === 'assessed' ? 'assessed' : 'not assessed'}.${review.status === 'assessed' ? ' No screen met every flag threshold.' : ''}`));
     if (review.reason) box.append(node('p', 'county-tip-note', review.reason));
