@@ -137,15 +137,17 @@ function fitFeature(geometry) {
       .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
   );
 }
-let tooltipToken = 0, tooltipKey = "", detailToken = 0, tooltipPoint = null, tooltipHideTimer;
+let tooltipToken = 0, tooltipKey = "", detailToken = 0, tooltipPoint = null, tooltipHideTimer, tooltipPinned = false;
 function cancelTooltipHide() { clearTimeout(tooltipHideTimer); }
 function hideTooltip() {
   cancelTooltipHide();
+  tooltipPinned = false;
   tooltipToken++;
   tooltipKey = "";
   $("#map-tooltip").hidden = true;
 }
 function leaveTooltip(event) {
+  if (tooltipPinned) return;
   if ($('#map-tooltip').contains(event.relatedTarget)) return;
   cancelTooltipHide();
   tooltipHideTimer = setTimeout(() => {
@@ -154,9 +156,9 @@ function leaveTooltip(event) {
   }, 300);
 }
 const tooltip = $('#map-tooltip');
-tooltip.addEventListener('pointerenter', cancelTooltipHide);
+tooltip.addEventListener('pointerenter', () => { cancelTooltipHide(); tooltipPinned = true; });
 tooltip.addEventListener('pointerleave', leaveTooltip);
-tooltip.addEventListener('focusin', cancelTooltipHide);
+tooltip.addEventListener('focusin', () => { cancelTooltipHide(); tooltipPinned = true; });
 tooltip.addEventListener('focusout', leaveTooltip);
 tooltip.addEventListener('wheel', event => event.stopPropagation(), { passive: true });
 tooltip.addEventListener('keydown', event => {
@@ -168,6 +170,7 @@ async function countyCard(container, geometry, tokenValid) {
   if (context.loading) { container.textContent = "Loading county returns…"; return; }
   await renderCountyMetrics(container, { ...context, name: geometry.properties.name,
     state: selectedState.abbreviation, id: geometry.id, population: null }, tokenValid);
+  if (tokenValid() && container.id === 'map-tooltip-content') container.querySelectorAll('details').forEach(details => { details.open = true; });
 }
 async function stateCard(container, geometry, tokenValid) {
   const context = elections.stateContext(geometry.id);
@@ -191,17 +194,15 @@ function updateCountyDetail() {
 function positionTooltip() {
   if (!tooltipPoint) return;
   const tip = $("#map-tooltip"), b = $("#map-stage").getBoundingClientRect();
-  const visibleTop = Math.max(8, b.top + 5);
-  const visibleBottom = Math.min(window.innerHeight - 8, b.bottom - 8);
-  tip.style.maxHeight = `${Math.max(80, Math.min(b.height * .7, visibleBottom - visibleTop))}px`;
-  tip.style.left = `${Math.min(Math.max(8, tooltipPoint.x - b.left + 13), Math.max(8, b.width - tip.offsetWidth - 8))}px`;
-  const minTop = visibleTop - b.top;
-  const maxTop = Math.max(minTop, visibleBottom - b.top - tip.offsetHeight);
-  tip.style.top = `${Math.min(Math.max(minTop, tooltipPoint.y - b.top + 12), maxTop)}px`;
+  tip.style.maxHeight = '';
+  const left = Math.min(Math.max(12, tooltipPoint.x + 12), Math.max(12, document.documentElement.clientWidth - tip.offsetWidth - 12));
+  const top = Math.min(Math.max(12, tooltipPoint.y + 12), Math.max(12, window.innerHeight - tip.offsetHeight - 12));
+  tip.style.left = `${left - b.left}px`;
+  tip.style.top = `${top - b.top}px`;
 }
-window.addEventListener("scroll", hideTooltip, { passive: true });
+window.addEventListener("scroll", () => { if (!tooltipPinned) hideTooltip(); }, { passive: true });
 function showTooltip(event, geometry, kind) {
-  if (event.buttons) return;
+  if (event.buttons || tooltipPinned) return;
   cancelTooltipHide();
   const tip = $("#map-tooltip");
   const key = `${kind}:${geometry.id}`;
@@ -300,9 +301,13 @@ function updateMap() {
     .selectAll("text")
     .classed("selected", (c) => c.id === selectedCounty?.id);
   const context = elections?.countyContext('') || {};
+  const outlines = stateCounties.filter(c => hasPatternFlag(context.office, context.year, c.id)).flatMap(geometry => {
+    const direction = countyPatternDirection(context.office, context.year, geometry.id);
+    return (direction === 'mixed' ? ['democrat', 'republican'] : [direction]).map(party => ({ geometry, party, mixed: direction === 'mixed' }));
+  });
   select('#pattern-outlines').selectAll('path')
-    .data(stateCounties.filter(c => hasPatternFlag(context.office, context.year, c.id)), c => c.id)
-    .join('path').attr('class', c => `pattern-outline pattern-${countyPatternDirection(context.office, context.year, c.id)}`).attr('d', path);
+    .data(outlines, c => `${c.geometry.id}:${c.party}`)
+    .join('path').attr('class', c => `pattern-outline pattern-${c.party}${c.mixed ? ' pattern-alternating' : ''}`).attr('d', c => path(c.geometry));
   updatePatternSummary(context, selectedState?.id);
   updatePatternCountyList(context, states, selectedCounty, zoomToPatternCounty);
   $("#map-status").textContent =

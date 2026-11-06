@@ -1753,6 +1753,13 @@ main {
 .pattern-democrat { --pattern-color: var(--pattern-democrat); }
 .pattern-republican { --pattern-color: var(--pattern-republican); }
 .pattern-neutral { --pattern-color: var(--pattern-neutral); }
+.pattern-mixed { --pattern-color: var(--pattern-democrat); }
+.pattern-outline.pattern-alternating { stroke-dasharray: 7 7; }
+.pattern-outline.pattern-alternating.pattern-republican { stroke-dashoffset: 7; }
+.pattern-swatch.pattern-mixed { border-right-color: var(--pattern-republican); border-bottom-color: var(--pattern-republican); }
+.pattern-county-button.pattern-mixed { box-shadow: inset 3px 0 var(--pattern-republican); }
+.county-border-metric { font-weight: 600; }
+.pattern-county-button small { font-size: 11px; line-height: 1.4; }
 .pattern-outline {
   fill: none;
   stroke: var(--pattern-color, var(--pattern-neutral));
@@ -1789,6 +1796,13 @@ main {
 .pattern-county-button:hover, .pattern-county-button[aria-pressed="true"] { background: #eee9f3; border-color: var(--pattern-color); }
 .pattern-list-empty { font-size: 12px; line-height: 1.5; color: #526359; }
 .map-panel { scroll-margin-top: 18px; }
+.map-stage { overflow: visible; }
+.workspace:has(#map-tooltip:not([hidden])) { overflow: visible; }
+#map-tooltip { width: min(760px, calc(100vw - 32px)); max-width: none; max-height: none; overflow: visible; padding: 18px; z-index: 20; }
+#map-tooltip .county-tip-title { font-size: 19px; }
+#map-tooltip .county-tip-note, #map-tooltip .pattern-source, #map-tooltip .pattern-source-links { font-size: 13px; line-height: 1.5; }
+#map-tooltip .county-tip-line { font-size: 14px; }
+.contest-population-ratio { font-weight: 600; }
 @media (max-width: 680px) {
   .pattern-county-browser { grid-column: 1 / -1; min-width: 0; }
   #pattern-county-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }

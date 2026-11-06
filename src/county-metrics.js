@@ -94,6 +94,23 @@ export function ballotsPerResident(ballots, population) {
     ? ballots / population * 100 : null;
 }
 
+// A separately labeled race-vote ratio, never a replacement ballot/voter total.
+export function contestVotesPerResident(rows, office, population) {
+  if (!['president', 'senate', 'governor'].includes(office) || rows?.length !== 1) return null;
+  const row = rows[0];
+  if (!['county', 'state'].includes(row.geoLevel) || row.special || normalizedStage(row.stage) !== 'general' ||
+      (row.contestType && row.contestType !== 'candidate') || row.boundaryIncompatible || row.boundaryChanged ||
+      row.boundaryNote || row.geographicCoverageNote || row.suppressElectionWinner || row.winnerEligible === false) return null;
+  const metrics = contestMetrics(row);
+  if (!metrics || row.candidates.some(candidate => !Number.isInteger(candidate.votes) || candidate.votes < 0)) return null;
+  const categories = row.reportingCategories || [];
+  const writeIns = categories.filter(item => item.category === 'sourceWriteInEntries' || /^(write[-_ ]?ins?|writeincount)$/i.test(item.category || ''));
+  if (writeIns.some(item => !Number.isInteger(item.votes) || item.votes < 0)) return null;
+  const votes = [...row.candidates, ...writeIns].reduce((sum, candidate) => sum + candidate.votes, 0);
+  const value = ballotsPerResident(votes, population);
+  return value == null ? null : { value, votes, provisional: Boolean(row.provisional || row.unofficial || row.incomplete), knownCandidateBasis: categories.length > 0 || votes !== row.totalVotes };
+}
+
 export function votingMethodShares(ballot) {
   if (!ballot || !Number.isFinite(ballot.ballotsCast) || ballot.ballotsCast <= 0) return null;
   const mail = ballot.voteByMailVoters, precinct = ballot.precinctVoters;

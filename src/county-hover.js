@@ -1,4 +1,4 @@
-import { contestMetrics, compareContest, expectedPriorYear, populationAt, regularNovemberBallot, ballotComparison, ballotsPerResident, votingMethodShares } from './county-metrics.js';
+import { contestMetrics, compareContest, expectedPriorYear, populationAt, regularNovemberBallot, ballotComparison, ballotsPerResident, contestVotesPerResident, votingMethodShares } from './county-metrics.js';
 import { loadElection, OFFICE_LABELS } from './election-data.js';
 import { loadCountySupplement, mergeElectionData } from './county-data.js';
 import { appUrl } from './paths.js';
@@ -55,7 +55,7 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
   if (ballotSource?.url) { const a = node('a', 'county-tip-source', 'Source'); a.href = ballotSource.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; ballotLine.append(' · ', a); }
   container.append(ballotLine);
   if (ballot?.sourceUpdatedAt) container.append(node('div', 'county-tip-note', `Source update: ${ballot.sourceUpdatedAt}`));
-  appendResidentRatio(container, ballot, pop, year);
+  appendResidentRatio(container, ballot, pop, year, office, rows);
   appendVotingMethods(container, ballot);
   if (ballot?.boundaryNote) container.append(node('p', 'county-tip-note', ballot.boundaryNote));
   if (regular) {
@@ -108,9 +108,15 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
   container.append(node('p', 'county-tip-note', 'Contest votes are not a count of individual voters; totals can use different source bases. Other or unitemized votes are not assigned to a party.'));
 }
 
-function appendResidentRatio(container, ballot, pop, year) {
+function appendResidentRatio(container, ballot, pop, year, office, rows) {
   const ratio = ballotsPerResident(ballot?.ballotsCast, pop?.value);
   if (ratio == null) {
+    const contest = contestVotesPerResident(rows, office, pop?.value);
+    if (contest) {
+      container.append(node('p', 'county-tip-note contest-population-ratio', `Reported ${OFFICE_LABELS[office]} votes as % of population in ${year}: ${contest.value.toFixed(1)}% · ${fmt(contest.votes)} ${contest.knownCandidateBasis ? 'known candidate / write-in' : 'reported race'} votes ÷ ${fmt(pop.value)} residents (${pop.year} estimate)${contest.provisional ? ' · provisional' : ''}.`));
+      container.append(node('p', 'county-tip-note', 'Race-vote measure: ballots that skipped this race are not included. Total residents include children. Actual ballots-cast participation remains unavailable; this figure is not used as a ballot total or turnout-anomaly input.'));
+      return;
+    }
     container.append(node('p', 'county-tip-note', `% of population that voted in ${year}: unavailable`));
     return;
   }
@@ -152,7 +158,7 @@ export async function renderStateMetrics(container, {name, state, id, office, ye
   container.append(ballotLine);
   if (ballot?.sourceUpdatedAt) container.append(node('div', 'county-tip-note', `Source update: ${ballot.sourceUpdatedAt}`));
   if (ballot?.boundaryNote) container.append(node('p', 'county-tip-note', ballot.boundaryNote));
-  appendResidentRatio(container, ballot, pop, year);
+  appendResidentRatio(container, ballot, pop, year, office, rows);
   appendVotingMethods(container, ballot);
   if (regular) {
     const comparison = ballotComparison(ballotRecords, year, regular);

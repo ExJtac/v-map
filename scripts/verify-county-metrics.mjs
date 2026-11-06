@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { contestMetrics, compareContest, relativeChange, previousElectionYear, expectedPriorYear, populationAt, populationChange, regularNovemberBallot, ballotComparison, ballotsPerResident, votingMethodShares } from '../src/county-metrics.js';
+import { contestMetrics, compareContest, relativeChange, previousElectionYear, expectedPriorYear, populationAt, populationChange, regularNovemberBallot, ballotComparison, ballotsPerResident, contestVotesPerResident, votingMethodShares } from '../src/county-metrics.js';
 const row = { stateFips:'01', stage:'general', special:false, totalVotes:150, candidates:[{party:'Republican',votes:90},{party:'Democrat',votes:50},{party:'Other',votes:10}] };
 assert.deepEqual(contestMetrics(row), {total:150,republican:90,democrat:50});
 assert.equal(relativeChange(10, 0), null);
@@ -67,3 +67,18 @@ assert.equal(votingMethodShares({ballotsCast:100, voteByMailVoters:80, precinctV
 assert.equal(votingMethodShares({ballotsCast:0, voteByMailVoters:0, precinctVoters:0}), null);
 assert.equal(votingMethodShares({ballotsCast:100, voteByMailVoters:null, precinctVoters:100}), null);
 console.log('County metric checks passed');
+const ratioRow = { ...row, geoLevel:'county', totalVotes:1372, candidates:[{name:'R',party:'Republican',votes:1000},{name:'D',party:'Democrat',votes:372}], provisional:true };
+assert.equal(contestVotesPerResident([ratioRow], 'governor', 4555).value.toFixed(1), '30.1');
+assert.equal(contestVotesPerResident([ratioRow], 'governor', 4555).provisional, true);
+assert.equal(contestVotesPerResident([{...ratioRow,totalVotes:1472,reportingCategories:[{category:'undervotes',votes:100}]}], 'governor', 4555).votes,1372,'Skipped-race ballots are excluded from candidate numerator');
+assert.equal(contestVotesPerResident([{...withUnknown,geoLevel:'county'}], 'governor', 1000).votes,155,'Explicit additive write-ins included, unclassified source fields excluded');
+assert.equal(contestVotesPerResident([{...ratioRow,candidates:[{party:'Republican',votes:null}]}], 'governor', 4555),null);
+assert.equal(contestVotesPerResident([ratioRow,ratioRow], 'senate', 4555), null, 'Never sum concurrent seats');
+assert.equal(contestVotesPerResident([ratioRow], 'house', 4555), null, 'No unverified county-district portion ratio');
+for (const modified of [{sourceNeedsReview:true},{special:true},{contestType:'recall-question'},{stage:'primary'},{boundaryIncompatible:true},{geoLevel:'district'},{voteTotalMismatch:true}]) {
+  assert.equal(contestVotesPerResident([{...ratioRow,...modified}], 'governor', 4555), null);
+}
+assert.equal(contestVotesPerResident([ratioRow], 'governor', null), null);
+assert.equal(contestVotesPerResident([ratioRow], 'governor', 0), null);
+assert.equal(contestVotesPerResident([{...ratioRow,totalVotes:0,candidates:[{name:'R',party:'Republican',votes:0},{name:'D',party:'Democrat',votes:0}]}], 'governor', 4555).value, 0);
+console.log('Race votes / residents checks passed; ballot metrics remain separate.');
