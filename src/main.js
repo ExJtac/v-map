@@ -8,6 +8,9 @@ import topology from "us-atlas/states-albers-10m.json";
 import countyLabels from "./county-labels.json";
 import { createElectionView } from "./election-view.js";
 import { renderCountyMetrics } from "./county-hover.js";
+import { initSupport } from "./support.js";
+
+initSupport();
 
 const regions = {
   West: "AK AZ CA CO HI ID MT NM NV OR UT WA WY",

@@ -47,4 +47,8 @@ The Git repository includes normalized data and provenance manifests, but exclud
 
 Original software is MIT licensed. Third-party data and dependencies retain their own terms; see [DATA-LICENSES.md](DATA-LICENSES.md).
 
+## Supporting V-Map
+
+The [support section](https://cas-tx.com/vmap/#support) displays the supplied Rumble Wallet Bitcoin Lightning request. Its QR and decoded invoice are kept together in `public/support/rumble-lightning-qr.jpeg` and `src/support-wallet.json`. The current request has no fixed amount and expires December 6, 2026, at 12:39 PM Mountain time. It is a time-limited invoice, not a reusable donation address; the page displays that limitation and hides payment controls after expiry. Wallet settlement status is not tracked. Replace the QR, invoice, and expiry together when updating the destination. Prefer a verified reusable payment link or Lightning address for ongoing support. No payment is sent by the site itself.
+
 Map source: [US Atlas](https://github.com/topojson/us-atlas), ISC licensed, derived from the U.S. Census Bureau's 2017 cartographic boundaries. Alaska/Hawaii inset sizes are not comparable to the mainland. Region filters use the four Census regions, with D.C. omitted. Dependencies retain their respective licenses in `node_modules`.

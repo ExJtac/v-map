@@ -626,6 +626,36 @@ h3 {
 .page-footer a:hover {
   text-decoration: underline;
 }
+.header-actions { margin-left: auto; display: flex; align-items: center; gap: 18px; }
+.header-actions .local-badge { margin-left: 0; text-decoration: none; }
+.support-nav { color: var(--green); font-size: 12px; font-weight: 650; text-decoration: none; white-space: nowrap; }
+.support-nav:hover { text-decoration: underline; }
+.support-section { margin-top: 28px; padding: clamp(24px, 4vw, 48px); display: grid; grid-template-columns: minmax(0, 1fr) 290px; align-items: center; gap: 40px; background: #fff; border: 1px solid var(--line); border-radius: 14px; scroll-margin-top: 24px; }
+.support-copy h2 { font-size: clamp(24px, 3vw, 35px); line-height: 1.15; letter-spacing: -.8px; margin: 14px 0; max-width: 520px; }
+.support-copy > p { max-width: 550px; line-height: 1.7; color: #65776e; }
+.support-wallet-label { font-weight: 650; color: var(--green); margin-top: 24px; }
+.support-wallet-label span { margin: 0 6px; color: #a2b6ab; }
+.support-copy .support-instructions { font-size: 13px; }
+.support-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 16px; }
+.support-actions a, .support-actions button { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; padding: 11px 16px; border-radius: 7px; border: 1px solid #dce5df; background: white; font: inherit; font-size: 12px; font-weight: 600; text-decoration: none; }
+.support-actions .support-primary { background: #246c5e; color: white; border-color: #246c5e; }
+.support-actions a:hover, .support-actions button:hover { filter: brightness(.95); }
+.support-copy .support-meta { font-size: 11px; margin: 5px 0; }
+.support-copy-status { min-height: 1.5em; margin: 8px 0; font-size: 12px; }
+.support-details { font-size: 12px; color: #65776e; }
+.support-details summary { cursor: pointer; }
+.support-details textarea { width: 100%; resize: vertical; margin-top: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 6px; font-size: 11px; word-break: break-all; }
+.support-qr { margin: 0; text-align: center; }
+.support-qr img { display: block; width: 100%; height: auto; border-radius: 12px; }
+.support-qr figcaption { margin-top: 12px; color: #385d4f; font-size: 12px; font-weight: 600; }
+.support-qr figcaption span { display: block; margin-top: 5px; font-size: 10px; color: #80908c; font-weight: 400; }
+@media (max-width: 760px) {
+  .header-actions { gap: 12px; }
+  .header-actions .local-badge { font-size: 0; padding: 8px; }
+  .header-actions .local-badge::after { content: 'GitHub ↗'; font-size: 11px; }
+  .support-section { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .support-qr { width: min(100%, 300px); justify-self: center; }
+}
 .map-tooltip {
   position: absolute;
   pointer-events: none;
