@@ -2,6 +2,10 @@
 
 Imported November 6, 2026 from the U.S. Census Bureau. `scripts/import-population.py` rebuilds 65,936 dated records for all 3,142 map counties from preserved, hashed snapshots. All population values describe total residents, including people who cannot vote. No turnout percentage uses population as a voter-eligibility denominator.
 
+The same file also contains 1,071 dated state estimates for the 50 states and D.C., 2005–2025. State estimates use the source's direct SUMLEV 40 rows for 2005–2009 and 2020–2025. For 2010–2019, each state is the sum of all its source intercensal county rows, before map filtering or geographic holds; those rows reconcile to the national source total. A state's estimate is never assembled by mixing reference years from the map county series.
+
+County and state cards can display **reported ballots ÷ total resident population** with the population reference date. This share includes children and other ineligible residents in its denominator; it is distinct from eligible-voter or registered-voter turnout. A 2026 share uses a dated 2025 estimate and provisional reported ballots.
+
 | Years displayed | Source | Join and checks |
 |---|---|---|
 | 2005–2009 | [2000–2010 intercensal county totals](https://www2.census.gov/programs-surveys/popest/datasets/2000-2010/intercensal/county/co-est00int-tot.csv) | County FIPS; each annual county sum equals the source state total. Shannon/Oglala Lakota and Wade Hampton/Kusilvak use documented name/code changes. |

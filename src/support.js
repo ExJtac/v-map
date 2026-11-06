@@ -14,13 +14,17 @@ export function initSupport() {
     timeZone: 'America/Denver', month: 'long', day: 'numeric', year: 'numeric',
     hour: 'numeric', minute: '2-digit',
   }).format(new Date(wallet.expiresAt));
+  let expiryTimer;
 
   function refresh() {
-    const active = Date.now() < Date.parse(wallet.expiresAt);
+    clearTimeout(expiryTimer);
+    const remaining = Date.parse(wallet.expiresAt) - Date.now();
+    const active = remaining > 0;
     actions.hidden = qr.hidden = details.hidden = !active;
     status.textContent = active
       ? `Lightning payment request · expires ${expiry} Mountain time`
       : 'This payment request has expired. Please check back for a new support link.';
+    if (active) expiryTimer = setTimeout(refresh, Math.min(remaining + 1, 2147483647));
     return active;
   }
   open.addEventListener('click', event => {

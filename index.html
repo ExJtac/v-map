@@ -54,9 +54,6 @@
           <p id="current-election-summary"></p>
           <p id="current-election-timestamp" class="current-timestamp"></p>
         </div>
-        <button id="view-current-results">
-          View 2026 results <span aria-hidden="true">↗</span>
-        </button>
       </section>
       <section class="history-toolbar" aria-label="Election history controls">
         <label class="office-field" for="election-office"
@@ -65,14 +62,14 @@
             <option value="president">President</option>
             <option value="senate">U.S. Senate</option>
             <option value="house">U.S. House</option>
-            <option value="governor">Governor</option>
+            <option value="governor" selected>Governor</option>
             <option value="geography">Map only</option>
           </select></label
         >
         <div class="year-field">
           <label for="election-year"
             >AVAILABLE ELECTION YEARS
-            <output id="year-output" for="election-year">2024</output></label
+            <output id="year-output" for="election-year">2026</output></label
           ><input
             id="election-year"
             type="range"
@@ -96,6 +93,7 @@
           ><button id="next-year" aria-label="Next imported election year">
             →
           </button>
+          <button id="view-current-results" class="current-year-button" aria-label="View 2026 results">2026 results</button>
         </div>
         <div class="coverage-pill" id="coverage-pill" role="status">
           Loading history…
@@ -377,7 +375,7 @@
         </div>
         <figure id="support-qr" class="support-qr">
           <a href="%BASE_URL%support/rumble-lightning-qr.jpeg" target="_blank" rel="noreferrer" aria-label="View Rumble Wallet Lightning QR code at full size">
-            <img src="%BASE_URL%support/rumble-lightning-qr.jpeg" alt="Rumble Wallet Bitcoin Lightning payment request QR code" width="846" height="799" loading="lazy" />
+            <img src="%BASE_URL%support/rumble-lightning-qr.jpeg" alt="Rumble Wallet Bitcoin Lightning payment request QR code" width="840" height="810" loading="lazy" />
           </a>
           <figcaption>Scan to support V-Map <span>Tap for the full-size QR code ↗</span></figcaption>
         </figure>

@@ -20,6 +20,12 @@ def main():
     fips = {r['id'] for r in atlas['objects']['counties']['geometries']}
     assert len(fips) == 3142
     sources, series, controls = {}, {f: {} for f in sorted(fips)}, []
+    state_series = {f: {} for f in sorted({f[:2] for f in fips})}
+
+    def put_state(f, year, value, sid, basis='Census state population estimate'):
+        if f in state_series and 2005 <= year <= 2025:
+            state_series[f][year] = dict(year=year, value=value, sourceId=sid,
+                referenceDate=f'{year}-07-01', basis=basis)
 
     def source(name, sid, title, vintage):
         sources[sid] = dict(title=title, vintage=vintage, **receipts[name])
@@ -41,6 +47,8 @@ def main():
         for year in years:
             column = f'POPESTIMATE{year}'
             states = {r['STATE'].zfill(2): int(r[column]) for r in rows if int(r['SUMLEV']) == 40}
+            for state, value in states.items():
+                put_state(state, year, value, sid)
             sums = {}
             for row in rows:
                 if int(row['SUMLEV']) != 50:
@@ -73,6 +81,7 @@ def main():
             registry[key] = row['STATE'].zfill(2) + row['COUNTY'].zfill(3)
     ns = {'s': 'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
     sums = {y: 0 for y in range(2010, 2020)}
+    state_sums = {y: {} for y in range(2010, 2020)}
     national, seen = {}, set()
     with zipfile.ZipFile(RAW / name) as z:
         strings = [''.join(n.itertext()) for n in ET.fromstring(z.read('xl/sharedStrings.xml')).findall('s:si', ns)]
@@ -96,9 +105,14 @@ def main():
                     national[year] = value
                 else:
                     sums[year] += value
+                    state_sums[year][f[:2]] = state_sums[year].get(f[:2], 0) + value
                     put(f, year, value, sid)
     assert sums == national
     assert len(seen) == 3143
+    for year, states in state_sums.items():
+        assert len(states) == 51 and sum(states.values()) == national[year]
+        for state, value in states.items():
+            put_state(state, year, value, sid, 'Sum of all Census intercensal source counties in the state; no map-geography filtering')
     controls.append(dict(sourceId=sid, countyRows=len(seen), countyNationalSumsMatch=True))
     # CT's historical eight counties last appear in this compatible vintage.
     ct = {f for f in fips if f.startswith('09')}
@@ -113,6 +127,8 @@ def main():
     for record in series['02261'].values():
         record['note'] = 'Historical Valdez-Cordova geography; later estimates use two successor census areas.'
     counties = {f: sorted(rows.values(), key=lambda r: r['year']) for f, rows in series.items()}
+    states = {f: sorted(rows.values(), key=lambda r: r['year']) for f, rows in state_series.items()}
+    assert len(states) == 51 and all(len(rows) == 21 for rows in states.values())
     assert all(counties.values()), [f for f, rows in counties.items() if not rows]
     limits = [
         'Total resident population, not eligible voters, registered voters, or election turnout.',
@@ -125,13 +141,15 @@ def main():
         'Same-FIPS estimates use source-vintage boundaries; 2017 map outlines are a geographic reference.',
         'Annual percentage change is shown only within one source series, never across a vintage splice.'
     ]
-    dump(OUT / 'counties.json', dict(schemaVersion=1, sources=sources, counties=counties))
+    dump(OUT / 'counties.json', dict(schemaVersion=1, sources=sources, counties=counties, states=states))
     manifest = dict(schemaVersion=1, url='/data/population/counties.json', sources=sources,
                     firstYear=2005, latestYear=2025, countyCount=len(counties),
-                    records=sum(map(len, counties.values())), limits=limits)
+                    records=sum(map(len, counties.values())), stateCount=len(states),
+                    stateRecords=sum(map(len, states.values())), limits=limits)
     dump(OUT / 'manifest.json', manifest)
     dump(OUT / 'validation.json', dict(status='passed', controls=controls,
-         countyCount=len(counties), records=manifest['records'], exactFipsOrDocumentedRename=True))
+         countyCount=len(counties), records=manifest['records'], stateCount=len(states),
+         stateRecords=manifest['stateRecords'], exactFipsOrDocumentedRename=True))
     print(json.dumps({k: manifest[k] for k in ['countyCount', 'records', 'firstYear', 'latestYear']}, indent=2))
 
 if __name__ == '__main__':

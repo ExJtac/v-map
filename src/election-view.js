@@ -40,7 +40,7 @@ const el = (tag, className, text) => {
 
 export function createElectionView({ onChange }) {
   let office = $("#election-office").value;
-  let year = 2024;
+  let year = 2026;
   let years = [],
     yearOffice = "";
   let data = null,
@@ -121,6 +121,9 @@ export function createElectionView({ onChange }) {
       years.length ? String(year) : "No imported years",
     );
     $("#year-output").value = years.length ? year : "—";
+    $(".year-help").textContent = office === "president"
+      ? "Presidential election years · 2026 results: Senate, House or Governor"
+      : "Years with imported returns";
     $("#previous-year").disabled = index <= 0 || office === "geography";
     $("#next-year").disabled =
       index < 0 || index >= years.length - 1 || office === "geography";
@@ -608,6 +611,7 @@ export function createElectionView({ onChange }) {
   return {
     isHistorical: () => office !== "geography",
     countyContext(id) { return { office, year, years: [...years], rows: matchingRows("county", id), loading }; },
+    stateContext(id) { return { office, year, years: [...years], rows: (data?.results || []).filter(row => row.stateFips === id && ['state', 'district'].includes(row.geoLevel)), loading }; },
     setSelection(value) {
       selection = value;
       contest = "";

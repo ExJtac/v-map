@@ -26,15 +26,33 @@ assert max(r['year'] for r in data['counties']['02261']) == 2019
 assert min(r['year'] for r in data['counties']['51019']) == 2013
 assert next(r['value'] for r in data['counties']['08031'] if r['year'] == 2024) == 741591
 assert next(r['sourceId'] for r in data['counties']['06037'] if r['year'] == 2016) == 'census2010int'
+assert len(data['states']) == 51 and sum(map(len, data['states'].values())) == 1071
+for rows in data['states'].values():
+    assert [r['year'] for r in rows] == list(range(2005, 2026))
+    assert all(r['sourceId'] in data['sources'] and r['value'] > 0 for r in rows)
+assert data['states']['06'][-1]['value'] == 39355309
 
 turnout = read('public/data/turnout/counties.json')
 assert len(turnout['counties']) == 58
-assert all(f.startswith('06') and len(rows) == 1 for f, rows in turnout['counties'].items())
-assert sum(rows[0]['ballotsCast'] for rows in turnout['counties'].values()) == 9027710
-assert turnout['counties']['06037'][0]['ballotsCast'] == 2617572
+assert all(f.startswith('06') and len(rows) == len({r['year'] for r in rows}) for f, rows in turnout['counties'].items())
+cycles = sorted({r['year'] for rows in turnout['counties'].values() for r in rows})
+assert 2022 in cycles and 2026 in cycles
+state_records = {r['year']:r for r in turnout['states']['06']}
+for year in cycles:
+    parts = [r for rows in turnout['counties'].values() for r in rows if r['year'] == year]
+    assert len(parts) == 58
+    assert sum(r['ballotsCast'] for r in parts) == state_records[year]['ballotsCast']
+    assert sum(r['registeredVoters'] for r in parts) == state_records[year]['registeredVoters']
+assert state_records[2026]['ballotsCast'] == 9027710
+assert state_records[2022]['ballotsCast'] == 11146620
+assert next(r['ballotsCast'] for r in turnout['counties']['06037'] if r['year'] == 2026) == 2617572
 for rows in turnout['counties'].values():
-    r = rows[0]
-    assert r['electionDate'] == '2026-11-03' and r['provisional'] and r['unofficial']
-    assert r['ballotsCast'] <= r['registeredVoters'] and r['sourceId'] in turnout['sources']
+    for r in rows:
+        assert r['electionDate'].startswith(f"{r['year']}-11-") and r['stage'] == 'general' and r['special'] is False
+        assert r['ballotsCast'] <= r['registeredVoters'] and r['sourceId'] in turnout['sources']
+        if r['year'] == 2026: assert r['provisional'] and r['unofficial']
+        else: assert r['provisional'] is False and r['unofficial'] is False
 print(json.dumps(dict(status='passed', populationCounties=3142, datedEstimates=65936,
-                      turnoutCounties=58, preservedSourceHashes='--packaged' not in sys.argv)))
+                      populationStates=51, datedStateEstimates=1071,
+                      turnoutCounties=58, turnoutCycles=cycles,
+                      preservedSourceHashes='--packaged' not in sys.argv)))

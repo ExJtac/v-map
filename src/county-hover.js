@@ -1,4 +1,4 @@
-import { contestMetrics, compareContest, expectedPriorYear, populationAt, populationChange } from './county-metrics.js';
+import { contestMetrics, compareContest, expectedPriorYear, populationAt, populationChange, regularNovemberBallot, ballotComparison, ballotsPerResident } from './county-metrics.js';
 import { loadElection, OFFICE_LABELS } from './election-data.js';
 import { loadCountySupplement, mergeElectionData } from './county-data.js';
 import { appUrl } from './paths.js';
@@ -47,13 +47,26 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
   let turnout;
   try { turnout = await loadTurnout(); } catch { /* No ballot-level source for this selection. */ }
   if (!isCurrent()) return;
-  const regular = rows.some(row => !row.special && ['general', 'gen', 'g', 'general election'].includes(String(row.stage || 'general').toLowerCase()) && (!row.contestType || row.contestType === 'candidate'));
-  const ballot = regular && (turnout?.counties?.[id] || []).find(r => r.year === year && /^\d{4}-11-/.test(r.electionDate || '') && Number.isFinite(r.ballotsCast));
-  const ballotLine = node('div', 'county-tip-population', ballot ? `Countywide ballots cast · ${year}: ${fmt(ballot.ballotsCast)}${ballot.provisional || ballot.unofficial ? ' · unofficial' : ''}` : 'Ballots cast: unavailable');
+  const ballotRecords = turnout?.counties?.[id] || [];
+  const ballot = regularNovemberBallot(ballotRecords, year);
+  const regular = Boolean(ballot);
+  const ballotLine = node('div', 'county-tip-population', ballot ? `Reported ballots cast · ${ballot.electionDate} general election: ${fmt(ballot.ballotsCast)}${ballot.provisional || ballot.unofficial ? ' · unofficial' : ''}` : 'Ballots cast: unavailable');
   const ballotSource = turnout?.sources?.[ballot?.sourceId];
   if (ballotSource?.url) { const a = node('a', 'county-tip-source', 'Source'); a.href = ballotSource.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; ballotLine.append(' · ', a); }
   container.append(ballotLine);
   if (ballot?.sourceUpdatedAt) container.append(node('div', 'county-tip-note', `Source update: ${ballot.sourceUpdatedAt}`));
+  appendResidentRatio(container, ballot, pop);
+  if (ballot?.boundaryNote) container.append(node('p', 'county-tip-note', ballot.boundaryNote));
+  if (regular) {
+    const comparison = ballotComparison(ballotRecords, year, regular);
+    const text = comparison.value == null
+      ? `Voter change (reported ballots): N/A vs ${comparison.priorYear} · ${comparison.reason}`
+      : `Voter change (reported ballots): ${change(comparison.value)} vs ${comparison.priorYear}${comparison.provisional ? ` · provisional compared with final ${comparison.priorYear}; counting continues` : ''}`;
+    const line = node('p', 'county-tip-note', text);
+    const priorSource = turnout?.sources?.[comparison.prior?.sourceId];
+    if (priorSource?.url) { const a = node('a', 'county-tip-source', `${comparison.priorYear} source`); a.href = priorSource.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; line.append(' · ', a); }
+    container.append(line);
+  }
   if (!rows.length) { container.append(node('p', 'county-tip-note', 'No county returns available for this election.')); return; }
   const expectedYears = [...new Set(rows.map(row => expectedPriorYear(row, office, year)).filter(y => y != null))];
   const priorByYear = new Map();
@@ -81,7 +94,7 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
       const line = node('div', 'county-tip-line', '');
       line.append(node('span', '', title), node('b', '', fmt(key ? metrics[key] : choiceVotes)));
       card.append(line);
-      if (!comparison.reason) card.append(node('div', 'county-tip-change', `${change(comparison[key])} vs ${priorYear}${comparison[key] == null ? ' · not comparable' : ''}`));
+      if (!comparison.reason) card.append(node('div', 'county-tip-change', `Change in reported votes: ${change(comparison[key])} vs ${priorYear}${comparison[key] == null ? ' · not comparable' : ''}${comparison.provisional ? ' · provisional reported votes; counting continues' : ''}`));
     }
     if (metrics.totalBasis) {
       card.append(node('p', 'county-tip-note', `Source-reported contest total: ${fmt(metrics.sourceReportedTotal)}. Includes unclassified reporting fields; these are excluded from candidate / write-in votes above.`));
@@ -92,4 +105,46 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
     container.append(card);
   }
   container.append(node('p', 'county-tip-note', 'Contest votes are not a count of individual voters; totals can use different source bases. Other or unitemized votes are not assigned to a party.'));
+}
+
+function appendResidentRatio(container, ballot, pop) {
+  const ratio = ballotsPerResident(ballot?.ballotsCast, pop?.value);
+  if (ratio == null) {
+    container.append(node('p', 'county-tip-note', 'Reported ballots / total residents: N/A'));
+    return;
+  }
+  container.append(node('p', 'county-tip-note', `Reported ballots / total residents: ${ratio.toFixed(1)}% · population ${pop.referenceDate || pop.year}${ballot.provisional || ballot.unofficial || ballot.incomplete ? ' · provisional ballots; counting continues' : ''}. Includes children; not eligible-voter turnout.`));
+}
+
+// State participation uses independently sourced statewide ballots, never sums of contests.
+export async function renderStateMetrics(container, {name, state, id, office, year, years, rows = [], loading}, isCurrent = () => true) {
+  container.replaceChildren(node('strong', 'county-tip-title', name || state));
+  if (loading) { container.append(node('p', 'county-tip-note', 'Loading state returns…')); return; }
+  const [populationData, turnout] = await Promise.all([loadPopulation(), loadTurnout()]);
+  if (!isCurrent()) return;
+  const pop = populationAt(populationData?.states?.[id] || [], office === 'geography' ? null : year);
+  const popLine = node('div', 'county-tip-population', pop ? `Population: ${fmt(pop.value)} (${pop.referenceDate || pop.year} estimate)` : 'Population: unavailable');
+  const popSource = populationData?.sources?.[pop?.sourceId];
+  if (popSource?.url) { const a = node('a', 'county-tip-source', 'Source'); a.href = popSource.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; popLine.append(' · ', a); }
+  container.append(popLine);
+  if (pop?.note) container.append(node('p', 'county-tip-note', pop.note));
+  if (office === 'geography') return;
+  const ballotRecords = turnout?.states?.[id] || [];
+  const ballot = regularNovemberBallot(ballotRecords, year);
+  const regular = Boolean(ballot);
+  const ballotLine = node('div', 'county-tip-population', ballot ? `Reported ballots cast · ${ballot.electionDate} general election: ${fmt(ballot.ballotsCast)}${ballot.provisional || ballot.unofficial ? ' · unofficial' : ''}` : 'Ballots cast: unavailable');
+  const ballotSource = turnout?.sources?.[ballot?.sourceId];
+  if (ballotSource?.url) { const a = node('a', 'county-tip-source', 'Source'); a.href = ballotSource.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; ballotLine.append(' · ', a); }
+  container.append(ballotLine);
+  if (ballot?.sourceUpdatedAt) container.append(node('div', 'county-tip-note', `Source update: ${ballot.sourceUpdatedAt}`));
+  if (ballot?.boundaryNote) container.append(node('p', 'county-tip-note', ballot.boundaryNote));
+  appendResidentRatio(container, ballot, pop);
+  if (regular) {
+    const comparison = ballotComparison(ballotRecords, year, regular);
+    const text = comparison.value == null ? `Voter change (reported ballots): N/A vs ${comparison.priorYear} · ${comparison.reason}` : `Voter change (reported ballots): ${change(comparison.value)} vs ${comparison.priorYear}${comparison.provisional ? ` · provisional compared with final ${comparison.priorYear}; counting continues` : ''}`;
+    const line = node('p', 'county-tip-note', text);
+    const source = turnout?.sources?.[comparison.prior?.sourceId];
+    if (source?.url) { const a = node('a', 'county-tip-source', `${comparison.priorYear} source`); a.href = source.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; line.append(' · ', a); }
+    container.append(line);
+  }
 }

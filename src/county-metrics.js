@@ -31,7 +31,7 @@ export function relativeChange(current, previous) {
 export function compareContest(row, priorRows, office) {
   if (office === 'house') return { reason: 'House district boundaries may have changed; comparison unavailable.' };
   if (office === 'senate' && !row.seatId) return { reason: 'Senate seat identity is unavailable for comparison.' };
-  if (row.provisional || row.unofficial || row.incomplete) return { reason: 'Partial or unofficial returns; comparison unavailable.' };
+  if (row.incomplete && !row.provisional && !row.unofficial) return { reason: 'Partial returns; comparison unavailable.' };
   if (!contestMetrics(row)) return { reason: 'Source needs review; comparison unavailable.' };
   const matches = priorRows.filter(p => contestIdentityKey(p) === contestIdentityKey(row));
   if (matches.length !== 1) return { reason: 'Matching prior contest unavailable.' };
@@ -40,7 +40,7 @@ export function compareContest(row, priorRows, office) {
     return { reason: 'Prior source is partial or needs review.' };
   const a = contestMetrics(row), b = contestMetrics(prior);
   if (a?.totalBasis !== b?.totalBasis) return { reason: 'Source total bases differ; comparison unavailable.' };
-  return { total: relativeChange(a?.total, b?.total), republican: relativeChange(a?.republican, b?.republican), democrat: relativeChange(a?.democrat, b?.democrat) };
+  return { total: relativeChange(a?.total, b?.total), republican: relativeChange(a?.republican, b?.republican), democrat: relativeChange(a?.democrat, b?.democrat), provisional: Boolean(row.provisional || row.unofficial) };
 }
 export function previousElectionYear(years, year) {
   return [...years].filter(y => y < year).sort((a,b) => b-a)[0] ?? null;
@@ -61,4 +61,35 @@ export function populationAt(records, year) {
 export function populationChange(current, prior) {
   if (!current || !prior || current.year !== prior.year + 1 || !current.sourceId || current.sourceId !== prior.sourceId) return null;
   return relativeChange(current.value, prior.value);
+}
+
+// Countywide ballots are sourced independently of any candidate contest.
+export function regularNovemberBallot(records, year) {
+  const matches = (records || []).filter(r => r.year === year &&
+    new RegExp(`^${year}-11-\\d{2}$`).test(r.electionDate || '') &&
+    !r.special && normalizedStage(r.stage) === 'general');
+  return matches.length === 1 ? matches[0] : null;
+}
+export function ballotComparison(records, year, regular) {
+  const priorYear = year - 4;
+  if (!regular) return { priorYear, reason: 'Regular November election not established.' };
+  const current = regularNovemberBallot(records, year);
+  const prior = regularNovemberBallot(records, priorYear);
+  if (!current || !prior) return { priorYear, reason: 'Comparable county ballot totals unavailable.' };
+  if (current.sourceNeedsReview || prior.sourceNeedsReview || current.boundaryIncompatible || prior.boundaryIncompatible || current.boundaryChanged || prior.boundaryChanged || current.boundaryNote || prior.boundaryNote)
+    return { priorYear, reason: 'Source or county boundaries need review.' };
+  if (prior.provisional || prior.unofficial || prior.incomplete)
+    return { priorYear, reason: 'Prior ballot total is not final.' };
+  if (!(prior.certified === true || prior.final === true || (prior.provisional === false && prior.unofficial === false)))
+    return { priorYear, reason: 'Prior ballot total has no final-status evidence.' };
+  if (!Number.isFinite(current.ballotsCast) || current.ballotsCast < 0 || !(prior.ballotsCast > 0)) return { priorYear, reason: 'Comparable ballot totals unavailable.' };
+  const value = relativeChange(current.ballotsCast, prior.ballotsCast);
+  if (value == null) return { priorYear, reason: 'Comparable county ballot totals unavailable.' };
+  return { priorYear, value, prior, provisional: Boolean(current.provisional || current.unofficial || current.incomplete) };
+}
+
+// This is a ratio to all residents, including children, not an eligible-voter rate.
+export function ballotsPerResident(ballots, population) {
+  return Number.isFinite(ballots) && ballots >= 0 && Number.isFinite(population) && population > 0
+    ? ballots / population * 100 : null;
 }

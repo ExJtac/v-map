@@ -7,7 +7,7 @@ import { feature } from "topojson-client";
 import topology from "us-atlas/states-albers-10m.json";
 import countyLabels from "./county-labels.json";
 import { createElectionView } from "./election-view.js";
-import { renderCountyMetrics } from "./county-hover.js";
+import { renderCountyMetrics, renderStateMetrics } from "./county-hover.js";
 import { initSupport } from "./support.js";
 
 initSupport();
@@ -148,6 +148,12 @@ async function countyCard(container, geometry, tokenValid) {
   await renderCountyMetrics(container, { ...context, name: geometry.properties.name,
     state: selectedState.abbreviation, id: geometry.id, population: null }, tokenValid);
 }
+async function stateCard(container, geometry, tokenValid) {
+  const context = elections.stateContext(geometry.id);
+  if (context.loading) { container.textContent = "Loading state returns…"; return; }
+  await renderStateMetrics(container, { ...context, name: geometry.properties.name,
+    state: geometry.abbreviation, id: geometry.id }, tokenValid);
+}
 function updateCountyDetail() {
   let detail = $("#county-metrics-detail");
   if (!detail) {
@@ -157,8 +163,9 @@ function updateCountyDetail() {
     $("#selection-description").insertAdjacentElement("afterend", detail);
   }
   const token = ++detailToken;
-  detail.hidden = !selectedCounty;
+  detail.hidden = !selectedState;
   if (selectedCounty) countyCard(detail, selectedCounty, () => token === detailToken);
+  else if (selectedState) stateCard(detail, selectedState, () => token === detailToken);
 }
 function positionTooltip() {
   if (!tooltipPoint) return;
@@ -182,7 +189,7 @@ function showTooltip(event, geometry, kind) {
     tooltipKey = key;
     const token = ++tooltipToken;
     if (kind === "county") countyCard(tip, geometry, () => token === tooltipToken).then(() => { if (token === tooltipToken) positionTooltip(); });
-    else tip.textContent = `${geometry.properties.name}${elections?.describe(kind, geometry.id) || ""}`;
+    else stateCard(tip, geometry, () => token === tooltipToken).then(() => { if (token === tooltipToken) positionTooltip(); });
   }
   tip.hidden = false;
   positionTooltip();
