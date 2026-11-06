@@ -2,6 +2,7 @@ import { contestMetrics, compareContest, expectedPriorYear, populationAt, regula
 import { loadElection, OFFICE_LABELS } from './election-data.js';
 import { loadCountySupplement, mergeElectionData } from './county-data.js';
 import { appUrl } from './paths.js';
+import { appendPatternReview } from './pattern-review.js';
 
 const previousCache = new Map();
 let populationPromise, turnoutPromise;
@@ -30,6 +31,8 @@ const change = value => Number.isFinite(value) ? `${value >= 0 ? '+' : ''}${valu
 const node = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; e.textContent = text; return e; };
 export async function renderCountyMetrics(container, { name, state, id, office, year, years, rows, population }, isCurrent = () => true) {
   container.replaceChildren(node('strong', 'county-tip-title', `${name} · ${state}`));
+  await appendPatternReview(container, { office, year, id, rows }, isCurrent);
+  if (!isCurrent()) return;
   let populationData;
   try { populationData = await loadPopulation(); } catch { /* Other county facts remain available. */ }
   if (!isCurrent()) return;
@@ -129,6 +132,8 @@ function appendVotingMethods(container, ballot) {
 export async function renderStateMetrics(container, {name, state, id, office, year, years, rows = [], loading}, isCurrent = () => true) {
   container.replaceChildren(node('strong', 'county-tip-title', name || state));
   if (loading) { container.append(node('p', 'county-tip-note', 'Loading state returns…')); return; }
+  await appendPatternReview(container, { office, year, id, rows, level: 'state' }, isCurrent);
+  if (!isCurrent()) return;
   const [populationData, turnout] = await Promise.all([loadPopulation(), loadTurnout()]);
   if (!isCurrent()) return;
   const pop = populationAt(populationData?.states?.[id] || [], office === 'geography' ? null : year);

@@ -1744,3 +1744,21 @@ main {
 .county-tip-line > b { flex-shrink: 0; white-space: nowrap; }
 .county-tip-change { text-align: right; opacity: .85; font-size: 12px; }
 .county-tip-note { margin: 6px 0 0; opacity: .9; font-size: 12px; }
+
+/* Separate overlay keeps pattern highlights visible above selection styling. */
+.pattern-outline {
+  fill: none;
+  stroke: #eab308;
+  stroke-width: 3;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+.pattern-review-summary { margin: 12px 18px; padding: 14px; border: 1px solid #d7b64e; border-radius: 8px; background: #fff9e8; color: #394639; font-size: 14px; line-height: 1.5; }
+.pattern-review-summary p { margin: 7px 0; }
+.county-pattern-review { margin: 9px 0; padding: 9px 0; border-block: 1px solid currentColor; overflow-wrap: anywhere; }
+.county-pattern-review.has-pattern-flag { border: 2px solid #eab308; padding: 10px; border-radius: 6px; }
+.pattern-flag-label { font-weight: 700; margin: 9px 0 3px; }
+.pattern-source, .pattern-source-links { font-size: 12px; line-height: 1.5; }
+.pattern-source-links { margin-top: 7px; }
+.pattern-source-links a, .pattern-source { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.count-status { font-weight: 600; }

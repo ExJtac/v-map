@@ -1,4 +1,5 @@
 import { appUrl } from './paths.js';
+import { countingStatus, countingColor } from './counting-status.js';
 import {
   loadElection,
   loadManifest,
@@ -619,7 +620,8 @@ export function createElectionView({ onChange }) {
     },
     color(level, id) {
       const party = leadingParty(level, id);
-      return party ? colors[party] || colors.Other : colors.missing;
+      const base = party ? colors[party] || colors.Other : colors.missing;
+      return year === 2026 ? countingColor(party, countingStatus(matchingRows(level, id)).status, base) : base;
     },
     describe(level, id) {
       if (office === "geography") return "";

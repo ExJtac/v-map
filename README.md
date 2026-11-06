@@ -14,6 +14,10 @@ Mail-ballot and polling-place/vote-center shares are shown for the California 20
 
 The generated [coverage report](COVERAGE-REPORT.md) lists actual imported coverage and review holds. Presidential cycles each match 3,113 of the 3,142 reference county geometries; the remaining 29 are Alaska county equivalents without compatible official county totals. Historical boundaries, missing sources, unitemized candidates, and current-result coverage gaps remain explicit. This is a local snapshot, not an automatically refreshing election feed.
 
+The 2026 map uses light party colors when counting is not confirmed complete, and dark colors only for explicit source-final or certified counts. Precincts reporting 100% does not establish completion. Held, missing, tied and ambiguous contests retain neutral colors. The current imported 2026 sources establish no completed county counts.
+
+Yellow county outlines identify provisional statistical patterns under the symmetric [county review criteria](PATTERN-REVIEW.md). County cards show the observed change, same-state peer baseline, source links and assessment coverage. Participation uses actual ballots and residents; party screening compares matching contests, with minimum counts and both peer and historical thresholds. Missing comparable data is labeled not assessed. The audit covers all 3,142 map counties, with 58 participation and 1,047 Governor comparisons currently eligible; six Governor county patterns meet every threshold. Senate seat identity and House boundary/coverage gaps prevent qualified comparisons. Flags are exploratory and may reflect reporting progress or candidate changes; they do not establish wrongdoing or errors. Builds deterministically regenerate the audit from the pinned local inputs and preserve their hashes; publishing a verified batch updates the map.
+
 Source records, missing counts, quality flags, hashes, and import limitations are documented in [DATA-SOURCES.md](DATA-SOURCES.md). Alaska and Hawaii appear as insets. The map covers the 50 states; D.C. is present in the presidential data but has no selectable polygon in this version.
 
 ## Run locally

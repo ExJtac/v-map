@@ -9,6 +9,7 @@ import countyLabels from "./county-labels.json";
 import { createElectionView } from "./election-view.js";
 import { renderCountyMetrics, renderStateMetrics } from "./county-hover.js";
 import { initSupport } from "./support.js";
+import { initPatternReview, hasPatternFlag, updatePatternSummary } from './pattern-review.js';
 
 initSupport();
 
@@ -275,6 +276,11 @@ function updateMap() {
   select("#county-labels")
     .selectAll("text")
     .classed("selected", (c) => c.id === selectedCounty?.id);
+  const context = elections?.countyContext('') || {};
+  select('#pattern-outlines').selectAll('path')
+    .data(stateCounties.filter(c => hasPatternFlag(context.office, context.year, c.id)), c => c.id)
+    .join('path').attr('class', 'pattern-outline').attr('d', path);
+  updatePatternSummary(context, selectedState?.id);
   $("#map-status").textContent =
     countyError ||
     (countiesLoading
@@ -615,5 +621,6 @@ document.addEventListener("keydown", (e) => {
     selectedCounty ? returnToState() : clearSelection();
 });
 elections = createElectionView({ onChange: () => { hideTooltip(); updateMap(); updateCountyDetail(); } });
+initPatternReview(() => { hideTooltip(); updateMap(); updateCountyDetail(); });
 updateSelection();
 $("#zoom-out").disabled = true;
