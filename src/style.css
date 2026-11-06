@@ -1638,51 +1638,6 @@ main {
   margin: 7px 0;
 }
 
-.current-election-banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px 23px;
-  background: #edf3fa;
-  border: 1px solid #d9e4f2;
-  border-radius: 12px;
-  margin-bottom: 18px;
-  color: #455f82;
-}
-.current-election-banner .eyebrow {
-  font-size: 10px;
-  letter-spacing: 1.5px;
-  color: #6a89ad;
-  margin: 0 0 8px;
-}
-.current-election-banner strong {
-  font-size: 18px;
-  font-weight: 550;
-  letter-spacing: -0.3px;
-}
-.current-election-banner p {
-  font-size: 12px;
-  line-height: 1.8;
-  margin: 8px 0 0;
-  color: #7188a1;
-}
-.current-election-banner .current-timestamp {
-  font-size: 11px;
-  color: #879aaf;
-}
-.current-election-banner button {
-  flex-shrink: 0;
-  border: 1px solid #cbd9ea;
-  background: #fff;
-  border-radius: 7px;
-  padding: 11px 14px;
-  font-size: 13px;
-  color: #5d7898;
-}
-.current-election-banner button:hover {
-  background: #f7faff;
-}
 .result-status {
   display: inline-block;
   border-radius: 4px;
@@ -1708,24 +1663,6 @@ main {
   font-size: 12px;
   line-height: 1.8;
   border-radius: 6px;
-}
-@media (max-width: 680px) {
-  .current-election-banner {
-    padding: 17px;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .current-election-banner strong {
-    font-size: 17px;
-  }
-  .current-election-banner button {
-    font-size: 12px;
-    padding: 9px 12px;
-  }
-  .current-election-banner p {
-    font-size: 11px;
-  }
 }
 
 /* County facts are contest returns, with comparison context kept visible. */

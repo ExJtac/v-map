@@ -585,28 +585,6 @@ export function createElectionView({ onChange }) {
     yearOffice = "";
     changeElection();
   });
-  fetch(appUrl("/data/current-status.json"))
-    .then(async (response) => {
-      if (
-        !response.ok ||
-        (response.headers.get("content-type") || "").includes("text/html")
-      )
-        return;
-      const status = await response.json();
-      if (!status.offices?.length) return;
-      $("#current-election-summary").textContent = status.offices
-        .map(
-          (item) =>
-            `${OFFICE_LABELS[item.office]}: ${item.statesWithReturns} states with reported returns`,
-        )
-        .join(" · ");
-      $("#current-election-timestamp").textContent =
-        `Latest recorded source retrieval ${new Date(status.retrievedAt).toLocaleString("en-US", { timeZone: "America/Denver", month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit" })} MT. Individual source update times appear below.`;
-      $("#current-election-banner").hidden = false;
-    })
-    .catch(() => {
-      /* The election data loader retains per-contest errors separately. */
-    });
   // Defer until the owner has installed this controller and completed map initialization.
   queueMicrotask(changeElection);
   return {
