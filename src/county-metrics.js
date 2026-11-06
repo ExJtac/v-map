@@ -112,7 +112,7 @@ export function contestVotesPerResident(rows, office, population) {
   const metrics = contestMetrics(row);
   if (!metrics || row.candidates.some(candidate => !Number.isInteger(candidate.votes) || candidate.votes < 0)) return null;
   const categories = row.reportingCategories || [];
-  const writeIns = categories.filter(item => item.category === 'sourceWriteInEntries' || /^(write[-_ ]?ins?|writeincount)$/i.test(item.category || ''));
+  const writeIns = categories.filter(item => ['sourceWriteInEntries', 'unattributedWriteIns'].includes(item.category) || /^(write[-_ ]?ins?|writeincount)$/i.test(item.category || ''));
   if (writeIns.some(item => !Number.isInteger(item.votes) || item.votes < 0)) return null;
   const votes = [...row.candidates, ...writeIns].reduce((sum, candidate) => sum + candidate.votes, 0);
   const value = ballotsPerResident(votes, population);

@@ -9,9 +9,11 @@ import countyLabels from "./county-labels.json";
 import { createElectionView } from "./election-view.js";
 import { renderCountyMetrics, renderStateMetrics } from "./county-hover.js";
 import { initSupport } from "./support.js";
+import { initResearchStatus } from './research-status.js';
 import { initPatternReview, hasPatternFlag, countyPatternDirection, updatePatternSummary, updatePatternCountyList } from './pattern-review.js';
 
 initSupport();
+initResearchStatus();
 
 const regions = {
   West: "AK AZ CA CO HI ID MT NM NV OR UT WA WY",
@@ -106,7 +108,6 @@ const mapZoom = zoom()
     [-100, -100],
     [1075, 750],
   ])
-  .on("start", hideTooltip)
   .on("zoom", (event) => {
     currentZoom = event.transform;
     content.attr("transform", currentZoom);
@@ -115,7 +116,6 @@ const mapZoom = zoom()
     select("#county-labels")
       .selectAll("text")
       .attr("font-size", 10 / currentZoom.k);
-    hideTooltip();
   });
 svg.call(mapZoom).on("dblclick.zoom", null);
 function moveTo(t) {
@@ -137,34 +137,7 @@ function fitFeature(geometry) {
       .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
   );
 }
-let tooltipToken = 0, tooltipKey = "", detailToken = 0, tooltipPoint = null, tooltipHideTimer, tooltipPinned = false;
-function cancelTooltipHide() { clearTimeout(tooltipHideTimer); }
-function hideTooltip() {
-  cancelTooltipHide();
-  tooltipPinned = false;
-  tooltipToken++;
-  tooltipKey = "";
-  $("#map-tooltip").hidden = true;
-}
-function leaveTooltip(event) {
-  if (tooltipPinned) return;
-  if ($('#map-tooltip').contains(event.relatedTarget)) return;
-  cancelTooltipHide();
-  tooltipHideTimer = setTimeout(() => {
-    const tip = $('#map-tooltip');
-    if (!tip.matches(':hover') && !tip.contains(document.activeElement)) hideTooltip();
-  }, 300);
-}
-const tooltip = $('#map-tooltip');
-tooltip.addEventListener('pointerenter', () => { cancelTooltipHide(); tooltipPinned = true; });
-tooltip.addEventListener('pointerleave', leaveTooltip);
-tooltip.addEventListener('focusin', () => { cancelTooltipHide(); tooltipPinned = true; });
-tooltip.addEventListener('focusout', leaveTooltip);
-tooltip.addEventListener('wheel', event => event.stopPropagation(), { passive: true });
-tooltip.addEventListener('keydown', event => {
-  if (event.key === 'Escape') { event.stopPropagation(); hideTooltip(); }
-});
-$('#close-map-tooltip').addEventListener('click', hideTooltip);
+let detailToken = 0, historyModule;
 async function countyCard(container, geometry, tokenValid) {
   const context = elections.countyContext(geometry.id);
   if (context.loading) { container.textContent = "Loading county returns…"; return; }
@@ -179,44 +152,23 @@ async function stateCard(container, geometry, tokenValid) {
     state: geometry.abbreviation, id: geometry.id }, tokenValid);
 }
 function updateCountyDetail() {
-  let detail = $("#county-metrics-detail");
-  if (!detail) {
-    detail = document.createElement("div");
-    detail.id = "county-metrics-detail";
-    detail.className = "county-metrics-detail";
-    $("#selection-description").insertAdjacentElement("afterend", detail);
-  }
+  const panel = $('#map-tooltip'), detail = $('#map-tooltip-content'), charts = $('#history-charts');
   const token = ++detailToken;
-  detail.hidden = !selectedState;
-  if (selectedCounty) return countyCard(detail, selectedCounty, () => token === detailToken);
-  else if (selectedState) return stateCard(detail, selectedState, () => token === detailToken);
+  panel.hidden = !selectedState;
+  charts.hidden = !selectedState || !elections?.isHistorical();
+  if (!selectedState) { detail.replaceChildren(); charts.replaceChildren(); return Promise.resolve(); }
+  const geometry = selectedCounty || selectedState;
+  const context = selectedCounty ? elections.countyContext(geometry.id) : elections.stateContext(geometry.id);
+  const detailsWork = selectedCounty ? countyCard(detail, geometry, () => token === detailToken) : stateCard(detail, geometry, () => token === detailToken);
+  const chartWork = charts.hidden ? Promise.resolve() : (historyModule ||= import('./history-charts.js'))
+    .then(module => module.renderHistoryCharts(charts, { ...context, id: geometry.id, name: geometry.properties.name,
+      state: selectedState.abbreviation, level: selectedCounty ? 'county' : 'state' }, () => token === detailToken))
+    .catch(() => { if (token === detailToken) charts.textContent = 'History graphs could not load. Select the place again to retry.'; });
+  return Promise.all([detailsWork, chartWork]);
 }
-function positionTooltip() {
-  if (!tooltipPoint) return;
-  const tip = $("#map-tooltip"), b = $("#map-stage").getBoundingClientRect();
-  tip.style.maxHeight = '';
-  const left = Math.min(Math.max(12, tooltipPoint.x + 12), Math.max(12, document.documentElement.clientWidth - tip.offsetWidth - 12));
-  const top = Math.min(Math.max(12, tooltipPoint.y + 12), Math.max(12, window.innerHeight - tip.offsetHeight - 12));
-  tip.style.left = `${left - b.left}px`;
-  tip.style.top = `${top - b.top}px`;
-}
-window.addEventListener("scroll", () => { if (!tooltipPinned) hideTooltip(); }, { passive: true });
 async function openSelectedDetails(geometry, kind) {
   if (kind === 'county' ? selectedCounty?.id !== geometry.id : selectedState?.id !== geometry.id || selectedCounty) return;
-  hideTooltip();
-  const tip = $("#map-tooltip");
-  tooltipKey = `${kind}:${geometry.id}`;
-  tooltipPoint = { x: document.documentElement.clientWidth / 2, y: 24 };
-  tooltipPinned = true;
-  tip.scrollTop = 0;
-  tip.hidden = false;
-  const token = ++tooltipToken;
-  const content = $('#map-tooltip-content');
-  if (kind === 'county') await countyCard(content, geometry, () => token === tooltipToken);
-  else await stateCard(content, geometry, () => token === tooltipToken);
-  if (token !== tooltipToken) return;
-  positionTooltip();
-  tip.focus({ preventScroll: true });
+  return updateCountyDetail();
 }
 function keyboard(event, callback) {
   if (event.key === "Enter" || event.key === " ") {
@@ -417,7 +369,6 @@ async function selectState(state, { showDetails = true } = {}) {
   $("#county-list").replaceChildren();
   closeSearch();
   $("#state-search").value = "";
-  hideTooltip();
   const viewReady = fitFeature(state);
   updateSelection();
   try {
@@ -507,7 +458,6 @@ async function selectCounty(county, { showDetails = true } = {}) {
   selectedCounty = county;
   closeSearch();
   $("#state-search").value = "";
-  hideTooltip();
   const viewReady = fitFeature(county);
   await updateSelection();
   const completed = await viewReady;
@@ -663,10 +613,6 @@ document.addEventListener("focusin", (e) => {
   if (!e.target.closest(".search-wrap")) closeSearch();
 });
 document.addEventListener("keydown", (e) => {
-  if (e.key === 'Escape' && !$('#map-tooltip').hidden) {
-    hideTooltip();
-    return;
-  }
   if (
     e.key === "/" &&
     !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)
@@ -677,7 +623,7 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && e.target.closest("#us-map"))
     selectedCounty ? returnToState() : clearSelection();
 });
-elections = createElectionView({ onChange: () => { hideTooltip(); updateMap(); updateCountyDetail(); } });
-initPatternReview(() => { hideTooltip(); updateMap(); updateCountyDetail(); });
+elections = createElectionView({ onChange: () => { updateMap(); updateCountyDetail(); } });
+initPatternReview(() => { updateMap(); updateCountyDetail(); });
 updateSelection();
 $("#zoom-out").disabled = true;

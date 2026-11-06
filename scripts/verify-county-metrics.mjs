@@ -72,6 +72,7 @@ assert.equal(contestVotesPerResident([ratioRow], 'governor', 4555).value.toFixed
 assert.equal(contestVotesPerResident([ratioRow], 'governor', 4555).provisional, true);
 assert.equal(contestVotesPerResident([{...ratioRow,totalVotes:1472,reportingCategories:[{category:'undervotes',votes:100}]}], 'governor', 4555).votes,1372,'Skipped-race ballots are excluded from candidate numerator');
 assert.equal(contestVotesPerResident([{...withUnknown,geoLevel:'county'}], 'governor', 1000).votes,155,'Explicit additive write-ins included, unclassified source fields excluded');
+assert.equal(contestVotesPerResident([{...ratioRow,totalVotes:1396,reportingCategories:[{category:'unattributedWriteIns',votes:24}]}], 'senate', 4555).votes,1396,'Known unassigned write-in votes count in race numerator without party reassignment');
 assert.equal(contestVotesPerResident([{...ratioRow,candidates:[{party:'Republican',votes:null}]}], 'governor', 4555),null);
 assert.equal(contestVotesPerResident([ratioRow,ratioRow], 'senate', 4555), null, 'Never sum concurrent seats');
 assert.equal(contestVotesPerResident([ratioRow], 'house', 4555), null, 'No unverified county-district portion ratio');

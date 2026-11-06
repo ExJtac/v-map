@@ -13,10 +13,19 @@
     </script>
     <meta
       name="description"
-      content="Explore U.S. election history, from the national map to states and counties."
+      content="Explore U.S. President, Senate, House and Governor election results by state and county, 2006–2026, with population references, source links and provisional 2026 review signals."
     />
     <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
-    <title>V-Map — A fresh perspective</title>
+    <link rel="canonical" href="https://cas-tx.com/vmap/" />
+    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="V-Map" />
+    <meta property="og:title" content="V-Map — U.S. Election Map & County History" />
+    <meta property="og:description" content="Explore U.S. election returns, population references and provisional 2026 review signals, county by county." />
+    <meta property="og:url" content="https://cas-tx.com/vmap/" />
+    <meta name="twitter:card" content="summary" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"V-Map","url":"https://cas-tx.com/vmap/","applicationCategory":"ReferenceApplication","operatingSystem":"Any modern web browser","isAccessibleForFree":true,"description":"Interactive U.S. election history for President, Senate, House and Governor, with source-backed county returns, population references and provisional review signals.","publisher":{"@type":"Organization","name":"CAS-TX","url":"https://cas-tx.com/"}}</script>
+    <title>V-Map — U.S. Election Map & County History, 2006–2026</title>
   </head>
   <body>
     <header class="site-header">
@@ -35,8 +44,8 @@
       <div class="page-heading">
         <div>
           <div class="eyebrow">PLACE. PEOPLE. PERSPECTIVE.</div>
-          <h1>Every place has a history.</h1>
-          <p>Explore election returns, one state and county at a time.</p>
+          <h1>U.S. elections, county by county.</h1>
+          <p>Explore President, Senate, House and Governor election returns from 2006–2026, with sources, population references and provisional review signals.</p>
         <span class="country-tag"
           ><svg viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="12" cy="12" r="9" />
@@ -59,6 +68,10 @@
         </aside>
       </div>
 
+      <section id="research-activity" class="research-activity" aria-label="Research update status">
+        <strong id="research-activity-title">V-MAP AI-assisted election research</strong>
+        <p id="research-activity-detail">Verified research updates and current review status appear here.</p>
+      </section>
       <section
         class="current-election-banner"
         id="current-election-banner"
@@ -154,7 +167,10 @@
           <section id="pattern-county-browser" class="pattern-county-browser" aria-labelledby="pattern-county-heading" hidden>
             <h3 id="pattern-county-heading">Flagged counties</h3>
             <p id="pattern-county-context"></p>
+            <label class="pattern-filter-label" for="pattern-county-filter">Filter the review list</label>
+            <input id="pattern-county-filter" type="text" placeholder="County or state…" autocomplete="off" />
             <ul id="pattern-county-list" aria-label="Counties with provisional statistical patterns"></ul>
+            <p id="pattern-filter-empty" hidden>No counties match this filter.</p>
             <p id="pattern-navigation-status" role="status" hidden></p>
           </section>
           <div class="section-label" id="region-heading">REGION</div>
@@ -263,12 +279,12 @@
             </button>
           </div>
           <div id="pattern-legend" class="pattern-legend" aria-label="County review border legend" hidden>
-            <span class="pattern-legend-title">Unusual voting patterns · county borders</span>
+            <span class="pattern-legend-title">Changes worth reviewing · county borders</span>
             <span><i class="pattern-swatch pattern-democrat" aria-hidden="true"></i>Toward Democrats</span>
             <span><i class="pattern-swatch pattern-republican" aria-hidden="true"></i>Toward Republicans</span>
-            <span id="pattern-neutral-key" hidden><i class="pattern-swatch pattern-neutral" aria-hidden="true"></i>Participation pattern</span>
+            <span id="pattern-neutral-key" hidden><i class="pattern-swatch pattern-neutral" aria-hidden="true"></i>Total votes / population</span>
             <span id="pattern-mixed-key" hidden><i class="pattern-swatch pattern-mixed" aria-hidden="true"></i>Both party directions</span>
-            <small>Share swings or party-count growth relative to state peers · provisional review</small>
+            <small>40% count changes · 10-point population or share swings · provisional review</small>
           </div>
           <div class="map-stage" id="map-stage">
             <svg
@@ -284,10 +300,6 @@
                 <g id="county-labels" aria-hidden="true"></g>
               </g>
             </svg>
-            <div id="map-tooltip" class="map-tooltip" role="region" aria-label="Map details" tabindex="0" hidden>
-              <button id="close-map-tooltip" class="close-map-tooltip" type="button" aria-label="Close map details">×</button>
-              <div id="map-tooltip-content"></div>
-            </div>
             <div
               class="map-controls"
               role="group"
@@ -332,6 +344,11 @@
             ><span class="legend-note">Color = most votes in one contest</span>
           </div>
           <aside id="pattern-review-summary" class="pattern-review-summary" aria-label="2026 county pattern review" hidden></aside>
+          <section id="map-tooltip" class="selected-place-info" aria-label="Selected place election details" hidden>
+            <h2>Selected place details</h2>
+            <div id="map-tooltip-content"></div>
+          </section>
+          <section id="history-charts" class="history-charts" aria-label="Election history graphs for the selected place" hidden></section>
         </div>
       </section>
       <section
@@ -418,6 +435,11 @@
         </figure>
       </section>
       <footer class="page-footer">
+        <nav class="data-page-links" aria-label="About V-Map data">
+          <a href="%BASE_URL%about/">About V-Map</a>
+          <a href="%BASE_URL%methodology/">Review methodology</a>
+          <a href="%BASE_URL%coverage/">Data coverage</a>
+        </nav>
         <span>Twenty years. Thousands of local stories.</span
         ><a
           href="https://github.com/topojson/us-atlas"

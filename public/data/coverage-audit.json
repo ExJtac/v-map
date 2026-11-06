@@ -42,6 +42,14 @@
     {
       "name": "current-governors",
       "priority": 120
+    },
+    {
+      "name": "research-house",
+      "priority": 130
+    },
+    {
+      "name": "research-senate",
+      "priority": 130
     }
   ],
   "coverage": [
@@ -268,11 +276,11 @@
       "mappableCounties": 2300,
       "statesWithCountyReturns": 33,
       "statesWithReturns": 34,
-      "heldRecords": 777,
+      "heldRecords": 711,
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 0,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 0
+      "resolvedSourceOverlaps": 68
     },
     {
       "office": "senate",
@@ -322,17 +330,17 @@
     {
       "office": "senate",
       "year": 2026,
-      "records": 1432,
-      "countyContestRecords": 1410,
-      "uniqueCounties": 1410,
-      "mappableCounties": 1410,
-      "statesWithCountyReturns": 18,
+      "records": 1592,
+      "countyContestRecords": 1570,
+      "uniqueCounties": 1570,
+      "mappableCounties": 1570,
+      "statesWithCountyReturns": 20,
       "statesWithReturns": 25,
       "heldRecords": 0,
       "unitemizedRunnerUpRecords": 0,
-      "provisionalRecords": 1432,
+      "provisionalRecords": 1592,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 0
+      "resolvedSourceOverlaps": 2
     },
     {
       "office": "house",
@@ -481,7 +489,7 @@
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 0,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 12
+      "resolvedSourceOverlaps": 51
     },
     {
       "office": "house",
@@ -501,15 +509,15 @@
     {
       "office": "house",
       "year": 2026,
-      "records": 2379,
-      "countyContestRecords": 2097,
-      "uniqueCounties": 1753,
-      "mappableCounties": 1753,
-      "statesWithCountyReturns": 26,
-      "statesWithReturns": 32,
+      "records": 2418,
+      "countyContestRecords": 2127,
+      "uniqueCounties": 1768,
+      "mappableCounties": 1768,
+      "statesWithCountyReturns": 27,
+      "statesWithReturns": 33,
       "heldRecords": 0,
       "unitemizedRunnerUpRecords": 0,
-      "provisionalRecords": 2379,
+      "provisionalRecords": 2418,
       "unmatchedCountyFips": [],
       "resolvedSourceOverlaps": 54
     },

@@ -72,3 +72,37 @@ The follow-up added137actual county-district records and4district summaries to `
 Every current record retains unofficial/provisional status and `asOf`; priorVirginia fields remain present. SHA256comparison confirms all six historicalHouseJSONfiles remain byte-for-byte unchanged. The final offline rebuild passed. New receipts and pinned hashes are in `additional2026-sources.json` and `additional2026-validation.json`.
 
 Delaware's official current results landing page returned403during the bounded probe; it was not imported or represented as zero votes. Other2026gaps remain. SD Senate/Governor source discovery was shared withScout for independent integration; this worker changedHouseonly.
+
+## New isolated research batch — Arizona2022/2026 (frozen for review)
+
+The new `research-house` bundle owns `scripts/import-research-house.py`, ignored `scripts/source-data/research-house/`, and `public/data/research-house/`. It does not modify prior imports or UI registration. Arizona adds30actual2026county-district portions coveringall15counties/all9districts, plus9district summaries. Its comparable2022primarybaseline contains the same30actualportions plus9summaries, replacing earlier partial/research-source values when the parent registers priority130.
+
+2026source: the Arizona Secretary of State's [official Enhanced Voting export](https://app.enhancedvoting.com/cdn/results/Arizona/export-110326GeneralElection.json). All15localResults publications andall9Housecontests are present. All49candidateID county sums match the separately published official district summaries in that export. This is a same-authority publication control, not an independent authority certification. `createdAt`2026-11-06T21:13:20.2005274Z is retained separately from retrieval. All2026records remain unofficial/provisional, and complete published contest scope does not imply completed counting.
+
+2022source: [Arizona certified statewide canvass](https://apps.azsos.gov/election/2022/General/canvass/2022dec05_general_election_canvass_web.pdf), House tables on pages1–2. Direct PDF download returned403including a normal browserUserAgent. The web extraction service could read the actual primary PDF; the verbatim returned text is saved as a JSON string with extraction metadata and SHA256. This is explicitly **not a hash of downloaded PDF bytes**. All26candidate county-row sums match the primary TOTALcolumn. Source dashes remain absent; actual printedzeroes remainzeroes. Named qualified write-ins preserve the primary ballot parties. This repairs earlier count and party omissions: SantaCruzAZ7primaryD8209/R4907 versus earlier6275/3787; AZ8/AZ9Democratic namedwrite-ins are preserved with their actual source parties.
+
+Both years' exact30portion inventories hash to `7da0af2af5b7b0636aec3756b9b62c138d6a1e4c7ada2583065b28445e2eed81`. Scope proofs, all75candidate controls, source hashes, and normalized file hashes are in the manifest and ignored `validation.json`. All nonnegative integer sums, unique identities, exactFIPS joins, stages/general/non-special identities, and record totals passed the offline importer. Atlas/root independently review qualification and publish registration; this worker does not deploy or push.
+
+The existing source constraints remain: source2026generic unassigned/unofficial write-ins are reporting categories rather than named people. Historical2022qualified namedwrite-ins are candidates. Candidate votes are not labeled ballots cast. New2026data for Oklahoma/Nevada is not inferred: direct probes were blocked/redirected and are not imported. The next bounded candidate is NewMexico's directly reachable official federal feed.
+
+## NewMexico second batch — normalized staging only
+
+At the parent's request, the reviewed Arizona public bundle remains frozen. Combined Arizona+NewMexico candidate files are staged only under ignored `scripts/source-data/research-house/nm-staging/`; no public Arizona files were rewritten. Reproduce using `python3 scripts/import-research-house.py --include-nm --output-dir scripts/source-data/research-house/nm-staging`.
+
+NewMexico provides43explicitcounty-district portions acrossall33counties/all3districts in both2022and2026, plus3separate district summaries eachyear. The official[2022results archive](https://electionresults.sos.nm.gov/?eid=2838) is labeledOfficialResults; the[current2026federal page](https://electionresults.sos.nm.gov/resultsSW.aspx?type=FED&map=CTY) is unofficial. Actual county API records and independently published districtCSVcandidate totals are pinned with retrieval timestamps and SHA256 in `nm-sources.json`. The official site specifiesMT for update times; local source strings and normalized offsets are retained separately from retrieval. SourceCountyID is internal; exact county-name joins to existingFIPS are used instead.
+
+The primary API suppresses small counts with`*`. They remain explicit `votes:null`, `totalVotes:null`, `missingVoteCount`, `incomplete`, and `sourceNeedsReview`, with the original`*` preserved. No district residual is allocated back to these rows.2022has20suppressedcandidatecells in19county-district records (24fullynumeric portions);2026hasone suppressed cell—GabrielVasquez,ChavesCounty,CD2—so42portions are fullynumeric andone held.2026Chaves has other congressional portions, but whole-county comparison must remain held until every portion qualifies.
+
+TenNewMexico candidateID county-sum controls exactly equal the separate official districtCSV; four controls are explicitly withheld due to source suppression (three2022,one2026). They are not reported as passed. The exact43portion inventories match bothyears, SHA256`0e563803ae500ea7c1f91a21e658e4a7352ff6b207d3ff10d5482efa7d6d66cf`; complete published geometry does not establish numeric completeness or completed counting. The combined staging receipt includes75Arizona passed controls,10NewMexico passed controls,and4NewMexico source holds.
+
+Staged primary2022rows with suppressed counts should not silently replace previously reviewed numeric baseline evidence: the parent/Atlas must review precedence and qualification before publishing them. The staging source holds make the limitations explicit. `validation-with-nm.json` preserves every candidate control and source-suppression status. No paid provider calls, other agents, deployments, or pushes were used by this worker.
+
+### Arizona default-build reproducibility repair
+
+The importer now emits NM-only scope metadata, limits, and quality counters only when NM is actually included. The default offline build exactly reproduces the approved Arizona manifest as well as both normalized data files; no NM staging rows were promoted. Verified SHA256:
+
+- Manifest: `329c56179670a339f5ac69e92f1fb3ca5a6b6321dec09ff6eb706a23abf84be7`
+- House2022: `8dde8edd835873088cbb056200887cce7309f08995e68aa8f7ca9bed14ebf562`
+- House2026: `d33465a0234394558319df650815741807aa4f3b683a01e296489efa5f89de29`
+
+The default import and exact approved-hash assertions passed. Arizona normalized data and qualification inputs are unchanged. Root and Atlas were notified directly; the default public bundle is frozen again.

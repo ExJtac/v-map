@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
   "electionYear": 2026,
-  "retrievedAt": "2026-11-06T19:21:15.867362+00:00",
+  "retrievedAt": "2026-11-06T21:34:05.293984+00:00",
   "status": "unofficial-snapshot",
   "offices": [
     {
       "office": "senate",
       "statesWithReturns": 25,
-      "statesWithCountyReturns": 18,
-      "uniqueCounties": 1410,
-      "countyContestRecords": 1410,
-      "records": 1432,
-      "provisionalRecords": 1432,
-      "retrievedAt": "2026-11-06T19:21:15.383598+00:00"
+      "statesWithCountyReturns": 20,
+      "uniqueCounties": 1570,
+      "countyContestRecords": 1570,
+      "records": 1592,
+      "provisionalRecords": 1592,
+      "retrievedAt": "2026-11-06T21:34:05.293984+00:00"
     },
     {
       "office": "house",
-      "statesWithReturns": 32,
-      "statesWithCountyReturns": 26,
-      "uniqueCounties": 1753,
-      "countyContestRecords": 2097,
-      "records": 2379,
-      "provisionalRecords": 2379,
-      "retrievedAt": "2026-11-06T19:20:47.256356+00:00"
+      "statesWithReturns": 33,
+      "statesWithCountyReturns": 27,
+      "uniqueCounties": 1768,
+      "countyContestRecords": 2127,
+      "records": 2418,
+      "provisionalRecords": 2418,
+      "retrievedAt": "2026-11-06T21:32:46.882423+00:00"
     },
     {
       "office": "governor",

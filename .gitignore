@@ -8,3 +8,4 @@ scripts/source-data/
 __pycache__/
 *.pyc
 *.log
+/.vmap-*.local.json
