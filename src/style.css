@@ -1779,3 +1779,18 @@ main {
 .count-status { font-weight: 600; }
 .pattern-evidence { margin-top: 8px; }
 .pattern-evidence summary { cursor: pointer; font-size: 13px; font-weight: 600; }
+.pattern-county-browser { margin: 20px 0; padding-block: 16px; border-block: 1px solid var(--line); }
+.pattern-county-browser h3 { margin: 0; font-size: 17px; letter-spacing: -.2px; }
+.pattern-county-browser > p { margin: 8px 0 10px; color: #526359; font-size: 12px; line-height: 1.5; }
+#pattern-county-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 7px; }
+.pattern-county-button { display: grid; gap: 3px; width: 100%; padding: 9px 10px; text-align: left; border: 1px solid #dce3de; border-left: 4px solid var(--pattern-color); border-radius: 6px; background: #fff; color: #294335; cursor: pointer; }
+.pattern-county-button strong { font-size: 14px; font-weight: 650; }
+.pattern-county-button span { font-size: 12px; color: var(--pattern-color); }
+.pattern-county-button:hover, .pattern-county-button[aria-pressed="true"] { background: #eee9f3; border-color: var(--pattern-color); }
+.pattern-list-empty { font-size: 12px; line-height: 1.5; color: #526359; }
+.map-panel { scroll-margin-top: 18px; }
+@media (max-width: 680px) {
+  .pattern-county-browser { grid-column: 1 / -1; min-width: 0; }
+  #pattern-county-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pattern-county-button { min-height: 64px; overflow-wrap: anywhere; }
+}

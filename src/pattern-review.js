@@ -1,6 +1,7 @@
 import { appUrl } from './paths.js';
 import { reviewForCounty, stateReviewSummary, patternDirection } from './2026-anomalies.js';
 import { countingStatus } from './counting-status.js';
+import { OFFICE_LABELS } from './election-data.js';
 
 let report, request, failed = false;
 const active = (office, year) => year === 2026 && office !== 'geography';
@@ -26,6 +27,39 @@ export function hasPatternFlag(office, year, fips) {
 }
 export function countyPatternDirection(office, year, fips) {
   return hasPatternFlag(office, year, fips) ? patternDirection(reviewForCounty(report, office, fips).flags) : 'neutral';
+}
+let countyListKey = '';
+export function updatePatternCountyList({ office, year }, states, selectedCounty, onSelect) {
+  const section = document.querySelector('#pattern-county-browser');
+  section.hidden = !active(office, year);
+  if (section.hidden) { document.querySelector('#pattern-navigation-status').hidden = true; return; }
+  const places = Object.entries(report?.counties || {}).flatMap(([fips, county]) => {
+    const review = reviewForCounty(report, office, fips);
+    const state = states.find(state => state.id === county.stateFips);
+    return review.flags.length && state ? [{ fips, name: county.name, state, direction: patternDirection(review.flags) }] : [];
+  }).sort((a, b) => a.state.properties.name.localeCompare(b.state.properties.name) || a.name.localeCompare(b.name));
+  const key = `${office}:${year}:${failed}:${Boolean(report)}:${places.map(p => p.fips).join(',')}`;
+  if (key !== countyListKey) {
+    countyListKey = key;
+    document.querySelector('#pattern-navigation-status').hidden = true;
+    document.querySelector('#pattern-county-context').textContent = report
+      ? `${OFFICE_LABELS[office]} · ${year} · ${places.length} nationwide.${places.length ? ' Select a county to zoom in.' : ''} Provisional review.`
+      : failed ? 'County review unavailable.' : 'Loading county review…';
+    const list = document.querySelector('#pattern-county-list');
+    list.replaceChildren();
+    for (const place of places) {
+      const item = node('li', '', '');
+      const button = node('button', `pattern-county-button pattern-${place.direction}`, '');
+      button.type = 'button'; button.dataset.fips = place.fips;
+      const direction = { democrat: 'Toward Democrats', republican: 'Toward Republicans', neutral: 'Participation / other pattern' }[place.direction];
+      button.setAttribute('aria-label', `Zoom to ${place.name}, ${place.state.properties.name}. ${direction}. Provisional review.`);
+      button.append(node('strong', '', `${place.name}, ${place.state.abbreviation}`), node('span', '', direction));
+      button.addEventListener('click', () => onSelect(place.fips));
+      item.append(button); list.append(item);
+    }
+    if (report && !places.length) list.append(node('li', 'pattern-list-empty', 'No counties meet the flag criteria for this office in the imported snapshot. Unassessed counties remain unassessed.'));
+  }
+  document.querySelectorAll('#pattern-county-list button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.fips === selectedCounty?.id)));
 }
 function summaryFor(office, stateFips) {
   if (stateFips) return stateReviewSummary(report, office, stateFips);

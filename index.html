@@ -144,6 +144,12 @@
             >
             <div id="search-results" class="search-results" hidden></div>
           </div>
+          <section id="pattern-county-browser" class="pattern-county-browser" aria-labelledby="pattern-county-heading" hidden>
+            <h3 id="pattern-county-heading">Flagged counties</h3>
+            <p id="pattern-county-context"></p>
+            <ul id="pattern-county-list" aria-label="Counties with provisional statistical patterns"></ul>
+            <p id="pattern-navigation-status" role="status" hidden></p>
+          </section>
           <div class="section-label" id="region-heading">REGION</div>
           <div
             class="region-list"
@@ -236,7 +242,7 @@
           </div>
         </aside>
 
-        <div class="map-panel">
+        <div class="map-panel" tabindex="-1" aria-label="Selected map view">
           <div class="map-topline">
             <span
               ><span class="live-dot"></span

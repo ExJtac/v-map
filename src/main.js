@@ -9,7 +9,7 @@ import countyLabels from "./county-labels.json";
 import { createElectionView } from "./election-view.js";
 import { renderCountyMetrics, renderStateMetrics } from "./county-hover.js";
 import { initSupport } from "./support.js";
-import { initPatternReview, hasPatternFlag, countyPatternDirection, updatePatternSummary } from './pattern-review.js';
+import { initPatternReview, hasPatternFlag, countyPatternDirection, updatePatternSummary, updatePatternCountyList } from './pattern-review.js';
 
 initSupport();
 
@@ -185,8 +185,8 @@ function updateCountyDetail() {
   }
   const token = ++detailToken;
   detail.hidden = !selectedState;
-  if (selectedCounty) countyCard(detail, selectedCounty, () => token === detailToken);
-  else if (selectedState) stateCard(detail, selectedState, () => token === detailToken);
+  if (selectedCounty) return countyCard(detail, selectedCounty, () => token === detailToken);
+  else if (selectedState) return stateCard(detail, selectedState, () => token === detailToken);
 }
 function positionTooltip() {
   if (!tooltipPoint) return;
@@ -304,6 +304,7 @@ function updateMap() {
     .data(stateCounties.filter(c => hasPatternFlag(context.office, context.year, c.id)), c => c.id)
     .join('path').attr('class', c => `pattern-outline pattern-${countyPatternDirection(context.office, context.year, c.id)}`).attr('d', path);
   updatePatternSummary(context, selectedState?.id);
+  updatePatternCountyList(context, states, selectedCounty, zoomToPatternCounty);
   $("#map-status").textContent =
     countyError ||
     (countiesLoading
@@ -380,7 +381,7 @@ function updateSelection() {
   $("#clear-selection").hidden = !selectedState;
   elections?.setSelection({ state: selectedState, county: selectedCounty });
   updateMap();
-  updateCountyDetail();
+  return updateCountyDetail();
 }
 async function loadCounties() {
   countyPromise ||= import("us-atlas/counties-albers-10m.json")
@@ -474,6 +475,32 @@ async function selectState(state) {
     }
   }
 }
+async function zoomToPatternCounty(fips) {
+  const context = elections.countyContext('');
+  if (!hasPatternFlag(context.office, context.year, fips)) return;
+  const state = states.find(state => state.id === fips.slice(0, 2));
+  if (!state) return;
+  const status = $('#pattern-navigation-status');
+  status.hidden = false;
+  status.textContent = `Loading county in ${state.properties.name}…`;
+  let token = navigationToken;
+  if (selectedState?.id !== state.id || countiesLoading || !stateCounties.length) {
+    const navigation = selectState(state);
+    token = navigationToken;
+    await navigation;
+  }
+  const current = elections.countyContext('');
+  if (token !== navigationToken || current.office !== context.office || current.year !== context.year || selectedState?.id !== state.id) return;
+  const county = stateCounties.find(county => county.id === fips);
+  if (!county) { status.textContent = 'County boundaries could not load. Select the county again to retry.'; return; }
+  await selectCounty(county);
+  const afterDetails = elections.countyContext('');
+  if (token !== navigationToken || selectedCounty?.id !== fips || afterDetails.office !== context.office || afterDetails.year !== context.year) return;
+  status.textContent = `${county.properties.name}, ${state.properties.name} selected.`;
+  const panel = $('.map-panel');
+  panel.focus({ preventScroll: true });
+  panel.scrollIntoView({ block: 'start', behavior: reducedMotion ? 'auto' : 'smooth' });
+}
 function selectCounty(county) {
   if (!selectedState || county.id.slice(0, 2) !== selectedState.id) return;
   selectedCounty = county;
@@ -481,7 +508,7 @@ function selectCounty(county) {
   $("#state-search").value = "";
   hideTooltip();
   fitFeature(county);
-  updateSelection();
+  return updateSelection();
 }
 function returnToState() {
   if (selectedState) {
