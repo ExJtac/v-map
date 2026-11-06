@@ -627,9 +627,24 @@ h3 {
   text-decoration: underline;
 }
 .header-actions { margin-left: auto; display: flex; align-items: center; gap: 18px; }
-.header-actions .local-badge { margin-left: 0; text-decoration: none; }
+.header-actions .local-badge { margin-left: 0; text-decoration: none; white-space: nowrap; }
 .support-nav { color: var(--green); font-size: 14px; font-weight: 650; text-decoration: none; white-space: nowrap; }
 .support-nav:hover { text-decoration: underline; }
+.page-heading > div { min-width: 0; }
+.page-heading .country-tag { margin-top: 10px; width: fit-content; }
+.header-support { flex: 0 0 320px; display: grid; grid-template-columns: 144px minmax(0, 1fr); align-items: center; gap: 14px; padding: 12px; margin-left: 24px; background: white; border: 1px solid #dce5df; border-radius: 12px; }
+.header-support img { display: block; width: 144px; height: auto; border-radius: 7px; }
+.header-support:has(#header-support-qr[hidden]) { grid-template-columns: minmax(0, 1fr); }
+.header-support-heading { font-size: 16px; color: #246c5e; font-weight: 700; text-decoration: none; }
+.header-support p { font-size: 13px; line-height: 1.5; color: #65776e; margin: 7px 0; }
+.header-support span, .header-support small { display: block; color: #80908c; font-size: 11px; line-height: 1.6; }
+.header-support-more { display: inline-block; margin-top: 8px; color: #246c5e; font-size: 12px; }
+@media (max-width: 760px) {
+  .site-header { gap: 12px; }
+  .brand { flex-shrink: 0; white-space: nowrap; }
+  .page-heading { flex-wrap: wrap; gap: 20px; }
+  .header-support { flex: 1 1 100%; width: 100%; margin-left: 0; grid-template-columns: 144px minmax(0, 1fr); }
+}
 .support-section { margin-top: 28px; padding: clamp(24px, 4vw, 48px); display: grid; grid-template-columns: minmax(0, 1fr) 290px; align-items: center; gap: 40px; background: #fff; border: 1px solid var(--line); border-radius: 14px; scroll-margin-top: 24px; }
 .support-copy h2 { font-size: clamp(24px, 3vw, 35px); line-height: 1.15; letter-spacing: -.8px; margin: 14px 0; max-width: 520px; }
 .support-copy > p { max-width: 550px; line-height: 1.7; color: #65776e; }

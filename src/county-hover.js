@@ -1,4 +1,4 @@
-import { contestMetrics, compareContest, expectedPriorYear, populationAt, populationChange, regularNovemberBallot, ballotComparison, ballotsPerResident } from './county-metrics.js';
+import { contestMetrics, compareContest, expectedPriorYear, populationAt, regularNovemberBallot, ballotComparison, ballotsPerResident, votingMethodShares } from './county-metrics.js';
 import { loadElection, OFFICE_LABELS } from './election-data.js';
 import { loadCountySupplement, mergeElectionData } from './county-data.js';
 import { appUrl } from './paths.js';
@@ -40,9 +40,6 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
   if (source?.url) { const a = node('a', 'county-tip-source', 'Source'); a.href = source.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; popLine.append(' · ', a); }
   container.append(popLine);
   if (pop?.note) container.append(node('p', 'county-tip-note', pop.note));
-  const priorPopulation = pop && records.find(r => r.year === pop.year - 1 && r.sourceId === pop.sourceId);
-  const popChange = populationChange(pop, priorPopulation);
-  if (popChange != null) container.append(node('div', 'county-tip-change', `Population ${change(popChange)} vs ${priorPopulation.year}`));
   if (office === 'geography') return;
   let turnout;
   try { turnout = await loadTurnout(); } catch { /* No ballot-level source for this selection. */ }
@@ -55,7 +52,8 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
   if (ballotSource?.url) { const a = node('a', 'county-tip-source', 'Source'); a.href = ballotSource.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; ballotLine.append(' · ', a); }
   container.append(ballotLine);
   if (ballot?.sourceUpdatedAt) container.append(node('div', 'county-tip-note', `Source update: ${ballot.sourceUpdatedAt}`));
-  appendResidentRatio(container, ballot, pop);
+  appendResidentRatio(container, ballot, pop, year);
+  appendVotingMethods(container, ballot);
   if (ballot?.boundaryNote) container.append(node('p', 'county-tip-note', ballot.boundaryNote));
   if (regular) {
     const comparison = ballotComparison(ballotRecords, year, regular);
@@ -107,13 +105,24 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
   container.append(node('p', 'county-tip-note', 'Contest votes are not a count of individual voters; totals can use different source bases. Other or unitemized votes are not assigned to a party.'));
 }
 
-function appendResidentRatio(container, ballot, pop) {
+function appendResidentRatio(container, ballot, pop, year) {
   const ratio = ballotsPerResident(ballot?.ballotsCast, pop?.value);
   if (ratio == null) {
-    container.append(node('p', 'county-tip-note', 'Reported ballots / total residents: N/A'));
+    container.append(node('p', 'county-tip-note', `% of population that voted in ${year}: unavailable`));
     return;
   }
-  container.append(node('p', 'county-tip-note', `Reported ballots / total residents: ${ratio.toFixed(1)}% · population ${pop.referenceDate || pop.year}${ballot.provisional || ballot.unofficial || ballot.incomplete ? ' · provisional ballots; counting continues' : ''}. Includes children; not eligible-voter turnout.`));
+  container.append(node('p', 'county-tip-note', `% of population that voted in ${year}: ${ratio.toFixed(1)}% · reported ballots ÷ ${pop.year} resident population estimate${ballot.provisional || ballot.unofficial || ballot.incomplete ? ' · provisional; counting continues' : ''}. Total population includes children.`));
+}
+
+function appendVotingMethods(container, ballot) {
+  const methods = votingMethodShares(ballot);
+  if (!methods) {
+    container.append(node('p', 'county-tip-note', 'Mail / polling-place shares: unavailable in this cycle’s data.'));
+    return;
+  }
+  const line = node('p', 'county-tip-note', `Vote-by-mail ballots: ${methods.mail.toFixed(1)}% · Polling-place / vote-center ballots: ${methods.precinct.toFixed(1)}% of reported ballots.`);
+  container.append(line, node('p', 'county-tip-note', 'Source categories, not physical return methods: mail ballots may be returned in person or at drop boxes.'));
+  if (ballot.year === 2020) container.append(node('p', 'county-tip-note', 'Some 2020 counties also classified ballots issued at voting locations as vote-by-mail.'));
 }
 
 // State participation uses independently sourced statewide ballots, never sums of contests.
@@ -138,7 +147,8 @@ export async function renderStateMetrics(container, {name, state, id, office, ye
   container.append(ballotLine);
   if (ballot?.sourceUpdatedAt) container.append(node('div', 'county-tip-note', `Source update: ${ballot.sourceUpdatedAt}`));
   if (ballot?.boundaryNote) container.append(node('p', 'county-tip-note', ballot.boundaryNote));
-  appendResidentRatio(container, ballot, pop);
+  appendResidentRatio(container, ballot, pop, year);
+  appendVotingMethods(container, ballot);
   if (regular) {
     const comparison = ballotComparison(ballotRecords, year, regular);
     const text = comparison.value == null ? `Voter change (reported ballots): N/A vs ${comparison.priorYear} · ${comparison.reason}` : `Voter change (reported ballots): ${change(comparison.value)} vs ${comparison.priorYear}${comparison.provisional ? ` · provisional compared with final ${comparison.priorYear}; counting continues` : ''}`;

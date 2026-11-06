@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { contestMetrics, compareContest, relativeChange, previousElectionYear, expectedPriorYear, populationAt, populationChange, regularNovemberBallot, ballotComparison, ballotsPerResident } from '../src/county-metrics.js';
+import { contestMetrics, compareContest, relativeChange, previousElectionYear, expectedPriorYear, populationAt, populationChange, regularNovemberBallot, ballotComparison, ballotsPerResident, votingMethodShares } from '../src/county-metrics.js';
 const row = { stateFips:'01', stage:'general', special:false, totalVotes:150, candidates:[{party:'Republican',votes:90},{party:'Democrat',votes:50},{party:'Other',votes:10}] };
 assert.deepEqual(contestMetrics(row), {total:150,republican:90,democrat:50});
 assert.equal(relativeChange(10, 0), null);
@@ -60,4 +60,10 @@ assert.equal(govComparison.provisional,true);
 assert.ok(compareContest({...row,provisional:true,sourceNeedsReview:true}, [row], 'governor').reason);
 assert.ok(compareContest(row, [{...row,provisional:true}], 'governor').reason);
 assert.equal(ballotComparison([turnout2022,{...turnout2026,provisional:false}],2026,true).provisional,false);
+assert.deepEqual(votingMethodShares({ballotsCast:100, voteByMailVoters:80, precinctVoters:20}), {mail:80, precinct:20});
+assert.deepEqual(votingMethodShares({ballotsCast:100, voteByMailVoters:100, precinctVoters:0}), {mail:100, precinct:0});
+assert.equal(votingMethodShares({ballotsCast:100}), null);
+assert.equal(votingMethodShares({ballotsCast:100, voteByMailVoters:80, precinctVoters:10}), null);
+assert.equal(votingMethodShares({ballotsCast:0, voteByMailVoters:0, precinctVoters:0}), null);
+assert.equal(votingMethodShares({ballotsCast:100, voteByMailVoters:null, precinctVoters:100}), null);
 console.log('County metric checks passed');

@@ -93,3 +93,10 @@ export function ballotsPerResident(ballots, population) {
   return Number.isFinite(ballots) && ballots >= 0 && Number.isFinite(population) && population > 0
     ? ballots / population * 100 : null;
 }
+
+export function votingMethodShares(ballot) {
+  if (!ballot || !Number.isFinite(ballot.ballotsCast) || ballot.ballotsCast <= 0) return null;
+  const mail = ballot.voteByMailVoters, precinct = ballot.precinctVoters;
+  if (!Number.isInteger(mail) || !Number.isInteger(precinct) || mail < 0 || precinct < 0 || mail + precinct !== ballot.ballotsCast) return null;
+  return { mail: mail / ballot.ballotsCast * 100, precinct: precinct / ballot.ballotsCast * 100 };
+}

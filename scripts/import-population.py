@@ -139,7 +139,7 @@ def main():
         'Valdez-Cordova retains Vintage 2019 figures; successor areas are not allocated to the old geometry.',
         'Pre-2013 Bedford County figures are withheld due to the independent-city merger.',
         'Same-FIPS estimates use source-vintage boundaries; 2017 map outlines are a geographic reference.',
-        'Annual percentage change is shown only within one source series, never across a vintage splice.'
+        'Displayed population participation uses the selected election cycle ballots and a dated resident estimate; it is not population growth versus a prior year.'
     ]
     dump(OUT / 'counties.json', dict(schemaVersion=1, sources=sources, counties=counties, states=states))
     manifest = dict(schemaVersion=1, url='/data/population/counties.json', sources=sources,

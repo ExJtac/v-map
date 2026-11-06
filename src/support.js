@@ -8,11 +8,16 @@ export function initSupport() {
   const feedback = document.querySelector('#support-copy-status');
   const input = document.querySelector('#support-invoice');
   const open = document.querySelector('#support-open-wallet');
+  const headerQr = document.querySelector('#header-support-qr');
+  const headerStatus = document.querySelector('#header-support-status');
   input.value = wallet.invoice;
   open.href = `lightning:${wallet.invoice}`;
   const expiry = new Intl.DateTimeFormat('en-US', {
     timeZone: 'America/Denver', month: 'long', day: 'numeric', year: 'numeric',
     hour: 'numeric', minute: '2-digit',
+  }).format(new Date(wallet.expiresAt));
+  const shortExpiry = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Denver', month: 'short', day: 'numeric',
   }).format(new Date(wallet.expiresAt));
   let expiryTimer;
 
@@ -21,6 +26,9 @@ export function initSupport() {
     const remaining = Date.parse(wallet.expiresAt) - Date.now();
     const active = remaining > 0;
     actions.hidden = qr.hidden = details.hidden = !active;
+    if (headerQr) headerQr.hidden = !active;
+    if (headerStatus) headerStatus.textContent = active
+      ? `Lightning · expires ${shortExpiry}` : 'Payment request expired';
     status.textContent = active
       ? `Lightning payment request · expires ${expiry} Mountain time`
       : 'This payment request has expired. Please check back for a new support link.';

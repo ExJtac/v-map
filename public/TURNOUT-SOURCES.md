@@ -1,5 +1,9 @@
 # Reported county ballots cast
 
+The interface shows vote-by-mail and polling-place/vote-center shares only when both published source counts sum to that cycle's reported ballots. The checked 2026 [official status JSON](https://media.sos.ca.gov/media/status_GG.json), ASCII A-message feed, and Governor/House feeds contain no usable ballot-method split. No split is inferred from candidate votes or unprocessed ballots. Historical percentages remain tied to their own election cycle.
+
+These categories do not establish postal versus physical return: [California's voting guide](https://www.sos.ca.gov/elections/voter-registration/vote-mail) permits mail ballots to be returned by USPS, drop box, or hand delivery. The 2020 participation table also notes that some counties counted ballots issued at voting locations as vote-by-mail. Source categories and this limitation stay explicit in the interface.
+
 Imported November 6, 2026 from the California Secretary of State's [2026 election media feed](https://media.sos.ca.gov/). This is an unofficial snapshot, separate from candidate vote totals. It is not a live polling service or final turnout figure.
 
 `scripts/import-turnout.py` parses county reporting-status **A messages** from [V26GG.txt](https://media.sos.ca.gov/media/V26GG.txt), using the official [ASCII data-feed guide, pages 5–8](https://cms.cdn.sos.ca.gov/media/2-ascii-file-format-v9.pdf). The guide defines the Voter Turnout field as ballots cast. County names from [S26GG.txt](https://media.sos.ca.gov/media/S26GG.txt) join exactly to the retained Census Gazetteer; California's sequential county codes are not mistaken for FIPS codes.

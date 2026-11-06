@@ -12,7 +12,7 @@ County and state cards can display **reported ballots ÷ total resident populati
 | 2010–2019 | [2010–2020 intercensal county totals](https://www2.census.gov/programs-surveys/popest/tables/2010-2020/intercensal/county/co-est2020int-pop.xlsx) | Exact county name and state join to Census FIPS registry; all 3,143 source rows reconcile to each annual national total. This is the Census-preferred intercensal series for the decade. |
 | 2020–2025 | [Vintage 2025 county estimates](https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/counties/totals/co-est2025-alldata.csv) | Exact county FIPS; all six annual county sums reconcile to source state totals. |
 
-The card selects the latest July 1 reference year at or before the selected election year. Map-only mode selects the latest available estimate. Estimates can be revised in a later vintage. The latest released county series is July 1, 2025; a 2026 estimate is not invented. Annual change is calculated only between consecutive years within one source series.
+The card selects the latest July 1 reference year at or before the selected election year. Map-only mode selects the latest available estimate. Estimates can be revised in a later vintage. The latest released county series is July 1, 2025; a 2026 estimate is not invented. The displayed population percentage describes reported ballots in the selected cycle divided by the dated resident estimate. It does not compare population growth with a previous year.
 
 Geographic exceptions:
 
