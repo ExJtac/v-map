@@ -55,3 +55,32 @@
 @media(max-width:370px){.directory-controls{grid-template-columns:1fr}
 .directory-search{grid-column:auto}
 }
+/* Separate office lists and compact, source-linked person cards. */
+.directory-office-nav{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 28px}
+.directory-office-nav a{display:flex;gap:12px;align-items:center;padding:13px 18px;background:#fff;border:1px solid #a9bfaf;border-radius:8px;text-decoration:none;color:#28533d;font-weight:750;font-size:17px}
+.directory-office-nav a[aria-current]{background:#285b44;color:white;border-color:#285b44}
+.directory-office-nav span{font-size:14px;opacity:.8}
+.directory-office-group{margin:30px 0 42px;scroll-margin-top:20px}
+.directory-group-heading{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #cbd9ce;margin-bottom:18px;padding-bottom:12px}
+.directory-group-heading h2{font-size:30px;margin:0;color:#244b38;scroll-margin-top:20px}
+.directory-group-heading>span{font-size:15px;color:#5a7060}
+.candidate-results{grid-template-columns:repeat(2,minmax(0,1fr));padding:0;list-style:none;gap:16px}
+.candidate-card{padding:20px}
+.candidate-card-main{display:flex;gap:18px;align-items:flex-start}
+.candidate-photo{display:block;flex:0 0 96px;min-width:0;text-decoration:none}
+.candidate-photo img,.candidate-photo-placeholder{display:block;width:96px;height:120px;object-fit:cover;border-radius:8px;background:#e8efea}
+.candidate-photo-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#526f5b;padding:8px}
+.candidate-photo-placeholder b{font-size:26px;line-height:1.3}
+.candidate-photo-placeholder small{font-size:11px;line-height:1.4;margin-top:8px}
+.candidate-card-text{min-width:0}
+.candidate-card h3{margin:7px 0 9px;font-size:22px}
+.candidate-card h3 a{color:#254e3a;text-decoration:none}
+.candidate-card h3 a:hover{text-decoration:underline}
+.candidate-contest{font-size:14px;margin-bottom:10px}
+.candidate-place{font-size:13px}
+.candidate-badges{font-size:12px;gap:6px}
+.candidate-brief-votes{font-size:14px;line-height:1.5;color:#526b5b;margin:12px 0 0}
+.candidate-links{margin-top:16px;padding-top:14px;border-top:1px solid #e0e8e1;font-size:14px;align-items:center}
+.candidate-profile-link{margin-right:auto;font-size:16px}
+@media(max-width:800px){.candidate-results{grid-template-columns:1fr}}
+@media(max-width:420px){.candidate-card{padding:17px}.candidate-card-main{gap:13px}.candidate-photo{flex-basis:76px}.candidate-photo img,.candidate-photo-placeholder{width:76px;height:100px}.candidate-card h3{font-size:21px}.directory-office-nav a{padding:11px 13px;font-size:16px}}

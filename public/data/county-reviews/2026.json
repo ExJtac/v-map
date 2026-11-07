@@ -1,0 +1,645 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-07T18:43:59.686578+00:00",
+  "selectionMethod": "Webb/Zapata Texas Governor required by user interest; then up to 2 Republican-direction and 2 Democratic-direction qualified own-history partyCountChange flags outside Texas, descending absolute own-party percentage count change, ties FIPS then office alphabetically; select distinct states and counties. Only 1 Republican-direction qualifying case exists outsideTexas. Fill the sixth slot with the largest qualified neutral raceVoteChange flag from an unused state, same tie rule. No selection by allegations or news availability.",
+  "sourceInput": {
+    "path": "public/data/anomalies-2026.json",
+    "sha256": "ab234a52b24334629dcd7b877a5b004d2b0c6e9f3218438deeb9022d85be774d",
+    "auditDate": "2026-11-06",
+    "eligibilityCountsOutsideTexas": {
+      "republican": 1,
+      "democrat": 163
+    }
+  },
+  "review": {
+    "status": "source_reviewed",
+    "scope": "Six source-context cases; selected facts only, no county-office cause/misconduct/exoneration finding.",
+    "inputHash": "7d57045fc0765f2f503c2f5a4d1d806972fc17a47a10f91eb0eb790bd1080c1f",
+    "approvalReceiptHash": "907f09c71737eb639b131d877df3e4604dbdc9e12f77007fdc033c98ecc3dbee"
+  },
+  "cases": [
+    {
+      "fips": "48479",
+      "county": "Webb",
+      "state": "Texas",
+      "stateFips": "48",
+      "office": "governor",
+      "flagIds": [
+        "governor-party-count-change"
+      ],
+      "flagSummary": "Saved governor Democratic count change 49.480778%, Republican count change 5.423853% versus 2022; current 2026 returns remain provisional.",
+      "flagEvidence": {
+        "currentYear": 2026,
+        "baselineYear": 2022,
+        "currentDemocratVotes": 40593,
+        "currentRepublicanVotes": 17299,
+        "priorDemocratVotes": 27156,
+        "priorRepublicanVotes": 16409,
+        "currentSource": {
+          "electionDate": null,
+          "sourceUpdatedAt": null,
+          "asOf": "2026-11-06T15:07:47+00:00",
+          "asOfBasis": "fetch time; source timestamp unavailable",
+          "sourceTimestampBasis": null,
+          "retrievedAt": "2026-11-06T15:07:47+00:00",
+          "fetchedAt": "2026-11-06T15:07:47+00:00",
+          "snapshotAsOf": "2026-11-06T10:02:00-05:00",
+          "sourceId": "modern-current-2026-tx",
+          "sourceSelection": {
+            "bundle": "modern-counties",
+            "url": "/data/modern-counties/governor-2026.json",
+            "priority": 40
+          },
+          "provisional": true,
+          "unofficial": true,
+          "countingStatus": "counting",
+          "resultStatus": "unofficial"
+        },
+        "priorSource": {
+          "electionDate": null,
+          "sourceUpdatedAt": null,
+          "asOf": null,
+          "asOfBasis": null,
+          "sourceTimestampBasis": null,
+          "retrievedAt": null,
+          "fetchedAt": null,
+          "snapshotAsOf": null,
+          "sourceId": "modern-medsl-governor-2022-tx",
+          "sourceSelection": {
+            "bundle": "modern-counties",
+            "url": "/data/modern-counties/governor-2022.json",
+            "priority": 40
+          },
+          "provisional": false,
+          "unofficial": false,
+          "countingStatus": null,
+          "resultStatus": null
+        },
+        "metricStatus": "Input dataset evidence, not independently requalified complete current-vs-prior comparison in this context pass."
+      },
+      "items": [
+        {
+          "id": "48479-governor-official-unofficial-index",
+          "title": "County posts November 3 unofficial results",
+          "publisher": "Webb County Elections Department",
+          "date": null,
+          "dateBasis": "Current county index explicitly identifies the November 3, 2026 Joint General Election; original page publication/update date not printed.",
+          "url": "https://www.webbcountytx.gov/698/Unofficial-Results-2026",
+          "type": "official_update",
+          "status": "unofficial_returns_posted",
+          "summary": "The county’s 2026 index links early-voting and combined results for the November 3 election, both labeled unofficial.",
+          "relationToFlag": "Establishes the county publisher’s reporting stage; does not explain or independently verify the flagged Governor vote-count growth.",
+          "limits": [
+            "The combined PDF opened as scanned content in the reader but yielded no readable text/image through this bridge; native GET returned 403. Its Governor table was not verified.",
+            "An unofficial release is not a completed canvass, audit result or finding about this flag."
+          ]
+        },
+        {
+          "id": "48479-governor-kgns-release",
+          "title": "Webb County releases unofficial final results",
+          "publisher": "KGNS; Angie Bravo",
+          "date": "2026-11-03",
+          "dateBasis": "Visible publication: November 3, 2026 at 11:38 PM CST; metadata November 4 at 05:38 UTC. URL uses November 4.",
+          "url": "https://www.kgns.tv/2026/11/04/webb-county-releases-unofficial-final-results-2026-midterm-elections/",
+          "type": "contextual_reporting",
+          "status": "reported_unofficial_release",
+          "summary": "KGNS reports that the county elections office released unofficial results covering federal, state and local races, expressly including the Governor contest.",
+          "relationToFlag": "Corroborates a local unofficial release. The article does not report an investigation or explain the saved 2026-versus 2022 Governor count change.",
+          "limits": [
+            "The headline’s final wording does not establish legal certification.",
+            "Linked Scribd material was not opened or used; no allegation or official error finding adopted."
+          ]
+        }
+      ],
+      "coverage": {
+        "window": {
+          "from": "2026-11-03",
+          "through": "2026-11-07",
+          "timezone": "America/Denver"
+        },
+        "noQualifiedReportLane": {
+          "status": "no_qualified_county_office_specific_correction_recount_or_court_finding_obtained",
+          "scope": "No county-office-specific confirmed irregularity, completed corrective recount, court disposition or resolved issue was qualified within this bounded source review. Context and routine reporting status are recorded separately.",
+          "negativeInference": "This is not exoneration, proof of no issues, proof no allegation exists, or a claim of complete coverage."
+        },
+        "limits": [
+          "At most 3 useful primary/original source documents per county; discovery pages, blocked documents and portal aliases are logged separately.",
+          "Candidate background is outside this review. No allegation, ordinary count update or application threshold is treated as misconduct.",
+          "No exhaustive court docket, social history or statewide audit census was performed.",
+          "New context does not automatically change the flag, imported totals, counting-complete status or winner status."
+        ]
+      }
+    },
+    {
+      "fips": "48505",
+      "county": "Zapata",
+      "state": "Texas",
+      "stateFips": "48",
+      "office": "governor",
+      "flagIds": [
+        "governor-share-swing"
+      ],
+      "flagSummary": "Saved Governor Democratic two-party share increased 19.355055 percentage points versus 2022. Democratic votes rose 38.422713% and Republican votes fell 37.644469%; this is the share-swing flag, not the 40% party-count trigger.",
+      "flagEvidence": {
+        "currentYear": 2026,
+        "baselineYear": 2022,
+        "currentDemocratVotes": 2194,
+        "currentRepublicanVotes": 1133,
+        "priorDemocratVotes": 1585,
+        "priorRepublicanVotes": 1817,
+        "currentSource": {
+          "electionDate": null,
+          "sourceUpdatedAt": null,
+          "asOf": "2026-11-06T15:07:47+00:00",
+          "asOfBasis": "fetch time; source timestamp unavailable",
+          "sourceTimestampBasis": null,
+          "retrievedAt": "2026-11-06T15:07:47+00:00",
+          "fetchedAt": "2026-11-06T15:07:47+00:00",
+          "snapshotAsOf": "2026-11-06T10:02:00-05:00",
+          "sourceId": "modern-current-2026-tx",
+          "sourceSelection": {
+            "bundle": "modern-counties",
+            "url": "/data/modern-counties/governor-2026.json",
+            "priority": 40
+          },
+          "provisional": true,
+          "unofficial": true,
+          "countingStatus": "counting",
+          "resultStatus": "unofficial"
+        },
+        "priorSource": {
+          "electionDate": null,
+          "sourceUpdatedAt": null,
+          "asOf": null,
+          "asOfBasis": null,
+          "sourceTimestampBasis": null,
+          "retrievedAt": null,
+          "fetchedAt": null,
+          "snapshotAsOf": null,
+          "sourceId": "modern-medsl-governor-2022-tx",
+          "sourceSelection": {
+            "bundle": "modern-counties",
+            "url": "/data/modern-counties/governor-2022.json",
+            "priority": 40
+          },
+          "provisional": false,
+          "unofficial": false,
+          "countingStatus": null,
+          "resultStatus": null
+        },
+        "metricStatus": "Input dataset evidence, not independently requalified complete current-vs-prior comparison in this context pass."
+      },
+      "items": [
+        {
+          "id": "48505-governor-county-report",
+          "title": "November 3 cumulative unofficial Governor returns",
+          "publisher": "Zapata County",
+          "date": "2026-11-04",
+          "dateBasis": "PDF page 1 Run Date 11/04/2026, Run Time 11:13 AM; election 11/3/2026; timezone not printed.",
+          "url": "https://www.co.zapata.tx.us/upload/page/6434/docs/NOV%202026%20CUMMULATIVE%20UNOFFICIAL%20REULTS.pdf",
+          "type": "official_update",
+          "status": "unofficial_results_report",
+          "summary": "The county report lists Governor votes of 2,194 Democratic, 1,133 Republican and 27 Libertarian, totaling 3,354 race votes. These match the saved major-party inputs.",
+          "relationToFlag": "Confirms the reported current counts underlying the share-swing flag; it does not validate the 2022 comparison or explain the change.",
+          "limits": [
+            "Scanned PDF page 1 was OCR-assisted and visually checked; exact original bytes are retained.",
+            "The report is labeled unofficial. Its precinct-reporting field shows 0 of 13 despite populated totals; that field was not used to infer completeness.",
+            "The race-vote total is not county population, eligible voters or all ballots. No investigation/correction finding is established."
+          ],
+          "sourceLocator": "PDF page 1, Governor table and run-date header"
+        }
+      ],
+      "coverage": {
+        "window": {
+          "from": "2026-11-03",
+          "through": "2026-11-07",
+          "timezone": "America/Denver"
+        },
+        "noQualifiedReportLane": {
+          "status": "no_qualified_county_office_specific_correction_recount_or_court_finding_obtained",
+          "scope": "No county-office-specific confirmed irregularity, completed corrective recount, court disposition or resolved issue was qualified within this bounded source review. Context and routine reporting status are recorded separately.",
+          "negativeInference": "This is not exoneration, proof of no issues, proof no allegation exists, or a claim of complete coverage."
+        },
+        "limits": [
+          "At most 3 useful primary/original source documents per county; discovery pages, blocked documents and portal aliases are logged separately.",
+          "Candidate background is outside this review. No allegation, ordinary count update or application threshold is treated as misconduct.",
+          "No exhaustive court docket, social history or statewide audit census was performed.",
+          "New context does not automatically change the flag, imported totals, counting-complete status or winner status."
+        ]
+      }
+    },
+    {
+      "fips": "37117",
+      "county": "Martin",
+      "state": "North Carolina",
+      "stateFips": "37",
+      "office": "senate",
+      "flagIds": [
+        "senate-party-count-change",
+        "senate-share-swing",
+        "senate-race-population-change"
+      ],
+      "flagSummary": "Saved senate Democratic count change -2.996819%, Republican count change 67.434538% versus 2020; current 2026 returns remain provisional.",
+      "flagEvidence": {
+        "currentYear": 2026,
+        "baselineYear": 2020,
+        "currentDemocratVotes": 5794,
+        "currentRepublicanVotes": 10103,
+        "priorDemocratVotes": 5973,
+        "priorRepublicanVotes": 6034,
+        "currentSource": {
+          "electionDate": null,
+          "sourceUpdatedAt": null,
+          "asOf": "2026-11-06T15:06:14+00:00",
+          "asOfBasis": "fetch time; source timestamp unavailable",
+          "sourceTimestampBasis": null,
+          "retrievedAt": "2026-11-06T15:06:14+00:00",
+          "fetchedAt": "2026-11-06T15:06:14+00:00",
+          "snapshotAsOf": "2026-11-06T10:02:00-05:00",
+          "sourceId": "modern-current-2026-nc",
+          "sourceSelection": {
+            "bundle": "modern-counties",
+            "url": "/data/modern-counties/senate-2026.json",
+            "priority": 40
+          },
+          "provisional": true,
+          "unofficial": true,
+          "countingStatus": "counting",
+          "resultStatus": "unofficial"
+        },
+        "priorSource": {
+          "electionDate": null,
+          "sourceUpdatedAt": null,
+          "asOf": null,
+          "asOfBasis": null,
+          "sourceTimestampBasis": null,
+          "retrievedAt": null,
+          "fetchedAt": null,
+          "snapshotAsOf": null,
+          "sourceId": "modern-heideman-v1-senate-nc_medsl_2020",
+          "sourceSelection": {
+            "bundle": "modern-counties",
+            "url": "/data/modern-counties/senate-2020.json",
+            "priority": 40
+          },
+          "provisional": false,
+          "unofficial": false,
+          "countingStatus": null,
+          "resultStatus": null
+        },
+        "metricStatus": "Input dataset evidence, not independently requalified complete current-vs-prior comparison in this context pass."
+      },
+      "items": [
+        {
+          "id": "37117-senate-nc-canvass-context",
+          "title": "State explains remaining ballots and canvass schedule",
+          "publisher": "North Carolina State Board of Elections",
+          "date": "2026-11-04",
+          "dateBasis": "Visible official release date November 4, 2026.",
+          "url": "https://www.ncsbe.gov/news/press-releases/2026/11/04/whats-next-finalizing-2026-midterm-elections",
+          "type": "official_update",
+          "status": "statewide_procedural_context",
+          "summary": "The State Board says election-night returns are unofficial and eligible provisional, cured absentee and overseas ballots can change counts before county canvasses on November 13; state canvass is scheduled for November 24.",
+          "relationToFlag": "These procedures apply across all 100 county boards, including Martin, but this release gives no Martin Senate-specific count explanation or audit outcome.",
+          "limits": [
+            "Statewide process context is not a county-specific finding.",
+            "No individual voter/provisional file was downloaded; no conclusion about eligibility of particular ballots.",
+            "Recount procedures are described prospectively; no Martin Senate recount or court disposition was established."
+          ]
+        }
+      ],
+      "coverage": {
+        "window": {
+          "from": "2026-11-03",
+          "through": "2026-11-07",
+          "timezone": "America/Denver"
+        },
+        "noQualifiedReportLane": {
+          "status": "no_qualified_county_office_specific_correction_recount_or_court_finding_obtained",
+          "scope": "No county-office-specific confirmed irregularity, completed corrective recount, court disposition or resolved issue was qualified within this bounded source review. Context and routine reporting status are recorded separately.",
+          "negativeInference": "This is not exoneration, proof of no issues, proof no allegation exists, or a claim of complete coverage."
+        },
+        "limits": [
+          "At most 3 useful primary/original source documents per county; discovery pages, blocked documents and portal aliases are logged separately.",
+          "Candidate background is outside this review. No allegation, ordinary count update or application threshold is treated as misconduct.",
+          "No exhaustive court docket, social history or statewide audit census was performed.",
+          "New context does not automatically change the flag, imported totals, counting-complete status or winner status."
+        ]
+      }
+    },
+    {
+      "fips": "04015",
+      "county": "Mohave",
+      "state": "Arizona",
+      "stateFips": "04",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "flagSummary": "Saved house Democratic count change 5057.181572%, Republican count change -13.265418% versus 2022; current 2026 returns remain provisional.",
+      "flagEvidence": {
+        "currentYear": 2026,
+        "baselineYear": 2022,
+        "currentDemocratVotes": 19030,
+        "currentRepublicanVotes": 55256,
+        "priorDemocratVotes": 369,
+        "priorRepublicanVotes": 63707,
+        "currentSource": {
+          "electionDate": null,
+          "sourceUpdatedAt": "2026-11-06T21:13:20.2005274Z",
+          "asOf": "2026-11-06T21:13:20.2005274Z",
+          "asOfBasis": null,
+          "sourceTimestampBasis": null,
+          "retrievedAt": "2026-11-06T21:32:46.882423+00:00",
+          "fetchedAt": null,
+          "snapshotAsOf": null,
+          "sourceId": "research-house-az-2026-official-export",
+          "sourceSelection": {
+            "basis": "Sum of every source-verified county-district portion, no district votes allocated geographically"
+          },
+          "provisional": true,
+          "unofficial": true,
+          "countingStatus": null,
+          "resultStatus": null
+        },
+        "priorSource": {
+          "electionDate": null,
+          "sourceUpdatedAt": null,
+          "asOf": "2026-11-06T21:35:53.637876+00:00",
+          "asOfBasis": null,
+          "sourceTimestampBasis": null,
+          "retrievedAt": "2026-11-06T21:35:53.637876+00:00",
+          "fetchedAt": null,
+          "snapshotAsOf": null,
+          "sourceId": "research-house-az-2022-official-canvass-web-extract",
+          "sourceSelection": {
+            "basis": "Sum of every source-verified county-district portion, no district votes allocated geographically"
+          },
+          "provisional": false,
+          "unofficial": false,
+          "countingStatus": null,
+          "resultStatus": null
+        },
+        "metricStatus": "Input dataset evidence, not independently requalified complete current-vs-prior comparison in this context pass."
+      },
+      "items": [
+        {
+          "id": "04015-house-handcount-status",
+          "title": "State hand-count table lists Mohave result pending",
+          "publisher": "Arizona Secretary of State",
+          "date": null,
+          "dateBasis": "Live 2026 November General Election hand-count table inspected November 7, 2026; no Mohave publication timestamp printed.",
+          "url": "https://azsos.gov/elections/election-information/2026-election-info",
+          "type": "official_update",
+          "status": "audit_result_not_posted_in_checked_table",
+          "summary": "The state’s 2026 November hand-count table lists Mohave as Coming Soon, without a completed result in the inspected row.",
+          "relationToFlag": "Records the public audit-reporting status for this county election. It neither explains the House party-count change nor establishes an error or a clean audit.",
+          "limits": [
+            "No completed Mohave hand-count report or court finding was obtained. Pending website publication does not prove an audit was not conducted.",
+            "Other sections on this page mix election/canvass labels and dates; no November certified-canvass claim is based on them.",
+            "The state-linked county results application returned an unreadable JavaScript shell; search snippets were not promoted to verified county vote totals.",
+            "The saved 2022 Democratic baseline is 369 votes. House inputs aggregate county-district portions; this review has not established matched seat, contestation or candidate-availability comparability across cycles. The 5057% change remains an exploratory input metric, not an irregularity or audit finding."
+          ],
+          "sourceLocator": "2026 November General Election hand-count results table, Mohave row"
+        }
+      ],
+      "coverage": {
+        "window": {
+          "from": "2026-11-03",
+          "through": "2026-11-07",
+          "timezone": "America/Denver"
+        },
+        "noQualifiedReportLane": {
+          "status": "no_qualified_county_office_specific_correction_recount_or_court_finding_obtained",
+          "scope": "No county-office-specific confirmed irregularity, completed corrective recount, court disposition or resolved issue was qualified within this bounded source review. Context and routine reporting status are recorded separately.",
+          "negativeInference": "This is not exoneration, proof of no issues, proof no allegation exists, or a claim of complete coverage."
+        },
+        "limits": [
+          "At most 3 useful primary/original source documents per county; discovery pages, blocked documents and portal aliases are logged separately.",
+          "Candidate background is outside this review. No allegation, ordinary count update or application threshold is treated as misconduct.",
+          "No exhaustive court docket, social history or statewide audit census was performed.",
+          "New context does not automatically change the flag, imported totals, counting-complete status or winner status."
+        ]
+      }
+    },
+    {
+      "fips": "19143",
+      "county": "Osceola",
+      "state": "Iowa",
+      "stateFips": "19",
+      "office": "governor",
+      "flagIds": [
+        "governor-party-count-change",
+        "governor-share-swing"
+      ],
+      "flagSummary": "Saved governor Democratic count change 149.795918%, Republican count change -12.636274% versus 2022; current 2026 returns remain provisional.",
+      "flagEvidence": {
+        "currentYear": 2026,
+        "baselineYear": 2022,
+        "currentDemocratVotes": 612,
+        "currentRepublicanVotes": 1763,
+        "priorDemocratVotes": 245,
+        "priorRepublicanVotes": 2018,
+        "currentSource": {
+          "electionDate": null,
+          "sourceUpdatedAt": null,
+          "asOf": "2026-11-06T15:03:51+00:00",
+          "asOfBasis": "fetch time; source timestamp unavailable",
+          "sourceTimestampBasis": null,
+          "retrievedAt": "2026-11-06T15:03:51+00:00",
+          "fetchedAt": "2026-11-06T15:03:51+00:00",
+          "snapshotAsOf": "2026-11-06T10:02:00-05:00",
+          "sourceId": "modern-current-2026-ia",
+          "sourceSelection": {
+            "bundle": "modern-counties",
+            "url": "/data/modern-counties/governor-2026.json",
+            "priority": 40
+          },
+          "provisional": true,
+          "unofficial": true,
+          "countingStatus": "counting",
+          "resultStatus": "unofficial"
+        },
+        "priorSource": {
+          "electionDate": null,
+          "sourceUpdatedAt": null,
+          "asOf": null,
+          "asOfBasis": null,
+          "sourceTimestampBasis": null,
+          "retrievedAt": null,
+          "fetchedAt": null,
+          "snapshotAsOf": null,
+          "sourceId": "modern-medsl-governor-2022-ia",
+          "sourceSelection": {
+            "bundle": "modern-counties",
+            "url": "/data/modern-counties/governor-2022.json",
+            "priority": 40
+          },
+          "provisional": false,
+          "unofficial": false,
+          "countingStatus": null,
+          "resultStatus": null
+        },
+        "metricStatus": "Input dataset evidence, not independently requalified complete current-vs-prior comparison in this context pass."
+      },
+      "items": [
+        {
+          "id": "19143-governor-county-report",
+          "title": "County unofficial Governor summary matches imported counts",
+          "publisher": "Osceola County, Iowa",
+          "date": "2026-11-03",
+          "dateBasis": "PDF page 1 printed Date 11/3/2026, Time 9:40:14 PM CST; election November 3, 2026.",
+          "url": "https://osceolacountyia.gov/wp-content/uploads/2026/11/11-03-26-Unofficial-General-Election-Results.pdf",
+          "type": "official_update",
+          "status": "unofficial_results_report",
+          "summary": "The county summary records 612 Democratic Governor-ticket votes, 1,763 Republican and 6 write-ins, totaling 2,381 race votes. It separately lists 2,424 total ballots and 8 of 8 precincts reporting.",
+          "relationToFlag": "Confirms the current major-party counts underlying the flag; the 149.8% increase is measured from a 245-vote prior Democratic base, not a 149.8-point vote-share increase.",
+          "limits": [
+            "Exact PDF page 1 and visual rendering retained; OCR errors were corrected by inspecting the table.",
+            "All precincts reporting does not itself establish certification or prove no further eligible ballots remain.",
+            "The 2022 baseline and reasons for the change were not independently requalified in this context pass.",
+            "Ballots, candidate race votes and resident population are different denominators."
+          ],
+          "sourceLocator": "PDF page 1, Governor/Lieutenant Governor panel and report header"
+        }
+      ],
+      "coverage": {
+        "window": {
+          "from": "2026-11-03",
+          "through": "2026-11-07",
+          "timezone": "America/Denver"
+        },
+        "noQualifiedReportLane": {
+          "status": "no_qualified_county_office_specific_correction_recount_or_court_finding_obtained",
+          "scope": "No county-office-specific confirmed irregularity, completed corrective recount, court disposition or resolved issue was qualified within this bounded source review. Context and routine reporting status are recorded separately.",
+          "negativeInference": "This is not exoneration, proof of no issues, proof no allegation exists, or a claim of complete coverage."
+        },
+        "limits": [
+          "At most 3 useful primary/original source documents per county; discovery pages, blocked documents and portal aliases are logged separately.",
+          "Candidate background is outside this review. No allegation, ordinary count update or application threshold is treated as misconduct.",
+          "No exhaustive court docket, social history or statewide audit census was performed.",
+          "New context does not automatically change the flag, imported totals, counting-complete status or winner status."
+        ]
+      }
+    },
+    {
+      "fips": "08007",
+      "county": "Archuleta",
+      "state": "Colorado",
+      "stateFips": "08",
+      "office": "senate",
+      "flagIds": [
+        "senate-share-swing",
+        "senate-race-vote-change",
+        "senate-race-population-change"
+      ],
+      "flagSummary": "Saved reported Senate race votes decreased 61.796009% from 2020 (9,020 to 3,446); additional share/population-ratio screens also triggered. The 2026 count is provisional.",
+      "flagEvidence": {
+        "currentYear": 2026,
+        "baselineYear": 2020,
+        "currentDemocratVotes": 1913,
+        "currentRepublicanVotes": 1467,
+        "priorDemocratVotes": 3591,
+        "priorRepublicanVotes": 5225,
+        "currentSource": {
+          "electionDate": null,
+          "sourceUpdatedAt": null,
+          "asOf": "2026-11-06T15:03:31+00:00",
+          "asOfBasis": "fetch time; source timestamp unavailable",
+          "sourceTimestampBasis": null,
+          "retrievedAt": "2026-11-06T15:03:31+00:00",
+          "fetchedAt": "2026-11-06T15:03:31+00:00",
+          "snapshotAsOf": "2026-11-06T10:02:00-05:00",
+          "sourceId": "modern-current-2026-co",
+          "sourceSelection": {
+            "bundle": "modern-counties",
+            "url": "/data/modern-counties/senate-2026.json",
+            "priority": 40
+          },
+          "provisional": true,
+          "unofficial": true,
+          "countingStatus": "counting",
+          "resultStatus": "unofficial"
+        },
+        "priorSource": {
+          "electionDate": null,
+          "sourceUpdatedAt": null,
+          "asOf": null,
+          "asOfBasis": null,
+          "sourceTimestampBasis": null,
+          "retrievedAt": null,
+          "fetchedAt": null,
+          "snapshotAsOf": null,
+          "sourceId": "modern-heideman-v1-senate-co_medsl_2020",
+          "sourceSelection": {
+            "bundle": "modern-counties",
+            "url": "/data/modern-counties/senate-2020.json",
+            "priority": 40
+          },
+          "provisional": false,
+          "unofficial": false,
+          "countingStatus": null,
+          "resultStatus": null
+        },
+        "metricStatus": "Input dataset evidence, not independently requalified complete current-vs-prior comparison in this context pass."
+      },
+      "items": [
+        {
+          "id": "08007-senate-flood-operations",
+          "title": "Election clerks publish flood-related voting arrangements",
+          "publisher": "Colorado Clerks Association",
+          "date": null,
+          "dateBasis": "Page expressly addresses Tuesday,November 3, 2026 Election Day; original posting/update timestamp not printed.",
+          "url": "https://www.clerkandrecorder.org/voting-after-flooding",
+          "type": "official_update",
+          "status": "first_party_election_operations_context",
+          "summary": "The association’s Archuleta notice lists two closed voting/ballot-return locations, replacement arrangements and an emergency-ballot option for voters unable to vote because of flooding.",
+          "relationToFlag": "Provides first-party operational context for the same county election; it does not quantify Senate votes delayed or determine the cause of the numerical flag.",
+          "limits": [
+            "This is election-clerk association guidance, not a county audit or court finding.",
+            "Access arrangements do not establish affected vote numbers, candidate preference or misconduct."
+          ],
+          "sourceLocator": "Archuleta County section and flooding-displacement voting options"
+        },
+        {
+          "id": "08007-senate-later-local-count",
+          "title": "Later county reporting describes additional counted votes",
+          "publisher": "Pagosa Daily Post; Bill Hudson",
+          "date": "2026-11-06",
+          "dateBasis": "Visible original article date November 6, 2026.",
+          "url": "https://pagosadailypost.com/2026/11/06/election-2026-actually-archuleta-county-still-leans-red/",
+          "type": "contextual_reporting",
+          "status": "attributed_later_unofficial_count",
+          "summary": "The local article describes additional counting changing early county margins and lists Hickenlooper with 3,405 Senate votes. It explicitly describes the tallies as not final.",
+          "relationToFlag": "That reported Democratic count is higher than the saved map input of 1,913. Reconcile source-count times before interpreting the saved decline versus 2020 as a final participation change.",
+          "limits": [
+            "This is a commentary-bearing local article; only its attributed count/update reporting is used.",
+            "The Republican figure is printed 3.363; its punctuation is not silently normalized into a verified numeric record here.",
+            "No direct official latest Senate table was independently obtained. These reported numbers are not substituted into map data.",
+            "A later tally differing from an early snapshot is not itself an error or wrongdoing finding.",
+            "Only the November 6 publication date is visible, without an exact intraday time. Timing relative to the saved November 6 map retrieval is not independently established; later refers to the article’s additional-count update following its earlier November 4 reporting. The 3405-versus 1913 Democratic count discrepancy requires reconciliation, not automatic import."
+          ]
+        }
+      ],
+      "coverage": {
+        "window": {
+          "from": "2026-11-03",
+          "through": "2026-11-07",
+          "timezone": "America/Denver"
+        },
+        "noQualifiedReportLane": {
+          "status": "no_qualified_county_office_specific_correction_recount_or_court_finding_obtained",
+          "scope": "No county-office-specific confirmed irregularity, completed corrective recount, court disposition or resolved issue was qualified within this bounded source review. Context and routine reporting status are recorded separately.",
+          "negativeInference": "This is not exoneration, proof of no issues, proof no allegation exists, or a claim of complete coverage."
+        },
+        "limits": [
+          "At most 3 useful primary/original source documents per county; discovery pages, blocked documents and portal aliases are logged separately.",
+          "Candidate background is outside this review. No allegation, ordinary count update or application threshold is treated as misconduct.",
+          "No exhaustive court docket, social history or statewide audit census was performed.",
+          "New context does not automatically change the flag, imported totals, counting-complete status or winner status."
+        ]
+      }
+    }
+  ]
+}

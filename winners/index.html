@@ -23,7 +23,7 @@
     <nav class="directory-nav" aria-label="Main navigation"><a href="%BASE_URL%">Explore the map</a><a href="%BASE_URL%winners/" aria-current="page">Winners & leaders</a><a href="%BASE_URL%accountability/">Statements &amp; actions</a><a href="%BASE_URL%#support">Support V-Map</a></nav>
   </header>
   <main class="winners-page">
-    <div class="directory-intro"><p class="eyebrow">THE PEOPLE BEHIND THE RETURNS</p><h1>Winning candidates<br />& reported leaders.</h1><p>Browse election results in order, with each candidate’s reported vote count, share and lead margin. Choose an office, state or election year to narrow the list.</p></div>
+    <div class="directory-intro"><p class="eyebrow">THE PEOPLE BEHIND THE RETURNS</p><h1>Explore the candidates.<br />Follow their records.</h1><p>Separate lists for Governors, the U.S. House and the U.S. Senate. Select a person to view their election record, sourced statements and official actions. Historical presidential state leaders remain available by year.</p></div>
     <aside class="directory-notice"><strong>A lead is not a race call.</strong> Current imports are provisional. V-Map does not declare winners from incomplete counts or a “100% precincts” label. Entries below identify reported vote leaders; source-held or tied races remain unavailable. Coverage is incomplete.</aside>
     <form class="directory-controls" id="directory-controls" aria-label="Filter and order candidates">
       <label>Election year<select id="directory-year" disabled><option value="2026">2026</option></select></label>
@@ -36,9 +36,9 @@
     </form>
     <div class="directory-summary" id="directory-summary" role="status"><!--vmap:summary--></div>
     <p class="directory-scope" id="directory-scope">Statewide Governor and Senate races and full House district returns are listed once per contest. County portions are not treated as election-wide outcomes.</p>
-    <div class="directory-results-heading"><h2 id="directory-heading" tabindex="-1">Ordered results</h2><p id="directory-order-note">Order: President, Senate, House, Governor; states A–Z; districts numerically.</p></div>
-    <ol id="candidate-results" class="candidate-results" aria-label="Ordered election candidates" data-prerender-year="2026" data-prerender-sha=""><!--vmap:candidates--></ol>
-    <nav class="directory-pagination" aria-label="Candidate list pages"><button type="button" id="directory-previous" disabled>← Previous</button><span id="directory-page"></span><button type="button" id="directory-next" disabled>Next →</button></nav>
+    <div class="directory-results-heading"><h2 id="directory-heading" tabindex="-1">Browse by office</h2><p id="directory-order-note">Each list: states A–Z, then districts numerically.</p></div>
+    <nav id="directory-office-nav" class="directory-office-nav" aria-label="Choose an office list"><!--vmap:office-nav--></nav>
+    <div id="candidate-results" aria-label="Election candidates by office" data-prerender-year="2026" data-prerender-sha=""><!--vmap:candidates--></div>
     <p id="directory-error" role="alert" hidden></p><button type="button" id="directory-retry" hidden>Retry loading results</button>
     <noscript><p>The full default 2026 reported-leader list is available on this page without JavaScript. Enable JavaScript for filters and historical years, or download the <a href="%BASE_URL%data/winners/2026.json">2026 ordered candidate records</a>.</p></noscript>
     <footer class="directory-footer"><a href="%BASE_URL%coverage/">Coverage & missing data</a><a href="%BASE_URL%methodology/">Source methodology</a><a href="https://github.com/ExJtac/v-map">Contribute a source</a><a href="%BASE_URL%">Back to the map</a></footer>

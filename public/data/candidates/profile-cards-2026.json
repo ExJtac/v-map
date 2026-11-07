@@ -1,0 +1,2969 @@
+{
+  "schemaVersion": 1,
+  "year": 2026,
+  "sourceHashes": {
+    "winners": "f815acab51d2814ccaf4d4fbd24516c9c2dd0304b067b036db69cd61641a7122",
+    "pilot": "1bfd2da42d6595f296eabcc9f789b327bfffca326e1a7669b4396168f7cd0962",
+    "portraits": "4cccda679817d26a9ae20ad6997438da9191034a802d07d4ba5606afb35427f2"
+  },
+  "profiles": [
+    {
+      "id": "p2026-49179ae3",
+      "path": "people/2026/senate-01-barry-moore-49179ae3/",
+      "displayName": "Barry Moore",
+      "reportedName": "Barry Moore",
+      "portrait": {
+        "src": "people-photos/M001212.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001212"
+      }
+    },
+    {
+      "id": "p2026-48698f4e",
+      "path": "people/2026/senate-02-peltola-mary-48698f4e/",
+      "displayName": "Mary Peltola",
+      "reportedName": "Peltola, Mary",
+      "portrait": {
+        "src": "people-photos/P000619.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (118th Congress); Bioguide P000619"
+      }
+    },
+    {
+      "id": "p2026-f6789246",
+      "path": "people/2026/senate-05-tom-cotton-f6789246/",
+      "displayName": "Tom Cotton",
+      "reportedName": "Tom Cotton",
+      "portrait": {
+        "src": "people-photos/C001095.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001095"
+      }
+    },
+    {
+      "id": "p2026-2d3a4ebc",
+      "path": "people/2026/senate-08-john-hickenlooper-2d3a4ebc/",
+      "displayName": "John W. Hickenlooper",
+      "reportedName": "John Hickenlooper",
+      "portrait": {
+        "src": "people-photos/H000273.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H000273"
+      }
+    },
+    {
+      "id": "p2026-d845e18a",
+      "path": "people/2026/senate-10-chris-coons-d845e18a/",
+      "displayName": "CHRIS COONS",
+      "reportedName": "CHRIS COONS",
+      "portrait": null
+    },
+    {
+      "id": "p2026-225b5fc4",
+      "path": "people/2026/senate-12-ashley-moody-225b5fc4/",
+      "displayName": "Ashley Moody",
+      "reportedName": "Ashley Moody",
+      "portrait": null
+    },
+    {
+      "id": "p2026-34c9cb56",
+      "path": "people/2026/senate-13-jon-ossoff-i-dem-34c9cb56/",
+      "displayName": "Jon Ossoff (I) (Dem)",
+      "reportedName": "Jon Ossoff (I) (Dem)",
+      "portrait": {
+        "src": "people-photos/O000174.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide O000174"
+      }
+    },
+    {
+      "id": "p2026-8a2fe306",
+      "path": "people/2026/senate-16-jim-risch-8a2fe306/",
+      "displayName": "Jim Risch",
+      "reportedName": "Jim Risch",
+      "portrait": null
+    },
+    {
+      "id": "p2026-0ed62245",
+      "path": "people/2026/senate-19-josh-turek-0ed62245/",
+      "displayName": "Josh Turek",
+      "reportedName": "Josh Turek",
+      "portrait": null
+    },
+    {
+      "id": "p2026-7a91c262",
+      "path": "people/2026/senate-22-julia-letlow-7a91c262/",
+      "displayName": "Julia Letlow",
+      "reportedName": "Julia Letlow",
+      "portrait": {
+        "src": "people-photos/L000595.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000595"
+      }
+    },
+    {
+      "id": "p2026-c70df43b",
+      "path": "people/2026/senate-27-peggy-flanagan-c70df43b/",
+      "displayName": "Peggy Flanagan",
+      "reportedName": "Peggy Flanagan",
+      "portrait": null
+    },
+    {
+      "id": "p2026-3d803c32",
+      "path": "people/2026/senate-30-kurt-alme-3d803c32/",
+      "displayName": "KURT ALME",
+      "reportedName": "KURT ALME",
+      "portrait": null
+    },
+    {
+      "id": "p2026-30a2e4c3",
+      "path": "people/2026/senate-31-pete-ricketts-30a2e4c3/",
+      "displayName": "Pete Ricketts",
+      "reportedName": "Pete Ricketts",
+      "portrait": {
+        "src": "people-photos/R000618.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide R000618"
+      }
+    },
+    {
+      "id": "p2026-abf1af9f",
+      "path": "people/2026/senate-35-ben-r-lujan-abf1af9f/",
+      "displayName": "BEN R LUJAN",
+      "reportedName": "BEN R LUJAN",
+      "portrait": {
+        "src": "people-photos/L000570.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000570"
+      }
+    },
+    {
+      "id": "p2026-d1a3c83a",
+      "path": "people/2026/senate-37-roy-cooper-d1a3c83a/",
+      "displayName": "Roy Cooper",
+      "reportedName": "Roy Cooper",
+      "portrait": null
+    },
+    {
+      "id": "p2026-4af3be80",
+      "path": "people/2026/senate-39-sherrod-brown-4af3be80/",
+      "displayName": "Sherrod Brown",
+      "reportedName": "Sherrod Brown",
+      "portrait": {
+        "src": "people-photos/B000944.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B000944"
+      }
+    },
+    {
+      "id": "p2026-76058a98",
+      "path": "people/2026/senate-40-kevin-hern-76058a98/",
+      "displayName": "KEVIN HERN",
+      "reportedName": "KEVIN HERN",
+      "portrait": {
+        "src": "people-photos/H001082.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H001082"
+      }
+    },
+    {
+      "id": "p2026-212b8230",
+      "path": "people/2026/senate-44-john-f-reed-dem-212b8230/",
+      "displayName": "John F. Reed (DEM)",
+      "reportedName": "John F. Reed (DEM)",
+      "portrait": {
+        "src": "people-photos/R000122.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide R000122"
+      }
+    },
+    {
+      "id": "p2026-9fa9f4cc",
+      "path": "people/2026/senate-45-annie-andrews-9fa9f4cc/",
+      "displayName": "Annie Andrews",
+      "reportedName": "Annie Andrews",
+      "portrait": null
+    },
+    {
+      "id": "p2026-7712f071",
+      "path": "people/2026/senate-46-mike-rounds-7712f071/",
+      "displayName": "Mike  Rounds",
+      "reportedName": "Mike  Rounds",
+      "portrait": {
+        "src": "people-photos/R000605.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide R000605"
+      }
+    },
+    {
+      "id": "p2026-ecb36167",
+      "path": "people/2026/senate-48-james-talarico-ecb36167/",
+      "displayName": "JAMES TALARICO",
+      "reportedName": "JAMES TALARICO",
+      "portrait": null
+    },
+    {
+      "id": "p2026-6c2fd57c",
+      "path": "people/2026/senate-51-mark-r-warner-6c2fd57c/",
+      "displayName": "Mark R. Warner",
+      "reportedName": "Mark R. Warner",
+      "portrait": {
+        "src": "people-photos/W000805.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000805"
+      }
+    },
+    {
+      "id": "p2026-59219057",
+      "path": "people/2026/house-01-jerry-carl-59219057/",
+      "displayName": "Jerry Carl",
+      "reportedName": "Jerry Carl",
+      "portrait": {
+        "src": "people-photos/C001054.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (118th Congress); Bioguide C001054"
+      }
+    },
+    {
+      "id": "p2026-ac69060d",
+      "path": "people/2026/house-01-shomari-c-figures-ac69060d/",
+      "displayName": "Shomari C. Figures",
+      "reportedName": "Shomari C. Figures",
+      "portrait": {
+        "src": "people-photos/F000481.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide F000481"
+      }
+    },
+    {
+      "id": "p2026-aa44661f",
+      "path": "people/2026/house-01-mike-rogers-aa44661f/",
+      "displayName": "Mike Rogers",
+      "reportedName": "Mike Rogers",
+      "portrait": null
+    },
+    {
+      "id": "p2026-0637cdfd",
+      "path": "people/2026/house-01-robert-b-aderholt-0637cdfd/",
+      "displayName": "Robert B. Aderholt",
+      "reportedName": "Robert B. Aderholt",
+      "portrait": {
+        "src": "people-photos/A000055.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide A000055"
+      }
+    },
+    {
+      "id": "p2026-c367ad61",
+      "path": "people/2026/house-01-dale-w-strong-c367ad61/",
+      "displayName": "Dale W. Strong",
+      "reportedName": "Dale W. Strong",
+      "portrait": {
+        "src": "people-photos/S001220.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001220"
+      }
+    },
+    {
+      "id": "p2026-aacba7f4",
+      "path": "people/2026/house-01-gary-palmer-aacba7f4/",
+      "displayName": "Gary Palmer",
+      "reportedName": "Gary Palmer",
+      "portrait": {
+        "src": "people-photos/P000609.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide P000609"
+      }
+    },
+    {
+      "id": "p2026-c2571569",
+      "path": "people/2026/house-01-terri-sewell-c2571569/",
+      "displayName": "Terri Sewell",
+      "reportedName": "Terri Sewell",
+      "portrait": {
+        "src": "people-photos/S001185.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001185"
+      }
+    },
+    {
+      "id": "p2026-e40011ca",
+      "path": "people/2026/house-02-begich-nick-e40011ca/",
+      "displayName": "Begich, Nick",
+      "reportedName": "Begich, Nick",
+      "portrait": {
+        "src": "people-photos/B001323.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001323"
+      }
+    },
+    {
+      "id": "p2026-6b280e8e",
+      "path": "people/2026/house-04-amish-shah-6b280e8e/",
+      "displayName": "Amish Shah",
+      "reportedName": "Amish Shah",
+      "portrait": {
+        "src": "people-photos/commons-129635469.jpg",
+        "attribution": "Gage Skidmore; CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0); via Wikimedia Commons, File:Amish Shah by Gage Skidmore 2.jpg"
+      }
+    },
+    {
+      "id": "p2026-94f3c294",
+      "path": "people/2026/house-04-eli-crane-94f3c294/",
+      "displayName": "Eli Crane",
+      "reportedName": "Eli Crane",
+      "portrait": {
+        "src": "people-photos/C001132.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001132"
+      }
+    },
+    {
+      "id": "p2026-93fd7989",
+      "path": "people/2026/house-04-yassamin-ansari-93fd7989/",
+      "displayName": "Yassamin Ansari",
+      "reportedName": "Yassamin Ansari",
+      "portrait": {
+        "src": "people-photos/A000381.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide A000381"
+      }
+    },
+    {
+      "id": "p2026-bc9010dd",
+      "path": "people/2026/house-04-greg-stanton-bc9010dd/",
+      "displayName": "Greg Stanton",
+      "reportedName": "Greg Stanton",
+      "portrait": {
+        "src": "people-photos/S001211.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001211"
+      }
+    },
+    {
+      "id": "p2026-f5c6b131",
+      "path": "people/2026/house-04-mark-lamb-f5c6b131/",
+      "displayName": "Mark Lamb",
+      "reportedName": "Mark Lamb",
+      "portrait": null
+    },
+    {
+      "id": "p2026-7a21c5aa",
+      "path": "people/2026/house-04-joanna-mendoza-7a21c5aa/",
+      "displayName": "JoAnna Mendoza",
+      "reportedName": "JoAnna Mendoza",
+      "portrait": null
+    },
+    {
+      "id": "p2026-8a162a26",
+      "path": "people/2026/house-04-adelita-grijalva-8a162a26/",
+      "displayName": "Adelita Grijalva",
+      "reportedName": "Adelita Grijalva",
+      "portrait": {
+        "src": "people-photos/G000606.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide G000606"
+      }
+    },
+    {
+      "id": "p2026-08a53f87",
+      "path": "people/2026/house-04-abraham-abe-hamadeh-08a53f87/",
+      "displayName": "Abraham \"Abe\" Hamadeh",
+      "reportedName": "Abraham \"Abe\" Hamadeh",
+      "portrait": {
+        "src": "people-photos/H001098.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H001098"
+      }
+    },
+    {
+      "id": "p2026-f31a3194",
+      "path": "people/2026/house-04-paul-gosar-f31a3194/",
+      "displayName": "Paul Gosar",
+      "reportedName": "Paul Gosar",
+      "portrait": {
+        "src": "people-photos/G000565.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide G000565"
+      }
+    },
+    {
+      "id": "p2026-3baaa26e",
+      "path": "people/2026/house-05-rick-crawford-3baaa26e/",
+      "displayName": "Rick Crawford",
+      "reportedName": "Rick Crawford",
+      "portrait": {
+        "src": "people-photos/C001087.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001087"
+      }
+    },
+    {
+      "id": "p2026-206d6eef",
+      "path": "people/2026/house-05-french-hill-206d6eef/",
+      "displayName": "French Hill",
+      "reportedName": "French Hill",
+      "portrait": {
+        "src": "people-photos/H001072.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H001072"
+      }
+    },
+    {
+      "id": "p2026-e7f84560",
+      "path": "people/2026/house-05-steve-womack-e7f84560/",
+      "displayName": "Steve Womack",
+      "reportedName": "Steve Womack",
+      "portrait": {
+        "src": "people-photos/W000809.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000809"
+      }
+    },
+    {
+      "id": "p2026-0d87cbf1",
+      "path": "people/2026/house-05-bruce-westerman-0d87cbf1/",
+      "displayName": "Bruce Westerman",
+      "reportedName": "Bruce Westerman",
+      "portrait": {
+        "src": "people-photos/W000821.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000821"
+      }
+    },
+    {
+      "id": "p2026-484e63c0",
+      "path": "people/2026/house-06-mike-mcguire-484e63c0/",
+      "displayName": "Mike McGuire",
+      "reportedName": "Mike McGuire",
+      "portrait": null
+    },
+    {
+      "id": "p2026-ef04febe",
+      "path": "people/2026/house-06-jared-huffman-ef04febe/",
+      "displayName": "Jared Huffman",
+      "reportedName": "Jared Huffman",
+      "portrait": {
+        "src": "people-photos/H001068.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H001068"
+      }
+    },
+    {
+      "id": "p2026-be95f885",
+      "path": "people/2026/house-06-ami-bera-be95f885/",
+      "displayName": "Ami Bera",
+      "reportedName": "Ami Bera",
+      "portrait": {
+        "src": "people-photos/B001287.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001287"
+      }
+    },
+    {
+      "id": "p2026-084640f3",
+      "path": "people/2026/house-06-eric-jones-084640f3/",
+      "displayName": "Eric Jones",
+      "reportedName": "Eric Jones",
+      "portrait": null
+    },
+    {
+      "id": "p2026-738f5a93",
+      "path": "people/2026/house-06-tom-mcclintock-738f5a93/",
+      "displayName": "Tom McClintock",
+      "reportedName": "Tom McClintock",
+      "portrait": {
+        "src": "people-photos/M001177.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001177"
+      }
+    },
+    {
+      "id": "p2026-93935123",
+      "path": "people/2026/house-06-richard-pan-93935123/",
+      "displayName": "Richard Pan",
+      "reportedName": "Richard Pan",
+      "portrait": null
+    },
+    {
+      "id": "p2026-581f3e64",
+      "path": "people/2026/house-06-doris-matsui-581f3e64/",
+      "displayName": "Doris Matsui",
+      "reportedName": "Doris Matsui",
+      "portrait": {
+        "src": "people-photos/M001163.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001163"
+      }
+    },
+    {
+      "id": "p2026-48bfc32a",
+      "path": "people/2026/house-06-john-garamendi-48bfc32a/",
+      "displayName": "John Garamendi",
+      "reportedName": "John Garamendi",
+      "portrait": {
+        "src": "people-photos/G000559.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide G000559"
+      }
+    },
+    {
+      "id": "p2026-bf560b6a",
+      "path": "people/2026/house-06-josh-harder-bf560b6a/",
+      "displayName": "Josh Harder",
+      "reportedName": "Josh Harder",
+      "portrait": {
+        "src": "people-photos/H001090.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H001090"
+      }
+    },
+    {
+      "id": "p2026-9f1de493",
+      "path": "people/2026/house-06-mark-desaulnier-9f1de493/",
+      "displayName": "Mark DeSaulnier",
+      "reportedName": "Mark DeSaulnier",
+      "portrait": {
+        "src": "people-photos/D000623.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide D000623"
+      }
+    },
+    {
+      "id": "p2026-54583fa2",
+      "path": "people/2026/house-06-scott-wiener-54583fa2/",
+      "displayName": "Scott Wiener",
+      "reportedName": "Scott Wiener",
+      "portrait": null
+    },
+    {
+      "id": "p2026-807460da",
+      "path": "people/2026/house-06-lateefah-simon-807460da/",
+      "displayName": "Lateefah Simon",
+      "reportedName": "Lateefah Simon",
+      "portrait": {
+        "src": "people-photos/S001231.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001231"
+      }
+    },
+    {
+      "id": "p2026-c7aabf75",
+      "path": "people/2026/house-06-adam-gray-c7aabf75/",
+      "displayName": "Adam Gray",
+      "reportedName": "Adam Gray",
+      "portrait": {
+        "src": "people-photos/G000605.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide G000605"
+      }
+    },
+    {
+      "id": "p2026-c475ae17",
+      "path": "people/2026/house-06-aisha-wahab-c475ae17/",
+      "displayName": "Aisha Wahab",
+      "reportedName": "Aisha Wahab",
+      "portrait": {
+        "src": "people-photos/W000832.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000832"
+      }
+    },
+    {
+      "id": "p2026-bc76cf79",
+      "path": "people/2026/house-06-kevin-mullin-bc76cf79/",
+      "displayName": "Kevin Mullin",
+      "reportedName": "Kevin Mullin",
+      "portrait": {
+        "src": "people-photos/M001225.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001225"
+      }
+    },
+    {
+      "id": "p2026-b4f922c0",
+      "path": "people/2026/house-06-sam-liccardo-b4f922c0/",
+      "displayName": "Sam Liccardo",
+      "reportedName": "Sam Liccardo",
+      "portrait": {
+        "src": "people-photos/L000607.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000607"
+      }
+    },
+    {
+      "id": "p2026-76d518c3",
+      "path": "people/2026/house-06-ro-khanna-76d518c3/",
+      "displayName": "Ro Khanna",
+      "reportedName": "Ro Khanna",
+      "portrait": {
+        "src": "people-photos/K000389.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide K000389"
+      }
+    },
+    {
+      "id": "p2026-ec9041fd",
+      "path": "people/2026/house-06-zoe-lofgren-ec9041fd/",
+      "displayName": "Zoe Lofgren",
+      "reportedName": "Zoe Lofgren",
+      "portrait": {
+        "src": "people-photos/L000397.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000397"
+      }
+    },
+    {
+      "id": "p2026-3d452a6a",
+      "path": "people/2026/house-06-jimmy-panetta-3d452a6a/",
+      "displayName": "Jimmy Panetta",
+      "reportedName": "Jimmy Panetta",
+      "portrait": {
+        "src": "people-photos/P000613.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide P000613"
+      }
+    },
+    {
+      "id": "p2026-89883eac",
+      "path": "people/2026/house-06-vince-fong-89883eac/",
+      "displayName": "Vince Fong",
+      "reportedName": "Vince Fong",
+      "portrait": {
+        "src": "people-photos/F000480.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide F000480"
+      }
+    },
+    {
+      "id": "p2026-5dd23648",
+      "path": "people/2026/house-06-jim-costa-5dd23648/",
+      "displayName": "Jim Costa",
+      "reportedName": "Jim Costa",
+      "portrait": {
+        "src": "people-photos/C001059.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001059"
+      }
+    },
+    {
+      "id": "p2026-59770faa",
+      "path": "people/2026/house-06-randy-villegas-59770faa/",
+      "displayName": "Randy Villegas",
+      "reportedName": "Randy Villegas",
+      "portrait": null
+    },
+    {
+      "id": "p2026-46c982aa",
+      "path": "people/2026/house-06-jay-obernolte-46c982aa/",
+      "displayName": "Jay Obernolte",
+      "reportedName": "Jay Obernolte",
+      "portrait": {
+        "src": "people-photos/O000019.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide O000019"
+      }
+    },
+    {
+      "id": "p2026-594b966a",
+      "path": "people/2026/house-06-salud-carbajal-594b966a/",
+      "displayName": "Salud Carbajal",
+      "reportedName": "Salud Carbajal",
+      "portrait": {
+        "src": "people-photos/C001112.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001112"
+      }
+    },
+    {
+      "id": "p2026-4cab3572",
+      "path": "people/2026/house-06-raul-ruiz-4cab3572/",
+      "displayName": "Raul Ruiz",
+      "reportedName": "Raul Ruiz",
+      "portrait": {
+        "src": "people-photos/R000599.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide R000599"
+      }
+    },
+    {
+      "id": "p2026-02d08a85",
+      "path": "people/2026/house-06-jacqui-irwin-02d08a85/",
+      "displayName": "Jacqui Irwin",
+      "reportedName": "Jacqui Irwin",
+      "portrait": null
+    },
+    {
+      "id": "p2026-1449712a",
+      "path": "people/2026/house-06-george-whitesides-1449712a/",
+      "displayName": "George Whitesides",
+      "reportedName": "George Whitesides",
+      "portrait": {
+        "src": "people-photos/W000830.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000830"
+      }
+    },
+    {
+      "id": "p2026-d575670f",
+      "path": "people/2026/house-06-judy-chu-d575670f/",
+      "displayName": "Judy Chu",
+      "reportedName": "Judy Chu",
+      "portrait": {
+        "src": "people-photos/C001080.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001080"
+      }
+    },
+    {
+      "id": "p2026-b6d0c4ec",
+      "path": "people/2026/house-06-luz-maria-rivas-b6d0c4ec/",
+      "displayName": "Luz Maria Rivas",
+      "reportedName": "Luz Maria Rivas",
+      "portrait": {
+        "src": "people-photos/R000620.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide R000620"
+      }
+    },
+    {
+      "id": "p2026-0c68d775",
+      "path": "people/2026/house-06-laura-friedman-0c68d775/",
+      "displayName": "Laura Friedman",
+      "reportedName": "Laura Friedman",
+      "portrait": {
+        "src": "people-photos/F000483.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide F000483"
+      }
+    },
+    {
+      "id": "p2026-34436621",
+      "path": "people/2026/house-06-gil-cisneros-34436621/",
+      "displayName": "Gil Cisneros",
+      "reportedName": "Gil Cisneros",
+      "portrait": null
+    },
+    {
+      "id": "p2026-817d468d",
+      "path": "people/2026/house-06-brad-sherman-817d468d/",
+      "displayName": "Brad Sherman",
+      "reportedName": "Brad Sherman",
+      "portrait": {
+        "src": "people-photos/S000344.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S000344"
+      }
+    },
+    {
+      "id": "p2026-856b2e6e",
+      "path": "people/2026/house-06-pete-aguilar-856b2e6e/",
+      "displayName": "Pete Aguilar",
+      "reportedName": "Pete Aguilar",
+      "portrait": {
+        "src": "people-photos/A000371.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide A000371"
+      }
+    },
+    {
+      "id": "p2026-ef483621",
+      "path": "people/2026/house-06-angela-gonzales-torres-ef483621/",
+      "displayName": "Angela Gonzales-Torres",
+      "reportedName": "Angela Gonzales-Torres",
+      "portrait": null
+    },
+    {
+      "id": "p2026-f1e32e5f",
+      "path": "people/2026/house-06-norma-j-torres-f1e32e5f/",
+      "displayName": "Norma J. Torres",
+      "reportedName": "Norma J. Torres",
+      "portrait": {
+        "src": "people-photos/T000474.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide T000474"
+      }
+    },
+    {
+      "id": "p2026-78190987",
+      "path": "people/2026/house-06-ted-w-lieu-78190987/",
+      "displayName": "Ted W. Lieu",
+      "reportedName": "Ted W. Lieu",
+      "portrait": {
+        "src": "people-photos/L000582.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000582"
+      }
+    },
+    {
+      "id": "p2026-7cc5260e",
+      "path": "people/2026/house-06-sydney-kamlager-dove-7cc5260e/",
+      "displayName": "Sydney Kamlager-Dove",
+      "reportedName": "Sydney Kamlager-Dove",
+      "portrait": {
+        "src": "people-photos/K000400.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide K000400"
+      }
+    },
+    {
+      "id": "p2026-bb09e7aa",
+      "path": "people/2026/house-06-hilda-solis-bb09e7aa/",
+      "displayName": "Hilda Solis",
+      "reportedName": "Hilda Solis",
+      "portrait": null
+    },
+    {
+      "id": "p2026-83215ed8",
+      "path": "people/2026/house-06-mark-takano-83215ed8/",
+      "displayName": "Mark Takano",
+      "reportedName": "Mark Takano",
+      "portrait": {
+        "src": "people-photos/T000472.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide T000472"
+      }
+    },
+    {
+      "id": "p2026-715367a2",
+      "path": "people/2026/house-06-ken-calvert-715367a2/",
+      "displayName": "Ken Calvert",
+      "reportedName": "Ken Calvert",
+      "portrait": {
+        "src": "people-photos/C000059.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C000059"
+      }
+    },
+    {
+      "id": "p2026-fea902ac",
+      "path": "people/2026/house-06-linda-sanchez-fea902ac/",
+      "displayName": "Linda Sánchez",
+      "reportedName": "Linda Sánchez",
+      "portrait": null
+    },
+    {
+      "id": "p2026-5ef94218",
+      "path": "people/2026/house-06-robert-garcia-5ef94218/",
+      "displayName": "Robert Garcia",
+      "reportedName": "Robert Garcia",
+      "portrait": {
+        "src": "people-photos/G000598.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (118th Congress); Bioguide G000598"
+      }
+    },
+    {
+      "id": "p2026-06e68db0",
+      "path": "people/2026/house-06-maxine-waters-06e68db0/",
+      "displayName": "Maxine Waters",
+      "reportedName": "Maxine Waters",
+      "portrait": {
+        "src": "people-photos/W000187.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000187"
+      }
+    },
+    {
+      "id": "p2026-c5a4e8a6",
+      "path": "people/2026/house-06-nanette-diaz-barragan-c5a4e8a6/",
+      "displayName": "Nanette Diaz Barragan",
+      "reportedName": "Nanette Diaz Barragan",
+      "portrait": {
+        "src": "people-photos/B001300.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001300"
+      }
+    },
+    {
+      "id": "p2026-601cd7b6",
+      "path": "people/2026/house-06-derek-tran-601cd7b6/",
+      "displayName": "Derek Tran",
+      "reportedName": "Derek Tran",
+      "portrait": {
+        "src": "people-photos/T000491.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide T000491"
+      }
+    },
+    {
+      "id": "p2026-71b8241b",
+      "path": "people/2026/house-06-lou-correa-71b8241b/",
+      "displayName": "Lou Correa",
+      "reportedName": "Lou Correa",
+      "portrait": null
+    },
+    {
+      "id": "p2026-7c59772e",
+      "path": "people/2026/house-06-dave-min-7c59772e/",
+      "displayName": "Dave Min",
+      "reportedName": "Dave Min",
+      "portrait": {
+        "src": "people-photos/M001241.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001241"
+      }
+    },
+    {
+      "id": "p2026-cb015bb4",
+      "path": "people/2026/house-06-marni-von-wilpert-cb015bb4/",
+      "displayName": "Marni von Wilpert",
+      "reportedName": "Marni von Wilpert",
+      "portrait": null
+    },
+    {
+      "id": "p2026-dbc34758",
+      "path": "people/2026/house-06-mike-levin-dbc34758/",
+      "displayName": "Mike Levin",
+      "reportedName": "Mike Levin",
+      "portrait": {
+        "src": "people-photos/L000593.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (118th Congress); Bioguide L000593"
+      }
+    },
+    {
+      "id": "p2026-05079266",
+      "path": "people/2026/house-06-scott-peters-05079266/",
+      "displayName": "Scott Peters",
+      "reportedName": "Scott Peters",
+      "portrait": {
+        "src": "people-photos/P000608.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide P000608"
+      }
+    },
+    {
+      "id": "p2026-e01b0a12",
+      "path": "people/2026/house-06-sara-jacobs-e01b0a12/",
+      "displayName": "Sara Jacobs",
+      "reportedName": "Sara Jacobs",
+      "portrait": {
+        "src": "people-photos/J000305.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide J000305"
+      }
+    },
+    {
+      "id": "p2026-f3c6e852",
+      "path": "people/2026/house-06-juan-vargas-f3c6e852/",
+      "displayName": "Juan Vargas",
+      "reportedName": "Juan Vargas",
+      "portrait": {
+        "src": "people-photos/V000130.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide V000130"
+      }
+    },
+    {
+      "id": "p2026-b9d749a9",
+      "path": "people/2026/house-08-melat-kiros-b9d749a9/",
+      "displayName": "Melat Kiros",
+      "reportedName": "Melat Kiros",
+      "portrait": null
+    },
+    {
+      "id": "p2026-ef620168",
+      "path": "people/2026/house-08-joe-neguse-ef620168/",
+      "displayName": "Joe Neguse",
+      "reportedName": "Joe Neguse",
+      "portrait": {
+        "src": "people-photos/N000191.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide N000191"
+      }
+    },
+    {
+      "id": "p2026-b6bd499a",
+      "path": "people/2026/house-08-dwayne-l-romero-b6bd499a/",
+      "displayName": "Dwayne L. Romero",
+      "reportedName": "Dwayne L. Romero",
+      "portrait": null
+    },
+    {
+      "id": "p2026-9b6a61f0",
+      "path": "people/2026/house-08-eileen-laubacher-9b6a61f0/",
+      "displayName": "Eileen Laubacher",
+      "reportedName": "Eileen Laubacher",
+      "portrait": null
+    },
+    {
+      "id": "p2026-41bed403",
+      "path": "people/2026/house-08-jessica-killin-41bed403/",
+      "displayName": "Jessica Killin",
+      "reportedName": "Jessica Killin",
+      "portrait": null
+    },
+    {
+      "id": "p2026-d4ec4f15",
+      "path": "people/2026/house-08-jason-crow-d4ec4f15/",
+      "displayName": "Jason Crow",
+      "reportedName": "Jason Crow",
+      "portrait": {
+        "src": "people-photos/C001121.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001121"
+      }
+    },
+    {
+      "id": "p2026-61002821",
+      "path": "people/2026/house-08-brittany-pettersen-61002821/",
+      "displayName": "Brittany Pettersen",
+      "reportedName": "Brittany Pettersen",
+      "portrait": {
+        "src": "people-photos/P000620.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide P000620"
+      }
+    },
+    {
+      "id": "p2026-836bf56b",
+      "path": "people/2026/house-08-manny-rutinel-836bf56b/",
+      "displayName": "Manny Rutinel",
+      "reportedName": "Manny Rutinel",
+      "portrait": null
+    },
+    {
+      "id": "p2026-c323a448",
+      "path": "people/2026/house-09-luke-bronin-c323a448/",
+      "displayName": "Luke Bronin",
+      "reportedName": "Luke Bronin",
+      "portrait": null
+    },
+    {
+      "id": "p2026-337af723",
+      "path": "people/2026/house-09-joe-courtney-337af723/",
+      "displayName": "Joe Courtney",
+      "reportedName": "Joe Courtney",
+      "portrait": {
+        "src": "people-photos/C001069.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001069"
+      }
+    },
+    {
+      "id": "p2026-16221a2a",
+      "path": "people/2026/house-09-rosa-l-delauro-16221a2a/",
+      "displayName": "Rosa L. DeLauro",
+      "reportedName": "Rosa L. DeLauro",
+      "portrait": {
+        "src": "people-photos/D000216.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide D000216"
+      }
+    },
+    {
+      "id": "p2026-0dfa43a8",
+      "path": "people/2026/house-09-jim-himes-0dfa43a8/",
+      "displayName": "Jim Himes",
+      "reportedName": "Jim Himes",
+      "portrait": {
+        "src": "people-photos/H001047.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H001047"
+      }
+    },
+    {
+      "id": "p2026-72725f24",
+      "path": "people/2026/house-09-jahana-hayes-72725f24/",
+      "displayName": "Jahana Hayes",
+      "reportedName": "Jahana Hayes",
+      "portrait": {
+        "src": "people-photos/H001081.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H001081"
+      }
+    },
+    {
+      "id": "p2026-0cf16867",
+      "path": "people/2026/house-10-sarah-mcbride-0cf16867/",
+      "displayName": "SARAH MCBRIDE",
+      "reportedName": "SARAH MCBRIDE",
+      "portrait": {
+        "src": "people-photos/M001238.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001238"
+      }
+    },
+    {
+      "id": "p2026-8e7f5613",
+      "path": "people/2026/house-12-jimmy-patronis-8e7f5613/",
+      "displayName": "Jimmy Patronis",
+      "reportedName": "Jimmy Patronis",
+      "portrait": {
+        "src": "people-photos/P000622.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide P000622"
+      }
+    },
+    {
+      "id": "p2026-c0f41fe2",
+      "path": "people/2026/house-12-austin-rogers-c0f41fe2/",
+      "displayName": "Austin Rogers",
+      "reportedName": "Austin Rogers",
+      "portrait": null
+    },
+    {
+      "id": "p2026-f3384366",
+      "path": "people/2026/house-12-kat-cammack-f3384366/",
+      "displayName": "Kat Cammack",
+      "reportedName": "Kat Cammack",
+      "portrait": {
+        "src": "people-photos/C001039.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001039"
+      }
+    },
+    {
+      "id": "p2026-1450bc53",
+      "path": "people/2026/house-12-aaron-bean-1450bc53/",
+      "displayName": "Aaron Bean",
+      "reportedName": "Aaron Bean",
+      "portrait": {
+        "src": "people-photos/B001314.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001314"
+      }
+    },
+    {
+      "id": "p2026-eadd7c41",
+      "path": "people/2026/house-12-john-h-rutherford-eadd7c41/",
+      "displayName": "John H. Rutherford",
+      "reportedName": "John H. Rutherford",
+      "portrait": {
+        "src": "people-photos/R000609.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide R000609"
+      }
+    },
+    {
+      "id": "p2026-7cce952e",
+      "path": "people/2026/house-12-randy-fine-7cce952e/",
+      "displayName": "Randy Fine",
+      "reportedName": "Randy Fine",
+      "portrait": {
+        "src": "people-photos/F000484.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide F000484"
+      }
+    },
+    {
+      "id": "p2026-a6016a4c",
+      "path": "people/2026/house-12-ryan-elijah-a6016a4c/",
+      "displayName": "Ryan Elijah",
+      "reportedName": "Ryan Elijah",
+      "portrait": null
+    },
+    {
+      "id": "p2026-ec5c51e4",
+      "path": "people/2026/house-12-mike-haridopolos-ec5c51e4/",
+      "displayName": "Mike Haridopolos",
+      "reportedName": "Mike Haridopolos",
+      "portrait": {
+        "src": "people-photos/H001099.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H001099"
+      }
+    },
+    {
+      "id": "p2026-40cc0ea8",
+      "path": "people/2026/house-12-darren-soto-40cc0ea8/",
+      "displayName": "Darren Soto",
+      "reportedName": "Darren Soto",
+      "portrait": {
+        "src": "people-photos/S001200.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001200"
+      }
+    },
+    {
+      "id": "p2026-af7367cb",
+      "path": "people/2026/house-12-joe-strada-af7367cb/",
+      "displayName": "Joe Strada",
+      "reportedName": "Joe Strada",
+      "portrait": null
+    },
+    {
+      "id": "p2026-9f8f319b",
+      "path": "people/2026/house-12-gus-michael-bilirakis-9f8f319b/",
+      "displayName": "Gus Michael Bilirakis",
+      "reportedName": "Gus Michael Bilirakis",
+      "portrait": null
+    },
+    {
+      "id": "p2026-ee8a18c6",
+      "path": "people/2026/house-12-anna-paulina-luna-ee8a18c6/",
+      "displayName": "Anna Paulina Luna",
+      "reportedName": "Anna Paulina Luna",
+      "portrait": {
+        "src": "people-photos/L000596.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000596"
+      }
+    },
+    {
+      "id": "p2026-5ed87e70",
+      "path": "people/2026/house-12-kathy-castor-5ed87e70/",
+      "displayName": "Kathy Castor",
+      "reportedName": "Kathy Castor",
+      "portrait": {
+        "src": "people-photos/C001066.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001066"
+      }
+    },
+    {
+      "id": "p2026-94b56713",
+      "path": "people/2026/house-12-laurel-lee-94b56713/",
+      "displayName": "Laurel Lee",
+      "reportedName": "Laurel Lee",
+      "portrait": {
+        "src": "people-photos/L000597.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000597"
+      }
+    },
+    {
+      "id": "p2026-8a36c279",
+      "path": "people/2026/house-12-sydney-gruters-8a36c279/",
+      "displayName": "Sydney Gruters",
+      "reportedName": "Sydney Gruters",
+      "portrait": null
+    },
+    {
+      "id": "p2026-c12de291",
+      "path": "people/2026/house-12-greg-steube-c12de291/",
+      "displayName": "Greg Steube",
+      "reportedName": "Greg Steube",
+      "portrait": null
+    },
+    {
+      "id": "p2026-93ec1df1",
+      "path": "people/2026/house-12-scott-franklin-93ec1df1/",
+      "displayName": "Scott Franklin",
+      "reportedName": "Scott Franklin",
+      "portrait": {
+        "src": "people-photos/F000472.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide F000472"
+      }
+    },
+    {
+      "id": "p2026-14b55467",
+      "path": "people/2026/house-12-jim-schwartzel-14b55467/",
+      "displayName": "Jim Schwartzel",
+      "reportedName": "Jim Schwartzel",
+      "portrait": null
+    },
+    {
+      "id": "p2026-92b9dcfb",
+      "path": "people/2026/house-12-debbie-wasserman-schultz-92b9dcfb/",
+      "displayName": "Debbie Wasserman Schultz",
+      "reportedName": "Debbie Wasserman Schultz",
+      "portrait": {
+        "src": "people-photos/W000797.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000797"
+      }
+    },
+    {
+      "id": "p2026-0d1b45ca",
+      "path": "people/2026/house-12-brian-mast-0d1b45ca/",
+      "displayName": "Brian Mast",
+      "reportedName": "Brian Mast",
+      "portrait": {
+        "src": "people-photos/M001199.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001199"
+      }
+    },
+    {
+      "id": "p2026-c2da4962",
+      "path": "people/2026/house-12-pia-dandiya-c2da4962/",
+      "displayName": "Pia Dandiya",
+      "reportedName": "Pia Dandiya",
+      "portrait": null
+    },
+    {
+      "id": "p2026-78446871",
+      "path": "people/2026/house-12-lois-frankel-78446871/",
+      "displayName": "Lois Frankel",
+      "reportedName": "Lois Frankel",
+      "portrait": {
+        "src": "people-photos/F000462.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide F000462"
+      }
+    },
+    {
+      "id": "p2026-e0cb3823",
+      "path": "people/2026/house-12-oliver-g-gilbert-e0cb3823/",
+      "displayName": "Oliver G. Gilbert",
+      "reportedName": "Oliver G. Gilbert",
+      "portrait": null
+    },
+    {
+      "id": "p2026-fb5c2420",
+      "path": "people/2026/house-12-jared-moskowitz-fb5c2420/",
+      "displayName": "Jared Moskowitz",
+      "reportedName": "Jared Moskowitz",
+      "portrait": {
+        "src": "people-photos/M001217.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001217"
+      }
+    },
+    {
+      "id": "p2026-6fe71f2d",
+      "path": "people/2026/house-12-mario-diaz-balart-6fe71f2d/",
+      "displayName": "Mario Diaz-Balart",
+      "reportedName": "Mario Diaz-Balart",
+      "portrait": {
+        "src": "people-photos/D000600.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide D000600"
+      }
+    },
+    {
+      "id": "p2026-ae3cf96e",
+      "path": "people/2026/house-12-maria-elvira-salazar-ae3cf96e/",
+      "displayName": "Maria Elvira Salazar",
+      "reportedName": "Maria Elvira Salazar",
+      "portrait": {
+        "src": "people-photos/S000168.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S000168"
+      }
+    },
+    {
+      "id": "p2026-dcd2c4a8",
+      "path": "people/2026/house-12-carlos-a-gimenez-dcd2c4a8/",
+      "displayName": "Carlos A. Gimenez",
+      "reportedName": "Carlos A. Gimenez",
+      "portrait": {
+        "src": "people-photos/G000593.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide G000593"
+      }
+    },
+    {
+      "id": "p2026-caf5d459",
+      "path": "people/2026/house-13-james-jim-kingston-rep-caf5d459/",
+      "displayName": "James \"Jim\" Kingston (Rep)",
+      "reportedName": "James \"Jim\" Kingston (Rep)",
+      "portrait": null
+    },
+    {
+      "id": "p2026-21810eec",
+      "path": "people/2026/house-13-sanford-bishop-i-dem-21810eec/",
+      "displayName": "Sanford Bishop (I) (Dem)",
+      "reportedName": "Sanford Bishop (I) (Dem)",
+      "portrait": {
+        "src": "people-photos/B000490.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B000490"
+      }
+    },
+    {
+      "id": "p2026-c7811d01",
+      "path": "people/2026/house-13-brian-jack-i-rep-c7811d01/",
+      "displayName": "Brian Jack (I)(Rep)",
+      "reportedName": "Brian Jack (I)(Rep)",
+      "portrait": {
+        "src": "people-photos/J000311.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide J000311"
+      }
+    },
+    {
+      "id": "p2026-72e0260d",
+      "path": "people/2026/house-13-henry-hank-johnson-jr-i-dem-72e0260d/",
+      "displayName": "Henry \"Hank\" Johnson Jr. (I) (Dem)",
+      "reportedName": "Henry \"Hank\" Johnson Jr. (I) (Dem)",
+      "portrait": {
+        "src": "people-photos/J000288.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide J000288"
+      }
+    },
+    {
+      "id": "p2026-7c35c010",
+      "path": "people/2026/house-13-nikema-williams-i-dem-7c35c010/",
+      "displayName": "Nikema Williams (I)(Dem)",
+      "reportedName": "Nikema Williams (I)(Dem)",
+      "portrait": {
+        "src": "people-photos/W000788.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000788"
+      }
+    },
+    {
+      "id": "p2026-382c7b2a",
+      "path": "people/2026/house-13-lucy-mcbath-i-dem-382c7b2a/",
+      "displayName": "Lucy McBath (I) (Dem)",
+      "reportedName": "Lucy McBath (I) (Dem)",
+      "portrait": {
+        "src": "people-photos/M001208.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001208"
+      }
+    },
+    {
+      "id": "p2026-c3be098e",
+      "path": "people/2026/house-13-rich-mccormick-i-rep-c3be098e/",
+      "displayName": "Rich McCormick (I) (Rep)",
+      "reportedName": "Rich McCormick (I) (Rep)",
+      "portrait": {
+        "src": "people-photos/M001218.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001218"
+      }
+    },
+    {
+      "id": "p2026-b70426ec",
+      "path": "people/2026/house-13-austin-scott-i-rep-b70426ec/",
+      "displayName": "Austin Scott (I) (Rep)",
+      "reportedName": "Austin Scott (I) (Rep)",
+      "portrait": {
+        "src": "people-photos/S001189.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001189"
+      }
+    },
+    {
+      "id": "p2026-13d10ff2",
+      "path": "people/2026/house-13-andrew-clyde-i-rep-13d10ff2/",
+      "displayName": "Andrew Clyde (I) (Rep)",
+      "reportedName": "Andrew Clyde (I) (Rep)",
+      "portrait": {
+        "src": "people-photos/C001116.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001116"
+      }
+    },
+    {
+      "id": "p2026-d9d9697d",
+      "path": "people/2026/house-13-houston-gaines-rep-d9d9697d/",
+      "displayName": "Houston Gaines (Rep)",
+      "reportedName": "Houston Gaines (Rep)",
+      "portrait": null
+    },
+    {
+      "id": "p2026-fb8c4df2",
+      "path": "people/2026/house-13-john-cowan-rep-fb8c4df2/",
+      "displayName": "John Cowan (Rep)",
+      "reportedName": "John Cowan (Rep)",
+      "portrait": null
+    },
+    {
+      "id": "p2026-1933f8fc",
+      "path": "people/2026/house-13-rick-w-allen-i-rep-1933f8fc/",
+      "displayName": "Rick W. Allen (I) (Rep)",
+      "reportedName": "Rick W. Allen (I) (Rep)",
+      "portrait": {
+        "src": "people-photos/A000372.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide A000372"
+      }
+    },
+    {
+      "id": "p2026-7b61497c",
+      "path": "people/2026/house-13-jasmine-clark-dem-7b61497c/",
+      "displayName": "Jasmine Clark (Dem)",
+      "reportedName": "Jasmine Clark (Dem)",
+      "portrait": null
+    },
+    {
+      "id": "p2026-6431723f",
+      "path": "people/2026/house-13-clay-fuller-i-rep-6431723f/",
+      "displayName": "Clay Fuller (I) (Rep)",
+      "reportedName": "Clay Fuller (I) (Rep)",
+      "portrait": null
+    },
+    {
+      "id": "p2026-ebdd8c61",
+      "path": "people/2026/house-16-russ-fulcher-ebdd8c61/",
+      "displayName": "Russ Fulcher",
+      "reportedName": "Russ Fulcher",
+      "portrait": {
+        "src": "people-photos/F000469.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide F000469"
+      }
+    },
+    {
+      "id": "p2026-2cafe7c5",
+      "path": "people/2026/house-16-mike-simpson-2cafe7c5/",
+      "displayName": "Mike Simpson",
+      "reportedName": "Mike Simpson",
+      "portrait": {
+        "src": "people-photos/S001148.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001148"
+      }
+    },
+    {
+      "id": "p2026-302c55d8",
+      "path": "people/2026/house-19-christina-bohannan-302c55d8/",
+      "displayName": "Christina Bohannan",
+      "reportedName": "Christina Bohannan",
+      "portrait": null
+    },
+    {
+      "id": "p2026-7cd6cfc7",
+      "path": "people/2026/house-19-lindsay-james-7cd6cfc7/",
+      "displayName": "Lindsay James",
+      "reportedName": "Lindsay James",
+      "portrait": null
+    },
+    {
+      "id": "p2026-d5f020bd",
+      "path": "people/2026/house-19-sarah-trone-garriott-d5f020bd/",
+      "displayName": "Sarah Trone Garriott",
+      "reportedName": "Sarah Trone Garriott",
+      "portrait": null
+    },
+    {
+      "id": "p2026-294a58d6",
+      "path": "people/2026/house-19-chris-mcgowan-294a58d6/",
+      "displayName": "Chris McGowan",
+      "reportedName": "Chris McGowan",
+      "portrait": null
+    },
+    {
+      "id": "p2026-31ba9b0b",
+      "path": "people/2026/house-22-steve-scalise-31ba9b0b/",
+      "displayName": "Steve Scalise",
+      "reportedName": "Steve Scalise",
+      "portrait": {
+        "src": "people-photos/S001176.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001176"
+      }
+    },
+    {
+      "id": "p2026-97b85a82",
+      "path": "people/2026/house-22-troy-a-carter-sr-97b85a82/",
+      "displayName": "Troy A. Carter, Sr.",
+      "reportedName": "Troy A. Carter, Sr.",
+      "portrait": null
+    },
+    {
+      "id": "p2026-b5354258",
+      "path": "people/2026/house-22-clay-higgins-b5354258/",
+      "displayName": "\"Clay\" Higgins",
+      "reportedName": "\"Clay\" Higgins",
+      "portrait": null
+    },
+    {
+      "id": "p2026-f59ae3b4",
+      "path": "people/2026/house-22-mike-johnson-f59ae3b4/",
+      "displayName": "\"Mike\" Johnson",
+      "reportedName": "\"Mike\" Johnson",
+      "portrait": null
+    },
+    {
+      "id": "p2026-c23d6a96",
+      "path": "people/2026/house-22-patricia-pat-moore-c23d6a96/",
+      "displayName": "Patricia \"Pat\" Moore",
+      "reportedName": "Patricia \"Pat\" Moore",
+      "portrait": null
+    },
+    {
+      "id": "p2026-a12c1ca4",
+      "path": "people/2026/house-22-chauna-banks-a12c1ca4/",
+      "displayName": "Chauna Banks",
+      "reportedName": "Chauna Banks",
+      "portrait": null
+    },
+    {
+      "id": "p2026-f2c3662f",
+      "path": "people/2026/house-27-jake-johnson-f2c3662f/",
+      "displayName": "Jake Johnson",
+      "reportedName": "Jake Johnson",
+      "portrait": null
+    },
+    {
+      "id": "p2026-d91f264e",
+      "path": "people/2026/house-27-matt-little-d91f264e/",
+      "displayName": "Matt Little",
+      "reportedName": "Matt Little",
+      "portrait": null
+    },
+    {
+      "id": "p2026-6fd27923",
+      "path": "people/2026/house-27-kelly-morrison-6fd27923/",
+      "displayName": "Kelly Morrison",
+      "reportedName": "Kelly Morrison",
+      "portrait": {
+        "src": "people-photos/M001234.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001234"
+      }
+    },
+    {
+      "id": "p2026-7b60d81a",
+      "path": "people/2026/house-27-betty-mccollum-7b60d81a/",
+      "displayName": "Betty McCollum",
+      "reportedName": "Betty McCollum",
+      "portrait": {
+        "src": "people-photos/M001143.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001143"
+      }
+    },
+    {
+      "id": "p2026-29a56626",
+      "path": "people/2026/house-27-ilhan-omar-29a56626/",
+      "displayName": "Ilhan Omar",
+      "reportedName": "Ilhan Omar",
+      "portrait": {
+        "src": "people-photos/O000173.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide O000173"
+      }
+    },
+    {
+      "id": "p2026-4cc6b43e",
+      "path": "people/2026/house-27-tom-emmer-4cc6b43e/",
+      "displayName": "Tom Emmer",
+      "reportedName": "Tom Emmer",
+      "portrait": {
+        "src": "people-photos/E000294.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide E000294"
+      }
+    },
+    {
+      "id": "p2026-fcb3433b",
+      "path": "people/2026/house-27-michelle-fischbach-fcb3433b/",
+      "displayName": "Michelle Fischbach",
+      "reportedName": "Michelle Fischbach",
+      "portrait": {
+        "src": "people-photos/F000470.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide F000470"
+      }
+    },
+    {
+      "id": "p2026-bcc1ee88",
+      "path": "people/2026/house-27-pete-stauber-bcc1ee88/",
+      "displayName": "Pete Stauber",
+      "reportedName": "Pete Stauber",
+      "portrait": {
+        "src": "people-photos/S001212.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001212"
+      }
+    },
+    {
+      "id": "p2026-00f6602b",
+      "path": "people/2026/house-29-wesley-bell-00f6602b/",
+      "displayName": "Wesley Bell",
+      "reportedName": "Wesley Bell",
+      "portrait": {
+        "src": "people-photos/B001324.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001324"
+      }
+    },
+    {
+      "id": "p2026-1b2d2c9b",
+      "path": "people/2026/house-29-fred-wellman-1b2d2c9b/",
+      "displayName": "Fred Wellman",
+      "reportedName": "Fred Wellman",
+      "portrait": null
+    },
+    {
+      "id": "p2026-9c386908",
+      "path": "people/2026/house-29-bob-onder-9c386908/",
+      "displayName": "Bob Onder",
+      "reportedName": "Bob Onder",
+      "portrait": null
+    },
+    {
+      "id": "p2026-9fe12e3f",
+      "path": "people/2026/house-29-mark-alford-9fe12e3f/",
+      "displayName": "Mark Alford",
+      "reportedName": "Mark Alford",
+      "portrait": {
+        "src": "people-photos/A000379.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide A000379"
+      }
+    },
+    {
+      "id": "p2026-c826e42c",
+      "path": "people/2026/house-29-emanuel-cleaver-ii-c826e42c/",
+      "displayName": "Emanuel Cleaver, II",
+      "reportedName": "Emanuel Cleaver, II",
+      "portrait": {
+        "src": "people-photos/C001061.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001061"
+      }
+    },
+    {
+      "id": "p2026-d6e7ad6b",
+      "path": "people/2026/house-29-chris-stigall-d6e7ad6b/",
+      "displayName": "Chris Stigall",
+      "reportedName": "Chris Stigall",
+      "portrait": null
+    },
+    {
+      "id": "p2026-52b25af7",
+      "path": "people/2026/house-29-eric-w-burlison-52b25af7/",
+      "displayName": "Eric W. Burlison",
+      "reportedName": "Eric W. Burlison",
+      "portrait": {
+        "src": "people-photos/B001316.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001316"
+      }
+    },
+    {
+      "id": "p2026-cef78194",
+      "path": "people/2026/house-29-jason-t-smith-cef78194/",
+      "displayName": "Jason T. Smith",
+      "reportedName": "Jason T. Smith",
+      "portrait": {
+        "src": "people-photos/S001195.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001195"
+      }
+    },
+    {
+      "id": "p2026-1f448410",
+      "path": "people/2026/house-30-sam-forstag-1f448410/",
+      "displayName": "SAM FORSTAG",
+      "reportedName": "SAM FORSTAG",
+      "portrait": null
+    },
+    {
+      "id": "p2026-2d4a982a",
+      "path": "people/2026/house-30-troy-downing-2d4a982a/",
+      "displayName": "TROY DOWNING",
+      "reportedName": "TROY DOWNING",
+      "portrait": {
+        "src": "people-photos/D000634.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide D000634"
+      }
+    },
+    {
+      "id": "p2026-87b7deeb",
+      "path": "people/2026/house-35-melanie-ann-stansbury-87b7deeb/",
+      "displayName": "MELANIE ANN STANSBURY",
+      "reportedName": "MELANIE ANN STANSBURY",
+      "portrait": {
+        "src": "people-photos/S001218.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001218"
+      }
+    },
+    {
+      "id": "p2026-53bb7488",
+      "path": "people/2026/house-35-gabriel-vasquez-53bb7488/",
+      "displayName": "GABRIEL VASQUEZ",
+      "reportedName": "GABRIEL VASQUEZ",
+      "portrait": null
+    },
+    {
+      "id": "p2026-a9e25fd0",
+      "path": "people/2026/house-35-teresa-leger-fernandez-a9e25fd0/",
+      "displayName": "TERESA LEGER FERNANDEZ",
+      "reportedName": "TERESA LEGER FERNANDEZ",
+      "portrait": {
+        "src": "people-photos/L000273.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000273"
+      }
+    },
+    {
+      "id": "p2026-6337f75a",
+      "path": "people/2026/house-37-don-davis-6337f75a/",
+      "displayName": "Don Davis",
+      "reportedName": "Don Davis",
+      "portrait": null
+    },
+    {
+      "id": "p2026-4a532436",
+      "path": "people/2026/house-37-deborah-k-ross-4a532436/",
+      "displayName": "Deborah K. Ross",
+      "reportedName": "Deborah K. Ross",
+      "portrait": {
+        "src": "people-photos/R000305.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide R000305"
+      }
+    },
+    {
+      "id": "p2026-84c75b36",
+      "path": "people/2026/house-37-greg-murphy-84c75b36/",
+      "displayName": "Greg Murphy",
+      "reportedName": "Greg Murphy",
+      "portrait": null
+    },
+    {
+      "id": "p2026-ecaebb88",
+      "path": "people/2026/house-37-valerie-p-foushee-ecaebb88/",
+      "displayName": "Valerie P. Foushee",
+      "reportedName": "Valerie P. Foushee",
+      "portrait": {
+        "src": "people-photos/F000477.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide F000477"
+      }
+    },
+    {
+      "id": "p2026-5fa37834",
+      "path": "people/2026/house-37-chuck-hubbard-5fa37834/",
+      "displayName": "Chuck Hubbard",
+      "reportedName": "Chuck Hubbard",
+      "portrait": null
+    },
+    {
+      "id": "p2026-208f9942",
+      "path": "people/2026/house-37-cyril-jefferson-208f9942/",
+      "displayName": "Cyril Jefferson",
+      "reportedName": "Cyril Jefferson",
+      "portrait": null
+    },
+    {
+      "id": "p2026-9b18d4fb",
+      "path": "people/2026/house-37-david-rouzer-9b18d4fb/",
+      "displayName": "David Rouzer",
+      "reportedName": "David Rouzer",
+      "portrait": {
+        "src": "people-photos/R000603.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide R000603"
+      }
+    },
+    {
+      "id": "p2026-351a024d",
+      "path": "people/2026/house-37-mark-harris-351a024d/",
+      "displayName": "Mark Harris",
+      "reportedName": "Mark Harris",
+      "portrait": {
+        "src": "people-photos/H001102.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H001102"
+      }
+    },
+    {
+      "id": "p2026-1e90b1c4",
+      "path": "people/2026/house-37-richard-n-ojeda-ii-1e90b1c4/",
+      "displayName": "Richard N. Ojeda II",
+      "reportedName": "Richard N. Ojeda II",
+      "portrait": null
+    },
+    {
+      "id": "p2026-80e8373b",
+      "path": "people/2026/house-37-pat-harrigan-80e8373b/",
+      "displayName": "Pat Harrigan",
+      "reportedName": "Pat Harrigan",
+      "portrait": {
+        "src": "people-photos/H001101.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H001101"
+      }
+    },
+    {
+      "id": "p2026-88284b86",
+      "path": "people/2026/house-37-jamie-ager-88284b86/",
+      "displayName": "Jamie Ager",
+      "reportedName": "Jamie Ager",
+      "portrait": null
+    },
+    {
+      "id": "p2026-d7a6513e",
+      "path": "people/2026/house-37-alma-s-adams-d7a6513e/",
+      "displayName": "Alma S. Adams",
+      "reportedName": "Alma S. Adams",
+      "portrait": {
+        "src": "people-photos/A000370.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide A000370"
+      }
+    },
+    {
+      "id": "p2026-3d1ad57b",
+      "path": "people/2026/house-37-paul-barringer-3d1ad57b/",
+      "displayName": "Paul Barringer",
+      "reportedName": "Paul Barringer",
+      "portrait": null
+    },
+    {
+      "id": "p2026-229a1e57",
+      "path": "people/2026/house-37-lakesha-womack-229a1e57/",
+      "displayName": "Lakesha Womack",
+      "reportedName": "Lakesha Womack",
+      "portrait": null
+    },
+    {
+      "id": "p2026-79cc64cf",
+      "path": "people/2026/house-39-greg-landsman-79cc64cf/",
+      "displayName": "Greg Landsman",
+      "reportedName": "Greg Landsman",
+      "portrait": {
+        "src": "people-photos/L000601.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000601"
+      }
+    },
+    {
+      "id": "p2026-c291ecd0",
+      "path": "people/2026/house-39-david-j-taylor-c291ecd0/",
+      "displayName": "David J. Taylor",
+      "reportedName": "David J. Taylor",
+      "portrait": {
+        "src": "people-photos/T000490.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide T000490"
+      }
+    },
+    {
+      "id": "p2026-dcd4a4e1",
+      "path": "people/2026/house-39-joyce-beatty-dcd4a4e1/",
+      "displayName": "Joyce Beatty",
+      "reportedName": "Joyce Beatty",
+      "portrait": {
+        "src": "people-photos/B001281.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001281"
+      }
+    },
+    {
+      "id": "p2026-284665c7",
+      "path": "people/2026/house-39-jim-jordan-284665c7/",
+      "displayName": "Jim Jordan",
+      "reportedName": "Jim Jordan",
+      "portrait": {
+        "src": "people-photos/J000289.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide J000289"
+      }
+    },
+    {
+      "id": "p2026-b36b4283",
+      "path": "people/2026/house-39-bob-latta-b36b4283/",
+      "displayName": "Bob Latta",
+      "reportedName": "Bob Latta",
+      "portrait": null
+    },
+    {
+      "id": "p2026-0819e4cb",
+      "path": "people/2026/house-39-michael-a-rulli-0819e4cb/",
+      "displayName": "Michael A. Rulli",
+      "reportedName": "Michael A. Rulli",
+      "portrait": {
+        "src": "people-photos/R000619.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide R000619"
+      }
+    },
+    {
+      "id": "p2026-139b07be",
+      "path": "people/2026/house-39-brian-poindexter-139b07be/",
+      "displayName": "Brian Poindexter",
+      "reportedName": "Brian Poindexter",
+      "portrait": null
+    },
+    {
+      "id": "p2026-881d1400",
+      "path": "people/2026/house-39-warren-davidson-881d1400/",
+      "displayName": "Warren Davidson",
+      "reportedName": "Warren Davidson",
+      "portrait": {
+        "src": "people-photos/D000626.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide D000626"
+      }
+    },
+    {
+      "id": "p2026-75b8dc49",
+      "path": "people/2026/house-39-marcy-kaptur-75b8dc49/",
+      "displayName": "Marcy Kaptur",
+      "reportedName": "Marcy Kaptur",
+      "portrait": {
+        "src": "people-photos/K000009.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide K000009"
+      }
+    },
+    {
+      "id": "p2026-92e83f3a",
+      "path": "people/2026/house-39-kristina-knickerbocker-92e83f3a/",
+      "displayName": "Kristina Knickerbocker",
+      "reportedName": "Kristina Knickerbocker",
+      "portrait": null
+    },
+    {
+      "id": "p2026-45be85cb",
+      "path": "people/2026/house-39-shontel-m-brown-45be85cb/",
+      "displayName": "Shontel M. Brown",
+      "reportedName": "Shontel M. Brown",
+      "portrait": {
+        "src": "people-photos/B001313.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001313"
+      }
+    },
+    {
+      "id": "p2026-c2572d18",
+      "path": "people/2026/house-39-troy-balderson-c2572d18/",
+      "displayName": "Troy Balderson",
+      "reportedName": "Troy Balderson",
+      "portrait": {
+        "src": "people-photos/B001306.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001306"
+      }
+    },
+    {
+      "id": "p2026-1b3a618b",
+      "path": "people/2026/house-39-emilia-sykes-1b3a618b/",
+      "displayName": "Emilia Sykes",
+      "reportedName": "Emilia Sykes",
+      "portrait": {
+        "src": "people-photos/S001223.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001223"
+      }
+    },
+    {
+      "id": "p2026-bc1f0044",
+      "path": "people/2026/house-39-david-p-joyce-bc1f0044/",
+      "displayName": "David P. Joyce",
+      "reportedName": "David P. Joyce",
+      "portrait": {
+        "src": "people-photos/J000295.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide J000295"
+      }
+    },
+    {
+      "id": "p2026-cd2e74c9",
+      "path": "people/2026/house-39-don-leonard-cd2e74c9/",
+      "displayName": "Don Leonard",
+      "reportedName": "Don Leonard",
+      "portrait": null
+    },
+    {
+      "id": "p2026-ae394013",
+      "path": "people/2026/house-40-mark-tedford-ae394013/",
+      "displayName": "MARK TEDFORD",
+      "reportedName": "MARK TEDFORD",
+      "portrait": null
+    },
+    {
+      "id": "p2026-8397c461",
+      "path": "people/2026/house-40-josh-brecheen-8397c461/",
+      "displayName": "JOSH BRECHEEN",
+      "reportedName": "JOSH BRECHEEN",
+      "portrait": {
+        "src": "people-photos/B001317.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001317"
+      }
+    },
+    {
+      "id": "p2026-41042c56",
+      "path": "people/2026/house-40-frank-d-lucas-41042c56/",
+      "displayName": "FRANK D. LUCAS",
+      "reportedName": "FRANK D. LUCAS",
+      "portrait": {
+        "src": "people-photos/L000491.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000491"
+      }
+    },
+    {
+      "id": "p2026-eb38a830",
+      "path": "people/2026/house-40-tom-cole-eb38a830/",
+      "displayName": "TOM COLE",
+      "reportedName": "TOM COLE",
+      "portrait": {
+        "src": "people-photos/C001053.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001053"
+      }
+    },
+    {
+      "id": "p2026-af74d1ae",
+      "path": "people/2026/house-40-stephanie-bice-af74d1ae/",
+      "displayName": "STEPHANIE BICE",
+      "reportedName": "STEPHANIE BICE",
+      "portrait": {
+        "src": "people-photos/B000740.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B000740"
+      }
+    },
+    {
+      "id": "p2026-29570954",
+      "path": "people/2026/house-42-bob-harvie-29570954/",
+      "displayName": "Bob Harvie",
+      "reportedName": "Bob Harvie",
+      "portrait": null
+    },
+    {
+      "id": "p2026-b533a62a",
+      "path": "people/2026/house-42-brendan-f-boyle-b533a62a/",
+      "displayName": "Brendan F Boyle",
+      "reportedName": "Brendan F Boyle",
+      "portrait": {
+        "src": "people-photos/B001296.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001296"
+      }
+    },
+    {
+      "id": "p2026-c2804092",
+      "path": "people/2026/house-42-chris-rabb-c2804092/",
+      "displayName": "Chris Rabb",
+      "reportedName": "Chris Rabb",
+      "portrait": null
+    },
+    {
+      "id": "p2026-d2e84907",
+      "path": "people/2026/house-42-madeleine-dean-d2e84907/",
+      "displayName": "Madeleine Dean",
+      "reportedName": "Madeleine Dean",
+      "portrait": {
+        "src": "people-photos/D000631.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide D000631"
+      }
+    },
+    {
+      "id": "p2026-9dc74a3a",
+      "path": "people/2026/house-42-mary-gay-scanlon-9dc74a3a/",
+      "displayName": "Mary Gay Scanlon",
+      "reportedName": "Mary Gay Scanlon",
+      "portrait": {
+        "src": "people-photos/S001205.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001205"
+      }
+    },
+    {
+      "id": "p2026-b3e2232a",
+      "path": "people/2026/house-42-chrissy-houlahan-b3e2232a/",
+      "displayName": "Chrissy Houlahan",
+      "reportedName": "Chrissy Houlahan",
+      "portrait": {
+        "src": "people-photos/H001085.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H001085"
+      }
+    },
+    {
+      "id": "p2026-17d6f19f",
+      "path": "people/2026/house-42-bob-brooks-17d6f19f/",
+      "displayName": "Bob Brooks",
+      "reportedName": "Bob Brooks",
+      "portrait": null
+    },
+    {
+      "id": "p2026-9e286e98",
+      "path": "people/2026/house-42-paige-cognetti-9e286e98/",
+      "displayName": "Paige Cognetti",
+      "reportedName": "Paige Cognetti",
+      "portrait": null
+    },
+    {
+      "id": "p2026-809dbddc",
+      "path": "people/2026/house-42-dan-meuser-809dbddc/",
+      "displayName": "Dan Meuser",
+      "reportedName": "Dan Meuser",
+      "portrait": null
+    },
+    {
+      "id": "p2026-00554a9d",
+      "path": "people/2026/house-42-janelle-stelson-00554a9d/",
+      "displayName": "Janelle Stelson",
+      "reportedName": "Janelle Stelson",
+      "portrait": null
+    },
+    {
+      "id": "p2026-b58950b6",
+      "path": "people/2026/house-42-lloyd-k-smucker-b58950b6/",
+      "displayName": "Lloyd K Smucker",
+      "reportedName": "Lloyd K Smucker",
+      "portrait": {
+        "src": "people-photos/S001199.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001199"
+      }
+    },
+    {
+      "id": "p2026-e5bb5521",
+      "path": "people/2026/house-42-summer-lee-e5bb5521/",
+      "displayName": "Summer Lee",
+      "reportedName": "Summer Lee",
+      "portrait": {
+        "src": "people-photos/L000602.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000602"
+      }
+    },
+    {
+      "id": "p2026-25b47ec2",
+      "path": "people/2026/house-42-john-joyce-25b47ec2/",
+      "displayName": "John Joyce",
+      "reportedName": "John Joyce",
+      "portrait": {
+        "src": "people-photos/J000302.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide J000302"
+      }
+    },
+    {
+      "id": "p2026-1cb620b7",
+      "path": "people/2026/house-42-guy-reschenthaler-1cb620b7/",
+      "displayName": "Guy Reschenthaler",
+      "reportedName": "Guy Reschenthaler",
+      "portrait": {
+        "src": "people-photos/R000610.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide R000610"
+      }
+    },
+    {
+      "id": "p2026-62a28b6a",
+      "path": "people/2026/house-42-glenn-gt-thompson-62a28b6a/",
+      "displayName": "Glenn Gt Thompson",
+      "reportedName": "Glenn Gt Thompson",
+      "portrait": null
+    },
+    {
+      "id": "p2026-45630f47",
+      "path": "people/2026/house-42-mike-kelly-45630f47/",
+      "displayName": "Mike Kelly",
+      "reportedName": "Mike Kelly",
+      "portrait": {
+        "src": "people-photos/K000376.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide K000376"
+      }
+    },
+    {
+      "id": "p2026-6dbff186",
+      "path": "people/2026/house-42-chris-deluzio-6dbff186/",
+      "displayName": "Chris Deluzio",
+      "reportedName": "Chris Deluzio",
+      "portrait": {
+        "src": "people-photos/D000530.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide D000530"
+      }
+    },
+    {
+      "id": "p2026-ae869dce",
+      "path": "people/2026/house-44-gabriel-amo-dem-ae869dce/",
+      "displayName": "Gabriel Amo (DEM)",
+      "reportedName": "Gabriel Amo (DEM)",
+      "portrait": null
+    },
+    {
+      "id": "p2026-0a7a3df2",
+      "path": "people/2026/house-44-seth-magaziner-dem-0a7a3df2/",
+      "displayName": "Seth Magaziner (DEM)",
+      "reportedName": "Seth Magaziner (DEM)",
+      "portrait": {
+        "src": "people-photos/M001223.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001223"
+      }
+    },
+    {
+      "id": "p2026-9faa0ee2",
+      "path": "people/2026/house-45-nancy-lacore-9faa0ee2/",
+      "displayName": "Nancy Lacore",
+      "reportedName": "Nancy Lacore",
+      "portrait": null
+    },
+    {
+      "id": "p2026-6a562052",
+      "path": "people/2026/house-45-joe-wilson-6a562052/",
+      "displayName": "Joe Wilson",
+      "reportedName": "Joe Wilson",
+      "portrait": {
+        "src": "people-photos/W000795.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000795"
+      }
+    },
+    {
+      "id": "p2026-44f94066",
+      "path": "people/2026/house-45-sheri-biggs-44f94066/",
+      "displayName": "Sheri Biggs",
+      "reportedName": "Sheri Biggs",
+      "portrait": {
+        "src": "people-photos/B001325.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001325"
+      }
+    },
+    {
+      "id": "p2026-28eeba1a",
+      "path": "people/2026/house-45-william-timmons-28eeba1a/",
+      "displayName": "William Timmons",
+      "reportedName": "William Timmons",
+      "portrait": {
+        "src": "people-photos/T000480.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide T000480"
+      }
+    },
+    {
+      "id": "p2026-49ad74ac",
+      "path": "people/2026/house-45-wes-climer-49ad74ac/",
+      "displayName": "Wes Climer",
+      "reportedName": "Wes Climer",
+      "portrait": null
+    },
+    {
+      "id": "p2026-3a34ab00",
+      "path": "people/2026/house-45-james-e-jim-clyburn-3a34ab00/",
+      "displayName": "James E Jim Clyburn",
+      "reportedName": "James E Jim Clyburn",
+      "portrait": null
+    },
+    {
+      "id": "p2026-fce53330",
+      "path": "people/2026/house-45-russell-fry-fce53330/",
+      "displayName": "Russell Fry",
+      "reportedName": "Russell Fry",
+      "portrait": {
+        "src": "people-photos/F000478.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide F000478"
+      }
+    },
+    {
+      "id": "p2026-8c1be791",
+      "path": "people/2026/house-46-marty-jackley-8c1be791/",
+      "displayName": "Marty  Jackley",
+      "reportedName": "Marty  Jackley",
+      "portrait": null
+    },
+    {
+      "id": "p2026-23b8abf7",
+      "path": "people/2026/house-48-nathaniel-moran-23b8abf7/",
+      "displayName": "NATHANIEL MORAN",
+      "reportedName": "NATHANIEL MORAN",
+      "portrait": {
+        "src": "people-photos/M001224.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001224"
+      }
+    },
+    {
+      "id": "p2026-2ae7bb03",
+      "path": "people/2026/house-48-steve-toth-2ae7bb03/",
+      "displayName": "STEVE TOTH",
+      "reportedName": "STEVE TOTH",
+      "portrait": null
+    },
+    {
+      "id": "p2026-28ee962f",
+      "path": "people/2026/house-48-keith-self-28ee962f/",
+      "displayName": "KEITH SELF",
+      "reportedName": "KEITH SELF",
+      "portrait": {
+        "src": "people-photos/S001224.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001224"
+      }
+    },
+    {
+      "id": "p2026-92b6c8fe",
+      "path": "people/2026/house-48-pat-fallon-92b6c8fe/",
+      "displayName": "PAT FALLON",
+      "reportedName": "PAT FALLON",
+      "portrait": {
+        "src": "people-photos/F000246.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide F000246"
+      }
+    },
+    {
+      "id": "p2026-4b42b6a1",
+      "path": "people/2026/house-48-lance-gooden-4b42b6a1/",
+      "displayName": "LANCE GOODEN",
+      "reportedName": "LANCE GOODEN",
+      "portrait": {
+        "src": "people-photos/G000589.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide G000589"
+      }
+    },
+    {
+      "id": "p2026-7b196de7",
+      "path": "people/2026/house-48-jake-ellzey-7b196de7/",
+      "displayName": "JAKE ELLZEY",
+      "reportedName": "JAKE ELLZEY",
+      "portrait": {
+        "src": "people-photos/E000071.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide E000071"
+      }
+    },
+    {
+      "id": "p2026-67e8fb42",
+      "path": "people/2026/house-48-lizzie-pannill-fletcher-67e8fb42/",
+      "displayName": "LIZZIE PANNILL FLETCHER",
+      "reportedName": "LIZZIE PANNILL FLETCHER",
+      "portrait": null
+    },
+    {
+      "id": "p2026-83f48b11",
+      "path": "people/2026/house-48-jessica-hart-steinmann-83f48b11/",
+      "displayName": "JESSICA HART STEINMANN",
+      "reportedName": "JESSICA HART STEINMANN",
+      "portrait": null
+    },
+    {
+      "id": "p2026-98717008",
+      "path": "people/2026/house-48-leticia-gutierrez-98717008/",
+      "displayName": "LETICIA GUTIERREZ",
+      "reportedName": "LETICIA GUTIERREZ",
+      "portrait": null
+    },
+    {
+      "id": "p2026-45bede72",
+      "path": "people/2026/house-48-chris-gober-45bede72/",
+      "displayName": "CHRIS GOBER",
+      "reportedName": "CHRIS GOBER",
+      "portrait": null
+    },
+    {
+      "id": "p2026-73651229",
+      "path": "people/2026/house-48-august-pfluger-73651229/",
+      "displayName": "AUGUST PFLUGER",
+      "reportedName": "AUGUST PFLUGER",
+      "portrait": {
+        "src": "people-photos/P000048.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide P000048"
+      }
+    },
+    {
+      "id": "p2026-b2c28212",
+      "path": "people/2026/house-48-craig-goldman-b2c28212/",
+      "displayName": "CRAIG GOLDMAN",
+      "reportedName": "CRAIG GOLDMAN",
+      "portrait": {
+        "src": "people-photos/G000601.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide G000601"
+      }
+    },
+    {
+      "id": "p2026-303d4602",
+      "path": "people/2026/house-48-ronny-jackson-303d4602/",
+      "displayName": "RONNY JACKSON",
+      "reportedName": "RONNY JACKSON",
+      "portrait": {
+        "src": "people-photos/J000304.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide J000304"
+      }
+    },
+    {
+      "id": "p2026-f035e61d",
+      "path": "people/2026/house-48-randy-weber-f035e61d/",
+      "displayName": "RANDY WEBER",
+      "reportedName": "RANDY WEBER",
+      "portrait": {
+        "src": "people-photos/W000814.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000814"
+      }
+    },
+    {
+      "id": "p2026-c479b24e",
+      "path": "people/2026/house-48-bobby-pulido-c479b24e/",
+      "displayName": "BOBBY PULIDO",
+      "reportedName": "BOBBY PULIDO",
+      "portrait": null
+    },
+    {
+      "id": "p2026-32ed0d80",
+      "path": "people/2026/house-48-veronica-escobar-32ed0d80/",
+      "displayName": "VERONICA ESCOBAR",
+      "reportedName": "VERONICA ESCOBAR",
+      "portrait": {
+        "src": "people-photos/E000299.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide E000299"
+      }
+    },
+    {
+      "id": "p2026-b0a73bb0",
+      "path": "people/2026/house-48-pete-sessions-b0a73bb0/",
+      "displayName": "PETE SESSIONS",
+      "reportedName": "PETE SESSIONS",
+      "portrait": {
+        "src": "people-photos/S000250.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S000250"
+      }
+    },
+    {
+      "id": "p2026-b45c0d10",
+      "path": "people/2026/house-48-christian-dashaun-menefee-b45c0d10/",
+      "displayName": "CHRISTIAN DASHAUN MENEFEE",
+      "reportedName": "CHRISTIAN DASHAUN MENEFEE",
+      "portrait": {
+        "src": "people-photos/M001245.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001245"
+      }
+    },
+    {
+      "id": "p2026-bf1d4db5",
+      "path": "people/2026/house-48-tom-sell-bf1d4db5/",
+      "displayName": "TOM SELL",
+      "reportedName": "TOM SELL",
+      "portrait": null
+    },
+    {
+      "id": "p2026-b2b3de14",
+      "path": "people/2026/house-48-joaquin-castro-b2b3de14/",
+      "displayName": "JOAQUIN CASTRO",
+      "reportedName": "JOAQUIN CASTRO",
+      "portrait": {
+        "src": "people-photos/C001091.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001091"
+      }
+    },
+    {
+      "id": "p2026-5e5f406c",
+      "path": "people/2026/house-48-mark-teixeira-5e5f406c/",
+      "displayName": "MARK TEIXEIRA",
+      "reportedName": "MARK TEIXEIRA",
+      "portrait": null
+    },
+    {
+      "id": "p2026-4b6cf2cf",
+      "path": "people/2026/house-48-trever-nehls-4b6cf2cf/",
+      "displayName": "TREVER NEHLS",
+      "reportedName": "TREVER NEHLS",
+      "portrait": null
+    },
+    {
+      "id": "p2026-2a143445",
+      "path": "people/2026/house-48-katy-padilla-stout-2a143445/",
+      "displayName": "KATY PADILLA STOUT",
+      "reportedName": "KATY PADILLA STOUT",
+      "portrait": null
+    },
+    {
+      "id": "p2026-300d1db6",
+      "path": "people/2026/house-48-beth-van-duyne-300d1db6/",
+      "displayName": "BETH VAN DUYNE",
+      "reportedName": "BETH VAN DUYNE",
+      "portrait": {
+        "src": "people-photos/V000134.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide V000134"
+      }
+    },
+    {
+      "id": "p2026-169917a1",
+      "path": "people/2026/house-48-roger-williams-169917a1/",
+      "displayName": "ROGER WILLIAMS",
+      "reportedName": "ROGER WILLIAMS",
+      "portrait": {
+        "src": "people-photos/W000816.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000816"
+      }
+    },
+    {
+      "id": "p2026-1d13353f",
+      "path": "people/2026/house-48-brandon-gill-1d13353f/",
+      "displayName": "BRANDON GILL",
+      "reportedName": "BRANDON GILL",
+      "portrait": {
+        "src": "people-photos/G000603.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide G000603"
+      }
+    },
+    {
+      "id": "p2026-dbe58220",
+      "path": "people/2026/house-48-michael-cloud-dbe58220/",
+      "displayName": "MICHAEL CLOUD",
+      "reportedName": "MICHAEL CLOUD",
+      "portrait": {
+        "src": "people-photos/C001115.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001115"
+      }
+    },
+    {
+      "id": "p2026-a1d1024d",
+      "path": "people/2026/house-48-henry-cuellar-a1d1024d/",
+      "displayName": "HENRY CUELLAR",
+      "reportedName": "HENRY CUELLAR",
+      "portrait": {
+        "src": "people-photos/C001063.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001063"
+      }
+    },
+    {
+      "id": "p2026-535985b3",
+      "path": "people/2026/house-48-sylvia-garcia-535985b3/",
+      "displayName": "SYLVIA GARCIA",
+      "reportedName": "SYLVIA GARCIA",
+      "portrait": {
+        "src": "people-photos/G000587.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide G000587"
+      }
+    },
+    {
+      "id": "p2026-b298f984",
+      "path": "people/2026/house-48-frederick-d-haynes-iii-b298f984/",
+      "displayName": "FREDERICK D. HAYNES III",
+      "reportedName": "FREDERICK D. HAYNES III",
+      "portrait": null
+    },
+    {
+      "id": "p2026-f679e773",
+      "path": "people/2026/house-48-john-carter-f679e773/",
+      "displayName": "JOHN CARTER",
+      "reportedName": "JOHN CARTER",
+      "portrait": {
+        "src": "people-photos/C001051.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001051"
+      }
+    },
+    {
+      "id": "p2026-facfc65c",
+      "path": "people/2026/house-48-jace-yarbrough-facfc65c/",
+      "displayName": "JACE YARBROUGH",
+      "reportedName": "JACE YARBROUGH",
+      "portrait": null
+    },
+    {
+      "id": "p2026-46659984",
+      "path": "people/2026/house-48-colin-allred-46659984/",
+      "displayName": "COLIN ALLRED",
+      "reportedName": "COLIN ALLRED",
+      "portrait": {
+        "src": "people-photos/A000376.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (118th Congress); Bioguide A000376"
+      }
+    },
+    {
+      "id": "p2026-45d2cdfe",
+      "path": "people/2026/house-48-vicente-gonzalez-45d2cdfe/",
+      "displayName": "VICENTE GONZALEZ",
+      "reportedName": "VICENTE GONZALEZ",
+      "portrait": {
+        "src": "people-photos/G000581.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide G000581"
+      }
+    },
+    {
+      "id": "p2026-9163ba85",
+      "path": "people/2026/house-48-johnny-c-garcia-9163ba85/",
+      "displayName": "JOHNNY C. GARCIA",
+      "reportedName": "JOHNNY C. GARCIA",
+      "portrait": null
+    },
+    {
+      "id": "p2026-ca044e60",
+      "path": "people/2026/house-48-brian-babin-ca044e60/",
+      "displayName": "BRIAN BABIN",
+      "reportedName": "BRIAN BABIN",
+      "portrait": {
+        "src": "people-photos/B001291.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001291"
+      }
+    },
+    {
+      "id": "p2026-e01714de",
+      "path": "people/2026/house-48-greg-casar-e01714de/",
+      "displayName": "GREG CASAR",
+      "reportedName": "GREG CASAR",
+      "portrait": {
+        "src": "people-photos/C001131.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001131"
+      }
+    },
+    {
+      "id": "p2026-79e060f6",
+      "path": "people/2026/house-48-jon-bonck-79e060f6/",
+      "displayName": "JON BONCK",
+      "reportedName": "JON BONCK",
+      "portrait": null
+    },
+    {
+      "id": "p2026-50118892",
+      "path": "people/2026/house-49-ben-mcadams-50118892/",
+      "displayName": "BEN MCADAMS",
+      "reportedName": "BEN MCADAMS",
+      "portrait": {
+        "src": "people-photos/M001209.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (116th Congress); Bioguide M001209"
+      }
+    },
+    {
+      "id": "p2026-56f162c9",
+      "path": "people/2026/house-49-blake-d-moore-56f162c9/",
+      "displayName": "BLAKE D. MOORE",
+      "reportedName": "BLAKE D. MOORE",
+      "portrait": {
+        "src": "people-photos/M001213.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001213"
+      }
+    },
+    {
+      "id": "p2026-044633b0",
+      "path": "people/2026/house-49-celeste-maloy-044633b0/",
+      "displayName": "CELESTE MALOY",
+      "reportedName": "CELESTE MALOY",
+      "portrait": {
+        "src": "people-photos/M001228.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001228"
+      }
+    },
+    {
+      "id": "p2026-cea38ca4",
+      "path": "people/2026/house-49-mike-kennedy-cea38ca4/",
+      "displayName": "MIKE KENNEDY",
+      "reportedName": "MIKE KENNEDY",
+      "portrait": {
+        "src": "people-photos/K000403.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide K000403"
+      }
+    },
+    {
+      "id": "p2026-ab6fb24a",
+      "path": "people/2026/house-50-becca-balint-ab6fb24a/",
+      "displayName": "BECCA BALINT",
+      "reportedName": "BECCA BALINT",
+      "portrait": {
+        "src": "people-photos/B001318.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001318"
+      }
+    },
+    {
+      "id": "p2026-a87d66ee",
+      "path": "people/2026/house-51-shannon-l-taylor-a87d66ee/",
+      "displayName": "Shannon L. Taylor",
+      "reportedName": "Shannon L. Taylor",
+      "portrait": null
+    },
+    {
+      "id": "p2026-c95708c1",
+      "path": "people/2026/house-51-elaine-g-luria-c95708c1/",
+      "displayName": "Elaine G. Luria",
+      "reportedName": "Elaine G. Luria",
+      "portrait": {
+        "src": "people-photos/L000591.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (116th Congress); Bioguide L000591"
+      }
+    },
+    {
+      "id": "p2026-95d4175e",
+      "path": "people/2026/house-51-robert-c-bobby-scott-95d4175e/",
+      "displayName": "Robert C. \"Bobby\" Scott",
+      "reportedName": "Robert C. \"Bobby\" Scott",
+      "portrait": {
+        "src": "people-photos/S000185.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S000185"
+      }
+    },
+    {
+      "id": "p2026-b897106d",
+      "path": "people/2026/house-51-jennifer-l-mcclellan-b897106d/",
+      "displayName": "Jennifer L. McClellan",
+      "reportedName": "Jennifer L. McClellan",
+      "portrait": {
+        "src": "people-photos/M001227.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001227"
+      }
+    },
+    {
+      "id": "p2026-db11ab98",
+      "path": "people/2026/house-51-john-j-mcguire-iii-db11ab98/",
+      "displayName": "John J. McGuire III",
+      "reportedName": "John J. McGuire III",
+      "portrait": {
+        "src": "people-photos/M001239.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide M001239"
+      }
+    },
+    {
+      "id": "p2026-f489deff",
+      "path": "people/2026/house-51-ben-l-cline-f489deff/",
+      "displayName": "Ben L. Cline",
+      "reportedName": "Ben L. Cline",
+      "portrait": {
+        "src": "people-photos/C001118.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide C001118"
+      }
+    },
+    {
+      "id": "p2026-2e28d8f7",
+      "path": "people/2026/house-51-eugene-s-vindman-2e28d8f7/",
+      "displayName": "Eugene S. Vindman",
+      "reportedName": "Eugene S. Vindman",
+      "portrait": {
+        "src": "people-photos/V000138.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide V000138"
+      }
+    },
+    {
+      "id": "p2026-04249e1b",
+      "path": "people/2026/house-51-donald-s-beyer-jr-04249e1b/",
+      "displayName": "Donald S. Beyer, Jr.",
+      "reportedName": "Donald S. Beyer, Jr.",
+      "portrait": {
+        "src": "people-photos/B001292.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001292"
+      }
+    },
+    {
+      "id": "p2026-c8f88411",
+      "path": "people/2026/house-51-h-morgan-griffith-c8f88411/",
+      "displayName": "H. Morgan Griffith",
+      "reportedName": "H. Morgan Griffith",
+      "portrait": {
+        "src": "people-photos/G000568.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide G000568"
+      }
+    },
+    {
+      "id": "p2026-147025ce",
+      "path": "people/2026/house-51-suhas-subramanyam-147025ce/",
+      "displayName": "Suhas Subramanyam",
+      "reportedName": "Suhas Subramanyam",
+      "portrait": {
+        "src": "people-photos/S001230.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001230"
+      }
+    },
+    {
+      "id": "p2026-253fe364",
+      "path": "people/2026/house-51-james-r-walkinshaw-253fe364/",
+      "displayName": "James R. Walkinshaw",
+      "reportedName": "James R. Walkinshaw",
+      "portrait": {
+        "src": "people-photos/W000831.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000831"
+      }
+    },
+    {
+      "id": "p2026-8e8bc04e",
+      "path": "people/2026/house-53-suzan-delbene-8e8bc04e/",
+      "displayName": "Suzan DelBene",
+      "reportedName": "Suzan DelBene",
+      "portrait": {
+        "src": "people-photos/D000617.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide D000617"
+      }
+    },
+    {
+      "id": "p2026-58d3f9ef",
+      "path": "people/2026/house-53-rick-larsen-58d3f9ef/",
+      "displayName": "Rick Larsen",
+      "reportedName": "Rick Larsen",
+      "portrait": {
+        "src": "people-photos/L000560.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000560"
+      }
+    },
+    {
+      "id": "p2026-d29b4386",
+      "path": "people/2026/house-53-marie-gluesenkamp-perez-d29b4386/",
+      "displayName": "Marie Gluesenkamp Perez",
+      "reportedName": "Marie Gluesenkamp Perez",
+      "portrait": {
+        "src": "people-photos/G000600.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide G000600"
+      }
+    },
+    {
+      "id": "p2026-5b8edcb7",
+      "path": "people/2026/house-53-amanda-mckinney-5b8edcb7/",
+      "displayName": "Amanda McKinney",
+      "reportedName": "Amanda McKinney",
+      "portrait": null
+    },
+    {
+      "id": "p2026-661212fd",
+      "path": "people/2026/house-53-michael-baumgartner-661212fd/",
+      "displayName": "Michael Baumgartner",
+      "reportedName": "Michael Baumgartner",
+      "portrait": {
+        "src": "people-photos/B001322.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001322"
+      }
+    },
+    {
+      "id": "p2026-978c0b49",
+      "path": "people/2026/house-53-emily-randall-978c0b49/",
+      "displayName": "Emily Randall",
+      "reportedName": "Emily Randall",
+      "portrait": {
+        "src": "people-photos/R000621.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide R000621"
+      }
+    },
+    {
+      "id": "p2026-80d2bde8",
+      "path": "people/2026/house-53-pramila-jayapal-80d2bde8/",
+      "displayName": "Pramila Jayapal",
+      "reportedName": "Pramila Jayapal",
+      "portrait": {
+        "src": "people-photos/J000298.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide J000298"
+      }
+    },
+    {
+      "id": "p2026-baf1e90c",
+      "path": "people/2026/house-53-kim-schrier-baf1e90c/",
+      "displayName": "Kim Schrier",
+      "reportedName": "Kim Schrier",
+      "portrait": {
+        "src": "people-photos/S001216.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001216"
+      }
+    },
+    {
+      "id": "p2026-badce5ae",
+      "path": "people/2026/house-53-adam-smith-badce5ae/",
+      "displayName": "Adam Smith",
+      "reportedName": "Adam Smith",
+      "portrait": {
+        "src": "people-photos/S000510.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S000510"
+      }
+    },
+    {
+      "id": "p2026-d3a6170d",
+      "path": "people/2026/house-53-marilyn-strickland-d3a6170d/",
+      "displayName": "Marilyn Strickland",
+      "reportedName": "Marilyn Strickland",
+      "portrait": {
+        "src": "people-photos/S001159.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001159"
+      }
+    },
+    {
+      "id": "p2026-244a7f9f",
+      "path": "people/2026/governor-01-tommy-tuberville-244a7f9f/",
+      "displayName": "Tommy Tuberville",
+      "reportedName": "Tommy Tuberville",
+      "portrait": {
+        "src": "people-photos/T000278.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide T000278"
+      }
+    },
+    {
+      "id": "p2026-016e7fe1",
+      "path": "people/2026/governor-02-kreiss-tomkins-johnson-016e7fe1/",
+      "displayName": "Jonathan S. Kreiss-Tomkins",
+      "reportedName": "Kreiss-Tomkins/Johnson",
+      "portrait": {
+        "src": "people-photos/commons-194172758.jpg",
+        "attribution": "Unknown author Unknown author; CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0); via Wikimedia Commons, File:JKTphoto (cropped).jpg"
+      }
+    },
+    {
+      "id": "p2026-4b108620",
+      "path": "people/2026/governor-04-katie-hobbs-dem-john-giles-pnd-4b108620/",
+      "displayName": "Katie Hobbs",
+      "reportedName": "Katie Hobbs (DEM) / John Giles (PND)",
+      "portrait": {
+        "src": "people-photos/commons-191141720.jpg",
+        "attribution": "Gage Skidmore from Surprise, AZ, United States of America; CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0); via Wikimedia Commons, File:Katie Hobbs 2026.jpg"
+      }
+    },
+    {
+      "id": "p2026-423f1bd2",
+      "path": "people/2026/governor-05-sarah-huckabee-sanders-423f1bd2/",
+      "displayName": "Sarah Huckabee Sanders",
+      "reportedName": "Sarah Huckabee Sanders",
+      "portrait": {
+        "src": "people-photos/commons-195688326.jpg",
+        "attribution": "Gage Skidmore; CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0); via Wikimedia Commons, File:Governor Sarah Huckabee Sanders 2026.jpg"
+      }
+    },
+    {
+      "id": "p2026-1b75395f",
+      "path": "people/2026/governor-06-xavier-becerra-1b75395f/",
+      "displayName": "Xavier Becerra",
+      "reportedName": "Xavier Becerra",
+      "portrait": {
+        "src": "people-photos/B000287.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (114th Congress); Bioguide B000287"
+      }
+    },
+    {
+      "id": "p2026-66817bda",
+      "path": "people/2026/governor-08-phil-weiser-lesley-dahlkemper-66817bda/",
+      "displayName": "Phil Weiser / Lesley Dahlkemper",
+      "reportedName": "Phil Weiser / Lesley Dahlkemper",
+      "portrait": null
+    },
+    {
+      "id": "p2026-c78582cb",
+      "path": "people/2026/governor-09-ned-lamont-and-susan-bysiewicz-c78582cb/",
+      "displayName": "Ned Lamont and Susan Bysiewicz",
+      "reportedName": "Ned Lamont and Susan Bysiewicz",
+      "portrait": {
+        "src": "people-photos/commons-76269296.jpg",
+        "attribution": "The Office of Governor Ned Lamont; CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0); via Wikimedia Commons, File:Governor Ned Lamont of Connecticut, official portrait.jpg"
+      }
+    },
+    {
+      "id": "p2026-7ce2f252",
+      "path": "people/2026/governor-12-donalds-avila-7ce2f252/",
+      "displayName": "Donalds / Avila",
+      "reportedName": "Donalds / Avila",
+      "portrait": null
+    },
+    {
+      "id": "p2026-3da55be9",
+      "path": "people/2026/governor-13-keisha-lance-bottoms-dem-3da55be9/",
+      "displayName": "Keisha Lance Bottoms (Dem)",
+      "reportedName": "Keisha Lance Bottoms (Dem)",
+      "portrait": null
+    },
+    {
+      "id": "p2026-98613228",
+      "path": "people/2026/governor-16-brad-little-98613228/",
+      "displayName": "Brad Little",
+      "reportedName": "Brad Little",
+      "portrait": null
+    },
+    {
+      "id": "p2026-98a72633",
+      "path": "people/2026/governor-19-rob-sand-and-dave-muhlbauer-98a72633/",
+      "displayName": "Rob Sand and Dave Muhlbauer",
+      "reportedName": "Rob Sand and Dave Muhlbauer",
+      "portrait": null
+    },
+    {
+      "id": "p2026-50f58dea",
+      "path": "people/2026/governor-24-wes-moore-and-aruna-miller-50f58dea/",
+      "displayName": "Wes Moore and Aruna Miller",
+      "reportedName": "Wes Moore and Aruna Miller",
+      "portrait": {
+        "src": "people-photos/commons-128251482.jpg",
+        "attribution": "Maryland State Government; CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0); via Wikimedia Commons, File:Wes Moore Official Governor Portrait.jpg"
+      }
+    },
+    {
+      "id": "p2026-c067b9d0",
+      "path": "people/2026/governor-27-amy-klobuchar-and-ben-schierer-c067b9d0/",
+      "displayName": "Amy Klobuchar and Ben Schierer",
+      "reportedName": "Amy Klobuchar and Ben Schierer",
+      "portrait": {
+        "src": "people-photos/K000367.jpg",
+        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide K000367"
+      }
+    },
+    {
+      "id": "p2026-167b9a78",
+      "path": "people/2026/governor-31-jim-pillen-and-joe-kelly-167b9a78/",
+      "displayName": "Jim Pillen and Joe Kelly",
+      "reportedName": "Jim Pillen and Joe Kelly",
+      "portrait": null
+    },
+    {
+      "id": "p2026-4acb88b0",
+      "path": "people/2026/governor-35-deb-haaland-and-stephanie-garcia-richard-4acb88b0/",
+      "displayName": "DEB HAALAND AND STEPHANIE GARCIA RICHARD",
+      "reportedName": "DEB HAALAND AND STEPHANIE GARCIA RICHARD",
+      "portrait": null
+    },
+    {
+      "id": "p2026-e08f85e9",
+      "path": "people/2026/governor-39-amy-acton-david-pepper-e08f85e9/",
+      "displayName": "Amy Acton / David Pepper",
+      "reportedName": "Amy Acton / David Pepper",
+      "portrait": null
+    },
+    {
+      "id": "p2026-843d8858",
+      "path": "people/2026/governor-42-josh-shapiro-davis-austin-843d8858/",
+      "displayName": "Josh Shapiro / Davis, Austin",
+      "reportedName": "Josh Shapiro / Davis, Austin",
+      "portrait": null
+    },
+    {
+      "id": "p2026-afc5a819",
+      "path": "people/2026/governor-44-helena-buonanno-foulkes-dem-afc5a819/",
+      "displayName": "Helena Buonanno Foulkes (DEM)",
+      "reportedName": "Helena Buonanno Foulkes (DEM)",
+      "portrait": null
+    },
+    {
+      "id": "p2026-e3666f88",
+      "path": "people/2026/governor-45-alan-wilson-mike-reichenbach-e3666f88/",
+      "displayName": "Alan Wilson / Mike Reichenbach",
+      "reportedName": "Alan Wilson / Mike Reichenbach",
+      "portrait": null
+    },
+    {
+      "id": "p2026-391c04fb",
+      "path": "people/2026/governor-46-larry-rhoden-and-tony-venhuizen-391c04fb/",
+      "displayName": "Larry Rhoden and Tony Venhuizen",
+      "reportedName": "Larry Rhoden and Tony Venhuizen",
+      "portrait": null
+    },
+    {
+      "id": "p2026-0b5d65f8",
+      "path": "people/2026/governor-48-gina-hinojosa-0b5d65f8/",
+      "displayName": "GINA HINOJOSA",
+      "reportedName": "GINA HINOJOSA",
+      "portrait": null
+    },
+    {
+      "id": "p2026-97db32dd",
+      "path": "people/2026/governor-50-phil-scott-97db32dd/",
+      "displayName": "PHIL SCOTT",
+      "reportedName": "PHIL SCOTT",
+      "portrait": {
+        "src": "people-photos/commons-96088411.png",
+        "attribution": "Master Sgt. Sarah Mattison, U.S. Air National Guard; Public domain; via Wikimedia Commons, File:Phil Scott 2019.png"
+      }
+    }
+  ]
+}

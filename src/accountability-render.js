@@ -102,3 +102,8 @@ export function accountabilitySummary(data,count=entries(data.subjects).length) 
 export function renderAccountabilityIntroduction(data) {
   return paragraphs(data.scope,'accountability-scope')+paragraphs(data.methodology,'accountability-methodology');
 }
+
+// Reuse the approved complete evidence and limits on dedicated person profiles.
+export function renderAccountabilityStatements(subject){return statementLanes(entries(subject.statements).filter(s=>s.verified===true));}
+export function renderAccountabilityActions(subject){const statements=entries(subject.statements).filter(s=>s.verified===true);return entries(subject.actions).map(a=>actionHtml(a,statements)).join('')+recordLinksHtml(subject);}
+export function renderAccountabilityAccounts(subject){return accountsHtml(subject);}

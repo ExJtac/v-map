@@ -11,10 +11,12 @@ import { createElectionView } from "./election-view.js";
 import { renderCountyMetrics, renderStateMetrics } from "./county-hover.js";
 import { initSupport } from "./support.js";
 import { initResearchStatus } from './research-status.js';
+import { initCountySourceIndex, updateCountySourceContext } from './county-source-context.js';
 import { initPatternReview, hasPatternFlag, countyPatternDirection, updatePatternSummary, updatePatternCountyList, getPatternReviewReport } from './pattern-review.js';
 
 initSupport();
 initResearchStatus();
+initCountySourceIndex(document.querySelector('#county-source-index'));
 
 const regions = {
   West: "AK AZ CA CO HI ID MT NM NV OR UT WA WY",
@@ -177,14 +179,16 @@ async function stateCard(container, geometry, tokenValid) {
 function updateCountyDetail() {
   const panel = $('#map-tooltip'), detail = $('#map-tooltip-content'), charts = $('#history-charts'), statistics = $('#statistical-review');
   const token = ++detailToken;
+  const sourceContext=$('#county-source-context');sourceContext.hidden=true;
   panel.hidden = !selectedState;
   charts.hidden = !selectedState || !elections?.isHistorical();
   statistics.hidden = charts.hidden || !selectedCounty;
   $('#jump-statistics').hidden = statistics.hidden;
   $('#jump-history').hidden = charts.hidden;
-  if (!selectedState) { detail.replaceChildren(); charts.replaceChildren(); statistics.replaceChildren(); return Promise.resolve(); }
+  if (!selectedState) { detail.replaceChildren(); charts.replaceChildren(); statistics.replaceChildren(); sourceContext.replaceChildren(); return Promise.resolve(); }
   const geometry = selectedCounty || selectedState;
   const context = selectedCounty ? elections.countyContext(geometry.id) : elections.stateContext(geometry.id);
+  const sourceWork=updateCountySourceContext(sourceContext,{fips:selectedCounty?.id,selectedOffice:context.office,year:context.year,flagged:hasPatternFlag(context.office,context.year,selectedCounty?.id)},()=>token===detailToken);
   const detailsWork = selectedCounty ? countyCard(detail, geometry, () => token === detailToken) : stateCard(detail, geometry, () => token === detailToken);
   if(context.loading) {charts.textContent='Loading the selected election…';statistics.textContent='Loading the selected election…';return Promise.resolve(detailsWork);}
   const chartWork = charts.hidden ? Promise.resolve() : (historyModule ||= import('./history-charts.js'))
@@ -194,7 +198,7 @@ function updateCountyDetail() {
   const statisticsWork = statistics.hidden ? Promise.resolve() : (statisticsModule ||= import('./statistical-review.js'))
     .then(module => module.renderSelectedStatistics(statistics, {...context, id:geometry.id, name:geometry.properties.name, state:selectedState.abbreviation, level:'county', report:getPatternReviewReport()}, () => token === detailToken))
     .catch(() => { statisticsModule = null; if (token === detailToken) statistics.textContent = 'Statistical review could not load. Select the county again to retry.'; });
-  return Promise.all([detailsWork, chartWork, statisticsWork]);
+  return Promise.all([detailsWork, chartWork, statisticsWork, sourceWork]);
 }
 async function openSelectedDetails(geometry, kind) {
   if (kind === 'county' ? selectedCounty?.id !== geometry.id : selectedState?.id !== geometry.id || selectedCounty) return;

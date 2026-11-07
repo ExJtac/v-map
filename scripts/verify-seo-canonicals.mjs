@@ -10,6 +10,7 @@ const pages = [
   {route:'', file:'index.html', source:'index.html'},
   {route:'winners/', file:'winners/index.html', source:'winners/index.html'},
   {route:'accountability/', file:'accountability/index.html', source:'accountability/index.html'},
+  {route:'people/', file:'people/index.html', source:'people/index.html'},
   {route:'about/', file:'about/index.html', source:'public/about/index.html'},
   {route:'methodology/', file:'methodology/index.html', source:'public/methodology/index.html'},
   {route:'coverage/', file:'coverage/index.html', source:'public/coverage/index.html'},
@@ -41,8 +42,10 @@ export function verifyPageIdentity(html, route, label) {
 }
 function sitemap(file,label) {
   const body=fs.readFileSync(file,'utf8'),locations=[...body.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-  assert.equal(locations.length,pages.length,`${label}: exactly ${pages.length} canonical sitemap entries required`);
-  assert.deepEqual([...locations].sort(),pages.map(page=>PRIMARY_ORIGIN+page.route).sort(),`${label}: sitemap must contain only primary page identities`);
+  const profiles=JSON.parse(fs.readFileSync(path.join(root,'public/data/candidates/profiles-2026.json'),'utf8')).profiles;
+  const expected=[...pages.map(page=>PRIMARY_ORIGIN+page.route),...profiles.map(p=>PRIMARY_ORIGIN+p.path)];
+  assert.equal(locations.length,expected.length,`${label}: complete canonical sitemap required`);
+  assert.deepEqual([...locations].sort(),expected.sort(),`${label}: sitemap must contain only primary page identities`);
 }
 function mountedAssets(html,directory,base,label) {
   for(const [,raw] of html.matchAll(/(?:src|href)=["'](\/[^"']*)["']/g)) {
@@ -72,12 +75,14 @@ export function verifySeoCanonicals({source=true,directories=['dist','dist-domai
       verifyPageIdentity(html,page.route,`${directory}/${page.file}`);
       mountedAssets(html,directory,base,`${directory}/${page.file}`);
     }
+    const profiles=JSON.parse(fs.readFileSync(path.join(root,'public/data/candidates/profiles-2026.json'),'utf8')).profiles;
+    for(const profile of profiles){const file=path.join(root,directory,profile.path,'index.html'),html=fs.readFileSync(file,'utf8');verifyPageIdentity(html,profile.path,profile.path);mountedAssets(html,directory,base,profile.path);}
     sitemap(path.join(root,directory,'sitemap.xml'),directory);
     assert.ok(fs.existsSync(path.join(root,directory,'share/v-map-logo-v2.png')),`${directory}: logo must remain packaged`);
     if(directory==='dist-domain')assert.ok(fs.readFileSync(path.join(root,directory,'robots.txt'),'utf8').includes(`Sitemap: ${PRIMARY_ORIGIN}sitemap.xml`),'Dedicated-domain robots must advertise the primary sitemap');
     checked.push(directory);
   }
-  return {status:'passed',sourceChecked:source,artifactDirectories:checked,canonicalPagesPerArtifact:pages.length,primaryOrigin:PRIMARY_ORIGIN};
+  return {status:'passed',sourceChecked:source,artifactDirectories:checked,canonicalPagesPerArtifact:pages.length+JSON.parse(fs.readFileSync(path.join(root,'public/data/candidates/profiles-2026.json'),'utf8')).profiles.length,primaryOrigin:PRIMARY_ORIGIN};
 }
 if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
   console.log(JSON.stringify(verifySeoCanonicals({directories:process.argv.includes('--sources')?[]:undefined,requireArtifacts:process.argv.includes('--require-artifacts')})));

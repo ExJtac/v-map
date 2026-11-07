@@ -20,6 +20,7 @@ run('npm',['run','verify:packaged'],{stdio:'inherit'});
 run('node',['scripts/verify-seo-canonicals.mjs','--require-artifacts'],{stdio:'inherit'});
 run('node',['scripts/verify-winners-prerender.mjs','--require-artifacts'],{stdio:'inherit'});
 run('node',['scripts/verify-accountability.mjs','--require-artifacts'],{stdio:'inherit'});
+run('node',['scripts/verify-candidate-profiles.mjs','--require-artifacts'],{stdio:'inherit'});
 clean();
 if(run('git',['rev-parse','HEAD']).trim()!==commit)throw new Error('Source changed during build.');
 const configuration=JSON.parse(fs.readFileSync('.vmap-deploy.local.json','utf8'));
@@ -121,8 +122,11 @@ try {
   // Persist the successful pointer swap before making any public requests.
   fs.writeFileSync(localReceipt,JSON.stringify(outcome));
   for(const [origin,manifest] of [['https://cas-tx.com/vmap/',cas],['https://voteranomaly.com/',domain]]) {
-    const checks=['index.html','winners/index.html','accountability/index.html','data/candidates/pilot-2026.json','sitemap.xml','share/v-map-logo-v2.png',...Object.keys(manifest).filter(file=>file.startsWith('data/winners/')),...Object.keys(manifest).filter(file=>file.startsWith('assets/') && (file.endsWith('.js')||file.endsWith('.css')))];
-    await Promise.all(checks.map(file=>verify(origin,file,manifest[file])));
+    const profilePages=Object.keys(manifest).filter(file=>file.startsWith('people/')&&file.endsWith('/index.html'));
+    const portraitSamples=Object.keys(manifest).filter(file=>file.startsWith('people-photos/')).slice(0,4);
+    const checks=['index.html','winners/index.html','accountability/index.html','data/candidates/pilot-2026.json','data/candidates/profiles-2026.json','data/candidates/profile-cards-2026.json','data/candidates/portraits-2026.json','data/county-reviews/2026.json','sitemap.xml','share/v-map-logo-v2.png',...profilePages,...portraitSamples,...Object.keys(manifest).filter(file=>file.startsWith('data/winners/')),...Object.keys(manifest).filter(file=>file.startsWith('assets/') && (file.endsWith('.js')||file.endsWith('.css')))];
+    // Verify every dedicated profile publicly without flooding the shared host.
+    for(let index=0;index<checks.length;index+=8)await Promise.all(checks.slice(index,index+8).map(file=>verify(origin,file,manifest[file])));
   }
   outcome=JSON.parse(ssh(prelude+receiptPrelude+`
 record=json.loads(receipt_path.read_text()); record.update(status='public_verified',verifiedPublicOrigins=['https://voteranomaly.com/','https://cas-tx.com/vmap/']); save_receipt(record); print(json.dumps(record))

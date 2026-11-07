@@ -5,6 +5,7 @@
 Snapshot: 2026-11-06. 2026 returns are incomplete provisional imported snapshots, not live or certified national results. Missing data is not zero. The same rules apply to every party; readers can inspect the sources and draw their own conclusions. Flag counts are not balanced artificially. There is no 2026 presidential election. Review flags are exploratory prompts for source review, never fraud/error findings or race calls. Race votes are not actual ballots or eligible-voter turnout.
 
 ## Pages
+- [Individual election-record profiles](https://voteranomaly.com/people/)
 - [Candidate statements and documented actions](https://voteranomaly.com/accountability/)
 - [Winning candidates and reported leaders](https://voteranomaly.com/winners/)
 - [Interactive map](https://voteranomaly.com/)

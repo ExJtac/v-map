@@ -13,3 +13,8 @@ Each normalized election bundle and source manifest retains its source title, UR
 - State election authority records and current feeds: source-specific terms and limitations apply. An unofficial snapshot is not certification.
 
 Raw downloaded archives are not included in this Git repository. Their original URLs and evidence references remain in source guides and the published source metadata. Report attribution or licensing corrections through a repository issue.
+
+
+## Candidate portrait assets
+
+The source-linked portrait manifest is `data/candidates/portraits-2026.json` (repository path `public/data/candidates/portraits-2026.json`). Each image retains its source URL, identity-match evidence, attribution, rights basis, original image URL and SHA-256. GPO portraits and licensed Commons photographs keep the rights described in that manifest; the application MIT license does not replace those rights. Commons author and license links appear on each dedicated profile, reachable from the directory's Photo credits link. Downloaded provider-thumbnail bytes are unchanged; older portraits identify a sourced person and do not establish a 2026 election outcome or current office. Unverified/ambiguous photos are not substituted with generated faces.
