@@ -1,90 +1,87 @@
-# V-Map organic launch plan
+# V-Map organic distribution plan
 
-Working window: November 6–12, 2026, Mountain time. Primary address: https://voteranomaly.com/. This is an execution plan and draft copy, not a record of posts, outreach, traffic, donations or continuous agents already running. No external messages, subscriptions or posts were sent while preparing it. No advertising spend is proposed.
+Prepared November 6, 2026, Mountain time. Launch week: **November 7–13**. Thirty-day review: **December 6**. Primary address: https://voteranomaly.com/; candidate directory: https://voteranomaly.com/winners/.
 
-The immediate objective is to help people successfully explore a county, check its sources and return or share a useful view. Financial support is a secondary outcome of that usefulness. Promote V-Map as an open-source election-history explorer with explicit limits; the domain name does not turn a statistical review flag into a fraud finding.
+This replaces the earlier November 6–12 launch draft. It is a plan and draft copy, not a record of outreach, posts, partnerships, traffic or donations. No external messages, subscriptions or posts were sent while preparing it. The research schedule remains **PAUSED**; all work below is manual. Role names are proposed work owners, not continuously running agents.
 
-## Publish before distributing
+The advertising and new marketing-tool budget is **$0**. Use existing accounts, the public repository, existing Analytics/Search Console, and ordinary phone/screen-recording tools. Staff time, existing hosting and assistant usage still have costs; none have been measured here. Do not buy ads, backlinks, contact lists, engagement, memberships or new software to execute this plan.
 
-| Priority | Deliverable | Owner | Completion evidence |
+## Start with what is already useful
+
+The promise is a free, open-source way to explore available election returns, follow original sources and understand historical comparisons. It is not a fraud detector or a national race-calling service. Lead with a short demonstration and one reproducible answer; offer support after the tool has helped someone.
+
+Confirmed in source `5ab2e78` and read-only public checks on November 6:
+
+| Deliverable | Observed state | Evidence / next action |
+| --- | --- | --- |
+| Primary address and distribution link | Root map and `/winners/` return HTTP 200; main header links to the directory | Share the primary domain. Preserve the existing CAS-TX mount. |
+| Mobile map | Cooperative two-finger zoom and one-finger page scrolling shipped | Root's release evidence records phone-emulation touch tests. Record one short public-facing walkthrough; do not claim physical-device testing not performed. |
+| County results, office review shortcuts and graphs | Shipped with explicit source/coverage limits | Use one source-verified example, not a sensational screenshot. |
+| Candidate directory | 2026 snapshot: 330 provisional reported leaders, eight held/unavailable races, 338 imported contests; 2006–2026 year selector | Label the office/year and provisional status. These counts are dated, not a completeness or confirmed-winner claim. |
+| Share thumbnail | Root and directory HTML specify the V-Map logo image | Use the versioned logo asset; old message previews may be cached. |
+| Share and support interactions | `share` and `support_engagement` events implemented in `src/main.js` | Verify actual GA receipts before reporting counts; see measurement section. |
+| Search Console | Prior ownership/sitemap/index-request receipts are recorded in the release handoff | The current sitemap has five URLs. Do not repeat an old four-page result as current discovery, indexing or ranking evidence. SEO owner should recheck the property. |
+
+Public checks found the existing GA measurement tag on both pages. No authenticated Analytics report, traffic baseline, conversion total, donation receipt or current index-position report was inspected for this plan.
+
+## Audience, asset and useful next step
+
+| Audience | Asset to prepare | Useful request | Avoid |
 | --- | --- | --- | --- |
-| P0 | CAS-TX project links point to the primary domain; every app/research release reaches that domain | Root integration | Live link, release SHA and matching artifact hashes |
-| P0 | Repair page/map scrolling, selected-county visibility and light state fills | Root integration | Desktop/mobile interaction checks, including moving back up the page |
-| P0 | Explicit logo social image, not the Bitcoin QR | Root integration | Public PNG responds 200; absolute `og:image` and `twitter:image` match it; a fresh share renders the logo |
-| P0 | Office selectors make Governor, Senate and House reviews discoverable; available/held comparisons are clear | Root integration + research_coverage_release | Per-office counts, real county examples and explicit missing-data states |
-| P0 | Qualified statistical graphs describe their denominator, comparison cohort and provisional status | statistics_graphs + Root | Math checks and independent visual/data review |
-| P1 | Add useful share/copy controls, source-linked captions and a concise contributor kit | Root integration | Shared URL opens the intended supported context; cancellation does not count as a completed share |
-| P1 | Instrument the useful actions below and establish a real baseline | Root integration + James | GA DebugView/Realtime receipt and a dated baseline export |
+| Local readers | A 30–45 second county walkthrough with office/year/source visible | Try their county and report an authoritative missing source | Party-targeted persuasion, claims a border proves wrongdoing |
+| Local/data reporters | One reproducible local example, methodology, coverage and correction links | Ask whether the tool is useful for source checking | Mass pitches, a prewritten allegation, implied newsroom endorsement |
+| Educators and libraries | A one-page guide: candidate votes versus ballots versus population; one historical graph | Resource-list consideration or teaching feedback | Unverified institutional affiliations or paid directory placements |
+| Open-source developers | A small, reproducible coverage/accessibility issue and contribution instructions | A source-backed correction or focused pull request | Spamming unrelated repositories or asking for stars as proof of quality |
+| Interested supporters | A brief explanation of the work and optional support link | Help maintain public access and verify sources | Access-gating results or implying tax-deductibility/guaranteed findings |
 
-Existing evidence from the preceding domain launch: Search Console ownership was verified, its sitemap was accepted with four discovered pages, and indexing was requested. This is not evidence of indexing, rankings, ongoing traffic or Gemini inclusion. Recheck the current Search Console property rather than submitting the same request repeatedly. Google says discovery can use crawlable links and sitemaps and does not guarantee inclusion. [Google Search Essentials](https://developers.google.com/search/docs/essentials), [How Search works](https://developers.google.com/search/docs/fundamentals/how-search-works).
+Choose audiences because the tool is useful to their work, not because of inferred political preferences. The new candidate-research project needs a separately reviewed publishing process; do not promote unverified personal allegations as acquisition material.
 
-## Audience and useful angle
+## Distribution order and channel rules
 
-| Audience | Useful reason to visit | Best first asset | What to ask for |
+1. **Owned channels first.** James can choose one existing account and review one honest demonstration. The CAS-TX project page already links to V-Map; prepare a small project update rather than duplicating a large campaign across accounts. Answer questions before posting another promotion.
+2. **One relevant community.** Read its current rules and choose a single useful local or technical discussion. Reddit permits communities to set their own promotion policies; there is no universal permission or platform-wide “10% allowance.” Repeated similar posts, unwanted messages and promotion bots are spam risks. No mass cross-posting or unsolicited message campaign. [Official Reddit guidance](https://support.reddithelp.com/hc/en-us/articles/28012014962580-How-do-I-keep-spam-out-of-my-community).
+3. **Individually relevant earned coverage.** Prepare at most three tailored newsroom/resource-suggestion drafts in week one. Each needs a verified public contact channel and a specific reason for relevance. A mention or resource link must be editorially voluntary; do not pay, exchange links or promise positive coverage. No contacts have been selected or sent messages in this assignment.
+4. **Human maker discussion on Show HN, if appropriate.** The working tool can be tried without registration. A human maker who worked on it must be available to discuss it. Keep the submission about the usable product and technical feedback, not fundraising. Do not request coordinated upvotes/comments; a routine minor update is not a fresh Show HN. [Show HN rules](https://news.ycombinator.com/showhn.html).
+5. **Data-journalism participation only through allowed human channels.** IRE explicitly prohibits AI bots from posting to its listservs. Existing eligible human participants may consider a relevant technical discussion under the list's rules; this plan does not subscribe anyone, use member-only archives or authorize an agent to post. [IRE listserv policy](https://www.ire.org/resources/listservs/).
+
+Use descriptive links, readable graphs with axes/denominators, alt text and source captions. Do not crop away provisional labels. Publish a genuinely useful walkthrough before pitching it. Google's guidance favors content that serves a real audience; a new URL alone does not create value. [Google's people-first content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content).
+
+## Thirty-day work plan
+
+The detailed first-week queue and channel drafts are in [MARKETING-ACTION-QUEUE.md](MARKETING-ACTION-QUEUE.md). The public [sharing kit](https://voteranomaly.com/PROMOTION-KIT.md) is an existing draft asset; its text should be checked against the latest shipped features before use. No proposed post is already scheduled.
+
+| Period | Manual work | Owner / estimated effort | Decision evidence |
 | --- | --- | --- | --- |
-| Local readers and community groups | Find their county and distinguish candidate votes from ballots/population | One county walkthrough with election office/year and source links | Try their county; report a missing source |
-| Local reporters and data journalists | Trace a reported change to its original return and see comparison limits | One reproducible county example plus methodology/coverage links | Technical feedback or a relevant source correction |
-| Civic educators and librarians | Teach how elections, denominators and historical comparisons differ | A short illustrated “how to read this map” guide | A resource link or classroom feedback |
-| Open-source/data developers | Inspect code, importers, coverage gaps and accessible graphics | Public repository, one scoped contribution issue | One reproducible improvement or source-backed PR |
-| Supporters | Keep the research and platform available | Clear support section after the tool proves useful | Optional contribution; never access-gated results |
+| Nov 6 evening | Confirm one demo route, provisional wording, support status and the baseline fields | James + integration owner, 30–45 min | Ready-to-review asset and explicit unknown metrics |
+| Nov 7–13 | One demo, one source walkthrough, one suitable community discussion if allowed, up to three tailored pitch drafts, responses and a seven-day report | James, 3–4 hr; content/research support, 3–5 hr; optional developer instrumentation, 1–2 hr | Actual public URLs/replies only after authorized sends; qualified visits and corrections, not impressions alone |
+| Nov 14–20 | Improve the most useful walkthrough from real feedback; offer one educator/library resource draft; prepare two small contribution tasks | Content/research owner, 2–3 hr; James, 1–2 hr | Reproducible examples, useful replies, accepted corrections/resource consideration |
+| Nov 21–27 | Repeat only the channel with evidence of useful sessions; release notes tied to real source/UI improvements | James + integration owner, 2–4 hr | Comparable source/medium/date ranges and a clear reason to repeat |
+| Nov 28–Dec 6 | Review four weeks, correct stale content, choose one next audience or discontinue ineffective activity | James + analytics owner, 2–3 hr | Dated report with denominators, limits, time spent and actual support receipts if separately reconciled |
 
-Google's official guidance favors useful content built for a real audience, clear descriptive text, good experience and crawlable links. These are reasons to publish original source walkthroughs, not mass-generated county SEO pages. Do not invent fresh dates, citations or analyses to produce more indexed URLs. [People-first content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content).
+These are work estimates, not employee assignments already accepted or measured costs. If time is tight, do the demo, baseline and responses first; postpone additional channels. Set numerical traffic or support targets only after a real baseline exists. Operational targets are controllable: one reviewed demo, one sourced guide, a maximum of three individually relevant pitch drafts and a completed weekly report.
 
-## Seven-day schedule
+## Measurement: implemented versus proposed
 
-| Day | Human-led action | Team preparation | Intended evidence |
-| --- | --- | --- | --- |
-| Fri Nov 6 | James reviews the repaired live experience and the public share kit; chooses one first channel | Root ships P0 fixes; research verifies one useful example; statistics documents what its measures mean | One clean mobile/desktop walkthrough, live metadata, baseline GA counts |
-| Sat Nov 7 | James shares one short demo on an account he controls, after reviewing the final copy | Prepare a 30–45 second walkthrough: select office → county → results → source → historical graph | One attributable link, actual comments and useful-action counts |
-| Sun Nov 8 | James answers questions and reviews one local community's current rules before any post | Research prepares two clearly sourced examples, including one unflagged comparison and one unavailable comparison | Corrections resolved; moderation permission or documented posting rule |
-| Mon Nov 9 | James may send up to three individually relevant tool pitches after explicitly approving recipients/copy | Draft a short local-data pitch with coverage limits and no allegation; verify support links after Lightning expiry | Actual replies/resource links; on-chain support still works |
-| Tue Nov 10 | James may submit one Show HN if the tool is ready and he can remain available to discuss it | Developer-focused explanation, source provenance, screenshots and known limits | Constructive feedback and engaged map sessions, not requested votes |
-| Wed Nov 11 | James or a human researcher may discuss the methodology with an appropriate educator/data group | Publish one original methods walkthrough with reproducible values and a correction history | One useful discussion, source contribution or teaching/resource link |
-| Thu Nov 12 | James reviews results and chooses the next useful audience/content item | Root compiles the funnel; research lists newly published/held coverage; statistics lists unresolved assumptions | Dated seven-day review with actual counts, problems and next priorities |
+The existing GA tag is `G-7K67FPGPPG`. Inspection of current source found:
 
-All external sends/posts remain drafts until James chooses and authorizes the specific action. Avoid bulk outreach, repeated cross-posting, unsolicited direct-message campaigns, purchased engagement and coordinated voting. Recheck channel rules immediately before posting; rules and local community expectations change.
+| Signal | Implementation state | What it can establish |
+| --- | --- | --- |
+| GA configuration/page views | Tag/config present on map and directory | Actual reporting still needs verification; tag presence is not a traffic count |
+| `share` | Fires after successful native-share resolution or clipboard copy | A share/copy action, not a confirmed recipient visit |
+| `support_engagement` | Click listener on header QR, wallet-open and invoice-copy controls | Click intent only. The copy listener fires before clipboard completion; it is not a successful-copy receipt or payment |
+| `select_county`, `view_county_results`, `view_history`, `source_open`, `contribute_open` | Proposed, not found as implemented custom events in source | No report may claim these tracked conversions yet |
+| Donation revenue/settlement | Not implemented or inspected | Never synthesize donations, revenue or donor counts from clicks |
 
-## Channels and current constraints
+Before distribution, James/analytics owner should record: property timezone; exact date range; available sessions and engaged sessions; source/medium/campaign; known testing traffic; existing share/support event counts; and Search Console clicks/impressions/indexing separately. Missing observations are **unknown**, not zero. Confirm event receipts in Realtime/DebugView before using them in a funnel. Any new engagement events need a small developer task and verification; this document does not deploy them. [Google GA event setup](https://developers.google.com/analytics/devguides/collection/ga4/events), [recommended share event](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#share).
 
-- **Owned accounts first:** one honest demonstration on James's own social channels or a CAS-TX project update. The current task prepares the material; no account posting has occurred.
-- **Show HN:** a working map can be tried without registration, which fits the format. The maker should be available to discuss implementation. The official rules reject fundraiser/landing-page submissions and requests for friends to upvote or comment. Keep the post about the usable tool and feedback, not a donation appeal. [Show HN guidelines](https://news.ycombinator.com/showhn.html).
-- **Reddit:** choose a genuinely relevant community only after reading its current rules and, where necessary, asking moderators. There is no universal permission or universal “10% rule.” Reddit explains that communities handle promotional material differently. Do not post the same link across local communities or imply moderator endorsement. [Reddit's explanation of community spam controls](https://support.reddithelp.com/hc/en-us/articles/28012014962580-How-do-I-keep-spam-out-of-my-community).
-- **Data-journalism community:** NICAR-L is a relevant forum for methodological feedback. IRE explicitly bans AI bots from posting to its listservs; any participation must be by a human following the list's rules, not an automation. No subscription or email has been sent. [IRE listserv policy](https://www.ire.org/resources/listservs/).
-- **A concrete newsroom target:** The Texas Tribune accepts story pitches through `pitches@texastribune.org`; its general contact page is the source. A relevant, individually reviewed tool/methods pitch is appropriate to consider, with no assumption of interest or endorsement. Do not use its confidential-tip channel for promotion. [Tribune contact page](https://www.texastribune.org/contact/), [confidential-tip channel limits](https://www.texastribune.org/tips/).
-- **Educators/libraries:** select an identifiable local institution and its public resource-suggestion/contact channel before drafting an individual message. No institutions have agreed to partner; do not name imaginary partners or add this to their pages without permission.
+Compare the first 24 hours with the next comparable period and report a seven-day total. Separate sessions from event counts and unique users. For channels, report the numerator and denominator: engaged sessions / sessions; sessions reaching a useful answer only after that event is implemented; source opens / sessions after instrumentation; share/support actions as intent. Do not rank channels from tiny samples or promise donations from a support-click rate.
 
-## Measurement and honest attribution
+Use stable lowercase campaign fields: `utm_campaign=vmap_launch_2026`, one `utm_source` per platform, an appropriate consistent medium, and a short asset `utm_content`. Add UTMs only to external distribution links, never internal navigation. Never put a recipient's name, email, wallet request, search query or inferred political preference into tracking parameters. [Google campaign URL guidance](https://support.google.com/analytics/answer/10917952?hl=en).
 
-Use the existing GA4 tag. Define the following events; these are implementation recommendations until live receipts are observed. Google's recommended `share` event supports `method`, `content_type` and `item_id`. Custom events can measure the remaining actions. [GA event reference](https://developers.google.com/analytics/devguides/collection/ga4/reference/events), [event setup](https://developers.google.com/analytics/devguides/collection/ga4/events).
+## Support wording
 
-| Event | Fire only when | Suggested low-cardinality context | Meaning |
-| --- | --- | --- | --- |
-| `select_county` | A user completes county selection | office, year, state | Useful exploration; not an unique person count |
-| `view_county_results` | Selected results are actually shown | office, year, state | Reached the useful answer, separate from merely clicking |
-| `view_history` | Historical chart/table becomes visible | office, year | History reached |
-| `source_open` | User activates an original-source link | office, year, source family | Verification interest |
-| `share` | Native share resolves successfully or copy succeeds | method, content_type=`election_map`, item_id | Sharing intent/completion; not confirmed recipient visits |
-| `support_open` | User activates support navigation/wallet action | placement, method | Support intent; not money received |
-| `payment_request_copy` | Clipboard write succeeds | placement | Copy succeeded; not settlement |
-| `contribute_open` | GitHub contribution link activated | placement | Contribution interest; not a submitted PR |
+**Support the research and platform.** “Help us verify public sources, fill coverage gaps and keep V-Map available to everyone.” Keep the same access and evidence standards whether or not someone contributes. Donations do not buy a conclusion or influence which party is reviewed.
 
-Do not send wallet invoices, payment addresses, email addresses, search text, visitor identity or private data as custom event parameters. Count QR impressions/clicks only as exposure/intent. The app does not verify payment settlement, so it must not synthesize `donation_received`, revenue, donor count or conversion amounts from clicks. If James later reconciles actual receipts, report that separately with the payment provider's evidence.
+Share https://voteranomaly.com/#support rather than an invoice. The current combined Bitcoin request includes an optional Lightning invoice expiring **November 9, 2026**; the on-chain address remains available afterward. Recheck the displayed payment options before using a support CTA after that date. Do not claim tax deductibility, nonprofit status, verified receipts, partnerships, endorsements or guaranteed publication unless separately established.
 
-Use lowercase, stable campaign labels: `utm_campaign=vmap_launch_2026`, a single source per platform, `utm_medium=organic_social`, `referral`, or `email` as appropriate, and a meaningful `utm_content` such as `county_walkthrough_01`. Do not attach UTM parameters to internal navigation. Never put personal recipient names or sensitive information in public tracking URLs. Google's campaign guidance recommends consistent source/medium/campaign fields. [GA campaign URL guide](https://support.google.com/analytics/answer/10917952?hl=en).
-
-Example owned-channel link:
-`https://voteranomaly.com/?utm_source=cas_tx&utm_medium=referral&utm_campaign=vmap_launch_2026&utm_content=project_page`
-
-Use GA Traffic acquisition for source/medium/campaign, then compare actual meaningful actions per session. Search Console reports search impressions/clicks/indexing separately; a sitemap success is not a visit. Establish the first 24-hour baseline before choosing a numeric traffic or donation target. For the first week, operational targets are one useful demo, up to three individually relevant human-approved pitches, every substantive correction acknowledged, and a clear seven-day funnel report. These are work targets, not promised audience or donation forecasts.
-
-Report sessions, engaged sessions, sessions reaching results/history, share completions, source opens and support intentions, including denominators. Do not add overlapping event counts and call them unique people. Avoid ranking channels from tiny samples; document the date range and uncertainty. If support interest is low but results engagement is strong, test one clearer support explanation rather than increasing fear-based claims or the QR's prominence.
-
-## Donation wording and reusable assets
-
-Recommended CTA: **Support the research and platform.** Secondary sentence: “Help us verify public sources, fill coverage gaps and keep V-Map available to everyone.” Donations do not influence review thresholds or conclusions. Do not imply a tax deduction, nonprofit status, endorsement, payment verification or guaranteed publication unless separately established.
-
-The supplied QR is a Bitcoin request with an optional Lightning invoice expiring November 9, 2026; the app retains the on-chain address afterward. Do not put the payment QR in the site's social preview, post a stale Lightning-only link, or frame a contribution as buying proof of a conclusion. Use the regular support page so current payment options and status are visible.
-
-Public, reviewed draft copy is in `public/PROMOTION-KIT.md`. Optional vector share art is in `public/share/logo-preview.svg`, derived from the existing V-Map favicon mark. Root should rasterize it to PNG for social-preview compatibility and add explicit absolute Open Graph/Twitter image metadata. Metadata should include image alt text, dimensions and MIME type. Open Graph defines these image fields; clients can cache previews, so a corrected tag does not instantly replace every old shared thumbnail. [Open Graph protocol](https://ogp.me/).
-
-This plan is frozen for root integration. No social outreach worker, human publishing schedule or paid AI process has been installed by this document.
+No ranking, AI-answer citation, virality, traffic or fundraising result is guaranteed by this plan. It creates a measurable manual launch, not an always-running marketing team.

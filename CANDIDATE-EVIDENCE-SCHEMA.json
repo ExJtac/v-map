@@ -1,0 +1,1199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:vmap:candidate-evidence:v1",
+  "title": "V-Map candidate research packet",
+  "description": "Proposed manual packet structure. Not a populated dossier, a winner declaration, or a deployed editorial enforcement system. JSON Schema cannot verify truth or source-ID cross references.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "packetId": {
+      "type": "string",
+      "pattern": "^packet-[a-z0-9-]+$"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "researchCutoff": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "rosterVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "person": {
+      "$ref": "#/$defs/person"
+    },
+    "contests": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/contest"
+      }
+    },
+    "accounts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/account"
+      }
+    },
+    "coverageLog": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/coverageLog"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claim"
+      }
+    },
+    "review": {
+      "$ref": "#/$defs/review"
+    },
+    "publicationStatus": {
+      "enum": [
+        "internal_draft",
+        "held",
+        "ready_for_editorial_review",
+        "approved_for_publication",
+        "published",
+        "correction_required",
+        "withdrawn"
+      ]
+    },
+    "corrections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/correction"
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "packetId",
+    "createdAt",
+    "updatedAt",
+    "researchCutoff",
+    "rosterVersion",
+    "person",
+    "contests",
+    "accounts",
+    "coverageLog",
+    "evidence",
+    "claims",
+    "review",
+    "publicationStatus",
+    "corrections"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "publicationStatus": {
+            "enum": [
+              "approved_for_publication",
+              "published"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "person": {
+            "properties": {
+              "identityStatus": {
+                "const": "confirmed"
+              },
+              "identityEvidenceIds": {
+                "minItems": 2
+              }
+            }
+          },
+          "review": {
+            "properties": {
+              "independentReviewerIds": {
+                "minItems": 1
+              },
+              "identityChecked": {
+                "const": true
+              },
+              "outcomeStatusChecked": {
+                "const": true
+              },
+              "contextAndCounterevidenceChecked": {
+                "const": true
+              },
+              "sourceReferencesResolve": {
+                "const": true
+              },
+              "privacyAndRelevanceChecked": {
+                "const": true
+              },
+              "quotationAndRightsChecked": {
+                "const": true
+              },
+              "editorialDecision": {
+                "const": "approved"
+              },
+              "researcherIds": {
+                "minItems": 1
+              },
+              "reviewedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "claims": {
+            "items": {
+              "properties": {
+                "verificationStatus": {
+                  "not": {
+                    "const": "unverified"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "timeRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "raw": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "precision": {
+          "enum": [
+            "second",
+            "minute",
+            "date",
+            "month",
+            "year",
+            "unknown"
+          ]
+        },
+        "timeZone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "normalizedUtc": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "raw",
+        "precision",
+        "timeZone",
+        "normalizedUtc"
+      ],
+      "description": "Do not invent midnight or a time zone for date-only/unknown source times. Retain the original representation."
+    },
+    "person": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "personId": {
+          "type": "string",
+          "pattern": "^vmap-person-[a-z0-9-]+$"
+        },
+        "publicName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publicAliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "externalIds": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "fecCandidateIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "bioguideId": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "stateCandidateIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "fecCandidateIds",
+            "bioguideId",
+            "stateCandidateIds"
+          ]
+        },
+        "identityStatus": {
+          "enum": [
+            "unresolved",
+            "corroborated",
+            "confirmed"
+          ]
+        },
+        "identityEvidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "identityNotes": {
+          "type": "string",
+          "description": "Public/professional disambiguation only. Do not store DOB, home address, private contacts, family/minor or unrelated sensitive information."
+        }
+      },
+      "required": [
+        "personId",
+        "publicName",
+        "publicAliases",
+        "externalIds",
+        "identityStatus",
+        "identityEvidenceIds",
+        "identityNotes"
+      ]
+    },
+    "contest": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "contestId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "eligibleSeatId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "office": {
+          "enum": [
+            "senate",
+            "house",
+            "governor"
+          ]
+        },
+        "electionYear": {
+          "const": 2026
+        },
+        "stateFips": {
+          "type": "string",
+          "pattern": "^[0-9]{2}$"
+        },
+        "district": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "senateClass": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 3
+        },
+        "stage": {
+          "type": "string",
+          "minLength": 1
+        },
+        "special": {
+          "type": "boolean"
+        },
+        "partyAsReported": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outcomeStatus": {
+          "enum": [
+            "no_result",
+            "reported_leader",
+            "held",
+            "tied",
+            "winner_declared",
+            "winner_certified"
+          ]
+        },
+        "outcomeAsOf": {
+          "$ref": "#/$defs/timeRecord"
+        },
+        "outcomeEvidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "outcomeReviewerId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "winnerQualificationNote": {
+          "type": "string",
+          "description": "Explain official named outcome, applicable round and unresolved challenges; a certified-count flag or current-member list alone is insufficient."
+        }
+      },
+      "required": [
+        "contestId",
+        "eligibleSeatId",
+        "office",
+        "electionYear",
+        "stateFips",
+        "district",
+        "senateClass",
+        "stage",
+        "special",
+        "partyAsReported",
+        "outcomeStatus",
+        "outcomeAsOf",
+        "outcomeEvidenceIds",
+        "outcomeReviewerId",
+        "winnerQualificationNote"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "outcomeStatus": {
+                "enum": [
+                  "winner_declared",
+                  "winner_certified"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "outcomeEvidenceIds": {
+                "minItems": 1
+              },
+              "outcomeReviewerId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "winnerQualificationNote": {
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "account": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "accountId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publicProfileUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "platformAccountId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "observedHandle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "historicHandles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "handle": {
+                "type": "string",
+                "minLength": 1
+              },
+              "observedFrom": {
+                "$ref": "#/$defs/timeRecord"
+              },
+              "observedTo": {
+                "$ref": "#/$defs/timeRecord"
+              },
+              "evidenceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "handle",
+              "observedFrom",
+              "observedTo",
+              "evidenceIds"
+            ]
+          }
+        },
+        "accountType": {
+          "enum": [
+            "government",
+            "campaign",
+            "public_professional_personal",
+            "staff_managed",
+            "institutional",
+            "unresolved"
+          ]
+        },
+        "attributionStatus": {
+          "enum": [
+            "unverified",
+            "corroborated",
+            "confirmed",
+            "impersonation_or_recycled_handle_concern"
+          ]
+        },
+        "attributionEvidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "authorshipLimitations": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "accountId",
+        "platform",
+        "publicProfileUrl",
+        "platformAccountId",
+        "observedHandle",
+        "historicHandles",
+        "accountType",
+        "attributionStatus",
+        "attributionEvidenceIds",
+        "authorshipLimitations"
+      ]
+    },
+    "coverageLog": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lane": {
+          "enum": [
+            "identity_and_outcome",
+            "career",
+            "public_record",
+            "campaign_finance",
+            "news",
+            "active_social",
+            "public_archives",
+            "context_response"
+          ]
+        },
+        "status": {
+          "enum": [
+            "not_started",
+            "in_progress",
+            "complete_bounded",
+            "blocked",
+            "not_available"
+          ]
+        },
+        "windowStart": {
+          "$ref": "#/$defs/timeRecord"
+        },
+        "windowEnd": {
+          "$ref": "#/$defs/timeRecord"
+        },
+        "checkedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "researcherId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publicQueriesOrUrls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "minutesSpent": {
+          "type": "number",
+          "minimum": 0
+        },
+        "boundedScope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "limitationsOrNegativeResult": {
+          "type": "string",
+          "description": "No accessible result in a specified search is not proof of no history or deliberate deletion."
+        }
+      },
+      "required": [
+        "lane",
+        "status",
+        "windowStart",
+        "windowEnd",
+        "checkedAt",
+        "researcherId",
+        "publicQueriesOrUrls",
+        "evidenceIds",
+        "minutesSpent",
+        "boundedScope",
+        "limitationsOrNegativeResult"
+      ]
+    },
+    "archive": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "service": {
+          "type": "string",
+          "minLength": 1
+        },
+        "captureIndexUrl": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "replayUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "rawCaptureTimestamp": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "captureTime": {
+          "$ref": "#/$defs/timeRecord"
+        },
+        "requestedCaptureTime": {
+          "$ref": "#/$defs/timeRecord"
+        },
+        "returnedUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "httpStatus": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 100,
+          "maximum": 599
+        },
+        "replayCheck": {
+          "enum": [
+            "content_replayed_and_checked",
+            "index_only",
+            "broken_replay",
+            "login_wall",
+            "redirect_or_other_capture",
+            "mixed_date_resources",
+            "unknown"
+          ]
+        },
+        "mediaAndThreadCompleteness": {
+          "enum": [
+            "checked_complete_for_claim",
+            "partial",
+            "not_present",
+            "unknown"
+          ]
+        },
+        "limitations": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "service",
+        "captureIndexUrl",
+        "replayUrl",
+        "rawCaptureTimestamp",
+        "captureTime",
+        "requestedCaptureTime",
+        "returnedUrl",
+        "httpStatus",
+        "replayCheck",
+        "mediaAndThreadCompleteness",
+        "limitations"
+      ]
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "hashes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "artifactId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "representation": {
+                "enum": [
+                  "original_bytes",
+                  "extracted_text",
+                  "redacted_excerpt",
+                  "screenshot",
+                  "pdf",
+                  "warc"
+                ]
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "artifactId",
+              "representation",
+              "sha256"
+            ]
+          }
+        },
+        "hashUnavailableReason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "hashes",
+        "hashUnavailableReason"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "hashes": {
+                "maxItems": 0
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "hashUnavailableReason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "evidenceId": {
+          "type": "string",
+          "pattern": "^ev-[a-z0-9-]+$"
+        },
+        "kind": {
+          "enum": [
+            "official_election_record",
+            "official_biography",
+            "legislative_record",
+            "campaign_finance_record",
+            "news_report",
+            "social_post",
+            "public_archive",
+            "court_or_ethics_record",
+            "public_response",
+            "correction"
+          ]
+        },
+        "originalUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "retrievedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "publisherOrAccount": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authorAsDisplayed": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "accountId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "platformPostId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "contentTime": {
+          "$ref": "#/$defs/timeRecord"
+        },
+        "accessStatus": {
+          "enum": [
+            "public_live",
+            "public_archive_only",
+            "unavailable",
+            "restricted",
+            "removed_by_platform",
+            "corroborated_author_deletion",
+            "not_verified"
+          ]
+        },
+        "archive": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/archive"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "publicScopeChecked": {
+          "type": "boolean"
+        },
+        "identityAttribution": {
+          "enum": [
+            "unverified",
+            "identity_correlated",
+            "archive_context_checked",
+            "independently_corroborated"
+          ]
+        },
+        "originatingAssertionGroup": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "briefExcerpt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 1200,
+          "description": "Only a necessary, attributed, rights-reviewed excerpt; character limit does not establish permission."
+        },
+        "contextNotes": {
+          "type": "string"
+        },
+        "rightsBasis": {
+          "enum": [
+            "link_only",
+            "brief_attributed_excerpt",
+            "licensed",
+            "public_domain_verified",
+            "permission",
+            "withheld_pending_review"
+          ]
+        },
+        "corroboratingEvidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "deletionOrRemovalEvidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "limitations": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "evidenceId",
+        "kind",
+        "originalUrl",
+        "retrievedAt",
+        "publisherOrAccount",
+        "authorAsDisplayed",
+        "accountId",
+        "platformPostId",
+        "contentTime",
+        "accessStatus",
+        "archive",
+        "artifact",
+        "publicScopeChecked",
+        "identityAttribution",
+        "originatingAssertionGroup",
+        "briefExcerpt",
+        "contextNotes",
+        "rightsBasis",
+        "corroboratingEvidenceIds",
+        "deletionOrRemovalEvidenceIds",
+        "limitations"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "accessStatus": {
+                "const": "public_archive_only"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "archive": {
+                "$ref": "#/$defs/archive"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "accessStatus": {
+                "enum": [
+                  "removed_by_platform",
+                  "corroborated_author_deletion"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "deletionOrRemovalEvidenceIds": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "accessStatus": {
+                "const": "restricted"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "briefExcerpt": {
+                "type": "null"
+              },
+              "rightsBasis": {
+                "enum": [
+                  "link_only",
+                  "withheld_pending_review"
+                ]
+              },
+              "artifact": {
+                "properties": {
+                  "hashes": {
+                    "maxItems": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "claimId": {
+          "type": "string",
+          "pattern": "^claim-[a-z0-9-]+$"
+        },
+        "neutralSummary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publicInterestBasis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "verificationStatus": {
+          "enum": [
+            "unverified",
+            "source_supported_fact",
+            "reported_allegation",
+            "subject_response_or_denial",
+            "official_finding",
+            "pending_or_disputed",
+            "corrected",
+            "retracted"
+          ]
+        },
+        "riskLevel": {
+          "enum": [
+            "routine",
+            "material_adverse"
+          ]
+        },
+        "supportingEvidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "contraryOrContextEvidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "independenceAssessment": {
+          "enum": [
+            "not_assessed",
+            "one_originating_source",
+            "multiple_independent_sources",
+            "syndicated_or_repeated_claim"
+          ]
+        },
+        "responseStatus": {
+          "enum": [
+            "not_requested",
+            "public_response_found",
+            "draft_prepared",
+            "authorized_request_pending",
+            "response_received",
+            "no_response_after_documented_deadline",
+            "not_applicable"
+          ]
+        },
+        "reviewerNotes": {
+          "type": "string"
+        },
+        "publicationWording": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "claimId",
+        "neutralSummary",
+        "publicInterestBasis",
+        "verificationStatus",
+        "riskLevel",
+        "supportingEvidenceIds",
+        "contraryOrContextEvidenceIds",
+        "independenceAssessment",
+        "responseStatus",
+        "reviewerNotes",
+        "publicationWording"
+      ]
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "researcherIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "independentReviewerIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "reviewedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "identityChecked": {
+          "type": "boolean"
+        },
+        "outcomeStatusChecked": {
+          "type": "boolean"
+        },
+        "contextAndCounterevidenceChecked": {
+          "type": "boolean"
+        },
+        "sourceReferencesResolve": {
+          "type": "boolean"
+        },
+        "privacyAndRelevanceChecked": {
+          "type": "boolean"
+        },
+        "quotationAndRightsChecked": {
+          "type": "boolean"
+        },
+        "editorialDecision": {
+          "enum": [
+            "not_reviewed",
+            "changes_required",
+            "hold",
+            "approved"
+          ]
+        },
+        "decisionNotes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "researcherIds",
+        "independentReviewerIds",
+        "reviewedAt",
+        "identityChecked",
+        "outcomeStatusChecked",
+        "contextAndCounterevidenceChecked",
+        "sourceReferencesResolve",
+        "privacyAndRelevanceChecked",
+        "quotationAndRightsChecked",
+        "editorialDecision",
+        "decisionNotes"
+      ]
+    },
+    "correction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "correctedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "claimId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "replacementOrRetraction": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "reviewerId": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "correctedAt",
+        "claimId",
+        "reason",
+        "replacementOrRetraction",
+        "evidenceIds",
+        "reviewerId"
+      ]
+    }
+  }
+}
