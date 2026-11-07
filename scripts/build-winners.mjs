@@ -11,7 +11,7 @@ const read = file => JSON.parse(fs.readFileSync(path.join(root,file),'utf8'));
 export function buildWinners() {
   const manifests = COUNTY_SOURCES.map(source => ({...source, manifest:read(`public/data/${source.name}/manifest.json`)}));
   const states = Object.fromEntries(read('node_modules/us-atlas/states-albers-10m.json').objects.states.geometries.map(g => [g.id,g.properties.name]));
-  const snapshotDate = read('public/data/elections/manifest.json').snapshotDate;
+  const snapshotDate = read('public/data/coverage-audit.json').snapshotDate;
   const outputs = {}, years = [];
   for(let year=2026;year>=2006;year--) {
     const rows = [];

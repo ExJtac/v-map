@@ -1,3 +1,4 @@
+import {initResearchProgress} from './research-progress.js';
 import "./style.css";
 import { geoPath } from "d3-geo";
 import { select } from "d3-selection";
@@ -16,6 +17,7 @@ import { initPatternReview, hasPatternFlag, countyPatternDirection, updatePatter
 
 initSupport();
 initResearchStatus();
+initResearchProgress(document.querySelector('#congress-research-progress'));
 initCountySourceIndex(document.querySelector('#county-source-index'));
 
 const regions = {

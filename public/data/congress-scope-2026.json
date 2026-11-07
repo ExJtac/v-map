@@ -1,0 +1,1191 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-11-07T20:23:21.814929+00:00",
+  "sources": {
+    "regularSenate": "https://www.senate.gov/senators/Class_II.htm",
+    "congressCalendar": "https://www.fec.gov/resources/cms-content/documents/2026pdates.pdf",
+    "all35SenateStates": "https://about.usps.com/postal-bulletin/2026/pb22694/html/cover_004.htm",
+    "LAHouseRound": "https://www.sos.la.gov/elections-voting/types-of-elections",
+    "geography": "https://www.census.gov/programs-surveys/economic-census/geographies/levels/2022-levels.html"
+  },
+  "interpretation": "Assessed is union of four numerical screens, not all screens or source-context review. No-election and outside-scope counties are not missing-data failures; special and primary/round holds remain explicit. Candidate race sums are not actual ballots/turnout. Search absence is not exoneration. Reference atlas3142 includes legacy AK/CT units and DC.",
+  "reviewPacketSha256": "64b2ea39dd31eb045e65ffd68796e9662ba5519ca413b18ff7d9de5e278b206d",
+  "states": [
+    {
+      "stateFips": "01",
+      "state": "Alabama",
+      "stateAbbr": "AL",
+      "atlasReferenceUnits": 67,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 67
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 67
+      }
+    },
+    {
+      "stateFips": "02",
+      "state": "Alaska",
+      "stateAbbr": "AK",
+      "atlasReferenceUnits": 29,
+      "geographyLimit": "Reference atlas geography, not current Census equivalent/reporting-unit completeness.",
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 29
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 29
+      }
+    },
+    {
+      "stateFips": "04",
+      "state": "Arizona",
+      "stateAbbr": "AZ",
+      "atlasReferenceUnits": 15,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 15
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "05",
+      "state": "Arkansas",
+      "stateAbbr": "AR",
+      "atlasReferenceUnits": 75,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 75
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 75
+      }
+    },
+    {
+      "stateFips": "06",
+      "state": "California",
+      "stateAbbr": "CA",
+      "atlasReferenceUnits": 58,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 58
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "08",
+      "state": "Colorado",
+      "stateAbbr": "CO",
+      "atlasReferenceUnits": 64,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 64
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 64
+      }
+    },
+    {
+      "stateFips": "09",
+      "state": "Connecticut",
+      "stateAbbr": "CT",
+      "atlasReferenceUnits": 8,
+      "geographyLimit": "Reference atlas geography, not current Census equivalent/reporting-unit completeness.",
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 8
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "10",
+      "state": "Delaware",
+      "stateAbbr": "DE",
+      "atlasReferenceUnits": 3,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 3
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 3
+      }
+    },
+    {
+      "stateFips": "11",
+      "state": "District of Columbia",
+      "stateAbbr": "DC",
+      "atlasReferenceUnits": 1,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "delegate_outside_voting_seat_scope",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 0
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "12",
+      "state": "Florida",
+      "stateAbbr": "FL",
+      "atlasReferenceUnits": 67,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 67
+      },
+      "senate": {
+        "applicability": "special_only_not_comparable_to_regular_2020",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 67
+      }
+    },
+    {
+      "stateFips": "13",
+      "state": "Georgia",
+      "stateAbbr": "GA",
+      "atlasReferenceUnits": 159,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 159
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 159
+      }
+    },
+    {
+      "stateFips": "15",
+      "state": "Hawaii",
+      "stateAbbr": "HI",
+      "atlasReferenceUnits": 5,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 5
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "atlasReferenceUnits": 44,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 44
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 44
+      }
+    },
+    {
+      "stateFips": "17",
+      "state": "Illinois",
+      "stateAbbr": "IL",
+      "atlasReferenceUnits": 102,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 102
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 102
+      }
+    },
+    {
+      "stateFips": "18",
+      "state": "Indiana",
+      "stateAbbr": "IN",
+      "atlasReferenceUnits": 92,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 92
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "19",
+      "state": "Iowa",
+      "stateAbbr": "IA",
+      "atlasReferenceUnits": 99,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 99
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 99
+      }
+    },
+    {
+      "stateFips": "20",
+      "state": "Kansas",
+      "stateAbbr": "KS",
+      "atlasReferenceUnits": 105,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 105
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 105
+      }
+    },
+    {
+      "stateFips": "21",
+      "state": "Kentucky",
+      "stateAbbr": "KY",
+      "atlasReferenceUnits": 120,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 120
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 120
+      }
+    },
+    {
+      "stateFips": "22",
+      "state": "Louisiana",
+      "stateAbbr": "LA",
+      "atlasReferenceUnits": 64,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar",
+          "LAHouseRound"
+        ],
+        "referenceUnitsInScope": 64,
+        "roundLimit": "House Nov3 is open primary; Dec12 open general if necessary. Senate Nov3 general does not resolve 2020 prior-round ambiguity."
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 64,
+        "roundLimit": "House Nov3 is open primary; Dec12 open general if necessary. Senate Nov3 general does not resolve 2020 prior-round ambiguity."
+      }
+    },
+    {
+      "stateFips": "23",
+      "state": "Maine",
+      "stateAbbr": "ME",
+      "atlasReferenceUnits": 16,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 16
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 16
+      }
+    },
+    {
+      "stateFips": "24",
+      "state": "Maryland",
+      "stateAbbr": "MD",
+      "atlasReferenceUnits": 24,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 24
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "25",
+      "state": "Massachusetts",
+      "stateAbbr": "MA",
+      "atlasReferenceUnits": 14,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 14
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 14
+      }
+    },
+    {
+      "stateFips": "26",
+      "state": "Michigan",
+      "stateAbbr": "MI",
+      "atlasReferenceUnits": 83,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 83
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 83
+      }
+    },
+    {
+      "stateFips": "27",
+      "state": "Minnesota",
+      "stateAbbr": "MN",
+      "atlasReferenceUnits": 87,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 87
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 87
+      }
+    },
+    {
+      "stateFips": "28",
+      "state": "Mississippi",
+      "stateAbbr": "MS",
+      "atlasReferenceUnits": 82,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 82
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 82
+      }
+    },
+    {
+      "stateFips": "29",
+      "state": "Missouri",
+      "stateAbbr": "MO",
+      "atlasReferenceUnits": 115,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 115
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "30",
+      "state": "Montana",
+      "stateAbbr": "MT",
+      "atlasReferenceUnits": 56,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 56
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 56
+      }
+    },
+    {
+      "stateFips": "31",
+      "state": "Nebraska",
+      "stateAbbr": "NE",
+      "atlasReferenceUnits": 93,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 93
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 93
+      }
+    },
+    {
+      "stateFips": "32",
+      "state": "Nevada",
+      "stateAbbr": "NV",
+      "atlasReferenceUnits": 17,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 17
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "33",
+      "state": "New Hampshire",
+      "stateAbbr": "NH",
+      "atlasReferenceUnits": 10,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 10
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 10
+      }
+    },
+    {
+      "stateFips": "34",
+      "state": "New Jersey",
+      "stateAbbr": "NJ",
+      "atlasReferenceUnits": 21,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 21
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 21
+      }
+    },
+    {
+      "stateFips": "35",
+      "state": "New Mexico",
+      "stateAbbr": "NM",
+      "atlasReferenceUnits": 33,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 33
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 33
+      }
+    },
+    {
+      "stateFips": "36",
+      "state": "New York",
+      "stateAbbr": "NY",
+      "atlasReferenceUnits": 62,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 62
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "37",
+      "state": "North Carolina",
+      "stateAbbr": "NC",
+      "atlasReferenceUnits": 100,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 100
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 100
+      }
+    },
+    {
+      "stateFips": "38",
+      "state": "North Dakota",
+      "stateAbbr": "ND",
+      "atlasReferenceUnits": 53,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 53
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "39",
+      "state": "Ohio",
+      "stateAbbr": "OH",
+      "atlasReferenceUnits": 88,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 88
+      },
+      "senate": {
+        "applicability": "special_only_not_comparable_to_regular_2020",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 88
+      }
+    },
+    {
+      "stateFips": "40",
+      "state": "Oklahoma",
+      "stateAbbr": "OK",
+      "atlasReferenceUnits": 77,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 77
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 77
+      }
+    },
+    {
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "atlasReferenceUnits": 36,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 36
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 36
+      }
+    },
+    {
+      "stateFips": "42",
+      "state": "Pennsylvania",
+      "stateAbbr": "PA",
+      "atlasReferenceUnits": 67,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 67
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "44",
+      "state": "Rhode Island",
+      "stateAbbr": "RI",
+      "atlasReferenceUnits": 5,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 5
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 5
+      }
+    },
+    {
+      "stateFips": "45",
+      "state": "South Carolina",
+      "stateAbbr": "SC",
+      "atlasReferenceUnits": 46,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 46
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 46
+      }
+    },
+    {
+      "stateFips": "46",
+      "state": "South Dakota",
+      "stateAbbr": "SD",
+      "atlasReferenceUnits": 66,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 66
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 66
+      }
+    },
+    {
+      "stateFips": "47",
+      "state": "Tennessee",
+      "stateAbbr": "TN",
+      "atlasReferenceUnits": 95,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 95
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 95
+      }
+    },
+    {
+      "stateFips": "48",
+      "state": "Texas",
+      "stateAbbr": "TX",
+      "atlasReferenceUnits": 254,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 254
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 254
+      }
+    },
+    {
+      "stateFips": "49",
+      "state": "Utah",
+      "stateAbbr": "UT",
+      "atlasReferenceUnits": 29,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 29
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "50",
+      "state": "Vermont",
+      "stateAbbr": "VT",
+      "atlasReferenceUnits": 14,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 14
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "51",
+      "state": "Virginia",
+      "stateAbbr": "VA",
+      "atlasReferenceUnits": 133,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 133
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 133
+      }
+    },
+    {
+      "stateFips": "53",
+      "state": "Washington",
+      "stateAbbr": "WA",
+      "atlasReferenceUnits": 39,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 39
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "atlasReferenceUnits": 55,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 55
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 55
+      }
+    },
+    {
+      "stateFips": "55",
+      "state": "Wisconsin",
+      "stateAbbr": "WI",
+      "atlasReferenceUnits": 72,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 72
+      },
+      "senate": {
+        "applicability": "no_2026_senate_election",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 0
+      }
+    },
+    {
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "atlasReferenceUnits": 23,
+      "geographyLimit": null,
+      "house": {
+        "applicability": "voting_seats_all_states",
+        "scopeSourceIds": [
+          "congressCalendar"
+        ],
+        "referenceUnitsInScope": 23
+      },
+      "senate": {
+        "applicability": "regular_class_II",
+        "scopeSourceIds": [
+          "regularSenate",
+          "congressCalendar",
+          "all35SenateStates"
+        ],
+        "referenceUnitsInScope": 23
+      }
+    }
+  ]
+}

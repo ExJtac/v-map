@@ -58,7 +58,9 @@ for (const source of manifests)
       if (r.provisional) {
         provisional++;
         assert.equal(r.unofficial, true);
-        assert.ok(r.sourceUpdatedAt || r.asOf || r.fetchedAt || r.retrievedAt);
+        const sourceInfo=data.sources[r.sourceId];
+        const approvedUnknownTime=r.sourceId==='ky-house-current-state-controls'&&r.geoLevel==='district'&&r.stateFips==='21'&&data.office==='house'&&data.year===2026&&r.sourceReviewDate==='2026-11-07'&&r.retrievedAt===null&&r.sourceUpdatedAt===null&&sourceInfo.retrievedAt===null&&sourceInfo.sourceReviewDate===r.sourceReviewDate&&sourceInfo.evidenceSha256==='2b9107869a6bfaf28b009a300b9defeef08570a70f7ba01096f48b4f85385464'&&sourceInfo.sourceFormat==='saved primary web-reader extraction, not downloaded HTML/PDF bytes'&&/Exact control-page request timestamp unavailable/.test(sourceInfo.retrievedAtBasis||'');
+        assert.ok(r.sourceUpdatedAt || r.asOf || r.fetchedAt || r.retrievedAt || approvedUnknownTime,'Provisional source must retain a known time or the narrowly approved unknown-time receipt');
       }
     }
   }
@@ -160,6 +162,10 @@ for (const entry of man.manifest.coverage) {
     "Maui and Kalawao correction must be applied together",
   );
 }
+// Known2026Louisiana House primary rows must not become general-election leaders.
+const laSources=manifests.flatMap(source=>source.manifest.coverage.filter(e=>e.office==='house'&&e.year===2026).map(e=>({...source,url:e.url,data:read('public'+e.url)})));
+const la=mergeElectionData(null,{office:'house',year:2026,supplementBundles:laSources,sourceHolds:[]}).results.filter(r=>r.stateFips==='22');
+assert.ok(la.length>=85);assert.ok(la.every(r=>r.sourceNeedsReview&&summarizeRace(r).winner===null),'Louisiana primary/general source hold must cover county and district records');
 console.log(
   JSON.stringify({
     status: "passed",

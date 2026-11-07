@@ -9,6 +9,11 @@
     "eligibilityCountsOutsideTexas": {
       "republican": 1,
       "democrat": 163
+    },
+    "reviewedSubset": {
+      "url": "data/county-reviews/reviewed-input-2026-11-07.json",
+      "sha256": "cb8c06d765543b78d98685875ed3934512ff83c666f7066aab7ef4c6d46887d1",
+      "scope": "Exact county/office assessments used in the approved first source-report batch; original full audit remains source-pinned separately."
     }
   },
   "review": {

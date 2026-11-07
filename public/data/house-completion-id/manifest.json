@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "house-completion-id2022-1": {
+      "title": "Idaho Secretary of State2022House district1officialcountyCSV",
+      "publisher": "Idaho Secretary of State",
+      "url": "https://canvass.sos.idaho.gov/eng/contests/download/17250/show_granularity_dt_id%3A3/.csv",
+      "sourceUrl": "https://canvass.sos.idaho.gov/eng/contests/download/17250/show_granularity_dt_id%3A3/.csv",
+      "sha256": "cee635e5f34a51619dbad7f3dff1f56b99020cd0c50b3857956633ead32f6412",
+      "retrievedAt": "2026-11-07T20:40:21.152813+00:00",
+      "sourceIsOfficial": true,
+      "license": "Official public election facts; underlying publisher terms retained; no blanket public-domain claim"
+    },
+    "house-completion-id2022-2": {
+      "title": "Idaho Secretary of State2022House district2officialcountyCSV",
+      "publisher": "Idaho Secretary of State",
+      "url": "https://canvass.sos.idaho.gov/eng/contests/download/17249/show_granularity_dt_id%3A3/.csv",
+      "sourceUrl": "https://canvass.sos.idaho.gov/eng/contests/download/17249/show_granularity_dt_id%3A3/.csv",
+      "sha256": "6cd8bbae47c5066872f0568c46ae4fae464a1c9389bf9dbb1cf6b3b8d734e682",
+      "retrievedAt": "2026-11-07T20:40:21.492439+00:00",
+      "sourceIsOfficial": true,
+      "license": "Official public election facts; underlying publisher terms retained; no blanket public-domain claim"
+    },
+    "house-completion-id2026-1": {
+      "title": "Idaho Secretary of State2026House district1unofficialcountybreakdownAPI",
+      "publisher": "Idaho Secretary of State",
+      "url": "https://results.voteidaho.gov/results/public/api/elections/id/nov2026/data/ballot-item/01000000-9b8a-13bb-e31b-08df23ec9989",
+      "sourceUrl": "https://results.voteidaho.gov/results/public/api/elections/id/nov2026/data/ballot-item/01000000-9b8a-13bb-e31b-08df23ec9989",
+      "sha256": "b7f2ac20b289ac86d71b4051ade9ab985bd71ddb579a05c370525b4fbd087abd",
+      "retrievedAt": "2026-11-07T20:43:48.653376+00:00",
+      "sourceIsOfficial": true,
+      "license": "Official public election facts; underlying publisher terms retained; no blanket public-domain claim"
+    },
+    "house-completion-id2026-2": {
+      "title": "Idaho Secretary of State2026House district2unofficialcountybreakdownAPI",
+      "publisher": "Idaho Secretary of State",
+      "url": "https://results.voteidaho.gov/results/public/api/elections/id/nov2026/data/ballot-item/01000000-9b8a-13bb-7a7e-08df23ecc8f3",
+      "sourceUrl": "https://results.voteidaho.gov/results/public/api/elections/id/nov2026/data/ballot-item/01000000-9b8a-13bb-7a7e-08df23ecc8f3",
+      "sha256": "90a5b5d044e8e9306174691f32db1b3462f978f5472c6037aa0d2233abbd87e8",
+      "retrievedAt": "2026-11-07T20:43:49.094850+00:00",
+      "sourceIsOfficial": true,
+      "license": "Official public election facts; underlying publisher terms retained; no blanket public-domain claim"
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-id/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 47,
+      "stateCount": 1,
+      "countyCount": 44,
+      "candidateCount": 114,
+      "countyDistrictIntersections": true
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-id/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 47,
+      "stateCount": 1,
+      "countyCount": 44,
+      "candidateCount": 215,
+      "countyDistrictIntersections": true
+    }
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T20:47:36.677271+00:00",
+    "evidenceSha256": "785e55085e89e606b10b781f0a50e3461a14fa82c0e6a6e7c19da0a2d5abb19b",
+    "approvalReceiptSha256": "cfa97e0e8fdccb180ee0641406e99bb82917c95793c0798e286a05d954a611af"
+  },
+  "limitations": [
+    "Direct official historical Idaho records replace the separately retained held baseline, without clearing the original bundle’s broad quality note.",
+    "Ada County has two actual district portions; all45 portions across44counties are summed separately each year.",
+    "Current2026counts remain unofficial. Changing candidates and competition can affect differences; no same-candidate or completed-count claim."
+  ]
+}

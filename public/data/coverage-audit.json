@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "snapshotDate": "2026-11-06",
+  "snapshotDate": "2026-11-07",
   "mapCountyGeometries": 3142,
   "sourcePriority": [
     {
@@ -54,6 +54,30 @@
     {
       "name": "research-senate",
       "priority": 130
+    },
+    {
+      "name": "senate-completion",
+      "priority": 140
+    },
+    {
+      "name": "house-completion",
+      "priority": 140
+    },
+    {
+      "name": "house-completion-wy",
+      "priority": 140
+    },
+    {
+      "name": "house-completion-id",
+      "priority": 140
+    },
+    {
+      "name": "house-completion-wv",
+      "priority": 140
+    },
+    {
+      "name": "house-completion-ky",
+      "priority": 140
     }
   ],
   "coverage": [
@@ -280,11 +304,11 @@
       "mappableCounties": 2300,
       "statesWithCountyReturns": 33,
       "statesWithReturns": 34,
-      "heldRecords": 711,
+      "heldRecords": 631,
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 0,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 68
+      "resolvedSourceOverlaps": 149
     },
     {
       "office": "senate",
@@ -334,17 +358,17 @@
     {
       "office": "senate",
       "year": 2026,
-      "records": 1592,
-      "countyContestRecords": 1570,
-      "uniqueCounties": 1570,
-      "mappableCounties": 1570,
-      "statesWithCountyReturns": 20,
-      "statesWithReturns": 25,
+      "records": 1863,
+      "countyContestRecords": 1837,
+      "uniqueCounties": 1837,
+      "mappableCounties": 1837,
+      "statesWithCountyReturns": 25,
+      "statesWithReturns": 29,
       "heldRecords": 0,
       "unitemizedRunnerUpRecords": 0,
-      "provisionalRecords": 1592,
+      "provisionalRecords": 1863,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 2
+      "resolvedSourceOverlaps": 3
     },
     {
       "office": "house",
@@ -489,11 +513,11 @@
       "mappableCounties": 3095,
       "statesWithCountyReturns": 49,
       "statesWithReturns": 50,
-      "heldRecords": 1283,
+      "heldRecords": 1238,
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 0,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 51
+      "resolvedSourceOverlaps": 333
     },
     {
       "office": "house",
@@ -513,17 +537,17 @@
     {
       "office": "house",
       "year": 2026,
-      "records": 2464,
-      "countyContestRecords": 2170,
-      "uniqueCounties": 1801,
-      "mappableCounties": 1801,
-      "statesWithCountyReturns": 28,
-      "statesWithReturns": 34,
-      "heldRecords": 1,
+      "records": 2677,
+      "countyContestRecords": 2374,
+      "uniqueCounties": 1999,
+      "mappableCounties": 1999,
+      "statesWithCountyReturns": 31,
+      "statesWithReturns": 37,
+      "heldRecords": 86,
       "unitemizedRunnerUpRecords": 0,
-      "provisionalRecords": 2464,
+      "provisionalRecords": 2677,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 54
+      "resolvedSourceOverlaps": 326
     },
     {
       "office": "governor",

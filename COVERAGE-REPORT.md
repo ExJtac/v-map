@@ -17,11 +17,11 @@ Snapshot: November 6, 2026. Counts below are source-backed imported coverage aft
 | senate | 2016 | 33 | 2058 | 2058 | 956 |
 | senate | 2017 | 1 | 67 | 67 | 0 |
 | senate | 2018 | 33 | 1877 | 2046 | 213 |
-| senate | 2020 | 33 | 2300 | 2300 | 711 |
+| senate | 2020 | 33 | 2300 | 2300 | 631 |
 | senate | 2021 | 1 | 155 | 310 | 310 |
 | senate | 2022 | 33 | 2055 | 2055 | 559 |
 | senate | 2024 | 33 | 1875 | 1968 | 108 |
-| senate | 2026 | 20 | 1570 | 1570 | 0 |
+| senate | 2026 | 25 | 1837 | 1837 | 0 |
 | house | 2006 | 49 | 3096 | 3787 | 5 |
 | house | 2008 | 49 | 3055 | 3694 | 5 |
 | house | 2010 | 49 | 3074 | 3728 | 5 |
@@ -30,9 +30,9 @@ Snapshot: November 6, 2026. Counts below are source-backed imported coverage aft
 | house | 2016 | 49 | 3108 | 5016 | 1751 |
 | house | 2018 | 49 | 3111 | 3706 | 159 |
 | house | 2020 | 49 | 3110 | 4197 | 1431 |
-| house | 2022 | 49 | 3095 | 3682 | 1283 |
+| house | 2022 | 49 | 3095 | 3682 | 1238 |
 | house | 2024 | 49 | 3083 | 4903 | 1209 |
-| house | 2026 | 28 | 1801 | 2170 | 1 |
+| house | 2026 | 31 | 1999 | 2374 | 86 |
 | governor | 2006 | 35 | 2148 | 2149 | 63 |
 | governor | 2007 | 3 | 266 | 266 | 6 |
 | governor | 2008 | 11 | 566 | 566 | 3 |

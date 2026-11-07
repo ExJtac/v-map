@@ -1,9 +1,10 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {buildPatternReview,peerScreen,reviewForCounty,stateReviewSummary,patternDirection,OFFICES} from '../src/2026-anomalies.js';
-import {buildActualReport,renderPatternReport,arizonaComparability} from './build-2026-anomalies.mjs';
+import {buildActualReport,renderPatternReport,arizonaComparability,additionalHouseComparability} from './build-2026-anomalies.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 function fixture(n=12) {
   const mapCounties=Array.from({length:n},(_,i)=>({fips:'06'+String(i+1).padStart(3,'0'),name:'County '+i}));
@@ -131,7 +132,31 @@ const missingAzPortion=structuredClone(azElections);missingAzPortion['house-2026
 const duplicateAzPortion=structuredClone(azElections);duplicateAzPortion['house-2026'].results.push(duplicateAzPortion['house-2026'].results.find(r=>r.geoLevel==='county'));assert.equal(arizonaComparability(duplicateAzPortion,actual.inputHashes,azManifest).verified,false,'Duplicate actual portion disables Arizona');
 const incompleteAzProof=structuredClone(azManifest);incompleteAzProof.scopeProofs['2026'].scopeComplete=false;assert.equal(arizonaComparability(azElections,actual.inputHashes,incompleteAzProof).verified,false,'Incomplete source proof disables Arizona');
 assert.equal(actual.counties['04012'].offices.house.reviewScreens.partyCountChange.status,'not-assessed','La Paz does not bypass party minimums');
+// Additional state contracts accept independently complete per-year district inventories,
+// but changing a source pin, dropping/duplicating a portion or losing approval closes the gate.
+{
+ const elections=Object.fromEntries([2022,2026].map(year=>[`house-${year}`,{results:[{geoLevel:'county',stateFips:'46',countyFips:'46001',district:'0',stage:'general'}]}]));
+ const intersections=['46001|0'],inventorySha256=crypto.createHash('sha256').update(JSON.stringify(intersections)).digest('hex');
+ const proof={schemaVersion:1,states:[{stateFips:'46',id:'fixture-reviewed-sd',countyBoundariesCompatible:true,pinnedFileHashes:{'public/data/house-2022.json':'baseline-pin','public/data/house-2026.json':'current-pin'},review:{status:'approved',reviewedAt:'2026-11-07T00:00:00Z',evidenceSha256:'a'.repeat(64)},years:Object.fromEntries([2022,2026].map(year=>[year,{scopeComplete:true,controlsPassed:true,candidateControlCount:2,expectedCountyCount:1,districtCount:1,intersections,inventorySha256}]))}]};
+ const pins={'public/data/house-2022.json':'baseline-pin','public/data/house-2026.json':'current-pin'};
+ assert.equal(additionalHouseComparability(elections,pins,proof)['46'].verified,true);
+ assert.equal(additionalHouseComparability(elections,{},proof)['46'].verified,false,'Unknown normalized source disables additional scope');
+ const missing=structuredClone(elections);missing['house-2026'].results=[];assert.equal(additionalHouseComparability(missing,pins,proof)['46'].verified,false);
+ const duplicate=structuredClone(elections);duplicate['house-2022'].results.push(duplicate['house-2022'].results[0]);assert.equal(additionalHouseComparability(duplicate,pins,proof)['46'].verified,false);
+ const unreviewed=structuredClone(proof);unreviewed.states[0].review.status='pending';assert.equal(additionalHouseComparability(elections,pins,unreviewed)['46'].verified,false);
+ const incompatible=structuredClone(proof);incompatible.states[0].countyBoundariesCompatible=false;assert.equal(additionalHouseComparability(elections,pins,incompatible)['46'].verified,false);
+}
 assert.equal(actual.comparabilityContracts.azHouse.verified,true);assert.equal(actual.comparabilityContracts.azHouse.intersections.length,30);assert.equal(actual.comparabilityContracts.azHouse.countComplete,false);assert.equal(actual.comparabilityContracts.azHouse.proofMatches,true);assert.equal(actual.comparabilityContracts.montanaHouse.verified,true);assert.equal(actual.comparabilityContracts.montanaHouse.intersections.length,57);
+// Repaired WV county aggregates must cite the original named-vote source as well as the write-in appendix.
+const wvRows=JSON.parse(fs.readFileSync(path.join(root,'public/data/house-completion-wv/house-2022.json'))).results.filter(r=>r.geoLevel==='county'&&(r.sourceIds||[]).length>1);
+assert.ok(wvRows.length>0);
+for(const row of wvRows){
+ const assessment=actual.counties[row.countyFips].offices.house;
+ const evidence=assessment.reviewScreens.raceVoteChange.evidence||assessment.reviewScreens.partyCountChange.evidence;
+ if(evidence)for(const sourceId of row.sourceIds)assert.ok(evidence.priorSource.sourceIds.includes(sourceId),'Full baseline provenance lost during county aggregation');
+ for(const flag of assessment.flags)for(const sourceId of row.sourceIds)assert.ok(flag.sources.some(s=>s.sourceId===sourceId),'Flag must cite original named counts and appendix');
+}
+const heldKy=actual.comparabilityContracts.houseStates?.['21'];assert.equal(heldKy?.verified,false);assert.equal(Object.values(actual.counties).filter(c=>c.stateFips==='21'&&c.offices.house.status==='assessed').length,0,'Current Kentucky data never qualifies held historical baseline');
 assert.equal(actual.counties['48479'].offices.governor.partyGrowth.flags.length,0,'Webb is not forced above peer growth');assert.ok(actual.counties['48479'].offices.governor.flags.some(f=>f.id==='governor-party-count-change'&&f.evidence.direction==='democrat'),'Webb qualifies naturally under uniform own-history criteria');assert.equal(actual.counties['48505'].offices.governor.partyGrowth.flags.length,0,'Zapata share flag does not force growth flag');assert.equal(actual.counties['48505'].offices.governor.shareShift.flags.length,1);
 for(const office of OFFICES){const s=actual.summary.offices[office];assert.equal(s.assessed+s.notAssessed,3142);const globalCounts=['assessed','not-assessed','flagged'].map(status=>Object.keys(actual.counties).filter(f=>reviewForCounty(actual,office,f).status===status).length);assert.equal(globalCounts.reduce((a,b)=>a+b),3142);}
 assert.equal(stateReviewSummary(actual,'governor','06').countyCount,58);assert.equal(reviewForCounty(actual,'house','99999').status,'not-assessed');

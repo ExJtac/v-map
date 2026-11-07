@@ -82,7 +82,7 @@ for (const office of ["president", "senate", "house", "governor"])
   }
 const report = {
   schemaVersion: 1,
-  snapshotDate: "2026-11-06",
+  snapshotDate: "2026-11-07",
   mapCountyGeometries: mapFips.size,
   sourcePriority: COUNTY_SOURCES,
   coverage: rows,

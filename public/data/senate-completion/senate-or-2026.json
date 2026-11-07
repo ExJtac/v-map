@@ -1,0 +1,3371 @@
+{
+  "schemaVersion": 1,
+  "office": "senate",
+  "year": 2026,
+  "sources": {
+    "senate-current-official-or-2026": {
+      "title": "Oregon Secretary of State: 2026 provisional Senate county API and state-page controls",
+      "publisher": "Oregon Secretary of State",
+      "url": "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+      "sourceUrl": "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+      "fullSourceUrl": "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sha256": "90f3e66ef735fc9a91085e9c468541b45e24f19ec139cf0a464ba997b84778e5",
+      "controlPageSha256": "1f7bbac43287b6187a5e33c23612a3f6c23ad043255bc4080f96ca77e697ea58",
+      "license": "Official public election record; no separate reuse license asserted",
+      "sourceLocation": "GetMapDataRace300038695, office110010001; statewideHTMLUSSenator section includes samefive candidate/write-in entries."
+    }
+  },
+  "results": [
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Baker County",
+      "countyFips": "41001",
+      "sourceCountyName": "Baker",
+      "sourceCountyCode": "20",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 5755,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 2196,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 118,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 119,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 5,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 8193,
+      "knownVoteSum": 8193,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 17
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Benton County",
+      "countyFips": "41003",
+      "sourceCountyName": "Benton",
+      "sourceCountyCode": "13",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 12008,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 29511,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 386,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 1111,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 22,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 43038,
+      "knownVoteSum": 43038,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 21
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Clackamas County",
+      "countyFips": "41005",
+      "sourceCountyName": "Clackamas",
+      "sourceCountyCode": "23",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 88827,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 115807,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 2148,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 3763,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 147,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 210692,
+      "knownVoteSum": 210692,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 119
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Clatsop County",
+      "countyFips": "41007",
+      "sourceCountyName": "Clatsop",
+      "sourceCountyCode": "36",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 7989,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 11224,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 230,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 445,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 11,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 19899,
+      "knownVoteSum": 19899,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 25
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Columbia County",
+      "countyFips": "41009",
+      "sourceCountyName": "Columbia",
+      "sourceCountyCode": "35",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 13491,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 11426,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 414,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 568,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 28,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 25927,
+      "knownVoteSum": 25927,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 33
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Coos County",
+      "countyFips": "41011",
+      "sourceCountyName": "Coos",
+      "sourceCountyCode": "04",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 16529,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 11652,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 374,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 574,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 35,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 29164,
+      "knownVoteSum": 29164,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 18
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Crook County",
+      "countyFips": "41013",
+      "sourceCountyName": "Crook",
+      "sourceCountyCode": "12",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 10107,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 3445,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 159,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 171,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 11,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 13893,
+      "knownVoteSum": 13893,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 17
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Curry County",
+      "countyFips": "41015",
+      "sourceCountyName": "Curry",
+      "sourceCountyCode": "02",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 6424,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 4979,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 161,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 196,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 21,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 11781,
+      "knownVoteSum": 11781,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 27
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Deschutes County",
+      "countyFips": "41017",
+      "sourceCountyName": "Deschutes",
+      "sourceCountyCode": "10",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 44014,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 60642,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 1068,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 1690,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 45,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 107459,
+      "knownVoteSum": 107459,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 50
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Douglas County",
+      "countyFips": "41019",
+      "sourceCountyName": "Douglas",
+      "sourceCountyCode": "07",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 33674,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 15763,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 578,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 942,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 58,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 51015,
+      "knownVoteSum": 51015,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 29
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Gilliam County",
+      "countyFips": "41021",
+      "sourceCountyName": "Gilliam",
+      "sourceCountyCode": "30",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 647,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 302,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 14,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 15,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 0,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 978,
+      "knownVoteSum": 978,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 3
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Grant County",
+      "countyFips": "41023",
+      "sourceCountyName": "Grant",
+      "sourceCountyCode": "16",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 2807,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 784,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 51,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 50,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 8,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 3700,
+      "knownVoteSum": 3700,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 5
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Harney County",
+      "countyFips": "41025",
+      "sourceCountyName": "Harney",
+      "sourceCountyCode": "08",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 2744,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 800,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 53,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 51,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 4,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 3652,
+      "knownVoteSum": 3652,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 3
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Hood River County",
+      "countyFips": "41027",
+      "sourceCountyName": "Hood River",
+      "sourceCountyCode": "25",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 3119,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 7809,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 113,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 253,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 9,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 11303,
+      "knownVoteSum": 11303,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 13
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Jackson County",
+      "countyFips": "41029",
+      "sourceCountyName": "Jackson",
+      "sourceCountyCode": "03",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 49214,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 49001,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 1025,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 1863,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 123,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 101226,
+      "knownVoteSum": 101226,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 50
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Jefferson County",
+      "countyFips": "41031",
+      "sourceCountyName": "Jefferson",
+      "sourceCountyCode": "15",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 6094,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 3706,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 140,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 169,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 10,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 10119,
+      "knownVoteSum": 10119,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 17
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Josephine County",
+      "countyFips": "41033",
+      "sourceCountyName": "Josephine",
+      "sourceCountyCode": "01",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 23774,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 14442,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 445,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 614,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 64,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 39339,
+      "knownVoteSum": 39339,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 47
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Klamath County",
+      "countyFips": "41035",
+      "sourceCountyName": "Klamath",
+      "sourceCountyCode": "05",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 19328,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 8585,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 341,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 433,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 39,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 28726,
+      "knownVoteSum": 28726,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 45
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Lake County",
+      "countyFips": "41037",
+      "sourceCountyName": "Lake",
+      "sourceCountyCode": "06",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 2825,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 628,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 34,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 44,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 8,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 3539,
+      "knownVoteSum": 3539,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 19
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Lane County",
+      "countyFips": "41039",
+      "sourceCountyName": "Lane",
+      "sourceCountyCode": "09",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 64278,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 113051,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 1843,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 4526,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 113,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 183811,
+      "knownVoteSum": 183811,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 66
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Lincoln County",
+      "countyFips": "41041",
+      "sourceCountyName": "Lincoln",
+      "sourceCountyCode": "17",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 9233,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 15426,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 286,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 611,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 9,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 25565,
+      "knownVoteSum": 25565,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 32
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Linn County",
+      "countyFips": "41043",
+      "sourceCountyName": "Linn",
+      "sourceCountyCode": "14",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 35927,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 23423,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 846,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 1383,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 46,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 61625,
+      "knownVoteSum": 61625,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 85
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Malheur County",
+      "countyFips": "41045",
+      "sourceCountyName": "Malheur",
+      "sourceCountyCode": "11",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 6041,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 2624,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 132,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 163,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 6,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 8966,
+      "knownVoteSum": 8966,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 24
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Marion County",
+      "countyFips": "41047",
+      "sourceCountyName": "Marion",
+      "sourceCountyCode": "21",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 43639,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 48767,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 938,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 1717,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 65,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 95126,
+      "knownVoteSum": 95126,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 119
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Morrow County",
+      "countyFips": "41049",
+      "sourceCountyName": "Morrow",
+      "sourceCountyCode": "32",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 2689,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 1132,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 51,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 74,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 5,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 3951,
+      "knownVoteSum": 3951,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 5
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Multnomah County",
+      "countyFips": "41051",
+      "sourceCountyName": "Multnomah",
+      "sourceCountyCode": "26",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 53733,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 295646,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 2406,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 10534,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 276,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 362595,
+      "knownVoteSum": 362595,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 110
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Polk County",
+      "countyFips": "41053",
+      "sourceCountyName": "Polk",
+      "sourceCountyCode": "19",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 18290,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 17810,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 438,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 745,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 25,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 37308,
+      "knownVoteSum": 37308,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 16
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Sherman County",
+      "countyFips": "41055",
+      "sourceCountyName": "Sherman",
+      "sourceCountyCode": "27",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 762,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 225,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 12,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 15,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 1,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 1015,
+      "knownVoteSum": 1015,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 5
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Tillamook County",
+      "countyFips": "41057",
+      "sourceCountyName": "Tillamook",
+      "sourceCountyCode": "29",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 6803,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 7148,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 140,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 311,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 5,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 14407,
+      "knownVoteSum": 14407,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 29
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Umatilla County",
+      "countyFips": "41059",
+      "sourceCountyName": "Umatilla",
+      "sourceCountyCode": "34",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 16408,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 8325,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 356,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 428,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 11,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 25528,
+      "knownVoteSum": 25528,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 45
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Union County",
+      "countyFips": "41061",
+      "sourceCountyName": "Union",
+      "sourceCountyCode": "31",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 8387,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 3653,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 137,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 234,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 8,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 12419,
+      "knownVoteSum": 12419,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 19
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Wallowa County",
+      "countyFips": "41063",
+      "sourceCountyName": "Wallowa",
+      "sourceCountyCode": "33",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 2993,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 1439,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 45,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 59,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 4,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 4540,
+      "knownVoteSum": 4540,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 12
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Wasco County",
+      "countyFips": "41065",
+      "sourceCountyName": "Wasco",
+      "sourceCountyCode": "24",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 5085,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 5157,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 163,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 234,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 6,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 10645,
+      "knownVoteSum": 10645,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 12
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Washington County",
+      "countyFips": "41067",
+      "sourceCountyName": "Washington",
+      "sourceCountyCode": "28",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 71337,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 161201,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 2329,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 5522,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 172,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 240561,
+      "knownVoteSum": 240561,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 155
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Wheeler County",
+      "countyFips": "41069",
+      "sourceCountyName": "Wheeler",
+      "sourceCountyCode": "18",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 528,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 195,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 8,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 26,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 0,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 757,
+      "knownVoteSum": 757,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 3
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "county",
+      "county": "Yamhill County",
+      "countyFips": "41071",
+      "sourceCountyName": "Yamhill",
+      "sourceCountyCode": "22",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory; localCountyIDisnotFIPS.",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "sourcePartyCode": "NON",
+          "votes": 24423,
+          "sourceCandidateId": "300060094"
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "sourcePartyCode": "NON",
+          "votes": 23807,
+          "sourceCandidateId": "300060093"
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "sourcePartyCode": "NON",
+          "votes": 547,
+          "sourceCandidateId": "300060584"
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "sourcePartyCode": "NON",
+          "votes": 1006,
+          "sourceCandidateId": "300060095"
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 39,
+          "sourceCandidateId": "9901"
+        }
+      ],
+      "totalVotes": 49822,
+      "knownVoteSum": 49822,
+      "sourceIsReported": false,
+      "precinctsReporting": 0,
+      "precinctsTotal": 23
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2026-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-or-2026",
+      "sourceIds": [
+        "senate-current-official-or-2026"
+      ],
+      "sourceLinks": [
+        "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+        "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+      "sourceTimestampOriginal": "11/7/2026 | 12:30 PM PT",
+      "sourceTimestampBasis": "Official pagePT; November7standardtimeUTC-08",
+      "asOf": "2026-11-07T12:30:00-08:00",
+      "asOfBasis": "Officialsourcepage lastupdated, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of four publishednamed candidates plusclassified write-ins; neverballotscast.",
+      "reportingNote": "APIIsReported=false and zero precinctsreported retained; no completeness/certification inferred. Genericfooter sayswrite-insnotreported, while actualUSSenator table/API publish1439write-ins; exactnumericentries/controlretained, notinventedzeros.",
+      "geoLevel": "state",
+      "candidates": [
+        {
+          "name": "David Brock Smith",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 719926
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "Democrat, Working Families",
+          "votes": 1081731
+        },
+        {
+          "name": "Gary Lyndon Dye",
+          "party": "Other",
+          "partyOriginal": "Libertarian",
+          "votes": 18529
+        },
+        {
+          "name": "Chris Henry",
+          "party": "Other",
+          "partyOriginal": "Progressive, Pacific Green",
+          "votes": 40659
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-in",
+          "category": "unattributedWriteIns",
+          "votes": 1439
+        }
+      ],
+      "totalVotes": 1862284,
+      "knownVoteSum": 1862284
+    }
+  ]
+}

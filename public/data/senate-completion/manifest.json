@@ -1,0 +1,1438 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "senate-completion-official-id-2020": {
+      "title": "Idaho Secretary of State: November 3, 2020 General Election U.S. Senate county results",
+      "publisher": "Idaho Secretary of State",
+      "url": "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+      "sourceUrl": "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+      "fullSourceUrl": "https://canvass.sos.idaho.gov/eng/contests/view/5724/",
+      "sha256": "15d9a7b0ccabdc95d3f675691835242062df637f734bf1369cd350dd79a13a15",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "file": "id2020-pinned-counties.csv",
+      "license": "Official public election record; no separate reuse license asserted",
+      "recheckedAt": "2026-11-07T20:20:17.283305+00:00",
+      "recheckStatus": "Original official contest page accessible through reader; fresh native contest/CSV GET403. Pinned exact source bytes reused."
+    },
+    "senate-current-official-nm-2026": {
+      "title": "New Mexico Secretary of State: 2026 unofficial Senate county API and statewide controls",
+      "publisher": "New Mexico Secretary of State",
+      "url": "https://nmresultswebservice.azurewebsites.us/NMResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=11185&osn=180&county=0&party=0",
+      "sourceUrl": "https://nmresultswebservice.azurewebsites.us/NMResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=11185&osn=180&county=0&party=0",
+      "fullSourceUrl": "https://electionresults.sos.nm.gov/resultsSW.aspx?type=FED&map=CTY",
+      "retrievedAt": "2026-11-07T20:26:29.175592+00:00",
+      "sha256": "1d23671772c617730b3da36a7229dfe96ec4b842dca120e340b89f7f8ecf45f6",
+      "controlSourceUrl": "https://electionresults.sos.nm.gov/resultsCSV.aspx?text=All&type=FED&map=CTY",
+      "controlSha256": "0e041d7667e0a1b2a763d3cb504e40317ca28b6b137e7e0dd8dd5b5c9dba8b3b",
+      "pageSha256": "1a7c2a0e9fff183f47c0cd25cdb5becc665b935369263ce1184639cd6fbe554d",
+      "license": "Official public election record; no separate reuse license asserted",
+      "version": "Pinned November7,2026 source retrieval; source last updatedNovember6,2026"
+    },
+    "senate-current-official-wy-2026": {
+      "title": "Wyoming Secretary of State: 2026 unofficial statewide candidates summary, Senate county table",
+      "publisher": "Wyoming Secretary of State",
+      "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf",
+      "sourceUrl": "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf",
+      "sourceLocation": "PDF page1 of7, United States Senator table; all23counties and printed total",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sha256": "9bad3830a8413db6a375e8e2a072dfd7aa946b437fc8c91176c3c557faf51b41",
+      "file": "wy2026-statewide.pdf",
+      "license": "Official public election record; no separate reuse license asserted",
+      "extraction": "PDFtext has font-encoding corruption; OCRassisted transcription fully visually checked against retainedpage1render, arithmetic controls checked."
+    },
+    "senate-current-official-wv-2026": {
+      "title": "West Virginia Secretary of State Clarity: 2026 provisional Senate county vectors and statewide controls",
+      "publisher": "West Virginia Secretary of State",
+      "url": "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+      "sourceUrl": "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+      "fullSourceUrl": "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary",
+      "authorityUrl": "https://sos.wv.gov/elections",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "sha256": "343be99ea6a030c2e2bc181d9baf45bc1f5785898106accbc9aa4a2ac1895273",
+      "controlSourceUrl": "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+      "controlSha256": "2caaac780f9514a17302f7b1e9bfb6fa437b3245a69e4d852c47db5dfc8a56d6",
+      "version": "385637",
+      "license": "Official public election record; no separate reuse license asserted",
+      "sourceLocation": "Contests K=100; P county names / V candidate vectors / T candidate race sums. Named choices and party order from separate state summary K=100."
+    },
+    "senate-completion-official-or-2020": {
+      "title": "Oregon Secretary of State: November 3, 2020 General Election Abstract, Senate county table (original document mirrored by UCSB)",
+      "publisher": "Oregon Secretary of State",
+      "url": "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+      "sourceUrl": "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+      "originalOfficialUrl": "https://sos.oregon.gov/elections/Documents/results/november-general-2020.pdf",
+      "officialUrlAccessStatus": "Currentdirectreader/native404; fullofficial-URLindexedextractionretainedandall185tablecellsreconciletoactualoriginal-documentmirror.",
+      "sourceLocation": "PDFpage2, USSenatortable,36countiesplusTotal",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sha256": "fc98c9712c09b0e9179e1208e70a754b56bf327dea22a1fe92194ee1f64dd474",
+      "documentHost": "UCSBAmericanPresidencyProject;notdirectcurrentofficialhostdownload",
+      "indexedOfficialExtractionSha256": "9dc6d6162909eae142b3c337bd138f8f5cfbc4a4f812124a299409a616621ce1",
+      "license": "Officialpublicelectionrecord; no separatereuselicenseasserted",
+      "miscClassificationSource": "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf",
+      "miscClassificationSha256": "e4e6d5efd911ff02bffffb47180d05278f98a07655bd390d078904f545d12836",
+      "miscClassificationLocator": "FEC Federal Elections2020 PDFpage85/printed80: Oregon Senate Scattered W2402; PDFpage189/printed184party legend W=Write-In. Allfour namedcandidate controls and Misc2402reconcile to officialabstractcountytable.",
+      "miscClassificationLimit": "FEC independentlycompilesofficial2020statewidecontrols; individualwrite-inidentity/partyaffiliation remainsunassigned. Supportingcurrentmanualterminology isnotusedalone toclassifyhistoricalcells."
+    },
+    "senate-current-official-or-2026": {
+      "title": "Oregon Secretary of State: 2026 provisional Senate county API and state-page controls",
+      "publisher": "Oregon Secretary of State",
+      "url": "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+      "sourceUrl": "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+      "fullSourceUrl": "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED",
+      "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+      "sha256": "90f3e66ef735fc9a91085e9c468541b45e24f19ec139cf0a464ba997b84778e5",
+      "controlPageSha256": "1f7bbac43287b6187a5e33c23612a3f6c23ad043255bc4080f96ca77e697ea58",
+      "license": "Official public election record; no separate reuse license asserted",
+      "sourceLocation": "GetMapDataRace300038695, office110010001; statewideHTMLUSSenator section includes samefive candidate/write-in entries."
+    },
+    "senate-completion-ky2026-21001": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Adair County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=3",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=3",
+      "retrievedAt": "2026-11-07T20:48:38.269Z",
+      "readerReceiptSha256": "aec0f39d7b721352dd7a6de9d65d95702a52e96b6b3fc0c67951230cd5cbad35",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21003": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Allen County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=4",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=4",
+      "retrievedAt": "2026-11-07T20:48:38.269Z",
+      "readerReceiptSha256": "aec0f39d7b721352dd7a6de9d65d95702a52e96b6b3fc0c67951230cd5cbad35",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21005": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Anderson County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=5",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=5",
+      "retrievedAt": "2026-11-07T20:48:39.451Z",
+      "readerReceiptSha256": "52ba7ccb8bd7ad28b326da8afb32888d3cbb94a3ec21192a60a324981d372d12",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21007": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Ballard County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=6",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=6",
+      "retrievedAt": "2026-11-07T20:48:39.451Z",
+      "readerReceiptSha256": "52ba7ccb8bd7ad28b326da8afb32888d3cbb94a3ec21192a60a324981d372d12",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21009": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Barren County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=7",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=7",
+      "retrievedAt": "2026-11-07T20:48:40.522Z",
+      "readerReceiptSha256": "a41dd1ad4f9f0499ffee548a625568287b4e581cedeef4b12c6e23ef4aa6038e",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21011": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Bath County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=8",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=8",
+      "retrievedAt": "2026-11-07T20:48:40.522Z",
+      "readerReceiptSha256": "a41dd1ad4f9f0499ffee548a625568287b4e581cedeef4b12c6e23ef4aa6038e",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21013": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Bell County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=9",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=9",
+      "retrievedAt": "2026-11-07T20:48:41.626Z",
+      "readerReceiptSha256": "cad926e9aeef58726ebc787ad9d87156c917409659c020daddeec198877df390",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21015": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Boone County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=10",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=10",
+      "retrievedAt": "2026-11-07T20:48:41.626Z",
+      "readerReceiptSha256": "cad926e9aeef58726ebc787ad9d87156c917409659c020daddeec198877df390",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21017": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Bourbon County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=11",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=11",
+      "retrievedAt": "2026-11-07T20:48:42.729Z",
+      "readerReceiptSha256": "6d20fd7dffc50ae2803bc8b9aa764a2b0c10bafb5a3e63706896e4c8ad93e234",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21019": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Boyd County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=12",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=12",
+      "retrievedAt": "2026-11-07T20:48:42.729Z",
+      "readerReceiptSha256": "6d20fd7dffc50ae2803bc8b9aa764a2b0c10bafb5a3e63706896e4c8ad93e234",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21021": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Boyle County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=13",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=13",
+      "retrievedAt": "2026-11-07T20:48:43.905Z",
+      "readerReceiptSha256": "85dd3f13aaa4ed34777d92e87b14fdc85e69c42180338fce1323df59474ae9e8",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21023": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Bracken County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=14",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=14",
+      "retrievedAt": "2026-11-07T20:48:43.905Z",
+      "readerReceiptSha256": "85dd3f13aaa4ed34777d92e87b14fdc85e69c42180338fce1323df59474ae9e8",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21025": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Breathitt County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=15",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=15",
+      "retrievedAt": "2026-11-07T20:48:44.973Z",
+      "readerReceiptSha256": "e60cab8c5ddb83a218d238b34334221950ee59aec700b84ca906f0293484cf30",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21027": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Breckinridge County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=16",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=16",
+      "retrievedAt": "2026-11-07T20:48:44.973Z",
+      "readerReceiptSha256": "e60cab8c5ddb83a218d238b34334221950ee59aec700b84ca906f0293484cf30",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21029": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Bullitt County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=17",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=17",
+      "retrievedAt": "2026-11-07T20:48:46.569Z",
+      "readerReceiptSha256": "8485d03f096712ff69fab52e34f3dee1a5b704cf9f3285650a4df45582a5ff6b",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21031": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Butler County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=18",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=18",
+      "retrievedAt": "2026-11-07T20:48:46.569Z",
+      "readerReceiptSha256": "8485d03f096712ff69fab52e34f3dee1a5b704cf9f3285650a4df45582a5ff6b",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21033": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Caldwell County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=19",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=19",
+      "retrievedAt": "2026-11-07T20:48:47.530Z",
+      "readerReceiptSha256": "b261217975c9b8842d7b0e21da133e051809a22fe5534e5af6d90761b6a85fe5",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21035": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Calloway County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=20",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=20",
+      "retrievedAt": "2026-11-07T20:48:47.530Z",
+      "readerReceiptSha256": "b261217975c9b8842d7b0e21da133e051809a22fe5534e5af6d90761b6a85fe5",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21037": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Campbell County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=21",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=21",
+      "retrievedAt": "2026-11-07T20:48:48.725Z",
+      "readerReceiptSha256": "cb2b70498fe36ced27f5a9963d82df57271d6cc03edde7f47faf21be596edf38",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21039": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Carlisle County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=22",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=22",
+      "retrievedAt": "2026-11-07T20:50:36.907Z",
+      "readerReceiptSha256": "c00dfa6f57adbd2ea67b434ce5a2c896e1cd95fbb4143228ea3ef2ab0badf9e8",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21041": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Carroll County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=23",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=23",
+      "retrievedAt": "2026-11-07T20:48:50.053Z",
+      "readerReceiptSha256": "2ba73907b1953ddfd182450556f91dd84b18c8c8006e5a61f45b1a9db97d740f",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21043": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Carter County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=24",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=24",
+      "retrievedAt": "2026-11-07T20:48:50.053Z",
+      "readerReceiptSha256": "2ba73907b1953ddfd182450556f91dd84b18c8c8006e5a61f45b1a9db97d740f",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21045": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Casey County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=25",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=25",
+      "retrievedAt": "2026-11-07T20:48:51.019Z",
+      "readerReceiptSha256": "579285c4485c9dd57575b1f9d88866c006086e53e96da2cca5b857c50c13da3b",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21047": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Christian County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=26",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=26",
+      "retrievedAt": "2026-11-07T20:48:51.019Z",
+      "readerReceiptSha256": "579285c4485c9dd57575b1f9d88866c006086e53e96da2cca5b857c50c13da3b",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21049": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Clark County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=27",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=27",
+      "retrievedAt": "2026-11-07T20:48:52.146Z",
+      "readerReceiptSha256": "2b83f9e46f43821e5a901519b2618e31daddc1b4bb1f283ad4e80a6bb8f9cacd",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21051": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Clay County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=28",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=28",
+      "retrievedAt": "2026-11-07T20:48:52.146Z",
+      "readerReceiptSha256": "2b83f9e46f43821e5a901519b2618e31daddc1b4bb1f283ad4e80a6bb8f9cacd",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21053": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Clinton County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=29",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=29",
+      "retrievedAt": "2026-11-07T20:48:53.380Z",
+      "readerReceiptSha256": "9fdaa53db2a2a8713dd679ea420205dad9d35771f92437008a6d6dea5df6acf5",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21055": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Crittenden County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=30",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=30",
+      "retrievedAt": "2026-11-07T20:48:53.380Z",
+      "readerReceiptSha256": "9fdaa53db2a2a8713dd679ea420205dad9d35771f92437008a6d6dea5df6acf5",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21057": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Cumberland County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=31",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=31",
+      "retrievedAt": "2026-11-07T20:48:54.684Z",
+      "readerReceiptSha256": "9365b05986bf306fc6864254a2f32a9e39741f0fbc21a44e16b8ddeb1ab32ece",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21059": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Daviess County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=32",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=32",
+      "retrievedAt": "2026-11-07T20:48:54.684Z",
+      "readerReceiptSha256": "9365b05986bf306fc6864254a2f32a9e39741f0fbc21a44e16b8ddeb1ab32ece",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21061": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Edmonson County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=33",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=33",
+      "retrievedAt": "2026-11-07T20:48:55.719Z",
+      "readerReceiptSha256": "8950c43c0b195146f54cc1ee4ebbfc65dc0247b67a8f84b89ed3f13d3cbc0525",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21063": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Elliott County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=34",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=34",
+      "retrievedAt": "2026-11-07T20:48:55.719Z",
+      "readerReceiptSha256": "8950c43c0b195146f54cc1ee4ebbfc65dc0247b67a8f84b89ed3f13d3cbc0525",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21065": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Estill County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=35",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=35",
+      "retrievedAt": "2026-11-07T20:48:56.720Z",
+      "readerReceiptSha256": "83e217dd6be970bf442ad32e9be1597564d4968a03de1f84485dd93fbad3a197",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21067": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Fayette County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=36",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=36",
+      "retrievedAt": "2026-11-07T20:48:56.720Z",
+      "readerReceiptSha256": "83e217dd6be970bf442ad32e9be1597564d4968a03de1f84485dd93fbad3a197",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21069": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Fleming County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=37",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=37",
+      "retrievedAt": "2026-11-07T20:48:57.855Z",
+      "readerReceiptSha256": "63b47db33fda72c3dbed6629c57aa3828026dc94fa5519f182058a159fc97006",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21071": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Floyd County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=38",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=38",
+      "retrievedAt": "2026-11-07T20:48:57.855Z",
+      "readerReceiptSha256": "63b47db33fda72c3dbed6629c57aa3828026dc94fa5519f182058a159fc97006",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21073": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Franklin County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=39",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=39",
+      "retrievedAt": "2026-11-07T20:48:58.799Z",
+      "readerReceiptSha256": "0f458bb4866fb76b1dbff07a8f19d8e24f66e2c23bed4315f95a8f93f851dd78",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21075": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Fulton County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=40",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=40",
+      "retrievedAt": "2026-11-07T20:48:58.799Z",
+      "readerReceiptSha256": "0f458bb4866fb76b1dbff07a8f19d8e24f66e2c23bed4315f95a8f93f851dd78",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21077": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Gallatin County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=41",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=41",
+      "retrievedAt": "2026-11-07T20:48:59.967Z",
+      "readerReceiptSha256": "7e3aeabfe85904b272952ee2f0dfdfb1f6791be70ef562f3b7166e2681afafcb",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21079": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Garrard County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=42",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=42",
+      "retrievedAt": "2026-11-07T20:48:59.967Z",
+      "readerReceiptSha256": "7e3aeabfe85904b272952ee2f0dfdfb1f6791be70ef562f3b7166e2681afafcb",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21081": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Grant County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=43",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=43",
+      "retrievedAt": "2026-11-07T20:49:01.023Z",
+      "readerReceiptSha256": "6bff91828b433e5d90e13dc3b2d2e9f004d8a9a22e39b014d9680fb46142fc7b",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21083": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Graves County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=44",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=44",
+      "retrievedAt": "2026-11-07T20:49:01.023Z",
+      "readerReceiptSha256": "6bff91828b433e5d90e13dc3b2d2e9f004d8a9a22e39b014d9680fb46142fc7b",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21085": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Grayson County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=45",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=45",
+      "retrievedAt": "2026-11-07T20:49:01.981Z",
+      "readerReceiptSha256": "ad56bb7e2bce334d41983f62cdaeaad91e40334268b0d43d6a3804569ad108f2",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21087": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Green County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=46",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=46",
+      "retrievedAt": "2026-11-07T20:49:01.981Z",
+      "readerReceiptSha256": "ad56bb7e2bce334d41983f62cdaeaad91e40334268b0d43d6a3804569ad108f2",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21089": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Greenup County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=47",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=47",
+      "retrievedAt": "2026-11-07T20:49:02.979Z",
+      "readerReceiptSha256": "ce51ce87a7edf14f447614f9674d32fc56678060174ab067e1138693856f5e62",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21091": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Hancock County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=48",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=48",
+      "retrievedAt": "2026-11-07T20:49:02.979Z",
+      "readerReceiptSha256": "ce51ce87a7edf14f447614f9674d32fc56678060174ab067e1138693856f5e62",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21093": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Hardin County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=49",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=49",
+      "retrievedAt": "2026-11-07T20:49:04.367Z",
+      "readerReceiptSha256": "c697bfe1b5c26e6081b811066f8bfabf8762b53c94431bc9cfdb52e159a861dd",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21095": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Harlan County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=50",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=50",
+      "retrievedAt": "2026-11-07T20:49:04.367Z",
+      "readerReceiptSha256": "c697bfe1b5c26e6081b811066f8bfabf8762b53c94431bc9cfdb52e159a861dd",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21097": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Harrison County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=51",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=51",
+      "retrievedAt": "2026-11-07T20:49:06.118Z",
+      "readerReceiptSha256": "9f2098bc991ac9253b927a5181b249605d52b8bc56a9eab81b2521c81076c933",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21099": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Hart County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=52",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=52",
+      "retrievedAt": "2026-11-07T20:49:06.118Z",
+      "readerReceiptSha256": "9f2098bc991ac9253b927a5181b249605d52b8bc56a9eab81b2521c81076c933",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21101": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Henderson County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=53",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=53",
+      "retrievedAt": "2026-11-07T20:49:07.200Z",
+      "readerReceiptSha256": "19416de49e47ef8843f122b50a7a1b8cbcd418213b603ae2c89cd20364b279c7",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21103": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Henry County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=54",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=54",
+      "retrievedAt": "2026-11-07T20:49:07.200Z",
+      "readerReceiptSha256": "19416de49e47ef8843f122b50a7a1b8cbcd418213b603ae2c89cd20364b279c7",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21105": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Hickman County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=55",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=55",
+      "retrievedAt": "2026-11-07T20:49:08.487Z",
+      "readerReceiptSha256": "e6dcc68f5a0cfaba9f8e8ab73b888eac1e54178a520a57d8302a919d5e7416b7",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21107": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Hopkins County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=56",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=56",
+      "retrievedAt": "2026-11-07T20:49:08.487Z",
+      "readerReceiptSha256": "e6dcc68f5a0cfaba9f8e8ab73b888eac1e54178a520a57d8302a919d5e7416b7",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21109": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Jackson County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=57",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=57",
+      "retrievedAt": "2026-11-07T20:49:09.684Z",
+      "readerReceiptSha256": "548dd17e038acfd7a65371192cebdfbac057c22c39464bb7480501332beaf300",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21111": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Jefferson County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=58",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=58",
+      "retrievedAt": "2026-11-07T20:49:09.684Z",
+      "readerReceiptSha256": "548dd17e038acfd7a65371192cebdfbac057c22c39464bb7480501332beaf300",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21113": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Jessamine County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=59",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=59",
+      "retrievedAt": "2026-11-07T20:49:10.735Z",
+      "readerReceiptSha256": "feafa9b3d634a9e06c5af9eaf527ccbd500196d58c2d00be3db41ef4e4b7bd29",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21115": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Johnson County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=60",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=60",
+      "retrievedAt": "2026-11-07T20:49:10.735Z",
+      "readerReceiptSha256": "feafa9b3d634a9e06c5af9eaf527ccbd500196d58c2d00be3db41ef4e4b7bd29",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21117": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Kenton County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=61",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=61",
+      "retrievedAt": "2026-11-07T20:49:12.768Z",
+      "readerReceiptSha256": "36df29539a559000d7a8e5f1bde330e3ecc4300c4553395765325d83d85d6bc3",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21119": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Knott County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=62",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=62",
+      "retrievedAt": "2026-11-07T20:50:36.907Z",
+      "readerReceiptSha256": "c00dfa6f57adbd2ea67b434ce5a2c896e1cd95fbb4143228ea3ef2ab0badf9e8",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21121": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Knox County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=63",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=63",
+      "retrievedAt": "2026-11-07T20:49:13.857Z",
+      "readerReceiptSha256": "0928380dfbfa638ca20341eab2e9db0422a4164a9831be3eb38c7f3b5fcaaa6b",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21123": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Larue County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=64",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=64",
+      "retrievedAt": "2026-11-07T20:49:13.857Z",
+      "readerReceiptSha256": "0928380dfbfa638ca20341eab2e9db0422a4164a9831be3eb38c7f3b5fcaaa6b",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21125": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Laurel County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=65",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=65",
+      "retrievedAt": "2026-11-07T20:49:14.884Z",
+      "readerReceiptSha256": "a118843adf20959b79b2b68f4814bee876ee3498966a8afec83e7d7a5dc0c65a",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21127": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Lawrence County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=66",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=66",
+      "retrievedAt": "2026-11-07T20:49:14.884Z",
+      "readerReceiptSha256": "a118843adf20959b79b2b68f4814bee876ee3498966a8afec83e7d7a5dc0c65a",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21129": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Lee County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=67",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=67",
+      "retrievedAt": "2026-11-07T20:49:15.921Z",
+      "readerReceiptSha256": "3b81f1cf626561ded347fd034a101dca6e434ffaf9465ef63edb8e90aa397071",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21131": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Leslie County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=68",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=68",
+      "retrievedAt": "2026-11-07T20:49:15.921Z",
+      "readerReceiptSha256": "3b81f1cf626561ded347fd034a101dca6e434ffaf9465ef63edb8e90aa397071",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21133": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Letcher County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=69",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=69",
+      "retrievedAt": "2026-11-07T20:49:16.997Z",
+      "readerReceiptSha256": "404579daee19b213864efe063347ec00d7041879c6082c11b9744503a4a43fce",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21135": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Lewis County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=70",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=70",
+      "retrievedAt": "2026-11-07T20:49:16.997Z",
+      "readerReceiptSha256": "404579daee19b213864efe063347ec00d7041879c6082c11b9744503a4a43fce",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21137": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Lincoln County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=71",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=71",
+      "retrievedAt": "2026-11-07T20:49:17.987Z",
+      "readerReceiptSha256": "54b3b8eed89ea63f9226f73403c55477df9820462befe3b0954cc72dce81e6cd",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21139": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Livingston County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=72",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=72",
+      "retrievedAt": "2026-11-07T20:49:17.987Z",
+      "readerReceiptSha256": "54b3b8eed89ea63f9226f73403c55477df9820462befe3b0954cc72dce81e6cd",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21141": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Logan County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=73",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=73",
+      "retrievedAt": "2026-11-07T20:49:19.399Z",
+      "readerReceiptSha256": "961f14c0c5acdd7d655db4f60fdea94355d9b34875f866ef90dcd53bb4e9daae",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21143": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Lyon County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=74",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=74",
+      "retrievedAt": "2026-11-07T20:49:19.399Z",
+      "readerReceiptSha256": "961f14c0c5acdd7d655db4f60fdea94355d9b34875f866ef90dcd53bb4e9daae",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21145": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, McCracken County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=81",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=81",
+      "retrievedAt": "2026-11-07T20:49:23.827Z",
+      "readerReceiptSha256": "2de4f5391aea70906076e290f896db998ea001f1b80098d99ac770bf9fd36144",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21147": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, McCreary County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=82",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=82",
+      "retrievedAt": "2026-11-07T20:49:23.827Z",
+      "readerReceiptSha256": "2de4f5391aea70906076e290f896db998ea001f1b80098d99ac770bf9fd36144",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21149": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, McLean County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=83",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=83",
+      "retrievedAt": "2026-11-07T20:49:25.041Z",
+      "readerReceiptSha256": "115258f6ff8b48db4bcb05bda3b290261a7fcb1c6c21f2e85c2de0015febde84",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21151": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Madison County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=75",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=75",
+      "retrievedAt": "2026-11-07T20:49:20.544Z",
+      "readerReceiptSha256": "c3a3adf7d12b0ef019b286727fa3ce9c84d719fbf33a490807e31e457acf722b",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21153": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Magoffin County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=76",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=76",
+      "retrievedAt": "2026-11-07T20:49:20.544Z",
+      "readerReceiptSha256": "c3a3adf7d12b0ef019b286727fa3ce9c84d719fbf33a490807e31e457acf722b",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21155": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Marion County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=77",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=77",
+      "retrievedAt": "2026-11-07T20:49:21.652Z",
+      "readerReceiptSha256": "069e6d4b2af65e4bfeddc9790e4b8f2ef75922c41bec8af66b6e54a6493f7c47",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21157": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Marshall County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=78",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=78",
+      "retrievedAt": "2026-11-07T20:49:21.652Z",
+      "readerReceiptSha256": "069e6d4b2af65e4bfeddc9790e4b8f2ef75922c41bec8af66b6e54a6493f7c47",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21159": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Martin County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=79",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=79",
+      "retrievedAt": "2026-11-07T20:49:22.753Z",
+      "readerReceiptSha256": "98739b25c68b63d0fd87560bcd1c606f0d8be7a4fcbdaf3aebbaa0df6f044430",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21161": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Mason County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=80",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=80",
+      "retrievedAt": "2026-11-07T20:49:22.753Z",
+      "readerReceiptSha256": "98739b25c68b63d0fd87560bcd1c606f0d8be7a4fcbdaf3aebbaa0df6f044430",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21163": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Meade County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=84",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=84",
+      "retrievedAt": "2026-11-07T20:49:25.041Z",
+      "readerReceiptSha256": "115258f6ff8b48db4bcb05bda3b290261a7fcb1c6c21f2e85c2de0015febde84",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21165": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Menifee County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=85",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=85",
+      "retrievedAt": "2026-11-07T20:49:29.145Z",
+      "readerReceiptSha256": "529d76a45fbb8d9b088fc228f057a462698290c12e5981b59a704c0ae025c0d2",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21167": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Mercer County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=86",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=86",
+      "retrievedAt": "2026-11-07T20:49:29.145Z",
+      "readerReceiptSha256": "529d76a45fbb8d9b088fc228f057a462698290c12e5981b59a704c0ae025c0d2",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21169": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Metcalfe County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=87",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=87",
+      "retrievedAt": "2026-11-07T20:49:30.096Z",
+      "readerReceiptSha256": "5b9ea09920dbaf475501882ad65a39878d14341b43db37879f9663d080ca3de4",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21171": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Monroe County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=88",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=88",
+      "retrievedAt": "2026-11-07T20:49:30.096Z",
+      "readerReceiptSha256": "5b9ea09920dbaf475501882ad65a39878d14341b43db37879f9663d080ca3de4",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21173": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Montgomery County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=89",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=89",
+      "retrievedAt": "2026-11-07T20:49:31.082Z",
+      "readerReceiptSha256": "68ba58c640d72df69d6fcc4959a0832f219adb01774273497459dfac2494ea77",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21175": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Morgan County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=90",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=90",
+      "retrievedAt": "2026-11-07T20:49:31.082Z",
+      "readerReceiptSha256": "68ba58c640d72df69d6fcc4959a0832f219adb01774273497459dfac2494ea77",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21177": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Muhlenberg County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=91",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=91",
+      "retrievedAt": "2026-11-07T20:49:32.241Z",
+      "readerReceiptSha256": "fc84a76868e263de8b5cf2ca112f2644c3ce725f66d0d830b0fabfc5d56827d5",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21179": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Nelson County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=92",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=92",
+      "retrievedAt": "2026-11-07T20:49:32.241Z",
+      "readerReceiptSha256": "fc84a76868e263de8b5cf2ca112f2644c3ce725f66d0d830b0fabfc5d56827d5",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21181": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Nicholas County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=93",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=93",
+      "retrievedAt": "2026-11-07T20:49:33.650Z",
+      "readerReceiptSha256": "aa4445b093ab205e3a4f9842b5d05d53c38b65eb13bdb7922fce7b82b70fd5e9",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21183": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Ohio County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=94",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=94",
+      "retrievedAt": "2026-11-07T20:49:33.650Z",
+      "readerReceiptSha256": "aa4445b093ab205e3a4f9842b5d05d53c38b65eb13bdb7922fce7b82b70fd5e9",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21185": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Oldham County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=95",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=95",
+      "retrievedAt": "2026-11-07T20:49:34.892Z",
+      "readerReceiptSha256": "0174db5c715cefca5dd2bf8d91de3ef74e7bec4d226c794bdf80489084b52949",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21187": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Owen County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=96",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=96",
+      "retrievedAt": "2026-11-07T20:49:34.892Z",
+      "readerReceiptSha256": "0174db5c715cefca5dd2bf8d91de3ef74e7bec4d226c794bdf80489084b52949",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21189": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Owsley County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=97",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=97",
+      "retrievedAt": "2026-11-07T20:49:35.957Z",
+      "readerReceiptSha256": "b34d355254a206ed2dc7dd9707c825ed53078fe2cb2ccac514bad3064f4d2711",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21191": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Pendleton County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=98",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=98",
+      "retrievedAt": "2026-11-07T20:49:35.957Z",
+      "readerReceiptSha256": "b34d355254a206ed2dc7dd9707c825ed53078fe2cb2ccac514bad3064f4d2711",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21193": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Perry County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=99",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=99",
+      "retrievedAt": "2026-11-07T20:49:36.904Z",
+      "readerReceiptSha256": "077a79227c85b693c38dcdd5d3c3337abbdead304a4b6f608dcef29555027b3d",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21195": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Pike County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=100",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=100",
+      "retrievedAt": "2026-11-07T20:49:36.904Z",
+      "readerReceiptSha256": "077a79227c85b693c38dcdd5d3c3337abbdead304a4b6f608dcef29555027b3d",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21197": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Powell County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=101",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=101",
+      "retrievedAt": "2026-11-07T20:49:37.872Z",
+      "readerReceiptSha256": "c1fb97dffbd261fd5c042172abd829931a95204aeb3465f3ba4746f540acba01",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21199": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Pulaski County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=102",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=102",
+      "retrievedAt": "2026-11-07T20:49:37.872Z",
+      "readerReceiptSha256": "c1fb97dffbd261fd5c042172abd829931a95204aeb3465f3ba4746f540acba01",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21201": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Robertson County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=103",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=103",
+      "retrievedAt": "2026-11-07T20:49:39.038Z",
+      "readerReceiptSha256": "aa2417fc281137c96a46d3bc1f7213f238693043f2d6e3a4a409f01c9cd225f3",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21203": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Rockcastle County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=104",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=104",
+      "retrievedAt": "2026-11-07T20:49:39.038Z",
+      "readerReceiptSha256": "aa2417fc281137c96a46d3bc1f7213f238693043f2d6e3a4a409f01c9cd225f3",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21205": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Rowan County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=105",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=105",
+      "retrievedAt": "2026-11-07T20:49:40.197Z",
+      "readerReceiptSha256": "67d54bc1e7914d2369fd910f52d5c091f08d6b26357377ddf3ab385d4ce6c3a0",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21207": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Russell County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=106",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=106",
+      "retrievedAt": "2026-11-07T20:49:40.197Z",
+      "readerReceiptSha256": "67d54bc1e7914d2369fd910f52d5c091f08d6b26357377ddf3ab385d4ce6c3a0",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21209": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Scott County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=107",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=107",
+      "retrievedAt": "2026-11-07T20:49:41.409Z",
+      "readerReceiptSha256": "48e9b358e6ef3f9afef11b42c21cf2d00ad21189cbddcdd5a05ade4e04f5b920",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21211": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Shelby County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=108",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=108",
+      "retrievedAt": "2026-11-07T20:49:41.409Z",
+      "readerReceiptSha256": "48e9b358e6ef3f9afef11b42c21cf2d00ad21189cbddcdd5a05ade4e04f5b920",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21213": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Simpson County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=109",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=109",
+      "retrievedAt": "2026-11-07T20:49:42.449Z",
+      "readerReceiptSha256": "733f8f814bc2a71004d8cb55f8e4148f94bae27f9763e8692ebb9e76ae10ced8",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21215": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Spencer County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=110",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=110",
+      "retrievedAt": "2026-11-07T20:49:42.449Z",
+      "readerReceiptSha256": "733f8f814bc2a71004d8cb55f8e4148f94bae27f9763e8692ebb9e76ae10ced8",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21217": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Taylor County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=111",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=111",
+      "retrievedAt": "2026-11-07T20:49:43.765Z",
+      "readerReceiptSha256": "3053cfb6f847164f9ebb8d9cf76e8187c9b02de2ea40c23ca5ae5d415c3f570e",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21219": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Todd County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=112",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=112",
+      "retrievedAt": "2026-11-07T20:49:43.765Z",
+      "readerReceiptSha256": "3053cfb6f847164f9ebb8d9cf76e8187c9b02de2ea40c23ca5ae5d415c3f570e",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21221": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Trigg County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=113",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=113",
+      "retrievedAt": "2026-11-07T20:49:44.789Z",
+      "readerReceiptSha256": "deea07c8678d06c72060f36b0da776c671a5d4cb4b07f3ee08cfb7d20bf62143",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21223": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Trimble County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=114",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=114",
+      "retrievedAt": "2026-11-07T20:49:44.789Z",
+      "readerReceiptSha256": "deea07c8678d06c72060f36b0da776c671a5d4cb4b07f3ee08cfb7d20bf62143",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21225": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Union County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=115",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=115",
+      "retrievedAt": "2026-11-07T20:49:45.816Z",
+      "readerReceiptSha256": "c5e86b8db164e3dccc3a352d5f8bca78e9daf31d65ec23b13b2fc0bbb671f9a3",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21227": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Warren County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=116",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=116",
+      "retrievedAt": "2026-11-07T20:49:45.816Z",
+      "readerReceiptSha256": "c5e86b8db164e3dccc3a352d5f8bca78e9daf31d65ec23b13b2fc0bbb671f9a3",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21229": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Washington County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=117",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=117",
+      "retrievedAt": "2026-11-07T20:49:47.053Z",
+      "readerReceiptSha256": "c841f97c7c8490b4e79aa0ea701071b8d3bbc6710cb537e62bac7d35c092fcdd",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21231": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Wayne County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=118",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=118",
+      "retrievedAt": "2026-11-07T20:49:47.053Z",
+      "readerReceiptSha256": "c841f97c7c8490b4e79aa0ea701071b8d3bbc6710cb537e62bac7d35c092fcdd",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21233": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Webster County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=119",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=119",
+      "retrievedAt": "2026-11-07T20:49:48.020Z",
+      "readerReceiptSha256": "6233815b7767ad5433c7ebcce54c8950e5d38afa6ad744ff2adefaf6b5f47b80",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21235": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Whitley County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=120",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=120",
+      "retrievedAt": "2026-11-07T20:49:48.020Z",
+      "readerReceiptSha256": "6233815b7767ad5433c7ebcce54c8950e5d38afa6ad744ff2adefaf6b5f47b80",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21237": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Wolfe County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=121",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=121",
+      "retrievedAt": "2026-11-07T20:49:50.160Z",
+      "readerReceiptSha256": "f88c677b11e78cd85f0dc82ba9e47689b121c78c4feca3b4da5bb1573d42bece",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-21239": {
+      "title": "Kentucky Secretary of State: 2026 unofficial U.S. Senate, Woodford County",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/County?id=122",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/County?id=122",
+      "retrievedAt": "2026-11-07T20:49:50.160Z",
+      "readerReceiptSha256": "f88c677b11e78cd85f0dc82ba9e47689b121c78c4feca3b4da5bb1573d42bece",
+      "sourceFormat": "Exact official primary web-reader text retained; native access returned403. Not original downloaded HTML bytes.",
+      "license": "Public official election facts; no separate reuse license asserted"
+    },
+    "senate-completion-ky2026-state": {
+      "title": "Kentucky Secretary of State: 2026 unofficial statewide U.S. Senate controls",
+      "publisher": "Kentucky Secretary of State",
+      "url": "https://vrsws.sos.ky.gov/liveresults/",
+      "sourceUrl": "https://vrsws.sos.ky.gov/liveresults/",
+      "retrievedAt": "2026-11-07T20:50:59.619Z",
+      "readerReceiptSha256": "cd86dab475cbce99d4b05adbb81e11e713eeab961e52787880bbadd3b1afbd1f",
+      "license": "Public official election facts; no separate reuse license asserted"
+    }
+  },
+  "coverage": [
+    {
+      "office": "senate",
+      "year": 2020,
+      "url": "/data/senate-completion/senate-2020.json",
+      "geoLevels": [
+        "county"
+      ],
+      "rows": 44,
+      "stateCount": 1,
+      "countyCount": 44,
+      "candidateCount": 176
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "url": "/data/senate-completion/senate-2026.json",
+      "geoLevels": [
+        "county",
+        "state"
+      ],
+      "rows": 34,
+      "stateCount": 1,
+      "countyCount": 33,
+      "candidateCount": 68
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "url": "/data/senate-completion/senate-wy-2026.json",
+      "geoLevels": [
+        "county",
+        "state"
+      ],
+      "rows": 24,
+      "stateCount": 1,
+      "countyCount": 23,
+      "candidateCount": 48
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "url": "/data/senate-completion/senate-wv-2026.json",
+      "geoLevels": [
+        "county",
+        "state"
+      ],
+      "rows": 56,
+      "stateCount": 1,
+      "countyCount": 55,
+      "candidateCount": 168
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "url": "/data/senate-completion/senate-or-2020.json",
+      "geoLevels": [
+        "county",
+        "state"
+      ],
+      "rows": 37,
+      "stateCount": 1,
+      "countyCount": 36,
+      "candidateCount": 148
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "url": "/data/senate-completion/senate-or-2026.json",
+      "geoLevels": [
+        "county",
+        "state"
+      ],
+      "rows": 37,
+      "stateCount": 1,
+      "countyCount": 36,
+      "candidateCount": 148
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "url": "/data/senate-completion/senate-ky-2026.json",
+      "geoLevels": [
+        "county",
+        "state"
+      ],
+      "rows": 121,
+      "stateCount": 1,
+      "countyCount": 120,
+      "candidateCount": 363
+    }
+  ],
+  "review": {
+    "status": "source_reviewed",
+    "approvalReceiptSha256": "b48d2b306b228a40c10408aca8356a58af67eea640970c82048d3336635eb626",
+    "normalizedSourceSha256": "d969b6a79f192cf1f5e7874d145f9c7f8af45ce639b11194accc4f740c1d08d7"
+  },
+  "limitations": [
+    "Official historical Idaho source qualification only: original candidate vote values are unchanged.",
+    "2026 Idaho returns retain their existing dated provenance; current counting completion and party-screen eligibility are not upgraded.",
+    "No Democratic nominee in imported2026Idaho source; Independent candidates are not reassigned.",
+    "Clark County2020Senate race total311 remains below500minimum.",
+    "All unrelated source and seat/round holds remain.",
+    "New Mexico current Senate source was last updated November6,2026 9:55AM Mountain; unofficial and not certified. Complete county scope and precinct reports do not imply counting completion.",
+    "Wyoming source is the unofficial November3,2026 23:54:49MST statewide-candidates PDF. All23counties are present; source coverage does not imply final counting or certification. Write-ins are separate;70overvotes and3325undervotes are excluded from race totals.",
+    "West Virginia publication contains three named Senate choices across55counties; no unreported write-in zero is inferred. Source reporting counters conflict52/55versus55/55, so counting completion is not established. Candidate total456128 is distinct from source ballot accounting463912.",
+    "Oregon2020original abstract is retained via the UCSB original-document mirror and official-URL indexed extraction; current officialPDFURL returned404. No direct current official-file download is claimed.",
+    "The original Misc. column label is retained. Independent FEC2020 controls explicitly label its2402 aggregate as scattered write-ins; no major party is assigned. Sherman’s printed zero is source-explicit.",
+    "Oregon2026actual source table/API publishes1439write-ins although a generic footer says write-ins are not reported. The actual supplied entries are retained without claiming complete write-in reporting or a resolved publication conflict.",
+    "Raw PartyCode NON and full fusion-party names are preserved; only explicit PartyName major-party labels are normalized, without fusion double-counting.",
+    "Positive reported counts alongside IsReported=false or zero precinct counters do not establish counting completion; returns remain provisional.",
+    "Kentucky120county and separate statewide official web-reader tables supply480vote cells with exact controls1427270. These are saved primary reader extractions; native requests returned403, and no original HTML bytes are claimed.",
+    "CountyMap complete-reporting labels do not establish complete counting or certification. The global November7,2026 3:22:26PM display has no verified time zone and is not a county count-update time.",
+    "REP/DEM/KENparty codes are taken from the statewide source table; KEN remains Other. Explicit county write-in zeros are sourced, not inferred."
+  ],
+  "currentNewMexicoReview": {
+    "approvalReceiptSha256": "de6dd43eb1bf3f2c199521800619bdee37f49bb060a21689877eefa1f8b8c01a",
+    "normalizedSourceSha256": "a047114f336e498c0d8b393c6eb135c8436ac4a99c6dd560e3add247185d3348"
+  },
+  "currentWyomingReview": {
+    "approvalReceiptSha256": "d2f8acf1f7d52a23a007fa10150043201196aa9a3c2cbd7f1abbc4cf4d7dfb15",
+    "normalizedSourceSha256": "f332123704253bc39a4318d7bf6eed430941a1b105d488f524eee2f430f9ea16"
+  },
+  "currentWestVirginiaReview": {
+    "approvalReceiptSha256": "c4e7fe936841975f740d56d4c04f427f94c6f3247ebf55ae02e3b940960e79e1",
+    "normalizedSourceSha256": "322f1bd042ca13829261769ab53552915c6ac5f08bd9dd784a0005d6bc6b530e"
+  },
+  "orReview2020": {
+    "approvalReceiptSha256": "c529fe3cc398b6c2504631b47b8f534195899028e9fcb405a56bfb192788c596",
+    "normalizedSourceSha256": "e37103853af86bd3908895bfb4e2452307d3084a9ba79db7aa1da7cc74aba078"
+  },
+  "orReview2026": {
+    "approvalReceiptSha256": "f0a671bf990330c257bd1c090a2a4ec357c2d6d286dd391fa87479be7abc19b2",
+    "normalizedSourceSha256": "3f0f8c8442a9ebc51848bb590caedc56115be31a039f1ca2159d6f3ac2b58efe"
+  },
+  "kyReview2026": {
+    "approvalReceiptSha256": "a4ca32983f9fff34af65e1ac667ac4dca49fe80e4c91b14099f6ededfb00193e",
+    "normalizedSourceSha256": "95b00db196f5ab33cecdad86502e9a6106c2812d4e49ab34d8d3948bc250484c"
+  }
+}

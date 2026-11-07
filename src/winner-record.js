@@ -19,13 +19,13 @@ export function candidateRecord(row, { office, year, sources = {} }) {
   const provisional = Boolean(row.provisional || row.unofficial || row.incomplete || row.resultStatus === 'unofficial' || (year === 2026 && row.certified !== true));
   const reason = summary.tied ? 'Tied reported count' : summary.outcomeSuppressed ? 'Conditional or ineligible outcome' : !leader ? 'Unavailable or source held' : provisional ? 'Provisional reported leader' : 'Recorded vote leader';
   const sourceIds = row.sourceIds || [row.sourceId];
-  const urls = [...new Set([...(row.sourceLinks || []), ...sourceIds.flatMap(id => [sources[id]?.sourceUrl, sources[id]?.url])].filter(url => typeof url === 'string' && /^https?:\/\//.test(url)))];
+  const urls = [...new Set([...(row.sourceHolds||[]).flatMap(h=>h.sourceURLs||[]), ...(row.sourceLinks || []), ...sourceIds.flatMap(id => [sources[id]?.sourceUrl, sources[id]?.url])].filter(url => typeof url === 'string' && /^https?:\/\//.test(url)))];
   return {
     key: `${office}|${year}|${geographicContestKey({...row,office,year})}`, office, year, stateFips: row.stateFips, state: row.state || row.stateAbbr || row.stateFips,
     district: row.district ?? null, seat: row.seatId || row.sourceSeatId || null, seatClass: [1,2,3].includes(Number(row.seatClass)) ? Number(row.seatClass) : null, stage, special: Boolean(row.special),
     contestType: row.contestType || null, electionDate: row.electionDate || null,
     leader: leader ? { name: leader.name, party: leader.party || 'Other', votes: leader.votes, share: summary.share, margin: uncertainWriteInRunnerUp ? null : summary.margin } : null,
-    status: reason, provisional, certifiedCount: row.certified === true && !provisional,
+    status: reason, holdReasons:leader?[]:[...new Set((row.reviewReasons||[]).filter(r=>typeof r==='string'))], provisional, certifiedCount: row.certified === true && !provisional,
     sourceIds, sourceLinks: urls, sourceUpdatedAt: row.sourceUpdatedAt || null,
     retrievedAt: row.retrievedAt || row.fetchedAt || null, timestampBasis: row.sourceTimestampBasis || row.asOfBasis || null,
   };

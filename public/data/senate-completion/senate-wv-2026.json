@@ -1,0 +1,4000 @@
+{
+  "schemaVersion": 1,
+  "office": "senate",
+  "year": 2026,
+  "sources": {
+    "senate-current-official-wv-2026": {
+      "title": "West Virginia Secretary of State Clarity: 2026 provisional Senate county vectors and statewide controls",
+      "publisher": "West Virginia Secretary of State",
+      "url": "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+      "sourceUrl": "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+      "fullSourceUrl": "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary",
+      "authorityUrl": "https://sos.wv.gov/elections",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "sha256": "343be99ea6a030c2e2bc181d9baf45bc1f5785898106accbc9aa4a2ac1895273",
+      "controlSourceUrl": "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+      "controlSha256": "2caaac780f9514a17302f7b1e9bfb6fa437b3245a69e4d852c47db5dfc8a56d6",
+      "version": "385637",
+      "license": "Official public election record; no separate reuse license asserted",
+      "sourceLocation": "Contests K=100; P county names / V candidate vectors / T candidate race sums. Named choices and party order from separate state summary K=100."
+    }
+  },
+  "results": [
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Barbour County",
+      "countyFips": "54001",
+      "sourceCountyName": "Barbour",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2322
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1022
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 167
+        }
+      ],
+      "totalVotes": 3511,
+      "knownVoteSum": 3511,
+      "sourceCountyElectionId": "127497",
+      "sourceCountyVersion": "384200",
+      "sourceUpdatedAt": "2026-11-03T21:29:47-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:29:47 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:29:47-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 13,
+      "precinctsTotal": 13
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Berkeley County",
+      "countyFips": "54003",
+      "sourceCountyName": "Berkeley",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 16663
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 13927
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 3059
+        }
+      ],
+      "totalVotes": 33649,
+      "knownVoteSum": 33649,
+      "sourceCountyElectionId": "127498",
+      "sourceCountyVersion": "384496",
+      "sourceUpdatedAt": "2026-11-03T21:57:08-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:57:08 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:57:08-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 80,
+      "precinctsTotal": 80
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Boone County",
+      "countyFips": "54005",
+      "sourceCountyName": "Boone",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 3127
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1470
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 191
+        }
+      ],
+      "totalVotes": 4788,
+      "knownVoteSum": 4788,
+      "sourceCountyElectionId": "127499",
+      "sourceCountyVersion": "384382",
+      "sourceUpdatedAt": "2026-11-03T21:45:48-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:45:48 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:45:48-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 26,
+      "precinctsTotal": 26
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Braxton County",
+      "countyFips": "54007",
+      "sourceCountyName": "Braxton",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2049
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 995
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 109
+        }
+      ],
+      "totalVotes": 3153,
+      "knownVoteSum": 3153,
+      "sourceCountyElectionId": "127500",
+      "sourceCountyVersion": "384448",
+      "sourceUpdatedAt": "2026-11-03T22:57:15-05:00",
+      "sourceTimestampOriginal": "11/3/2026 10:57:15 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T22:57:15-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 18,
+      "precinctsTotal": 18
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Brooke County",
+      "countyFips": "54009",
+      "sourceCountyName": "Brooke",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 3476
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1863
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 129
+        }
+      ],
+      "totalVotes": 5468,
+      "knownVoteSum": 5468,
+      "sourceCountyElectionId": "127501",
+      "sourceCountyVersion": "383945",
+      "sourceUpdatedAt": "2026-11-03T20:59:51-05:00",
+      "sourceTimestampOriginal": "11/3/2026 8:59:51 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T20:59:51-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 21,
+      "precinctsTotal": 21
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Cabell County",
+      "countyFips": "54011",
+      "sourceCountyName": "Cabell",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 11110
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 10531
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 627
+        }
+      ],
+      "totalVotes": 22268,
+      "knownVoteSum": 22268,
+      "sourceCountyElectionId": "127502",
+      "sourceCountyVersion": "384478",
+      "sourceUpdatedAt": "2026-11-03T21:55:11-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:55:11 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:55:11-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 68,
+      "precinctsTotal": 68
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Calhoun County",
+      "countyFips": "54013",
+      "sourceCountyName": "Calhoun",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1114
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 413
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 52
+        }
+      ],
+      "totalVotes": 1579,
+      "knownVoteSum": 1579,
+      "sourceCountyElectionId": "127503",
+      "sourceCountyVersion": "383913",
+      "sourceUpdatedAt": "2026-11-03T20:57:09-05:00",
+      "sourceTimestampOriginal": "11/3/2026 8:57:09 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T20:57:09-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 10,
+      "precinctsTotal": 10
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Clay County",
+      "countyFips": "54015",
+      "sourceCountyName": "Clay",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1198
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 443
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 90
+        }
+      ],
+      "totalVotes": 1731,
+      "knownVoteSum": 1731,
+      "sourceCountyElectionId": "127504",
+      "sourceCountyVersion": "384743",
+      "sourceUpdatedAt": "2026-11-03T22:27:50-05:00",
+      "sourceTimestampOriginal": "11/3/2026 10:27:50 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T22:27:50-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 11,
+      "precinctsTotal": 11
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Doddridge County",
+      "countyFips": "54017",
+      "sourceCountyName": "Doddridge",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1203
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 287
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 69
+        }
+      ],
+      "totalVotes": 1559,
+      "knownVoteSum": 1559,
+      "sourceCountyElectionId": "127505",
+      "sourceCountyVersion": "383895",
+      "sourceUpdatedAt": "2026-11-03T20:53:14-05:00",
+      "sourceTimestampOriginal": "11/3/2026 8:53:14 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T20:53:14-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 12,
+      "precinctsTotal": 12
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Fayette County",
+      "countyFips": "54019",
+      "sourceCountyName": "Fayette",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 5014
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 3476
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 323
+        }
+      ],
+      "totalVotes": 8813,
+      "knownVoteSum": 8813,
+      "sourceCountyElectionId": "127506",
+      "sourceCountyVersion": "384734",
+      "sourceUpdatedAt": "2026-11-03T22:28:51-05:00",
+      "sourceTimestampOriginal": "11/3/2026 10:28:51 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T22:28:51-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 41,
+      "precinctsTotal": 41
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Gilmer County",
+      "countyFips": "54021",
+      "sourceCountyName": "Gilmer",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1039
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 463
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 58
+        }
+      ],
+      "totalVotes": 1560,
+      "knownVoteSum": 1560,
+      "sourceCountyElectionId": "127507",
+      "sourceCountyVersion": "384730",
+      "sourceUpdatedAt": "2026-11-03T22:25:58-05:00",
+      "sourceTimestampOriginal": "11/3/2026 10:25:58 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T22:25:58-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 10,
+      "precinctsTotal": 10
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Grant County",
+      "countyFips": "54023",
+      "sourceCountyName": "Grant",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2347
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 469
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 71
+        }
+      ],
+      "totalVotes": 2887,
+      "knownVoteSum": 2887,
+      "sourceCountyElectionId": "127508",
+      "sourceCountyVersion": "383827",
+      "sourceUpdatedAt": "2026-11-03T20:42:48-05:00",
+      "sourceTimestampOriginal": "11/3/2026 8:42:48 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T20:42:48-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 14,
+      "precinctsTotal": 14
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Greenbrier County",
+      "countyFips": "54025",
+      "sourceCountyName": "Greenbrier",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 5605
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 3439
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 289
+        }
+      ],
+      "totalVotes": 9333,
+      "knownVoteSum": 9333,
+      "sourceCountyElectionId": "127509",
+      "sourceCountyVersion": "384180",
+      "sourceUpdatedAt": "2026-11-03T21:20:22-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:20:22 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:20:22-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 28,
+      "precinctsTotal": 28
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Hampshire County",
+      "countyFips": "54027",
+      "sourceCountyName": "Hampshire",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 4449
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1607
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 471
+        }
+      ],
+      "totalVotes": 6527,
+      "knownVoteSum": 6527,
+      "sourceCountyElectionId": "127510",
+      "sourceCountyVersion": "384485",
+      "sourceUpdatedAt": "2026-11-03T21:59:47-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:59:47 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:59:47-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 25,
+      "precinctsTotal": 25
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Hancock County",
+      "countyFips": "54029",
+      "sourceCountyName": "Hancock",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 4855
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 2466
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 233
+        }
+      ],
+      "totalVotes": 7554,
+      "knownVoteSum": 7554,
+      "sourceCountyElectionId": "127511",
+      "sourceCountyVersion": "383862",
+      "sourceUpdatedAt": "2026-11-03T20:47:51-05:00",
+      "sourceTimestampOriginal": "11/3/2026 8:47:51 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T20:47:51-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 24,
+      "precinctsTotal": 24
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Hardy County",
+      "countyFips": "54031",
+      "sourceCountyName": "Hardy",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2883
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1089
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 179
+        }
+      ],
+      "totalVotes": 4151,
+      "knownVoteSum": 4151,
+      "sourceCountyElectionId": "127512",
+      "sourceCountyVersion": "384100",
+      "sourceUpdatedAt": "2026-11-03T21:16:14-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:16:14 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:16:14-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 14,
+      "precinctsTotal": 14
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Harrison County",
+      "countyFips": "54033",
+      "sourceCountyName": "Harrison",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 10297
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 6842
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 532
+        }
+      ],
+      "totalVotes": 17671,
+      "knownVoteSum": 17671,
+      "sourceCountyElectionId": "127513",
+      "sourceCountyVersion": "384608",
+      "sourceUpdatedAt": "2026-11-03T22:14:52-05:00",
+      "sourceTimestampOriginal": "11/3/2026 10:14:52 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T22:14:52-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 65,
+      "precinctsTotal": 65
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Jackson County",
+      "countyFips": "54035",
+      "sourceCountyName": "Jackson",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 5180
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 2218
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 449
+        }
+      ],
+      "totalVotes": 7847,
+      "knownVoteSum": 7847,
+      "sourceCountyElectionId": "127514",
+      "sourceCountyVersion": "384451",
+      "sourceUpdatedAt": "2026-11-03T21:51:55-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:51:55 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:51:55-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 30,
+      "precinctsTotal": 30
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Jefferson County",
+      "countyFips": "54037",
+      "sourceCountyName": "Jefferson",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 9481
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 10510
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 908
+        }
+      ],
+      "totalVotes": 20899,
+      "knownVoteSum": 20899,
+      "sourceCountyElectionId": "127515",
+      "sourceCountyVersion": "384011",
+      "sourceUpdatedAt": "2026-11-03T21:04:26-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:04:26 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:04:26-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 34,
+      "precinctsTotal": 34
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Kanawha County",
+      "countyFips": "54039",
+      "sourceCountyName": "Kanawha",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 23179
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 23483
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 1116
+        }
+      ],
+      "totalVotes": 47778,
+      "knownVoteSum": 47778,
+      "sourceCountyElectionId": "127516",
+      "sourceCountyVersion": "384757",
+      "sourceUpdatedAt": "2026-11-03T22:32:31-05:00",
+      "sourceTimestampOriginal": "11/3/2026 10:32:31 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T22:32:31-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 183,
+      "precinctsTotal": 183
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Lewis County",
+      "countyFips": "54041",
+      "sourceCountyName": "Lewis",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2751
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1213
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 171
+        }
+      ],
+      "totalVotes": 4135,
+      "knownVoteSum": 4135,
+      "sourceCountyElectionId": "127517",
+      "sourceCountyVersion": "384111",
+      "sourceUpdatedAt": "2026-11-03T22:58:02-05:00",
+      "sourceTimestampOriginal": "11/3/2026 10:58:02 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T22:58:02-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 23,
+      "precinctsTotal": 23
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Lincoln County",
+      "countyFips": "54043",
+      "sourceCountyName": "Lincoln",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2265
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 984
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 151
+        }
+      ],
+      "totalVotes": 3400,
+      "knownVoteSum": 3400,
+      "sourceCountyElectionId": "127518",
+      "sourceCountyVersion": "384482",
+      "sourceUpdatedAt": "2026-11-03T22:17:30-05:00",
+      "sourceTimestampOriginal": "11/3/2026 10:17:30 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T22:17:30-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 14,
+      "precinctsTotal": 14
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Logan County",
+      "countyFips": "54045",
+      "sourceCountyName": "Logan",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 4094
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1407
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 163
+        }
+      ],
+      "totalVotes": 5664,
+      "knownVoteSum": 5664,
+      "sourceCountyElectionId": "127519",
+      "sourceCountyVersion": "384828",
+      "sourceUpdatedAt": "2026-11-03T22:38:01-05:00",
+      "sourceTimestampOriginal": "11/3/2026 10:38:01 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T22:38:01-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 34,
+      "precinctsTotal": 34
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Marion County",
+      "countyFips": "54049",
+      "sourceCountyName": "Marion",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 8028
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 6788
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 472
+        }
+      ],
+      "totalVotes": 15288,
+      "knownVoteSum": 15288,
+      "sourceCountyElectionId": "127520",
+      "sourceCountyVersion": "383933",
+      "sourceUpdatedAt": "2026-11-03T20:55:05-05:00",
+      "sourceTimestampOriginal": "11/3/2026 8:55:05 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T20:55:05-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 66,
+      "precinctsTotal": 66
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Marshall County",
+      "countyFips": "54051",
+      "sourceCountyName": "Marshall",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 4991
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 2511
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 227
+        }
+      ],
+      "totalVotes": 7729,
+      "knownVoteSum": 7729,
+      "sourceCountyElectionId": "127521",
+      "sourceCountyVersion": "384246",
+      "sourceUpdatedAt": "2026-11-03T21:28:14-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:28:14 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:28:14-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 35,
+      "precinctsTotal": 35
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Mason County",
+      "countyFips": "54053",
+      "sourceCountyName": "Mason",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 4248
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1938
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 384
+        }
+      ],
+      "totalVotes": 6570,
+      "knownVoteSum": 6570,
+      "sourceCountyElectionId": "127522",
+      "sourceCountyVersion": "384086",
+      "sourceUpdatedAt": "2026-11-03T21:24:13-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:24:13 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:24:13-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 30,
+      "precinctsTotal": 30
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "McDowell County",
+      "countyFips": "54047",
+      "sourceCountyName": "McDowell",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1674
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 700
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 104
+        }
+      ],
+      "totalVotes": 2478,
+      "knownVoteSum": 2478,
+      "sourceCountyElectionId": "127523",
+      "sourceCountyVersion": "385100",
+      "sourceUpdatedAt": "2026-11-03T23:31:49-05:00",
+      "sourceTimestampOriginal": "11/3/2026 11:31:49 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T23:31:49-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 33,
+      "precinctsTotal": 33
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Mercer County",
+      "countyFips": "54055",
+      "sourceCountyName": "Mercer",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 8399
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 3492
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 409
+        }
+      ],
+      "totalVotes": 12300,
+      "knownVoteSum": 12300,
+      "sourceCountyElectionId": "127524",
+      "sourceCountyVersion": "384446",
+      "sourceUpdatedAt": "2026-11-03T21:53:39-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:53:39 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:53:39-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 43,
+      "precinctsTotal": 43
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Mineral County",
+      "countyFips": "54057",
+      "sourceCountyName": "Mineral",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 5282
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1946
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 217
+        }
+      ],
+      "totalVotes": 7445,
+      "knownVoteSum": 7445,
+      "sourceCountyElectionId": "127525",
+      "sourceCountyVersion": "384479",
+      "sourceUpdatedAt": "2026-11-03T21:56:31-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:56:31 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:56:31-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 24,
+      "precinctsTotal": 24
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Mingo County",
+      "countyFips": "54059",
+      "sourceCountyName": "Mingo",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2922
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 933
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 120
+        }
+      ],
+      "totalVotes": 3975,
+      "knownVoteSum": 3975,
+      "sourceCountyElectionId": "127526",
+      "sourceCountyVersion": "384211",
+      "sourceUpdatedAt": "2026-11-03T21:25:28-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:25:28 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:25:28-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 24,
+      "precinctsTotal": 24
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Monongalia County",
+      "countyFips": "54061",
+      "sourceCountyName": "Monongalia",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 11440
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 16376
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 549
+        }
+      ],
+      "totalVotes": 28365,
+      "knownVoteSum": 28365,
+      "sourceCountyElectionId": "127527",
+      "sourceCountyVersion": "383852",
+      "sourceUpdatedAt": "2026-11-03T20:44:38-05:00",
+      "sourceTimestampOriginal": "11/3/2026 8:44:38 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T20:44:38-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 43,
+      "precinctsTotal": 43
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Monroe County",
+      "countyFips": "54063",
+      "sourceCountyName": "Monroe",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2398
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 949
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 147
+        }
+      ],
+      "totalVotes": 3494,
+      "knownVoteSum": 3494,
+      "sourceCountyElectionId": "127528",
+      "sourceCountyVersion": "383939",
+      "sourceUpdatedAt": "2026-11-03T20:55:37-05:00",
+      "sourceTimestampOriginal": "11/3/2026 8:55:37 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T20:55:37-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 11,
+      "precinctsTotal": 11
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Morgan County",
+      "countyFips": "54065",
+      "sourceCountyName": "Morgan",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 3709
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1701
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 330
+        }
+      ],
+      "totalVotes": 5740,
+      "knownVoteSum": 5740,
+      "sourceCountyElectionId": "127529",
+      "sourceCountyVersion": "384356",
+      "sourceUpdatedAt": "2026-11-03T21:49:38-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:49:38 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:49:38-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 13,
+      "precinctsTotal": 13
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Nicholas County",
+      "countyFips": "54067",
+      "sourceCountyName": "Nicholas",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 4011
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1630
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 181
+        }
+      ],
+      "totalVotes": 5822,
+      "knownVoteSum": 5822,
+      "sourceCountyElectionId": "127530",
+      "sourceCountyVersion": "384101",
+      "sourceUpdatedAt": "2026-11-03T22:08:21-05:00",
+      "sourceTimestampOriginal": "11/3/2026 10:08:21 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T22:08:21-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 28,
+      "precinctsTotal": 28
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Ohio County",
+      "countyFips": "54069",
+      "sourceCountyName": "Ohio",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 6836
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 5065
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 251
+        }
+      ],
+      "totalVotes": 12152,
+      "knownVoteSum": 12152,
+      "sourceCountyElectionId": "127531",
+      "sourceCountyVersion": "384299",
+      "sourceUpdatedAt": "2026-11-03T21:40:29-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:40:29 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:40:29-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 35,
+      "precinctsTotal": 35
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Pendleton County",
+      "countyFips": "54071",
+      "sourceCountyName": "Pendleton",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1541
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 537
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 72
+        }
+      ],
+      "totalVotes": 2150,
+      "knownVoteSum": 2150,
+      "sourceCountyElectionId": "127532",
+      "sourceCountyVersion": "383938",
+      "sourceUpdatedAt": "2026-11-03T20:58:58-05:00",
+      "sourceTimestampOriginal": "11/3/2026 8:58:58 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T20:58:58-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 9,
+      "precinctsTotal": 9
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Pleasants County",
+      "countyFips": "54073",
+      "sourceCountyName": "Pleasants",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1267
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 528
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 70
+        }
+      ],
+      "totalVotes": 1865,
+      "knownVoteSum": 1865,
+      "sourceCountyElectionId": "127533",
+      "sourceCountyVersion": "383855",
+      "sourceUpdatedAt": "2026-11-03T20:43:49-05:00",
+      "sourceTimestampOriginal": "11/3/2026 8:43:49 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T20:43:49-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 10,
+      "precinctsTotal": 10
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Pocahontas County",
+      "countyFips": "54075",
+      "sourceCountyName": "Pocahontas",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1446
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 791
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 78
+        }
+      ],
+      "totalVotes": 2315,
+      "knownVoteSum": 2315,
+      "sourceCountyElectionId": "127534",
+      "sourceCountyVersion": "384503",
+      "sourceUpdatedAt": "2026-11-03T22:00:22-05:00",
+      "sourceTimestampOriginal": "11/3/2026 10:00:22 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T22:00:22-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 16,
+      "precinctsTotal": 16
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Preston County",
+      "countyFips": "54077",
+      "sourceCountyName": "Preston",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 5479
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 2595
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 421
+        }
+      ],
+      "totalVotes": 8495,
+      "knownVoteSum": 8495,
+      "sourceCountyElectionId": "127535",
+      "sourceCountyVersion": "383984",
+      "sourceUpdatedAt": "2026-11-03T21:08:01-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:08:01 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:08:01-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 28,
+      "precinctsTotal": 28
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Putnam County",
+      "countyFips": "54079",
+      "sourceCountyName": "Putnam",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 9839
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 5650
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 594
+        }
+      ],
+      "totalVotes": 16083,
+      "knownVoteSum": 16083,
+      "sourceCountyElectionId": "127536",
+      "sourceCountyVersion": "384002",
+      "sourceUpdatedAt": "2026-11-03T21:10:39-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:10:39 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:10:39-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 39,
+      "precinctsTotal": 39
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Raleigh County",
+      "countyFips": "54081",
+      "sourceCountyName": "Raleigh",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 10570
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 5119
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 507
+        }
+      ],
+      "totalVotes": 16196,
+      "knownVoteSum": 16196,
+      "sourceCountyElectionId": "127537",
+      "sourceCountyVersion": "384130",
+      "sourceUpdatedAt": "2026-11-03T21:19:54-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:19:54 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:19:54-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 59,
+      "precinctsTotal": 59
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Randolph County",
+      "countyFips": "54083",
+      "sourceCountyName": "Randolph",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 4423
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 2540
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 240
+        }
+      ],
+      "totalVotes": 7203,
+      "knownVoteSum": 7203,
+      "sourceCountyElectionId": "127538",
+      "sourceCountyVersion": "384374",
+      "sourceUpdatedAt": "2026-11-03T21:48:21-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:48:21 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:48:21-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 27,
+      "precinctsTotal": 27
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Ritchie County",
+      "countyFips": "54085",
+      "sourceCountyName": "Ritchie",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1810
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 458
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 108
+        }
+      ],
+      "totalVotes": 2376,
+      "knownVoteSum": 2376,
+      "sourceCountyElectionId": "127539",
+      "sourceCountyVersion": "385636",
+      "sourceUpdatedAt": "2026-11-04T15:03:24-05:00",
+      "sourceTimestampOriginal": "11/4/2026 3:03:24 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-04T15:03:24-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 9,
+      "precinctsTotal": 9
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Roane County",
+      "countyFips": "54087",
+      "sourceCountyName": "Roane",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2029
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 974
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 143
+        }
+      ],
+      "totalVotes": 3146,
+      "knownVoteSum": 3146,
+      "sourceCountyElectionId": "127540",
+      "sourceCountyVersion": "384297",
+      "sourceUpdatedAt": "2026-11-03T21:36:06-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:36:06 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:36:06-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 17,
+      "precinctsTotal": 17
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Summers County",
+      "countyFips": "54089",
+      "sourceCountyName": "Summers",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2133
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 941
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 102
+        }
+      ],
+      "totalVotes": 3176,
+      "knownVoteSum": 3176,
+      "sourceCountyElectionId": "127541",
+      "sourceCountyVersion": "383928",
+      "sourceUpdatedAt": "2026-11-03T21:00:26-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:00:26 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:00:26-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 14,
+      "precinctsTotal": 14
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Taylor County",
+      "countyFips": "54091",
+      "sourceCountyName": "Taylor",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2821
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1509
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 122
+        }
+      ],
+      "totalVotes": 4452,
+      "knownVoteSum": 4452,
+      "sourceCountyElectionId": "127542",
+      "sourceCountyVersion": "383856",
+      "sourceUpdatedAt": "2026-11-03T20:46:45-05:00",
+      "sourceTimestampOriginal": "11/3/2026 8:46:45 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T20:46:45-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 17,
+      "precinctsTotal": 17
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Tucker County",
+      "countyFips": "54093",
+      "sourceCountyName": "Tucker",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1604
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 883
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 54
+        }
+      ],
+      "totalVotes": 2541,
+      "knownVoteSum": 2541,
+      "sourceCountyElectionId": "127543",
+      "sourceCountyVersion": "384422",
+      "sourceUpdatedAt": "2026-11-03T21:48:36-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:48:36 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:48:36-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 9,
+      "precinctsTotal": 9
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Tyler County",
+      "countyFips": "54095",
+      "sourceCountyName": "Tyler",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1330
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 399
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 89
+        }
+      ],
+      "totalVotes": 1818,
+      "knownVoteSum": 1818,
+      "sourceCountyElectionId": "127544",
+      "sourceCountyVersion": "384365",
+      "sourceUpdatedAt": "2026-11-03T21:43:20-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:43:20 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:43:20-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 10,
+      "precinctsTotal": 10
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Upshur County",
+      "countyFips": "54097",
+      "sourceCountyName": "Upshur",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 3765
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1714
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 191
+        }
+      ],
+      "totalVotes": 5670,
+      "knownVoteSum": 5670,
+      "sourceCountyElectionId": "127545",
+      "sourceCountyVersion": "384137",
+      "sourceUpdatedAt": "2026-11-03T21:26:37-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:26:37 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:26:37-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 20,
+      "precinctsTotal": 20
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Wayne County",
+      "countyFips": "54099",
+      "sourceCountyName": "Wayne",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 5242
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 2840
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 274
+        }
+      ],
+      "totalVotes": 8356,
+      "knownVoteSum": 8356,
+      "sourceCountyElectionId": "127546",
+      "sourceCountyVersion": "384597",
+      "sourceUpdatedAt": "2026-11-03T22:14:33-05:00",
+      "sourceTimestampOriginal": "11/3/2026 10:14:33 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T22:14:33-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 38,
+      "precinctsTotal": 38
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Webster County",
+      "countyFips": "54101",
+      "sourceCountyName": "Webster",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1209
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 408
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 68
+        }
+      ],
+      "totalVotes": 1685,
+      "knownVoteSum": 1685,
+      "sourceCountyElectionId": "127547",
+      "sourceCountyVersion": "384220",
+      "sourceUpdatedAt": "2026-11-03T21:29:25-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:29:25 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:29:25-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 12,
+      "precinctsTotal": 12
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Wetzel County",
+      "countyFips": "54103",
+      "sourceCountyName": "Wetzel",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2302
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 1083
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 87
+        }
+      ],
+      "totalVotes": 3472,
+      "knownVoteSum": 3472,
+      "sourceCountyElectionId": "127548",
+      "sourceCountyVersion": "384224",
+      "sourceUpdatedAt": "2026-11-03T21:31:24-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:31:24 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:31:24-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 20,
+      "precinctsTotal": 20
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Wirt County",
+      "countyFips": "54105",
+      "sourceCountyName": "Wirt",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 1330
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 435
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 100
+        }
+      ],
+      "totalVotes": 1865,
+      "knownVoteSum": 1865,
+      "sourceCountyElectionId": "127549",
+      "sourceCountyVersion": "384353",
+      "sourceUpdatedAt": "2026-11-03T21:41:34-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:41:34 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:41:34-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 10,
+      "precinctsTotal": 10
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Wood County",
+      "countyFips": "54107",
+      "sourceCountyName": "Wood",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 13818
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 8139
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 705
+        }
+      ],
+      "totalVotes": 22662,
+      "knownVoteSum": 22662,
+      "sourceCountyElectionId": "127550",
+      "sourceCountyVersion": "384187",
+      "sourceUpdatedAt": "2026-11-03T21:23:17-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:23:17 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:23:17-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 69,
+      "precinctsTotal": 69
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "county",
+      "county": "Wyoming County",
+      "countyFips": "54109",
+      "sourceCountyName": "Wyoming",
+      "countyFipsBasis": "Exactunique countyname withinWestVirginia matchedto existing55county baseline inventory.",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 2470
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 733
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 116
+        }
+      ],
+      "totalVotes": 3319,
+      "knownVoteSum": 3319,
+      "sourceCountyElectionId": "127551",
+      "sourceCountyVersion": "384117",
+      "sourceUpdatedAt": "2026-11-03T21:18:33-05:00",
+      "sourceTimestampOriginal": "11/3/2026 9:18:33 PM EST",
+      "sourceTimestampBasis": "Official participatingcounty source timestamp explicitlyEST; UTC-05",
+      "asOf": "2026-11-03T21:18:33-05:00",
+      "asOfBasis": "Official county last-update stamp in state publication metadata",
+      "precinctsReporting": 26,
+      "precinctsTotal": 26
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "54",
+      "state": "West Virginia",
+      "stateAbbr": "WV",
+      "contestId": "senate-2026-54-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "54-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wv-2026",
+      "sourceIds": [
+        "senate-current-official-wv-2026"
+      ],
+      "sourceLinks": [
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+        "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+        "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+      ],
+      "sourcePublisher": "West Virginia Secretary of State",
+      "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "reportingCategories": [],
+      "totalVotesBasis": "Sum of all three published named Senate candidate entries; source T verified exactly; no ballot total substituted.",
+      "reportingNote": "State summary shows52/55county reporting while sum.json shows55/55; county vectors present for55. Counters do not establish complete counting/certification. No unreported write-in zero is inferred.",
+      "geoLevel": "state",
+      "candidates": [
+        {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 266067
+        },
+        {
+          "name": "RACHEL FETTY ANDERSON",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 172922
+        },
+        {
+          "name": "S. MARSHALL WILSON",
+          "party": "Other",
+          "partyOriginal": "CST",
+          "votes": 17139
+        }
+      ],
+      "totalVotes": 456128,
+      "knownVoteSum": 456128,
+      "sourceUpdatedAt": null,
+      "asOf": null,
+      "asOfBasis": "Exact statewide update time not established; retrieval time separate.",
+      "sourceReportingCounters": {
+        "summary": {
+          "reported": 52,
+          "total": 55
+        },
+        "sum": {
+          "reported": 55,
+          "total": 55
+        }
+      }
+    }
+  ]
+}

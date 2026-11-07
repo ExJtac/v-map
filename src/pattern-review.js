@@ -159,6 +159,13 @@ function appendOfficeChecks(box, assessment, criteria) {
       if (Number.isFinite(e.peer?.peerMedian)) box.append(node('p','county-tip-note',`State peer share change: ${pp(e.peer.peerMedian)}, shown as context. It does not prevent this county meeting an own-history review rule.`));
       if (e.office === 'senate' && e.baselineYear === 2020) box.append(node('p','county-tip-note','Same-seat Senate comparison uses 2020, a presidential-election year. Election-cycle and reporting progress differences may explain large changes.'));
     }
+    const scopeEvidence=e||screens.raceVoteChange?.evidence||screens.racePopulationChange?.evidence;
+    if(scopeEvidence?.currentSource?.reportingNote)box.append(node('p','county-tip-note',scopeEvidence.currentSource.reportingNote));
+    if(scopeEvidence?.office==='house'){
+      box.append(node('p','county-tip-note','House comparisons sum every actual county/district portion separately in each year. District boundaries, candidates and unopposed competition can change; this is not a matched same-seat or same-candidate comparison.'));
+      for(const limit of scopeEvidence.comparability?.limitations||[])box.append(node('p','county-tip-note',limit));
+    }
+    if(scopeEvidence?.office==='senate'&&scopeEvidence.baselineYear===2020&&!Number.isFinite(e?.democratCountChangePercent))box.append(node('p','county-tip-note','Same-seat Senate comparison uses 2020, a presidential-election year. Election-cycle and reporting progress differences may explain large changes.'));
     for (const [key,label] of [['partyCountChange','40% party change / opposing party within ±15%'],['raceVoteChange','40% total race-vote change'],['racePopulationChange','10-point race votes / population change'],['shareSwing','10-point share swing']]) {
       const screen=screens[key];
       box.append(node('p','county-tip-note',`${label}: ${screen?.status === 'assessed' ? screen.flags.length ? 'review signal' : 'checked; threshold not reached' : `not assessed${screen?.reason ? ` · ${screen.reason}` : ''}`}.`));

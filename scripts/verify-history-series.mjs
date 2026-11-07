@@ -31,3 +31,13 @@ assert.equal(historyPoint(2022,held,pop).republican,null);
 console.log('Historical named party counts retained only for total-only category holds; source holds stay withheld.');
 const missingAggregateCategory = qualifiedRaceCounts([{...row,candidates:[...row.candidates,{name:'OTHER',party:'Other',votes:8}],reportingCategories:[{category:'sourceReportingCategory',votes:null}]}],context);
 assert.equal(historyPoint(2022,missingAggregateCategory,pop).republican,null);
+
+for(const state of ['16','27','39','46','51','54','56']){
+ const pair=Object.entries(audit.counties).find(([f,c])=>f.startsWith(state)&&c.offices.house.reviewScreens.raceVoteChange.status==='assessed');assert.ok(pair,'New approved state has no usable history');
+ for(const year of [2022,2026]){const counts=auditedHouseCounts(audit,pair[0],year),e=pair[1].offices.house.reviewScreens.raceVoteChange.evidence;assert.equal(counts.total,year===2026?e.currentRaceVotes:e.priorRaceVotes);assert.equal(counts.scope,audit.comparabilityContracts.houseStates[state].id);assert.ok(counts.sourceIds.length>0);}
+}
+assert.ok(auditedHouseCounts(audit,'21001',2026).reason,'Current-only Kentucky source must not open historical aggregation');
+const sd=Object.entries(audit.counties).find(([f,c])=>f.startsWith('46')&&c.offices.house.reviewScreens.raceVoteChange.status==='assessed');assert.equal(auditedHouseCounts(audit,sd[0],2022).democrat,null,'Absent nominee is not zero');assert.ok(auditedHouseCounts(audit,sd[0],2022).republican>0,'Known named votes remain visible even when party comparison is unavailable');
+console.log('All7 additional House scopes reach totals/history; current-only holds and absent nominees preserved.');
+
+const absentShadow={comparabilityContracts:audit.comparabilityContracts,counties:{[sd[0]]:structuredClone(audit.counties[sd[0]])}};absentShadow.counties[sd[0]].offices.house.reviewScreens.raceVoteChange.evidence.priorDemocratVotes=0;assert.equal(auditedHouseCounts(absentShadow,sd[0],2022).democrat,null,'Explicit typed absence must not fall back to a legacy zero');

@@ -1,0 +1,2838 @@
+{
+  "schemaVersion": 1,
+  "office": "senate",
+  "year": 2020,
+  "sources": {
+    "senate-completion-official-id-2020": {
+      "title": "Idaho Secretary of State: November 3, 2020 General Election U.S. Senate county results",
+      "publisher": "Idaho Secretary of State",
+      "url": "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+      "sourceUrl": "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+      "fullSourceUrl": "https://canvass.sos.idaho.gov/eng/contests/view/5724/",
+      "sha256": "15d9a7b0ccabdc95d3f675691835242062df637f734bf1369cd350dd79a13a15",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "file": "id2020-pinned-counties.csv",
+      "license": "Official public election record; no separate reuse license asserted",
+      "recheckedAt": "2026-11-07T20:20:17.283305+00:00",
+      "recheckStatus": "Original official contest page accessible through reader; fresh native contest/CSV GET403. Pinned exact source bytes reused."
+    }
+  },
+  "results": [
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16001",
+      "county": "Ada County",
+      "sourceCountyName": "Ada",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 130446
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 118718
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 6940
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 1910
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 258014,
+      "knownVoteSum": 258014,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16003",
+      "county": "Adams County",
+      "sourceCountyName": "Adams",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 1828
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 625
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 62
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 46
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 2561,
+      "knownVoteSum": 2561,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16005",
+      "county": "Bannock County",
+      "sourceCountyName": "Bannock",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 22048
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 15472
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 1433
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 460
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 39413,
+      "knownVoteSum": 39413,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16007",
+      "county": "Bear Lake County",
+      "sourceCountyName": "Bear Lake",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 2791
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 355
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 91
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 64
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 3301,
+      "knownVoteSum": 3301,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16009",
+      "county": "Benewah County",
+      "sourceCountyName": "Benewah",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 3584
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1081
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 103
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 105
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 4873,
+      "knownVoteSum": 4873,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16011",
+      "county": "Bingham County",
+      "sourceCountyName": "Bingham",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 14644
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 4313
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 625
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 253
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 19835,
+      "knownVoteSum": 19835,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16013",
+      "county": "Blaine County",
+      "sourceCountyName": "Blaine",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 4226
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 8739
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 288
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 54
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 13307,
+      "knownVoteSum": 13307,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16015",
+      "county": "Boise County",
+      "sourceCountyName": "Boise",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 3323
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1247
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 128
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 93
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 4791,
+      "knownVoteSum": 4791,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16017",
+      "county": "Bonner County",
+      "sourceCountyName": "Bonner",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 17964
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 8079
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 601
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 377
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 27021,
+      "knownVoteSum": 27021,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16019",
+      "county": "Bonneville County",
+      "sourceCountyName": "Bonneville",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 36490
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 13913
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 1972
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 653
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 53028,
+      "knownVoteSum": 53028,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16021",
+      "county": "Boundary County",
+      "sourceCountyName": "Boundary",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 4800
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1212
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 131
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 115
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 6258,
+      "knownVoteSum": 6258,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16023",
+      "county": "Butte County",
+      "sourceCountyName": "Butte",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 1120
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 222
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 39
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 29
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 1410,
+      "knownVoteSum": 1410,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16025",
+      "county": "Camas County",
+      "sourceCountyName": "Camas",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 488
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 156
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 17
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 14
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 675,
+      "knownVoteSum": 675,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16027",
+      "county": "Canyon County",
+      "sourceCountyName": "Canyon",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 59060
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 26603
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 2550
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 1384
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 89597,
+      "knownVoteSum": 89597,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16029",
+      "county": "Caribou County",
+      "sourceCountyName": "Caribou",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 2603
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 442
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 97
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 54
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 3196,
+      "knownVoteSum": 3196,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16031",
+      "county": "Cassia County",
+      "sourceCountyName": "Cassia",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 7564
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1508
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 322
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 192
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 9586,
+      "knownVoteSum": 9586,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16033",
+      "county": "Clark County",
+      "sourceCountyName": "Clark",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 254
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 42
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 12
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 3
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 311,
+      "knownVoteSum": 311,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16035",
+      "county": "Clearwater County",
+      "sourceCountyName": "Clearwater",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 3357
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 883
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 104
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 35
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 4379,
+      "knownVoteSum": 4379,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16037",
+      "county": "Custer County",
+      "sourceCountyName": "Custer",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 1978
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 603
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 74
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 53
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 2708,
+      "knownVoteSum": 2708,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16039",
+      "county": "Elmore County",
+      "sourceCountyName": "Elmore",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 6797
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 2814
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 317
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 191
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 10119,
+      "knownVoteSum": 10119,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16041",
+      "county": "Franklin County",
+      "sourceCountyName": "Franklin",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 5678
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 585
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 217
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 134
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 6614,
+      "knownVoteSum": 6614,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16043",
+      "county": "Fremont County",
+      "sourceCountyName": "Fremont",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 5391
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1001
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 205
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 109
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 6706,
+      "knownVoteSum": 6706,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16045",
+      "county": "Gem County",
+      "sourceCountyName": "Gem",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 7546
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1957
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 268
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 141
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 9912,
+      "knownVoteSum": 9912,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16047",
+      "county": "Gooding County",
+      "sourceCountyName": "Gooding",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 4442
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1335
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 186
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 76
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 6039,
+      "knownVoteSum": 6039,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16049",
+      "county": "Idaho County",
+      "sourceCountyName": "Idaho",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 7629
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1532
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 214
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 106
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 9481,
+      "knownVoteSum": 9481,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16051",
+      "county": "Jefferson County",
+      "sourceCountyName": "Jefferson",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 11702
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1647
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 481
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 236
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 14066,
+      "knownVoteSum": 14066,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16053",
+      "county": "Jerome County",
+      "sourceCountyName": "Jerome",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 5450
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1978
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 249
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 111
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 7788,
+      "knownVoteSum": 7788,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16055",
+      "county": "Kootenai County",
+      "sourceCountyName": "Kootenai",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 61289
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 22945
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 2538
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 1183
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 87955,
+      "knownVoteSum": 87955,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16057",
+      "county": "Latah County",
+      "sourceCountyName": "Latah",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 9501
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 10373
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 532
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 187
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 20593,
+      "knownVoteSum": 20593,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16059",
+      "county": "Lemhi County",
+      "sourceCountyName": "Lemhi",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 3497
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1020
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 141
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 44
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 4702,
+      "knownVoteSum": 4702,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16061",
+      "county": "Lewis County",
+      "sourceCountyName": "Lewis",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 1420
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 357
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 38
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 33
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 1848,
+      "knownVoteSum": 1848,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16063",
+      "county": "Lincoln County",
+      "sourceCountyName": "Lincoln",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 1371
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 470
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 71
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 19
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 1931,
+      "knownVoteSum": 1931,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16065",
+      "county": "Madison County",
+      "sourceCountyName": "Madison",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 13517
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 2288
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 783
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 353
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 16941,
+      "knownVoteSum": 16941,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16067",
+      "county": "Minidoka County",
+      "sourceCountyName": "Minidoka",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 5930
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1587
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 307
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 99
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 7923,
+      "knownVoteSum": 7923,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16069",
+      "county": "Nez Perce County",
+      "sourceCountyName": "Nez Perce",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 13487
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 6510
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 684
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 155
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 20836,
+      "knownVoteSum": 20836,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16071",
+      "county": "Oneida County",
+      "sourceCountyName": "Oneida",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 2039
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 253
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 68
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 54
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 2414,
+      "knownVoteSum": 2414,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16073",
+      "county": "Owyhee County",
+      "sourceCountyName": "Owyhee",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 3643
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 910
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 106
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 82
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 4741,
+      "knownVoteSum": 4741,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16075",
+      "county": "Payette County",
+      "sourceCountyName": "Payette",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 8488
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 2308
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 306
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 131
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 11233,
+      "knownVoteSum": 11233,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16077",
+      "county": "Power County",
+      "sourceCountyName": "Power",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 2053
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 876
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 91
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 35
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 3055,
+      "knownVoteSum": 3055,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16079",
+      "county": "Shoshone County",
+      "sourceCountyName": "Shoshone",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 3904
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1747
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 181
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 97
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 5929,
+      "knownVoteSum": 5929,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16081",
+      "county": "Teton County",
+      "sourceCountyName": "Teton",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 2837
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 3251
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 180
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 42
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 6310,
+      "knownVoteSum": 6310,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16083",
+      "county": "Twin Falls County",
+      "sourceCountyName": "Twin Falls",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 24355
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 9776
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 1318
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 591
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 36040,
+      "knownVoteSum": 36040,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16085",
+      "county": "Valley County",
+      "sourceCountyName": "Valley",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 3862
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 2984
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 155
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 35
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 7036,
+      "knownVoteSum": 7036,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "geoLevel": "county",
+      "stateFips": "16",
+      "state": "Idaho",
+      "stateAbbr": "ID",
+      "countyFips": "16087",
+      "county": "Washington County",
+      "sourceCountyName": "Washington",
+      "contestId": "senate-2020-16-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "16-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "candidates": [
+        {
+          "name": "Jim Risch",
+          "party": "Republican",
+          "partyOriginal": "Republican",
+          "votes": 4050
+        },
+        {
+          "name": "Paulette Jordan",
+          "party": "Democrat",
+          "partyOriginal": "Democratic",
+          "votes": 1147
+        },
+        {
+          "name": "Natalie M. Fleming",
+          "party": "Other",
+          "partyOriginal": "Independent",
+          "votes": 104
+        },
+        {
+          "name": "Ray J. Writz",
+          "party": "Other",
+          "partyOriginal": "Constitutional",
+          "votes": 50
+        }
+      ],
+      "reportingCategories": [],
+      "totalVotes": 5351,
+      "knownVoteSum": 5351,
+      "totalVotesBasis": "Sum of all four published Senate candidate entries; never ballots cast. Source column titled Total Votes Cast is contest-level.",
+      "sourceId": "senate-completion-official-id-2020",
+      "sourceIds": [
+        "senate-completion-official-id-2020"
+      ],
+      "sourceLinks": [
+        "https://canvass.sos.idaho.gov/eng/contests/download/5724/show_granularity_dt_id%3A3/.csv",
+        "https://canvass.sos.idaho.gov/eng/contests/view/5724/"
+      ],
+      "sourcePublisher": "Idaho Secretary of State",
+      "retrievedAt": "2026-11-07T02:29:25.858525+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical results",
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "qualification": "All44county/four-candidate cells reconcile to published official statewide controls; exact named/party labels retained. This replacement does not remove upstream holds from unrelated records."
+    }
+  ]
+}

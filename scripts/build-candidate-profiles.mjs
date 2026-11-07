@@ -29,7 +29,7 @@ export function buildCandidateProfiles(){
   });
   assert.equal(profiles.length,winners.counts.leaders);assert.equal(new Set(profiles.map(p=>p.id)).size,profiles.length);assert.equal(new Set(profiles.map(p=>p.path)).size,profiles.length);
   const sourceHashes={winners:hash(winnerFile),pilot:hash(pilotFile),portraits:fs.existsSync(path.join(root,portraitFile))?hash(portraitFile):null};
-  const updatedAt=[pilot.reviewedAt,portraits.reviewedAt].filter(Boolean).sort((a,b)=>Date.parse(b)-Date.parse(a))[0];
+  const updatedAt=[pilot.reviewedAt,portraits.reviewedAt,...winners.results.flatMap(row=>[row.retrievedAt,row.sourceUpdatedAt])].filter(value=>value&&Number.isFinite(Date.parse(value))).sort((a,b)=>Date.parse(b)-Date.parse(a))[0];
   const counts={profiles:profiles.length,sourceReviewedPeople:profiles.filter(p=>p.accountability).length,portraits:profiles.filter(p=>p.portrait).length,photoUnavailable:profiles.filter(p=>!p.portrait).length};
   const data={schemaVersion:1,year:winners.year,snapshotDate:winners.snapshotDate,updatedAt,sourceHashes,counts,profiles};
   const cards={schemaVersion:1,year:winners.year,sourceHashes,profiles:profiles.map(p=>({id:p.id,path:p.path,displayName:p.displayName,reportedName:p.reportedName,portrait:p.portrait?{src:p.portrait.src,attribution:p.portrait.attribution}:null}))};

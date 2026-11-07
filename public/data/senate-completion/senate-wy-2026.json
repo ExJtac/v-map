@@ -1,0 +1,1817 @@
+{
+  "schemaVersion": 1,
+  "office": "senate",
+  "year": 2026,
+  "sources": {
+    "senate-current-official-wy-2026": {
+      "title": "Wyoming Secretary of State: 2026 unofficial statewide candidates summary, Senate county table",
+      "publisher": "Wyoming Secretary of State",
+      "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf",
+      "sourceUrl": "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf",
+      "sourceLocation": "PDF page1 of7, United States Senator table; all23counties and printed total",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sha256": "9bad3830a8413db6a375e8e2a072dfd7aa946b437fc8c91176c3c557faf51b41",
+      "file": "wy2026-statewide.pdf",
+      "license": "Official public election record; no separate reuse license asserted",
+      "extraction": "PDFtext has font-encoding corruption; OCRassisted transcription fully visually checked against retainedpage1render, arithmetic controls checked."
+    }
+  },
+  "results": [
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 5448
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 7675
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 92
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 2
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 186
+        }
+      ],
+      "totalVotes": 13215,
+      "knownVoteSum": 13215,
+      "county": "Albany County",
+      "countyFips": "56001",
+      "sourceCountyName": "Albany",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 3297
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 805
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 16
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 1
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 81
+        }
+      ],
+      "totalVotes": 4118,
+      "knownVoteSum": 4118,
+      "county": "Big Horn County",
+      "countyFips": "56003",
+      "sourceCountyName": "Big Horn",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 9094
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 2022
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 48
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 2
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 261
+        }
+      ],
+      "totalVotes": 11164,
+      "knownVoteSum": 11164,
+      "county": "Campbell County",
+      "countyFips": "56005",
+      "sourceCountyName": "Campbell",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 3060
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 1188
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 14
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 2
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 85
+        }
+      ],
+      "totalVotes": 4262,
+      "knownVoteSum": 4262,
+      "county": "Carbon County",
+      "countyFips": "56007",
+      "sourceCountyName": "Carbon",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 3515
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 846
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 17
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 3
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 110
+        }
+      ],
+      "totalVotes": 4378,
+      "knownVoteSum": 4378,
+      "county": "Converse County",
+      "countyFips": "56009",
+      "sourceCountyName": "Converse",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 2659
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 427
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 20
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 0
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 56
+        }
+      ],
+      "totalVotes": 3106,
+      "knownVoteSum": 3106,
+      "county": "Crook County",
+      "countyFips": "56011",
+      "sourceCountyName": "Crook",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 7981
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 4936
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 63
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 5
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 251
+        }
+      ],
+      "totalVotes": 12980,
+      "knownVoteSum": 12980,
+      "county": "Fremont County",
+      "countyFips": "56013",
+      "sourceCountyName": "Fremont",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 3539
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 966
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 24
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 2
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 50
+        }
+      ],
+      "totalVotes": 4529,
+      "knownVoteSum": 4529,
+      "county": "Goshen County",
+      "countyFips": "56015",
+      "sourceCountyName": "Goshen",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 1577
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 501
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 14
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 2
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 60
+        }
+      ],
+      "totalVotes": 2092,
+      "knownVoteSum": 2092,
+      "county": "Hot Springs County",
+      "countyFips": "56017",
+      "sourceCountyName": "Hot Springs",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 2747
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 804
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 29
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 2
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 76
+        }
+      ],
+      "totalVotes": 3580,
+      "knownVoteSum": 3580,
+      "county": "Johnson County",
+      "countyFips": "56019",
+      "sourceCountyName": "Johnson",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 17258
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 12919
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 192
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 3
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 257
+        }
+      ],
+      "totalVotes": 30369,
+      "knownVoteSum": 30369,
+      "county": "Laramie County",
+      "countyFips": "56021",
+      "sourceCountyName": "Laramie",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 5835
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 1526
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 30
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 2
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 122
+        }
+      ],
+      "totalVotes": 7391,
+      "knownVoteSum": 7391,
+      "county": "Lincoln County",
+      "countyFips": "56023",
+      "sourceCountyName": "Lincoln",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 14246
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 7690
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 129
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 5
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 410
+        }
+      ],
+      "totalVotes": 22065,
+      "knownVoteSum": 22065,
+      "county": "Natrona County",
+      "countyFips": "56025",
+      "sourceCountyName": "Natrona",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 800
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 125
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 1
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 0
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 22
+        }
+      ],
+      "totalVotes": 926,
+      "knownVoteSum": 926,
+      "county": "Niobrara County",
+      "countyFips": "56027",
+      "sourceCountyName": "Niobrara",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 8701
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 3153
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 73
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 7
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 259
+        }
+      ],
+      "totalVotes": 11927,
+      "knownVoteSum": 11927,
+      "county": "Park County",
+      "countyFips": "56029",
+      "sourceCountyName": "Park",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 2789
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 727
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 21
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 1
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 63
+        }
+      ],
+      "totalVotes": 3537,
+      "knownVoteSum": 3537,
+      "county": "Platte County",
+      "countyFips": "56031",
+      "sourceCountyName": "Platte",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 8073
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 3966
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 78
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 4
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 232
+        }
+      ],
+      "totalVotes": 12117,
+      "knownVoteSum": 12117,
+      "county": "Sheridan County",
+      "countyFips": "56033",
+      "sourceCountyName": "Sheridan",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 2657
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 989
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 26
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 2
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 101
+        }
+      ],
+      "totalVotes": 3672,
+      "knownVoteSum": 3672,
+      "county": "Sublette County",
+      "countyFips": "56035",
+      "sourceCountyName": "Sublette",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 7241
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 3766
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 35
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 8
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 226
+        }
+      ],
+      "totalVotes": 11042,
+      "knownVoteSum": 11042,
+      "county": "Sweetwater County",
+      "countyFips": "56037",
+      "sourceCountyName": "Sweetwater",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 2744
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 7557
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 71
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 14
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 149
+        }
+      ],
+      "totalVotes": 10372,
+      "knownVoteSum": 10372,
+      "county": "Teton County",
+      "countyFips": "56039",
+      "sourceCountyName": "Teton",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 4658
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 1512
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 24
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 1
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 154
+        }
+      ],
+      "totalVotes": 6194,
+      "knownVoteSum": 6194,
+      "county": "Uinta County",
+      "countyFips": "56041",
+      "sourceCountyName": "Uinta",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 2161
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 602
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 8
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 1
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 47
+        }
+      ],
+      "totalVotes": 2771,
+      "knownVoteSum": 2771,
+      "county": "Washakie County",
+      "countyFips": "56043",
+      "sourceCountyName": "Washakie",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 2077
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 395
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 14
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 1
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 67
+        }
+      ],
+      "totalVotes": 2486,
+      "knownVoteSum": 2486,
+      "county": "Weston County",
+      "countyFips": "56045",
+      "sourceCountyName": "Weston",
+      "countyFipsBasis": "Exactunique countyname withinWyoming matchedto existing23county baseline inventory."
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "56",
+      "state": "Wyoming",
+      "stateAbbr": "WY",
+      "contestId": "senate-2026-56-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "56-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-current-official-wy-2026",
+      "sourceIds": [
+        "senate-current-official-wy-2026"
+      ],
+      "sourceLinks": [
+        "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+      ],
+      "sourcePublisher": "Wyoming Secretary of State",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+      "sourceTimestampOriginal": "11/3/26 23:54:49 MST",
+      "sourceTimestampBasis": "PDFpage1 explicitlyMST, UTC-07",
+      "asOf": "2026-11-03T23:54:49-07:00",
+      "asOfBasis": "Printed source last-updatedtimestamp, not retrievaltime",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "certificationStatus": "not certified",
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "Sum of two named Senate candidates plus separatelyclassified write-ins; overvotes/undervotes excluded; never ballotscast.",
+      "reportingNote": "PDF23of23counties reporting describes geographic scope, not completedcounting or certification.",
+      "geoLevel": "state",
+      "candidates": [
+        {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 122157
+        },
+        {
+          "name": "James Byrd",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 65097
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Write-Ins",
+          "category": "unattributedWriteIns",
+          "votes": 1039
+        },
+        {
+          "name": "Overvotes",
+          "category": "overvotes",
+          "votes": 70
+        },
+        {
+          "name": "Undervotes",
+          "category": "undervotes",
+          "votes": 3325
+        }
+      ],
+      "totalVotes": 188293,
+      "knownVoteSum": 188293
+    }
+  ]
+}

@@ -1868,3 +1868,7 @@ html { scrollbar-gutter: stable; }
 .county-source-context details{padding-top:12px;border-top:1px solid #dce5df;font-size:14px}
 .county-source-context summary{cursor:pointer;font-weight:700}
 @media(max-width:600px){.county-source-context{margin:14px 12px;padding:19px}.county-source-context h2{font-size:22px}}
+
+.research-progress{margin:20px 0;padding:22px;border:1px solid #c9d9ce;border-radius:12px;background:#f5f8f3}.research-progress h2{font-size:23px;margin:0 0 12px}.research-progress>p{font-size:16px;line-height:1.65}.research-progress-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:18px 0}.research-progress-cards article{min-width:0;padding:18px;background:white;border:1px solid #d4dfd6;border-radius:9px}.research-progress-cards h3{font-size:19px;margin:0 0 12px}.research-progress-cards dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.research-progress-cards dt{font-size:14px;line-height:1.5}.research-progress-cards dd{margin:6px 0;font-size:26px;font-weight:750}.research-progress-cards p{font-size:14px;line-height:1.6}.research-progress>a{font-weight:700;line-height:1.5}@media(max-width:760px){.research-progress-cards{grid-template-columns:1fr}.research-progress{padding:18px}.research-progress-cards dl{gap:8px}.research-progress-cards dt{font-size:13px}}
+
+.research-progress>summary{font-size:18px;font-weight:750;cursor:pointer;line-height:1.5}.research-progress[open]>h2{margin-top:22px}

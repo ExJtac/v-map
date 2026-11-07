@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "year": 2026,
   "sourceHashes": {
-    "winners": "f815acab51d2814ccaf4d4fbd24516c9c2dd0304b067b036db69cd61641a7122",
+    "winners": "bdebaf0a126facf656d3653a5065fc4e3ed5a3996e3e6ae24bd070a6902b528e",
     "pilot": "1bfd2da42d6595f296eabcc9f789b327bfffca326e1a7669b4396168f7cd0962",
     "portraits": "4cccda679817d26a9ae20ad6997438da9191034a802d07d4ba5606afb35427f2"
   },
@@ -86,6 +86,13 @@
       "portrait": null
     },
     {
+      "id": "p2026-a8f512c4",
+      "path": "people/2026/senate-21-andy-barr-a8f512c4/",
+      "displayName": "Andy BARR",
+      "reportedName": "Andy BARR",
+      "portrait": null
+    },
+    {
       "id": "p2026-7a91c262",
       "path": "people/2026/senate-22-julia-letlow-7a91c262/",
       "displayName": "Julia Letlow",
@@ -157,6 +164,13 @@
       }
     },
     {
+      "id": "p2026-ef1016ad",
+      "path": "people/2026/senate-41-jeff-merkley-ef1016ad/",
+      "displayName": "Jeff Merkley",
+      "reportedName": "Jeff Merkley",
+      "portrait": null
+    },
+    {
       "id": "p2026-212b8230",
       "path": "people/2026/senate-44-john-f-reed-dem-212b8230/",
       "displayName": "John F. Reed (DEM)",
@@ -199,6 +213,20 @@
         "src": "people-photos/W000805.jpg",
         "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide W000805"
       }
+    },
+    {
+      "id": "p2026-d0d322e9",
+      "path": "people/2026/senate-54-shelley-moore-capito-d0d322e9/",
+      "displayName": "SHELLEY MOORE CAPITO",
+      "reportedName": "SHELLEY MOORE CAPITO",
+      "portrait": null
+    },
+    {
+      "id": "p2026-6c63b6c9",
+      "path": "people/2026/senate-56-harriet-hageman-6c63b6c9/",
+      "displayName": "Harriet Hageman",
+      "reportedName": "Harriet Hageman",
+      "portrait": null
     },
     {
       "id": "p2026-59219057",
@@ -1424,48 +1452,45 @@
       "portrait": null
     },
     {
-      "id": "p2026-31ba9b0b",
-      "path": "people/2026/house-22-steve-scalise-31ba9b0b/",
-      "displayName": "Steve Scalise",
-      "reportedName": "Steve Scalise",
-      "portrait": {
-        "src": "people-photos/S001176.jpg",
-        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001176"
-      }
-    },
-    {
-      "id": "p2026-97b85a82",
-      "path": "people/2026/house-22-troy-a-carter-sr-97b85a82/",
-      "displayName": "Troy A. Carter, Sr.",
-      "reportedName": "Troy A. Carter, Sr.",
+      "id": "p2026-571e0ad9",
+      "path": "people/2026/house-21-james-r-comer-571e0ad9/",
+      "displayName": "James R. COMER",
+      "reportedName": "James R. COMER",
       "portrait": null
     },
     {
-      "id": "p2026-b5354258",
-      "path": "people/2026/house-22-clay-higgins-b5354258/",
-      "displayName": "\"Clay\" Higgins",
-      "reportedName": "\"Clay\" Higgins",
+      "id": "p2026-97be5868",
+      "path": "people/2026/house-21-s-brett-guthrie-97be5868/",
+      "displayName": "S. Brett GUTHRIE",
+      "reportedName": "S. Brett GUTHRIE",
       "portrait": null
     },
     {
-      "id": "p2026-f59ae3b4",
-      "path": "people/2026/house-22-mike-johnson-f59ae3b4/",
-      "displayName": "\"Mike\" Johnson",
-      "reportedName": "\"Mike\" Johnson",
+      "id": "p2026-17dc89d1",
+      "path": "people/2026/house-21-morgan-mcgarvey-17dc89d1/",
+      "displayName": "Morgan McGARVEY",
+      "reportedName": "Morgan McGARVEY",
       "portrait": null
     },
     {
-      "id": "p2026-c23d6a96",
-      "path": "people/2026/house-22-patricia-pat-moore-c23d6a96/",
-      "displayName": "Patricia \"Pat\" Moore",
-      "reportedName": "Patricia \"Pat\" Moore",
+      "id": "p2026-2aa5cf65",
+      "path": "people/2026/house-21-ed-gallrein-2aa5cf65/",
+      "displayName": "Ed GALLREIN",
+      "reportedName": "Ed GALLREIN",
       "portrait": null
     },
     {
-      "id": "p2026-a12c1ca4",
-      "path": "people/2026/house-22-chauna-banks-a12c1ca4/",
-      "displayName": "Chauna Banks",
-      "reportedName": "Chauna Banks",
+      "id": "p2026-9840128c",
+      "path": "people/2026/house-21-hal-rogers-9840128c/",
+      "displayName": "Hal ROGERS",
+      "reportedName": "Hal ROGERS",
+      "portrait": null
+    },
+    {
+      "id": "p2026-d134e74d",
+      "path": "people/2026/house-21-zach-dembo-d134e74d/",
+      "displayName": "Zach DEMBO",
+      "reportedName": "Zach DEMBO",
       "portrait": null
     },
     {
@@ -2783,6 +2808,27 @@
         "src": "people-photos/S001159.jpg",
         "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001159"
       }
+    },
+    {
+      "id": "p2026-1f67d7c5",
+      "path": "people/2026/house-54-carol-miller-1f67d7c5/",
+      "displayName": "CAROL MILLER",
+      "reportedName": "CAROL MILLER",
+      "portrait": null
+    },
+    {
+      "id": "p2026-50c855cf",
+      "path": "people/2026/house-54-riley-moore-50c855cf/",
+      "displayName": "RILEY MOORE",
+      "reportedName": "RILEY MOORE",
+      "portrait": null
+    },
+    {
+      "id": "p2026-a583b6fd",
+      "path": "people/2026/house-56-chuck-gray-a583b6fd/",
+      "displayName": "Chuck Gray",
+      "reportedName": "Chuck Gray",
+      "portrait": null
     },
     {
       "id": "p2026-244a7f9f",

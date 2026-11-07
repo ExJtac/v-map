@@ -1,0 +1,2724 @@
+{
+  "schemaVersion": 1,
+  "office": "senate",
+  "year": 2020,
+  "sources": {
+    "senate-completion-official-or-2020": {
+      "title": "Oregon Secretary of State: November 3, 2020 General Election Abstract, Senate county table (original document mirrored by UCSB)",
+      "publisher": "Oregon Secretary of State",
+      "url": "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+      "sourceUrl": "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+      "originalOfficialUrl": "https://sos.oregon.gov/elections/Documents/results/november-general-2020.pdf",
+      "officialUrlAccessStatus": "Currentdirectreader/native404; fullofficial-URLindexedextractionretainedandall185tablecellsreconciletoactualoriginal-documentmirror.",
+      "sourceLocation": "PDFpage2, USSenatortable,36countiesplusTotal",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sha256": "fc98c9712c09b0e9179e1208e70a754b56bf327dea22a1fe92194ee1f64dd474",
+      "documentHost": "UCSBAmericanPresidencyProject;notdirectcurrentofficialhostdownload",
+      "indexedOfficialExtractionSha256": "9dc6d6162909eae142b3c337bd138f8f5cfbc4a4f812124a299409a616621ce1",
+      "license": "Officialpublicelectionrecord; no separatereuselicenseasserted",
+      "miscClassificationSource": "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf",
+      "miscClassificationSha256": "e4e6d5efd911ff02bffffb47180d05278f98a07655bd390d078904f545d12836",
+      "miscClassificationLocator": "FEC Federal Elections2020 PDFpage85/printed80: Oregon Senate Scattered W2402; PDFpage189/printed184party legend W=Write-In. Allfour namedcandidate controls and Misc2402reconcile to officialabstractcountytable.",
+      "miscClassificationLimit": "FEC independentlycompilesofficial2020statewidecontrols; individualwrite-inidentity/partyaffiliation remainsunassigned. Supportingcurrentmanualterminology isnotusedalone toclassifyhistoricalcells."
+    }
+  },
+  "results": [
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 6863
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 2633
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 71
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 176
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 7,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 9750,
+      "knownVoteSum": 9750,
+      "county": "Baker County",
+      "countyFips": "41001",
+      "sourceCountyName": "Baker",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 14811
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 35021
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 1118
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 1041
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 52,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 52043,
+      "knownVoteSum": 52043,
+      "county": "Benton County",
+      "countyFips": "41003",
+      "sourceCountyName": "Benton",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 106838
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 134813
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 3995
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 4767
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 227,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 250640,
+      "knownVoteSum": 250640,
+      "county": "Clackamas County",
+      "countyFips": "41005",
+      "sourceCountyName": "Clackamas",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 9623
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 13052
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 391
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 438
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 20,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 23524,
+      "knownVoteSum": 23524,
+      "county": "Clatsop County",
+      "countyFips": "41007",
+      "sourceCountyName": "Clatsop",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 15948
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 14375
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 507
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 767
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 40,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 31637,
+      "knownVoteSum": 31637,
+      "county": "Columbia County",
+      "countyFips": "41009",
+      "sourceCountyName": "Columbia",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 20051
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 14885
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 470
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 676
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 24,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 36106,
+      "knownVoteSum": 36106,
+      "county": "Coos County",
+      "countyFips": "41011",
+      "sourceCountyName": "Coos",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 10628
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 4133
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 118
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 250
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 17,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 15146,
+      "knownVoteSum": 15146,
+      "county": "Crook County",
+      "countyFips": "41013",
+      "sourceCountyName": "Crook",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 7993
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 6170
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 170
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 268
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 7,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 14608,
+      "knownVoteSum": 14608,
+      "county": "Curry County",
+      "countyFips": "41015",
+      "sourceCountyName": "Curry",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 53285
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 65264
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 1769
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 2244
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 128,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 122690,
+      "knownVoteSum": 122690,
+      "county": "Deschutes County",
+      "countyFips": "41017",
+      "sourceCountyName": "Deschutes",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 40036
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 20707
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 660
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 1217
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 65,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 62685,
+      "knownVoteSum": 62685,
+      "county": "Douglas County",
+      "countyFips": "41019",
+      "sourceCountyName": "Douglas",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 765
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 373
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 8
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 18
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 3,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 1167,
+      "knownVoteSum": 1167,
+      "county": "Gilliam County",
+      "countyFips": "41021",
+      "sourceCountyName": "Gilliam",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 3273
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 1119
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 27
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 89
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 5,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 4513,
+      "knownVoteSum": 4513,
+      "county": "Grant County",
+      "countyFips": "41023",
+      "sourceCountyName": "Grant",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 3213
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 1055
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 38
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 65
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 6,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 4377,
+      "knownVoteSum": 4377,
+      "county": "Harney County",
+      "countyFips": "41025",
+      "sourceCountyName": "Harney",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 3821
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 8619
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 209
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 229
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 7,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 12885,
+      "knownVoteSum": 12885,
+      "county": "Hood River County",
+      "countyFips": "41027",
+      "sourceCountyName": "Hood River",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 61010
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 59093
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 1901
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 2217
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 82,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 124303,
+      "knownVoteSum": 124303,
+      "county": "Jackson County",
+      "countyFips": "41029",
+      "sourceCountyName": "Jackson",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 6810
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 4591
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 130
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 206
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 15,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 11752,
+      "knownVoteSum": 11752,
+      "county": "Jefferson County",
+      "countyFips": "41031",
+      "sourceCountyName": "Jefferson",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 29685
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 18697
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 789
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 986
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 68,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 50225,
+      "knownVoteSum": 50225,
+      "county": "Josephine County",
+      "countyFips": "41033",
+      "sourceCountyName": "Josephine",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 23579
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 11237
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 435
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 702
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 29,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 35982,
+      "knownVoteSum": 35982,
+      "county": "Klamath County",
+      "countyFips": "41035",
+      "sourceCountyName": "Klamath",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 3261
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 908
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 29
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 63
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 4,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 4265,
+      "knownVoteSum": 4265,
+      "county": "Lake County",
+      "countyFips": "41037",
+      "sourceCountyName": "Lake",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 75550
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 133033
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 4497
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 3842
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 236,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 217158,
+      "knownVoteSum": 217158,
+      "county": "Lane County",
+      "countyFips": "41039",
+      "sourceCountyName": "Lane",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 11628
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 17485
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 524
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 546
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 25,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 30208,
+      "knownVoteSum": 30208,
+      "county": "Lincoln County",
+      "countyFips": "41041",
+      "sourceCountyName": "Lincoln",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 40801
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 27048
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 1079
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 1618
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 98,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 70644,
+      "knownVoteSum": 70644,
+      "county": "Linn County",
+      "countyFips": "41043",
+      "sourceCountyName": "Linn",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 7882
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 3353
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 124
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 230
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 7,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 11596,
+      "knownVoteSum": 11596,
+      "county": "Malheur County",
+      "countyFips": "41045",
+      "sourceCountyName": "Malheur",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 75908
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 79990
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 2683
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 3221
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 212,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 162014,
+      "knownVoteSum": 162014,
+      "county": "Marion County",
+      "countyFips": "41047",
+      "sourceCountyName": "Marion",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 3324
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 1558
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 41
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 109
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 3,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 5035,
+      "knownVoteSum": 5035,
+      "county": "Morrow County",
+      "countyFips": "41049",
+      "sourceCountyName": "Morrow",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 78673
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 356870
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 11669
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 6775
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 431,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 454418,
+      "knownVoteSum": 454418,
+      "county": "Multnomah County",
+      "countyFips": "41051",
+      "sourceCountyName": "Multnomah",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 22931
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 22893
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 725
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 928
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 54,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 47531,
+      "knownVoteSum": 47531,
+      "county": "Polk County",
+      "countyFips": "41053",
+      "sourceCountyName": "Polk",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 845
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 302
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 6
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 26
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 0,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 1179,
+      "knownVoteSum": 1179,
+      "county": "Sherman County",
+      "countyFips": "41055",
+      "sourceCountyName": "Sherman",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 7768
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 8326
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 213
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 270
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 12,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 16589,
+      "knownVoteSum": 16589,
+      "county": "Tillamook County",
+      "countyFips": "41057",
+      "sourceCountyName": "Tillamook",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 19876
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 11253
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 339
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 696
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 30,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 32194,
+      "knownVoteSum": 32194,
+      "county": "Umatilla County",
+      "countyFips": "41059",
+      "sourceCountyName": "Umatilla",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 9674
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 4545
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 145
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 230
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 11,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 14605,
+      "knownVoteSum": 14605,
+      "county": "Union County",
+      "countyFips": "41061",
+      "sourceCountyName": "Union",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 3267
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 1702
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 37
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 65
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 0,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 5071,
+      "knownVoteSum": 5071,
+      "county": "Wallowa County",
+      "countyFips": "41063",
+      "sourceCountyName": "Wallowa",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 6572
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 6716
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 208
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 290
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 13,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 13799,
+      "knownVoteSum": 13799,
+      "county": "Wasco County",
+      "countyFips": "41065",
+      "sourceCountyName": "Wasco",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 97799
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 202073
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 6206
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 6131
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 409,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 312618,
+      "knownVoteSum": 312618,
+      "county": "Washington County",
+      "countyFips": "41067",
+      "sourceCountyName": "Washington",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 646
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 262
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 8
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 16
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 0,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 932,
+      "knownVoteSum": 932,
+      "county": "Wheeler County",
+      "countyFips": "41069",
+      "sourceCountyName": "Wheeler",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "county",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 28177
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 26893
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 900
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 1335
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 55,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 57360,
+      "knownVoteSum": 57360,
+      "county": "Yamhill County",
+      "countyFips": "41071",
+      "sourceCountyName": "Yamhill",
+      "countyFipsBasis": "UniqueexactcountynamewithinOregonmatchedtoexisting36countybaselineinventory."
+    },
+    {
+      "office": "senate",
+      "year": 2020,
+      "stateFips": "41",
+      "state": "Oregon",
+      "stateAbbr": "OR",
+      "contestId": "senate-2020-41-state-general-False",
+      "stage": "general",
+      "special": false,
+      "electionDate": "2020-11-03",
+      "sourceSeatId": "41-senate-class-2",
+      "seatClass": 2,
+      "seatIdentitySource": "https://www.senate.gov/senators/Class_II.htm",
+      "sourceId": "senate-completion-official-or-2020",
+      "sourceIds": [
+        "senate-completion-official-or-2020"
+      ],
+      "sourceLinks": [
+        "https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf",
+        "https://www.fec.gov/resources/cms-content/documents/federalelections2020.pdf"
+      ],
+      "sourcePublisher": "Oregon Secretary of State",
+      "retrievedAt": "2026-11-07T20:45:10.742861+00:00",
+      "sourceUpdatedAt": null,
+      "resultStatus": "official historical abstract",
+      "final": true,
+      "unofficial": false,
+      "provisional": false,
+      "sourceNeedsReview": false,
+      "totalVotesBasis": "FourpublishednamedSenatecandidatesplusseparatelyclassifiedMisc.write-inentries; neverballotscast.",
+      "geoLevel": "state",
+      "candidates": [
+        {
+          "name": "Jo Rae Perkins",
+          "party": "Republican",
+          "partyOriginal": "R",
+          "votes": 912814
+        },
+        {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "partyOriginal": "D",
+          "votes": 1321047
+        },
+        {
+          "name": "Ibrahim A. Taher",
+          "party": "Other",
+          "partyOriginal": "PG",
+          "votes": 42239
+        },
+        {
+          "name": "Gary Dye",
+          "party": "Other",
+          "partyOriginal": "L",
+          "votes": 42747
+        }
+      ],
+      "reportingCategories": [
+        {
+          "name": "Misc.",
+          "category": "unattributedWriteIns",
+          "votes": 2402,
+          "sourceLabel": "Misc.",
+          "classificationBasis": "FEC2020officialScatteredW2402controlandW=Write-Inlegend; all36Misc.cellsreconcileto aggregate andnamedcandidatecontrols; unassignedtoparties."
+        }
+      ],
+      "totalVotes": 2321249,
+      "knownVoteSum": 2321249
+    }
+  ]
+}

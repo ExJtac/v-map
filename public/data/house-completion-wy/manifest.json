@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "house-completion-wy2022": {
+      "title": "Wyoming Secretary of State2022officialstatewideHousecountytable",
+      "publisher": "Wyoming Secretary of State",
+      "url": "https://sos.wyo.gov/Elections/Docs/2022/Results/General/2022_General_Statewide_Candidates_Summary.pdf",
+      "sourceUrl": "https://sos.wyo.gov/Elections/Docs/2022/Results/General/2022_General_Statewide_Candidates_Summary.pdf",
+      "sha256": "0fa06cb64a5924a4b646d0840d0c2b61075bf1d4c10c1ea3848e0e6bf176f73b",
+      "retrievedAt": "2026-11-07T20:36:32.076452+00:00",
+      "sourceLocation": "PDFpage1of6",
+      "license": "Official public election facts; no separate blanket reuse license asserted",
+      "extraction": "Normal pdftotext-layout on page1of6; all23rows visuallychecked against actualrender; namedheader andcolumnorder preserved."
+    },
+    "house-completion-wy2026": {
+      "title": "Wyoming Secretary of State2026unofficialstatewideHousecountytable",
+      "publisher": "Wyoming Secretary of State",
+      "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf",
+      "sourceUrl": "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf",
+      "sha256": "9bad3830a8413db6a375e8e2a072dfd7aa946b437fc8c91176c3c557faf51b41",
+      "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+      "sourceLocation": "PDFpage2of7",
+      "license": "Official public election facts; no separate blanket reuse license asserted",
+      "extraction": "Manually transcribed all23county rows plusprintedtotal from actual rendered PDFpage2of7, including all7columns; rawfonttextcorrupted and nottreated as parsedvotes. Entirepage visuallyinspected."
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-wy/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 24,
+      "stateCount": 1,
+      "countyCount": 23,
+      "candidateCount": 96,
+      "countyDistrictIntersections": true
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-wy/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 24,
+      "stateCount": 1,
+      "countyCount": 23,
+      "candidateCount": 96,
+      "countyDistrictIntersections": true
+    }
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T20:40:40.918279+00:00",
+    "evidenceSha256": "bd48b5cf7287c8f7da450b182ccd7bb164956519abcd43c2bee53b016edc66cd",
+    "approvalReceiptSha256": "ed4f3f3aa679be49dc0f02382480f6ebc3b7480dedfcd58299d99bc260d65c65"
+  },
+  "limitations": [
+    "Wyoming is at large in both years; all actual county rows are used without allocation.",
+    "The 2026 printed source is unofficial and dated November3,2026 23:54:49MST. This is a dated report, not a live or completed count.",
+    "Different candidates and competition can affect the comparison. State-source candidate spelling is retained where FEC given-name text differs.",
+    "Overvotes and undervotes remain separate source accounting fields and are excluded from race-vote totals."
+  ]
+}

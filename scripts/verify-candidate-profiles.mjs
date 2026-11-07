@@ -5,7 +5,7 @@ import {renderPersonProfile,escapeProfileHtml} from '../src/person-profile-rende
 import {renderProfileDocument} from './prerender-profiles.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));const file='public/data/candidates/profiles-2026.json',bytes=fs.readFileSync(path.join(root,file)),data=JSON.parse(bytes),hash=crypto.createHash('sha256').update(bytes).digest('hex');
 assert.deepEqual(data,buildCandidateProfiles().data,'Profile inventory must reproduce from exact source snapshots.');
-assert.equal(data.profiles.length,330);assert.equal(new Set(data.profiles.map(p=>p.path)).size,330);assert.equal(data.profiles.filter(p=>p.accountability).length,12);
+const expectedCount=JSON.parse(fs.readFileSync(path.join(root,'public/data/winners/2026.json'))).results.filter(r=>r.leader).length;assert.ok(expectedCount>300);assert.equal(data.profiles.length,expectedCount);assert.equal(new Set(data.profiles.map(p=>p.path)).size,expectedCount);assert.equal(data.profiles.filter(p=>p.accountability).length,12);
 const template=fs.readFileSync(path.join(root,'people/index.html'),'utf8');
 for(const base of ['/','/vmap/'])for(const profile of data.profiles){
  const html=renderProfileDocument(template,profile,{base,sourceHash:hash,snapshotDate:data.snapshotDate,updatedAt:data.updatedAt});

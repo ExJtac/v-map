@@ -34,7 +34,7 @@ function appendQuickResults(container, rows, office, year, id, contestFiltered =
   if (office === 'geography' || !rows?.length) return;
   const aggregate = office==='house' && !contestFiltered && String(id).length===5 ? auditedHouseCounts(getPatternReviewReport(),id,year) : null;
   if (rows.length !== 1 && (!aggregate || aggregate.reason)) {
-    container.append(node('p','county-tip-note',`${rows.length} separate contests or district portions are available below; they are not added into one county vote total.`));
+    container.append(node('p','county-tip-note',office==='house'?`${rows.length} actual district portions are listed separately. Qualified historical comparisons use complete countywide aggregates where the source scope has been independently verified.`:`${rows.length} separate contests are available below; they are not added into one county vote total.`));
     if(office==='house') {
       const table=node('table','quick-portions',''),head=node('tr','','');
       for(const text of ['District / stage','Republican','Democratic','Contest total'])head.append(node('th','',text));table.append(head);
@@ -53,9 +53,12 @@ function appendQuickResults(container, rows, office, year, id, contestFiltered =
 }
 export async function renderCountyMetrics(container, { name, state, id, office, year, years, rows, population, contestFiltered }, isCurrent = () => true) {
   container.replaceChildren(node('strong', 'county-tip-title', `${name} · ${state}`));
-  appendQuickResults(container,rows,office,year,id,contestFiltered);
+  const quick=node('div','county-quick-area','');container.append(quick);
+  appendQuickResults(quick,rows,office,year,id,contestFiltered);
   await appendPatternReview(container, { office, year, id, rows }, isCurrent);
   if (!isCurrent()) return;
+  // The audit can arrive after the initial quick rows; refresh once it is qualified.
+  quick.replaceChildren();appendQuickResults(quick,rows,office,year,id,contestFiltered);
   let populationData;
   try { populationData = await loadPopulation(); } catch { /* Other county facts remain available. */ }
   if (!isCurrent()) return;

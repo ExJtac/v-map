@@ -36,18 +36,20 @@ export function qualifiedRaceCounts(rows, {office, year, level, id}) {
   return {total,...named};
 }
 export function auditedHouseCounts(report, id, year) {
-  if (!['04','30'].includes(String(id).slice(0,2)) || ![2022,2026].includes(year)) return {reason:'Complete House county-district scope is not independently qualified for this year.'};
+  if (![2022,2026].includes(year)) return {reason:'Complete House county-district scope is not independently qualified for this year.'};
+  const state=String(id).slice(0,2),contract=state==='04'?report?.comparabilityContracts?.azHouse:state==='30'?report?.comparabilityContracts?.montanaHouse:report?.comparabilityContracts?.houseStates?.[state];
+  if(!contract?.verified)return {reason:contract?.reason||'Complete House county-district scope is not independently qualified for this state.'};
   const office = report?.counties?.[id]?.offices?.house;
   const race = office?.reviewScreens?.raceVoteChange;
-  const party = office?.reviewScreens?.partyCountChange;
   const e = race?.evidence;
-  if (race?.status !== 'assessed' || !e?.comparability || e.baselineYear !== 2022 || e.currentYear !== 2026) return {reason:race?.reason || 'Audited whole-county House race totals unavailable.'};
+  if (race?.status !== 'assessed' || !e?.comparability || e.comparability.id!==contract.id || e.baselineYear !== 2022 || e.currentYear !== 2026) return {reason:race?.reason || 'Audited whole-county House race totals unavailable.'};
   const current = year === e.currentYear;
   const total = current ? e.currentRaceVotes : e.priorRaceVotes;
-  const d = current ? e.currentDemocratVotes : e.priorDemocratVotes;
-  const r = current ? e.currentRepublicanVotes : e.priorRepublicanVotes;
+  const typed=current?e.currentNamedPartyCounts:e.priorNamedPartyCounts;
+  const d=typed?typed.democrat:current?e.currentDemocratVotes:e.priorDemocratVotes;
+  const r=typed?typed.republican:current?e.currentRepublicanVotes:e.priorRepublicanVotes;
   if (!integer(total)) return {reason:'Audited House race count unavailable.'};
-  return {total,democrat:party?.status === 'assessed' && integer(d) ? d : null,republican:party?.status === 'assessed' && integer(r) ? r : null,provisional:current,sourceIds:[(current ? e.currentSource : e.priorSource)?.sourceId].filter(Boolean),scope:e.comparability.id};
+  return {total,democrat:integer(d)?d:null,republican:integer(r)?r:null,provisional:current,sourceIds:[...new Set([...(current?e.currentSource:e.priorSource)?.sourceIds||[],(current?e.currentSource:e.priorSource)?.sourceId].filter(Boolean))],scope:e.comparability.id};
 }
 export function historyPoint(year, counts, populations = []) {
   const populationYear = year === 2026 ? 2025 : year;

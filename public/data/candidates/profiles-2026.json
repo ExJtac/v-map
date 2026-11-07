@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
   "year": 2026,
-  "snapshotDate": "2026-11-06",
-  "updatedAt": "2026-11-07T18:48:08.257897+00:00",
+  "snapshotDate": "2026-11-07",
+  "updatedAt": "2026-11-07T20:50:59.619Z",
   "sourceHashes": {
-    "winners": "f815acab51d2814ccaf4d4fbd24516c9c2dd0304b067b036db69cd61641a7122",
+    "winners": "bdebaf0a126facf656d3653a5065fc4e3ed5a3996e3e6ae24bd070a6902b528e",
     "pilot": "1bfd2da42d6595f296eabcc9f789b327bfffca326e1a7669b4396168f7cd0962",
     "portraits": "4cccda679817d26a9ae20ad6997438da9191034a802d07d4ba5606afb35427f2"
   },
   "counts": {
-    "profiles": 330,
+    "profiles": 337,
     "sourceReviewedPeople": 12,
-    "portraits": 216,
-    "photoUnavailable": 114
+    "portraits": 215,
+    "photoUnavailable": 122
   },
   "profiles": [
     {
@@ -42,6 +42,7 @@
           "margin": 9.497000664930063
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -298,6 +299,7 @@
           "margin": 0.29803539930661155
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -562,6 +564,7 @@
           "margin": 11.847707956442202
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -821,6 +824,7 @@
           "margin": 24.785869685942206
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1132,6 +1136,7 @@
           "margin": 27.130392926944737
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1179,6 +1184,7 @@
           "margin": 2.8861024783804954
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1224,6 +1230,7 @@
           "margin": 18.00194163455161
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1290,6 +1297,7 @@
           "margin": 22.995705787337982
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1337,6 +1345,7 @@
           "margin": 4.037403179403273
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1350,6 +1359,52 @@
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:50+00:00",
         "timestampBasis": "fetch time; source timestamp unavailable"
+      },
+      "portrait": null,
+      "accountability": null,
+      "coverage": {
+        "notes": "This profile contains the selected reported election record. Additional career, statement, voting, bill-text and financial records have not been joined without source review. Missing research is not a finding about this person."
+      }
+    },
+    {
+      "id": "p2026-a8f512c4",
+      "path": "people/2026/senate-21-andy-barr-a8f512c4/",
+      "displayName": "Andy BARR",
+      "reportedName": "Andy BARR",
+      "personStatus": "source_record",
+      "election": {
+        "key": "senate|2026|state||21||general|false|candidate|",
+        "office": "senate",
+        "year": 2026,
+        "stateFips": "21",
+        "state": "Kentucky",
+        "district": null,
+        "seat": "21-senate-class-2",
+        "seatClass": 2,
+        "stage": "general",
+        "special": false,
+        "contestType": null,
+        "electionDate": "2026-11-03",
+        "leader": {
+          "name": "Andy BARR",
+          "party": "Republican",
+          "votes": 784869,
+          "share": 54.990926734254906,
+          "margin": 12.08685112137157
+        },
+        "status": "Provisional reported leader",
+        "holdReasons": [],
+        "provisional": true,
+        "certifiedCount": false,
+        "sourceIds": [
+          "senate-completion-ky2026-state"
+        ],
+        "sourceLinks": [
+          "https://vrsws.sos.ky.gov/liveresults/"
+        ],
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T20:50:59.619Z",
+        "timestampBasis": "Global page display, not a verified county count-update time. Time zone is not specified; no UTC timestamp inferred."
       },
       "portrait": null,
       "accountability": null,
@@ -1384,6 +1439,7 @@
           "margin": 1.7636959788386495
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1450,6 +1506,7 @@
           "margin": 10.149267013469663
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1497,6 +1554,7 @@
           "margin": 10.630811553191402
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1542,6 +1600,7 @@
           "margin": 6.825813987443423
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1592,33 +1651,34 @@
         "stateFips": "35",
         "state": "New Mexico",
         "district": null,
-        "seat": null,
-        "seatClass": null,
+        "seat": "35-senate-class-2",
+        "seatClass": 2,
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "BEN R LUJAN",
           "party": "Democrat",
-          "votes": 458007,
-          "share": 63.23731441581627,
-          "margin": 26.474628831632536
+          "votes": 458756,
+          "share": 63.26011114328659,
+          "margin": 26.520222286573176
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-nm"
+          "senate-current-official-nm-2026"
         ],
         "sourceLinks": [
-          "https://electionresults.sos.nm.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nm.csv"
+          "https://nmresultswebservice.azurewebsites.us/NMResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=11185&osn=180&county=0&party=0",
+          "https://electionresults.sos.nm.gov/resultsCSV.aspx?text=All&type=FED&map=CTY",
+          "https://electionresults.sos.nm.gov/resultsSW.aspx?type=FED&map=CTY"
         ],
-        "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:05:59+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "sourceUpdatedAt": "2026-11-06T09:55:00-07:00",
+        "retrievedAt": "2026-11-07T20:26:29.175592+00:00",
+        "timestampBasis": "Official page explicitly Mountain Time; November6 standard-timeUTC-07"
       },
       "portrait": {
         "recordKey": "senate|2026|state||35||general|false|candidate|",
@@ -1672,6 +1732,7 @@
           "margin": 19.62501733805896
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1719,6 +1780,7 @@
           "margin": 4.852186856587189
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1784,6 +1846,7 @@
           "margin": 17.92604559132398
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1824,6 +1887,53 @@
       }
     },
     {
+      "id": "p2026-ef1016ad",
+      "path": "people/2026/senate-41-jeff-merkley-ef1016ad/",
+      "displayName": "Jeff Merkley",
+      "reportedName": "Jeff Merkley",
+      "personStatus": "source_record",
+      "election": {
+        "key": "senate|2026|state||41||general|false|candidate|",
+        "office": "senate",
+        "year": 2026,
+        "stateFips": "41",
+        "state": "Oregon",
+        "district": null,
+        "seat": "41-senate-class-2",
+        "seatClass": 2,
+        "stage": "general",
+        "special": false,
+        "contestType": null,
+        "electionDate": "2026-11-03",
+        "leader": {
+          "name": "Jeff Merkley",
+          "party": "Democrat",
+          "votes": 1081731,
+          "share": 58.086253224535035,
+          "margin": 19.428024941416027
+        },
+        "status": "Provisional reported leader",
+        "holdReasons": [],
+        "provisional": true,
+        "certifiedCount": false,
+        "sourceIds": [
+          "senate-current-official-or-2026"
+        ],
+        "sourceLinks": [
+          "https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0",
+          "https://results.oregonvotes.gov/resultsSW.aspx?map=CTY&type=FED"
+        ],
+        "sourceUpdatedAt": "2026-11-07T12:30:00-08:00",
+        "retrievedAt": "2026-11-07T20:35:12.069573+00:00",
+        "timestampBasis": "Official pagePT; November7standardtimeUTC-08"
+      },
+      "portrait": null,
+      "accountability": null,
+      "coverage": {
+        "notes": "This profile contains the selected reported election record. Additional career, statement, voting, bill-text and financial records have not been joined without source review. Missing research is not a finding about this person."
+      }
+    },
+    {
       "id": "p2026-212b8230",
       "path": "people/2026/senate-44-john-f-reed-dem-212b8230/",
       "displayName": "John F. Reed (DEM)",
@@ -1850,6 +1960,7 @@
           "margin": 37.479006108073634
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1916,6 +2027,7 @@
           "margin": 4.476652032948677
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -1963,6 +2075,7 @@
           "margin": 21.001897732226375
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -2028,6 +2141,7 @@
           "margin": 12.089431594717091
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -2075,6 +2189,7 @@
           "margin": 22.600167704691867
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -2114,6 +2229,100 @@
       }
     },
     {
+      "id": "p2026-d0d322e9",
+      "path": "people/2026/senate-54-shelley-moore-capito-d0d322e9/",
+      "displayName": "SHELLEY MOORE CAPITO",
+      "reportedName": "SHELLEY MOORE CAPITO",
+      "personStatus": "source_record",
+      "election": {
+        "key": "senate|2026|state||54||general|false|candidate|",
+        "office": "senate",
+        "year": 2026,
+        "stateFips": "54",
+        "state": "West Virginia",
+        "district": null,
+        "seat": "54-senate-class-2",
+        "seatClass": 2,
+        "stage": "general",
+        "special": false,
+        "contestType": null,
+        "electionDate": "2026-11-03",
+        "leader": {
+          "name": "SHELLEY MOORE CAPITO",
+          "party": "Republican",
+          "votes": 266067,
+          "share": 58.33165251859127,
+          "margin": 20.420802932510174
+        },
+        "status": "Provisional reported leader",
+        "holdReasons": [],
+        "provisional": true,
+        "certifiedCount": false,
+        "sourceIds": [
+          "senate-current-official-wv-2026"
+        ],
+        "sourceLinks": [
+          "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+          "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json",
+          "https://results.enr.clarityelections.com/WV/127496/web.345435/#/summary"
+        ],
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+        "timestampBasis": "Exact statewide update time not established; retrieval time separate."
+      },
+      "portrait": null,
+      "accountability": null,
+      "coverage": {
+        "notes": "This profile contains the selected reported election record. Additional career, statement, voting, bill-text and financial records have not been joined without source review. Missing research is not a finding about this person."
+      }
+    },
+    {
+      "id": "p2026-6c63b6c9",
+      "path": "people/2026/senate-56-harriet-hageman-6c63b6c9/",
+      "displayName": "Harriet Hageman",
+      "reportedName": "Harriet Hageman",
+      "personStatus": "source_record",
+      "election": {
+        "key": "senate|2026|state||56||general|false|candidate|",
+        "office": "senate",
+        "year": 2026,
+        "stateFips": "56",
+        "state": "Wyoming",
+        "district": null,
+        "seat": "56-senate-class-2",
+        "seatClass": 2,
+        "stage": "general",
+        "special": false,
+        "contestType": null,
+        "electionDate": "2026-11-03",
+        "leader": {
+          "name": "Harriet Hageman",
+          "party": "Republican",
+          "votes": 122157,
+          "share": 64.87601769582513,
+          "margin": 30.30383498058876
+        },
+        "status": "Provisional reported leader",
+        "holdReasons": [],
+        "provisional": true,
+        "certifiedCount": false,
+        "sourceIds": [
+          "senate-current-official-wy-2026"
+        ],
+        "sourceLinks": [
+          "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+        ],
+        "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+        "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+        "timestampBasis": "PDFpage1 explicitlyMST, UTC-07"
+      },
+      "portrait": null,
+      "accountability": null,
+      "coverage": {
+        "notes": "This profile contains the selected reported election record. Additional career, statement, voting, bill-text and financial records have not been joined without source review. Missing research is not a finding about this person."
+      }
+    },
+    {
       "id": "p2026-59219057",
       "path": "people/2026/house-01-jerry-carl-59219057/",
       "displayName": "Jerry Carl",
@@ -2140,6 +2349,7 @@
           "margin": 18.1324338412362
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -2322,6 +2532,7 @@
           "margin": 7.494532136370892
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -2620,6 +2831,7 @@
           "margin": 27.867154284067162
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -2667,6 +2879,7 @@
           "margin": 49.72839298403082
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -2733,6 +2946,7 @@
           "margin": 6.482465860086248
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -2799,6 +3013,7 @@
           "margin": 14.921017864323053
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -2865,6 +3080,7 @@
           "margin": 38.77245805911592
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -2931,6 +3147,7 @@
           "margin": 9.212756268514475
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -3191,6 +3408,7 @@
           "margin": 6.996332297357971
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -3430,6 +3648,7 @@
           "margin": 1.2088572701193283
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -3494,6 +3713,7 @@
           "margin": 80.49860622433697
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -3558,6 +3778,7 @@
           "margin": 26.783123252137962
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -3622,6 +3843,7 @@
           "margin": 3.1250402628357916
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -3667,6 +3889,7 @@
           "margin": 7.8201374587499695
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -3712,6 +3935,7 @@
           "margin": 43.209121563696634
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -3776,6 +4000,7 @@
           "margin": 2.5913910709099794
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -3840,6 +4065,7 @@
           "margin": 14.56519032307681
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -3904,6 +4130,7 @@
           "margin": 34.478638816792326
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -3970,6 +4197,7 @@
           "margin": 1.7394289181055473
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4036,6 +4264,7 @@
           "margin": 13.406315753164774
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4102,6 +4331,7 @@
           "margin": 30.988936441903846
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4168,6 +4398,7 @@
           "margin": 10.907719731249143
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4213,6 +4444,7 @@
           "margin": 32.1724996541707
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4277,6 +4509,7 @@
           "margin": 13.77061211927507
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4341,6 +4574,7 @@
           "margin": 2.918164346770238
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4386,6 +4620,7 @@
           "margin": 11.431228137499447
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4450,6 +4685,7 @@
           "margin": 14.971996685998343
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4495,6 +4731,7 @@
           "margin": 15.257939723633493
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4559,6 +4796,7 @@
           "margin": 43.307815303619996
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4623,6 +4861,7 @@
           "margin": 31.592803492274435
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4687,6 +4926,7 @@
           "margin": 38.12852452836116
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4751,6 +4991,7 @@
           "margin": 9.141982780277251
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4796,6 +5037,7 @@
           "margin": 59.50479645482631
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4860,6 +5102,7 @@
           "margin": 22.597749494184367
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4924,6 +5167,7 @@
           "margin": 13.065330773604028
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -4988,6 +5232,7 @@
           "margin": 56.33995293615717
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5052,6 +5297,7 @@
           "margin": 52.96987772144348
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5116,6 +5362,7 @@
           "margin": 41.504057589441935
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5180,6 +5427,7 @@
           "margin": 43.46828445773289
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5244,6 +5492,7 @@
           "margin": 45.115066881257206
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5308,6 +5557,7 @@
           "margin": 24.016836895606396
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5372,6 +5622,7 @@
           "margin": 25.45555724186776
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5436,6 +5687,7 @@
           "margin": 33.15288589586739
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5481,6 +5733,7 @@
           "margin": 2.5371047466505625
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5545,6 +5798,7 @@
           "margin": 32.220900970659
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5609,6 +5863,7 @@
           "margin": 29.5284358534636
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5673,6 +5928,7 @@
           "margin": 23.786743750508915
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5718,6 +5974,7 @@
           "margin": 25.835579168912503
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5782,6 +6039,7 @@
           "margin": 39.72235764084457
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5846,6 +6104,7 @@
           "margin": 17.60931289040318
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5910,6 +6169,7 @@
           "margin": 53.23285257153457
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -5974,6 +6234,7 @@
           "margin": 29.88952611556706
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6019,6 +6280,7 @@
           "margin": 34.21739405268243
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6083,6 +6345,7 @@
           "margin": 35.935438473040726
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6147,6 +6410,7 @@
           "margin": 21.15774979772027
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6192,6 +6456,7 @@
           "margin": 31.70853060304281
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6256,6 +6521,7 @@
           "margin": 44.16279253013947
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6320,6 +6586,7 @@
           "margin": 23.536869218746855
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6384,6 +6651,7 @@
           "margin": 32.9258786447801
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6429,6 +6697,7 @@
           "margin": 32.16903368929294
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6493,6 +6762,7 @@
           "margin": 8.38532866816555
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6557,6 +6827,7 @@
           "margin": 33.209182048882155
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6602,6 +6873,7 @@
           "margin": 21.76858636353261
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6666,6 +6938,7 @@
           "margin": 64.44380475103205
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6730,6 +7003,7 @@
           "margin": 61.86710255905913
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6794,6 +7068,7 @@
           "margin": 19.427206662856207
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6858,6 +7133,7 @@
           "margin": 38.48401094101305
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6903,6 +7179,7 @@
           "margin": 14.824543018065222
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -6967,6 +7244,7 @@
           "margin": 18.88393532691569
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7012,6 +7290,7 @@
           "margin": 15.431376924793572
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7076,6 +7355,7 @@
           "margin": 22.890543842451024
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7140,6 +7420,7 @@
           "margin": 26.89101172383847
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7204,6 +7485,7 @@
           "margin": 38.42372298343175
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7268,6 +7550,7 @@
           "margin": 64.37764069434353
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7315,6 +7598,7 @@
           "margin": 51.21653805167963
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7381,6 +7665,7 @@
           "margin": 0.19469561046666548
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7428,6 +7713,7 @@
           "margin": 1.4256542016598646
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7475,6 +7761,7 @@
           "margin": 6.273569316034338
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7522,6 +7809,7 @@
           "margin": 34.541317875482115
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7588,6 +7876,7 @@
           "margin": 24.520075367964974
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7654,6 +7943,7 @@
           "margin": 14.650265466245957
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7701,6 +7991,7 @@
           "margin": 36.31362303512019
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7748,6 +8039,7 @@
           "margin": 24.728013568296518
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7814,6 +8106,7 @@
           "margin": 25.701704994268077
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7880,6 +8173,7 @@
           "margin": 33.07542392644168
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -7946,6 +8240,7 @@
           "margin": 15.704097273514254
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8012,6 +8307,7 @@
           "margin": 28.67112540396847
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8078,6 +8374,7 @@
           "margin": 26.95387538987999
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8142,6 +8439,7 @@
           "margin": 4.26739214924213
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8187,6 +8485,7 @@
           "margin": 12.157996917719112
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8251,6 +8550,7 @@
           "margin": 2.0998099238366144
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8315,6 +8615,7 @@
           "margin": 12.85018526414403
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8379,6 +8680,7 @@
           "margin": 19.015761937682836
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8443,6 +8745,7 @@
           "margin": 0.5247457250653234
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8488,6 +8791,7 @@
           "margin": 6.34749208793892
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8552,6 +8856,7 @@
           "margin": 0.5184802945894809
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8616,6 +8921,7 @@
           "margin": 6.950580035614543
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8661,6 +8967,7 @@
           "margin": 6.800005597576249
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8706,6 +9013,7 @@
           "margin": 0.8028810574935565
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8770,6 +9078,7 @@
           "margin": 5.330510311254855
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8834,6 +9143,7 @@
           "margin": 8.601953825326552
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8898,6 +9208,7 @@
           "margin": 4.251172208946427
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8943,6 +9254,7 @@
           "margin": 18.31067043589378
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -8988,6 +9300,7 @@
           "margin": 3.668979448445459
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9052,6 +9365,7 @@
           "margin": 23.481070104456716
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9097,6 +9411,7 @@
           "margin": 52.623368159507955
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9161,6 +9476,7 @@
           "margin": 9.20075031483281
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9225,6 +9541,7 @@
           "margin": 3.784249304079232
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9270,6 +9587,7 @@
           "margin": 31.29215676421589
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9334,6 +9652,7 @@
           "margin": 61.30812858142528
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9379,6 +9698,7 @@
           "margin": 4.623844573776104
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9443,6 +9763,7 @@
           "margin": 0.7715417773326947
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9507,6 +9828,7 @@
           "margin": 0.4503050453533038
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9571,6 +9893,7 @@
           "margin": 7.254296114450182
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9635,6 +9958,7 @@
           "margin": 2.832606694852173
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9682,6 +10006,7 @@
           "margin": 21.74123774434299
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9748,6 +10073,7 @@
           "margin": 17.236834333782006
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9814,6 +10140,7 @@
           "margin": 65.27745534949746
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9880,6 +10207,7 @@
           "margin": 80.38738196232057
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -9946,6 +10274,7 @@
           "margin": 61.79917760323049
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10012,6 +10341,7 @@
           "margin": 12.385070791111946
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10078,6 +10408,7 @@
           "margin": 20.849262028130106
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10144,6 +10475,7 @@
           "margin": 18.598498112913894
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10210,6 +10542,7 @@
           "margin": 7.1878219420312135
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10257,6 +10590,7 @@
           "margin": 10.728494533783559
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10304,6 +10638,7 @@
           "margin": 4.1957809153556775
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10370,6 +10705,7 @@
           "margin": 59.65703651472857
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10417,6 +10753,7 @@
           "margin": 17.56116591428412
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10464,19 +10801,18 @@
           "margin": 35.524524598467735
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-id"
+          "house-completion-id2026-1"
         ],
         "sourceLinks": [
-          "https://results.voteidaho.gov/results/public/id/elections/nov2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/id.csv"
+          "https://results.voteidaho.gov/results/public/api/elections/id/nov2026/data/ballot-item/01000000-9b8a-13bb-e31b-08df23ec9989"
         ],
-        "sourceUpdatedAt": "2026-11-05T23:46:22.8861444Z",
-        "retrievedAt": "2026-11-06T15:03:40+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": "2026-11-07T00:35:07.9161185Z",
+        "retrievedAt": "2026-11-07T20:43:48.653376+00:00",
+        "timestampBasis": "Officialsource reportingStatus.asOf"
       },
       "portrait": {
         "recordKey": "house|2026|district||16|1|general|false|candidate|",
@@ -10530,19 +10866,18 @@
           "margin": 11.398071416897197
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-id"
+          "house-completion-id2026-2"
         ],
         "sourceLinks": [
-          "https://results.voteidaho.gov/results/public/id/elections/nov2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/id.csv"
+          "https://results.voteidaho.gov/results/public/api/elections/id/nov2026/data/ballot-item/01000000-9b8a-13bb-7a7e-08df23ecc8f3"
         ],
-        "sourceUpdatedAt": "2026-11-05T23:46:22.8861444Z",
-        "retrievedAt": "2026-11-06T15:03:40+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": "2026-11-07T00:35:07.9161185Z",
+        "retrievedAt": "2026-11-07T20:43:49.094850+00:00",
+        "timestampBasis": "Officialsource reportingStatus.asOf"
       },
       "portrait": {
         "recordKey": "house|2026|district||16|2|general|false|candidate|",
@@ -10596,6 +10931,7 @@
           "margin": 9.23152105394042
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10643,6 +10979,7 @@
           "margin": 3.9728522723664192
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10690,6 +11027,7 @@
           "margin": 7.194465084408619
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10737,6 +11075,7 @@
           "margin": 18.112272668793317
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -10758,111 +11097,90 @@
       }
     },
     {
-      "id": "p2026-31ba9b0b",
-      "path": "people/2026/house-22-steve-scalise-31ba9b0b/",
-      "displayName": "Steve Scalise",
-      "reportedName": "Steve Scalise",
+      "id": "p2026-571e0ad9",
+      "path": "people/2026/house-21-james-r-comer-571e0ad9/",
+      "displayName": "James R. COMER",
+      "reportedName": "James R. COMER",
       "personStatus": "source_record",
       "election": {
-        "key": "house|2026|district||22|1|general|false|candidate|",
+        "key": "house|2026|district||21|1|general|false|candidate|",
         "office": "house",
         "year": 2026,
-        "stateFips": "22",
-        "state": "Louisiana",
+        "stateFips": "21",
+        "state": "Kentucky",
         "district": "1",
         "seat": null,
         "seatClass": null,
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
-          "name": "Steve Scalise",
+          "name": "James R. COMER",
           "party": "Republican",
-          "votes": 159890,
-          "share": 60.708576809316064,
-          "margin": 26.753691532541303
+          "votes": 154910,
+          "share": 67.59610769297902,
+          "margin": 35.19221538595802
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-la"
+          "ky-house-current-state-controls"
         ],
         "sourceLinks": [
-          "https://voterportal.sos.la.gov/graphical",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/la.csv"
+          "https://vrsws.sos.ky.gov/liveresults/"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:00+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": null,
+        "timestampBasis": "Source count-update timestamp not established; retrieval is separate"
       },
-      "portrait": {
-        "recordKey": "house|2026|district||22|1|general|false|candidate|",
-        "leaderName": "Steve Scalise",
-        "sourcePersonId": "S001176",
-        "src": "people-photos/S001176.jpg",
-        "sourceUrl": "https://pictorialapi.gpo.gov/api/GuideMember/GetMembers/119",
-        "imageUrl": "https://pictorial.gpo.gov/pictorialimages/119_RP_LA_1_Scalise_Steve.jpg",
-        "identityEvidenceUrls": [
-          "https://pictorialapi.gpo.gov/api/GuideMember/GetMembers/119",
-          "https://bioguide.congress.gov/search/bio/S001176",
-          "https://clerk.house.gov/xml/lists/MemberData.xml",
-          "https://github.com/unitedstates/congress-legislators/blob/main/legislators-current.yaml"
-        ],
-        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001176",
-        "rightsBasis": "Official GPO member portrait. The unitedstates/images published rights policy states GPO member photos are public domain and links the GPO assurance; see https://github.com/unitedstates/images#public-domain . Source metadata and original bytes retained.",
-        "notes": "Unique exact normalized name/documented alias and state match to GPO portrait metadata, cross-checked by Bioguide identity sources. Source shows Representative for Louisiana in Congress 119. This current or historical portrait identifies the person; it does not establish a 2026 winner, current office, or governorship. Downloaded thumbnail unchanged.",
-        "sha256": "2e688b4a068355e77b1267b38e92279c7afcc5f6bb94361ae015e67c62fc0330",
-        "width": 452,
-        "height": 553
-      },
+      "portrait": null,
       "accountability": null,
       "coverage": {
         "notes": "This profile contains the selected reported election record. Additional career, statement, voting, bill-text and financial records have not been joined without source review. Missing research is not a finding about this person."
       }
     },
     {
-      "id": "p2026-97b85a82",
-      "path": "people/2026/house-22-troy-a-carter-sr-97b85a82/",
-      "displayName": "Troy A. Carter, Sr.",
-      "reportedName": "Troy A. Carter, Sr.",
+      "id": "p2026-97be5868",
+      "path": "people/2026/house-21-s-brett-guthrie-97be5868/",
+      "displayName": "S. Brett GUTHRIE",
+      "reportedName": "S. Brett GUTHRIE",
       "personStatus": "source_record",
       "election": {
-        "key": "house|2026|district||22|2|general|false|candidate|",
+        "key": "house|2026|district||21|2|general|false|candidate|",
         "office": "house",
         "year": 2026,
-        "stateFips": "22",
-        "state": "Louisiana",
+        "stateFips": "21",
+        "state": "Kentucky",
         "district": "2",
         "seat": null,
         "seatClass": null,
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
-          "name": "Troy A. Carter, Sr.",
-          "party": "Democrat",
-          "votes": 192258,
-          "share": 79.91370925505649,
-          "margin": 64.79744951825157
+          "name": "S. Brett GUTHRIE",
+          "party": "Republican",
+          "votes": 145139,
+          "share": 62.814964208120905,
+          "margin": 27.710358438141075
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-la"
+          "ky-house-current-state-controls"
         ],
         "sourceLinks": [
-          "https://voterportal.sos.la.gov/graphical",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/la.csv"
+          "https://vrsws.sos.ky.gov/liveresults/"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:00+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": null,
+        "timestampBasis": "Source count-update timestamp not established; retrieval is separate"
       },
       "portrait": null,
       "accountability": null,
@@ -10871,45 +11189,44 @@
       }
     },
     {
-      "id": "p2026-b5354258",
-      "path": "people/2026/house-22-clay-higgins-b5354258/",
-      "displayName": "\"Clay\" Higgins",
-      "reportedName": "\"Clay\" Higgins",
+      "id": "p2026-17dc89d1",
+      "path": "people/2026/house-21-morgan-mcgarvey-17dc89d1/",
+      "displayName": "Morgan McGARVEY",
+      "reportedName": "Morgan McGARVEY",
       "personStatus": "source_record",
       "election": {
-        "key": "house|2026|district||22|3|general|false|candidate|",
+        "key": "house|2026|district||21|3|general|false|candidate|",
         "office": "house",
         "year": 2026,
-        "stateFips": "22",
-        "state": "Louisiana",
+        "stateFips": "21",
+        "state": "Kentucky",
         "district": "3",
         "seat": null,
         "seatClass": null,
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
-          "name": "\"Clay\" Higgins",
-          "party": "Republican",
-          "votes": 129203,
-          "share": 54.98140378052205,
-          "margin": 34.06086963922483
+          "name": "Morgan McGARVEY",
+          "party": "Democrat",
+          "votes": 174781,
+          "share": 70.33440643863179,
+          "margin": 40.66881287726358
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-la"
+          "ky-house-current-state-controls"
         ],
         "sourceLinks": [
-          "https://voterportal.sos.la.gov/graphical",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/la.csv"
+          "https://vrsws.sos.ky.gov/liveresults/"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:00+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": null,
+        "timestampBasis": "Source count-update timestamp not established; retrieval is separate"
       },
       "portrait": null,
       "accountability": null,
@@ -10918,45 +11235,44 @@
       }
     },
     {
-      "id": "p2026-f59ae3b4",
-      "path": "people/2026/house-22-mike-johnson-f59ae3b4/",
-      "displayName": "\"Mike\" Johnson",
-      "reportedName": "\"Mike\" Johnson",
+      "id": "p2026-2aa5cf65",
+      "path": "people/2026/house-21-ed-gallrein-2aa5cf65/",
+      "displayName": "Ed GALLREIN",
+      "reportedName": "Ed GALLREIN",
       "personStatus": "source_record",
       "election": {
-        "key": "house|2026|district||22|4|general|false|candidate|",
+        "key": "house|2026|district||21|4|general|false|candidate|",
         "office": "house",
         "year": 2026,
-        "stateFips": "22",
-        "state": "Louisiana",
+        "stateFips": "21",
+        "state": "Kentucky",
         "district": "4",
         "seat": null,
         "seatClass": null,
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
-          "name": "\"Mike\" Johnson",
+          "name": "Ed GALLREIN",
           "party": "Republican",
-          "votes": 134739,
-          "share": 58.495955960562476,
-          "margin": 35.532845067487486
+          "votes": 137623,
+          "share": 54.21750349636575,
+          "margin": 13.359071838005004
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-la"
+          "ky-house-current-state-controls"
         ],
         "sourceLinks": [
-          "https://voterportal.sos.la.gov/graphical",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/la.csv"
+          "https://vrsws.sos.ky.gov/liveresults/"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:00+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": null,
+        "timestampBasis": "Source count-update timestamp not established; retrieval is separate"
       },
       "portrait": null,
       "accountability": null,
@@ -10965,45 +11281,44 @@
       }
     },
     {
-      "id": "p2026-c23d6a96",
-      "path": "people/2026/house-22-patricia-pat-moore-c23d6a96/",
-      "displayName": "Patricia \"Pat\" Moore",
-      "reportedName": "Patricia \"Pat\" Moore",
+      "id": "p2026-9840128c",
+      "path": "people/2026/house-21-hal-rogers-9840128c/",
+      "displayName": "Hal ROGERS",
+      "reportedName": "Hal ROGERS",
       "personStatus": "source_record",
       "election": {
-        "key": "house|2026|district||22|5|general|false|candidate|",
+        "key": "house|2026|district||21|5|general|false|candidate|",
         "office": "house",
         "year": 2026,
-        "stateFips": "22",
-        "state": "Louisiana",
+        "stateFips": "21",
+        "state": "Kentucky",
         "district": "5",
         "seat": null,
         "seatClass": null,
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
-          "name": "Patricia \"Pat\" Moore",
-          "party": "Democrat",
-          "votes": 40789,
-          "share": 17.896427208150335,
-          "margin": 0.7274578026211297
+          "name": "Hal ROGERS",
+          "party": "Republican",
+          "votes": 139808,
+          "share": 71.15780044382011,
+          "margin": 45.808648384535516
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-la"
+          "ky-house-current-state-controls"
         ],
         "sourceLinks": [
-          "https://voterportal.sos.la.gov/graphical",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/la.csv"
+          "https://vrsws.sos.ky.gov/liveresults/"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:00+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": null,
+        "timestampBasis": "Source count-update timestamp not established; retrieval is separate"
       },
       "portrait": null,
       "accountability": null,
@@ -11012,45 +11327,44 @@
       }
     },
     {
-      "id": "p2026-a12c1ca4",
-      "path": "people/2026/house-22-chauna-banks-a12c1ca4/",
-      "displayName": "Chauna Banks",
-      "reportedName": "Chauna Banks",
+      "id": "p2026-d134e74d",
+      "path": "people/2026/house-21-zach-dembo-d134e74d/",
+      "displayName": "Zach DEMBO",
+      "reportedName": "Zach DEMBO",
       "personStatus": "source_record",
       "election": {
-        "key": "house|2026|district||22|6|general|false|candidate|",
+        "key": "house|2026|district||21|6|general|false|candidate|",
         "office": "house",
         "year": 2026,
-        "stateFips": "22",
-        "state": "Louisiana",
+        "stateFips": "21",
+        "state": "Kentucky",
         "district": "6",
         "seat": null,
         "seatClass": null,
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
-          "name": "Chauna Banks",
+          "name": "Zach DEMBO",
           "party": "Democrat",
-          "votes": 50878,
-          "share": 19.42271646223912,
-          "margin": 0.2538642723257403
+          "votes": 138777,
+          "share": 52.65460367808591,
+          "margin": 9.389477198826837
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-la"
+          "ky-house-current-state-controls"
         ],
         "sourceLinks": [
-          "https://voterportal.sos.la.gov/graphical",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/la.csv"
+          "https://vrsws.sos.ky.gov/liveresults/"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:00+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": null,
+        "timestampBasis": "Source count-update timestamp not established; retrieval is separate"
       },
       "portrait": null,
       "accountability": null,
@@ -11080,24 +11394,23 @@
         "leader": {
           "name": "Jake Johnson",
           "party": "Democrat",
-          "votes": 163054,
-          "share": 49.98926966257687,
-          "margin": 0.09841252322351599
+          "votes": 163055,
+          "share": 49.98942298553862,
+          "margin": 0.09871880163959054
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-mn"
+          "house-completion-mn2026-district"
         ],
         "sourceLinks": [
-          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/mn.csv"
+          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:17+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:25:49.666156+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": null,
       "accountability": null,
@@ -11127,24 +11440,23 @@
         "leader": {
           "name": "Matt Little",
           "party": "Democrat",
-          "votes": 214254,
-          "share": 57.100139916050374,
-          "margin": 14.289559597574788
+          "votes": 214280,
+          "share": 57.105395004743684,
+          "margin": 14.29447067978552
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-mn"
+          "house-completion-mn2026-district"
         ],
         "sourceLinks": [
-          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/mn.csv"
+          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:17+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:25:49.666156+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": null,
       "accountability": null,
@@ -11175,23 +11487,22 @@
           "name": "Kelly Morrison",
           "party": "Democrat",
           "votes": 242079,
-          "share": 64.04257176644259,
-          "margin": 28.1944036592883
+          "share": 64.04274119302849,
+          "margin": 28.194742801511126
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-mn"
+          "house-completion-mn2026-district"
         ],
         "sourceLinks": [
-          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/mn.csv"
+          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:17+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:25:49.666156+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||27|3|general|false|candidate|",
@@ -11245,19 +11556,18 @@
           "margin": 46.285573231264294
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-mn"
+          "house-completion-mn2026-district"
         ],
         "sourceLinks": [
-          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/mn.csv"
+          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:17+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:25:49.666156+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||27|4|general|false|candidate|",
@@ -11307,23 +11617,22 @@
           "name": "Ilhan Omar",
           "party": "Democrat",
           "votes": 262702,
-          "share": 76.4762392724478,
-          "margin": 60.242265100085
+          "share": 76.47646190616203,
+          "margin": 60.24273158916703
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-mn"
+          "house-completion-mn2026-district"
         ],
         "sourceLinks": [
-          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/mn.csv"
+          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:17+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:25:49.666156+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||27|5|general|false|candidate|",
@@ -11372,24 +11681,23 @@
         "leader": {
           "name": "Tom Emmer",
           "party": "Republican",
-          "votes": 204704,
-          "share": 55.725423581166424,
-          "margin": 11.567086981140294
+          "votes": 204703,
+          "share": 55.72560645285988,
+          "margin": 11.567453673834393
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-mn"
+          "house-completion-mn2026-district"
         ],
         "sourceLinks": [
-          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/mn.csv"
+          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:17+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:25:49.666156+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||27|6|general|false|candidate|",
@@ -11443,19 +11751,18 @@
           "margin": 29.8808706928604
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-mn"
+          "house-completion-mn2026-district"
         ],
         "sourceLinks": [
-          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/mn.csv"
+          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:17+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:25:49.666156+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||27|7|general|false|candidate|",
@@ -11509,19 +11816,18 @@
           "margin": 6.187700824859857
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-mn"
+          "house-completion-mn2026-district"
         ],
         "sourceLinks": [
-          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/mn.csv"
+          "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:04:17+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:25:49.666156+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||27|8|general|false|candidate|",
@@ -11575,6 +11881,7 @@
           "margin": 67.58711912312147
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -11641,6 +11948,7 @@
           "margin": 4.93224016343232
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -11688,6 +11996,7 @@
           "margin": 8.492093580263536
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -11735,6 +12044,7 @@
           "margin": 25.923298850757924
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -11801,6 +12111,7 @@
           "margin": 41.35744080385802
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -11867,6 +12178,7 @@
           "margin": 19.704527119275163
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -11914,6 +12226,7 @@
           "margin": 26.773066426892562
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -11980,6 +12293,7 @@
           "margin": 38.56111150542977
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12046,6 +12360,7 @@
           "margin": 3.550085996819453
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12091,6 +12406,7 @@
           "margin": 26.00532763103185
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12155,6 +12471,7 @@
           "margin": 27.266614050051853
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12220,6 +12537,7 @@
           "margin": 17.509021842355178
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12266,6 +12584,7 @@
           "margin": 23.301068280064733
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12331,6 +12650,7 @@
           "margin": 3.2954592696584304
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12378,6 +12698,7 @@
           "margin": 51.57755335482411
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12444,6 +12765,7 @@
           "margin": 0.09793866433519403
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12491,6 +12813,7 @@
           "margin": 60.1807186849713
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12557,6 +12880,7 @@
           "margin": 0.03467624992119034
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12604,6 +12928,7 @@
           "margin": 2.288319487977555
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12651,6 +12976,7 @@
           "margin": 0.7562055631782462
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12717,6 +13043,7 @@
           "margin": 1.7742438309141177
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12783,6 +13110,7 @@
           "margin": 2.2162940909878075
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12830,6 +13158,7 @@
           "margin": 1.0303562195553377
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12896,6 +13225,7 @@
           "margin": 15.831943669704943
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -12943,6 +13273,7 @@
           "margin": 62.39761066919005
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -13009,6 +13340,7 @@
           "margin": 2.415487911512079
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -13056,6 +13388,7 @@
           "margin": 2.224642028568357
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -13103,19 +13436,19 @@
           "margin": 11.437077581663694
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-1"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA574909A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||39|1|general|false|candidate|",
@@ -13169,19 +13502,19 @@
           "margin": 28.483166025145668
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-2"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA574F09A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||39|2|general|false|candidate|",
@@ -13235,19 +13568,19 @@
           "margin": 54.445746706977616
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-3"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA570C09A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||39|3|general|false|candidate|",
@@ -13301,19 +13634,19 @@
           "margin": 33.24334229971268
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-4"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA578509A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||39|4|general|false|candidate|",
@@ -13367,19 +13700,19 @@
           "margin": 11.70371403615398
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-5"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA573509A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": null,
       "accountability": null,
@@ -13414,19 +13747,19 @@
           "margin": 20.800044282893886
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-6"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA576209A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||39|6|general|false|candidate|",
@@ -13480,19 +13813,19 @@
           "margin": 9.85828169210991
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-7"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA571A09A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": null,
       "accountability": null,
@@ -13527,19 +13860,19 @@
           "margin": 4.2844734588908775
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-8"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA574109A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||39|8|general|false|candidate|",
@@ -13593,19 +13926,19 @@
           "margin": 5.450016704651832
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-9"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA577809A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||39|9|general|false|candidate|",
@@ -13659,19 +13992,19 @@
           "margin": 1.6350127145581692
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-10"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA571009A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": null,
       "accountability": null,
@@ -13706,19 +14039,19 @@
           "margin": 67.05981529862082
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-11"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA571609A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||39|11|general|false|candidate|",
@@ -13772,19 +14105,19 @@
           "margin": 18.78924419054457
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-12"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA572109A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||39|12|general|false|candidate|",
@@ -13838,19 +14171,19 @@
           "margin": 21.560852804657383
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-13"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA572F09A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||39|13|general|false|candidate|",
@@ -13904,19 +14237,19 @@
           "margin": 10.062615372349885
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-14"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA576F09A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": {
         "recordKey": "house|2026|district||39|14|general|false|candidate|",
@@ -13970,19 +14303,19 @@
           "margin": 6.624362306954504
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-oh"
+          "house-completion-oh2026-15"
         ],
         "sourceLinks": [
-          "https://liveresults.ohiosos.gov/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv"
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative%20to%20Congress&contestObjectId=&resultsLevel=1&countyId=",
+          "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA570209A3E0633390EE0AE290&resultsLevel=County&countyId="
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T15:06:24+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "retrievedAt": "2026-11-07T20:28:35.081012+00:00",
+        "timestampBasis": "retrieval timestamp; source count update not established for raw export"
       },
       "portrait": null,
       "accountability": null,
@@ -14017,6 +14350,7 @@
           "margin": 4.633252941354123
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14064,6 +14398,7 @@
           "margin": 38.98779463265903
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14130,6 +14465,7 @@
           "margin": 27.94343328532146
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14196,6 +14532,7 @@
           "margin": 18.130068621334996
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14262,6 +14599,7 @@
           "margin": 1.2711271996281839
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14328,6 +14666,7 @@
           "margin": 5.483738902691395
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14375,6 +14714,7 @@
           "margin": 61.50405200480479
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14441,6 +14781,7 @@
           "margin": 87.21218013877227
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14488,6 +14829,7 @@
           "margin": 34.20259851720409
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14554,6 +14896,7 @@
           "margin": 44.14370012287832
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14620,6 +14963,7 @@
           "margin": 28.61312829275239
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14686,6 +15030,7 @@
           "margin": 12.2065167351532
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14733,6 +15078,7 @@
           "margin": 8.71982646544447
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14780,6 +15126,7 @@
           "margin": 23.073203032580146
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14827,6 +15174,7 @@
           "margin": 10.092325264126401
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14874,6 +15222,7 @@
           "margin": 11.120187278975942
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -14940,6 +15289,7 @@
           "margin": 30.77887536709913
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15006,6 +15356,7 @@
           "margin": 35.075720044337835
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15072,6 +15423,7 @@
           "margin": 15.147341830873106
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15138,6 +15490,7 @@
           "margin": 27.833548859703544
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15185,6 +15538,7 @@
           "margin": 7.875611044821035
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15251,6 +15605,7 @@
           "margin": 25.64558570002722
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15317,6 +15672,7 @@
           "margin": 41.05667839661981
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15364,6 +15720,7 @@
           "margin": 24.092853218593234
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15430,6 +15787,7 @@
           "margin": 1.0146865759542594
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15477,6 +15835,7 @@
           "margin": 1.0110691144708424
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15543,6 +15902,7 @@
           "margin": 29.311090425336978
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15609,6 +15969,7 @@
           "margin": 6.075754052968654
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15675,6 +16036,7 @@
           "margin": 5.707023626225913
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15722,6 +16084,7 @@
           "margin": 38.81416731317259
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15769,6 +16132,7 @@
           "margin": 13.49072346139795
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15835,6 +16199,7 @@
           "margin": 28.009319859678516
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15880,6 +16245,7 @@
           "margin": 38.08600641159398
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15946,6 +16312,7 @@
           "margin": 1.9657291795079512
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -15993,6 +16360,7 @@
           "margin": 5.476924994546758
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16059,6 +16427,7 @@
           "margin": 12.112078115049883
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16125,6 +16494,7 @@
           "margin": 2.9324505299585595
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16191,6 +16561,7 @@
           "margin": 4.329230127268934
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16257,6 +16628,7 @@
           "margin": 43.299041900304644
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16304,6 +16676,7 @@
           "margin": 6.419580734502714
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16351,6 +16724,7 @@
           "margin": 15.1033628879409
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16398,6 +16772,7 @@
           "margin": 7.524553965436276
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16445,6 +16820,7 @@
           "margin": 19.003347926860677
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16511,6 +16887,7 @@
           "margin": 6.245816384326245
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16577,6 +16954,7 @@
           "margin": 30.5107476963327
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16643,6 +17021,7 @@
           "margin": 8.029403749438151
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16709,6 +17088,7 @@
           "margin": 24.64038635319912
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16756,6 +17136,7 @@
           "margin": 41.522038919250214
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16822,6 +17203,7 @@
           "margin": 7.124650596924133
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16888,6 +17270,7 @@
           "margin": 72.08355421713584
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -16954,6 +17337,7 @@
           "margin": 38.96452359156359
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17001,6 +17385,7 @@
           "margin": 55.22250044157221
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17067,6 +17452,7 @@
           "margin": 9.03897415752406
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17114,6 +17500,7 @@
           "margin": 3.645367798043242
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17161,6 +17548,7 @@
           "margin": 8.162254025701355
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17208,6 +17596,7 @@
           "margin": 6.8608297454020555
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17274,6 +17663,7 @@
           "margin": 7.480749317518592
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17340,6 +17730,7 @@
           "margin": 10.36249626754255
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17406,6 +17797,7 @@
           "margin": 2.3157328196702736
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17472,6 +17864,7 @@
           "margin": 36.12632898463253
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17538,6 +17931,7 @@
           "margin": 59.883776430719294
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17604,6 +17998,7 @@
           "margin": 65.2862664626434
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17651,6 +18046,7 @@
           "margin": 8.944398356575828
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17717,6 +18113,7 @@
           "margin": 2.9007798569962
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17764,6 +18161,7 @@
           "margin": 57.12337324310255
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17829,6 +18227,7 @@
           "margin": 16.02199009357171
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17895,6 +18294,7 @@
           "margin": 10.852952589108245
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -17942,6 +18342,7 @@
           "margin": 7.112061438400552
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18008,6 +18409,7 @@
           "margin": 67.50014781917444
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18074,6 +18476,7 @@
           "margin": 4.21630869777549
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18121,6 +18524,7 @@
           "margin": 46.63521155023643
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18186,6 +18590,7 @@
           "margin": 8.201019376078376
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18252,6 +18657,7 @@
           "margin": 23.221502720081375
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18318,6 +18724,7 @@
           "margin": 13.39217971287595
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18384,6 +18791,7 @@
           "margin": 33.604057654649935
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18448,6 +18856,7 @@
           "margin": 2.3707346038429358
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18494,6 +18903,7 @@
           "margin": 8.434731806845175
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18558,6 +18968,7 @@
           "margin": 48.51980862172079
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18623,6 +19034,7 @@
           "margin": 45.979540916548814
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18688,6 +19100,7 @@
           "margin": 2.16851459656991
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18753,6 +19166,7 @@
           "margin": 11.233715991094128
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18818,6 +19232,7 @@
           "margin": 21.95393515991704
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18883,6 +19298,7 @@
           "margin": 61.38952817498517
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -18948,6 +19364,7 @@
           "margin": 32.1237496301184
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19013,6 +19430,7 @@
           "margin": 24.755012218993542
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19078,6 +19496,7 @@
           "margin": 49.70151042915368
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19143,6 +19562,7 @@
           "margin": 34.234873389787865
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19209,6 +19629,7 @@
           "margin": 34.391065761564086
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19275,6 +19696,7 @@
           "margin": 8.13929146782116
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19341,6 +19763,7 @@
           "margin": 9.436809572142831
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19388,6 +19811,7 @@
           "margin": 2.1173167200456278
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19454,6 +19878,7 @@
           "margin": 29.024408633843073
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19520,6 +19945,7 @@
           "margin": 75.47294977957937
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19586,6 +20012,7 @@
           "margin": 11.991386069415224
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19652,6 +20079,7 @@
           "margin": 50.756458909062374
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19718,6 +20146,7 @@
           "margin": 27.560395839304082
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -19758,6 +20187,146 @@
       }
     },
     {
+      "id": "p2026-1f67d7c5",
+      "path": "people/2026/house-54-carol-miller-1f67d7c5/",
+      "displayName": "CAROL MILLER",
+      "reportedName": "CAROL MILLER",
+      "personStatus": "source_record",
+      "election": {
+        "key": "house|2026|district||54|1|general|false|candidate|",
+        "office": "house",
+        "year": 2026,
+        "stateFips": "54",
+        "state": "West Virginia",
+        "district": "1",
+        "seat": null,
+        "seatClass": null,
+        "stage": "general",
+        "special": false,
+        "contestType": null,
+        "electionDate": "2026-11-03",
+        "leader": {
+          "name": "CAROL MILLER",
+          "party": "Republican",
+          "votes": 118735,
+          "share": 57.08797707538007,
+          "margin": 17.495408344792438
+        },
+        "status": "Provisional reported leader",
+        "holdReasons": [],
+        "provisional": true,
+        "certifiedCount": false,
+        "sourceIds": [
+          "house-completion-wv2026-1"
+        ],
+        "sourceLinks": [
+          "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+          "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json"
+        ],
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+        "timestampBasis": "Statewideupdate notestablished; countystampsretained whereapplicable"
+      },
+      "portrait": null,
+      "accountability": null,
+      "coverage": {
+        "notes": "This profile contains the selected reported election record. Additional career, statement, voting, bill-text and financial records have not been joined without source review. Missing research is not a finding about this person."
+      }
+    },
+    {
+      "id": "p2026-50c855cf",
+      "path": "people/2026/house-54-riley-moore-50c855cf/",
+      "displayName": "RILEY MOORE",
+      "reportedName": "RILEY MOORE",
+      "personStatus": "source_record",
+      "election": {
+        "key": "house|2026|district||54|2|general|false|candidate|",
+        "office": "house",
+        "year": 2026,
+        "stateFips": "54",
+        "state": "West Virginia",
+        "district": "2",
+        "seat": null,
+        "seatClass": null,
+        "stage": "general",
+        "special": false,
+        "contestType": null,
+        "electionDate": "2026-11-03",
+        "leader": {
+          "name": "RILEY MOORE",
+          "party": "Republican",
+          "votes": 143756,
+          "share": 59.405515081139384,
+          "margin": 18.81103016227876
+        },
+        "status": "Provisional reported leader",
+        "holdReasons": [],
+        "provisional": true,
+        "certifiedCount": false,
+        "sourceIds": [
+          "house-completion-wv2026-2"
+        ],
+        "sourceLinks": [
+          "https://results.enr.clarityelections.com/WV/127496/385637/json/details.json",
+          "https://results.enr.clarityelections.com/WV/127496/385637/json/en/summary.json"
+        ],
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T20:38:00.499288+00:00",
+        "timestampBasis": "Statewideupdate notestablished; countystampsretained whereapplicable"
+      },
+      "portrait": null,
+      "accountability": null,
+      "coverage": {
+        "notes": "This profile contains the selected reported election record. Additional career, statement, voting, bill-text and financial records have not been joined without source review. Missing research is not a finding about this person."
+      }
+    },
+    {
+      "id": "p2026-a583b6fd",
+      "path": "people/2026/house-56-chuck-gray-a583b6fd/",
+      "displayName": "Chuck Gray",
+      "reportedName": "Chuck Gray",
+      "personStatus": "source_record",
+      "election": {
+        "key": "house|2026|district||56|0|general|false|candidate|",
+        "office": "house",
+        "year": 2026,
+        "stateFips": "56",
+        "state": "Wyoming",
+        "district": "0",
+        "seat": null,
+        "seatClass": null,
+        "stage": "general",
+        "special": false,
+        "contestType": null,
+        "electionDate": "2026-11-03",
+        "leader": {
+          "name": "Chuck Gray",
+          "party": "Republican",
+          "votes": 99891,
+          "share": 54.22051663400838,
+          "margin": 20.738637905672768
+        },
+        "status": "Provisional reported leader",
+        "holdReasons": [],
+        "provisional": true,
+        "certifiedCount": false,
+        "sourceIds": [
+          "house-completion-wy2026"
+        ],
+        "sourceLinks": [
+          "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf"
+        ],
+        "sourceUpdatedAt": "2026-11-03T23:54:49-07:00",
+        "retrievedAt": "2026-11-07T20:28:56.845472+00:00",
+        "timestampBasis": "PDFpage2printedMSTsourceupdate, not retrieval time"
+      },
+      "portrait": null,
+      "accountability": null,
+      "coverage": {
+        "notes": "This profile contains the selected reported election record. Additional career, statement, voting, bill-text and financial records have not been joined without source review. Missing research is not a finding about this person."
+      }
+    },
+    {
       "id": "p2026-244a7f9f",
       "path": "people/2026/governor-01-tommy-tuberville-244a7f9f/",
       "displayName": "Tommy Tuberville",
@@ -19784,6 +20353,7 @@
           "margin": 3.935811863586855
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -20064,6 +20634,7 @@
           "margin": 19.922209551569296
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -20290,6 +20861,7 @@
           "margin": 12.630453801079595
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -20599,6 +21171,7 @@
           "margin": 15.289974887841765
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -20811,6 +21384,7 @@
           "margin": 29.397480386639053
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -20874,6 +21448,7 @@
           "margin": 27.45640573024945
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -20921,6 +21496,7 @@
           "margin": 19.108980669929817
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -20990,6 +21566,7 @@
           "margin": 1.303538963947062
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21035,6 +21612,7 @@
           "margin": 8.616248370882438
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21082,6 +21660,7 @@
           "margin": 24.73487784129529
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21129,6 +21708,7 @@
           "margin": 10.894918153069913
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21176,6 +21756,7 @@
           "margin": 30.686090799223603
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21245,6 +21826,7 @@
           "margin": 12.830456150417948
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21311,6 +21893,7 @@
           "margin": 8.582484763522585
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21358,6 +21941,7 @@
           "margin": 14.664672261671823
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21405,6 +21989,7 @@
           "margin": 7.927487400130947
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21452,6 +22037,7 @@
           "margin": 22.11818955316233
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21499,6 +22085,7 @@
           "margin": 29.91475395207594
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21546,6 +22133,7 @@
           "margin": 4.476108536677046
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21593,6 +22181,7 @@
           "margin": 26.927457925334085
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21639,6 +22228,7 @@
           "margin": 7.12864479522893
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
@@ -21686,6 +22276,7 @@
           "margin": 6.552277615485859
         },
         "status": "Provisional reported leader",
+        "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [

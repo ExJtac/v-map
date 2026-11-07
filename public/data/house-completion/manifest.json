@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "house-completion-va2022-1": {
+      "title": "Virginia Department of Elections2022official House locality returns",
+      "publisher": "Virginia Department of Elections",
+      "url": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(01).json",
+      "sourceUrl": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(01).json",
+      "sha256": "a328e4493c9437d505ba0c03c5221a1cb3695ff97c22837792cddfd30b3dfc8b",
+      "file": "va2022-district-01.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:12.678739+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-va2022-2": {
+      "title": "Virginia Department of Elections2022official House locality returns",
+      "publisher": "Virginia Department of Elections",
+      "url": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(02).json",
+      "sourceUrl": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(02).json",
+      "sha256": "eea588d743a1da6c1f0f0a36eb1391198fab9a383da52e00e71e652c1428bed6",
+      "file": "va2022-district-02.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:12.622299+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-va2022-3": {
+      "title": "Virginia Department of Elections2022official House locality returns",
+      "publisher": "Virginia Department of Elections",
+      "url": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(03).json",
+      "sourceUrl": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(03).json",
+      "sha256": "e7495f77788ed7a6ad2bb120193bc4786356bad5aff8c836a9706cb051df15d5",
+      "file": "va2022-district-03.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:12.899549+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-va2022-4": {
+      "title": "Virginia Department of Elections2022official House locality returns",
+      "publisher": "Virginia Department of Elections",
+      "url": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(04).json",
+      "sourceUrl": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(04).json",
+      "sha256": "404df6265b8f182829fa44797ea229a38ec60ad296f674f9c183fbb458c07d3d",
+      "file": "va2022-district-04.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:13.018760+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-va2022-5": {
+      "title": "Virginia Department of Elections2022official House locality returns",
+      "publisher": "Virginia Department of Elections",
+      "url": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(05).json",
+      "sourceUrl": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(05).json",
+      "sha256": "d1d755d8b166e6f2d207ff75f723e6d744a5093c8f9ca5473fc4653b21afd5cb",
+      "file": "va2022-district-05.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:13.151339+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-va2022-6": {
+      "title": "Virginia Department of Elections2022official House locality returns",
+      "publisher": "Virginia Department of Elections",
+      "url": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(06).json",
+      "sourceUrl": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(06).json",
+      "sha256": "5c15bf6630dd95c69ceff112f663d35b259f7c86e72bb9c25b389d0f03c4fbd3",
+      "file": "va2022-district-06.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:13.226757+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-va2022-7": {
+      "title": "Virginia Department of Elections2022official House locality returns",
+      "publisher": "Virginia Department of Elections",
+      "url": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(07).json",
+      "sourceUrl": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(07).json",
+      "sha256": "6beb6b942848a307b99c70a553060079912447df48fd7e23a12bd3dcc1d8a371",
+      "file": "va2022-district-07.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:13.358594+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-va2022-8": {
+      "title": "Virginia Department of Elections2022official House locality returns",
+      "publisher": "Virginia Department of Elections",
+      "url": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(08).json",
+      "sourceUrl": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(08).json",
+      "sha256": "82e8548911baa9f689a4f3b23cb05530a14d04be5cc6b6fb21d520da4ff70407",
+      "file": "va2022-district-08.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:13.453153+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-va2022-9": {
+      "title": "Virginia Department of Elections2022official House locality returns",
+      "publisher": "Virginia Department of Elections",
+      "url": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(09).json",
+      "sourceUrl": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(09).json",
+      "sha256": "46c0a57fdaf884982354788d37e4c1fa86dbc0779ef2b273e99ca0813dd469be",
+      "file": "va2022-district-09.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:13.562969+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-va2022-10": {
+      "title": "Virginia Department of Elections2022official House locality returns",
+      "publisher": "Virginia Department of Elections",
+      "url": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(10).json",
+      "sourceUrl": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(10).json",
+      "sha256": "f696a1a375016dc66906e12632b3ae7b8a71c2f6d9746a741b07f74e919e0f76",
+      "file": "va2022-district-10.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:13.704660+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-va2022-11": {
+      "title": "Virginia Department of Elections2022official House locality returns",
+      "publisher": "Virginia Department of Elections",
+      "url": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(11).json",
+      "sourceUrl": "https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(11).json",
+      "sha256": "02cf9853ebd8fb0164d8c7ab3895b8dcff9ce824ab922738c2b229c96eaa8753",
+      "file": "va2022-district-11.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:13.813397+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-mn2026": {
+      "title": "Minnesota Secretary of State2026unofficial House county export",
+      "publisher": "Minnesota Secretary of State",
+      "url": "https://electionresultsfiles.sos.mn.gov/20261103/USHouseCty.txt",
+      "sourceUrl": "https://electionresultsfiles.sos.mn.gov/20261103/USHouseCty.txt",
+      "sha256": "4436ef11a52d8f440137b8f9d060b8977e07a7e1d3bb6ede32595d0743a57997",
+      "file": "mn2026-house-county.txt",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:25:49.949856+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-mn2026-district": {
+      "title": "Minnesota Secretary of State2026unofficial whole-district controls",
+      "publisher": "Minnesota Secretary of State",
+      "url": "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt",
+      "sourceUrl": "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt",
+      "sha256": "2ce387a384d0426b98e0d03f7922358044a4d07c167e7c155390e9ac9a80cfbd",
+      "file": "mn2026-house-district.txt",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:25:49.666156+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-1": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA574909A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA574909A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "9be99927c137f5535052c3c3370589e9e7218af954ed93c1f0dcefa27b296128",
+      "file": "oh2026-district-01-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:50.690035+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-2": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA574F09A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA574F09A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "2c73fe1d63ca4a93732b269361ec8154e00a97b623595c7cb94ec89ae2c08ca5",
+      "file": "oh2026-district-02-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:50.593606+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-3": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA570C09A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA570C09A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "56160a762d79d594537d6dfcf8671eebd3a8f51873509bcd8e4e4f1881ea495d",
+      "file": "oh2026-district-03-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:50.809600+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-4": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA578509A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA578509A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "20a4dd7a2b9fb6bd91355cc14509287d34df6bc50967d4c4561f4c47a5e295f6",
+      "file": "oh2026-district-04-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:50.889225+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-5": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA573509A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA573509A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "327e33b37a62c49aff3ae4bf85c25e2eb29ba75b3870b113f806ffb0b211ec2e",
+      "file": "oh2026-district-05-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:51.008229+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-6": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA576209A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA576209A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "695a850a6d952557fd1e5d641eb66238ce500b0f00f0a307b433e3bd0c9e7612",
+      "file": "oh2026-district-06-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:51.080765+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-7": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA571A09A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA571A09A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "f1cf6eef3be9f07e322bbd36c09e4676d2ebacb359959582e5ee0ad35eb3b917",
+      "file": "oh2026-district-07-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:51.204728+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-8": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA574109A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA574109A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "939ce61d7440946eca41809ee29dd798a0c0327b8f4a2a608b60a009a615cc73",
+      "file": "oh2026-district-08-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:51.274624+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-9": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA577809A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA577809A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "980724b1e380ebc15ca952904d7e5e4c25d94bd26d1cf3f6d6c909de11139b06",
+      "file": "oh2026-district-09-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:51.409578+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-10": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA571009A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA571009A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "7960334d4d7fd375523339858b945419cbaef01a9aec25e7ff09c2bb69f7b868",
+      "file": "oh2026-district-10-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:51.455147+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-11": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA571609A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA571609A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "e400c716b19ce38e325892198cd65dd4e454b649c93625db7bb622ed14984ed0",
+      "file": "oh2026-district-11-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:51.573846+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-12": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA572109A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA572109A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "fae615831d46096fffaea4857e01fab4a2c131891c9e5d4ff11b778c223b895a",
+      "file": "oh2026-district-12-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:51.660595+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-13": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA572F09A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA572F09A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "c381f4b7ae960e99a0262faca90d09dc65cf04326a7f65d3a11a838197a19c47",
+      "file": "oh2026-district-13-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:51.754926+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-14": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA576F09A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA576F09A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "70eba1b11939cc3985de22d6e2edbaa079ef7d15a762be35885fde09d402f140",
+      "file": "oh2026-district-14-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:51.851847+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    },
+    "house-completion-oh2026-15": {
+      "title": "Ohio Secretary of State2026unofficial House county returns",
+      "publisher": "Ohio Secretary of State",
+      "url": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA570209A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sourceUrl": "https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA570209A3E0633390EE0AE290&resultsLevel=County&countyId=",
+      "sha256": "08a477ab51f5efdfb6d73eae793a6cddb8453df63bc0db73086c92a0dfdf2d64",
+      "file": "oh2026-district-15-counties.json",
+      "sourceIsOfficial": true,
+      "retrievedAt": "2026-11-07T20:29:51.943183+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Public election facts; underlying publisher reuse terms retained; no blanket public-domain claim"
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 156,
+      "stateCount": 1
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 225,
+      "stateCount": 2
+    }
+  ],
+  "limitations": [
+    "Direct Minnesota/Ohio2026unofficial results replace prior mirrored snapshots, retaining raw sources and matching independent district controls.",
+    "Virginia2022directofficiallocality rows replace older derivedbaseline; state/FECwrite-in disagreement retained in qualification proof.",
+    "SouthDakota2022noDemocraticnominee; party-specific comparison withheld.",
+    "Countywide aggregates sum every actual district portion independently byyear; no seat or candidate constancy implied.",
+    "All2026resultsprovisional; scopecomplete does not mean countingcomplete or certified.",
+    "Manual research packet; scheduler remainspaused."
+  ],
+  "review": {
+    "status": "source_reviewed",
+    "reviewedAt": "2026-11-07T20:38:31.134549+00:00",
+    "approvalReceiptSha256": "f746b0ef1419a68a83cdfc04ad0f6d56a1c9abcaa90da8d4057c43baa70480c3",
+    "approvedStateFips": [
+      "27",
+      "39",
+      "46",
+      "51"
+    ]
+  }
+}
