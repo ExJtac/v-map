@@ -3,6 +3,7 @@ import { geoPath } from "d3-geo";
 import { select } from "d3-selection";
 import "d3-transition";
 import { zoom, zoomIdentity } from "d3-zoom";
+import { installMapPinch } from "./map-touch.js";
 import { feature } from "topojson-client";
 import topology from "us-atlas/states-albers-10m.json";
 import countyLabels from "./county-labels.json";
@@ -100,8 +101,10 @@ let selectedState = null,
   elections;
 let mapGestures = false, pageScrollIntent = 0;
 document.addEventListener('wheel', event => { if (!event.ctrlKey && !event.metaKey) { pageScrollIntent++; if(!event.target.closest('#us-map'))setMapGestures(false); } }, {passive:true});
-document.addEventListener('touchmove', () => { if (!mapGestures) pageScrollIntent++; }, {passive:true});
+document.addEventListener('touchstart', () => { pageScrollIntent++; }, {passive:true});
+document.addEventListener('touchmove', event => { if (event.touches.length === 1) pageScrollIntent++; }, {passive:true});
 const mapZoom = zoom()
+  .touchable(() => false)
   .filter(event => event.type === 'wheel' ? (event.ctrlKey || event.metaKey || (mapGestures && (event.deltaY < 0 ? currentZoom.k < 450 : currentZoom.k > 1))) : event.type.startsWith('touch') ? mapGestures : !event.button)
   .wheelDelta(event => -event.deltaY * (event.deltaMode === 1 ? .05 : event.deltaMode ? .5 : .002))
   .scaleExtent([1, 450])
@@ -123,6 +126,14 @@ const mapZoom = zoom()
       .attr("font-size", 10 / currentZoom.k);
   });
 svg.call(mapZoom).on("dblclick.zoom", null);
+installMapPinch(svg.node(), {
+  readTransform: () => currentZoom,
+  onStart: () => { svg.interrupt(); pageScrollIntent++; },
+  applyTransform: ({x,y,k}) => {
+    const next = mapZoom.constrain()(zoomIdentity.translate(x,y).scale(k), mapZoom.extent().call(svg.node()), mapZoom.translateExtent());
+    svg.call(mapZoom.transform, next);
+  }
+});
 svg.node().addEventListener('wheel',event=>{
   if(event.ctrlKey || event.metaKey)event.preventDefault();
   else if(mapGestures && ((event.deltaY > 0 && currentZoom.k <= 1) || (event.deltaY < 0 && currentZoom.k >= 450)))setMapGestures(false);
@@ -656,12 +667,12 @@ function setMapGestures(enabled) {
   mapGestures = enabled;
   const button = $('#map-gestures');
   button.setAttribute('aria-pressed',String(enabled));
-  button.textContent = enabled ? 'Return to page scrolling' : 'Enable map zoom & gestures';
+  button.textContent = enabled ? 'Turn off scroll-wheel zoom' : 'Enable scroll-wheel zoom';
   svg.classed('map-gestures-enabled',enabled);
-  $('#map-scroll-help').textContent = enabled ? 'Scroll to zoom the map. Scroll outside the map, press Esc, or turn map zoom off to scroll the page.' : 'Click the map to scroll-zoom, or use + / −. On touchscreens, enable map gestures to pinch-zoom.';
+  $('#map-scroll-help').textContent = enabled ? 'Scroll to zoom the map; scroll outside it or press Esc to scroll the page. On mobile: two fingers zoom, one finger scrolls the page.' : 'Two fingers pinch-zoom the map; one finger scrolls the page. On desktop, click the map to scroll-zoom or use + / −.';
 }
 $('#map-gestures').addEventListener('click', () => setMapGestures(!mapGestures));
-$('#back-to-map').addEventListener('click', event => { if(event.pointerType!=='touch')setMapGestures(true); $('.map-topline').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'}); });
+$('#back-to-map').addEventListener('click', event => { pageScrollIntent++; if(event.pointerType!=='touch')setMapGestures(true); $('.map-topline').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'}); });
 $('#jump-statistics').addEventListener('click', () => $('#statistical-review').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'}));
 $('#jump-history').addEventListener('click', () => $('#history-charts').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'}));
 $('#show-selected-results').addEventListener('click', () => {if(selectedCounty)openSelectedDetails(selectedCounty,'county');else $('#map-tooltip').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'});});
