@@ -18,7 +18,7 @@ const notAssessed=reason=>({status:'not-assessed',flags:[],reason});
 const regular=r=>!r.special && ['general','gen','g'].includes(String(r.stage||'general').toLowerCase()) && (!r.contestType || r.contestType==='candidate');
 function qualityReason(r, prior=false) {
   if (!r) return 'Matching source record unavailable.';
-  if (r.sourceNeedsReview || r.sourceTotalConflict || r.voteTotalMismatch) return 'Source quality hold or inconsistent totals.';
+  if (r.sourceNeedsReview || r.sourceTotalConflict || r.voteTotalMismatch) return r.sourceQualityNote?`Source quality hold: ${r.sourceQualityNote}`:'Source quality hold or inconsistent totals.';
   if (r.incomplete) return 'Source explicitly marks incomplete coverage.';
   if (r.boundaryChanged || r.boundaryIncompatible || r.boundaryNote || r.geographicCoverageNote) return 'Geographic boundary or jurisdiction comparability is unproven.';
   if (prior && (r.provisional || r.unofficial)) return 'Prior baseline is provisional or unofficial.';
@@ -76,10 +76,11 @@ function matchingPair(office,fips,elections,criteria,comparability) {
     if(!expected(2026).length||!expected(2022).length||JSON.stringify(keys(now))!==JSON.stringify(expected(2026))||JSON.stringify(keys(old))!==JSON.stringify(expected(2022)))return {reason:'Verified county-district portion inventory is incomplete or ambiguous.'};
     for(const r of [...now,...old]) {const reason=qualityReason(r,old.includes(r));if(reason)return {reason};if(r.stateFips!==fips.slice(0,2)||r.district==null)return {reason:'County-district identity inconsistent with verified state scope.'};}
     const row=aggregateHouseCounty(now,fips,2026),prior=aggregateHouseCounty(old,fips,2022);
-    return {row,prior,...partyInput(row,prior,criteria),baselineYear:2022,comparability:{id:contract.id,basis:contract.basis||'Complete countywide sum across all verified House portions in both years; Other votes unassigned',limitations:contract.limitations||[],countyDistrictPortions:row.portions,priorCountyDistrictPortions:prior.portions,sources:contract.sources}};
+    return {row,prior,...partyInput(row,prior,criteria),baselineYear:2022,comparability:{id:contract.id,basis:contract.basis||'Complete countywide sum across all verified House portions in both years; Other votes unassigned',limitations:contract.limitations||[],comparisonNotes:contract.comparisonNotes||[],countyDistrictPortions:row.portions,priorCountyDistrictPortions:prior.portions,sources:contract.sources}};
   }
-  const reviewedRound=office==='senate'?comparability?.senateRounds?.[fips.slice(0,2)]:null;
-  const comparableRound=(r,year)=>reviewedRound?.verified?!r.special&&(!r.contestType||r.contestType==='candidate')&&r.sourceSeatId===reviewedRound.seatId&&r.sourceStage===reviewedRound.years?.[year]?.sourceStage&&r.stage===reviewedRound.years?.[year]?.stage&&r.electionDate===reviewedRound.years?.[year]?.electionDate:regular(r);
+  const specialScope=office==='senate'?comparability?.senateSpecials?.[fips.slice(0,2)]:null;
+  const reviewedRound=office==='senate'?(specialScope||comparability?.senateRounds?.[fips.slice(0,2)]):null;
+  const comparableRound=(r,year)=>reviewedRound?.verified?r.special===(reviewedRound.years?.[year]?.special??false)&&(!r.contestType||r.contestType==='candidate')&&r.sourceSeatId===reviewedRound.seatId&&(r.sourceStage??null)===(reviewedRound.years?.[year]?.sourceStage??null)&&r.stage===reviewedRound.years?.[year]?.stage&&r.electionDate===reviewedRound.years?.[year]?.electionDate:regular(r);
   const rows=current.filter(r=>comparableRound(r,2026));
   if(rows.length!==1)return {reason:'A unique regular current county contest is not established.'};
   const row=rows[0];
@@ -87,18 +88,22 @@ function matchingPair(office,fips,elections,criteria,comparability) {
   let baselineYear=2022,contract=null;
   if(office==='senate') {
     baselineYear=2020;
+    if(specialScope?.verified){
+      if(!['12','39'].includes(row.stateFips)||specialScope.baselineYear!==2022||specialScope.currentYear!==2026||specialScope.seatClass!==3||specialScope.termEndDate!=='2029-01-03'||specialScope.seatId!==`${row.stateFips}-senate-class-3-term-ending-2029-01-03`||!specialScope.id?.trim()||specialScope.years?.[2022]?.electionDate!=='2022-11-08'||specialScope.years?.[2026]?.electionDate!=='2026-11-03'||specialScope.years?.[2022]?.special!==false||specialScope.years?.[2026]?.special!==true)return {reason:'Reviewed Senate special seat, term or baseline identity is inconsistent.'};
+      baselineYear=2022;contract={id:specialScope.id,basis:specialScope.basis,limitations:specialScope.limitations||[],comparisonNotes:specialScope.comparisonNotes||[],sources:specialScope.sources};
+    }
     if(['13','22'].includes(row.stateFips)){
       const round=comparability?.senateRounds?.[row.stateFips];
       if(!round?.verified||!round.id?.trim())return {reason:round?.reason||'Georgia/Louisiana 2020 Senate ballot-round comparability is not established.'};
       if(row.electionDate!==round.years?.[2026]?.electionDate)return {reason:'Current Senate date does not match the reviewed November-ballot comparison.'};
       contract={id:round.id,basis:round.basis,limitations:round.limitations||[],comparisonNotes:round.comparisonNotes||[],sources:round.sources};
     }
-    if(!row.seatId&&!SENATE_CLASS_2_FIPS.includes(row.stateFips))return {reason:'Explicit comparable Senate seat identity is unavailable.'};
+    if(!contract&&!row.seatId&&!SENATE_CLASS_2_FIPS.includes(row.stateFips))return {reason:'Explicit comparable Senate seat identity is unavailable.'};
     if(!row.seatId&&!contract)contract={id:`${row.stateFips}-senate-class-2`,basis:'Official Class II2021–2027 term identifies the regular 2020 and 2026 seat; source general/non-special stages must independently match',sources:[SENATE_CLASS_2_SOURCE]};
   }
   const matches=countyRows(elections[`${office}-${baselineYear}`],fips).filter(p=>comparableRound(p,baselineYear)&&p.stateFips===row.stateFips&&(p.contestType||'candidate')===(row.contestType||'candidate')&&(office!=='senate'||(row.seatId?p.seatId===row.seatId:!p.seatId)));
   if(matches.length!==1)return {reason:`A unique matching regular ${baselineYear} county contest is unavailable.`};
-  if(office==='senate'&&comparability?.senateRounds?.[row.stateFips]?.verified&&matches[0].electionDate!==comparability.senateRounds[row.stateFips].years?.[2020]?.electionDate)return {reason:'Historical Senate date does not match the reviewed November-ballot comparison.'};
+  if(office==='senate'&&reviewedRound?.verified&&matches[0].electionDate!==reviewedRound.years?.[baselineYear]?.electionDate)return {reason:'Historical Senate date does not match the reviewed Senate comparison.'};
   const reviewedNovemberPair=Boolean(reviewedRound?.verified);
   return {row,prior:matches[0],...partyInput(row,matches[0],criteria,reviewedNovemberPair),baselineYear,reviewedNovemberPair,...(contract?{comparability:contract}:{})};
 }

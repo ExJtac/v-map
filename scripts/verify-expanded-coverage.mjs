@@ -1,3 +1,4 @@
+import {approvedUnknownSourceTime} from './reviewed-source-time.mjs';
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import { COUNTY_SOURCES } from "../src/coverage-sources.js";
@@ -58,8 +59,7 @@ for (const source of manifests)
       if (r.provisional) {
         provisional++;
         assert.equal(r.unofficial, true);
-        const sourceInfo=data.sources[r.sourceId];
-        const approvedUnknownTime=r.sourceId==='ky-house-current-state-controls'&&r.geoLevel==='district'&&r.stateFips==='21'&&data.office==='house'&&data.year===2026&&r.sourceReviewDate==='2026-11-07'&&r.retrievedAt===null&&r.sourceUpdatedAt===null&&sourceInfo.retrievedAt===null&&sourceInfo.sourceReviewDate===r.sourceReviewDate&&sourceInfo.evidenceSha256==='2b9107869a6bfaf28b009a300b9defeef08570a70f7ba01096f48b4f85385464'&&sourceInfo.sourceFormat==='saved primary web-reader extraction, not downloaded HTML/PDF bytes'&&/Exact control-page request timestamp unavailable/.test(sourceInfo.retrievedAtBasis||'');
+        const approvedUnknownTime=approvedUnknownSourceTime(r,data);
         assert.ok(r.sourceUpdatedAt || r.asOf || r.fetchedAt || r.retrievedAt || approvedUnknownTime,'Provisional source must retain a known time or the narrowly approved unknown-time receipt');
       }
     }
@@ -183,3 +183,7 @@ console.log(
     ],
   }),
 );
+
+const indexed=JSON.parse(fs.readFileSync('public/data/senate-specials-fl/state-indexed-2026.json'));const indexedRow=indexed.results[0];assert.equal(approvedUnknownSourceTime(indexedRow,indexed),true);
+for(const mutate of [d=>d.year=2024,d=>d.results[0].stateFips='13',d=>d.results[0].geoLevel='county',d=>d.results[0].special=false,d=>d.sources[indexedRow.sourceId].evidenceSha256='unreviewed',d=>d.sources[indexedRow.sourceId].approvalReceiptSha256='unreviewed',d=>d.sources[indexedRow.sourceId].sourceFormat='unknown']){const changed=structuredClone(indexed);mutate(changed);assert.equal(approvedUnknownSourceTime(changed.results[0],changed),false);}
+console.log('Reviewed unknown source clocks remain confined to exact approved geography/source/hash receipts.');

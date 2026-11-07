@@ -103,10 +103,12 @@ export function ballotsPerResident(ballots, population) {
 }
 
 // A separately labeled race-vote ratio, never a replacement ballot/voter total.
-export function contestVotesPerResident(rows, office, population) {
+export function contestVotesPerResident(rows, office, population, specialScope=null) {
   if (!['president', 'senate', 'governor'].includes(office) || rows?.length !== 1) return null;
   const row = rows[0];
-  if (!['county', 'state'].includes(row.geoLevel) || row.special || normalizedStage(row.stage) !== 'general' ||
+  const approvedSpecial=office==='senate'&&(row.office==null||row.office==='senate')&&(row.year==null||row.year===2026)&&row.special===true&&specialScope?.verified===true&&specialScope.seatClass===3&&specialScope.currentYear===2026&&specialScope.baselineYear===2022&&specialScope.stateFips===row.stateFips&&row.sourceSeatId===specialScope.seatId&&row.electionDate==='2026-11-03'&&specialScope.years?.[2026]?.electionDate===row.electionDate&&specialScope.years?.[2026]?.special===true&&(row.geoLevel==='state'||specialScope.years[2026].countyFips?.includes(row.countyFips));
+  if(office==='senate'&&specialScope&&row.electionDate==='2026-11-03'&&row.sourceSeatId&&!approvedSpecial)return null;
+  if (!['county', 'state'].includes(row.geoLevel) || (row.special&&!approvedSpecial) || normalizedStage(row.stage) !== 'general' ||
       (row.contestType && row.contestType !== 'candidate') || row.boundaryIncompatible || row.boundaryChanged ||
       row.boundaryNote || row.geographicCoverageNote || row.suppressElectionWinner || row.winnerEligible === false) return null;
   const metrics = contestMetrics(row);

@@ -4,10 +4,10 @@ const excluded = new Set(['overvotes','undervotes','invalidBallots','blankBallot
 const writeIns = new Set(['unattributedWriteIns','sourceWriteInEntries','namedWriteIns']);
 const class1 = new Set('04 06 09 10 12 15 18 23 24 25 26 27 28 29 30 31 32 34 35 36 38 39 42 44 47 48 49 50 51 53 54 55 56'.split(' '));
 const class2 = new Set('01 02 05 08 10 13 16 17 19 20 21 22 23 25 26 27 28 30 31 33 34 35 37 40 41 44 45 46 47 48 51 54 56'.split(' '));
-export function selectHistoryYears({office, years = [], id, stateFips}) {
+export function selectHistoryYears({office, years = [], id, stateFips, specialYears = []}) {
   const sf = stateFips || String(id || '').slice(0,2);
   return [...new Set(years.map(Number))].filter(y => y >= 2006 && y <= 2026 && (
-    office === 'president' ? y % 4 === 0 : office === 'house' ? y % 2 === 0 : office === 'senate' ? y % 2 === 0 && ((y % 6 === 2 && class1.has(sf)) || (y % 6 === 4 && class2.has(sf)) || (y % 6 === 0 && !(class1.has(sf) && class2.has(sf)))) : office === 'governor' ? (['33','50'].includes(sf) ? y % 2 === 0 : ['34','51'].includes(sf) ? y % 4 === 1 : ['21','22','28'].includes(sf) ? y % 4 === 3 : ['10','18','29','30','37','38','49','53','54'].includes(sf) ? y % 4 === 0 : y % 4 === 2) : false
+    office === 'president' ? y % 4 === 0 : office === 'house' ? y % 2 === 0 : office === 'senate' ? y % 2 === 0 && (specialYears.includes(y) || (y % 6 === 2 && class1.has(sf)) || (y % 6 === 4 && class2.has(sf)) || (y % 6 === 0 && !(class1.has(sf) && class2.has(sf)))) : office === 'governor' ? (['33','50'].includes(sf) ? y % 2 === 0 : ['34','51'].includes(sf) ? y % 4 === 1 : ['21','22','28'].includes(sf) ? y % 4 === 3 : ['10','18','29','30','37','38','49','53','54'].includes(sf) ? y % 4 === 0 : y % 4 === 2) : false
   )).sort((a,b) => a-b);
 }
 export function qualifiedRaceCounts(rows, {office, year, level, id}) {
@@ -46,11 +46,12 @@ export function auditedHouseCounts(report, id, year) {
   return auditedPairCounts(e,year);
 }
 export function auditedSenateRoundCounts(report,id,year) {
-  if(![2020,2026].includes(year))return {reason:'This reviewed Senate ballot comparison covers only 2020 and 2026.'};
-  const contract=report?.comparabilityContracts?.senateRounds?.[String(id).slice(0,2)];
-  if(!contract?.verified)return {reason:'November Senate ballot-round scope is not independently qualified.'};
+  const state=String(id).slice(0,2),contract=report?.comparabilityContracts?.senateSpecials?.[state]||report?.comparabilityContracts?.senateRounds?.[state];
+  if(!contract?.verified)return {reason:'Senate seat and ballot scope are not independently qualified.'};
+  const baselineYear=contract.baselineYear||2020;
+  if(![baselineYear,2026].includes(year))return {reason:'This reviewed Senate comparison does not qualify the requested year or a different ballot round.'};
   const race=report?.counties?.[id]?.offices?.senate?.reviewScreens?.raceVoteChange,e=race?.evidence;
-  if(race?.status!=='assessed'||e?.comparability?.id!==contract.id||e.baselineYear!==2020||e.currentYear!==2026)return {reason:race?.reason||'Audited November Senate race totals unavailable.'};
+  if(race?.status!=='assessed'||e?.comparability?.id!==contract.id||e.baselineYear!==baselineYear||e.currentYear!==2026)return {reason:race?.reason||'Audited same-seat Senate race totals unavailable.'};
   return {...auditedPairCounts(e,year),roundBasis:contract.basis};
 }
 function auditedPairCounts(e,year) {

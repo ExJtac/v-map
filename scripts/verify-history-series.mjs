@@ -53,3 +53,16 @@ for(const [state,contract]of Object.entries(audit.comparabilityContracts.senateR
 }
 assert.ok(auditedSenateRoundCounts(audit,'13001',2022).reason,'A reviewed2020/2026pair cannot qualify2022or a runoff');
 console.log('Reviewed November Senate pairs reach graphs only for exact qualified scopes and years.');
+
+assert.ok(!selectHistoryYears({office:'senate',years,id:'12'}).includes(2026),'Unqualified special year is not inferred');
+assert.ok(selectHistoryYears({office:'senate',years,id:'12',specialYears:[2026]}).includes(2026),'Reviewed special year appears alongside regular cycles');
+for(const [state,contract]of Object.entries(audit.comparabilityContracts.senateSpecials||{})){
+ if(!contract.verified)continue;
+ assert.equal(contract.baselineYear,2022);
+ for(const [fips,county]of Object.entries(audit.counties).filter(([f])=>f.startsWith(state))){
+  const e=county.offices.senate.reviewScreens.raceVoteChange.evidence;assert.ok(e);
+  for(const year of [2022,2026]){const count=auditedSenateRoundCounts(audit,fips,year);assert.equal(count.total,year===2022?e.priorRaceVotes:e.currentRaceVotes);assert.equal(count.scope,contract.id);}
+  assert.ok(auditedSenateRoundCounts(audit,fips,2020).reason,'Special contract cannot silently switch to2020');
+ }
+}
+console.log('Reviewed special Senate history uses2022and2026only; missing special years are never inferred.');

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "modern-heideman-v1-senate-oh_medsl_2022": {
+      "url": "https://github.com/pmheideman/us-county-election-results/releases/download/v1.0.0/us_county_election_results_v1.0.0.zip",
+      "sourceUrl": "https://doi.org/10.5281/zenodo.22976553",
+      "title": "Paul Heideman U.S. county-level election results 1990–2024",
+      "version": "v1.0.0",
+      "license": "CC-BY-4.0 for release; underlying source rights vary; retain SOURCES.csv",
+      "sha256": "e422fbfb1c56bed6787d08e59eed83d13b4ccf567510c69f94d2802a34b8e625",
+      "file": "heideman-v1.0.0.zip",
+      "sourceToken": "oh_medsl_2022",
+      "originalSources": [
+        {
+          "source": "oh_medsl_2022",
+          "office": "senate",
+          "state_po": "OH",
+          "year": "2022",
+          "origin": "medsl",
+          "publisher": "MIT Election Data and Science Lab (MEDSL)",
+          "document": "U.S. Senate precinct-level returns 2022 (state files, aggregated to county by this project)",
+          "locator": "Harvard Dataverse, dataverse.harvard.edu (MIT Election Data and Science Lab). Local copy: R/data/raw_election/senate_2022.raw; dataset DOIs: https://doi.org/10.7910/DVN/NLTQAD, https://doi.org/10.7910/DVN/DGNAFS, https://doi.org/10.7910/DVN/ER9XTV, https://doi.org/10.7910/DVN/IAD3XR, https://doi.org/10.7910/DVN/ZCM3BN",
+          "format": "tab/CSV precinct files",
+          "obtained": "downloaded via the Dataverse guestbook/signed-URL flow (R/data/raw_election/download_medsl.sh)",
+          "transcription": "none (parsed text); project fixes: pseudo-rows removed, party fixes, special elections excluded (see data_corrections_log.csv)",
+          "license": "CC0 1.0, verified 2026-09-23 via the Dataverse API (license field on the dataset record)",
+          "license_status": "cc0_verified",
+          "n_rows": "616",
+          "n_counties": "88",
+          "n_districts": "1",
+          "corrections_log_entries": "",
+          "notes": "Special-election races excluded; Arizona 2020 (special only) is a gap"
+        }
+      ],
+      "sourceMember": "us_county_results_long.csv",
+      "licenseNote": "Release CC-BY-4.0 does not override underlying publishers rights",
+      "snapshotDate": "2026-11-06"
+    },
+    "modern-current-2026-oh": {
+      "file": "results-2026-oh.csv",
+      "url": "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv",
+      "sourceUrl": "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+      "title": "Pushbuild2026 OH official-source returns snapshot",
+      "version": "73b20975fc0a66da90688d372b4c619609fee9cb",
+      "license": "CC0-1.0 research snapshot; original official-source URLs retained per contest",
+      "asOf": "2026-11-06T10:02:00-05:00",
+      "sha256": "03a16742e6b771c6a0e3b541cf8ed4e2c973819fd285b062d84b75d1eb6cbe1c",
+      "readmeFile": "results-2026-README.md",
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "snapshotDate": "2026-11-06"
+    }
+  },
+  "coverage": [
+    {
+      "office": "senate",
+      "year": 2022,
+      "url": "/data/senate-specials-oh/senate-2022.json",
+      "geoLevels": [
+        "county"
+      ],
+      "rows": 88,
+      "stateCount": 1,
+      "countyCount": 88,
+      "candidateCount": 616
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "url": "/data/senate-specials-oh/senate-2026.json",
+      "geoLevels": [
+        "county"
+      ],
+      "rows": 88,
+      "stateCount": 1,
+      "countyCount": 88,
+      "candidateCount": 616
+    }
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T22:15:28.464007+00:00",
+    "evidenceSha256": "b9f38972e24bb1fb0e5136c8b31e49671bef8ce6c757ef5803b67d2d7028e064",
+    "approvalReceiptSha256": "22c597889d783ce28c6ec4e1f3f834221ecf6ad931b26e8bf6cb6b8166ecdc10"
+  },
+  "limitations": [
+    "Same Class III seat and term ending January 3, 2029, comparing the November 8, 2022 regular full-term general election to the November 3, 2026 special general for the remaining term. The elections do not offer identical term lengths or candidates.",
+    "No source-only packet enables comparison: root must implement and independently review a distinct hash-bound special-seat2022contract. Do not reuse the regular2020baseline, relabel special:false, change the global regular guard or qualify House contests.",
+    "Different candidates/competition, rules, participation, population estimates and provisional 2026counting limit interpretation. Party/race/population screens are exploratory and do not identify a cause, an error or misconduct.",
+    "Race candidate sums are not ballots cast or unique voter turnout. Minor parties and write-ins remain Other; sourcezeroes stay explicit and absent categories are not filled.",
+    "No winner promotion or certification is inferred from vote totals, precinct reporting or these comparisons. Exact source timestamps remainunknown where unavailable.",
+    "Class III term identity comes from the original U.S. Senate roster; date/regular baseline identity is supported by 2022official results and FECpublication; current date by actual2026file/registered event and original FEC2026calendar. Any source/stage/date/seat/vector change invalidates qualification.",
+    "All616historical cells match pinned upstream and seven original FECcontrols; this is bounded upstream/aggregate qualification rather than a fresh Ohio countycanvass.",
+    "All616current cells match the same existing registered county/state snapshot. Current count freshness is not newly independently endorsed; the original source contest explicitly says Unexpired Term Ending01/03/2029."
+  ]
+}

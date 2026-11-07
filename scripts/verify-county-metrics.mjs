@@ -92,3 +92,17 @@ for (const value of [null, undefined, NaN, Infinity]) assert.equal(isLargePartyC
 assert.equal(formatPartyChange(15.01), '+15.01%');
 assert.equal(formatPartyChange(49.480778), '+49.5%');
 console.log('Party-change emphasis threshold checks passed.');
+
+const specialRow={...ratioRow,office:'senate',year:2026,stateFips:'12',countyFips:'12001',geoLevel:'county',special:true,stage:'general',electionDate:'2026-11-03',sourceSeatId:'12-senate-class-3-term-ending-2029-01-03'};
+const specialScope={verified:true,stateFips:'12',seatClass:3,baselineYear:2022,currentYear:2026,seatId:specialRow.sourceSeatId,years:{2026:{electionDate:'2026-11-03',special:true,countyFips:['12001']}}};
+assert.equal(contestVotesPerResident([specialRow],'senate',4555),null,'A special contest cannot bypass source qualification alone');
+assert.equal(contestVotesPerResident([specialRow],'senate',4555,specialScope).votes,1372);
+for(const mutate of [s=>s.verified=false,s=>s.stateFips='39',s=>s.seatId='different',s=>s.baselineYear=2020,s=>s.years[2026].special=false,s=>s.years[2026].electionDate='2026-08-18',s=>s.years[2026].countyFips=[]]){const changed=structuredClone(specialScope);mutate(changed);assert.equal(contestVotesPerResident([specialRow],'senate',4555,changed),null);}
+assert.equal(contestVotesPerResident([{...specialRow,sourceNeedsReview:true}],'senate',4555,specialScope),null);
+assert.equal(contestVotesPerResident([specialRow,specialRow],'senate',4555,specialScope),null,'Never combine concurrent specials');
+console.log('Reviewed special Senate race-vote ratios retain exact scope/seat/date and source-quality gates; ballots remain separate.');
+assert.equal(contestVotesPerResident([{...specialRow,special:false}],'senate',4555,specialScope),null,'A reviewed special cannot be relabeled regular to bypass its guard');
+const missingSpecial={...specialRow};delete missingSpecial.special;assert.equal(contestVotesPerResident([missingSpecial],'senate',4555,specialScope),null,'Missing special flag remains unknown');
+const inheritedSpecial={...specialRow};delete inheritedSpecial.year;delete inheritedSpecial.office;assert.equal(contestVotesPerResident([inheritedSpecial],'senate',4555,specialScope).votes,1372,'Legacy rows may inherit year/office from their validated file');
+assert.equal(contestVotesPerResident([{...specialRow,year:2022}],'senate',4555,specialScope),null);
+assert.equal(contestVotesPerResident([{...specialRow,office:'governor'}],'senate',4555,specialScope),null);

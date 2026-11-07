@@ -163,7 +163,7 @@ function appendOfficeChecks(box, assessment, criteria) {
     if(scopeEvidence?.currentSource?.reportingNote)box.append(node('p','county-tip-note',scopeEvidence.currentSource.reportingNote));
     if(scopeEvidence?.office==='house'){
       box.append(node('p','county-tip-note','House comparisons sum every actual county/district portion separately in each year. District boundaries, candidates and unopposed competition can change; this is not a matched same-seat or same-candidate comparison.'));
-      for(const limit of scopeEvidence.comparability?.limitations||[])box.append(node('p','county-tip-note',limit));
+      for(const limit of scopeEvidence.comparability?.comparisonNotes?.length?scopeEvidence.comparability.comparisonNotes:scopeEvidence.comparability?.limitations||[])box.append(node('p','county-tip-note',limit));
     }
     if(scopeEvidence?.office==='senate'&&scopeEvidence.baselineYear===2020&&!Number.isFinite(e?.democratCountChangePercent))box.append(node('p','county-tip-note','Same-seat Senate comparison uses 2020, a presidential-election year. Election-cycle and reporting progress differences may explain large changes.'));
     if(scopeEvidence?.office==='senate')for(const limit of scopeEvidence.comparability?.comparisonNotes?.length?scopeEvidence.comparability.comparisonNotes:scopeEvidence.comparability?.limitations||[])box.append(node('p','county-tip-note',limit));

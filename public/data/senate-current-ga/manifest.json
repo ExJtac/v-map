@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "ga-senate-official-2026-11-07": {
+      "title": "Georgia Secretary of State: November 3, 2026 U.S. Senate results, direct official JSON snapshot",
+      "publisher": "Georgia Secretary of State",
+      "url": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-4042-08df23e5ff36",
+      "sha256": "3ecb07edc0a7776302f81838bb0627f1b2291288f3b0dba128286f626454c1de",
+      "retrievedAt": "2026-11-07T22:06:13.298021+00:00",
+      "controlUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+      "controlSha256": "9b0ecd4ba8f968138991af0ab942c8e784f0c74c36329183159a82e7c96e176d",
+      "controlRetrievedAt": "2026-11-07T22:04:47.858943+00:00",
+      "sourceIsOfficial": true,
+      "publicationStatus": "unofficial",
+      "snapshotAsOf": "2026-11-07T00:58:49.5754876Z",
+      "publisherLastUpdated": "2026-11-07T00:58:15.1934271Z",
+      "publishDate": "2026-11-07T01:09:10.9159667Z",
+      "publishVersionId": "7f50427f-6363-4b8f-b16c-3d223f8b10bb",
+      "timestampBasis": "Election-wide source publication metadata, not an independently verified county count-update time."
+    }
+  },
+  "coverage": [
+    {
+      "office": "senate",
+      "year": 2026,
+      "url": "/data/senate-current-ga/senate-2026.json",
+      "geoLevels": [
+        "county",
+        "state"
+      ],
+      "rows": 160,
+      "stateCount": 1,
+      "countyCount": 159,
+      "candidateCount": 320
+    }
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T22:12:21.765643+00:00",
+    "evidenceSha256": "f97fe9cb1c8d3ab4b809767314fe979473c06d66ba645eae49bb8c87975f9468",
+    "approvalReceiptSha256": "92534a633488f195be58c738c99d14bb971f261be6b9db6c1e9be95343d64e03"
+  },
+  "limitations": [
+    "Direct primary JSON snapshot retrieved November7,2026; source publication and county as-of timestamps remain distinct from retrieval and individual vote-count update times.",
+    "All159counties and318candidate cells reconcile both the whole-election summary and the separately retrieved Senate breakdown; these are publisher controls, not an independent voter audit.",
+    "Election-night-complete and100%reporting labels do not establish all ballots counted, final results or certification.",
+    "Source group vote counts are candidate-race votes, not ballots cast, distinct voters or verified mail/in-person turnout shares.",
+    "Same-seat first-November2020/2026comparison retains the approved historical source; January2021runoff and separate special-seat votes remain excluded."
+  ]
+}

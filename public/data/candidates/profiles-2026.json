@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "year": 2026,
   "snapshotDate": "2026-11-07",
-  "updatedAt": "2026-11-07T21:38:46.278537+00:00",
+  "updatedAt": "2026-11-07T22:06:13.298021+00:00",
   "sourceHashes": {
-    "winners": "341289f479dd8bd31a759072afb5c8d14f3fcce489aba0b9eb5e226e3c9fe456",
+    "winners": "7f8194389855c753e0d1822a7befb1b43d7620224a236fdbd05d2b8972f1858b",
     "pilot": "1bfd2da42d6595f296eabcc9f789b327bfffca326e1a7669b4396168f7cd0962",
     "portraits": "4cccda679817d26a9ae20ad6997438da9191034a802d07d4ba5606afb35427f2"
   },
@@ -1170,32 +1170,32 @@
         "stateFips": "12",
         "state": "Florida",
         "district": null,
-        "seat": null,
+        "seat": "12-senate-class-3-term-ending-2029-01-03",
         "seatClass": null,
         "stage": "general",
         "special": true,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Ashley Moody",
           "party": "Republican",
-          "votes": 4208004,
-          "share": 50.871604568430165,
-          "margin": 2.8861024783804954
+          "votes": 4211455,
+          "share": 50.86133685528053,
+          "margin": 2.8659338079395495
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-senate-indexed-state-controls-2026"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://floridaelectionwatch.gov/FederalOffices"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": null,
+        "timestampBasis": "Successful indexed source retrieval is known only to the day; count-update time is unknown."
       },
       "portrait": null,
       "accountability": null,
@@ -1216,34 +1216,32 @@
         "stateFips": "13",
         "state": "Georgia",
         "district": null,
-        "seat": null,
+        "seat": "13-senate-class-2",
         "seatClass": null,
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Jon Ossoff (I) (Dem)",
           "party": "Democrat",
-          "votes": 2463192,
-          "share": 59.0009708172758,
-          "margin": 18.00194163455161
+          "votes": 2466695,
+          "share": 59.02199445311287,
+          "margin": 18.043988906225735
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "ga-senate-official-2026-11-07"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-4042-08df23e5ff36"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:06:13.298021+00:00",
+        "timestampBasis": "Election-wide as-of and last-update metadata do not establish the time of an individual county count update."
       },
       "portrait": {
         "recordKey": "senate|2026|state||13||general|false|candidate|",
@@ -7557,13 +7555,13 @@
           "modern-current-2026-co"
         ],
         "sourceLinks": [
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv",
           "https://results.enr.clarityelections.com/CO/127407/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv"
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:30+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered extract fetch time; source update timestamp unavailable"
       },
       "portrait": null,
       "accountability": null,
@@ -7605,13 +7603,13 @@
           "modern-current-2026-co"
         ],
         "sourceLinks": [
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv",
           "https://results.enr.clarityelections.com/CO/127407/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv"
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:30+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered extract fetch time; source update timestamp unavailable"
       },
       "portrait": {
         "recordKey": "house|2026|district||08|2|general|false|candidate|",
@@ -7672,13 +7670,13 @@
           "modern-current-2026-co"
         ],
         "sourceLinks": [
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv",
           "https://results.enr.clarityelections.com/CO/127407/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv"
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:30+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered extract fetch time; source update timestamp unavailable"
       },
       "portrait": null,
       "accountability": null,
@@ -7720,13 +7718,13 @@
           "modern-current-2026-co"
         ],
         "sourceLinks": [
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv",
           "https://results.enr.clarityelections.com/CO/127407/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv"
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:30+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered extract fetch time; source update timestamp unavailable"
       },
       "portrait": null,
       "accountability": null,
@@ -7768,13 +7766,13 @@
           "modern-current-2026-co"
         ],
         "sourceLinks": [
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv",
           "https://results.enr.clarityelections.com/CO/127407/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv"
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:30+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered extract fetch time; source update timestamp unavailable"
       },
       "portrait": null,
       "accountability": null,
@@ -7816,13 +7814,13 @@
           "modern-current-2026-co"
         ],
         "sourceLinks": [
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv",
           "https://results.enr.clarityelections.com/CO/127407/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv"
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:30+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered extract fetch time; source update timestamp unavailable"
       },
       "portrait": {
         "recordKey": "house|2026|district||08|6|general|false|candidate|",
@@ -7883,13 +7881,13 @@
           "modern-current-2026-co"
         ],
         "sourceLinks": [
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv",
           "https://results.enr.clarityelections.com/CO/127407/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv"
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:30+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered extract fetch time; source update timestamp unavailable"
       },
       "portrait": {
         "recordKey": "house|2026|district||08|7|general|false|candidate|",
@@ -7950,13 +7948,13 @@
           "modern-current-2026-co"
         ],
         "sourceLinks": [
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv",
           "https://results.enr.clarityelections.com/CO/127407/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv"
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:30+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered extract fetch time; source update timestamp unavailable"
       },
       "portrait": null,
       "accountability": null,
@@ -9953,25 +9951,25 @@
         "leader": {
           "name": "James \"Jim\" Kingston (Rep)",
           "party": "Republican",
-          "votes": 140221,
-          "share": 51.41630334742609,
-          "margin": 2.832606694852173
+          "votes": 140241,
+          "share": 51.41251429744552,
+          "margin": 2.825028594891046
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-9ca3-08df23e5ffce",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:39.960673+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": null,
       "accountability": null,
@@ -10001,25 +9999,25 @@
         "leader": {
           "name": "Sanford Bishop (I) (Dem)",
           "party": "Democrat",
-          "votes": 148195,
-          "share": 60.8706188721715,
-          "margin": 21.74123774434299
+          "votes": 148250,
+          "share": 60.79357658965463,
+          "margin": 21.587153179309272
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-624b-08df23e60062",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:40.782719+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": {
         "recordKey": "house|2026|district||13|2|general|false|candidate|",
@@ -10068,25 +10066,25 @@
         "leader": {
           "name": "Brian Jack (I)(Rep)",
           "party": "Republican",
-          "votes": 188569,
-          "share": 58.618417166891,
-          "margin": 17.236834333782006
+          "votes": 188587,
+          "share": 58.61599525072032,
+          "margin": 17.231990501440634
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-d16d-08df23e60305",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:41.521712+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": {
         "recordKey": "house|2026|district||13|3|general|false|candidate|",
@@ -10144,16 +10142,16 @@
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-d67f-08df23e681eb",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:42.312304+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": {
         "recordKey": "house|2026|district||13|4|general|false|candidate|",
@@ -10202,25 +10200,25 @@
         "leader": {
           "name": "Nikema Williams (I)(Dem)",
           "party": "Democrat",
-          "votes": 272596,
-          "share": 90.19369098116029,
-          "margin": 80.38738196232057
+          "votes": 274618,
+          "share": 90.1980877682199,
+          "margin": 80.39617553643981
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-9a36-08df23e6579b",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:43.052842+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": {
         "recordKey": "house|2026|district||13|5|general|false|candidate|",
@@ -10269,25 +10267,25 @@
         "leader": {
           "name": "Lucy McBath (I) (Dem)",
           "party": "Democrat",
-          "votes": 262846,
-          "share": 80.89958880161524,
-          "margin": 61.79917760323049
+          "votes": 263803,
+          "share": 80.88692516664725,
+          "margin": 61.7738503332945
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-82d8-08df23e6637a",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:43.847929+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": {
         "recordKey": "house|2026|district||13|6|general|false|candidate|",
@@ -10336,25 +10334,25 @@
         "leader": {
           "name": "Rich McCormick (I) (Rep)",
           "party": "Republican",
-          "votes": 191539,
-          "share": 56.19253539555598,
-          "margin": 12.385070791111946
+          "votes": 191552,
+          "share": 56.19107405821164,
+          "margin": 12.382148116423288
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-6c09-08df23e60217",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:44.630508+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": {
         "recordKey": "house|2026|district||13|7|general|false|candidate|",
@@ -10403,25 +10401,25 @@
         "leader": {
           "name": "Austin Scott (I) (Rep)",
           "party": "Republican",
-          "votes": 160115,
-          "share": 60.424631014065056,
-          "margin": 20.849262028130106
+          "votes": 160135,
+          "share": 60.41986590551508,
+          "margin": 20.839731811030155
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-92cd-08df23e604e7",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:45.226918+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": {
         "recordKey": "house|2026|district||13|8|general|false|candidate|",
@@ -10470,25 +10468,25 @@
         "leader": {
           "name": "Andrew Clyde (I) (Rep)",
           "party": "Republican",
-          "votes": 182886,
-          "share": 59.29924905645695,
-          "margin": 18.598498112913894
+          "votes": 182930,
+          "share": 59.293905625028366,
+          "margin": 18.587811250056724
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-2d91-08df23e600df",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:45.968933+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": {
         "recordKey": "house|2026|district||13|9|general|false|candidate|",
@@ -10537,25 +10535,25 @@
         "leader": {
           "name": "Houston Gaines (Rep)",
           "party": "Republican",
-          "votes": 174274,
-          "share": 53.59391097101561,
-          "margin": 7.1878219420312135
+          "votes": 174278,
+          "share": 53.587230915402664,
+          "margin": 7.174461830805325
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-4c4a-08df23e600a6",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:46.728835+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": null,
       "accountability": null,
@@ -10585,25 +10583,25 @@
         "leader": {
           "name": "John Cowan (Rep)",
           "party": "Republican",
-          "votes": 182160,
-          "share": 55.36424726689177,
-          "margin": 10.728494533783559
+          "votes": 182189,
+          "share": 55.36330182114325,
+          "margin": 10.726603642286502
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-41bb-08df23e60017",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:47.441958+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": null,
       "accountability": null,
@@ -10633,25 +10631,25 @@
         "leader": {
           "name": "Rick W. Allen (I) (Rep)",
           "party": "Republican",
-          "votes": 140843,
-          "share": 52.09789045767784,
-          "margin": 4.1957809153556775
+          "votes": 140869,
+          "share": 52.08669962396145,
+          "margin": 4.173399247922914
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-b721-08df23e5ff66",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:48.145404+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": {
         "recordKey": "house|2026|district||13|12|general|false|candidate|",
@@ -10709,16 +10707,16 @@
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-6a3d-08df23e6047a",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:49.234954+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": null,
       "accountability": null,
@@ -10748,25 +10746,25 @@
         "leader": {
           "name": "Clay Fuller (I) (Rep)",
           "party": "Republican",
-          "votes": 168752,
-          "share": 58.78058295714206,
-          "margin": 17.56116591428412
+          "votes": 168761,
+          "share": 58.78023719545114,
+          "margin": 17.560474390902282
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ga"
+          "house-completion-ga2026-official"
         ],
         "sourceLinks": [
-          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv"
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-997d-08df23e60ffc",
+          "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+          "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection"
         ],
-        "sourceUpdatedAt": "2026-11-06T13:55:52.1591905Z",
-        "retrievedAt": "2026-11-06T15:03:36+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07T22:05:50.007815+00:00",
+        "timestampBasis": "Election-wide asOf/lastUpdated/publishDate retained. County count-update unknown; precinctReportingStatus.asOf is separate reporting metadata, not assumed count-update"
       },
       "portrait": null,
       "accountability": null,

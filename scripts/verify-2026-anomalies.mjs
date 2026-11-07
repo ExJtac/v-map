@@ -4,7 +4,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {buildPatternReview,peerScreen,reviewForCounty,stateReviewSummary,patternDirection,OFFICES} from '../src/2026-anomalies.js';
-import {buildActualReport,renderPatternReport,arizonaComparability,additionalHouseComparability,senateRoundComparability,senateRoundVectorInventory} from './build-2026-anomalies.mjs';
+import {buildActualReport,renderPatternReport,arizonaComparability,additionalHouseComparability,senateRoundComparability,senateRoundVectorInventory,senateSpecialComparability} from './build-2026-anomalies.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 function fixture(n=12) {
   const mapCounties=Array.from({length:n},(_,i)=>({fips:'06'+String(i+1).padStart(3,'0'),name:'County '+i}));
@@ -92,6 +92,21 @@ f=relocate(growthFixture(),'30');for(const year of [2022,2026])f.elections[`hous
  const unapproved=structuredClone(proof);unapproved.states[0].review.status='pending';assert.equal(senateRoundComparability(fixtureGa.elections,pins,unapproved)['13'].verified,false);
  fixtureGa.elections['senate-2020'].results[0].electionDate='2021-01-05';assert.equal(buildPatternReview(fixtureGa).counties['13001'].offices.senate.status,'not-assessed','Pure engine also checks the reviewed event date');
 }
+// A special vacancy election needs its own same-ClassIII 2022 seat contract.
+{
+ const fx=relocate(growthFixture(),'12'),seatId='12-senate-class-3-term-ending-2029-01-03';
+ for(const year of [2022,2026])fx.elections[`senate-${year}`]={...fx.elections[`governor-${year}`],office:'senate',year,results:fx.elections[`governor-${year}`].results.map(row=>({...row,office:'senate',year,stage:'general',special:year===2026,sourceStage:'general',sourceSeatId:seatId,electionDate:year===2022?'2022-11-08':'2026-11-03',sourceSelection:{url:`/data/special-fixture/senate-${year}.json`}}))};
+ const countyFips=fx.mapCounties.map(c=>c.fips).sort(),hash=v=>crypto.createHash('sha256').update(JSON.stringify(v)).digest('hex');
+ const pins={'public/data/special-fixture/senate-2022.json':'baseline-pin','public/data/special-fixture/senate-2026.json':'current-pin'};
+ const proof={schemaVersion:1,states:[{stateFips:'12',id:'synthetic-classIII-special',seatId,seatClass:3,termEndDate:'2029-01-03',baselineYear:2022,currentYear:2026,countyBoundariesCompatible:true,pinnedFileHashes:pins,review:{status:'approved',reviewedAt:'2026-11-07T00:00:00Z',evidenceSha256:'a'.repeat(64),approvalReceiptSha256:'b'.repeat(64)},years:Object.fromEntries([2022,2026].map(year=>[year,{stage:'general',special:year===2026,sourceStage:'general',scopeComplete:true,controlsPassed:true,candidateControlCount:2,expectedCountyCount:12,countyFips,inventorySha256:hash(countyFips),mergedVectorSha256:hash(senateRoundVectorInventory(fx.elections[`senate-${year}`].results)),electionDate:year===2022?'2022-11-08':'2026-11-03'}]))}]};
+ const contracts=senateSpecialComparability(fx.elections,pins,proof);assert.equal(contracts['12'].verified,true);
+ assert.equal(buildPatternReview(fx).summary.reviewScreens.raceVoteChange.senate.assessed,0,'Special remains held without this explicit contract');
+ fx.comparability={senateSpecials:contracts};let special=buildPatternReview(fx);assert.equal(special.summary.reviewScreens.raceVoteChange.senate.assessed,12);assert.equal(special.counties['12001'].offices.senate.reviewScreens.raceVoteChange.evidence.baselineYear,2022);
+ for(const mutate of [p=>p.states[0].termEndDate='2027-01-03',p=>p.states[0].seatClass=2,p=>p.states[0].baselineYear=2020,p=>p.states[0].years[2026].special=false,p=>p.states[0].years[2022].electionDate='2020-11-03']){const changed=structuredClone(proof);mutate(changed);assert.equal(senateSpecialComparability(fx.elections,pins,changed)['12'].verified,false);}
+ for(const mutate of [e=>e['senate-2026'].results[0].special=false,e=>{delete e['senate-2022'].results[0].special},e=>e['senate-2022'].results[0].sourceSeatId='different-seat',e=>e['senate-2022'].results[0].candidates[0].votes++,e=>e['senate-2026'].results[0].sourceSelection.url='/data/unreviewed/senate-2026.json']){const changed=structuredClone(fx.elections);mutate(changed);assert.equal(senateSpecialComparability(changed,pins,proof)['12'].verified,false);}
+ fx.elections['senate-2022'].results[0].provisional=true;assert.equal(buildPatternReview(fx).counties['12001'].offices.senate.status,'not-assessed','A provisional historical baseline is rejected independently of complete scope');
+ const wrongTerm=structuredClone(contracts);wrongTerm['12'].termEndDate='2027-01-03';fx.comparability.senateSpecials=wrongTerm;assert.equal(buildPatternReview(fx).summary.reviewScreens.raceVoteChange.senate.assessed,0,'Pure numerical engine also rejects a forged term');
+}
 // Own-history policy: no peer veto, inclusive boundaries, symmetric gains/losses.
 const screen=(f,name)=>buildPatternReview(f).counties[target].offices.governor.reviewScreens[name];
 f=setCurrent(growthFixture(),1400,1150);assert.equal(screen(f,'partyCountChange').flags.length,1,'Own40/opponent15 inclusively pass');
@@ -176,6 +191,7 @@ for(const row of wvRows){
  for(const flag of assessment.flags)for(const sourceId of row.sourceIds)assert.ok(flag.sources.some(s=>s.sourceId===sourceId),'Flag must cite original named counts and appendix');
 }
 const heldKy=actual.comparabilityContracts.houseStates?.['21'];assert.equal(heldKy?.verified,false);assert.equal(Object.values(actual.counties).filter(c=>c.stateFips==='21'&&c.offices.house.status==='assessed').length,0,'Current Kentucky data never qualifies held historical baseline');
+assert.equal(actual.counties['13135'].offices.house.status,'not-assessed');assert.equal(actual.counties['13135'].offices.house.flags.length,0);assert.match(actual.counties['13135'].offices.house.reason,/Unresolved source write-in category/,'Gwinnett unknown categories remain explicit holds');
 assert.equal(actual.counties['48479'].offices.governor.partyGrowth.flags.length,0,'Webb is not forced above peer growth');assert.ok(actual.counties['48479'].offices.governor.flags.some(f=>f.id==='governor-party-count-change'&&f.evidence.direction==='democrat'),'Webb qualifies naturally under uniform own-history criteria');assert.equal(actual.counties['48505'].offices.governor.partyGrowth.flags.length,0,'Zapata share flag does not force growth flag');assert.equal(actual.counties['48505'].offices.governor.shareShift.flags.length,1);
 for(const office of OFFICES){const s=actual.summary.offices[office];assert.equal(s.assessed+s.notAssessed,3142);const globalCounts=['assessed','not-assessed','flagged'].map(status=>Object.keys(actual.counties).filter(f=>reviewForCounty(actual,office,f).status===status).length);assert.equal(globalCounts.reduce((a,b)=>a+b),3142);}
 assert.equal(stateReviewSummary(actual,'governor','06').countyCount,58);assert.equal(reviewForCounty(actual,'house','99999').status,'not-assessed');

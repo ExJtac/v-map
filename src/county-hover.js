@@ -115,10 +115,10 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
     const prior = priorByYear.get(priorYear);
     const priorRows = (prior?.results || []).filter(r => r.geoLevel === 'county' && r.countyFips === id);
     let comparison = priorYear == null ? { reason: 'Comparable prior cycle cannot be established.' } : !prior ? { reason: 'Expected prior election returns unavailable.' } : compareContest(row, priorRows, office);
-    const report=getPatternReviewReport(),round=report?.comparabilityContracts?.senateRounds?.[String(id).slice(0,2)];
-    if(office==='senate'&&year===2026&&rows.length===1&&!row.special&&round?.verified&&row.stage===round.years[2026].stage&&row.sourceSeatId===round.seatId&&row.electionDate===round.years[2026].electionDate){
-      const now=auditedSenateRoundCounts(report,id,2026),before=auditedSenateRoundCounts(report,id,2020);
-      if(!now.reason&&!before.reason){priorYear=2020;comparison={...Object.fromEntries(['total','republican','democrat'].map(key=>[key,relativeChange(now[key],before[key])])),provisional:true};card.append(node('p','county-tip-note','Changes below compare the reviewed first November Senate ballots. Later runoffs are excluded; candidate fields and election conditions may differ.'));}
+    const report=getPatternReviewReport(),stateFips=String(id).slice(0,2),special=report?.comparabilityContracts?.senateSpecials?.[stateFips],round=special||report?.comparabilityContracts?.senateRounds?.[stateFips];
+    if(office==='senate'&&year===2026&&rows.length===1&&round?.verified&&Boolean(row.special)===Boolean(round.years[2026].special)&&row.stage===round.years[2026].stage&&row.sourceSeatId===round.seatId&&row.electionDate===round.years[2026].electionDate){
+      const now=auditedSenateRoundCounts(report,id,2026),before=auditedSenateRoundCounts(report,id,round.baselineYear||2020);
+      if(!now.reason&&!before.reason){priorYear=round.baselineYear||2020;comparison={...Object.fromEntries(['total','republican','democrat'].map(key=>[key,relativeChange(now[key],before[key])])),provisional:true};card.append(node('p','county-tip-note',special?'Changes below compare the same Senate seat: the 2022 regular election and 2026 special vacancy election. Candidates and election conditions may differ.':'Changes below compare the reviewed first November Senate ballots. Later runoffs are excluded; candidate fields and election conditions may differ.'));}
     }
     const entries = row.contestType === 'recall-question'
       ? [['total', 'Reported votes on recall question'], ...row.candidates.filter(c => ['yes', 'no'].includes((c.name || '').toLowerCase())).map(c => [null, `${c.name} votes`, c.votes])]
@@ -149,7 +149,8 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
 function appendResidentRatio(container, ballot, pop, year, office, rows) {
   const ratio = ballotsPerResident(ballot?.ballotsCast, pop?.value);
   if (ratio == null) {
-    const contest = contestVotesPerResident(rows, office, pop?.value);
+    const specialScope=getPatternReviewReport()?.comparabilityContracts?.senateSpecials?.[rows?.[0]?.stateFips];
+    const contest = contestVotesPerResident(rows, office, pop?.value, specialScope);
     if (contest) {
       container.append(node('p', 'county-tip-note contest-population-ratio', `Reported ${OFFICE_LABELS[office]} votes as % of population in ${year}: ${contest.value.toFixed(1)}% · ${fmt(contest.votes)} ${contest.knownCandidateBasis ? 'known candidate / write-in' : 'reported race'} votes ÷ ${fmt(pop.value)} residents (${pop.year} estimate)${contest.provisional ? ' · provisional' : ''}.`));
       container.append(node('p', 'county-tip-note', 'Race-vote measure: ballots that skipped this race are not included. Total residents include children. Actual ballots-cast participation remains unavailable; this figure is not used as a ballot total or turnout-anomaly input.'));

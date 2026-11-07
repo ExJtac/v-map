@@ -36,26 +36,27 @@ export async function renderHistoryCharts(container, context, isCurrent = () => 
   const current=()=>isCurrent() && container._historyToken===token;
   if (!OFFICE_LABELS[context.office]) return;
   const section=node('section',null,'history-chart-content');section.append(node('h3',`${OFFICE_LABELS[context.office]} history · 2006–2026`));section.append(node('p','Loading actual election cycles…','history-note'));container.replaceChildren(section);
-  const years=selectHistoryYears(context);
   const id=String(context.id).padStart(context.level==='county'?5:2,'0');
   const [population,report]=await Promise.all([documentData('/data/population/counties.json').catch(()=>null),['house','senate'].includes(context.office) && context.level==='county' ? context.report || null : null]);
   if (!current()) return;
   const populations=(context.level==='state'?population?.states:population?.counties)?.[id] || [];
-  const reviewedSenate=context.office==='senate'&&context.level==='county'&&report?.comparabilityContracts?.senateRounds?.[id.slice(0,2)]?.verified;
+  const specialContract=report?.comparabilityContracts?.senateSpecials?.[id.slice(0,2)],senateContract=specialContract||report?.comparabilityContracts?.senateRounds?.[id.slice(0,2)];
+  const reviewedSenate=context.office==='senate'&&context.level==='county'&&senateContract?.verified;
+  const years=selectHistoryYears({...context,specialYears:specialContract?.verified?[2026]:[]});
   // Sequential loads bound in-flight memory; both underlying loaders and this merged view cache by cycle.
   const points=[];
   for(const year of years) {
     if (!current()) return;
     let counts;
     if(context.office==='house') counts=context.level==='county'?auditedHouseCounts(report,id,year):{reason:'Statewide House aggregation is not qualified by the county audit.'};
-    else if(context.office==='senate'&&context.level==='county'&&[2020,2026].includes(year)&&report?.comparabilityContracts?.senateRounds?.[id.slice(0,2)]?.verified)counts=auditedSenateRoundCounts(report,id,year);
+    else if(reviewedSenate&&[senateContract.baselineYear||2020,2026].includes(year))counts=auditedSenateRoundCounts(report,id,year);
     else {try {const data=await election(context.office,year);counts=qualifiedRaceCounts(data?.results,{...context,id,year});}catch {counts={reason:'Source file could not be loaded.'};}}
     points.push(historyPoint(year,counts,populations));
   }
   if (!current()) return;
   section.replaceChildren(node('h3',`${OFFICE_LABELS[context.office]} history · 2006–2026`));
-  section.append(node('p',`${reviewedSenate?'2020 and 2026 use separately reviewed first-November Senate ballots; other years require unique regular general returns.':'Actual regular general-election cycles.'} Missing or held observations remain gaps. ${context.office==='senate'?'Different Senate seats may appear in different years; concurrent seats and ambiguous rounds are withheld. ':''}2026 counts remain provisional.`,'history-note'));
-  if(reviewedSenate){const contract=report.comparabilityContracts.senateRounds[id.slice(0,2)];for(const limit of contract.comparisonNotes?.length?contract.comparisonNotes:contract.limitations||[])section.append(node('p',limit,'history-note'));}
+  section.append(node('p',`${reviewedSenate?specialContract?'2022 and 2026 compare the same Senate seat; 2026 is a special vacancy election. Other years require unique regular general returns.':'2020 and 2026 use separately reviewed first-November Senate ballots; other years require unique regular general returns.':'Actual regular general-election cycles.'} Missing or held observations remain gaps. ${context.office==='senate'?'Different Senate seats may appear in different years; concurrent seats and ambiguous rounds are withheld. ':''}2026 counts remain provisional.`,'history-note'));
+  if(reviewedSenate){const contract=senateContract;for(const limit of contract.comparisonNotes?.length?contract.comparisonNotes:contract.limitations||[])section.append(node('p',limit,'history-note'));}
   section.append(node('p','Legend: total race votes (gray dashed) · Republican (red) · Democratic (blue). No party nominee is shown as missing, not zero.','history-note'));
   if (!points.length) {section.append(node('p','No applicable election cycles are imported for this selection.'));return;}
   section.append(chart(points,false,'Reported candidate / write-in race votes',context.year),chart(points,true,'Race votes per 100 residents — a proxy, not turnout',context.year));

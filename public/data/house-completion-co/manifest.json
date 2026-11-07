@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "house-completion-co2022-official": {
+      "title": "Colorado2022 official certified Abstract of Votes Cast, House county tables",
+      "url": "https://www.sos.state.co.us/pubs/elections/Results/Abstract/2022/general/usRepresentatives.html",
+      "sourceUrl": "https://www.sos.state.co.us/pubs/elections/Results/Abstract/2022/general/usRepresentatives.html",
+      "sha256": "91fc057d69831f1976417225a07e3636d92fb0532aa3e3cfdbb59f84dce3ce52",
+      "retrievedAt": "2026-11-07T22:04:22.246045+00:00",
+      "sourceIsOfficial": true,
+      "publisher": "Colorado Secretary of State",
+      "license": "Official public election facts; no blanket document public-domain claim",
+      "sourceHeadingDiscrepancy": "Printed117thCongress heading; explicit Nov8,2022 General Election index and eight tables govern source context, not a claim that117th is correct"
+    },
+    "modern-current-2026-co": {
+      "file": "results-2026-co.csv",
+      "url": "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv",
+      "sourceUrl": "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+      "title": "Pushbuild2026 CO official-source returns snapshot",
+      "version": "73b20975fc0a66da90688d372b4c619609fee9cb",
+      "license": "CC0-1.0 research snapshot; original official-source URLs retained per contest",
+      "asOf": "2026-11-06T10:02:00-05:00",
+      "sha256": "8a48a054d3de25655873f8a2d8157cc8eefff5b9d499ead05f380fc3533197b5",
+      "readmeFile": "results-2026-README.md",
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "snapshotDate": "2026-11-06"
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-co/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 91,
+      "stateCount": 1,
+      "countyCount": 64,
+      "candidateCount": 391,
+      "countyDistrictIntersections": true
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-co/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 90,
+      "stateCount": 1,
+      "countyCount": 64,
+      "candidateCount": 356,
+      "countyDistrictIntersections": true
+    }
+  ],
+  "limitations": [
+    "2022 source is the official certified Colorado abstract HTML, not the inaccessible PDF or search snippets. Its eight named district tables are linked from the explicit Nov8,2022 General Election index; its printed117thCongress heading is retained as a source discrepancy, not silently rewritten. The2022 context includes the new eighth district.",
+    "All explicit source candidate zeros are retained, including a published all-zero Broomfield/CD2 portion. No absent votes or district allocations are inferred.",
+    "State primary2022 Skowronski county sum and printed control are72; FEC reports71. Prefer exact certified state cells and totals for this source-qualified replacement, preserving unresolved inter-source disagreement. Do not force the state to71 or claim FEC fully agrees.",
+    "2026 county and whole-district controls are the same fixed registered research extract of official-attributed Clarity results, not a fresh direct primary-body audit. Current native original source request returned403. Exact snapshot counts and unavailable source update timestamp are preserved.",
+    "2026 source asOf references retrieval time where source update time is unavailable, not a fabricated count-update time. All current records are unofficial/provisional, not all-ballots-counted or certified.",
+    "Both complete64-county source inventories are matched to Census roster. Independently complete actual district intersections may differ by year; no same-seat/candidate interpretation. Minor county cartographic corrections are not individually adjudicated.",
+    "Candidate-vote sums are not ballots cast, distinct voters, eligible-voter turnout or evidence of wrongdoing. Different nominees, contest competition and provisional counting constrain statistical interpretation."
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T22:20:36.061172+00:00",
+    "evidenceSha256": "c59484844b0c0ed27a517be11860fac70b38fd54804cad3bac2c876211db9c8b",
+    "approvalReceiptSha256": "af68cdf834b83a5e4d420827212cc117658f9a66e7d3ea8f4039ad4a9f571590"
+  }
+}

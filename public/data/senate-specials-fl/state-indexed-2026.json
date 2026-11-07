@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "office": "senate",
+  "year": 2026,
+  "sources": {
+    "fl-senate-indexed-state-controls-2026": {
+      "title": "Florida Election Watch: 2026 U.S. Senate statewide summary (indexed primary extraction)",
+      "publisher": "Florida Division of Elections / Florida Election Watch",
+      "url": "https://floridaelectionwatch.gov/FederalOffices",
+      "sha256": "a7a722d47ccbdb2946cb8a342c3d53a889336a2d05ddf66c918f31fc989a2f38",
+      "evidenceSha256": "a7a722d47ccbdb2946cb8a342c3d53a889336a2d05ddf66c918f31fc989a2f38",
+      "sourceIsOfficial": true,
+      "sourceFormat": "saved primary indexed summary extraction; original summary body not retrieved",
+      "sourceReviewDate": "2026-11-07",
+      "reviewedAt": "2026-11-07T22:18:09.619123+00:00",
+      "approvalReceiptSha256": "a4270d7bc57cb3b6183f15115a6f0eb7ba6c6387926be881e9d415019e0a4e7d",
+      "retrievedAt": null,
+      "retrievedDate": "2026-11-07",
+      "sourceUpdatedAt": null,
+      "retrievedAtBasis": "Exact successful indexed-summary retrieval timestamp unavailable; failed request times are not used.",
+      "accessNote": "Official Florida Election Watch publisher URL, accessed through retained complete search-indexed table; direct native/web-reader opens failed403. This is not an opened original summary body."
+    }
+  },
+  "results": [
+    {
+      "office": "senate",
+      "year": 2026,
+      "stateFips": "12",
+      "state": "Florida",
+      "stateAbbr": "FL",
+      "geoLevel": "state",
+      "contestId": "senate-2026-12-state-general-True",
+      "stage": "general",
+      "special": true,
+      "electionDate": "2026-11-03",
+      "sourceSeatId": "12-senate-class-3-term-ending-2029-01-03",
+      "sourceId": "fl-senate-indexed-state-controls-2026",
+      "candidates": [
+        {
+          "name": "Ashley Moody",
+          "party": "Republican",
+          "partyOriginal": "REP",
+          "votes": 4211455
+        },
+        {
+          "name": "Angie Nixon",
+          "party": "Democrat",
+          "partyOriginal": "DEM",
+          "votes": 3974148
+        },
+        {
+          "name": "Neil J. Gillespie",
+          "party": "Other",
+          "partyOriginal": "NPA",
+          "votes": 94665
+        }
+      ],
+      "totalVotes": 8280268,
+      "totalVotesBasis": "Explicitly published state summary total; all three named table cells sum to same value. Not created by allocating or summing counties.",
+      "unofficial": true,
+      "provisional": true,
+      "certified": false,
+      "countingStatus": "counting",
+      "finalWinnerNotDeclared": true,
+      "asOf": null,
+      "sourceUpdatedAt": null,
+      "retrievedAt": null,
+      "retrievedDate": "2026-11-07",
+      "sourceReviewDate": "2026-11-07",
+      "sourceTimestampBasis": "Successful indexed source retrieval is known only to the day; count-update time is unknown."
+    }
+  ]
+}

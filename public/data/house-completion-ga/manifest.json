@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "modern-heideman-v1-house-ga_medsl_2022": {
+      "url": "https://github.com/pmheideman/us-county-election-results/releases/download/v1.0.0/us_county_election_results_v1.0.0.zip",
+      "sourceUrl": "https://doi.org/10.5281/zenodo.22976553",
+      "title": "Paul Heideman U.S. county-level election results 1990–2024",
+      "version": "v1.0.0",
+      "license": "CC-BY-4.0 for release; underlying source rights vary; retain SOURCES.csv",
+      "sha256": "e422fbfb1c56bed6787d08e59eed83d13b4ccf567510c69f94d2802a34b8e625",
+      "file": "heideman-v1.0.0.zip",
+      "sourceToken": "ga_medsl_2022",
+      "originalSources": [
+        {
+          "source": "ga_medsl_2022",
+          "office": "house",
+          "state_po": "GA",
+          "year": "2022",
+          "origin": "medsl",
+          "publisher": "MIT Election Data and Science Lab (MEDSL)",
+          "document": "U.S. House precinct-level returns 2022 (state files, aggregated to county by this project)",
+          "locator": "Harvard Dataverse, dataverse.harvard.edu (MIT Election Data and Science Lab). Local copy: R/data/raw_election/house_2022.raw; dataset DOIs: https://doi.org/10.7910/DVN/PSKDUJ, https://doi.org/10.7910/DVN/IVIXLK, https://doi.org/10.7910/DVN/VLGF2M, https://doi.org/10.7910/DVN/EOKNGW, https://doi.org/10.7910/DVN/USBYR4",
+          "format": "tab/CSV precinct files",
+          "obtained": "downloaded via the Dataverse guestbook/signed-URL flow (R/data/raw_election/download_medsl.sh)",
+          "transcription": "none (parsed text); project fixes: pseudo-rows removed, party fixes, special elections excluded (see data_corrections_log.csv)",
+          "license": "CC0 1.0, verified 2026-09-23 via the Dataverse API (license field on the dataset record)",
+          "license_status": "cc0_verified",
+          "n_rows": "360",
+          "n_counties": "159",
+          "n_districts": "14",
+          "corrections_log_entries": "26;98",
+          "notes": "Cite as MIT Election Data and Science Lab"
+        }
+      ],
+      "sourceMember": "us_county_results_long.csv",
+      "licenseNote": "Release CC-BY-4.0 does not override underlying publishers rights",
+      "snapshotDate": "2026-11-06"
+    },
+    "gwinnett-2022-certified-house7-writein": {
+      "title": "GwinnettCounty2022 official complete general-election summary, named House7write-in",
+      "publisher": "Gwinnett County Board of Registrations and Elections",
+      "url": "https://www.gwinnettcounty.com/documents/d/gwinnett-county/gwinnett-county-election-summary-report-11082022-pdf",
+      "sourceUrl": "https://www.gwinnettcounty.com/documents/d/gwinnett-county/gwinnett-county-election-summary-report-11082022-pdf",
+      "sha256": "f1db200d91a8e3b4f849728fa39f8b2af826908d198f420df74b7329941b27b7",
+      "retrievedAt": "2026-11-07T22:02:24.455418+00:00",
+      "sourceIsOfficial": true,
+      "sourceLocator": "PDF page5; full actual county/district named-write-in row",
+      "sourceUpdatedAt": null,
+      "license": "Official public election facts; underlying document rights retained"
+    },
+    "fec2022-ga-house-controls": {
+      "url": "https://www.fec.gov/documents/5676/federalelections2022.xlsx",
+      "title": "FEC Federal Elections2022 Georgia House general-election totals",
+      "sha256": "cdb258ea23803e50d752bcea19faa39b3c201eb960094bcb556c3a38c2350897",
+      "sourceIsOfficial": true
+    },
+    "house-completion-ga2026-official": {
+      "title": "GeorgiaSecretaryofState fresh2026 unofficial House county/district results",
+      "url": "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
+      "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data",
+      "sha256": "9b0ecd4ba8f968138991af0ab942c8e784f0c74c36329183159a82e7c96e176d",
+      "retrievedAt": "2026-11-07T22:04:47.858943+00:00",
+      "sourceIsOfficial": true,
+      "breakdownSources": {
+        "1": {
+          "file": "ga2026-house-1.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-9ca3-08df23e5ffce",
+          "requestedAt": "2026-11-07T22:05:39.187700+00:00",
+          "retrievedAt": "2026-11-07T22:05:39.960673+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-9ca3-08df23e5ffce",
+          "error": "",
+          "bytes": 1371761,
+          "sha256": "8aacdbbb201ab706ce58f143377bd88039cce24c4c145a71b993654da9af55ec"
+        },
+        "2": {
+          "file": "ga2026-house-2.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-624b-08df23e60062",
+          "requestedAt": "2026-11-07T22:05:39.962365+00:00",
+          "retrievedAt": "2026-11-07T22:05:40.782719+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-624b-08df23e60062",
+          "error": "",
+          "bytes": 1416938,
+          "sha256": "1dc890e9a5489d625a59da682cb87dce3d713e888864dd18d71a8d59af51415b"
+        },
+        "3": {
+          "file": "ga2026-house-3.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-d16d-08df23e60305",
+          "requestedAt": "2026-11-07T22:05:40.785152+00:00",
+          "retrievedAt": "2026-11-07T22:05:41.521712+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-d16d-08df23e60305",
+          "error": "",
+          "bytes": 1372564,
+          "sha256": "a8b9be06c5149564fe0225fec6ca9bef4e9fd187a2051f9bfccc8b0bb4fc6a0b"
+        },
+        "4": {
+          "file": "ga2026-house-4.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-d67f-08df23e681eb",
+          "requestedAt": "2026-11-07T22:05:41.524102+00:00",
+          "retrievedAt": "2026-11-07T22:05:42.312304+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-d67f-08df23e681eb",
+          "error": "",
+          "bytes": 1333687,
+          "sha256": "a07d79f6e6a0edf49df545e64b2b1c6692f2949443c8f4612e8c3f89318b07b7"
+        },
+        "5": {
+          "file": "ga2026-house-5.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-9a36-08df23e6579b",
+          "requestedAt": "2026-11-07T22:05:42.313876+00:00",
+          "retrievedAt": "2026-11-07T22:05:43.052842+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-9a36-08df23e6579b",
+          "error": "",
+          "bytes": 1336711,
+          "sha256": "9af38607d6f30e74b5ec3f844af121d9ce1fbea3cb0ce7c11ad0503033b59d6b"
+        },
+        "6": {
+          "file": "ga2026-house-6.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-82d8-08df23e6637a",
+          "requestedAt": "2026-11-07T22:05:43.054459+00:00",
+          "retrievedAt": "2026-11-07T22:05:43.847929+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-82d8-08df23e6637a",
+          "error": "",
+          "bytes": 1339673,
+          "sha256": "74640b47a91ce52da532024443b6dee28046fbc5b4fcfc811d48db9f1b672b9e"
+        },
+        "7": {
+          "file": "ga2026-house-7.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-6c09-08df23e60217",
+          "requestedAt": "2026-11-07T22:05:43.849658+00:00",
+          "retrievedAt": "2026-11-07T22:05:44.630508+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-6c09-08df23e60217",
+          "error": "",
+          "bytes": 1345220,
+          "sha256": "d3bf05aced9246d5b68675409f81f8f0839bad5f813a06a6ac418749ed22a0a0"
+        },
+        "8": {
+          "file": "ga2026-house-8.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-92cd-08df23e604e7",
+          "requestedAt": "2026-11-07T22:05:44.632172+00:00",
+          "retrievedAt": "2026-11-07T22:05:45.226918+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-92cd-08df23e604e7",
+          "error": "",
+          "bytes": 1412776,
+          "sha256": "0e73f10f8e3b4f299ad7a1070b05ce2ce700b5e93a0c4bcee3353bb41265be6f"
+        },
+        "9": {
+          "file": "ga2026-house-9.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-2d91-08df23e600df",
+          "requestedAt": "2026-11-07T22:05:45.228545+00:00",
+          "retrievedAt": "2026-11-07T22:05:45.968933+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-2d91-08df23e600df",
+          "error": "",
+          "bytes": 1363099,
+          "sha256": "b7118b8186ee0288374c0026f8bdafd803edefe652823eed673a9d742aaf6551"
+        },
+        "10": {
+          "file": "ga2026-house-10.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-4c4a-08df23e600a6",
+          "requestedAt": "2026-11-07T22:05:45.971024+00:00",
+          "retrievedAt": "2026-11-07T22:05:46.728835+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-4c4a-08df23e600a6",
+          "error": "",
+          "bytes": 1387313,
+          "sha256": "6d70c9b0115229047ab806341237aaa5494f5f013f7f6411443778ed227d7829"
+        },
+        "11": {
+          "file": "ga2026-house-11.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-41bb-08df23e60017",
+          "requestedAt": "2026-11-07T22:05:46.730615+00:00",
+          "retrievedAt": "2026-11-07T22:05:47.441958+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-41bb-08df23e60017",
+          "error": "",
+          "bytes": 1342493,
+          "sha256": "75aaacdc4ee5c432448ae03a04938386e0a266bf21a3049d9856a693f3e536df"
+        },
+        "12": {
+          "file": "ga2026-house-12.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-b721-08df23e5ff66",
+          "requestedAt": "2026-11-07T22:05:47.444160+00:00",
+          "retrievedAt": "2026-11-07T22:05:48.145404+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-b721-08df23e5ff66",
+          "error": "",
+          "bytes": 1398923,
+          "sha256": "2abc77a2ca273c8cebfb189a9c651ad7c73bd05babc7376a96acd3a22fb2d3a3"
+        },
+        "13": {
+          "file": "ga2026-house-13.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-6a3d-08df23e6047a",
+          "requestedAt": "2026-11-07T22:05:48.147012+00:00",
+          "retrievedAt": "2026-11-07T22:05:49.234954+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-6a3d-08df23e6047a",
+          "error": "",
+          "bytes": 1345532,
+          "sha256": "4059ed8703bb624bdcb0e8173d6572f499bdc632b12908511ccde27544a05446"
+        },
+        "14": {
+          "file": "ga2026-house-14.json",
+          "sourceUrl": "https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-997d-08df23e60ffc",
+          "requestedAt": "2026-11-07T22:05:49.237720+00:00",
+          "retrievedAt": "2026-11-07T22:05:50.007815+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-997d-08df23e60ffc",
+          "error": "",
+          "bytes": 1357388,
+          "sha256": "57bff23c4243ee3468ed4cb3a10469fe33cb16fe3774366937fb0f62ca5b2f09"
+        }
+      },
+      "license": "Official public election facts; no blanket document public-domain claim"
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-ga/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 194,
+      "stateCount": 1,
+      "countyCount": 159,
+      "candidateCount": 390,
+      "countyDistrictIntersections": true
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-ga/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 195,
+      "stateCount": 1,
+      "countyCount": 159,
+      "candidateCount": 390,
+      "countyDistrictIntersections": true
+    }
+  ],
+  "limitations": [
+    "Countywide candidate-vote comparisons are not ballots cast, distinct voters or evidence of wrongdoing. Different nominees, district maps, competition and incomplete current counting limit interpretation.",
+    "2022 research county vectors retain exact MEDSL/upstream provenance and every source ID. One actual Gwinnett/CD7 named-write-in row supplies14 votes; no statewide total was allocated and no Fulton zero was created.",
+    "Gwinnett unresolved write-ins9/CD6,11/CD7,70/CD9 are retained as unknown sourceReportingCategory with sourceNeedsReview; the county remains ineligible for party comparison. No validity or party assignment is inferred. Named LisaBabbage source label WRITE-IN is normalized Other.",
+    "2026 direct official current county vectors replace the older registered snapshot only after full candidate-ID/name/party and separate whole-election summary reconciliation. All current records remain unofficial/provisional; reporting units do not establish certified or completed counting.",
+    "Both full159-county inventories are matched to Census2024 roster. County compatibility uses retained substantial-change register; minor cartographic changes not independently adjudicated. District intersections can differ by year; no same-seat assertion.",
+    "FEC full-name differences remain explicit, including Henry versus HarryC.HankJohnsonJr; same party/state/district/full family nickname and exact candidate totals support a control correspondence, not silent canonical renaming."
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T22:17:18.812756+00:00",
+    "evidenceSha256": "7c545cf5237b0623199d1bc9ac3afa35247dc8bf7db3700fa6341ecf792e0100",
+    "approvalReceiptSha256": "0b40ce901b471d0fd4b9810fb10de489053e5011c74dc0d1f1eda6b73fa37857"
+  }
+}

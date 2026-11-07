@@ -88,12 +88,32 @@
       "priority": 150
     },
     {
+      "name": "house-completion-ga",
+      "priority": 170
+    },
+    {
+      "name": "house-completion-co",
+      "priority": 170
+    },
+    {
       "name": "senate-rounds-ga",
       "priority": 150
     },
     {
       "name": "senate-rounds-la",
       "priority": 150
+    },
+    {
+      "name": "senate-current-ga",
+      "priority": 170
+    },
+    {
+      "name": "senate-specials-fl",
+      "priority": 170
+    },
+    {
+      "name": "senate-specials-oh",
+      "priority": 170
     }
   ],
   "coverage": [
@@ -350,11 +370,11 @@
       "mappableCounties": 2055,
       "statesWithCountyReturns": 33,
       "statesWithReturns": 34,
-      "heldRecords": 559,
+      "heldRecords": 492,
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 0,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 0
+      "resolvedSourceOverlaps": 156
     },
     {
       "office": "senate",
@@ -384,7 +404,7 @@
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 1863,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 226
+      "resolvedSourceOverlaps": 542
     },
     {
       "office": "house",
@@ -523,17 +543,17 @@
     {
       "office": "house",
       "year": 2022,
-      "records": 4117,
-      "countyContestRecords": 3682,
+      "records": 4118,
+      "countyContestRecords": 3683,
       "uniqueCounties": 3095,
       "mappableCounties": 3095,
       "statesWithCountyReturns": 49,
       "statesWithReturns": 50,
-      "heldRecords": 1201,
+      "heldRecords": 1204,
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 0,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 555
+      "resolvedSourceOverlaps": 839
     },
     {
       "office": "house",
@@ -563,7 +583,7 @@
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 2677,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 558
+      "resolvedSourceOverlaps": 843
     },
     {
       "office": "governor",
