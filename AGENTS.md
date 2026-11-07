@@ -1,5 +1,7 @@
 # V-Map working instructions
 
+James requires a politically neutral data platform: apply identical source standards, numerical thresholds and review rules to every party. Present sourced data, comparison limits and uncertainty so readers can draw their own conclusions. Never steer conclusions, favor a party, or force equal flag counts. Distinguish exploratory flags from evidence of an error or wrongdoing, and keep candidate background research separate from numerical election-pattern findings. Preserve and run the actual-data party-swap symmetry check when changing anomaly rules.
+
 Use the shared RTK policy at `/Users/jamesai/.codex/RTK.md`: summarize routine output with RTK, preserve exact source evidence and machine-readable verification output unfiltered.
 
 The user wants every completed change or repair published after appropriate checks. Do not stop at local implementation or wait for a separate deployment request within the authorized task. The dedicated primary domain is `https://voteranomaly.com/`; the existing `https://cas-tx.com/vmap/` mount remains available. Both use the existing Vultr server. Build the root-mounted variant into `dist-domain/` with `npm run build:domain` and keep it separate from the CAS-TX `dist/` artifact. Publish both variants from the same revision for every app or research update, using separate atomic release pointers. Use the existing deployment and atomic release-pointer process; preserve unrelated sites and production services. See `DEPLOYMENT.md` and the local operations release records.
