@@ -5,7 +5,7 @@
   "status": "incomplete",
   "explanation": "Numerical screening, source context and resolved investigations are separate stages. Context reports do not close a case or establish wrongdoing. Missing comparisons remain unavailable.",
   "inputHashes": {
-    "public/data/anomalies-2026.json": "5722db59a5cf2a53a84c3323979fb9dc2b83d00a48f08884fb9922e4c1308219",
+    "public/data/anomalies-2026.json": "bcdc8bb319c30678ee406b5f8351cee2e40d05281f6d7981d8c2b6608fede86d",
     "public/data/county-reviews/2026.json": "c5b5488450b8d2354ab96703943797be1c0f4db43826c16c90aca24f8daf52ea",
     "node_modules/us-atlas/counties-albers-10m.json": "a674dfa31b625e92635f32684a61ae135b05a91507f17f2d5164833237fecf46",
     "public/data/congress-scope-2026.json": "c4fb936aca2c48d4690ec5b30d29677f70e57b0e2dff48b864902aca0f60a4e4"
@@ -13,34 +13,34 @@
   "offices": {
     "house": {
       "referenceCounties": 3142,
-      "numericallyAssessed": 866,
-      "notAssessed": 2276,
-      "flaggedCounties": 244,
-      "proxyOnlyFlaggedCounties": 14,
+      "numericallyAssessed": 1065,
+      "notAssessed": 2077,
+      "flaggedCounties": 312,
+      "proxyOnlyFlaggedCounties": 15,
       "publishedSourceContextCases": 1,
       "flaggedWithSourceContext": 1,
       "completedInvestigations": 0,
       "screenCoverage": {
         "partyCountChange": {
-          "assessed": 782,
-          "flagged": 153
+          "assessed": 981,
+          "flagged": 204
         },
         "shareSwing": {
-          "assessed": 782,
-          "flagged": 108
+          "assessed": 981,
+          "flagged": 151
         },
         "raceVoteChange": {
-          "assessed": 866,
-          "flagged": 13
+          "assessed": 1065,
+          "flagged": 14
         },
         "racePopulationChange": {
-          "assessed": 864,
-          "flagged": 29
+          "assessed": 1063,
+          "flagged": 32
         }
       },
       "notAssessedReasons": {
-        "No imported 2026 county contest for this office.": 1143,
-        "Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.": 1002,
+        "Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.": 806,
+        "No imported 2026 county contest for this office.": 1140,
         "Source quality hold: Unresolved source write-in category is unclassified; countywide party comparison held pending sourced semantics.": 1,
         "Two-party minimum of 500 each year or 100 votes for each prior party not met.": 8,
         "Kentucky House historical comparison is held: the existing imported 2022 county baseline matches only 5 of 17 FEC candidate and write-in controls. A qualified historical source is still required": 120,
@@ -51,33 +51,33 @@
     },
     "senate": {
       "referenceCounties": 3142,
-      "numericallyAssessed": 1560,
-      "notAssessed": 1582,
-      "flaggedCounties": 1108,
-      "proxyOnlyFlaggedCounties": 820,
+      "numericallyAssessed": 1563,
+      "notAssessed": 1579,
+      "flaggedCounties": 1111,
+      "proxyOnlyFlaggedCounties": 823,
       "publishedSourceContextCases": 2,
       "flaggedWithSourceContext": 2,
       "completedInvestigations": 0,
       "screenCoverage": {
         "partyCountChange": {
-          "assessed": 1291,
+          "assessed": 1294,
           "flagged": 90
         },
         "shareSwing": {
-          "assessed": 1291,
+          "assessed": 1294,
           "flagged": 200
         },
         "raceVoteChange": {
-          "assessed": 1560,
+          "assessed": 1563,
           "flagged": 80
         },
         "racePopulationChange": {
-          "assessed": 1557,
-          "flagged": 1064
+          "assessed": 1560,
+          "flagged": 1067
         }
       },
       "notAssessedReasons": {
-        "No imported 2026 county contest for this office.": 1305,
+        "No imported 2026 county contest for this office.": 1302,
         "Both explicitly identified Democratic and Republican candidates are required; Other votes are not reassigned.": 15,
         "Source quality hold or inconsistent totals.": 257,
         "Two-party minimum of 500 each year or 100 votes for each prior party not met.": 5
@@ -771,39 +771,37 @@
             }
           },
           "notAssessedReasons": {
-            "No imported 2026 county contest for this office.": 3
+            "Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.": 3
           }
         },
         "senate": {
           "referenceCounties": 3,
-          "numericallyAssessed": 0,
-          "notAssessed": 3,
-          "flaggedCounties": 0,
-          "proxyOnlyFlaggedCounties": 0,
+          "numericallyAssessed": 3,
+          "notAssessed": 0,
+          "flaggedCounties": 3,
+          "proxyOnlyFlaggedCounties": 3,
           "publishedSourceContextCases": 0,
           "flaggedWithSourceContext": 0,
           "completedInvestigations": 0,
           "screenCoverage": {
             "partyCountChange": {
-              "assessed": 0,
+              "assessed": 3,
               "flagged": 0
             },
             "shareSwing": {
-              "assessed": 0,
+              "assessed": 3,
               "flagged": 0
             },
             "raceVoteChange": {
-              "assessed": 0,
+              "assessed": 3,
               "flagged": 0
             },
             "racePopulationChange": {
-              "assessed": 0,
-              "flagged": 0
+              "assessed": 3,
+              "flagged": 3
             }
           },
-          "notAssessedReasons": {
-            "No imported 2026 county contest for this office.": 3
-          }
+          "notAssessedReasons": {}
         }
       }
     },
@@ -1469,34 +1467,32 @@
       "offices": {
         "house": {
           "referenceCounties": 99,
-          "numericallyAssessed": 0,
-          "notAssessed": 99,
-          "flaggedCounties": 0,
-          "proxyOnlyFlaggedCounties": 0,
+          "numericallyAssessed": 99,
+          "notAssessed": 0,
+          "flaggedCounties": 29,
+          "proxyOnlyFlaggedCounties": 1,
           "publishedSourceContextCases": 0,
           "flaggedWithSourceContext": 0,
           "completedInvestigations": 0,
           "screenCoverage": {
             "partyCountChange": {
-              "assessed": 0,
-              "flagged": 0
+              "assessed": 99,
+              "flagged": 28
             },
             "shareSwing": {
-              "assessed": 0,
-              "flagged": 0
+              "assessed": 99,
+              "flagged": 11
             },
             "raceVoteChange": {
-              "assessed": 0,
+              "assessed": 99,
               "flagged": 0
             },
             "racePopulationChange": {
-              "assessed": 0,
-              "flagged": 0
+              "assessed": 99,
+              "flagged": 1
             }
           },
-          "notAssessedReasons": {
-            "Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.": 99
-          }
+          "notAssessedReasons": {}
         },
         "senate": {
           "referenceCounties": 99,
@@ -3106,34 +3102,32 @@
       "offices": {
         "house": {
           "referenceCounties": 100,
-          "numericallyAssessed": 0,
-          "notAssessed": 100,
-          "flaggedCounties": 0,
+          "numericallyAssessed": 100,
+          "notAssessed": 0,
+          "flaggedCounties": 39,
           "proxyOnlyFlaggedCounties": 0,
           "publishedSourceContextCases": 0,
           "flaggedWithSourceContext": 0,
           "completedInvestigations": 0,
           "screenCoverage": {
             "partyCountChange": {
-              "assessed": 0,
-              "flagged": 0
+              "assessed": 100,
+              "flagged": 23
             },
             "shareSwing": {
-              "assessed": 0,
-              "flagged": 0
+              "assessed": 100,
+              "flagged": 32
             },
             "raceVoteChange": {
-              "assessed": 0,
-              "flagged": 0
+              "assessed": 100,
+              "flagged": 1
             },
             "racePopulationChange": {
-              "assessed": 0,
-              "flagged": 0
+              "assessed": 100,
+              "flagged": 2
             }
           },
-          "notAssessedReasons": {
-            "Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.": 100
-          }
+          "notAssessedReasons": {}
         },
         "senate": {
           "referenceCounties": 100,
@@ -6386,6 +6380,381 @@
       "priority": "party_pattern_review"
     },
     {
+      "fips": "19021",
+      "county": "Buena Vista",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19027",
+      "county": "Carroll",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19035",
+      "county": "Cherokee",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19041",
+      "county": "Clay",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19047",
+      "county": "Crawford",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19059",
+      "county": "Dickinson",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19063",
+      "county": "Emmet",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19069",
+      "county": "Franklin",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19079",
+      "county": "Hamilton",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19085",
+      "county": "Harrison",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19091",
+      "county": "Humboldt",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19093",
+      "county": "Ida",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19115",
+      "county": "Louisa",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19119",
+      "county": "Lyon",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19127",
+      "county": "Marshall",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19129",
+      "county": "Mills",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19139",
+      "county": "Muscatine",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19141",
+      "county": "O'Brien",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19143",
+      "county": "Osceola",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19147",
+      "county": "Palo Alto",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19149",
+      "county": "Plymouth",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19151",
+      "county": "Pocahontas",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19155",
+      "county": "Pottawattamie",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19161",
+      "county": "Sac",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19165",
+      "county": "Shelby",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19167",
+      "county": "Sioux",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19193",
+      "county": "Woodbury",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "19197",
+      "county": "Wright",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
       "fips": "22003",
       "county": "Allen",
       "stateFips": "22",
@@ -8121,6 +8490,20 @@
       "county": "Alamance",
       "stateFips": "37",
       "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37001",
+      "county": "Alamance",
+      "stateFips": "37",
+      "state": "North Carolina",
       "office": "senate",
       "flagIds": [
         "senate-share-swing",
@@ -8145,6 +8528,32 @@
       "priority": "party_pattern_review"
     },
     {
+      "fips": "37019",
+      "county": "Brunswick",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37021",
+      "county": "Buncombe",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
       "fips": "37021",
       "county": "Buncombe",
       "stateFips": "37",
@@ -8154,6 +8563,20 @@
         "senate-party-count-change",
         "senate-share-swing",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37025",
+      "county": "Cabarrus",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -8193,6 +8616,20 @@
       "county": "Catawba",
       "stateFips": "37",
       "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37035",
+      "county": "Catawba",
+      "stateFips": "37",
+      "state": "North Carolina",
       "office": "senate",
       "flagIds": [
         "senate-share-swing",
@@ -8217,6 +8654,33 @@
       "priority": "party_pattern_review"
     },
     {
+      "fips": "37039",
+      "county": "Cherokee",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37043",
+      "county": "Clay",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
       "fips": "37045",
       "county": "Cleveland",
       "stateFips": "37",
@@ -8225,6 +8689,46 @@
       "flagIds": [
         "senate-party-count-change",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37051",
+      "county": "Cumberland",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37053",
+      "county": "Currituck",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37057",
+      "county": "Davidson",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -8264,6 +8768,19 @@
       "county": "Forsyth",
       "stateFips": "37",
       "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37067",
+      "county": "Forsyth",
+      "stateFips": "37",
+      "state": "North Carolina",
       "office": "senate",
       "flagIds": [
         "senate-party-count-change",
@@ -8279,11 +8796,39 @@
       "county": "Gaston",
       "stateFips": "37",
       "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37071",
+      "county": "Gaston",
+      "stateFips": "37",
+      "state": "North Carolina",
       "office": "senate",
       "flagIds": [
         "senate-party-count-change",
         "senate-share-swing",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37075",
+      "county": "Graham",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -8309,10 +8854,37 @@
       "county": "Harnett",
       "stateFips": "37",
       "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37085",
+      "county": "Harnett",
+      "stateFips": "37",
+      "state": "North Carolina",
       "office": "senate",
       "flagIds": [
         "senate-share-swing",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37087",
+      "county": "Haywood",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -8337,10 +8909,37 @@
       "county": "Henderson",
       "stateFips": "37",
       "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37089",
+      "county": "Henderson",
+      "stateFips": "37",
+      "state": "North Carolina",
       "office": "senate",
       "flagIds": [
         "senate-share-swing",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37093",
+      "county": "Hoke",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -8362,6 +8961,33 @@
       "priority": "party_pattern_review"
     },
     {
+      "fips": "37095",
+      "county": "Hyde",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37097",
+      "county": "Iredell",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
       "fips": "37097",
       "county": "Iredell",
       "stateFips": "37",
@@ -8370,6 +8996,19 @@
       "flagIds": [
         "senate-share-swing",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37099",
+      "county": "Jackson",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -8395,10 +9034,38 @@
       "county": "Johnston",
       "stateFips": "37",
       "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37101",
+      "county": "Johnston",
+      "stateFips": "37",
+      "state": "North Carolina",
       "office": "senate",
       "flagIds": [
         "senate-share-swing",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37105",
+      "county": "Lee",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -8414,6 +9081,33 @@
         "senate-party-count-change",
         "senate-share-swing",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37109",
+      "county": "Lincoln",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37113",
+      "county": "Macon",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing",
+        "house-race-population-change"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -8439,11 +9133,39 @@
       "county": "Madison",
       "stateFips": "37",
       "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37115",
+      "county": "Madison",
+      "stateFips": "37",
+      "state": "North Carolina",
       "office": "senate",
       "flagIds": [
         "senate-party-count-change",
         "senate-share-swing",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37117",
+      "county": "Martin",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing",
+        "house-race-vote-change",
+        "house-race-population-change"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -8461,6 +9183,19 @@
         "senate-race-population-change"
       ],
       "sourceContext": "published_context_only",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37111",
+      "county": "McDowell",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
       "priority": "party_pattern_review"
     },
@@ -8499,6 +9234,19 @@
       "county": "Mitchell",
       "stateFips": "37",
       "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37121",
+      "county": "Mitchell",
+      "stateFips": "37",
+      "state": "North Carolina",
       "office": "senate",
       "flagIds": [
         "senate-share-swing",
@@ -8523,6 +9271,19 @@
       "priority": "party_pattern_review"
     },
     {
+      "fips": "37133",
+      "county": "Onslow",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
       "fips": "37135",
       "county": "Orange",
       "stateFips": "37",
@@ -8531,6 +9292,20 @@
       "flagIds": [
         "senate-party-count-change",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37151",
+      "county": "Randolph",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -8555,10 +9330,51 @@
       "county": "Rowan",
       "stateFips": "37",
       "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37159",
+      "county": "Rowan",
+      "stateFips": "37",
+      "state": "North Carolina",
       "office": "senate",
       "flagIds": [
         "senate-share-swing",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37163",
+      "county": "Sampson",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37167",
+      "county": "Stanly",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -8579,6 +9395,32 @@
       "priority": "party_pattern_review"
     },
     {
+      "fips": "37173",
+      "county": "Swain",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37175",
+      "county": "Transylvania",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
       "fips": "37175",
       "county": "Transylvania",
       "stateFips": "37",
@@ -8587,6 +9429,20 @@
       "flagIds": [
         "senate-share-swing",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37179",
+      "county": "Union",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -8626,11 +9482,50 @@
       "county": "Watauga",
       "stateFips": "37",
       "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37189",
+      "county": "Watauga",
+      "stateFips": "37",
+      "state": "North Carolina",
       "office": "senate",
       "flagIds": [
         "senate-party-count-change",
         "senate-share-swing",
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37197",
+      "county": "Yadkin",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "37199",
+      "county": "Yancey",
+      "stateFips": "37",
+      "state": "North Carolina",
+      "office": "house",
+      "flagIds": [
+        "house-share-swing"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -13176,6 +14071,45 @@
       "priority": "race_total_or_population_review"
     },
     {
+      "fips": "10001",
+      "county": "Kent",
+      "stateFips": "10",
+      "state": "Delaware",
+      "office": "senate",
+      "flagIds": [
+        "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "race_total_or_population_review"
+    },
+    {
+      "fips": "10003",
+      "county": "New Castle",
+      "stateFips": "10",
+      "state": "Delaware",
+      "office": "senate",
+      "flagIds": [
+        "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "race_total_or_population_review"
+    },
+    {
+      "fips": "10005",
+      "county": "Sussex",
+      "stateFips": "10",
+      "state": "Delaware",
+      "office": "senate",
+      "flagIds": [
+        "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "race_total_or_population_review"
+    },
+    {
       "fips": "13001",
       "county": "Appling",
       "stateFips": "13",
@@ -15328,6 +16262,19 @@
       "office": "senate",
       "flagIds": [
         "senate-race-population-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "race_total_or_population_review"
+    },
+    {
+      "fips": "19121",
+      "county": "Madison",
+      "stateFips": "19",
+      "state": "Iowa",
+      "office": "house",
+      "flagIds": [
+        "house-race-population-change"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",

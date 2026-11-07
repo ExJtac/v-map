@@ -1,4 +1,14 @@
-# Research publication status — November 6, 2026
+# Research publication status
+
+## Current prepared checkpoint — November 7, 2026
+
+The generated research inventory now contains **1,065 House counties screened / 312 flagged**, and **1,563 Senate counties screened / 1,111 flagged**. Party-count comparisons cover 981 House counties (204 flags) and 1,294 Senate counties (90 flags). Of the Senate flags, 823 involve only race votes per resident; the 2020 presidential-year baseline versus the 2026 midterm limits interpretation. Those are race-vote proxies, never ballots or eligible-voter turnout.
+
+New paired House sources are Iowa and North Carolina. Delaware adds three Senate county returns. Approved New Mexico 2022, Delaware 2026 and Kentucky 2026 House facts can appear without a qualified historical comparison. Ohio's state metadata supplement preserves all original counts and clocks. Exact normalized files, scope inventories, source-selection pins and independent approvals remain versioned; raw research stays outside Git.
+
+This checkpoint is generated source, not a deployment receipt. Verify the matching public research-progress artifact and immutable-release receipt before reporting a production publication. Nationwide completion is **not** claimed: 2,076 House and 908 Senate reference-map units within their election scopes remain unassessed. Source context remains six cases / eight items, with zero completed investigations. Numerical flags never establish wrongdoing. The schedule remains paused; manual checks and publications only.
+
+## Archived November 6 publication audit
 
 This is a bounded publication audit, not a claim that every U.S. county or election has been researched or imported.
 

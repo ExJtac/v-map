@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "nm2022-official-hub-district1-county-aggregates": {
+      "title": "NewMexicoSOS official2022 HouseDistrict1 published county aggregates, protected precincts ignored",
+      "publisher": "New Mexico Secretary of State",
+      "url": "https://electionstats.sos.nm.gov/contest/12729",
+      "sourceUrl": "https://nm.elstats.civera.com/api/download_contest/12729_table.csv?split_party=false",
+      "sha256": "397823d88f1976d5a8eb2b6b46440434da0011546996c4a047d2b70464d6ecc4",
+      "retrievedAt": "2026-11-07T22:51:03.332396+00:00",
+      "sourceIsOfficial": true,
+      "sourceLocation": "Only rows labeled County; source district total and candidate/party header rows; all Precinct rows excluded",
+      "license": "Official public election facts; no blanket document public-domain claim"
+    },
+    "nm2022-official-hub-district2-county-aggregates": {
+      "title": "NewMexicoSOS official2022 HouseDistrict2 published county aggregates, protected precincts ignored",
+      "publisher": "New Mexico Secretary of State",
+      "url": "https://electionstats.sos.nm.gov/contest/12730",
+      "sourceUrl": "https://nm.elstats.civera.com/api/download_contest/12730_table.csv?split_party=false",
+      "sha256": "a4cbd206abda06516750b6562e8e7dc5fd3655f56565ce2b709875f14afdf0e7",
+      "retrievedAt": "2026-11-07T22:51:04.287738+00:00",
+      "sourceIsOfficial": true,
+      "sourceLocation": "Only rows labeled County; source district total and candidate/party header rows; all Precinct rows excluded",
+      "license": "Official public election facts; no blanket document public-domain claim"
+    },
+    "nm2022-official-county-api-district3": {
+      "title": "NewMexicoSOS official2022 HouseDistrict3 county API, fully numeric",
+      "publisher": "New Mexico Secretary of State",
+      "url": "https://nmresultswebservice.azurewebsites.us/NMResultsAjax.svc/GetMapDataArchive?type=FED&category=CTY&raceID=8403&osn=190&county=0&party=0&electionID=2838",
+      "sourceUrl": "https://nmresultswebservice.azurewebsites.us/NMResultsAjax.svc/GetMapDataArchive?type=FED&category=CTY&raceID=8403&osn=190&county=0&party=0&electionID=2838",
+      "sha256": "546beddf3c48aeb8eda1ad64657ddd7f26c96fd5904a1c95b4a245a5c88286d3",
+      "retrievedAt": "2026-11-06T21:39:08.456679+00:00",
+      "sourceIsOfficial": true,
+      "license": "Official public election facts; no blanket document public-domain claim"
+    },
+    "nm2022-original-state-controls": {
+      "title": "NM original official2022 state CSV independently checked with FEC",
+      "url": "https://electionresults.sos.nm.gov/resultsCSV.aspx?text=All&type=FED&map=CTY&eid=2838",
+      "sourceUrl": "https://electionresults.sos.nm.gov/resultsCSV.aspx?text=All&type=FED&map=CTY&eid=2838",
+      "sha256": "cca4c9999b8b45d57f8d406146479982c31fe8d65da4164df82d5cc2477d5260",
+      "retrievedAt": "2026-11-06T21:39:07.119492+00:00",
+      "sourceIsOfficial": true
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-nm/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 46,
+      "stateCount": 1,
+      "countyCount": 33,
+      "candidateCount": 119,
+      "countyDistrictIntersections": true
+    }
+  ],
+  "limitations": [
+    "Historical-only positive replacement. No2026 comparison or full-state anomaly qualification is asserted; current Chaves/CD2 candidate value remains protected/masked and held.",
+    "Official SOS-linked historical database CSV contains explicit COUNTY aggregates; these are read as published, without reconstructing or modifying any masked precinct value. Precinct rows are ignored. Source-masked precinct details remain masked in retained original.",
+    "CD1/CD2 historical county aggregates are independently checked against separately published source district controls, original stateCSV controls and all6 corresponding FEC controls; numeric CD3 original county API supplies both other controls.",
+    "Source write-in identities and parties are retained. VictoriaL.Gonzales Independent is Other; EliseoLuna Democratic is Democrat according to both official source surfaces, not assigned by inference.",
+    "Both full33-county historical and current geometry rosters are separately documented, but current protected cells prevent an exact full numeric state comparison. No percentage, remainder or zero is used to reconstruct them.",
+    "Election-global historical update time is a labeled reference, not a known county count-update or precise historical publication date.",
+    "Candidate-vote sums are not ballots cast, distinct voters or eligible-voter turnout. No outcome, misconduct or statistical anomaly conclusion is inferred."
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T23:05:23.964533+00:00",
+    "evidenceSha256": "686695950bd578b0fd57c3b3738df9ee3bc856a7c48255378bf42c5eb8b2b377",
+    "approvalReceiptSha256": "ed796c10702e11146c358421d8a509c08df7743949fa36ec985b9362778e09e5",
+    "approvedManifestProposalSha256": "bda48f62a3869480435cfe7c34953c2cac2efcada43f24e035c90bdda0c28e18"
+  },
+  "normalizedPayloadHashes": {
+    "public/data/house-completion-nm/house-2022.json": "1ac25984bad5aad13e93254104a56521a2eeb9187fdc59cfd94a1e06e52a0764"
+  }
+}

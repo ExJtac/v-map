@@ -45,6 +45,12 @@ export function auditedHouseCounts(report, id, year) {
   if (race?.status !== 'assessed' || !e?.comparability || e.comparability.id!==contract.id || e.baselineYear !== 2022 || e.currentYear !== 2026) return {reason:race?.reason || 'Audited whole-county House race totals unavailable.'};
   return auditedPairCounts(e,year);
 }
+/** Read only an already-assessed regular Class II pair; never infer a new match. */
+export function auditedRegularSenateCounts(report,id,year){
+  const state=String(id).slice(0,2),race=report?.counties?.[id]?.offices?.senate?.reviewScreens?.raceVoteChange,e=race?.evidence;
+  if(![2020,2026].includes(year)||!class2.has(state)||['13','22'].includes(state)||report?.comparabilityContracts?.senateClass2?.id!=='regular-class-2-2020-2026'||race?.status!=='assessed'||e?.office!=='senate'||e.baselineYear!==2020||e.currentYear!==2026||e.comparability?.id!==`${state}-senate-class-2`||e.seatId!==`${state}-senate-class-2`)return {reason:'No assessed regular Class II Senate pair for this county and year.'};
+  return auditedPairCounts(e,year);
+}
 export function auditedSenateRoundCounts(report,id,year) {
   const state=String(id).slice(0,2),contract=report?.comparabilityContracts?.senateSpecials?.[state]||report?.comparabilityContracts?.senateRounds?.[state];
   if(!contract?.verified)return {reason:'Senate seat and ballot scope are not independently qualified.'};

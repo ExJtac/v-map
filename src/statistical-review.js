@@ -1,6 +1,7 @@
 import {loadElection, OFFICE_LABELS} from './election-data.js';
 import {loadCountySupplement, mergeElectionData} from './county-data.js';
 import {qualifiedRaceCounts, auditedHouseCounts, auditedSenateRoundCounts} from './history-series.js';
+import {houseFactScope,scopedHouseFacts} from './house-facts.js';
 import {appUrl} from './paths.js';
 import {AUDIT_METRICS, auditedMetricCohort, describePeerPosition, histogram, twoPartyShare} from './statistical-math.js';
 
@@ -41,11 +42,13 @@ async function shareCohort(context) {
   const senateContract=report?.comparabilityContracts?.senateSpecials?.[stateFips]||report?.comparabilityContracts?.senateRounds?.[stateFips];
   const reviewedSenate=office==='senate'&&[senateContract?.baselineYear||2020,2026].includes(year)&&senateContract?.verified;
   if (office === 'house'||reviewedSenate) {
+    let houseRows;
+    if(office==='house'&&houseFactScope(report,id,year)){try{houseRows=(await cycle('house',year))?.results;}catch{/* Existing audited comparisons remain available on a temporary source-fetch failure. */}}
     const records = Object.entries(report?.counties || {}).filter(([fips]) => fips.startsWith(stateFips)).flatMap(([fips, county]) => {
-      const counts = reviewedSenate?auditedSenateRoundCounts(report,fips,year):auditedHouseCounts(report, fips, year), value = twoPartyShare(counts);
+      const counts = reviewedSenate?auditedSenateRoundCounts(report,fips,year):houseRows?scopedHouseFacts(houseRows,report,fips,year):auditedHouseCounts(report, fips, year), value = twoPartyShare(counts);
       return value == null ? [] : [{id: fips, name: county.name, value, sourceIds: counts.sourceIds, provisional: counts.provisional}];
     });
-    return {metric: shareMetric, records, selected: records.find(r => r.id === id), reason:reviewedSenate?'The source-pinned same-seat Senate scope, exact year and qualified party counts are required. Unqualified rounds remain excluded.':'Complete audited whole-county House scope is required; partial district portions are not combined.'};
+    return {metric: shareMetric, records, selected: records.find(r => r.id === id), reason:reviewedSenate?'The source-pinned same-seat Senate scope, exact year and qualified party counts are required. Unqualified rounds remain excluded.':'Source-qualified single-year House county totals and both named parties are required. Historical changes and map flags retain their separate eligibility rules.'};
   }
   if (!cohortCache.has(key)) cohortCache.set(key, cycle(office, year).then(data => {
     const groups = new Map();

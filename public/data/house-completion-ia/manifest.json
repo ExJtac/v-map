@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "modern-heideman-v1-house-ia_medsl_2022": {
+      "url": "https://github.com/pmheideman/us-county-election-results/releases/download/v1.0.0/us_county_election_results_v1.0.0.zip",
+      "sourceUrl": "https://doi.org/10.5281/zenodo.22976553",
+      "title": "Paul Heideman U.S. county-level election results 1990–2024",
+      "version": "v1.0.0",
+      "license": "CC-BY-4.0 for release; underlying source rights vary; retain SOURCES.csv",
+      "sha256": "e422fbfb1c56bed6787d08e59eed83d13b4ccf567510c69f94d2802a34b8e625",
+      "file": "heideman-v1.0.0.zip",
+      "sourceToken": "ia_medsl_2022",
+      "originalSources": [
+        {
+          "source": "ia_medsl_2022",
+          "office": "house",
+          "state_po": "IA",
+          "year": "2022",
+          "origin": "medsl",
+          "publisher": "MIT Election Data and Science Lab (MEDSL)",
+          "document": "U.S. House precinct-level returns 2022 (state files, aggregated to county by this project)",
+          "locator": "Harvard Dataverse, dataverse.harvard.edu (MIT Election Data and Science Lab). Local copy: R/data/raw_election/house_2022.raw; dataset DOIs: https://doi.org/10.7910/DVN/PSKDUJ, https://doi.org/10.7910/DVN/IVIXLK, https://doi.org/10.7910/DVN/VLGF2M, https://doi.org/10.7910/DVN/EOKNGW, https://doi.org/10.7910/DVN/USBYR4",
+          "format": "tab/CSV precinct files",
+          "obtained": "downloaded via the Dataverse guestbook/signed-URL flow (R/data/raw_election/download_medsl.sh)",
+          "transcription": "none (parsed text); project fixes: pseudo-rows removed, party fixes, special elections excluded (see data_corrections_log.csv)",
+          "license": "CC0 1.0, verified 2026-09-23 via the Dataverse API (license field on the dataset record)",
+          "license_status": "cc0_verified",
+          "n_rows": "330",
+          "n_counties": "99",
+          "n_districts": "4",
+          "corrections_log_entries": "",
+          "notes": "Cite as MIT Election Data and Science Lab"
+        }
+      ],
+      "sourceMember": "us_county_results_long.csv",
+      "licenseNote": "Release CC-BY-4.0 does not override underlying publishers rights",
+      "snapshotDate": "2026-11-06"
+    },
+    "fec2022-ia-house-controls": {
+      "title": "FEC Federal Elections2022 Iowa House general controls",
+      "url": "https://www.fec.gov/documents/5676/federalelections2022.xlsx",
+      "sha256": "cdb258ea23803e50d752bcea19faa39b3c201eb960094bcb556c3a38c2350897",
+      "sourceIsOfficial": true
+    },
+    "modern-current-2026-ia": {
+      "file": "results-2026-ia.csv",
+      "url": "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ia.csv",
+      "sourceUrl": "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+      "title": "Pushbuild2026 IA official-source returns snapshot",
+      "version": "73b20975fc0a66da90688d372b4c619609fee9cb",
+      "license": "CC0-1.0 research snapshot; original official-source URLs retained per contest",
+      "asOf": "2026-11-06T10:02:00-05:00",
+      "sha256": "c59b7f2b9803da687b1085b08af82ce3ca42a7fdd3a10f212cb5f6d7d43dc576",
+      "readmeFile": "results-2026-README.md",
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "snapshotDate": "2026-11-06"
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-ia/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 103,
+      "stateCount": 1,
+      "countyCount": 99,
+      "candidateCount": 343,
+      "countyDistrictIntersections": true
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-ia/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 103,
+      "stateCount": 1,
+      "countyCount": 99,
+      "candidateCount": 376,
+      "countyDistrictIntersections": true
+    }
+  ],
+  "limitations": [
+    "Both99-county source inventories independently match the Census roster and all actual district portions. County compatibility is bounded to substantial changes; no same-seat/candidate or every-minor-boundary-change assertion.",
+    "2022 original MEDSL/Heideman county vectors are unchanged and retain exact upstream provenance. All13 FEC general-election candidate/scattered-write-in controls reconcile. Scattered/Write-In stays Other, not assigned to a major party or individual.",
+    "2026 all15 county→district candidate controls reconcile the exact registered source extract; this is same-extract control reconciliation, not fresh direct primary-body data. Native Iowa original hub and Clarity requests returned403; the readable official Nov4,2026 release describes current results as unofficial until canvass.",
+    "Current unknown source update times stay null. asOf references extract retrieval time, not an invented vote-update time. No all-ballots-counted or certified status is inferred.",
+    "Blank original party labels and source Write-in categories are preserved and normalized Other; no major-party reassignment or invented named candidate/zero.",
+    "Candidate-vote sums are not ballots cast, distinct voters or eligible-voter turnout. Statistical review cannot establish wrongdoing. Different nominees, field sizes, rules and provisional counting constrain interpretation."
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T22:52:36.787465+00:00",
+    "evidenceSha256": "d91285362efb1b0a92978c82b6ece675db1070f49fe0ccde97964573605af4b2",
+    "approvalReceiptSha256": "c65bc218f588c850c8c20671ded5e15777af9ca77c25ca6399b2a605ff21760b",
+    "approvedManifestProposalSha256": "0a7dbc6eba0f37948ff47b42d804d33f8fa61afae9a63ec16278f0b72a74b5df"
+  },
+  "normalizedPayloadHashes": {
+    "public/data/house-completion-ia/house-2022.json": "82eb4b880719eba54cb7a834169b2b1688abcb5fce3d430721185e0133b0b76c",
+    "public/data/house-completion-ia/house-2026.json": "870209a715167049ffb7a4a37d0e47a5a43bf289103ba12af91009b908519103"
+  }
+}

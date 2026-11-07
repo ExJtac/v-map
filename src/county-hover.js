@@ -3,8 +3,9 @@ import { loadElection, OFFICE_LABELS } from './election-data.js';
 import { loadCountySupplement, mergeElectionData } from './county-data.js';
 import { appUrl } from './paths.js';
 import { appendPatternReview, getPatternReviewReport } from './pattern-review.js';
-import { auditedHouseCounts, auditedSenateRoundCounts } from './history-series.js';
+import { auditedHouseCounts, auditedSenateRoundCounts, auditedRegularSenateCounts } from './history-series.js';
 import { relativeChange } from './county-metrics.js';
+import {scopedHouseFacts} from './house-facts.js';
 
 const previousCache = new Map();
 let populationPromise, turnoutPromise;
@@ -33,7 +34,8 @@ const change = value => Number.isFinite(value) ? `${value >= 0 ? '+' : ''}${valu
 const node = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; e.textContent = text; return e; };
 function appendQuickResults(container, rows, office, year, id, contestFiltered = false) {
   if (office === 'geography' || !rows?.length) return;
-  const aggregate = office==='house' && !contestFiltered && String(id).length===5 ? auditedHouseCounts(getPatternReviewReport(),id,year) : null;
+  let aggregate = office==='house' && !contestFiltered && String(id).length===5 ? auditedHouseCounts(getPatternReviewReport(),id,year) : null;
+  if(office==='house'&&!contestFiltered&&(!aggregate||aggregate.reason))aggregate=scopedHouseFacts(rows,getPatternReviewReport(),id,year,String(id).length===5?'county':'state');
   if (rows.length !== 1 && (!aggregate || aggregate.reason)) {
     container.append(node('p','county-tip-note',office==='house'?`${rows.length} actual district portions are listed separately. Qualified historical comparisons use complete countywide aggregates where the source scope has been independently verified.`:`${rows.length} separate contests are available below; they are not added into one county vote total.`));
     if(office==='house') {
@@ -47,10 +49,11 @@ function appendQuickResults(container, rows, office, year, id, contestFiltered =
   const row=rows[0], metrics=aggregate && !aggregate.reason ? aggregate : contestMetrics(row);
   if (!metrics || row.contestType === 'recall-question' || row.contestType === 'replacement-election') return;
   const box=node('div','county-quick-results','');
-  box.append(node('strong','',`${OFFICE_LABELS[office]} · ${year}${office==='house'?aggregate && !aggregate.reason?' · audited countywide sum':` · District ${row.district??'?'} portion`:''}`));
+  box.append(node('strong','',`${OFFICE_LABELS[office]} · ${year}${office==='house'?aggregate && !aggregate.reason?String(id).length===5?' · countywide total':' · published district totals':` · District ${row.district??'?'} portion`:''}`));
   const grid=node('div','county-quick-grid','');
   for(const [key,label] of [['total','Reported contest total'],['republican','Republican'],['democrat','Democratic']]) {const item=node('div','','');item.append(node('span','',label),node('b','',fmt(metrics[key])));grid.append(item);}
-  box.append(grid,node('p','county-tip-note',`${row.provisional||row.unofficial||row.incomplete?'Provisional reported counts. ':''}Contest totals and candidate votes are separate from ballots cast. Comparisons and source notes appear below.`));container.append(box);
+  box.append(grid,node('p','county-tip-note',`${metrics.provisional||row.provisional||row.unofficial||row.incomplete?'Provisional reported counts. ':''}Contest totals and candidate votes are separate from ballots cast. Comparisons and source notes appear below.`));container.append(box);
+  if(aggregate?.basis)box.append(node('p','county-tip-note',String(id).length===2?'Sum of published candidate and classified write-in counts in distinct district reports. This does not resolve held county categories or establish complete ballots.':'These are verified totals for the selected year. Small counts or held historical sources can leave comparisons unavailable.'));
 }
 export async function renderCountyMetrics(container, { name, state, id, office, year, years, rows, population, contestFiltered }, isCurrent = () => true) {
   container.replaceChildren(node('strong', 'county-tip-title', `${name} · ${state}`));
@@ -120,6 +123,13 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
       const now=auditedSenateRoundCounts(report,id,2026),before=auditedSenateRoundCounts(report,id,round.baselineYear||2020);
       if(!now.reason&&!before.reason){priorYear=round.baselineYear||2020;comparison={...Object.fromEntries(['total','republican','democrat'].map(key=>[key,relativeChange(now[key],before[key])])),provisional:true};card.append(node('p','county-tip-note',special?'Changes below compare the same Senate seat: the 2022 regular election and 2026 special vacancy election. Candidates and election conditions may differ.':'Changes below compare the reviewed first November Senate ballots. Later runoffs are excluded; candidate fields and election conditions may differ.'));}
     }
+    if(office==='senate'&&year===2026&&rows.length===1&&row.special===false&&row.stage==='general'){
+      const now=auditedRegularSenateCounts(report,id,2026),before=auditedRegularSenateCounts(report,id,2020);
+      if(!now.reason&&!before.reason&&['total','democrat','republican'].every(key=>metrics[key]===now[key])&&now.sourceIds.includes(row.sourceId)){
+        priorYear=2020;comparison={...Object.fromEntries(['total','republican','democrat'].map(key=>[key,relativeChange(now[key],before[key])])),provisional:true};
+        card.append(node('p','county-tip-note','Changes below use the assessed same-seat Class II Senate pair: 2020 and 2026. The presidential-year baseline and incomplete current reporting can affect these changes.'));
+      }
+    }
     const entries = row.contestType === 'recall-question'
       ? [['total', 'Reported votes on recall question'], ...row.candidates.filter(c => ['yes', 'no'].includes((c.name || '').toLowerCase())).map(c => [null, `${c.name} votes`, c.votes])]
       : [['total', metrics.totalBasis ? 'Candidate / write-in votes' : row.contestType === 'replacement-election' ? 'Reported replacement votes' : `Reported votes for ${OFFICE_LABELS[office]}`], ['republican', 'Republican votes'], ['democrat', 'Democratic votes']];
@@ -150,7 +160,8 @@ function appendResidentRatio(container, ballot, pop, year, office, rows) {
   const ratio = ballotsPerResident(ballot?.ballotsCast, pop?.value);
   if (ratio == null) {
     const specialScope=getPatternReviewReport()?.comparabilityContracts?.senateSpecials?.[rows?.[0]?.stateFips];
-    const contest = contestVotesPerResident(rows, office, pop?.value, specialScope);
+    let contest = contestVotesPerResident(rows, office, pop?.value, specialScope);
+    if(!contest&&office==='house'&&rows?.length){const row=rows[0],level=row.geoLevel==='county'?'county':'state',id=level==='county'?row.countyFips:row.stateFips,facts=scopedHouseFacts(rows,getPatternReviewReport(),id,year,level),value=ballotsPerResident(facts.total,pop?.value);if(!facts.reason&&value!=null)contest={value,votes:facts.total,provisional:facts.provisional,knownCandidateBasis:true};}
     if (contest) {
       container.append(node('p', 'county-tip-note contest-population-ratio', `Reported ${OFFICE_LABELS[office]} votes as % of population in ${year}: ${contest.value.toFixed(1)}% · ${fmt(contest.votes)} ${contest.knownCandidateBasis ? 'known candidate / write-in' : 'reported race'} votes ÷ ${fmt(pop.value)} residents (${pop.year} estimate)${contest.provisional ? ' · provisional' : ''}.`));
       container.append(node('p', 'county-tip-note', 'Race-vote measure: ballots that skipped this race are not included. Total residents include children. Actual ballots-cast participation remains unavailable; this figure is not used as a ballot total or turnout-anomaly input.'));
@@ -177,9 +188,11 @@ function appendVotingMethods(container, ballot) {
 export async function renderStateMetrics(container, {name, state, id, office, year, years, rows = [], loading}, isCurrent = () => true) {
   container.replaceChildren(node('strong', 'county-tip-title', name || state));
   if (loading) { container.append(node('p', 'county-tip-note', 'Loading state returns…')); return; }
-  appendQuickResults(container,rows,office,year,id);
+  const quick=node('div','county-quick-area','');container.append(quick);
+  appendQuickResults(quick,rows,office,year,id);
   await appendPatternReview(container, { office, year, id, rows, level: 'state' }, isCurrent);
   if (!isCurrent()) return;
+  quick.replaceChildren();appendQuickResults(quick,rows,office,year,id);
   const [populationData, turnout] = await Promise.all([loadPopulation(), loadTurnout()]);
   if (!isCurrent()) return;
   const pop = populationAt(populationData?.states?.[id] || [], office === 'geography' ? null : year);

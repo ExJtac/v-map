@@ -2,6 +2,7 @@ import {loadElection, OFFICE_LABELS} from './election-data.js';
 import {loadCountySupplement, mergeElectionData} from './county-data.js';
 import {appUrl} from './paths.js';
 import {selectHistoryYears, qualifiedRaceCounts, auditedHouseCounts, auditedSenateRoundCounts, historyPoint} from './history-series.js';
+import {houseFactScope,scopedHouseFacts} from './house-facts.js';
 const merged = new Map(), documents = new Map();
 const fmt = value => value == null ? '—' : value.toLocaleString(undefined,{maximumFractionDigits:0});
 const pct = value => value == null ? '—' : `${value.toFixed(1)}%`;
@@ -37,7 +38,7 @@ export async function renderHistoryCharts(container, context, isCurrent = () => 
   if (!OFFICE_LABELS[context.office]) return;
   const section=node('section',null,'history-chart-content');section.append(node('h3',`${OFFICE_LABELS[context.office]} history · 2006–2026`));section.append(node('p','Loading actual election cycles…','history-note'));container.replaceChildren(section);
   const id=String(context.id).padStart(context.level==='county'?5:2,'0');
-  const [population,report]=await Promise.all([documentData('/data/population/counties.json').catch(()=>null),['house','senate'].includes(context.office) && context.level==='county' ? context.report || null : null]);
+  const [population,report]=await Promise.all([documentData('/data/population/counties.json').catch(()=>null),['house','senate'].includes(context.office) ? context.report || null : null]);
   if (!current()) return;
   const populations=(context.level==='state'?population?.states:population?.counties)?.[id] || [];
   const specialContract=report?.comparabilityContracts?.senateSpecials?.[id.slice(0,2)],senateContract=specialContract||report?.comparabilityContracts?.senateRounds?.[id.slice(0,2)];
@@ -48,7 +49,10 @@ export async function renderHistoryCharts(container, context, isCurrent = () => 
   for(const year of years) {
     if (!current()) return;
     let counts;
-    if(context.office==='house') counts=context.level==='county'?auditedHouseCounts(report,id,year):{reason:'Statewide House aggregation is not qualified by the county audit.'};
+    if(context.office==='house'){
+      counts=context.level==='county'?auditedHouseCounts(report,id,year):{reason:'Complete single-year House district scope is required.'};
+      if(counts.reason&&houseFactScope(report,id,year)){try{const data=await election('house',year);counts=scopedHouseFacts(data?.results,report,id,year,context.level);}catch{counts={reason:'Source-qualified House facts could not be loaded.'};}}
+    }
     else if(reviewedSenate&&[senateContract.baselineYear||2020,2026].includes(year))counts=auditedSenateRoundCounts(report,id,year);
     else {try {const data=await election(context.office,year);counts=qualifiedRaceCounts(data?.results,{...context,id,year});}catch {counts={reason:'Source file could not be loaded.'};}}
     points.push(historyPoint(year,counts,populations));
@@ -58,6 +62,7 @@ export async function renderHistoryCharts(container, context, isCurrent = () => 
   section.append(node('p',`${reviewedSenate?specialContract?'2022 and 2026 compare the same Senate seat; 2026 is a special vacancy election. Other years require unique regular general returns.':'2020 and 2026 use separately reviewed first-November Senate ballots; other years require unique regular general returns.':'Actual regular general-election cycles.'} Missing or held observations remain gaps. ${context.office==='senate'?'Different Senate seats may appear in different years; concurrent seats and ambiguous rounds are withheld. ':''}2026 counts remain provisional.`,'history-note'));
   if(reviewedSenate){const contract=senateContract;for(const limit of contract.comparisonNotes?.length?contract.comparisonNotes:contract.limitations||[])section.append(node('p',limit,'history-note'));}
   section.append(node('p','Legend: total race votes (gray dashed) · Republican (red) · Democratic (blue). No party nominee is shown as missing, not zero.','history-note'));
+  if(context.office==='house')section.append(node('p','House totals combine the actual district portions for a county, or published candidate and classified write-in counts from distinct district reports for a state. State district totals do not resolve unknown county categories or establish complete ballots. Verified totals for individual years can appear while a historical comparison remains held.','history-note'));
   if (!points.length) {section.append(node('p','No applicable election cycles are imported for this selection.'));return;}
   section.append(chart(points,false,'Reported candidate / write-in race votes',context.year),chart(points,true,'Race votes per 100 residents — a proxy, not turnout',context.year));
   section.append(node('p','Population includes children and other people ineligible to vote. Each ratio uses that election year’s dated estimate; 2026 uses the 2025 estimate. Missing exact-year population leaves a gap. Candidate votes are not ballots cast.','history-note'));

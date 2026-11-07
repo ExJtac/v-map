@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "de2026-house-reviewed-official-ui-county-table": {
+      "title": "Delaware2026 unofficial House statewide county table, actual rendered primary source, independently reviewed",
+      "url": "https://elections.delaware.gov/results/enr/GE2026.html?group=County&filter=RepresentativeInCongress",
+      "sourceUrl": "https://elections.delaware.gov/results/enr/GE2026.html?group=County&filter=RepresentativeInCongress",
+      "publisher": "Delaware Department of Elections",
+      "sourceIsOfficial": true,
+      "sourceCaptureMethod": "Actual existing official Chrome tab; selected the observed Representative In Congress control while By County remained active, then read the exact rendered table via locator innerText. Structured transcription, not native HTML/API bytes.",
+      "structuredCaptureSha256": "cf99c34a29df28ec07802dcf169e515f04e5c83aeab99179d9fc76ed06faf379",
+      "sourceCaptureShaBasis": "Digest is exact structured UI transcription packet, not nativeHTML/API bytes",
+      "capturedDate": "2026-11-07",
+      "sourceUpdatedAt": null,
+      "sourceTimestampRaw": "Data as of 11/04/2026 01:03 AM",
+      "sourceTimezone": null,
+      "stateControlUrl": "https://data.delaware.gov/resource/yg7x-kgjc.csv?election_name=2026+General+Election&$limit=50000",
+      "stateControlSha256": "6cc00b8b2f7192044501ffee36921a138aed48077928795c232410a3d290fa60",
+      "license": "Official public election facts; underlying publisher terms retained, no blanket document public-domain claim"
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-de/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 4,
+      "stateCount": 1,
+      "countyCount": 3,
+      "candidateCount": 8,
+      "countyDistrictIntersections": true
+    }
+  ],
+  "limitations": [
+    "Current House candidate packet only; no historical baseline work or eligibility claim.",
+    "District/at-large scope must be qualified by House owner before normalized import; this worker does not invent a district identifier.",
+    "All3county totals match their separate State column and original nativeCSV controls.",
+    "Only the2published source choices are supplied; no absent category filled aszero.",
+    "All reporting districts and absentee preparation are not certification or all-ballots-counted evidence.",
+    "Candidate race sums are not ballots cast or unique voters. No outcome promoted.",
+    "Current-only normalized facts. No2022baseline/pairedscope qualification or anomaly availability claim.",
+    "Normalized at-large0 is explicitly a schema convention, not a printed2026district label.",
+    "Both original source clocks/timezone unknowns retained; no conversion or relative chronology inference. Date-only capture retained as date-only.",
+    "Only2published choices retained; no absent categories manufactured aszero. Candidate race sums are not ballots or unique voters."
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T23:04:13.965545+00:00",
+    "evidenceSha256": "53cd99e1aa03ebb940463253915cbb8e553fdca9eb6bd8e7f6a5ceaa2384c9a8",
+    "approvalReceiptSha256": "d7ff37ab49a8276ab3bec84ec0fdb826d033642b032b40d3219fd6c0542ddbf3",
+    "approvedManifestProposalSha256": "5627ae6d41b1eddbbee0b55cfab0fbc02cbe939dc60de309500b200f04028b87"
+  },
+  "normalizedPayloadHashes": {
+    "public/data/house-completion-de/house-2026.json": "785706dcedb586ae2b3b1718799af488ec75946b57266613f749952fa319bf83"
+  }
+}

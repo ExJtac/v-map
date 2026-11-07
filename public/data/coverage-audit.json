@@ -114,6 +114,30 @@
     {
       "name": "senate-specials-oh",
       "priority": 170
+    },
+    {
+      "name": "house-completion-ia",
+      "priority": 180
+    },
+    {
+      "name": "house-completion-nc",
+      "priority": 180
+    },
+    {
+      "name": "house-completion-nm",
+      "priority": 180
+    },
+    {
+      "name": "house-completion-de",
+      "priority": 180
+    },
+    {
+      "name": "senate-completion-de",
+      "priority": 180
+    },
+    {
+      "name": "senate-state-oh-pass4",
+      "priority": 180
     }
   ],
   "coverage": [
@@ -394,17 +418,17 @@
     {
       "office": "senate",
       "year": 2026,
-      "records": 1863,
-      "countyContestRecords": 1837,
-      "uniqueCounties": 1837,
-      "mappableCounties": 1837,
-      "statesWithCountyReturns": 25,
+      "records": 1866,
+      "countyContestRecords": 1840,
+      "uniqueCounties": 1840,
+      "mappableCounties": 1840,
+      "statesWithCountyReturns": 26,
       "statesWithReturns": 29,
       "heldRecords": 0,
       "unitemizedRunnerUpRecords": 0,
-      "provisionalRecords": 1863,
+      "provisionalRecords": 1866,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 542
+      "resolvedSourceOverlaps": 544
     },
     {
       "office": "house",
@@ -553,7 +577,7 @@
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 0,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 839
+      "resolvedSourceOverlaps": 1115
     },
     {
       "office": "house",
@@ -573,17 +597,17 @@
     {
       "office": "house",
       "year": 2026,
-      "records": 2677,
-      "countyContestRecords": 2374,
-      "uniqueCounties": 1999,
-      "mappableCounties": 1999,
-      "statesWithCountyReturns": 31,
+      "records": 2680,
+      "countyContestRecords": 2377,
+      "uniqueCounties": 2002,
+      "mappableCounties": 2002,
+      "statesWithCountyReturns": 32,
       "statesWithReturns": 37,
       "heldRecords": 86,
       "unitemizedRunnerUpRecords": 0,
-      "provisionalRecords": 2677,
+      "provisionalRecords": 2680,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 843
+      "resolvedSourceOverlaps": 1076
     },
     {
       "office": "governor",

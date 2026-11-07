@@ -4,7 +4,7 @@
   "snapshotDate": "2026-11-07",
   "updatedAt": "2026-11-07T22:06:13.298021+00:00",
   "sourceHashes": {
-    "winners": "7f8194389855c753e0d1822a7befb1b43d7620224a236fdbd05d2b8972f1858b",
+    "winners": "9beabe86c8351a734aab0086ba4f72361d6a9c9b00925e6cf8e77ee313af2937",
     "pilot": "1bfd2da42d6595f296eabcc9f789b327bfffca326e1a7669b4396168f7cd0962",
     "portraits": "4cccda679817d26a9ae20ad6997438da9191034a802d07d4ba5606afb35427f2"
   },
@@ -1122,12 +1122,12 @@
         "stateFips": "10",
         "state": "Delaware",
         "district": null,
-        "seat": null,
-        "seatClass": null,
+        "seat": "10-senate-class-2",
+        "seatClass": 2,
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "CHRIS COONS",
           "party": "Democrat",
@@ -1140,16 +1140,15 @@
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-de"
+          "senate-completion-official-de-2026-browser"
         ],
         "sourceLinks": [
-          "https://elections.delaware.gov/results/enr/Election_StatewideResults_ID_GE2026.json",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/de.csv"
+          "https://elections.delaware.gov/results/enr/GE2026.html?group=County&filter=USSenator",
+          "https://data.delaware.gov/resource/yg7x-kgjc.csv?election_name=2026+General+Election&$limit=50000"
         ],
-        "sourceUpdatedAt": "2026-11-04T03:03:18.364-05:00",
-        "retrievedAt": "2026-11-06T15:03:34+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": null,
+        "timestampBasis": "Displayed sourceclock11/04/2026 01:03AM, no timezone assumed"
       },
       "portrait": null,
       "accountability": null,
@@ -1764,12 +1763,12 @@
         "stateFips": "39",
         "state": "Ohio",
         "district": null,
-        "seat": null,
+        "seat": "39-senate-class-3-term-ending-2029-01-03",
         "seatClass": null,
         "stage": "general",
         "special": true,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Sherrod Brown",
           "party": "Democrat",
@@ -8309,16 +8308,15 @@
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-de"
+          "de2026-house-reviewed-official-ui-county-table"
         ],
         "sourceLinks": [
-          "https://elections.delaware.gov/results/enr/Election_StatewideResults_ID_GE2026.json",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/de.csv"
+          "https://elections.delaware.gov/results/enr/GE2026.html?group=County&filter=RepresentativeInCongress",
+          "https://data.delaware.gov/resource/yg7x-kgjc.csv?election_name=2026+General+Election&$limit=50000"
         ],
-        "sourceUpdatedAt": "2026-11-04T03:03:18.364-05:00",
-        "retrievedAt": "2026-11-06T15:03:34+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-07",
+        "timestampBasis": "Rendered UI and older native CSV clocks differ; timezones unspecified. Preserve both raw clocks and do not silently convert to UTC or assert exact relative chronology."
       },
       "portrait": {
         "recordKey": "house|2026|district||10|0|general|false|candidate|",
@@ -10937,12 +10935,12 @@
         ],
         "sourceLinks": [
           "https://results.enr.clarityelections.com/IA/127077/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ia.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ia.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:50+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -10985,12 +10983,12 @@
         ],
         "sourceLinks": [
           "https://results.enr.clarityelections.com/IA/127077/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ia.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ia.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:50+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -11033,12 +11031,12 @@
         ],
         "sourceLinks": [
           "https://results.enr.clarityelections.com/IA/127077/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ia.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ia.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:50+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -11081,12 +11079,12 @@
         ],
         "sourceLinks": [
           "https://results.enr.clarityelections.com/IA/127077/",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ia.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ia.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:03:50+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -12656,12 +12654,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -12704,12 +12702,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||37|2|general|false|candidate|",
@@ -12771,12 +12769,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -12819,12 +12817,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||37|4|general|false|candidate|",
@@ -12886,12 +12884,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -12934,12 +12932,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -12982,12 +12980,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||37|7|general|false|candidate|",
@@ -13049,12 +13047,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||37|8|general|false|candidate|",
@@ -13116,12 +13114,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -13164,12 +13162,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||37|10|general|false|candidate|",
@@ -13231,12 +13229,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -13279,12 +13277,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||37|12|general|false|candidate|",
@@ -13346,12 +13344,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -13394,12 +13392,12 @@
         ],
         "sourceLinks": [
           "https://er.ncsbe.gov/?election_dt=11/03/2026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv"
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb"
         ],
         "sourceUpdatedAt": null,
         "retrievedAt": "2026-11-06T15:06:08+00:00",
-        "timestampBasis": "fetch time; source timestamp unavailable"
+        "timestampBasis": "Registered source-extract retrieval time; source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,

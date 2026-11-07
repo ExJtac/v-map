@@ -537,14 +537,26 @@
         "public/data/modern-counties/senate-2022.json": "79f6c6c3346dd5df8bd918ab8267f0f5db78bd3c497f5b4bef19fc83c3b5d7bb",
         "public/data/senate-specials-oh/senate-2022.json": "e4dd07430dd7a3cf24699e6bafbd7f2c26f266afae4f49668dae3eb421a61cc1",
         "public/data/modern-counties/senate-2026.json": "9bdb6a74228aa08837cc50fd352f5604e6fe3732e287c5cd8f2ff189c32d78f7",
-        "public/data/senate-specials-oh/senate-2026.json": "9a441ce4d3541e22a38f20e5444780d0595237639cd5807dbc6dac533d917252"
+        "public/data/senate-specials-oh/senate-2026.json": "9a441ce4d3541e22a38f20e5444780d0595237639cd5807dbc6dac533d917252",
+        "public/data/senate-state-oh-pass4/senate-2026.json": "1245b27593b1b9d1fd886c0b3da7a47be505807acb452f2faec98811ab521e70"
       },
       "comparisonNotes": [
         "This compares the same Class III Senate seat: its 2022 regular election and the 2026 special election for the remaining term ending January 3, 2029. Candidates and the term being contested differ.",
         "Both are midterm election years. Candidate choices, voting rules, population and incomplete reporting can affect changes; these screens do not determine a cause or establish wrongdoing.",
         "Ohio’s official contest identifies the unexpired term ending January 3, 2029.",
         "Current counts come from the previously saved report; no fresh Ohio count refresh is claimed."
-      ]
+      ],
+      "supplementalStateReview": {
+        "scope": "2026 state record only",
+        "file": "public/data/senate-state-oh-pass4/senate-2026.json",
+        "evidenceSha256": "4ac3b36feaebd7f5c72a3ad88d4126690f0d90bddb5ea46ef03cf8c8d549b674",
+        "approvalReceiptSha256": "dd1aa3f7febb714f8fdaafa3e9fa07f3c391b03256015a7409afc38b6f9cd493",
+        "reviewedAt": "2026-11-07T22:46:00.589792+00:00",
+        "metadataOnlyFields": [
+          "electionDate",
+          "sourceSeatId"
+        ]
+      }
     }
   ]
 }

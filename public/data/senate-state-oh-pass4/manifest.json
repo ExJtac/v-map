@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "modern-current-2026-oh": {
+      "file": "results-2026-oh.csv",
+      "url": "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/oh.csv",
+      "sourceUrl": "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+      "title": "Pushbuild2026 OH official-source returns snapshot",
+      "version": "73b20975fc0a66da90688d372b4c619609fee9cb",
+      "license": "CC0-1.0 research snapshot; original official-source URLs retained per contest",
+      "asOf": "2026-11-06T10:02:00-05:00",
+      "sha256": "03a16742e6b771c6a0e3b541cf8ed4e2c973819fd285b062d84b75d1eb6cbe1c",
+      "readmeFile": "results-2026-README.md",
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "snapshotDate": "2026-11-06"
+    }
+  },
+  "coverage": [
+    {
+      "office": "senate",
+      "year": 2026,
+      "url": "/data/senate-state-oh-pass4/senate-2026.json",
+      "geoLevels": [
+        "state"
+      ],
+      "rows": 1,
+      "stateCount": 1,
+      "countyCount": 0,
+      "candidateCount": 7
+    }
+  ],
+  "review": {
+    "status": "approved",
+    "kind": "reviewed_existing_state_row_date_seat_metadata_only",
+    "reviewedAt": "2026-11-07T22:46:00.589792+00:00",
+    "sourceReviewDate": "2026-11-07",
+    "evidenceSha256": "4ac3b36feaebd7f5c72a3ad88d4126690f0d90bddb5ea46ef03cf8c8d549b674",
+    "approvalReceiptSha256": "dd1aa3f7febb714f8fdaafa3e9fa07f3c391b03256015a7409afc38b6f9cd493"
+  },
+  "limitations": [
+    "This is metadata qualification of an existing official-attributed saved extract, not a fresh count download or newly opened primary state summary.",
+    "Source count-update time remains null; prior fetch/asOf/snapshot clocks remain labeled exactly as before.",
+    "Special remains true, stage general and results provisional/counting. No winner, certification or completed-investigation upgrade.",
+    "Any resident ratio remains candidate-race votes per resident, not ballots or eligible-voter turnout."
+  ],
+  "currentPrimaryRefresh": false
+}

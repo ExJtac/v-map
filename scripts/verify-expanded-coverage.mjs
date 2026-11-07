@@ -15,6 +15,7 @@ const manifests = COUNTY_SOURCES.map((s) => ({
   manifest: read(`public/data/${s.name}/manifest.json`),
 }));
 const countyLabels = read("src/county-labels.json").labels;
+const deHouseScope=read("public/data/house-facts/scopes.json").scopes.find(scope=>scope.stateFips==="10"&&scope.year===2026);
 assert.equal(countyLabels["51059"], "Fairfax County");
 assert.equal(countyLabels["51600"], "Fairfax city");
 let files = 0,
@@ -59,7 +60,8 @@ for (const source of manifests)
       if (r.provisional) {
         provisional++;
         assert.equal(r.unofficial, true);
-        const approvedUnknownTime=approvedUnknownSourceTime(r,data);
+        const approvedUnknownTime=approvedUnknownSourceTime(r,data,deHouseScope);
+        if(["de2026-house-reviewed-official-ui-county-table","senate-completion-official-de-2026-browser"].includes(r.sourceId))assert.equal(approvedUnknownTime,true,"Reviewed Delaware date-only/unknown-clock tuple must remain exact");
         assert.ok(r.sourceUpdatedAt || r.asOf || r.fetchedAt || r.retrievedAt || approvedUnknownTime,'Provisional source must retain a known time or the narrowly approved unknown-time receipt');
       }
     }

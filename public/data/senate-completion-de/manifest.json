@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "senate-completion-official-de-2026-browser": {
+      "title": "Delaware Department of Elections 2026 General Election, actual rendered Senate county table",
+      "publisher": "Delaware Department of Elections",
+      "url": "https://elections.delaware.gov/results/enr/GE2026.html?group=County&filter=USSenator",
+      "sourceUrl": "https://elections.delaware.gov/results/enr/GE2026.html?group=County&filter=USSenator",
+      "sha256": "87ac99a1dd007a99dafe6dffed13c416cda1009ebba7b7a9248f6e0ac4e8682d",
+      "sha256Basis": "Structured browser DOM transcription capture, not original HTML/API bytes",
+      "accessMethod": "Actual public Chrome UI via cua_repl, race U.S.Senator and ByCounty controls. Complete three-county/two-candidate table with distinct State column.",
+      "retrievedDate": "2026-11-07",
+      "retrievedAt": null,
+      "sourceUpdatedAt": null,
+      "sourceUpdatedAtBasis": "Literal displayed11/04/2026 01:03AM; timezone not supplied and not assumedUTC",
+      "sourceTimestampRaw": "Data as of 11/04/2026 01:03 AM",
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "license": "Official public election returns; no separate reuse license asserted",
+      "stateControlUrl": "https://data.delaware.gov/resource/yg7x-kgjc.csv?election_name=2026+General+Election&$limit=50000",
+      "stateControlSha256": "6cc00b8b2f7192044501ffee36921a138aed48077928795c232410a3d290fa60",
+      "stateControlAccess": "Previously downloaded original nativeHTTP200 office-levelCSV, reconciled both candidate controls. Also matched separate rendered statewide table.",
+      "limits": [
+        "Structured transcription is reproducible from the exact public UI, not an original county payload download.",
+        "Only two published source choice rows are provided; no claim that unpublished categories are zero.",
+        "Exact source timezone and intraday capture time were not retained; preserve the literal displayed source clock.",
+        "The browser table succeeds where native requests returned 403 and web-reader extraction omitted dynamic counts.",
+        "Completed absentee preparation or all districts reporting is not certification or all-ballots-counted evidence."
+      ]
+    }
+  },
+  "coverage": [
+    {
+      "office": "senate",
+      "year": 2026,
+      "url": "/data/senate-completion-de/senate-2026.json",
+      "geoLevels": [
+        "county",
+        "state"
+      ],
+      "rows": 4,
+      "stateCount": 1,
+      "countyCount": 3,
+      "candidateCount": 8
+    }
+  ],
+  "review": {
+    "status": "approved",
+    "kind": "reviewed_rendered_source_county_table",
+    "reviewedAt": "2026-11-07T22:50:42.858920+00:00",
+    "sourceReviewDate": "2026-11-07",
+    "evidenceSha256": "949d99abf48d6aa45f9247f94627c38dd18f6e733aed3c35a0c3a5cb2355dc89",
+    "approvalReceiptSha256": "f05929c42c14efc55162cad46f0da75e7c385c988f30c1391b5cd3d017d4db26",
+    "captureSha256": "87ac99a1dd007a99dafe6dffed13c416cda1009ebba7b7a9248f6e0ac4e8682d",
+    "sourceFormat": "structured transcription of completed original public browser DOM; not original HTML/API bytes",
+    "retrievedAtBasis": "Exact intraday browser capture timestamp unavailable; source timezone unspecified; no clock inferred."
+  },
+  "limitations": [
+    "Rendered DOM transcription source, not underlying countyAPI/original countyHTMLbytes. Retain capture basis and sourcehash as transcription.",
+    "No intraday capture timestamp retained in worker packet; reviewedDate only. Source timezone unspecified; preserve rawclock01:03AM and olderCSV03:03:18 without ordering or conversion.",
+    "Only2published choices; no unpublishedwritein/other category inferredzero. Racechoice totals not ballots/uniquevoters.",
+    "Reporting530of530 and absentee-preparation done do not establish countingcomplete, certification or winner.",
+    "Existing2020baseline unaltered and not newly primary-requalified; engine determines comparison screens separately."
+  ],
+  "currentPrimaryRefresh": false
+}

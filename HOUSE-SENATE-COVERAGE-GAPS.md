@@ -1,5 +1,21 @@
 # House and Senate county coverage audit
 
+## Current manual research checkpoint — November 7, 2026
+
+The current machine-readable [research inventory](public/data/research-progress-2026.json) supersedes the historical November 6 table below. **1,065 House counties and 1,563 Senate counties** pass at least one numerical comparison screen. Their respective eligible election scopes contain 3,141 and 2,471 legacy map-reference units; **2,076 House and 908 Senate units in those scopes remain unassessed**. Some require different geography or ballot-round treatment. Screening is not a completed investigation; all flagged cases remain unresolved.
+
+House paired source scopes now cover 1,076 unique county identities across 15 states. At least one numerical rule assesses 1,065; tiny samples, missing parties and Gwinnett's unresolved historical write-in categories can hold individual screens. The approved paired states are AZ, CA, CO, GA, IA, ID, MN, MT, NC, OH, SD, UT, VA, WV and WY. Each state requires all actual per-year county/district portions and independent candidate controls. This is not nationwide completeness.
+
+The fourth batch adds Iowa's 99 and North Carolina's 100 county comparisons. The North Carolina baseline corrects 12 vote cells by +372 from the official archive. Iowa's current vector is a retained saved snapshot, not a newly downloaded live feed. New Mexico's separately approved 2022 source repair adds 167 historical candidate votes and preserves official write-in parties. Its masked 2026 Chaves CD2 cell stays unavailable. Delaware's three current House counties are approved source facts only; its missing historical named write-ins (15 Walker and 3 Shlikas) prevent a paired qualification. Kentucky's current House facts likewise do not qualify its held baseline. Selected-place details and graphs can display approved single-year facts without adding comparison flags.
+
+Senate now includes Delaware's three current county records, independently checked in the original official rendered table and against separate state controls. Delaware uses a date-only capture and raw source clocks with unspecified timezone; no intraday time or certification is inferred. Florida and Ohio comparisons use their separately reviewed 2022 regular / 2026 special Class III seat contracts. The Ohio state-only supplement adds date/seat metadata and changes none of its seven reported counts, clocks or county vectors.
+
+Outstanding acquisition/source holds include Arkansas's missing Phillips House baseline; Kansas Senate's 103 missing current county imports; New Jersey Senate's 17 missing current county imports (four imported does not mean four eligible comparisons); New Mexico's masked current House count; and remaining states without qualified complete House inventories or Senate baselines/current records. A North Dakota official bulk-feed endpoint was identified but its complete 53-county payload was not obtained. These are documented gaps, not evidence of zero votes, normal patterns, or wrongdoing.
+
+The public [coverage page](https://voteranomaly.com/coverage/#congress-review-progress) provides current per-state and screen-specific numbers. Six published source-context cases with eight items remain context only; zero completed investigations. Research scheduling remains paused and publications are manual.
+
+## Archived November 6 inventory
+
 Read-only merged-snapshot audit, November 6, 2026, before new research-house/research-senate registration. All 3,142 atlas county identities were checked using the actual COUNTY_SOURCES/mergeElectionData precedence and holds. County presence does not establish complete House county-district scope. Counts below distinguish source rows from unique counties; a held row is not usable evidence. These are import gaps, not claims that no election occurred.
 
 ## Priority handoff

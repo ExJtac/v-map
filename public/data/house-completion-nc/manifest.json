@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "house-completion-nc2022-official": {
+      "title": "NCSBE official2022 general precinct and voting-method data, aggregated exactly to county/district",
+      "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/results_pct_20221108.zip",
+      "sourceUrl": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/results_pct_20221108.zip",
+      "sha256": "2024bf67243ef173f54e625c3bace4c8b6f80947fa7d67df26796c2c85d3e9f1",
+      "retrievedAt": "2026-11-07T22:45:33.984797+00:00",
+      "sourceIsOfficial": true,
+      "publisher": "North Carolina State Board of Elections",
+      "layoutUrl": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/layout_results_pct.txt",
+      "license": "Official public election facts; underlying publisher terms retained, no blanket document public-domain claim"
+    },
+    "fec2022-nc-house-controls": {
+      "title": "FEC Federal Elections2022 NorthCarolina House general controls",
+      "url": "https://www.fec.gov/documents/5676/federalelections2022.xlsx",
+      "sha256": "cdb258ea23803e50d752bcea19faa39b3c201eb960094bcb556c3a38c2350897",
+      "sourceIsOfficial": true
+    },
+    "modern-current-2026-nc": {
+      "file": "results-2026-nc.csv",
+      "url": "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/nc.csv",
+      "sourceUrl": "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+      "title": "Pushbuild2026 NC official-source returns snapshot",
+      "version": "73b20975fc0a66da90688d372b4c619609fee9cb",
+      "license": "CC0-1.0 research snapshot; original official-source URLs retained per contest",
+      "asOf": "2026-11-06T10:02:00-05:00",
+      "sha256": "f53639ae1944915d75cad2f24c1b160c90d8a405c81ff5e8069deac4020aca82",
+      "readmeFile": "results-2026-README.md",
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "snapshotDate": "2026-11-06"
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-nc/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 127,
+      "stateCount": 1,
+      "countyCount": 100,
+      "candidateCount": 291,
+      "countyDistrictIntersections": true
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-nc/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 129,
+      "stateCount": 1,
+      "countyCount": 100,
+      "candidateCount": 365,
+      "countyDistrictIntersections": true
+    }
+  ],
+  "limitations": [
+    "2022 baseline is a direct NCSBE precinct/method source rebuild, not a scaled correction to the prior research snapshot. Every actual real and administrative precinct row is counted once according to the official layout. All32 independent FEC candidate/write-in controls reconcile.",
+    "Write-In(Miscellaneous) remains a source-reported aggregate Other category; no named-person or major-party allocation is inferred. The separately named DianaR.Jimison write-in is retained independently.",
+    "2026 all39 county→district candidate controls reconcile the exact registered official-attributed snapshot. An ordinary current dashboardHTML request succeeded, but no fresh primary county vector was qualified; this is same-extract reconciliation, not independently refreshed current counts.",
+    "Blank source-update times remain null; asOf is explicitly the registered extract retrieval-time reference, not an invented count-update time. All current counts stay unofficial/provisional.",
+    "Complete100-county inventories and actual per-year portions are independently matched to the Census roster; district intersections differ. No same-seat/candidate or every-minor-county-boundary-change assertion.",
+    "Candidate-vote sums are not ballots cast, distinct voters or eligible-voter turnout. Different districts/nominees/field sizes, rules and provisional counting constrain statistical interpretation; flags cannot establish wrongdoing."
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T22:56:06.822806+00:00",
+    "evidenceSha256": "eb2b6e12edcbdb79e7d3126e13cfbcc5b877f18c0e7de4ab8a40f5238f039053",
+    "approvalReceiptSha256": "dac43953ac4e65218e2d1b4bf53b736cc7c5bdd60ec23112cb900f515dc2f0e4",
+    "approvedManifestProposalSha256": "bbae73770151f717b28ee0302f8f1cc258cf6d591ab2b069645c052cec81314a"
+  },
+  "normalizedPayloadHashes": {
+    "public/data/house-completion-nc/house-2022.json": "457c906d7accfe24d1e0afc8d8cbfc1fd8d8263f74f52fd0373f80b56b0bd521",
+    "public/data/house-completion-nc/house-2026.json": "3cf38dfa34361f5a38dc68c4aa3539c396cece662484e42e0f847f1f7955b463"
+  }
+}
