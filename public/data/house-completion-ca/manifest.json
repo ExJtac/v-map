@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "house-completion-ca2022-official": {
+      "title": "California Secretary of State2022official StatementofVote, long-form namedHousecountyrows",
+      "publisher": "California Secretary of State",
+      "url": "https://elections.cdn.sos.ca.gov/sov/2022-general/sov/csv-candidates.xlsx",
+      "sourceUrl": "https://elections.cdn.sos.ca.gov/sov/2022-general/sov/csv-candidates.xlsx",
+      "sha256": "9bd551087f1e3205968a3dc34142fcf895713888392f1739575ed05da56389da",
+      "retrievedAt": "2026-11-07T21:29:01.270737+00:00",
+      "file": "ca2022-candidates.xlsx",
+      "sourceLocation": "Sheet1; ContestNameUnitedStatesRepresentativeDistrict1–52; CountyName/CandidateId/PartyName/VoteTotal",
+      "controlSourceUrl": "https://elections.cdn.sos.ca.gov/sov/2022-general/sov/48-congress.xlsx",
+      "controlSha256": "763009b98ef2550b3b2ba42ca59fc4a496f6047b739a99f6f60ca0fa78a1993e",
+      "sourceIsOfficial": true,
+      "license": "Officialpublicelectionfacts; underlyingpublisherreuse termsretained, no blanketdocumentPDclaim"
+    },
+    "house-completion-ca2026-official": {
+      "title": "California Secretary of State2026unofficial Housecountyanddistrictwidereturns",
+      "publisher": "California Secretary of State",
+      "url": "https://media.sos.ca.gov/media/us-rep.json",
+      "sourceUrl": "https://media.sos.ca.gov/media/us-rep.json",
+      "sha256": "27fb02fd95565f22b9f0a368ce80eef656cb30f22260e3e1e316084ef39d11d8",
+      "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+      "file": "ca2026-us-rep.json",
+      "sourceIsOfficial": true,
+      "license": "Officialpublicelectionfacts; no blanketdocumentPDclaim",
+      "sourceTimestampBasis": "ReportingTime retained verbatim withoutinferredtimezone"
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-ca/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 182,
+      "stateCount": 1,
+      "countyCount": 58,
+      "candidateCount": 364,
+      "countyDistrictIntersections": true
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-ca/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 196,
+      "stateCount": 1,
+      "countyCount": 58,
+      "candidateCount": 392,
+      "countyDistrictIntersections": true
+    }
+  ],
+  "limitations": [
+    "All 2026 results are unofficial and provisional. Reporting every precinct does not establish complete counting or certification.",
+    "The countywide aggregate sums each year’s complete House portions independently: 130 in 2022 and 144 in 2026. It is not a matched same-seat or same-candidate comparison.",
+    "Original official candidate and party identities are retained. An absent opposing party is never invented for a same-party race.",
+    "Explicit published zeros are preserved; missing values are never filled with inferred zeros.",
+    "All 58 county FIPS match the Census roster. This bounded compatibility check does not adjudicate every minor cartographic correction.",
+    "Source reporting times remain verbatim without an inferred time zone; actual retrieval times are separate.",
+    "The old held Los Angeles District 30 source remains unchanged. This separately qualified official baseline supplies full published names.",
+    "The two California official2022workbooks identify Douglas Brower as Republican; the FEC workbook labels him D. All sources show79029votes. The state party identity is retained and the disagreement remains unresolved.",
+    "Three encoding-damaged given/family-name cells are repaired only to the exact matching names corroborated by the separate official workbook; original source values remain in provenance.",
+    "Nine current districts have same-party nominees. An absent party remains null, not zero; a party comparison requires both named parties across the county."
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T21:44:02.676526+00:00",
+    "evidenceSha256": "511b28521e4906c7a543605ab3d28e1b4dc9b9df66d6a4de686b31ba0956438d",
+    "approvalReceiptSha256": "c184096469693235202644a0ce8f26b8a314c659559bb45a10662c4816d190be"
+  }
+}

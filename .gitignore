@@ -10,3 +10,4 @@ __pycache__/
 *.pyc
 *.log
 /.vmap-*.local.json
+/public/data/anomalies-2026.json

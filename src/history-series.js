@@ -43,12 +43,23 @@ export function auditedHouseCounts(report, id, year) {
   const race = office?.reviewScreens?.raceVoteChange;
   const e = race?.evidence;
   if (race?.status !== 'assessed' || !e?.comparability || e.comparability.id!==contract.id || e.baselineYear !== 2022 || e.currentYear !== 2026) return {reason:race?.reason || 'Audited whole-county House race totals unavailable.'};
+  return auditedPairCounts(e,year);
+}
+export function auditedSenateRoundCounts(report,id,year) {
+  if(![2020,2026].includes(year))return {reason:'This reviewed Senate ballot comparison covers only 2020 and 2026.'};
+  const contract=report?.comparabilityContracts?.senateRounds?.[String(id).slice(0,2)];
+  if(!contract?.verified)return {reason:'November Senate ballot-round scope is not independently qualified.'};
+  const race=report?.counties?.[id]?.offices?.senate?.reviewScreens?.raceVoteChange,e=race?.evidence;
+  if(race?.status!=='assessed'||e?.comparability?.id!==contract.id||e.baselineYear!==2020||e.currentYear!==2026)return {reason:race?.reason||'Audited November Senate race totals unavailable.'};
+  return {...auditedPairCounts(e,year),roundBasis:contract.basis};
+}
+function auditedPairCounts(e,year) {
   const current = year === e.currentYear;
   const total = current ? e.currentRaceVotes : e.priorRaceVotes;
   const typed=current?e.currentNamedPartyCounts:e.priorNamedPartyCounts;
   const d=typed?typed.democrat:current?e.currentDemocratVotes:e.priorDemocratVotes;
   const r=typed?typed.republican:current?e.currentRepublicanVotes:e.priorRepublicanVotes;
-  if (!integer(total)) return {reason:'Audited House race count unavailable.'};
+  if (!integer(total)) return {reason:'Audited race count unavailable.'};
   return {total,democrat:integer(d)?d:null,republican:integer(r)?r:null,provisional:current,sourceIds:[...new Set([...(current?e.currentSource:e.priorSource)?.sourceIds||[],(current?e.currentSource:e.priorSource)?.sourceId].filter(Boolean))],scope:e.comparability.id};
 }
 export function historyPoint(year, counts, populations = []) {

@@ -3,7 +3,8 @@ import { loadElection, OFFICE_LABELS } from './election-data.js';
 import { loadCountySupplement, mergeElectionData } from './county-data.js';
 import { appUrl } from './paths.js';
 import { appendPatternReview, getPatternReviewReport } from './pattern-review.js';
-import { auditedHouseCounts } from './history-series.js';
+import { auditedHouseCounts, auditedSenateRoundCounts } from './history-series.js';
+import { relativeChange } from './county-metrics.js';
 
 const previousCache = new Map();
 let populationPromise, turnoutPromise;
@@ -110,10 +111,15 @@ export async function renderCountyMetrics(container, { name, state, id, office, 
     if (row.sourceElectionOutcome) card.append(node('p', 'county-tip-note', row.sourceElectionOutcome));
     const metrics = contestMetrics(row);
     if (!metrics) { card.append(node('p', 'county-tip-note', 'Source needs review; counts withheld.')); container.append(card); continue; }
-    const priorYear = expectedPriorYear(row, office, year);
+    let priorYear = expectedPriorYear(row, office, year);
     const prior = priorByYear.get(priorYear);
     const priorRows = (prior?.results || []).filter(r => r.geoLevel === 'county' && r.countyFips === id);
-    const comparison = priorYear == null ? { reason: 'Comparable prior cycle cannot be established.' } : !prior ? { reason: 'Expected prior election returns unavailable.' } : compareContest(row, priorRows, office);
+    let comparison = priorYear == null ? { reason: 'Comparable prior cycle cannot be established.' } : !prior ? { reason: 'Expected prior election returns unavailable.' } : compareContest(row, priorRows, office);
+    const report=getPatternReviewReport(),round=report?.comparabilityContracts?.senateRounds?.[String(id).slice(0,2)];
+    if(office==='senate'&&year===2026&&rows.length===1&&!row.special&&round?.verified&&row.stage===round.years[2026].stage&&row.sourceSeatId===round.seatId&&row.electionDate===round.years[2026].electionDate){
+      const now=auditedSenateRoundCounts(report,id,2026),before=auditedSenateRoundCounts(report,id,2020);
+      if(!now.reason&&!before.reason){priorYear=2020;comparison={...Object.fromEntries(['total','republican','democrat'].map(key=>[key,relativeChange(now[key],before[key])])),provisional:true};card.append(node('p','county-tip-note','Changes below compare the reviewed first November Senate ballots. Later runoffs are excluded; candidate fields and election conditions may differ.'));}
+    }
     const entries = row.contestType === 'recall-question'
       ? [['total', 'Reported votes on recall question'], ...row.candidates.filter(c => ['yes', 'no'].includes((c.name || '').toLowerCase())).map(c => [null, `${c.name} votes`, c.votes])]
       : [['total', metrics.totalBasis ? 'Candidate / write-in votes' : row.contestType === 'replacement-election' ? 'Reported replacement votes' : `Reported votes for ${OFFICE_LABELS[office]}`], ['republican', 'Republican votes'], ['democrat', 'Democratic votes']];

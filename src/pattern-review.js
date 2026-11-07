@@ -166,6 +166,7 @@ function appendOfficeChecks(box, assessment, criteria) {
       for(const limit of scopeEvidence.comparability?.limitations||[])box.append(node('p','county-tip-note',limit));
     }
     if(scopeEvidence?.office==='senate'&&scopeEvidence.baselineYear===2020&&!Number.isFinite(e?.democratCountChangePercent))box.append(node('p','county-tip-note','Same-seat Senate comparison uses 2020, a presidential-election year. Election-cycle and reporting progress differences may explain large changes.'));
+    if(scopeEvidence?.office==='senate')for(const limit of scopeEvidence.comparability?.comparisonNotes?.length?scopeEvidence.comparability.comparisonNotes:scopeEvidence.comparability?.limitations||[])box.append(node('p','county-tip-note',limit));
     for (const [key,label] of [['partyCountChange','40% party change / opposing party within ±15%'],['raceVoteChange','40% total race-vote change'],['racePopulationChange','10-point race votes / population change'],['shareSwing','10-point share swing']]) {
       const screen=screens[key];
       box.append(node('p','county-tip-note',`${label}: ${screen?.status === 'assessed' ? screen.flags.length ? 'review signal' : 'checked; threshold not reached' : `not assessed${screen?.reason ? ` · ${screen.reason}` : ''}`}.`));

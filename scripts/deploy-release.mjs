@@ -40,6 +40,8 @@ const casData=Object.keys(cas).filter(file=>file.startsWith('data/')).sort();
 const domainData=Object.keys(domain).filter(file=>file.startsWith('data/')).sort();
 if(JSON.stringify(casData)!==JSON.stringify(domainData))throw new Error('The two data releases have different file sets.');
 for(const file of casData)if(cas[file]!==domain[file])throw new Error(`The two data releases disagree: ${file}`);
+const progress=JSON.parse(fs.readFileSync('public/data/research-progress-2026.json','utf8'));
+if(progress.inputHashes?.['public/data/anomalies-2026.json']!==cas['data/anomalies-2026.json'])throw new Error('Generated audit differs from the committed research-progress SHA.');
 const date=new Date().toISOString().slice(0,10).replaceAll('-','');
 const release=`${date}-${commit.slice(0,7)}`;
 const receipt=fs.mkdtempSync(path.join(os.tmpdir(),'vmap-release-'));
@@ -102,7 +104,7 @@ function verifyOnce(origin,file,expected) {
   return new Promise((resolve,reject)=>{
     // Check the configured origin with normal TLS hostname/certificate validation.
     const request=https.get(new URL(file==='index.html'?'':file,origin),response=>{
-      const chunks=[];response.on('data',chunk=>chunks.push(chunk));response.on('end',()=>response.statusCode===200 && digest(Buffer.concat(chunks))===expected?resolve():reject(new Error(`Live release mismatch: ${origin}${file}`)));
+      const hash=crypto.createHash('sha256');response.on('data',chunk=>hash.update(chunk));response.on('error',reject);response.on('end',()=>response.statusCode===200 && hash.digest('hex')===expected?resolve():reject(new Error(`Live release mismatch: ${origin}${file}`)));
     });request.setTimeout(30000,()=>request.destroy(new Error('Live origin verification timed out.')));request.on('error',reject);
   });
 }
@@ -124,7 +126,7 @@ try {
   for(const [origin,manifest] of [['https://cas-tx.com/vmap/',cas],['https://voteranomaly.com/',domain]]) {
     const profilePages=Object.keys(manifest).filter(file=>file.startsWith('people/')&&file.endsWith('/index.html'));
     const portraitSamples=Object.keys(manifest).filter(file=>file.startsWith('people-photos/')).slice(0,4);
-    const checks=['index.html','winners/index.html','accountability/index.html','data/candidates/pilot-2026.json','data/candidates/profiles-2026.json','data/candidates/profile-cards-2026.json','data/candidates/portraits-2026.json','data/county-reviews/2026.json','data/county-reviews/reviewed-input-2026-11-07.json','data/research-progress-2026.json','data/congress-scope-2026.json',...Object.keys(manifest).filter(file=>file.startsWith('data/senate-completion/')||file.startsWith('data/house-completion/')||file.startsWith('data/house-completion-wy/')||file.startsWith('data/house-completion-id/')||file.startsWith('data/house-completion-wv/')||file.startsWith('data/house-completion-ky/')||file.startsWith('data/house-comparability/')),'sitemap.xml','share/v-map-logo-v2.png',...profilePages,...portraitSamples,...Object.keys(manifest).filter(file=>file.startsWith('data/winners/')),...Object.keys(manifest).filter(file=>file.startsWith('assets/') && (file.endsWith('.js')||file.endsWith('.css')))];
+    const checks=['index.html','data/anomalies-2026.json','winners/index.html','accountability/index.html','data/candidates/pilot-2026.json','data/candidates/profiles-2026.json','data/candidates/profile-cards-2026.json','data/candidates/portraits-2026.json','data/county-reviews/2026.json','data/county-reviews/reviewed-input-2026-11-07.json','data/research-progress-2026.json','data/congress-scope-2026.json',...Object.keys(manifest).filter(file=>/^data\/(?:house-completion(?:-[a-z]+)?|senate-completion|senate-rounds-[a-z]+|house-comparability|senate-comparability)\//.test(file)),'sitemap.xml','share/v-map-logo-v2.png',...profilePages,...portraitSamples,...Object.keys(manifest).filter(file=>file.startsWith('data/winners/')),...Object.keys(manifest).filter(file=>file.startsWith('assets/') && (file.endsWith('.js')||file.endsWith('.css')))];
     // Verify every dedicated profile publicly without flooding the shared host.
     for(let index=0;index<checks.length;index+=8)await Promise.all(checks.slice(index,index+8).map(file=>verify(origin,file,manifest[file])));
   }

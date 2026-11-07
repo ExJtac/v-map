@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {qualifiedRaceCounts,historyPoint,selectHistoryYears,auditedHouseCounts} from '../src/history-series.js';
+import {qualifiedRaceCounts,historyPoint,selectHistoryYears,auditedHouseCounts,auditedSenateRoundCounts} from '../src/history-series.js';
 const context={office:'governor',year:2022,level:'county',id:'30001'};
 const row={geoLevel:'county',countyFips:'30001',stateFips:'30',stage:'general',special:false,candidates:[{name:'D',party:'Democrat',votes:0},{name:'R',party:'Republican',votes:100},{name:'I',party:'Other',votes:5}],reportingCategories:[{name:'write-in',category:'unattributedWriteIns',votes:2},{name:'under',category:'undervotes',votes:20},{name:'over',category:'overvotes',votes:1}],totalVotes:128};
 let result=qualifiedRaceCounts([row],context);assert.equal(result.total,107);assert.equal(result.democrat,0);assert.equal(result.republican,100);
@@ -32,12 +32,24 @@ console.log('Historical named party counts retained only for total-only category
 const missingAggregateCategory = qualifiedRaceCounts([{...row,candidates:[...row.candidates,{name:'OTHER',party:'Other',votes:8}],reportingCategories:[{category:'sourceReportingCategory',votes:null}]}],context);
 assert.equal(historyPoint(2022,missingAggregateCategory,pop).republican,null);
 
-for(const state of ['16','27','39','46','51','54','56']){
+const qualifiedAdditionalHouseStates=Object.entries(audit.comparabilityContracts.houseStates).filter(([state,c])=>c.verified).map(([state])=>state);
+for(const state of qualifiedAdditionalHouseStates){
  const pair=Object.entries(audit.counties).find(([f,c])=>f.startsWith(state)&&c.offices.house.reviewScreens.raceVoteChange.status==='assessed');assert.ok(pair,'New approved state has no usable history');
  for(const year of [2022,2026]){const counts=auditedHouseCounts(audit,pair[0],year),e=pair[1].offices.house.reviewScreens.raceVoteChange.evidence;assert.equal(counts.total,year===2026?e.currentRaceVotes:e.priorRaceVotes);assert.equal(counts.scope,audit.comparabilityContracts.houseStates[state].id);assert.ok(counts.sourceIds.length>0);}
 }
 assert.ok(auditedHouseCounts(audit,'21001',2026).reason,'Current-only Kentucky source must not open historical aggregation');
 const sd=Object.entries(audit.counties).find(([f,c])=>f.startsWith('46')&&c.offices.house.reviewScreens.raceVoteChange.status==='assessed');assert.equal(auditedHouseCounts(audit,sd[0],2022).democrat,null,'Absent nominee is not zero');assert.ok(auditedHouseCounts(audit,sd[0],2022).republican>0,'Known named votes remain visible even when party comparison is unavailable');
-console.log('All7 additional House scopes reach totals/history; current-only holds and absent nominees preserved.');
+console.log(`All ${qualifiedAdditionalHouseStates.length} additional House scopes reach totals/history; current-only holds and absent nominees preserved.`);
 
 const absentShadow={comparabilityContracts:audit.comparabilityContracts,counties:{[sd[0]]:structuredClone(audit.counties[sd[0]])}};absentShadow.counties[sd[0]].offices.house.reviewScreens.raceVoteChange.evidence.priorDemocratVotes=0;assert.equal(auditedHouseCounts(absentShadow,sd[0],2022).democrat,null,'Explicit typed absence must not fall back to a legacy zero');
+
+for(const [state,contract]of Object.entries(audit.comparabilityContracts.senateRounds||{})){
+ assert.equal(contract.verified,true);
+ for(const [fips,county]of Object.entries(audit.counties).filter(([f])=>f.startsWith(state))){
+  const race=county.offices.senate.reviewScreens.raceVoteChange;assert.equal(race.status,'assessed');
+  for(const year of [2020,2026]){const point=auditedSenateRoundCounts(audit,fips,year);assert.equal(point.total,year===2020?race.evidence.priorRaceVotes:race.evidence.currentRaceVotes);assert.equal(point.scope,contract.id);assert.ok(point.sourceIds.length);}
+ }
+ const changed=structuredClone({comparabilityContracts:{senateRounds:{[state]:contract}},counties:{}});changed.comparabilityContracts.senateRounds[state].verified=false;assert.ok(auditedSenateRoundCounts(changed,state+'001',2020).reason);
+}
+assert.ok(auditedSenateRoundCounts(audit,'13001',2022).reason,'A reviewed2020/2026pair cannot qualify2022or a runoff');
+console.log('Reviewed November Senate pairs reach graphs only for exact qualified scopes and years.');

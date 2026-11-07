@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "year": 2026,
   "snapshotDate": "2026-11-07",
-  "updatedAt": "2026-11-07T20:50:59.619Z",
+  "updatedAt": "2026-11-07T21:38:46.278537+00:00",
   "sourceHashes": {
-    "winners": "bdebaf0a126facf656d3653a5065fc4e3ed5a3996e3e6ae24bd070a6902b528e",
+    "winners": "341289f479dd8bd31a759072afb5c8d14f3fcce489aba0b9eb5e226e3c9fe456",
     "pilot": "1bfd2da42d6595f296eabcc9f789b327bfffca326e1a7669b4396168f7cd0962",
     "portraits": "4cccda679817d26a9ae20ad6997438da9191034a802d07d4ba5606afb35427f2"
   },
@@ -4393,23 +4393,23 @@
         "leader": {
           "name": "Mike McGuire",
           "party": "Democrat",
-          "votes": 97062,
-          "share": 55.453859865624565,
-          "margin": 10.907719731249143
+          "votes": 97294,
+          "share": 55.23486198948599,
+          "margin": 10.46972397897199
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": null,
       "accountability": null,
@@ -4439,23 +4439,23 @@
         "leader": {
           "name": "Jared Huffman",
           "party": "Democrat",
-          "votes": 114657,
-          "share": 66.08624982708535,
-          "margin": 32.1724996541707
+          "votes": 118456,
+          "share": 64.966490067678,
+          "margin": 29.932980135355997
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|2|general|false|candidate|",
@@ -4504,23 +4504,23 @@
         "leader": {
           "name": "Ami Bera",
           "party": "Democrat",
-          "votes": 96110,
-          "share": 56.88530605963753,
-          "margin": 13.77061211927507
+          "votes": 120081,
+          "share": 57.96310240963856,
+          "margin": 15.926204819277109
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|3|general|false|candidate|",
@@ -4569,23 +4569,23 @@
         "leader": {
           "name": "Eric Jones",
           "party": "Democrat",
-          "votes": 63994,
-          "share": 51.45908217338512,
-          "margin": 2.918164346770238
+          "votes": 72473,
+          "share": 51.55248575554307,
+          "margin": 3.104971511086135
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": null,
       "accountability": null,
@@ -4615,23 +4615,23 @@
         "leader": {
           "name": "Tom McClintock",
           "party": "Republican",
-          "votes": 113247,
-          "share": 55.715614068749716,
-          "margin": 11.431228137499447
+          "votes": 122601,
+          "share": 56.35972473142006,
+          "margin": 12.719449462840121
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|5|general|false|candidate|",
@@ -4680,23 +4680,23 @@
         "leader": {
           "name": "Richard Pan",
           "party": "Democrat",
-          "votes": 86732,
-          "share": 57.48599834299917,
-          "margin": 14.971996685998343
+          "votes": 108065,
+          "share": 58.610571760188314,
+          "margin": 17.221143520376618
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": null,
       "accountability": null,
@@ -4726,23 +4726,23 @@
         "leader": {
           "name": "Doris Matsui",
           "party": "Democrat",
-          "votes": 81783,
-          "share": 57.62896986181675,
-          "margin": 15.257939723633493
+          "votes": 97765,
+          "share": 55.65612920487991,
+          "margin": 11.312258409759819
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|7|general|false|candidate|",
@@ -4791,23 +4791,23 @@
         "leader": {
           "name": "John Garamendi",
           "party": "Democrat",
-          "votes": 139369,
-          "share": 71.65390765181,
-          "margin": 43.307815303619996
+          "votes": 162803,
+          "share": 72.65720533761771,
+          "margin": 45.314410675235415
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|8|general|false|candidate|",
@@ -4856,23 +4856,23 @@
         "leader": {
           "name": "Josh Harder",
           "party": "Democrat",
-          "votes": 78226,
-          "share": 65.79640174613722,
-          "margin": 31.592803492274435
+          "votes": 111799,
+          "share": 66.92066418455424,
+          "margin": 33.841328369108474
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|9|general|false|candidate|",
@@ -4921,23 +4921,23 @@
         "leader": {
           "name": "Mark DeSaulnier",
           "party": "Democrat",
-          "votes": 131901,
-          "share": 69.06426226418058,
-          "margin": 38.12852452836116
+          "votes": 178225,
+          "share": 69.67057710575386,
+          "margin": 39.341154211507714
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|10|general|false|candidate|",
@@ -4986,23 +4986,23 @@
         "leader": {
           "name": "Scott Wiener",
           "party": "Democrat",
-          "votes": 119475,
-          "share": 54.57099139013862,
-          "margin": 9.141982780277251
+          "votes": 142519,
+          "share": 54.04076215755048,
+          "margin": 8.081524315100957
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": null,
       "accountability": null,
@@ -5032,23 +5032,23 @@
         "leader": {
           "name": "Lateefah Simon",
           "party": "Democrat",
-          "votes": 108161,
-          "share": 79.75239822741315,
-          "margin": 59.50479645482631
+          "votes": 158425,
+          "share": 80.56109269165836,
+          "margin": 61.12218538331672
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|12|general|false|candidate|",
@@ -5097,23 +5097,23 @@
         "leader": {
           "name": "Adam Gray",
           "party": "Democrat",
-          "votes": 61503,
-          "share": 61.29887474709218,
-          "margin": 22.597749494184367
+          "votes": 70184,
+          "share": 61.66010683159966,
+          "margin": 23.320213663199326
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|13|general|false|candidate|",
@@ -5162,23 +5162,23 @@
         "leader": {
           "name": "Aisha Wahab",
           "party": "Democrat",
-          "votes": 68612,
-          "share": 56.532665386802016,
-          "margin": 13.065330773604028
+          "votes": 91892,
+          "share": 57.53030151257137,
+          "margin": 15.060603025142743
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|14|general|false|candidate|",
@@ -5227,23 +5227,23 @@
         "leader": {
           "name": "Kevin Mullin",
           "party": "Democrat",
-          "votes": 117262,
-          "share": 78.16997646807859,
-          "margin": 56.33995293615717
+          "votes": 127733,
+          "share": 78.46537542462943,
+          "margin": 56.93075084925886
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|15|general|false|candidate|",
@@ -5292,23 +5292,23 @@
         "leader": {
           "name": "Sam Liccardo",
           "party": "Democrat",
-          "votes": 128227,
-          "share": 76.48493886072174,
-          "margin": 52.96987772144348
+          "votes": 141302,
+          "share": 76.81418623235284,
+          "margin": 53.628372464705656
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|16|general|false|candidate|",
@@ -5357,23 +5357,23 @@
         "leader": {
           "name": "Ro Khanna",
           "party": "Democrat",
-          "votes": 84918,
-          "share": 70.75202879472097,
-          "margin": 41.504057589441935
+          "votes": 97602,
+          "share": 71.21946236245293,
+          "margin": 42.43892472490587
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|17|general|false|candidate|",
@@ -5422,23 +5422,23 @@
         "leader": {
           "name": "Zoe Lofgren",
           "party": "Democrat",
-          "votes": 82533,
-          "share": 71.73414222886645,
-          "margin": 43.46828445773289
+          "votes": 93855,
+          "share": 72.11571708479005,
+          "margin": 44.23143416958008
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|18|general|false|candidate|",
@@ -5487,23 +5487,23 @@
         "leader": {
           "name": "Jimmy Panetta",
           "party": "Democrat",
-          "votes": 149224,
-          "share": 72.5575334406286,
-          "margin": 45.115066881257206
+          "votes": 160763,
+          "share": 72.34016703265056,
+          "margin": 44.680334065301125
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|19|general|false|candidate|",
@@ -5552,23 +5552,23 @@
         "leader": {
           "name": "Vince Fong",
           "party": "Republican",
-          "votes": 102237,
-          "share": 62.008418447803194,
-          "margin": 24.016836895606396
+          "votes": 104338,
+          "share": 61.867321284569044,
+          "margin": 23.73464256913809
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|20|general|false|candidate|",
@@ -5617,23 +5617,23 @@
         "leader": {
           "name": "Jim Costa",
           "party": "Democrat",
-          "votes": 61997,
-          "share": 62.72777862093388,
-          "margin": 25.45555724186776
+          "votes": 62615,
+          "share": 62.65823418158529,
+          "margin": 25.316468363170586
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|21|general|false|candidate|",
@@ -5682,23 +5682,23 @@
         "leader": {
           "name": "Randy Villegas",
           "party": "Democrat",
-          "votes": 61492,
-          "share": 66.5764429479337,
-          "margin": 33.15288589586739
+          "votes": 62193,
+          "share": 66.60776249839351,
+          "margin": 33.215524996787046
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": null,
       "accountability": null,
@@ -5728,23 +5728,23 @@
         "leader": {
           "name": "Jay Obernolte",
           "party": "Republican",
-          "votes": 78102,
-          "share": 51.268552373325285,
-          "margin": 2.5371047466505625
+          "votes": 89601,
+          "share": 51.85783241309858,
+          "margin": 3.7156648261971736
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|23|general|false|candidate|",
@@ -5793,23 +5793,23 @@
         "leader": {
           "name": "Salud Carbajal",
           "party": "Democrat",
-          "votes": 119531,
-          "share": 66.1104504853295,
-          "margin": 32.220900970659
+          "votes": 125149,
+          "share": 66.00372345194585,
+          "margin": 32.0074469038917
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|24|general|false|candidate|",
@@ -5858,23 +5858,23 @@
         "leader": {
           "name": "Raul Ruiz",
           "party": "Democrat",
-          "votes": 83461,
-          "share": 64.76421792673179,
-          "margin": 29.5284358534636
+          "votes": 92044,
+          "share": 64.98722058262847,
+          "margin": 29.97444116525693
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|25|general|false|candidate|",
@@ -5923,23 +5923,23 @@
         "leader": {
           "name": "Jacqui Irwin",
           "party": "Democrat",
-          "votes": 121618,
-          "share": 61.89337187525445,
-          "margin": 23.786743750508915
+          "votes": 129480,
+          "share": 61.94889264201405,
+          "margin": 23.897785284028114
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": null,
       "accountability": null,
@@ -5969,23 +5969,23 @@
         "leader": {
           "name": "George Whitesides",
           "party": "Democrat",
-          "votes": 122567,
-          "share": 62.91778958445625,
-          "margin": 25.835579168912503
+          "votes": 135733,
+          "share": 63.59245134509609,
+          "margin": 27.18490269019218
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|27|general|false|candidate|",
@@ -6034,23 +6034,23 @@
         "leader": {
           "name": "Judy Chu",
           "party": "Democrat",
-          "votes": 147602,
-          "share": 69.86117882042228,
-          "margin": 39.72235764084457
+          "votes": 161468,
+          "share": 69.91409470366136,
+          "margin": 39.82818940732273
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|28|general|false|candidate|",
@@ -6099,23 +6099,23 @@
         "leader": {
           "name": "Luz Maria Rivas",
           "party": "Democrat",
-          "votes": 82844,
-          "share": 58.80465644520159,
-          "margin": 17.60931289040318
+          "votes": 90208,
+          "share": 58.10162373839842,
+          "margin": 16.203247476796836
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|29|general|false|candidate|",
@@ -6164,23 +6164,23 @@
         "leader": {
           "name": "Laura Friedman",
           "party": "Democrat",
-          "votes": 165208,
-          "share": 76.61642628576729,
-          "margin": 53.23285257153457
+          "votes": 182011,
+          "share": 77.03712795855483,
+          "margin": 54.07425591710967
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|30|general|false|candidate|",
@@ -6229,23 +6229,23 @@
         "leader": {
           "name": "Gil Cisneros",
           "party": "Democrat",
-          "votes": 124453,
-          "share": 64.94476305778353,
-          "margin": 29.88952611556706
+          "votes": 137481,
+          "share": 65.56893081641023,
+          "margin": 31.137861632820474
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": null,
       "accountability": null,
@@ -6275,23 +6275,23 @@
         "leader": {
           "name": "Brad Sherman",
           "party": "Democrat",
-          "votes": 148631,
-          "share": 67.10869702634122,
-          "margin": 34.21739405268243
+          "votes": 160976,
+          "share": 67.36665899437132,
+          "margin": 34.73331798874265
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|32|general|false|candidate|",
@@ -6340,23 +6340,23 @@
         "leader": {
           "name": "Pete Aguilar",
           "party": "Democrat",
-          "votes": 92727,
-          "share": 67.96771923652037,
-          "margin": 35.935438473040726
+          "votes": 104883,
+          "share": 67.94876778356527,
+          "margin": 35.897535567130525
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|33|general|false|candidate|",
@@ -6405,23 +6405,23 @@
         "leader": {
           "name": "Angela Gonzales-Torres",
           "party": "Democrat",
-          "votes": 85352,
-          "share": 60.578874898860136,
-          "margin": 21.15774979772027
+          "votes": 95504,
+          "share": 61.347927747372744,
+          "margin": 22.695855494745498
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": null,
       "accountability": null,
@@ -6451,23 +6451,23 @@
         "leader": {
           "name": "Norma J. Torres",
           "party": "Democrat",
-          "votes": 84709,
-          "share": 65.85426530152141,
-          "margin": 31.70853060304281
+          "votes": 94720,
+          "share": 66.11062641772814,
+          "margin": 32.22125283545629
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|35|general|false|candidate|",
@@ -6516,23 +6516,23 @@
         "leader": {
           "name": "Ted W. Lieu",
           "party": "Democrat",
-          "votes": 182957,
-          "share": 72.08139626506973,
-          "margin": 44.16279253013947
+          "votes": 198808,
+          "share": 72.40123528726255,
+          "margin": 44.80247057452512
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|36|general|false|candidate|",
@@ -6581,23 +6581,23 @@
         "leader": {
           "name": "Sydney Kamlager-Dove",
           "party": "Democrat",
-          "votes": 92085,
-          "share": 61.76843460937342,
-          "margin": 23.536869218746855
+          "votes": 101392,
+          "share": 61.34002843401192,
+          "margin": 22.680056868023836
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|37|general|false|candidate|",
@@ -6646,23 +6646,23 @@
         "leader": {
           "name": "Hilda Solis",
           "party": "Democrat",
-          "votes": 117662,
-          "share": 66.46293932239004,
-          "margin": 32.9258786447801
+          "votes": 129110,
+          "share": 67.19859263423064,
+          "margin": 34.397185268461264
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": null,
       "accountability": null,
@@ -6692,23 +6692,23 @@
         "leader": {
           "name": "Mark Takano",
           "party": "Democrat",
-          "votes": 60770,
-          "share": 66.08451684464647,
-          "margin": 32.16903368929294
+          "votes": 69886,
+          "share": 66.60630551637375,
+          "margin": 33.21261103274751
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|39|general|false|candidate|",
@@ -6757,23 +6757,23 @@
         "leader": {
           "name": "Ken Calvert",
           "party": "Republican",
-          "votes": 81470,
-          "share": 54.19266433408277,
-          "margin": 8.38532866816555
+          "votes": 88111,
+          "share": 53.925810775247406,
+          "margin": 7.851621550494819
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|40|general|false|candidate|",
@@ -6822,23 +6822,23 @@
         "leader": {
           "name": "Linda Sánchez",
           "party": "Democrat",
-          "votes": 138054,
-          "share": 66.60459102444108,
-          "margin": 33.209182048882155
+          "votes": 151151,
+          "share": 67.17643085073287,
+          "margin": 34.352861701465734
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": null,
       "accountability": null,
@@ -6868,23 +6868,23 @@
         "leader": {
           "name": "Robert Garcia",
           "party": "Democrat",
-          "votes": 133364,
-          "share": 60.8842931817663,
-          "margin": 21.76858636353261
+          "votes": 148752,
+          "share": 61.17000715525253,
+          "margin": 22.34001431050506
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|42|general|false|candidate|",
@@ -6933,23 +6933,23 @@
         "leader": {
           "name": "Maxine Waters",
           "party": "Democrat",
-          "votes": 125677,
-          "share": 82.22190237551602,
-          "margin": 64.44380475103205
+          "votes": 138052,
+          "share": 82.50875578240237,
+          "margin": 65.01751156480474
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|43|general|false|candidate|",
@@ -6998,23 +6998,23 @@
         "leader": {
           "name": "Nanette Diaz Barragan",
           "party": "Democrat",
-          "votes": 119326,
-          "share": 80.93355127952955,
-          "margin": 61.86710255905913
+          "votes": 131604,
+          "share": 81.31232622798888,
+          "margin": 62.62465245597776
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|44|general|false|candidate|",
@@ -7063,23 +7063,23 @@
         "leader": {
           "name": "Derek Tran",
           "party": "Democrat",
-          "votes": 117010,
-          "share": 59.713603331428104,
-          "margin": 19.427206662856207
+          "votes": 123666,
+          "share": 60.010772881454635,
+          "margin": 20.02154576290926
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|45|general|false|candidate|",
@@ -7128,23 +7128,23 @@
         "leader": {
           "name": "Lou Correa",
           "party": "Democrat",
-          "votes": 96702,
-          "share": 69.24200547050651,
-          "margin": 38.48401094101305
+          "votes": 103747,
+          "share": 69.61344131836573,
+          "margin": 39.22688263673146
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": null,
       "accountability": null,
@@ -7174,23 +7174,23 @@
         "leader": {
           "name": "Dave Min",
           "party": "Democrat",
-          "votes": 128743,
-          "share": 57.41227150903261,
-          "margin": 14.824543018065222
+          "votes": 136330,
+          "share": 57.54408772803633,
+          "margin": 15.088175456072667
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|47|general|false|candidate|",
@@ -7239,23 +7239,23 @@
         "leader": {
           "name": "Marni von Wilpert",
           "party": "Democrat",
-          "votes": 102132,
-          "share": 59.44196766345784,
-          "margin": 18.88393532691569
+          "votes": 111923,
+          "share": 59.38599330386752,
+          "margin": 18.77198660773504
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": null,
       "accountability": null,
@@ -7285,23 +7285,23 @@
         "leader": {
           "name": "Mike Levin",
           "party": "Democrat",
-          "votes": 129312,
-          "share": 57.715688462396784,
-          "margin": 15.431376924793572
+          "votes": 138891,
+          "share": 57.80982705875007,
+          "margin": 15.619654117500156
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|49|general|false|candidate|",
@@ -7350,23 +7350,23 @@
         "leader": {
           "name": "Scott Peters",
           "party": "Democrat",
-          "votes": 125988,
-          "share": 61.44527192122551,
-          "margin": 22.890543842451024
+          "votes": 137701,
+          "share": 61.83084425206326,
+          "margin": 23.661688504126516
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|50|general|false|candidate|",
@@ -7415,23 +7415,23 @@
         "leader": {
           "name": "Sara Jacobs",
           "party": "Democrat",
-          "votes": 116892,
-          "share": 63.44550586191924,
-          "margin": 26.89101172383847
+          "votes": 129656,
+          "share": 63.99131357500678,
+          "margin": 27.982627150013574
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|51|general|false|candidate|",
@@ -7480,23 +7480,23 @@
         "leader": {
           "name": "Juan Vargas",
           "party": "Democrat",
-          "votes": 96581,
-          "share": 69.21186149171588,
-          "margin": 38.42372298343175
+          "votes": 106561,
+          "share": 69.7265535540186,
+          "margin": 39.453107108037194
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "current-ca-sos-house-2026"
+          "house-completion-ca2026-official"
         ],
         "sourceLinks": [
           "https://media.sos.ca.gov/media/us-rep.json"
         ],
-        "sourceUpdatedAt": "November 6, 2026, 9:27 a.m.",
-        "retrievedAt": "2026-11-06T18:05:20.643998+00:00",
-        "timestampBasis": "ReportingTime is reproduced in the source display format; no timezone is inferred"
+        "sourceUpdatedAt": "November 6, 2026, 11:00 p.m.",
+        "retrievedAt": "2026-11-07T21:30:40.437331+00:00",
+        "timestampBasis": "SourceReportingTimeverbatim; no timezoneinferred"
       },
       "portrait": {
         "recordKey": "house|2026|district||06|52|general|false|candidate|",
@@ -18518,26 +18518,25 @@
         "electionDate": null,
         "leader": {
           "name": "BEN MCADAMS",
-          "party": "Other",
-          "votes": 139186,
-          "share": 71.61578793008526,
-          "margin": 46.63521155023643
+          "party": "Democrat",
+          "votes": 174492,
+          "share": 70.06078905315228,
+          "margin": 43.8861630624192
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ut"
+          "house-completion-ut2026-official"
         ],
         "sourceLinks": [
-          "https://electionresults.utah.gov/results/public/Utah/elections/General11032026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ut.csv"
+          "https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data",
+          "https://electionresults.utah.gov/results/public/Utah/elections/General11032026"
         ],
-        "sourceUpdatedAt": "2026-11-06T05:01:30.3316963Z",
-        "retrievedAt": "2026-11-06T15:07:47+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": "2026-11-07T19:08:57.8398584Z",
+        "retrievedAt": "2026-11-07T21:38:46.278537+00:00",
+        "timestampBasis": null
       },
       "portrait": {
         "recordKey": "house|2026|district||49|1|general|false|candidate|",
@@ -18584,26 +18583,25 @@
         "electionDate": null,
         "leader": {
           "name": "BLAKE D. MOORE",
-          "party": "Other",
-          "votes": 126711,
-          "share": 50.25920710786744,
-          "margin": 8.201019376078376
+          "party": "Republican",
+          "votes": 126992,
+          "share": 50.118001783839674,
+          "margin": 7.91203933919001
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ut"
+          "house-completion-ut2026-official"
         ],
         "sourceLinks": [
-          "https://electionresults.utah.gov/results/public/Utah/elections/General11032026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ut.csv"
+          "https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data",
+          "https://electionresults.utah.gov/results/public/Utah/elections/General11032026"
         ],
-        "sourceUpdatedAt": "2026-11-06T05:01:30.3316963Z",
-        "retrievedAt": "2026-11-06T15:07:47+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": "2026-11-07T19:08:57.8398584Z",
+        "retrievedAt": "2026-11-07T21:38:46.278537+00:00",
+        "timestampBasis": null
       },
       "portrait": {
         "recordKey": "house|2026|district||49|2|general|false|candidate|",
@@ -18651,26 +18649,25 @@
         "electionDate": null,
         "leader": {
           "name": "CELESTE MALOY",
-          "party": "Other",
-          "votes": 127453,
-          "share": 57.87688339524281,
-          "margin": 23.221502720081375
+          "party": "Republican",
+          "votes": 143151,
+          "share": 57.22880969704723,
+          "margin": 22.142177518010058
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ut"
+          "house-completion-ut2026-official"
         ],
         "sourceLinks": [
-          "https://electionresults.utah.gov/results/public/Utah/elections/General11032026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ut.csv"
+          "https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data",
+          "https://electionresults.utah.gov/results/public/Utah/elections/General11032026"
         ],
-        "sourceUpdatedAt": "2026-11-06T05:01:30.3316963Z",
-        "retrievedAt": "2026-11-06T15:07:47+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": "2026-11-07T19:08:57.8398584Z",
+        "retrievedAt": "2026-11-07T21:38:46.278537+00:00",
+        "timestampBasis": null
       },
       "portrait": {
         "recordKey": "house|2026|district||49|3|general|false|candidate|",
@@ -18718,26 +18715,25 @@
         "electionDate": null,
         "leader": {
           "name": "MIKE KENNEDY",
-          "party": "Other",
-          "votes": 107278,
-          "share": 53.19878009471623,
-          "margin": 13.39217971287595
+          "party": "Republican",
+          "votes": 141984,
+          "share": 53.59666606269252,
+          "margin": 14.720359968593344
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-current-2026-ut"
+          "house-completion-ut2026-official"
         ],
         "sourceLinks": [
-          "https://electionresults.utah.gov/results/public/Utah/elections/General11032026",
-          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
-          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ut.csv"
+          "https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data",
+          "https://electionresults.utah.gov/results/public/Utah/elections/General11032026"
         ],
-        "sourceUpdatedAt": "2026-11-06T05:01:30.3316963Z",
-        "retrievedAt": "2026-11-06T15:07:47+00:00",
-        "timestampBasis": "source timestamp"
+        "sourceUpdatedAt": "2026-11-07T19:08:57.8398584Z",
+        "retrievedAt": "2026-11-07T21:38:46.278537+00:00",
+        "timestampBasis": null
       },
       "portrait": {
         "recordKey": "house|2026|district||49|4|general|false|candidate|",

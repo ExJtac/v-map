@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "house-completion-ut2022-official": {
+      "title": "Utah2022 General Election signed State Canvass Certification, House county tables pages4–7",
+      "publisher": "Utah Lieutenant Governor, Office of Elections",
+      "url": "https://vote.utah.gov/wp-content/uploads/2022/12/Signed-2022-General-Election-State-Canvass-Certification.pdf",
+      "sourceUrl": "https://vote.utah.gov/wp-content/uploads/2022/12/Signed-2022-General-Election-State-Canvass-Certification.pdf",
+      "sha256": "daf3cbd84381efaeb7c4d7af1d6425f93aa18cc2307dc7294b166dcb26b245a1",
+      "retrievedAt": "2026-11-07T21:29:01.920655+00:00",
+      "sourceIsOfficial": true,
+      "sourceLocation": "PDF page1 signed November28,2022; House county tables pages4–7; visually transcribed retained source cells",
+      "license": "Official public election facts; no blanket public-domain document claim"
+    },
+    "house-completion-ut2026-official": {
+      "title": "Utah2026 General Election unofficial House county breakdowns and whole-election candidate controls",
+      "publisher": "Utah Lieutenant Governor, Office of Elections",
+      "url": "https://electionresults.utah.gov/results/public/Utah/elections/General11032026",
+      "sourceUrl": "https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data",
+      "sha256": "7c564ace13e7fa600c7982f424769c0bf9319e6971b0cfbce5c1b7b6de5cdaae",
+      "retrievedAt": "2026-11-07T21:38:46.278537+00:00",
+      "sourceIsOfficial": true,
+      "license": "Official public election facts; no blanket document public-domain claim",
+      "breakdownSources": {
+        "1": {
+          "file": "ut2026-house-1.json",
+          "sourceUrl": "https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data/ballot-item/18bd0000-4292-09ee-2072-08df2b02c31c",
+          "requestedAt": "2026-11-07T21:39:32.585493+00:00",
+          "retrievedAt": "2026-11-07T21:39:33.316455+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data/ballot-item/18bd0000-4292-09ee-2072-08df2b02c31c",
+          "error": "",
+          "bytes": 337178,
+          "sha256": "201457fb129b140ed35810418ef0f7d265790ce77ff40d86cf742912e25f3104"
+        },
+        "2": {
+          "file": "ut2026-house-2.json",
+          "sourceUrl": "https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data/ballot-item/18bd0000-4292-09ee-28a3-08df2b02c31c",
+          "requestedAt": "2026-11-07T21:39:33.318041+00:00",
+          "retrievedAt": "2026-11-07T21:39:34.015168+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data/ballot-item/18bd0000-4292-09ee-28a3-08df2b02c31c",
+          "error": "",
+          "bytes": 350083,
+          "sha256": "16c273591e9628931d1c99a4cbc57e84964d97a78014097287cf0235af041bad"
+        },
+        "3": {
+          "file": "ut2026-house-3.json",
+          "sourceUrl": "https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data/ballot-item/18bd0000-4292-09ee-3148-08df2b02c31c",
+          "requestedAt": "2026-11-07T21:39:34.015983+00:00",
+          "retrievedAt": "2026-11-07T21:39:34.747418+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data/ballot-item/18bd0000-4292-09ee-3148-08df2b02c31c",
+          "error": "",
+          "bytes": 403216,
+          "sha256": "08e89a08313a16a224df70fb2f9554581311fa7cef8a1289ce33ee22408a2fab"
+        },
+        "4": {
+          "file": "ut2026-house-4.json",
+          "sourceUrl": "https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data/ballot-item/18bd0000-4292-09ee-3b8d-08df2b02c31c",
+          "requestedAt": "2026-11-07T21:39:34.749037+00:00",
+          "retrievedAt": "2026-11-07T21:39:35.399497+00:00",
+          "method": "native curl, normal TLS, bounded timeout",
+          "exitCode": 0,
+          "http": "200 https://electionresults.utah.gov/results/public/api/elections/Utah/General11032026/data/ballot-item/18bd0000-4292-09ee-3b8d-08df2b02c31c",
+          "error": "",
+          "bytes": 352644,
+          "sha256": "8f1410f3775aeed5566a23a9005d6d59481e8e71458e7dd3fa3d20e8fae61c7d"
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-ut/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 40,
+      "stateCount": 1,
+      "countyCount": 29,
+      "candidateCount": 154,
+      "countyDistrictIntersections": true
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-ut/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 36,
+      "stateCount": 1,
+      "countyCount": 29,
+      "candidateCount": 192,
+      "countyDistrictIntersections": true
+    }
+  ],
+  "limitations": [
+    "All 2026 results are unofficial/provisional; precinct reporting or available county vectors do not establish all ballots counted or certification.",
+    "Countywide aggregates sum all actual House portions independently each year: 36 in 2022 versus 32 in 2026. District inventories, district boundaries, candidate identities and contest competition can differ; these are not same-seat or same-candidate comparisons.",
+    "Candidate-vote sums are not ballots cast, distinct voters, eligible-voter turnout or evidence of wrongdoing. Statistical flags are exploratory.",
+    "2022 scanned signed canvass pages 4–7 were visually transcribed; all 15 printed candidate totals and independent FEC count controls match. Four printed name discrepancies remain explicitly visible rather than silently renamed.",
+    "2026 actual county vectors are checked against all 20 candidate totals in both per-district summaries and the separately published whole-election data response, with exact candidate IDs, names and parties.",
+    "Explicit zero candidate votes are retained. Gray nonparticipating cells, unavailable opposing parties and missing votes are never filled with inferred zero.",
+    "Both years cover the full 29-county Census roster. County compatibility is bounded to the roster and substantial-change register; every minor cartographic correction is not independently adjudicated.",
+    "Source timestamps are retained with actual retrieval times; no unknown timestamp is invented. Prior held datasets remain unchanged and only these positively qualified rows are proposed as replacement."
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T21:48:23.573368+00:00",
+    "evidenceSha256": "5e306a95021cb87797b8967510c940acaa1e9df16232252e7efceb537d81e0ee",
+    "approvalReceiptSha256": "87a34e77708d8a07745515f647bcb00cec7453419191e3cf699e07e44364feab"
+  }
+}

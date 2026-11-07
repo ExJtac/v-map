@@ -30,7 +30,7 @@ Snapshot: November 6, 2026. Counts below are source-backed imported coverage aft
 | house | 2016 | 49 | 3108 | 5016 | 1751 |
 | house | 2018 | 49 | 3111 | 3706 | 159 |
 | house | 2020 | 49 | 3110 | 4197 | 1431 |
-| house | 2022 | 49 | 3095 | 3682 | 1238 |
+| house | 2022 | 49 | 3095 | 3682 | 1201 |
 | house | 2024 | 49 | 3083 | 4903 | 1209 |
 | house | 2026 | 31 | 1999 | 2374 | 86 |
 | governor | 2006 | 35 | 2148 | 2149 | 63 |

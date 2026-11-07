@@ -1,6 +1,6 @@
 import {loadElection, OFFICE_LABELS} from './election-data.js';
 import {loadCountySupplement, mergeElectionData} from './county-data.js';
-import {qualifiedRaceCounts, auditedHouseCounts} from './history-series.js';
+import {qualifiedRaceCounts, auditedHouseCounts, auditedSenateRoundCounts} from './history-series.js';
 import {appUrl} from './paths.js';
 import {AUDIT_METRICS, auditedMetricCohort, describePeerPosition, histogram, twoPartyShare} from './statistical-math.js';
 
@@ -38,12 +38,13 @@ export function snapshotShareCounts(rows, context) {
 async function shareCohort(context) {
   const {office, year, id, report} = context, stateFips = id.slice(0, 2);
   const key = `${office}-${year}-${stateFips}`;
-  if (office === 'house') {
+  const reviewedSenate=office==='senate'&&[2020,2026].includes(year)&&report?.comparabilityContracts?.senateRounds?.[stateFips]?.verified;
+  if (office === 'house'||reviewedSenate) {
     const records = Object.entries(report?.counties || {}).filter(([fips]) => fips.startsWith(stateFips)).flatMap(([fips, county]) => {
-      const counts = auditedHouseCounts(report, fips, year), value = twoPartyShare(counts);
+      const counts = reviewedSenate?auditedSenateRoundCounts(report,fips,year):auditedHouseCounts(report, fips, year), value = twoPartyShare(counts);
       return value == null ? [] : [{id: fips, name: county.name, value, sourceIds: counts.sourceIds, provisional: counts.provisional}];
     });
-    return {metric: shareMetric, records, selected: records.find(r => r.id === id), reason: 'Complete audited whole-county House scope is required; partial district portions are not combined.'};
+    return {metric: shareMetric, records, selected: records.find(r => r.id === id), reason:reviewedSenate?'The source-pinned November Senate ballot scope, exact year and qualified party counts are required. Runoffs are excluded.':'Complete audited whole-county House scope is required; partial district portions are not combined.'};
   }
   if (!cohortCache.has(key)) cohortCache.set(key, cycle(office, year).then(data => {
     const groups = new Map();

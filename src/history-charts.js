@@ -1,7 +1,7 @@
 import {loadElection, OFFICE_LABELS} from './election-data.js';
 import {loadCountySupplement, mergeElectionData} from './county-data.js';
 import {appUrl} from './paths.js';
-import {selectHistoryYears, qualifiedRaceCounts, auditedHouseCounts, historyPoint} from './history-series.js';
+import {selectHistoryYears, qualifiedRaceCounts, auditedHouseCounts, auditedSenateRoundCounts, historyPoint} from './history-series.js';
 const merged = new Map(), documents = new Map();
 const fmt = value => value == null ? '—' : value.toLocaleString(undefined,{maximumFractionDigits:0});
 const pct = value => value == null ? '—' : `${value.toFixed(1)}%`;
@@ -38,21 +38,24 @@ export async function renderHistoryCharts(container, context, isCurrent = () => 
   const section=node('section',null,'history-chart-content');section.append(node('h3',`${OFFICE_LABELS[context.office]} history · 2006–2026`));section.append(node('p','Loading actual election cycles…','history-note'));container.replaceChildren(section);
   const years=selectHistoryYears(context);
   const id=String(context.id).padStart(context.level==='county'?5:2,'0');
-  const [population,report]=await Promise.all([documentData('/data/population/counties.json').catch(()=>null),context.office==='house' && context.level==='county' ? context.report || null : null]);
+  const [population,report]=await Promise.all([documentData('/data/population/counties.json').catch(()=>null),['house','senate'].includes(context.office) && context.level==='county' ? context.report || null : null]);
   if (!current()) return;
   const populations=(context.level==='state'?population?.states:population?.counties)?.[id] || [];
+  const reviewedSenate=context.office==='senate'&&context.level==='county'&&report?.comparabilityContracts?.senateRounds?.[id.slice(0,2)]?.verified;
   // Sequential loads bound in-flight memory; both underlying loaders and this merged view cache by cycle.
   const points=[];
   for(const year of years) {
     if (!current()) return;
     let counts;
     if(context.office==='house') counts=context.level==='county'?auditedHouseCounts(report,id,year):{reason:'Statewide House aggregation is not qualified by the county audit.'};
+    else if(context.office==='senate'&&context.level==='county'&&[2020,2026].includes(year)&&report?.comparabilityContracts?.senateRounds?.[id.slice(0,2)]?.verified)counts=auditedSenateRoundCounts(report,id,year);
     else {try {const data=await election(context.office,year);counts=qualifiedRaceCounts(data?.results,{...context,id,year});}catch {counts={reason:'Source file could not be loaded.'};}}
     points.push(historyPoint(year,counts,populations));
   }
   if (!current()) return;
   section.replaceChildren(node('h3',`${OFFICE_LABELS[context.office]} history · 2006–2026`));
-  section.append(node('p',`Actual regular general-election cycles. Missing or held observations remain gaps. ${context.office==='senate'?'Different Senate seats may appear in different years; concurrent seats and ambiguous rounds are withheld. ':''}2026 counts remain provisional.`,'history-note'));
+  section.append(node('p',`${reviewedSenate?'2020 and 2026 use separately reviewed first-November Senate ballots; other years require unique regular general returns.':'Actual regular general-election cycles.'} Missing or held observations remain gaps. ${context.office==='senate'?'Different Senate seats may appear in different years; concurrent seats and ambiguous rounds are withheld. ':''}2026 counts remain provisional.`,'history-note'));
+  if(reviewedSenate){const contract=report.comparabilityContracts.senateRounds[id.slice(0,2)];for(const limit of contract.comparisonNotes?.length?contract.comparisonNotes:contract.limitations||[])section.append(node('p',limit,'history-note'));}
   section.append(node('p','Legend: total race votes (gray dashed) · Republican (red) · Democratic (blue). No party nominee is shown as missing, not zero.','history-note'));
   if (!points.length) {section.append(node('p','No applicable election cycles are imported for this selection.'));return;}
   section.append(chart(points,false,'Reported candidate / write-in race votes',context.year),chart(points,true,'Race votes per 100 residents — a proxy, not turnout',context.year));

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "modern-heideman-v1-senate-ga_medsl_2020": {
+      "url": "https://github.com/pmheideman/us-county-election-results/releases/download/v1.0.0/us_county_election_results_v1.0.0.zip",
+      "sourceUrl": "https://doi.org/10.5281/zenodo.22976553",
+      "title": "Paul Heideman U.S. county-level election results 1990–2024",
+      "version": "v1.0.0",
+      "license": "CC-BY-4.0 for release; underlying source rights vary; retain SOURCES.csv",
+      "sha256": "e422fbfb1c56bed6787d08e59eed83d13b4ccf567510c69f94d2802a34b8e625",
+      "file": "heideman-v1.0.0.zip",
+      "sourceToken": "ga_medsl_2020",
+      "originalSources": [
+        {
+          "source": "ga_medsl_2020",
+          "office": "senate",
+          "state_po": "GA",
+          "year": "2020",
+          "origin": "medsl",
+          "publisher": "MIT Election Data and Science Lab (MEDSL)",
+          "document": "U.S. Senate precinct-level returns 2020 (state files, aggregated to county by this project)",
+          "locator": "Harvard Dataverse, dataverse.harvard.edu (MIT Election Data and Science Lab). Local copy: R/data/raw_election/senate_2020.raw; dataset DOIs: https://doi.org/10.7910/DVN/NLTQAD, https://doi.org/10.7910/DVN/DGNAFS, https://doi.org/10.7910/DVN/ER9XTV, https://doi.org/10.7910/DVN/IAD3XR, https://doi.org/10.7910/DVN/ZCM3BN",
+          "format": "tab/CSV precinct files",
+          "obtained": "downloaded via the Dataverse guestbook/signed-URL flow (R/data/raw_election/download_medsl.sh)",
+          "transcription": "none (parsed text); project fixes: pseudo-rows removed, party fixes, special elections excluded (see data_corrections_log.csv)",
+          "license": "CC0 1.0, verified 2026-09-23 via the Dataverse API (license field on the dataset record)",
+          "license_status": "cc0_verified",
+          "n_rows": "477",
+          "n_counties": "159",
+          "n_districts": "1",
+          "corrections_log_entries": "26;97",
+          "notes": "Special-election races excluded; Arizona 2020 (special only) is a gap"
+        }
+      ],
+      "sourceMember": "us_county_results_long.csv",
+      "licenseNote": "Release CC-BY-4.0 does not override underlying publishers rights",
+      "snapshotDate": "2026-11-06"
+    },
+    "modern-current-2026-ga": {
+      "file": "results-2026-ga.csv",
+      "url": "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ga.csv",
+      "sourceUrl": "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+      "title": "Pushbuild2026 GA official-source returns snapshot",
+      "version": "73b20975fc0a66da90688d372b4c619609fee9cb",
+      "license": "CC0-1.0 research snapshot; original official-source URLs retained per contest",
+      "asOf": "2026-11-06T10:02:00-05:00",
+      "sha256": "8d2a12f808d37ad84042b54c4d31033a52e8e2afe3c978c4d54e08e578af395b",
+      "readmeFile": "results-2026-README.md",
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "snapshotDate": "2026-11-06"
+    }
+  },
+  "coverage": [
+    {
+      "office": "senate",
+      "year": 2020,
+      "url": "/data/senate-rounds-ga/senate-2020.json",
+      "geoLevels": [
+        "county"
+      ],
+      "rows": 159,
+      "stateCount": 1,
+      "countyCount": 159,
+      "candidateCount": 477
+    },
+    {
+      "office": "senate",
+      "year": 2026,
+      "url": "/data/senate-rounds-ga/senate-2026.json",
+      "geoLevels": [
+        "county"
+      ],
+      "rows": 159,
+      "stateCount": 1,
+      "countyCount": 159,
+      "candidateCount": 318
+    }
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T21:42:15.154308+00:00",
+    "evidenceSha256": "10379f1f7925b4bbcdbb1b1ce44219e46aeb201cc1ae05aecc4a41751f5f33cf",
+    "approvalReceiptSha256": "2986c3921b5ff511c1ab84253e6fa4f88c1283d5abd5ed94ee00cd67e516d401"
+  },
+  "limitations": [
+    "This is a same-seat first-November-ballot comparison, not a comparison of final deciding rounds or identical nominees.",
+    "The 2020 general ballot required a January 5, 2021 runoff; that runoff and the separate 2020 special seat are excluded. The 2026 December 1 date is a conditional later round, not an outcome claim.",
+    "The normalized 2020 stage remains first round and original sourceStage remains general. No global regular-stage guard is changed.",
+    "The 2020 presidential-cycle versus 2026 midterm setting, different candidate field, provisional counting, population changes and voting rules limit interpretation.",
+    "All 477 prior county cells match the pinned upstream research release, and all three column totals match independent FEC full-term November controls. That aggregate check is not an independent county audit.",
+    "Current 318 county cells and both state controls reconcile within the same existing registered snapshot. Fresh primary API access returned 403; no fresh direct current count-vector endorsement is claimed.",
+    "FEC generic PRIMARY/RUNOFF/GENERAL column headers do not directly identify the Georgia November and January stages; the exact dates, full-term candidate vector and Georgia SOS event labels are used together.",
+    "Race vote sums are not unique turnout or ballots cast. Explicit third-party counts remain unassigned; no null-to-zero substitution or winner promotion.",
+    "County inventory and atlas FIPS are unchanged. This bounded check identifies no boundary change in these sources; it is not a new legal boundary survey.",
+    "Any pinned source file, candidate vector, stage, quality flag or event-date change requires renewed qualification."
+  ]
+}

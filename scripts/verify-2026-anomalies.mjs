@@ -4,7 +4,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {buildPatternReview,peerScreen,reviewForCounty,stateReviewSummary,patternDirection,OFFICES} from '../src/2026-anomalies.js';
-import {buildActualReport,renderPatternReport,arizonaComparability,additionalHouseComparability} from './build-2026-anomalies.mjs';
+import {buildActualReport,renderPatternReport,arizonaComparability,additionalHouseComparability,senateRoundComparability,senateRoundVectorInventory} from './build-2026-anomalies.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 function fixture(n=12) {
   const mapCounties=Array.from({length:n},(_,i)=>({fips:'06'+String(i+1).padStart(3,'0'),name:'County '+i}));
@@ -75,6 +75,23 @@ f=setCurrent(growthFixture(),1500,1000);currentRow(f).countingStatus='counting';
 function relocate(f,state){for(const c of f.mapCounties)c.fips=state+c.fips.slice(2);for(const data of Object.values(f.elections))for(const row of data.results){row.stateFips=state;row.countyFips=state+row.countyFips.slice(2);}return f;}
 f=relocate(growthFixture(),'37');f.elections['senate-2026']={...f.elections['governor-2026'],office:'senate',results:f.elections['governor-2026'].results.map(row=>({...row,office:'senate'}))};f.elections['senate-2020']={...f.elections['governor-2022'],office:'senate',year:2020,results:f.elections['governor-2022'].results.map(row=>({...row,office:'senate',year:2020}))};r=buildPatternReview(f);assert.equal(r.summary.partyGrowth.senate.assessed,12,'Official ClassII regular2020-to2026 qualification');assert.match(r.counties['37001'].offices.senate.evidence.seatId,/class-2/);f.elections['senate-2020'].results[0].stage='first round';assert.equal(buildPatternReview(f).counties['37001'].offices.senate.partyGrowth.status,'not-assessed');
 f=relocate(growthFixture(),'30');for(const year of [2022,2026])f.elections[`house-${year}`]={...f.elections[`governor-${year}`],office:'house',results:f.elections[`governor-${year}`].results.map(row=>({...row,office:'house',district:'1'}))};f.comparability={montanaHouse:{id:'synthetic-scope-proof',verified:true,intersections:f.mapCounties.map(c=>`${c.fips}|1`),sources:[{title:'Synthetic verified source scope',url:'https://example.test/scope'}]}};r=buildPatternReview(f);assert.equal(r.summary.partyGrowth.house.assessed,12);assert.equal(r.counties['30001'].offices.house.evidence.comparability.countyDistrictPortions.length,1);f.elections['house-2026'].results.shift();assert.equal(buildPatternReview(f).counties['30001'].offices.house.partyGrowth.status,'not-assessed','Incomplete portion inventory cannot be inferred');
+// A reviewed November ballot pair may preserve a first-round label without
+// opening any other year, runoff, special seat or unreviewed jurisdiction.
+{
+ const fixtureGa=relocate(growthFixture(),'13');
+ for(const [year,sourceYear,stage]of [[2020,2022,'first round'],[2026,2026,'general']])fixtureGa.elections[`senate-${year}`]={...fixtureGa.elections[`governor-${sourceYear}`],office:'senate',year,results:fixtureGa.elections[`governor-${sourceYear}`].results.map(row=>({...row,office:'senate',year,stage,sourceStage:year===2020?'general':'US Senate',sourceSeatId:'13-senate-class-2',electionDate:`${year}-11-03`}))};
+ const countyFips=fixtureGa.mapCounties.map(c=>c.fips).sort(),inventorySha256=crypto.createHash('sha256').update(JSON.stringify(countyFips)).digest('hex');
+ const pins={'public/data/fixture/senate-2020.json':'prior-pin','public/data/fixture/senate-2026.json':'current-pin'};
+ const proof={schemaVersion:1,states:[{stateFips:'13',seatId:'13-senate-class-2',id:'fixture-reviewed-november',countyBoundariesCompatible:true,pinnedFileHashes:pins,review:{status:'approved',reviewedAt:'2026-11-07T00:00:00Z',evidenceSha256:'a'.repeat(64),approvalReceiptSha256:'b'.repeat(64)},years:Object.fromEntries([2020,2026].map(year=>[year,{scopeComplete:true,controlsPassed:true,candidateControlCount:2,expectedCountyCount:12,countyFips,inventorySha256,mergedVectorSha256:crypto.createHash('sha256').update(JSON.stringify(senateRoundVectorInventory(fixtureGa.elections[`senate-${year}`].results))).digest('hex'),sourceStage:year===2020?'general':'US Senate',electionDate:`${year}-11-03`,stage:year===2020?'first round':'general'}]))}]};
+ const qualified=senateRoundComparability(fixtureGa.elections,pins,proof);assert.equal(qualified['13'].verified,true);
+ assert.equal(buildPatternReview(fixtureGa).summary.reviewScreens.raceVoteChange.senate.assessed,0,'A first-round baseline remains held without a reviewed contract');
+ fixtureGa.comparability={senateRounds:qualified};assert.equal(buildPatternReview(fixtureGa).summary.reviewScreens.raceVoteChange.senate.assessed,12);
+ assert.equal(senateRoundComparability(fixtureGa.elections,{},proof)['13'].verified,false,'Source pins are mandatory');
+ for(const mutate of [e=>e['senate-2020'].results.pop(),e=>e['senate-2020'].results[0].electionDate='2021-01-05',e=>e['senate-2020'].results[0].stage='runoff',e=>e['senate-2026'].results[0].special=true,e=>e['senate-2020'].results[0].seatId='different-seat',e=>e['senate-2020'].results[0].sourceSeatId='different-seat',e=>e['senate-2020'].results[0].sourceStage='runoff',e=>e['senate-2020'].results[0].candidates[0].votes++,e=>e['senate-2020'].results[0].sourceId='unreviewed',e=>e['senate-2020'].results[0].sourceSelection={url:'/data/unreviewed/senate-2020.json'}]){const changed=structuredClone(fixtureGa.elections);mutate(changed);assert.equal(senateRoundComparability(changed,pins,proof)['13'].verified,false);}
+ const noId=structuredClone(proof);delete noId.states[0].id;assert.equal(senateRoundComparability(fixtureGa.elections,pins,noId)['13'].verified,false);
+ const unapproved=structuredClone(proof);unapproved.states[0].review.status='pending';assert.equal(senateRoundComparability(fixtureGa.elections,pins,unapproved)['13'].verified,false);
+ fixtureGa.elections['senate-2020'].results[0].electionDate='2021-01-05';assert.equal(buildPatternReview(fixtureGa).counties['13001'].offices.senate.status,'not-assessed','Pure engine also checks the reviewed event date');
+}
 // Own-history policy: no peer veto, inclusive boundaries, symmetric gains/losses.
 const screen=(f,name)=>buildPatternReview(f).counties[target].offices.governor.reviewScreens[name];
 f=setCurrent(growthFixture(),1400,1150);assert.equal(screen(f,'partyCountChange').flags.length,1,'Own40/opponent15 inclusively pass');
@@ -126,6 +143,7 @@ for(const county of Object.values(actual.counties)) {
 }
 for(const screen of ['shareShift','partyGrowth'])for(const office of OFFICES){const s=actual.summary[screen][office];assert.equal(s.assessed+s.notAssessed,3142);}
 const azManifest=JSON.parse(fs.readFileSync(path.join(root,'public/data/research-house/manifest.json'))),azElections=Object.fromEntries([2022,2026].map(year=>[`house-${year}`,JSON.parse(fs.readFileSync(path.join(root,`public/data/research-house/house-${year}.json`)))]));
+for(const year of [2022,2026])for(const row of azElections[`house-${year}`].results)row.sourceSelection={url:`/data/research-house/house-${year}.json`};
 assert.equal(arizonaComparability(azElections,actual.inputHashes,azManifest).verified,true,'Actual Arizona files/inventories independently reproduce qualification');
 const wrongAzHashes={...actual.inputHashes,'public/data/research-house/house-2022.json':'changed'};assert.equal(arizonaComparability(azElections,wrongAzHashes,azManifest).verified,false,'Changed normalized source hash disables Arizona');
 const missingAzPortion=structuredClone(azElections);missingAzPortion['house-2026'].results.splice(missingAzPortion['house-2026'].results.findIndex(r=>r.geoLevel==='county'),1);assert.equal(arizonaComparability(missingAzPortion,actual.inputHashes,azManifest).verified,false,'Missing actual portion disables Arizona');
@@ -135,7 +153,7 @@ assert.equal(actual.counties['04012'].offices.house.reviewScreens.partyCountChan
 // Additional state contracts accept independently complete per-year district inventories,
 // but changing a source pin, dropping/duplicating a portion or losing approval closes the gate.
 {
- const elections=Object.fromEntries([2022,2026].map(year=>[`house-${year}`,{results:[{geoLevel:'county',stateFips:'46',countyFips:'46001',district:'0',stage:'general'}]}]));
+ const elections=Object.fromEntries([2022,2026].map(year=>[`house-${year}`,{results:[{geoLevel:'county',stateFips:'46',countyFips:'46001',district:'0',stage:'general',sourceSelection:{url:`/data/house-${year}.json`}}]}]));
  const intersections=['46001|0'],inventorySha256=crypto.createHash('sha256').update(JSON.stringify(intersections)).digest('hex');
  const proof={schemaVersion:1,states:[{stateFips:'46',id:'fixture-reviewed-sd',countyBoundariesCompatible:true,pinnedFileHashes:{'public/data/house-2022.json':'baseline-pin','public/data/house-2026.json':'current-pin'},review:{status:'approved',reviewedAt:'2026-11-07T00:00:00Z',evidenceSha256:'a'.repeat(64)},years:Object.fromEntries([2022,2026].map(year=>[year,{scopeComplete:true,controlsPassed:true,candidateControlCount:2,expectedCountyCount:1,districtCount:1,intersections,inventorySha256}]))}]};
  const pins={'public/data/house-2022.json':'baseline-pin','public/data/house-2026.json':'current-pin'};
@@ -144,6 +162,7 @@ assert.equal(actual.counties['04012'].offices.house.reviewScreens.partyCountChan
  const missing=structuredClone(elections);missing['house-2026'].results=[];assert.equal(additionalHouseComparability(missing,pins,proof)['46'].verified,false);
  const duplicate=structuredClone(elections);duplicate['house-2022'].results.push(duplicate['house-2022'].results[0]);assert.equal(additionalHouseComparability(duplicate,pins,proof)['46'].verified,false);
  const unreviewed=structuredClone(proof);unreviewed.states[0].review.status='pending';assert.equal(additionalHouseComparability(elections,pins,unreviewed)['46'].verified,false);
+ const override=structuredClone(elections);override['house-2026'].results[0].sourceSelection.url='/data/unreviewed/house-2026.json';assert.equal(additionalHouseComparability(override,pins,proof)['46'].verified,false,'Unreviewed higher-priority source cannot inherit another file’s scope approval');
  const incompatible=structuredClone(proof);incompatible.states[0].countyBoundariesCompatible=false;assert.equal(additionalHouseComparability(elections,pins,incompatible)['46'].verified,false);
 }
 assert.equal(actual.comparabilityContracts.azHouse.verified,true);assert.equal(actual.comparabilityContracts.azHouse.intersections.length,30);assert.equal(actual.comparabilityContracts.azHouse.countComplete,false);assert.equal(actual.comparabilityContracts.azHouse.proofMatches,true);assert.equal(actual.comparabilityContracts.montanaHouse.verified,true);assert.equal(actual.comparabilityContracts.montanaHouse.intersections.length,57);

@@ -19,4 +19,8 @@ export const COUNTY_SOURCES = Object.freeze([
   { name: "house-completion-id", priority: 140 },
   { name: "house-completion-wv", priority: 140 },
   { name: "house-completion-ky", priority: 140 },
+  { name: "house-completion-ca", priority: 150 },
+  { name: "house-completion-ut", priority: 150 },
+  { name: "senate-rounds-ga", priority: 150 },
+  { name: "senate-rounds-la", priority: 150 },
 ]);

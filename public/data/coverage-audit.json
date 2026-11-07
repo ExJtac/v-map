@@ -78,6 +78,22 @@
     {
       "name": "house-completion-ky",
       "priority": 140
+    },
+    {
+      "name": "house-completion-ca",
+      "priority": 150
+    },
+    {
+      "name": "house-completion-ut",
+      "priority": 150
+    },
+    {
+      "name": "senate-rounds-ga",
+      "priority": 150
+    },
+    {
+      "name": "senate-rounds-la",
+      "priority": 150
     }
   ],
   "coverage": [
@@ -308,7 +324,7 @@
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 0,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 149
+      "resolvedSourceOverlaps": 372
     },
     {
       "office": "senate",
@@ -368,7 +384,7 @@
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 1863,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 3
+      "resolvedSourceOverlaps": 226
     },
     {
       "office": "house",
@@ -513,11 +529,11 @@
       "mappableCounties": 3095,
       "statesWithCountyReturns": 49,
       "statesWithReturns": 50,
-      "heldRecords": 1238,
+      "heldRecords": 1201,
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 0,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 333
+      "resolvedSourceOverlaps": 555
     },
     {
       "office": "house",
@@ -547,7 +563,7 @@
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 2677,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 326
+      "resolvedSourceOverlaps": 558
     },
     {
       "office": "governor",

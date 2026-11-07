@@ -41,9 +41,9 @@ function participationInput(fips,populations,turnout,criteria) {
   if (priorProblem || !(prior?.certified===true || prior?.final===true) || !historicalPopulation || historicalPopulation.value<criteria.minResidents || !Number.isInteger(prior?.ballotsCast) || prior.ballotsCast<criteria.minBallots) return {...base,reason:'Comparable final 2022 ballots and exact 2022 population unavailable or below minimums.'};
   return {...base,prior,historicalPopulation,historicalRate:prior.ballotsCast/historicalPopulation.value*100};
 }
-function partyInput(row, prior, criteria) {
+function partyInput(row, prior, criteria, reviewedNovemberPair=false) {
   const reason=qualityReason(row)||qualityReason(prior,true);if(reason)return {reason};
-  if (!regular(row)||!regular(prior))return {reason:'Comparable regular general-election contests not established.'};
+  if (!reviewedNovemberPair&&(!regular(row)||!regular(prior)))return {reason:'Comparable regular general-election contests not established.'};
   for(const r of [row,prior]) {
     if (!Array.isArray(r.candidates)||r.candidates.some(c=>!Number.isInteger(c.votes)||c.votes<0))return {reason:'Candidate count missing, nonintegral or negative.'};
     if (r.candidates.some(c=>/^(OTHER|ALL OTHER CANDIDATES.*|OTHER CANDIDATES)$/i.test(c.name||'')) || (r.reportingCategories||[]).some(c=>/unitemized|other.*candidates|candidates.*aggregat|sourceReportingCategory/i.test(c.category||'') || c.votes===null)) return {reason:'Unitemized candidates or unclassified/missing reporting categories prevent a qualified party comparison.'};
@@ -78,20 +78,29 @@ function matchingPair(office,fips,elections,criteria,comparability) {
     const row=aggregateHouseCounty(now,fips,2026),prior=aggregateHouseCounty(old,fips,2022);
     return {row,prior,...partyInput(row,prior,criteria),baselineYear:2022,comparability:{id:contract.id,basis:contract.basis||'Complete countywide sum across all verified House portions in both years; Other votes unassigned',limitations:contract.limitations||[],countyDistrictPortions:row.portions,priorCountyDistrictPortions:prior.portions,sources:contract.sources}};
   }
-  const rows=current.filter(regular);
+  const reviewedRound=office==='senate'?comparability?.senateRounds?.[fips.slice(0,2)]:null;
+  const comparableRound=(r,year)=>reviewedRound?.verified?!r.special&&(!r.contestType||r.contestType==='candidate')&&r.sourceSeatId===reviewedRound.seatId&&r.sourceStage===reviewedRound.years?.[year]?.sourceStage&&r.stage===reviewedRound.years?.[year]?.stage&&r.electionDate===reviewedRound.years?.[year]?.electionDate:regular(r);
+  const rows=current.filter(r=>comparableRound(r,2026));
   if(rows.length!==1)return {reason:'A unique regular current county contest is not established.'};
   const row=rows[0];
   if(row.stateFips!==fips.slice(0,2)||row.district!=null)return {reason:'Current county/state identity or statewide-office geography is inconsistent.'};
   let baselineYear=2022,contract=null;
   if(office==='senate') {
     baselineYear=2020;
-    if(['13','22'].includes(row.stateFips))return {reason:'Georgia/Louisiana 2020 Senate ballot-round comparability is not established.'};
+    if(['13','22'].includes(row.stateFips)){
+      const round=comparability?.senateRounds?.[row.stateFips];
+      if(!round?.verified||!round.id?.trim())return {reason:round?.reason||'Georgia/Louisiana 2020 Senate ballot-round comparability is not established.'};
+      if(row.electionDate!==round.years?.[2026]?.electionDate)return {reason:'Current Senate date does not match the reviewed November-ballot comparison.'};
+      contract={id:round.id,basis:round.basis,limitations:round.limitations||[],comparisonNotes:round.comparisonNotes||[],sources:round.sources};
+    }
     if(!row.seatId&&!SENATE_CLASS_2_FIPS.includes(row.stateFips))return {reason:'Explicit comparable Senate seat identity is unavailable.'};
-    if(!row.seatId)contract={id:`${row.stateFips}-senate-class-2`,basis:'Official Class II2021–2027 term identifies the regular 2020 and 2026 seat; source general/non-special stages must independently match',sources:[SENATE_CLASS_2_SOURCE]};
+    if(!row.seatId&&!contract)contract={id:`${row.stateFips}-senate-class-2`,basis:'Official Class II2021–2027 term identifies the regular 2020 and 2026 seat; source general/non-special stages must independently match',sources:[SENATE_CLASS_2_SOURCE]};
   }
-  const matches=countyRows(elections[`${office}-${baselineYear}`],fips).filter(p=>regular(p)&&p.stateFips===row.stateFips&&(p.contestType||'candidate')===(row.contestType||'candidate')&&(office!=='senate'||(row.seatId?p.seatId===row.seatId:!p.seatId)));
+  const matches=countyRows(elections[`${office}-${baselineYear}`],fips).filter(p=>comparableRound(p,baselineYear)&&p.stateFips===row.stateFips&&(p.contestType||'candidate')===(row.contestType||'candidate')&&(office!=='senate'||(row.seatId?p.seatId===row.seatId:!p.seatId)));
   if(matches.length!==1)return {reason:`A unique matching regular ${baselineYear} county contest is unavailable.`};
-  return {row,prior:matches[0],...partyInput(row,matches[0],criteria),baselineYear,...(contract?{comparability:contract}:{})};
+  if(office==='senate'&&comparability?.senateRounds?.[row.stateFips]?.verified&&matches[0].electionDate!==comparability.senateRounds[row.stateFips].years?.[2020]?.electionDate)return {reason:'Historical Senate date does not match the reviewed November-ballot comparison.'};
+  const reviewedNovemberPair=Boolean(reviewedRound?.verified);
+  return {row,prior:matches[0],...partyInput(row,matches[0],criteria,reviewedNovemberPair),baselineYear,reviewedNovemberPair,...(contract?{comparability:contract}:{})};
 }
 function rowDates(r) {return {electionDate:r.electionDate||null,sourceUpdatedAt:r.sourceUpdatedAt||null,asOf:r.asOf||null,asOfBasis:r.asOfBasis||null,sourceTimestampBasis:r.sourceTimestampBasis||null,retrievedAt:r.retrievedAt||null,fetchedAt:r.fetchedAt||null,snapshotAsOf:r.snapshotAsOf||null,sourceId:r.sourceId||null,sourceIds:[...new Set([r.sourceId,...(r.sourceIds||[])].filter(Boolean))],sourceSelection:r.sourceSelection||null,provisional:Boolean(r.provisional),unofficial:Boolean(r.unofficial),countingStatus:r.countingStatus||null,reportingNote:r.reportingNote||null,totalVotesBasis:r.totalVotesBasis||null,resultStatus:r.resultStatus||r.electionStatus||null};}
 function participationEvidence(p,peer) {return {currentYear:2026,baselineYear:2022,reportedBallots:p.current.ballotsCast,population:p.population.value,populationYear:2025,populationReferenceDate:p.population.referenceDate,ballotsPer100Residents:round(p.currentRate),priorBallots:p.prior.ballotsCast,priorPopulation:p.historicalPopulation.value,priorPopulationYear:2022,priorPopulationReferenceDate:p.historicalPopulation.referenceDate,priorBallotsPer100Residents:round(p.historicalRate),ownChangePp:round(p.currentRate-p.historicalRate),currentSource:rowDates(p.current),priorSource:rowDates(p.prior),peer};}
@@ -116,9 +125,9 @@ function partyGrowthAssessment(a, peers, evidence, sources, criteria) {
 }
 
 // Candidate/write-in totals are built from supplied race categories, never ballots or totalVotes.
-function raceVoteInput(row,prior,criteria) {
+function raceVoteInput(row,prior,criteria,reviewedNovemberPair=false) {
   const problem=qualityReason(row)||qualityReason(prior,true);if(problem)return {reason:problem};
-  if(!regular(row)||!regular(prior))return {reason:'Comparable regular general-election contests not established.'};
+  if(!reviewedNovemberPair&&(!regular(row)||!regular(prior)))return {reason:'Comparable regular general-election contests not established.'};
   const totals=[];
   for(const r of [row,prior]) {
     if(r.suppressElectionWinner||r.winnerEligible===false)return {reason:'Conditional or noncandidate contest is not comparable.'};
@@ -156,7 +165,7 @@ function ownHistoryScreens(a,office,population,fips,sources,criteria,partyEviden
     const direction=a.shift>0?'democrat':'republican';
     shareSwing={status:'assessed',flags:atLeast(Math.abs(a.shift),criteria.minOwnShareSwingPp)?[flag('share-swing',`Two-party share swing toward ${direction==='democrat'?'Democrats':'Republicans'} of at least 10pp`,`This county’s Democratic/Republican two-party share changed by at least 10 percentage points from its ${a.baselineYear} baseline, independently of state-peer changes. Other votes are not assigned to either party.`,{...partyEvidence,screen:'own-share-swing',direction})]:[],evidence:partyEvidence};
   }
-  const total=raceVoteInput(a.row,a.prior,criteria);
+  const total=raceVoteInput(a.row,a.prior,criteria,a.reviewedNovemberPair);
   if(total.reason)return {partyCountChange,shareSwing,raceVoteChange:notAssessed(total.reason),racePopulationChange:notAssessed(total.reason)};
   const change=total.current.votes-total.prior.votes,percent=100*change/total.prior.votes;
   const namedCounts=row=>Object.fromEntries([['democrat','Democrat'],['republican','Republican']].map(([key,party])=>{const entries=row.candidates.filter(c=>c.party===party);return [key,entries.length?entries.reduce((n,c)=>n+c.votes,0):null];}));
