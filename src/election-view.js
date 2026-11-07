@@ -39,9 +39,9 @@ const el = (tag, className, text) => {
   return node;
 };
 
-export function createElectionView({ onChange }) {
+export function createElectionView({ onChange, initialYear = 2026 }) {
   let office = $("#election-office").value;
-  let year = 2026;
+  let year = Number.isInteger(initialYear) && initialYear >= 2006 && initialYear <= 2026 ? initialYear : 2026;
   let years = [],
     yearOffice = "";
   let data = null,
@@ -589,7 +589,14 @@ export function createElectionView({ onChange }) {
   queueMicrotask(changeElection);
   return {
     isHistorical: () => office !== "geography",
-    countyContext(id) { return { office, year, years: [...years], rows: matchingRows("county", id), loading }; },
+    selectElection(nextOffice, nextYear) {
+      if (!OFFICE_LABELS[nextOffice]) return;
+      $('#election-office').value = nextOffice;
+      year = nextYear;
+      yearOffice = '';
+      return changeElection();
+    },
+    countyContext(id) { return { office, year, years: [...years], rows: matchingRows("county", id), contestFiltered: Boolean(contest), loading }; },
     stateContext(id) { return { office, year, years: [...years], rows: (data?.results || []).filter(row => row.stateFips === id && ['state', 'district'].includes(row.geoLevel)), loading }; },
     setSelection(value) {
       selection = value;

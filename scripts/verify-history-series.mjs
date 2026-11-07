@@ -20,3 +20,14 @@ const audit=JSON.parse(readFileSync(new URL('../public/data/anomalies-2026.json'
 const [fips,audited]=Object.entries(audit.counties).find(([id,c])=>id.startsWith('30')&&c.offices.house.reviewScreens.raceVoteChange.status==='assessed');
 for(const year of [2022,2026]){const actual=auditedHouseCounts(audit,fips,year);assert.equal(actual.total,year===2026?audited.offices.house.reviewScreens.raceVoteChange.evidence.currentRaceVotes:audited.offices.house.reviewScreens.raceVoteChange.evidence.priorRaceVotes);assert.equal(actual.provisional,year===2026);}
 console.log('Actual frozen Montana House audit points and legacy accounting-category exclusion passed.');
+
+const namedOnly = qualifiedRaceCounts([{...row,reportingCategories:[{category:'sourceReportingCategory',votes:3}]}],context);
+const partial = historyPoint(2022,namedOnly,pop);
+assert.equal(partial.total,null);assert.equal(partial.totalRate,null);assert.equal(partial.republican,100);assert.equal(partial.republicanRate,10);assert.equal(partial.democrat,0);
+const aggregate = qualifiedRaceCounts([{...row,candidates:[...row.candidates,{name:'OTHER',party:'Other',votes:8}]}],context);
+assert.equal(historyPoint(2022,aggregate,pop).republican,100);assert.equal(historyPoint(2022,aggregate,pop).total,null);
+const held = qualifiedRaceCounts([{...row,sourceNeedsReview:true,reportingCategories:[{category:'sourceReportingCategory',votes:3}]}],context);
+assert.equal(historyPoint(2022,held,pop).republican,null);
+console.log('Historical named party counts retained only for total-only category holds; source holds stay withheld.');
+const missingAggregateCategory = qualifiedRaceCounts([{...row,candidates:[...row.candidates,{name:'OTHER',party:'Other',votes:8}],reportingCategories:[{category:'sourceReportingCategory',votes:null}]}],context);
+assert.equal(historyPoint(2022,missingAggregateCategory,pop).republican,null);

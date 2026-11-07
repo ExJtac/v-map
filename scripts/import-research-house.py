@@ -25,7 +25,7 @@ def main(include_nm=False,out=None):
   c=dict(name=name.strip(),votes=v)
   if cid is not None:c['sourceCandidateId']=cid
   if cat:c['category']=cat
-  else:c.update(party={'DEMOCRATIC':'Democrat','DEM':'Democrat','REPUBLICAN':'Republican','REP':'Republican'}.get(norm(party),'Other'),partyOriginal=party,isWriteIn=writein)
+  else:c.update(party={'DEMOCRATIC':'Democrat','DEMOCRAT':'Democrat','DEM':'Democrat','REPUBLICAN':'Republican','REP':'Republican'}.get(norm(party),'Other'),partyOriginal=party,isWriteIn=writein)
   target.append(c)
   if v is None:
    c.update(missingVoteCount=True,sourceValueOriginal='*');g.update(totalVotes=None,incomplete=True,sourceNeedsReview=True,countComplete=False,totalVotesBasis='Source suppresses at least one candidate count as*; total unavailable; known candidate values retained without residual allocation');g.setdefault('reviewReasons',[]).append('Official source privacy/small-count suppression; unknown is not zero.')

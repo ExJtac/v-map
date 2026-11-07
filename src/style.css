@@ -1775,3 +1775,71 @@ main {
   #pattern-county-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pattern-county-button { min-height: 64px; overflow-wrap: anywhere; }
 }
+
+/* Keep ordinary page navigation independent of map zoom and async result growth. */
+html { scrollbar-gutter: stable; }
+.workspace, #map-tooltip, #history-charts, #statistical-review { overflow-anchor: none; }
+#us-map { touch-action: pan-y; }
+#us-map.map-gestures-enabled { touch-action: none; }
+.map-interaction-help { display:flex; align-items:center; flex-wrap:wrap; gap:9px 14px; padding:10px 18px; border-block:1px solid #d7e2d9; background:#fff; font-size:13px; line-height:1.5; }
+.map-interaction-help button,.selected-place-heading button,.share-map-button { border:1px solid #9bb9a7; border-radius:7px; padding:9px 12px; background:#fff; color:#244e38; font:600 13px/1.3 inherit; cursor:pointer; }
+#map-gestures[aria-pressed=true] { background:#245c43; color:#fff; }
+#show-selected-results { margin-left:auto; }
+.state-view .state.selected { fill:transparent !important; stroke:#386b51; }
+.state-view .county { opacity:1; stroke:#628476; stroke-width:.85; }
+.county.county-dimmed { opacity:.92; }
+.state-view .state.dimmed { opacity:.18; }
+.brand-logo { display:block; width:40px; height:40px; border-radius:12px; }
+.selected-place-heading { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px; }
+.selected-place-heading h2 { margin:0; font-size:22px; }
+#map-tooltip:focus { outline:none; }
+#map-tooltip { margin-top:8px; scroll-margin-top:90px; }
+.county-quick-results { margin:10px 0 14px; padding:14px; background:#edf5ef; border:1px solid #afc9b8; border-radius:8px; }
+.county-quick-results > strong { display:block; margin-bottom:10px; font-size:16px; }
+.county-quick-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.county-quick-grid div { display:flex; flex-direction:column; gap:4px; font-size:13px; }
+.county-quick-grid b { font-size:clamp(20px,2.5vw,28px); line-height:1.15; }
+.office-review-overview { display:grid; grid-template-columns:1.2fr repeat(3,1fr); align-items:stretch; gap:10px; margin:14px 0; }
+.office-review-overview > div { padding:10px 4px; }
+.office-review-overview strong { font-size:17px; }
+.office-review-overview p { margin:6px 0 0; font-size:13px; line-height:1.5; }
+.office-review-overview button { display:grid; align-content:center; gap:7px; padding:14px; text-align:left; font:inherit; color:#264c39; background:#fff; border:2px solid #d0ded4; border-radius:9px; cursor:pointer; }
+.office-review-overview button[aria-pressed=true] { border-color:#416f54; background:#eaf3ec; }
+.office-review-overview small { font-size:12px; line-height:1.5; }
+.share-map-status { padding:12px 16px; background:#edf5ef; border-radius:7px; overflow-wrap:anywhere; }
+.statistical-review { min-width:0; margin:16px 18px; padding:20px; background:#fff; border:1px solid #cad8ce; border-radius:10px; }
+.statistical-review svg { width:100%; height:auto; }
+.statistical-review table { border-collapse:collapse; width:100%; font-size:13px; }
+.statistical-review td,.statistical-review th { padding:8px; border-bottom:1px solid #d8e1da; text-align:left; }
+@media(max-width:760px) {
+  .office-review-overview { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .office-review-overview > div { grid-column:1/-1; }
+  .office-review-overview button { padding:10px 8px; font-size:14px; }
+  .office-review-overview small { font-size:11px; }
+  .county-quick-grid { grid-template-columns:1fr; }
+  .county-quick-grid div { flex-direction:row; justify-content:space-between; align-items:center; }
+  .statistical-review { margin-inline:12px; padding:16px; overflow-wrap:anywhere; }
+  .header-actions { flex-wrap:wrap; }
+}
+.statistics-content h3 { margin:0 0 12px; font-size:22px; }
+.statistics-content p { font-size:14px; line-height:1.6; }
+.statistics-metric-label { display:grid; gap:8px; margin:16px 0; font-size:15px; font-weight:700; }
+.statistics-metric-label select { min-width:0; max-width:100%; padding:12px; border:1px solid #8cae98; border-radius:7px; background:#fff; color:#244b39; font:inherit; font-size:16px; }
+.statistics-summary-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:0; margin:16px 0; font-size:14px; }
+.statistics-summary-grid dt,.statistics-summary-grid dd { padding:10px; margin:0; border-bottom:1px solid #d6e2d9; }
+.statistics-summary-grid dt { font-weight:650; background:#f0f5f1; }
+.statistics-distribution { margin:20px 0; }
+.statistics-distribution figcaption { font-weight:700; line-height:1.5; margin-bottom:10px; }
+.statistics-caution { border-left:4px solid #b48625; background:#fff7df; padding:12px 14px; }
+.statistics-bin-details { margin-top:12px; }
+.statistics-bin-details summary { cursor:pointer; font-weight:600; }
+@media(max-width:680px) { .statistics-summary-grid { grid-template-columns:1fr; } .statistics-summary-grid dt { padding-bottom:5px; } .statistics-summary-grid dd { padding-top:6px; } }
+.result-navigation { display:flex; flex-wrap:wrap; gap:7px; }
+.statistical-review,.history-charts { scroll-margin-top:24px; }
+#race-picker { min-width:0; flex:1; }
+.quick-portions-wrap { overflow-x:auto; margin:12px 0; }
+.quick-portions { width:100%; border-collapse:collapse; font-size:12px; }
+.quick-portions th,.quick-portions td { padding:8px 5px; border-bottom:1px solid #d5e2d9; text-align:right; }
+.quick-portions th:first-child,.quick-portions td:first-child { text-align:left; }
+.result-navigation button { font-family:inherit; font-size:14px; line-height:1.4; font-weight:650; }
+@media(max-width:680px) { .result-navigation { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); width:100%; } .result-navigation button { padding:9px 7px; font-size:13px; min-height:40px; } }

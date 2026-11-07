@@ -2,7 +2,8 @@ import { contestMetrics, compareContest, expectedPriorYear, populationAt, regula
 import { loadElection, OFFICE_LABELS } from './election-data.js';
 import { loadCountySupplement, mergeElectionData } from './county-data.js';
 import { appUrl } from './paths.js';
-import { appendPatternReview } from './pattern-review.js';
+import { appendPatternReview, getPatternReviewReport } from './pattern-review.js';
+import { auditedHouseCounts } from './history-series.js';
 
 const previousCache = new Map();
 let populationPromise, turnoutPromise;
@@ -29,8 +30,30 @@ function previousData(office, year) {
 const fmt = value => Number.isFinite(value) ? new Intl.NumberFormat('en-US').format(value) : 'N/A';
 const change = value => Number.isFinite(value) ? `${value >= 0 ? '+' : ''}${value.toFixed(1)}%` : 'N/A';
 const node = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; e.textContent = text; return e; };
-export async function renderCountyMetrics(container, { name, state, id, office, year, years, rows, population }, isCurrent = () => true) {
+function appendQuickResults(container, rows, office, year, id, contestFiltered = false) {
+  if (office === 'geography' || !rows?.length) return;
+  const aggregate = office==='house' && !contestFiltered && String(id).length===5 ? auditedHouseCounts(getPatternReviewReport(),id,year) : null;
+  if (rows.length !== 1 && (!aggregate || aggregate.reason)) {
+    container.append(node('p','county-tip-note',`${rows.length} separate contests or district portions are available below; they are not added into one county vote total.`));
+    if(office==='house') {
+      const table=node('table','quick-portions',''),head=node('tr','','');
+      for(const text of ['District / stage','Republican','Democratic','Contest total'])head.append(node('th','',text));table.append(head);
+      for(const row of rows) {const m=contestMetrics(row),tr=node('tr','','');for(const text of [`${row.district??'?'} · ${row.stage||'general'}${row.special?' · special':''}`,fmt(m?.republican),fmt(m?.democrat),fmt(m?.total)])tr.append(node('td','',text));table.append(tr);}
+      const wrap=node('div','quick-portions-wrap','');wrap.append(table);container.append(wrap);
+    }
+    return;
+  }
+  const row=rows[0], metrics=aggregate && !aggregate.reason ? aggregate : contestMetrics(row);
+  if (!metrics || row.contestType === 'recall-question' || row.contestType === 'replacement-election') return;
+  const box=node('div','county-quick-results','');
+  box.append(node('strong','',`${OFFICE_LABELS[office]} · ${year}${office==='house'?aggregate && !aggregate.reason?' · audited countywide sum':` · District ${row.district??'?'} portion`:''}`));
+  const grid=node('div','county-quick-grid','');
+  for(const [key,label] of [['total','Reported contest total'],['republican','Republican'],['democrat','Democratic']]) {const item=node('div','','');item.append(node('span','',label),node('b','',fmt(metrics[key])));grid.append(item);}
+  box.append(grid,node('p','county-tip-note',`${row.provisional||row.unofficial||row.incomplete?'Provisional reported counts. ':''}Contest totals and candidate votes are separate from ballots cast. Comparisons and source notes appear below.`));container.append(box);
+}
+export async function renderCountyMetrics(container, { name, state, id, office, year, years, rows, population, contestFiltered }, isCurrent = () => true) {
   container.replaceChildren(node('strong', 'county-tip-title', `${name} · ${state}`));
+  appendQuickResults(container,rows,office,year,id,contestFiltered);
   await appendPatternReview(container, { office, year, id, rows }, isCurrent);
   if (!isCurrent()) return;
   let populationData;
@@ -144,6 +167,7 @@ function appendVotingMethods(container, ballot) {
 export async function renderStateMetrics(container, {name, state, id, office, year, years, rows = [], loading}, isCurrent = () => true) {
   container.replaceChildren(node('strong', 'county-tip-title', name || state));
   if (loading) { container.append(node('p', 'county-tip-note', 'Loading state returns…')); return; }
+  appendQuickResults(container,rows,office,year,id);
   await appendPatternReview(container, { office, year, id, rows, level: 'state' }, isCurrent);
   if (!isCurrent()) return;
   const [populationData, turnout] = await Promise.all([loadPopulation(), loadTurnout()]);

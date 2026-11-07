@@ -106,3 +106,17 @@ The importer now emits NM-only scope metadata, limits, and quality counters only
 - House2026: `d33465a0234394558319df650815741807aa4f3b683a01e296489efa5f89de29`
 
 The default import and exact approved-hash assertions passed. Arizona normalized data and qualification inputs are unchanged. Root and Atlas were notified directly; the default public bundle is frozen again.
+
+## New Mexico current-only publication batch — November 6, 2026
+
+The approved current-only publication uses the separate `research-house-nm` supplement, reproduced by `python3 scripts/import-research-house-nm.py`. It publishes **43 actual 2026 county-district portions across all 33 New Mexico counties, plus three separately reported district controls**. This leaves all approved Arizona file bytes and all existing numeric 2022 New Mexico baseline rows unchanged. Root registers the new supplement with priority 130 and deploys it to both website mounts.
+
+The importer verifies all five retained 2026 primary snapshot hashes before parsing. Exact county names join uniquely to the existing FIPS reference; source CountyID is not treated as FIPS. Candidate IDs, district identities, the official page's explicit Mountain update time, and original retrieval times remain separate. Five candidate county sums exactly match their separately published district CSV controls. The sixth control is explicitly withheld: Chaves County's CD2 Gabriel Vasquez count is `*`, retained as `votes:null`, `missingVoteCount:true`, original `*`, `sourceNeedsReview:true`, `incomplete:true`, and `totalVotes:null`. Forty-two portions are fully numeric; one remains held. No residual is allocated to the suppressed cell.
+
+This review also caught a defect in the old NM staging-only importer: the API's ballot label `Democrat` was not among that shared helper's accepted Democratic spellings. The dedicated importer checks the exact `DEM`/`Democrat` and `REP`/`Republican` pairs. The shared staging helper now also recognizes `Democrat`; its default Arizona output remains byte-identical. Earlier NM staging rows are not copied blindly. Published 2026 county rows preserve the correct source parties; no Other votes are reassigned.
+
+The current source was checked again against the [official federal results page](https://electionresults.sos.nm.gov/resultsSW.aspx?type=FED&map=CTY), which remains labeled unofficial and has the same six House candidate district controls as the retained snapshot. Its 100% precinct display is not treated as completed counting. Suppressed 2022 primary rows remain staging-only; they do not replace the existing numeric baseline.
+
+**New Mexico anomaly comparisons remain not assessed.** The complete 43-portion inventory is evidence of published geographic scope, not an approved historical comparability contract or proof of complete vote counts. A separate reviewed scope/seat/baseline qualification is required before adding NM House review borders. Existing Montana and Arizona House contracts remain intact.
+
+Second offline imports reproduce all three new JSON files exactly. Canonical integration adds 46 current records with no duplicate geographic-contest identities and changes no prior record. All 2022 results remain unchanged. Validation details and source holds are public in `/data/research-house-nm/validation.json`; raw source snapshots remain ignored locally.

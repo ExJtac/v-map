@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {researchIsRecent} from '../src/research-status.js';
+const now=Date.parse('2026-11-06T23:00:00Z');
+const fresh={schedulerStatus:'ACTIVE',phase:'complete',lastVerifiedCheckAt:'2026-11-06T22:59:00Z'};
+assert.equal(researchIsRecent(fresh,now),true);
+assert.equal(researchIsRecent({...fresh,schedulerStatus:'PAUSED'},now),false);
+assert.equal(researchIsRecent({...fresh,phase:'error'},now),false);
+assert.equal(researchIsRecent({...fresh,lastVerifiedCheckAt:'2026-11-06T22:53:59Z'},now),false);
+assert.equal(researchIsRecent({...fresh,lastVerifiedCheckAt:'2026-11-06T23:01:00Z'},now),false);
+assert.equal(researchIsRecent({...fresh,lastVerifiedCheckAt:'invalid'},now),false);
+console.log('Research status checks passed: fresh, paused, error, stale, future-clock and invalid timestamps.');

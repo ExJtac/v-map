@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import os from 'node:os';
 import {fileURLToPath} from 'node:url';
 import {execFileSync} from 'node:child_process';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -8,7 +9,9 @@ if(!['checking','complete','error'].includes(phase))throw new Error('Use checkin
 const stateFile=path.join(root,'.vmap-research-state.local.json');
 let previous={};try{previous=JSON.parse(fs.readFileSync(stateFile,'utf8'));}catch{}
 const now=new Date().toISOString(),release=args.includes('--release')?args[args.indexOf('--release')+1]:null;
-const status={schemaVersion:1,schedulerConfigured:true,cadenceMinutes:5,phase,worker:'Codex local scheduled research',lastVerifiedCheckAt:phase==='complete'?now:previous.lastVerifiedCheckAt||null,lastStartedAt:phase==='checking'?now:previous.lastStartedAt||null,lastPublishedAt:release?now:previous.lastPublishedAt||null,lastPublishedRelease:release||previous.lastPublishedRelease||null,updatedAt:now};
+let schedulerStatus='UNKNOWN';
+try {schedulerStatus=fs.readFileSync(path.join(os.homedir(),'.codex/automations/v-map-research-and-verified-updates/automation.toml'),'utf8').match(/^status\s*=\s*"(ACTIVE|PAUSED)"/m)?.[1]||'UNKNOWN';} catch {}
+const status={schemaVersion:1,schedulerConfigured:schedulerStatus!=='UNKNOWN',schedulerStatus,cadenceMinutes:5,phase,worker:'Codex local scheduled research',lastVerifiedCheckAt:phase==='complete'?now:previous.lastVerifiedCheckAt||null,lastStartedAt:phase==='checking'?now:previous.lastStartedAt||null,lastPublishedAt:release?now:previous.lastPublishedAt||null,lastPublishedRelease:release||previous.lastPublishedRelease||null,updatedAt:now};
 fs.writeFileSync(stateFile,JSON.stringify(status,null,2)+'\n',{mode:0o600});
 if(args.includes('--bundle'))fs.writeFileSync(path.join(root,'public/data/research-status.json'),JSON.stringify(status)+'\n');
 if(args.includes('--publish')) {

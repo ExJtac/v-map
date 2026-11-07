@@ -23,18 +23,26 @@
     <meta property="og:title" content="V-Map — U.S. Election Map & County History" />
     <meta property="og:description" content="Explore U.S. election returns, population references and provisional 2026 review signals, county by county." />
     <meta property="og:url" content="https://cas-tx.com/vmap/" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://cas-tx.com/vmap/share/v-map-logo-v2.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="V-Map logo — U.S. election history at voteranomaly.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://cas-tx.com/vmap/share/v-map-logo-v2.png" />
+    <link rel="image_src" href="https://cas-tx.com/vmap/share/v-map-logo-v2.png" />
+    <link rel="apple-touch-icon" href="%BASE_URL%share/v-map-mark.png" />
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"V-Map","url":"https://cas-tx.com/vmap/","applicationCategory":"ReferenceApplication","operatingSystem":"Any modern web browser","isAccessibleForFree":true,"description":"Interactive U.S. election history for President, Senate, House and Governor, with source-backed county returns, population references and provisional review signals.","publisher":{"@type":"Organization","name":"CAS-TX","url":"https://cas-tx.com/"}}</script>
     <title>V-Map — U.S. Election Map & County History, 2006–2026</title>
   </head>
   <body>
     <header class="site-header">
       <a href="%BASE_URL%" class="brand" aria-label="V-Map home"
-        ><span class="brand-icon">V<span>·</span></span
-        >V-Map</a
+        ><img class="brand-logo" src="%BASE_URL%share/v-map-mark.png" width="40" height="40" alt="" />V-Map</a
       >
       <span class="header-caption">A fresh perspective.</span>
       <nav class="header-actions" aria-label="Support V-Map">
+        <button id="share-map" class="share-map-button" type="button">Share map</button>
         <a class="support-nav" href="#support">Support V-Map</a>
         <a class="local-badge" href="https://github.com/ExJtac/v-map" target="_blank" rel="noreferrer"><span></span> Contribute on GitHub ↗</a>
       </nav>
@@ -116,6 +124,13 @@
           Loading history…
         </div>
       </section>
+      <section class="office-review-overview" aria-label="Review patterns in all 2026 offices">
+        <div><strong>2026 county reviews</strong><p>Choose an office to see its review borders and county list. Missing comparisons stay unassessed.</p></div>
+        <button data-review-office="governor" type="button" aria-pressed="true"><b>Governor</b><small>Loading review coverage…</small></button>
+        <button data-review-office="senate" type="button" aria-pressed="false"><b>U.S. Senate</b><small>Loading review coverage…</small></button>
+        <button data-review-office="house" type="button" aria-pressed="false"><b>U.S. House · Congress</b><small>Loading review coverage…</small></button>
+      </section>
+      <p id="share-map-status" class="share-map-status" role="status" hidden></p>
       <nav class="map-breadcrumbs" aria-label="Map location">
         <button id="national-view" aria-current="page">United States</button
         ><span id="state-crumb-separator" hidden>/</span
@@ -263,6 +278,11 @@
               <span>Aa</span> Labels
             </button>
           </div>
+          <div class="map-interaction-help">
+            <span id="map-scroll-help">Scroll to move the page. Ctrl/⌘ + scroll or + / − zooms the map.</span>
+            <button id="map-gestures" type="button" aria-pressed="false">Enable touch map gestures</button>
+            <button id="show-selected-results" type="button" hidden>View selected results ↓</button>
+          </div>
           <div id="pattern-legend" class="pattern-legend" aria-label="County review border legend" hidden>
             <span class="pattern-legend-title">Changes worth reviewing · county borders</span>
             <span><i class="pattern-swatch pattern-democrat" aria-hidden="true"></i>Toward Democrats</span>
@@ -315,8 +335,7 @@
                 >50 states to explore</span
               ></span
             ><span
-              >Scroll to zoom <span class="footer-divider">·</span> Drag to
-              move</span
+              >Scroll the page outside touch-map mode <span class="footer-divider">·</span> Use + / − to zoom</span
             >
           </div>
           <div class="election-legend" id="election-legend">
@@ -328,10 +347,11 @@
               multiple</span
             ><span class="legend-note">Color = most votes in one contest</span>
           </div>
-          <section id="map-tooltip" class="selected-place-info" aria-label="Selected place election details" hidden>
-            <h2>Selected place details</h2>
+          <section id="map-tooltip" class="selected-place-info" aria-label="Selected place election details" tabindex="-1" hidden>
+            <div class="selected-place-heading"><h2>Selected place results</h2><div class="result-navigation"><button id="jump-statistics" type="button" hidden>Compare counties ↓</button><button id="jump-history" type="button" hidden>20-year history ↓</button><button id="back-to-map" type="button">Back to map ↑</button></div></div>
             <div id="map-tooltip-content"></div>
           </section>
+          <section id="statistical-review" class="statistical-review" aria-label="Statistical comparison for the selected county" hidden></section>
           <aside id="pattern-review-summary" class="pattern-review-summary" aria-label="2026 county pattern review" hidden></aside>
           <section id="history-charts" class="history-charts" aria-label="Election history graphs for the selected place" hidden></section>
         </div>

@@ -111,8 +111,8 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 
 ### house: partyCountChange
 
-- 1697: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
-- 1374: No imported 2026 county contest for this office.
+- 1730: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
+- 1341: No imported 2026 county contest for this office.
 - 14: Two-party minimum of 500 each year or 100 votes for each prior party not met.
 
 ### governor: partyCountChange
@@ -138,8 +138,8 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 
 ### house: raceVoteChange
 
-- 1697: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
-- 1374: No imported 2026 county contest for this office.
+- 1730: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
+- 1341: No imported 2026 county contest for this office.
 - 4: Fewer than 500 reported candidate/write-in race votes in either year.
 
 ### governor: raceVoteChange
@@ -165,8 +165,8 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 
 ### house: racePopulationChange
 
-- 1697: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
-- 1374: No imported 2026 county contest for this office.
+- 1730: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
+- 1341: No imported 2026 county contest for this office.
 - 4: Fewer than 500 reported candidate/write-in race votes in either year.
 
 ### governor: racePopulationChange
@@ -193,8 +193,8 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 
 ### house: shareSwing
 
-- 1697: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
-- 1374: No imported 2026 county contest for this office.
+- 1730: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
+- 1341: No imported 2026 county contest for this office.
 - 14: Two-party minimum of 500 each year or 100 votes for each prior party not met.
 
 ### governor: shareSwing

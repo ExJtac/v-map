@@ -5,6 +5,7 @@ import { OFFICE_LABELS } from './election-data.js';
 import { isLargePartyChange, formatPartyChange } from './county-metrics.js';
 
 let report, request, failed = false;
+export const getPatternReviewReport = () => report;
 const active = (office, year) => year === 2026 && office !== 'geography';
 const node = (tag, className, text) => {
   const item = document.createElement(tag);

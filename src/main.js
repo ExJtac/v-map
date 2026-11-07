@@ -10,7 +10,7 @@ import { createElectionView } from "./election-view.js";
 import { renderCountyMetrics, renderStateMetrics } from "./county-hover.js";
 import { initSupport } from "./support.js";
 import { initResearchStatus } from './research-status.js';
-import { initPatternReview, hasPatternFlag, countyPatternDirection, updatePatternSummary, updatePatternCountyList } from './pattern-review.js';
+import { initPatternReview, hasPatternFlag, countyPatternDirection, updatePatternSummary, updatePatternCountyList, getPatternReviewReport } from './pattern-review.js';
 
 initSupport();
 initResearchStatus();
@@ -98,7 +98,12 @@ let selectedState = null,
   countiesLoading = false,
   countyError = "",
   elections;
+let mapGestures = false, pageScrollIntent = 0;
+document.addEventListener('wheel', event => { if (!event.ctrlKey && !event.metaKey) pageScrollIntent++; }, {passive:true});
+document.addEventListener('touchmove', () => { if (!mapGestures) pageScrollIntent++; }, {passive:true});
 const mapZoom = zoom()
+  .filter(event => event.type === 'wheel' ? (event.ctrlKey || event.metaKey) : event.type.startsWith('touch') ? mapGestures : !event.button)
+  .wheelDelta(event => -event.deltaY * (event.deltaMode === 1 ? .05 : event.deltaMode ? .5 : .002))
   .scaleExtent([1, 450])
   .extent([
     [-32, -24],
@@ -118,6 +123,7 @@ const mapZoom = zoom()
       .attr("font-size", 10 / currentZoom.k);
   });
 svg.call(mapZoom).on("dblclick.zoom", null);
+svg.node().addEventListener('wheel',event=>{if(event.ctrlKey || event.metaKey)event.preventDefault();},{passive:false});
 function moveTo(t) {
   svg.interrupt();
   if (reducedMotion) { svg.call(mapZoom.transform, t); return Promise.resolve(true); }
@@ -137,7 +143,7 @@ function fitFeature(geometry) {
       .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
   );
 }
-let detailToken = 0, historyModule;
+let detailToken = 0, historyModule, statisticsModule;
 async function countyCard(container, geometry, tokenValid) {
   const context = elections.countyContext(geometry.id);
   if (context.loading) { container.textContent = "Loading county returns…"; return; }
@@ -152,23 +158,34 @@ async function stateCard(container, geometry, tokenValid) {
     state: geometry.abbreviation, id: geometry.id }, tokenValid);
 }
 function updateCountyDetail() {
-  const panel = $('#map-tooltip'), detail = $('#map-tooltip-content'), charts = $('#history-charts');
+  const panel = $('#map-tooltip'), detail = $('#map-tooltip-content'), charts = $('#history-charts'), statistics = $('#statistical-review');
   const token = ++detailToken;
   panel.hidden = !selectedState;
   charts.hidden = !selectedState || !elections?.isHistorical();
-  if (!selectedState) { detail.replaceChildren(); charts.replaceChildren(); return Promise.resolve(); }
+  statistics.hidden = charts.hidden || !selectedCounty;
+  $('#jump-statistics').hidden = statistics.hidden;
+  $('#jump-history').hidden = charts.hidden;
+  if (!selectedState) { detail.replaceChildren(); charts.replaceChildren(); statistics.replaceChildren(); return Promise.resolve(); }
   const geometry = selectedCounty || selectedState;
   const context = selectedCounty ? elections.countyContext(geometry.id) : elections.stateContext(geometry.id);
   const detailsWork = selectedCounty ? countyCard(detail, geometry, () => token === detailToken) : stateCard(detail, geometry, () => token === detailToken);
+  if(context.loading) {charts.textContent='Loading the selected election…';statistics.textContent='Loading the selected election…';return Promise.resolve(detailsWork);}
   const chartWork = charts.hidden ? Promise.resolve() : (historyModule ||= import('./history-charts.js'))
-    .then(module => module.renderHistoryCharts(charts, { ...context, id: geometry.id, name: geometry.properties.name,
+    .then(module => module.renderHistoryCharts(charts, { ...context, report:getPatternReviewReport(), id: geometry.id, name: geometry.properties.name,
       state: selectedState.abbreviation, level: selectedCounty ? 'county' : 'state' }, () => token === detailToken))
-    .catch(() => { if (token === detailToken) charts.textContent = 'History graphs could not load. Select the place again to retry.'; });
-  return Promise.all([detailsWork, chartWork]);
+    .catch(() => { historyModule = null; if (token === detailToken) charts.textContent = 'History graphs could not load. Select the place again to retry.'; });
+  const statisticsWork = statistics.hidden ? Promise.resolve() : (statisticsModule ||= import('./statistical-review.js'))
+    .then(module => module.renderSelectedStatistics(statistics, {...context, id:geometry.id, name:geometry.properties.name, state:selectedState.abbreviation, level:'county', report:getPatternReviewReport()}, () => token === detailToken))
+    .catch(() => { statisticsModule = null; if (token === detailToken) statistics.textContent = 'Statistical review could not load. Select the county again to retry.'; });
+  return Promise.all([detailsWork, chartWork, statisticsWork]);
 }
 async function openSelectedDetails(geometry, kind) {
   if (kind === 'county' ? selectedCounty?.id !== geometry.id : selectedState?.id !== geometry.id || selectedCounty) return;
-  return updateCountyDetail();
+  if (kind === 'county') {
+    const panel = $('#map-tooltip');
+    panel.focus({preventScroll:true});
+    window.scrollTo({top:Math.max(0,window.scrollY + panel.getBoundingClientRect().top - 90),behavior:reducedMotion?'auto':'smooth'});
+  }
 }
 function keyboard(event, callback) {
   if (event.key === "Enter" || event.key === " ") {
@@ -259,6 +276,12 @@ function updateMap() {
     .join('path').attr('class', c => `pattern-outline pattern-${c.party}${c.mixed ? ' pattern-alternating' : ''}`).attr('d', c => path(c.geometry));
   updatePatternSummary(context, selectedState?.id);
   updatePatternCountyList(context, states, selectedCounty, zoomToPatternCounty);
+  const reviewReport = getPatternReviewReport();
+  document.querySelectorAll('[data-review-office]').forEach(button => {
+    const summary = reviewReport?.summary?.offices?.[button.dataset.reviewOffice];
+    button.setAttribute('aria-pressed',String(context.office === button.dataset.reviewOffice && context.year === 2026));
+    button.querySelector('small').textContent = summary ? `${summary.flagged.toLocaleString()} office flags · ${summary.assessed.toLocaleString()} counties assessed` : 'Loading review coverage…';
+  });
   $("#map-status").textContent =
     countyError ||
     (countiesLoading
@@ -333,6 +356,7 @@ function updateSelection() {
       ? `${selectedState.region} region · Select a county to go deeper.`
       : "Choose a state to zoom in and explore its counties.";
   $("#clear-selection").hidden = !selectedState;
+  $('#show-selected-results').hidden = !selectedState;
   elections?.setSelection({ state: selectedState, county: selectedCounty });
   updateMap();
   return updateCountyDetail();
@@ -444,24 +468,21 @@ async function zoomToPatternCounty(fips) {
   if (token !== navigationToken || current.office !== context.office || current.year !== context.year || selectedState?.id !== state.id) return;
   const county = stateCounties.find(county => county.id === fips);
   if (!county) { status.textContent = 'County boundaries could not load. Select the county again to retry.'; return; }
-  await selectCounty(county, { showDetails: false });
+  await selectCounty(county);
   const afterDetails = elections.countyContext('');
   if (token !== navigationToken || selectedCounty?.id !== fips || afterDetails.office !== context.office || afterDetails.year !== context.year) return;
   status.textContent = `${county.properties.name}, ${state.properties.name} selected.`;
-  const panel = $('.map-panel');
-  panel.focus({ preventScroll: true });
-  panel.scrollIntoView({ block: 'start', behavior: 'auto' });
-  await openSelectedDetails(county, 'county');
 }
 async function selectCounty(county, { showDetails = true } = {}) {
   if (!selectedState || county.id.slice(0, 2) !== selectedState.id) return;
   selectedCounty = county;
+  const scrollIntent = pageScrollIntent;
   closeSearch();
   $("#state-search").value = "";
   const viewReady = fitFeature(county);
-  await updateSelection();
+  updateSelection();
   const completed = await viewReady;
-  if (completed && showDetails && selectedCounty?.id === county.id) await openSelectedDetails(county, 'county');
+  if (completed && showDetails && selectedCounty?.id === county.id && scrollIntent === pageScrollIntent) await openSelectedDetails(county, 'county');
 }
 function returnToState() {
   if (selectedState) {
@@ -623,7 +644,48 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && e.target.closest("#us-map"))
     selectedCounty ? returnToState() : clearSelection();
 });
-elections = createElectionView({ onChange: () => { updateMap(); updateCountyDetail(); } });
+$('#map-gestures').addEventListener('click', event => {
+  mapGestures = !mapGestures;
+  event.currentTarget.setAttribute('aria-pressed',String(mapGestures));
+  event.currentTarget.textContent = mapGestures ? 'Return to page scrolling' : 'Enable touch map gestures';
+  svg.classed('map-gestures-enabled',mapGestures);
+  $('#map-scroll-help').textContent = mapGestures ? 'Touch gestures move the map. Turn gestures off to scroll the page.' : 'Scroll to move the page. Ctrl/⌘ + scroll or + / − zooms the map.';
+});
+$('#back-to-map').addEventListener('click', () => $('.map-topline').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'}));
+$('#jump-statistics').addEventListener('click', () => $('#statistical-review').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'}));
+$('#jump-history').addEventListener('click', () => $('#history-charts').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'}));
+$('#show-selected-results').addEventListener('click', () => {if(selectedCounty)openSelectedDetails(selectedCounty,'county');else $('#map-tooltip').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'});});
+document.querySelectorAll('[data-review-office]').forEach(button => button.addEventListener('click', () => elections.selectElection(button.dataset.reviewOffice,2026)));
+$('#share-map').addEventListener('click', async () => {
+  const context = elections.countyContext('');
+  const url = new URL('https://voteranomaly.com/');
+  url.searchParams.set('office',context.office);
+  if(context.office !== 'geography') url.searchParams.set('year',String(context.year));
+  if(selectedCounty)url.searchParams.set('county',selectedCounty.id);else if(selectedState)url.searchParams.set('state',selectedState.id);
+  const status = $('#share-map-status');status.hidden=false;
+  const title = `V-Map${selectedCounty?` · ${selectedCounty.properties.name}, ${selectedState.abbreviation}`:selectedState?` · ${selectedState.properties.name}`:''}`;
+  try {
+    if(navigator.share) {await navigator.share({title,text:'Explore source-backed U.S. election history, county by county.',url:url.href});status.textContent='Map shared.';}
+    else {await navigator.clipboard.writeText(url.href);status.textContent='Map link copied. It includes the selected office, year and place.';}
+    window.gtag?.('event','share',{method:navigator.share?'native':'copy_link',content_type:'election_map',office:context.office,election_year:context.year});
+  } catch(error) {status.textContent=error.name==='AbortError'?'Sharing cancelled.':`Copy this map link: ${url.href}`;}
+});
+document.querySelectorAll('#header-support-qr,#support-open-wallet,#support-copy-invoice').forEach(link=>link.addEventListener('click',()=>window.gtag?.('event','support_engagement',{method:link.id})));
+const sharedParams = new URL(location.href).searchParams;
+const sharedOffice = ['president','senate','house','governor','geography'].includes(sharedParams.get('office')) ? sharedParams.get('office') : null;
+if(sharedOffice)$('#election-office').value=sharedOffice;
+let sharedPlaceStarted = false;
+async function restoreSharedPlace() {
+  if(sharedPlaceStarted || !elections || elections.countyContext('').loading)return;
+  sharedPlaceStarted=true;
+  if(navigationToken || selectedState)return;
+  const county=sharedParams.get('county'), stateId=/^\d{5}$/.test(county||'')?county.slice(0,2):sharedParams.get('state');
+  const state=states.find(state=>state.id===stateId);if(!state)return;
+  await selectState(state,{showDetails:false});
+  if(selectedState?.id!==state.id)return;
+  const place=stateCounties.find(place=>place.id===county);if(place)await selectCounty(place);
+}
+elections = createElectionView({ initialYear:Number(sharedParams.get('year')) || 2026, onChange: () => { updateMap(); updateCountyDetail(); restoreSharedPlace(); } });
 initPatternReview(() => { updateMap(); updateCountyDetail(); });
 updateSelection();
 $("#zoom-out").disabled = true;

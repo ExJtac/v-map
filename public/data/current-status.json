@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionYear": 2026,
-  "retrievedAt": "2026-11-06T21:34:05.293984+00:00",
+  "retrievedAt": "2026-11-06T21:39:08.866751+00:00",
   "status": "unofficial-snapshot",
   "offices": [
     {
@@ -16,13 +16,13 @@
     },
     {
       "office": "house",
-      "statesWithReturns": 33,
-      "statesWithCountyReturns": 27,
-      "uniqueCounties": 1768,
-      "countyContestRecords": 2127,
-      "records": 2418,
-      "provisionalRecords": 2418,
-      "retrievedAt": "2026-11-06T21:32:46.882423+00:00"
+      "statesWithReturns": 34,
+      "statesWithCountyReturns": 28,
+      "uniqueCounties": 1801,
+      "countyContestRecords": 2170,
+      "records": 2464,
+      "provisionalRecords": 2464,
+      "retrievedAt": "2026-11-06T21:39:08.866751+00:00"
     },
     {
       "office": "governor",

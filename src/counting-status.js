@@ -35,9 +35,9 @@ export function countingStatus(rows) {
   return { status, label, reason };
 }
 const palette = {
-  Democrat: { complete: "#2862a1", pending: "#a8c7ea" },
-  Republican: { complete: "#ae403c", pending: "#ebb7b2" },
-  Other: { complete: "#765b91", pending: "#cbbad9" },
+  Democrat: { complete: "#2862a1", pending: "#83acd9" },
+  Republican: { complete: "#ae403c", pending: "#da928b" },
+  Other: { complete: "#765b91", pending: "#b49bc8" },
 };
 export function countingColor(party, status, baseColor) {
   if (!party || !palette[party] || status === "unavailable") return baseColor;

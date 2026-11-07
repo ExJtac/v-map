@@ -21,16 +21,19 @@ export function qualifiedRaceCounts(rows, {office, year, level, id}) {
   if (sourceCandidates.some(c => !integer(c.votes))) return {reason:'Candidate counts missing or unitemized.'};
   const accountingName = /^(?:OVER ?VOTES?|UNDER ?VOTES?|BLANK(?:S| BALLOTS?| VOTES?)?|INVALID(?: BALLOTS?| VOTES?)?|SPOILED(?: BALLOTS?| VOTES?)?|EXHAUSTED BALLOTS?|TOTAL (?:VOTES|BALLOTS) CAST)$/i;
   const candidates = sourceCandidates.filter(c => !accountingName.test(c.name || ''));
-  if (!candidates.length || candidates.some(c => !integer(c.votes) || /^(OTHER|OTHERS|OTHER CANDIDATES|ALL OTHER CANDIDATES.*)$/i.test(c.name || ''))) return {reason:'Candidate counts missing or unitemized.'};
+  if (!candidates.length) return {reason:'Candidate counts missing or unitemized.'};
+  const party = label => candidates.some(c => c.party === label) ? candidates.filter(c => c.party === label).reduce((n,c) => n+c.votes,0) : null;
+  const named = {democrat:party('Democrat'),republican:party('Republican'),provisional:Boolean(r.provisional || r.unofficial || r.resultStatus === 'unofficial'),sourceIds:r.sourceIds || [r.sourceId],seatId:r.seatId || null};
+  if ((r.reportingCategories || []).some(category => !integer(category.votes))) return {reason:'Missing reporting-category count.'};
+  if (candidates.some(c => /^(OTHER|OTHERS|OTHER CANDIDATES|ALL OTHER CANDIDATES.*)$/i.test(c.name || ''))) return {...named,namedPartyCounts:true,reason:'Candidate counts missing or unitemized; race total withheld, identified party counts retained.'};
   let total = candidates.reduce((n,c) => n+c.votes,0);
   for (const category of r.reportingCategories || []) {
     if (!integer(category.votes)) return {reason:'Missing reporting-category count.'};
     if (excluded.has(category.category)) continue;
-    if (!writeIns.has(category.category)) return {reason:'Unknown or unitemized source category; race total withheld.'};
+    if (!writeIns.has(category.category)) return {...named,namedPartyCounts:true,reason:'Unknown or unitemized source category; race total withheld, identified party counts retained.'};
     total += category.votes;
   }
-  const party = label => candidates.some(c => c.party === label) ? candidates.filter(c => c.party === label).reduce((n,c) => n+c.votes,0) : null;
-  return {total,democrat:party('Democrat'),republican:party('Republican'),provisional:Boolean(r.provisional || r.unofficial || r.resultStatus === 'unofficial'),sourceIds:r.sourceIds || [r.sourceId],seatId:r.seatId || null};
+  return {total,...named};
 }
 export function auditedHouseCounts(report, id, year) {
   if (!['04','30'].includes(String(id).slice(0,2)) || ![2022,2026].includes(year)) return {reason:'Complete House county-district scope is not independently qualified for this year.'};
@@ -51,6 +54,7 @@ export function historyPoint(year, counts, populations = []) {
   const found = populations.filter(p => p.year === populationYear && integer(p.value) && p.value > 0);
   const population = found.length === 1 ? found[0] : null;
   const valid = !counts.reason && integer(counts.total);
-  const rate = value => valid && population && integer(value) ? value/population.value*100 : null;
-  return {year,...counts,total:valid ? counts.total : null,democrat:valid && integer(counts.democrat) ? counts.democrat : null,republican:valid && integer(counts.republican) ? counts.republican : null,population,populationYear:population?.year ?? null,totalRate:rate(counts.total),democratRate:rate(counts.democrat),republicanRate:rate(counts.republican)};
+  const validParty = valid || counts.namedPartyCounts === true;
+  const rate = (value, qualified) => qualified && population && integer(value) ? value/population.value*100 : null;
+  return {year,...counts,total:valid ? counts.total : null,democrat:validParty && integer(counts.democrat) ? counts.democrat : null,republican:validParty && integer(counts.republican) ? counts.republican : null,population,populationYear:population?.year ?? null,totalRate:rate(counts.total,valid),democratRate:rate(counts.democrat,validParty),republicanRate:rate(counts.republican,validParty)};
 }

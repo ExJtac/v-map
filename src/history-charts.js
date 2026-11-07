@@ -16,7 +16,7 @@ function election(office,year) {
 }
 function node(tag,text,className) {const el=document.createElement(tag);if(text != null)el.textContent=text;if(className)el.className=className;return el;}
 function svgNode(tag,attributes={},text) {const el=document.createElementNS('http://www.w3.org/2000/svg',tag);for(const [k,v] of Object.entries(attributes))el.setAttribute(k,String(v));if(text!=null)el.textContent=text;return el;}
-function chart(points,rate,label) {
+function chart(points,rate,label,selectedYear) {
   const fig=node('figure',null,'history-chart');fig.append(node('figcaption',label));
   const svg=svgNode('svg',{viewBox:'0 0 720 240',role:'img','aria-label':`${label}. Values and missing-data reasons appear in the table below.`,width:'100%',height:240});
   svg.append(svgNode('title',{},label));
@@ -24,6 +24,7 @@ function chart(points,rate,label) {
   const colors=['#555b69','#d33c49','#2678ca'];
   const values=points.flatMap(p=>keys.map(k=>p[k])).filter(Number.isFinite),max=Math.max(1,...values)*1.12;
   const x=y=>58+(y-2006)/20*640,y=v=>198-v/max*170;
+  if(Number.isInteger(selectedYear)) {svg.append(svgNode('line',{x1:x(selectedYear),x2:x(selectedYear),y1:20,y2:198,stroke:'#174e47','stroke-dasharray':'3 4','stroke-width':1.5}));svg.append(svgNode('text',{x:Math.min(640,Math.max(72,x(selectedYear))),y:15,'text-anchor':'middle','font-size':12,fill:'#174e47'},`Selected: ${selectedYear}`));}
   for (let i=0;i<=4;i++) {const v=max*i/4;svg.append(svgNode('line',{x1:58,x2:698,y1:y(v),y2:y(v),stroke:'#c9ced6','stroke-opacity':.45}));svg.append(svgNode('text',{x:52,y:y(v)+4,'text-anchor':'end','font-size':11,fill:'currentColor'},rate?`${v.toFixed(0)}%`:Math.round(v).toLocaleString()));}
   for (const year of [2006,2010,2014,2018,2022,2026]) svg.append(svgNode('text',{x:x(year),y:220,'text-anchor':'middle','font-size':11,fill:'currentColor'},year));
   keys.forEach((key,index)=>{let path='';let open=false;for(const p of points){if(!Number.isFinite(p[key])){open=false;continue;}path+=`${open?'L':'M'}${x(p.year)},${y(p[key])} `;open=true;const circle=svgNode('circle',{cx:x(p.year),cy:y(p[key]),r:3,fill:colors[index]});circle.append(svgNode('title',{},`${p.year}: ${['Total','Republican','Democratic'][index]} ${rate?pct(p[key]):fmt(p[key])}${p.provisional?' (provisional)':''}`));svg.append(circle);}svg.append(svgNode('path',{d:path,stroke:colors[index],fill:'none','stroke-width':2,'stroke-dasharray':index===0?'5 3':'none'}));});
@@ -37,7 +38,7 @@ export async function renderHistoryCharts(container, context, isCurrent = () => 
   const section=node('section',null,'history-chart-content');section.append(node('h3',`${OFFICE_LABELS[context.office]} history · 2006–2026`));section.append(node('p','Loading actual election cycles…','history-note'));container.replaceChildren(section);
   const years=selectHistoryYears(context);
   const id=String(context.id).padStart(context.level==='county'?5:2,'0');
-  const [population,report]=await Promise.all([documentData('/data/population/counties.json').catch(()=>null),context.office==='house' && context.level==='county' ? documentData('/data/anomalies-2026.json').catch(()=>null) : null]);
+  const [population,report]=await Promise.all([documentData('/data/population/counties.json').catch(()=>null),context.office==='house' && context.level==='county' ? context.report || null : null]);
   if (!current()) return;
   const populations=(context.level==='state'?population?.states:population?.counties)?.[id] || [];
   // Sequential loads bound in-flight memory; both underlying loaders and this merged view cache by cycle.
@@ -54,7 +55,7 @@ export async function renderHistoryCharts(container, context, isCurrent = () => 
   section.append(node('p',`Actual regular general-election cycles. Missing or held observations remain gaps. ${context.office==='senate'?'Different Senate seats may appear in different years; concurrent seats and ambiguous rounds are withheld. ':''}2026 counts remain provisional.`,'history-note'));
   section.append(node('p','Legend: total race votes (gray dashed) · Republican (red) · Democratic (blue). No party nominee is shown as missing, not zero.','history-note'));
   if (!points.length) {section.append(node('p','No applicable election cycles are imported for this selection.'));return;}
-  section.append(chart(points,false,'Reported candidate / write-in race votes'),chart(points,true,'Race votes per 100 residents — a proxy, not turnout'));
+  section.append(chart(points,false,'Reported candidate / write-in race votes',context.year),chart(points,true,'Race votes per 100 residents — a proxy, not turnout',context.year));
   section.append(node('p','Population includes children and other people ineligible to vote. Each ratio uses that election year’s dated estimate; 2026 uses the 2025 estimate. Missing exact-year population leaves a gap. Candidate votes are not ballots cast.','history-note'));
   const wrap=node('div',null,'history-table-wrap'),table=node('table',null,'history-table');table.append(node('caption',`${context.name || id}: actual source values, population dates and coverage gaps`));
   const head=node('thead'),hr=node('tr');for(const label of ['Year','Total race votes','Republican','Democratic','Resident estimate','Votes / residents (total / R / D)','Status / source']){const th=node('th',label);th.scope='col';hr.append(th);}head.append(hr);table.append(head);const body=node('tbody');
