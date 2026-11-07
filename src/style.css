@@ -1845,3 +1845,5 @@ html { scrollbar-gutter: stable; }
 @media(max-width:680px) { .result-navigation { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); width:100%; } .result-navigation button { padding:9px 7px; font-size:13px; min-height:40px; } }
 
 @media (pointer:coarse) { #map-gestures { display:none; } }
+
+.winners-nav-link { color:#285840; font-size:14px; font-weight:700; text-underline-offset:4px; }

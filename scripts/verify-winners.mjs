@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {candidateRecord,orderCandidates} from '../src/winner-record.js';
+const ordinary={geoLevel:'state',stateFips:'48',state:'Texas',contestId:'governor-2026-48-state-general-False',office:'governor',year:2026,stage:'general',sourceId:'example',candidates:[{name:'A',party:'Republican',votes:60},{name:'B',party:'Democrat',votes:40}],totalVotes:100};
+const context={office:'governor',year:2026};
+assert.equal(candidateRecord(ordinary,context).leader.name,'A');
+assert.equal(candidateRecord(ordinary,context).status,'Provisional reported leader');
+for(const patch of [{sourceNeedsReview:true},{winnerEligible:false},{incomplete:true},{totalVotes:50},{totalVotes:90},{reportingCategories:[{category:'unattributedWriteIns',votes:null}]},{candidates:[{name:'A',votes:60},{name:'B',votes:null}]},{candidates:[{name:'A',votes:50},{name:'B',votes:50}]}])assert.equal(candidateRecord({...ordinary,...patch},context).leader,null);
+assert.equal(candidateRecord({...ordinary,geoLevel:'county',countyFips:'48479'},context),null);
+assert.equal(candidateRecord({...ordinary,geoLevel:'county',district:'1'},{office:'house',year:2026}),null);
+assert.equal(candidateRecord({...ordinary,stage:'first round'},context).stage,'first round');
+assert.equal(candidateRecord({...ordinary,stateFips:'13',office:'senate',year:2020},{office:'senate',year:2020}).stage,'first round');
+assert.equal(candidateRecord({...ordinary,totalVotes:145,candidates:[...ordinary.candidates,{name:'OTHER',votes:45}]},context).leader.margin,null);
+assert.equal(candidateRecord({...ordinary,totalVotes:70,candidates:[{name:'A',votes:60},{name:'WRITE-IN',votes:10}]},context).leader.margin,null);
+const rows=[{key:'a',office:'house',state:'Texas',district:'10',stage:'general',leader:{margin:null,share:60,name:'Z'}},{key:'b',office:'house',state:'Texas',district:'2',stage:'general',leader:{margin:10,share:55,name:'A'}}];
+assert.deepEqual(orderCandidates(rows).map(r=>r.district),['2','10']);
+assert.equal(orderCandidates(rows,'margin')[0].key,'b');
+assert.equal(orderCandidates(rows,'share')[0].key,'a');
+console.log('Candidate directory guards passed: provisional status, held/null/tie/conditional outcomes, no county-to-seat substitution and numeric district ordering.');

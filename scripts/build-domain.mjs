@@ -15,7 +15,7 @@ for (const [file, expected] of Object.entries(outputs)) {
   assert.equal(fs.readFileSync(path.join(root, file), 'utf8'), expected, `Stale SEO source: ${file}`);
 }
 await build({root, base: '/', build: {outDir: target, emptyOutDir: true}});
-for (const file of ['index.html', 'about/index.html', 'methodology/index.html', 'coverage/index.html', 'sitemap.xml', 'llms.txt']) {
+for (const file of ['index.html', 'winners/index.html', 'about/index.html', 'methodology/index.html', 'coverage/index.html', 'sitemap.xml', 'llms.txt']) {
   const location = path.join(target, file);
   const content = fs.readFileSync(location, 'utf8');
   assert.ok(content.includes(previousOrigin), `Missing original canonical origin: ${file}`);

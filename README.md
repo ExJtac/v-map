@@ -83,3 +83,8 @@ Visible 2026 Governor, Senate and House review shortcuts show assessed and flagg
 Share map creates a primary-domain link containing the selected office, year and county/state. Explicit logo PNG social metadata and Apple icons replace automatic QR thumbnail selection; previously cached message previews can take time to refresh. [ORGANIC-PROMOTION-PLAN.md](ORGANIC-PROMOTION-PLAN.md) and the public [promotion kit](public/PROMOTION-KIT.md) provide reviewed human-led launch material; no outreach or posts are automatically sent.
 
 Future production updates use `node scripts/deploy-release.mjs` from a clean committed checkout. It builds and validates both variants, checks identical election data, verifies every staged file, preserves previous release pointers, publishes voteranomaly.com and the CAS-TX mount, and verifies their public assets. Local SSH configuration remains ignored. See [DEPLOYMENT.md](DEPLOYMENT.md).
+
+
+### Winning candidates and reported leaders
+
+`/winners/` lists reconciled statewide Senate/Governor, full House-district and presidential state popular-vote leaders for imported years 2006–2026. It defaults to 2026, ordered by office, state name and numeric district, with party/state/search filters and margin/share/name sorting. Provisional vote leads are not race calls. Ties, missing candidate counts, conditional outcomes and source holds remain unavailable; county portions never substitute for a complete race. `scripts/build-winners.mjs` regenerates the per-year directory from the same source precedence as the map; `verify-winners.mjs` and deterministic output checks protect these rules.

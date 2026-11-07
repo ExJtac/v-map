@@ -108,7 +108,7 @@ try {
   // Persist the successful pointer swap before making any public requests.
   fs.writeFileSync(localReceipt,JSON.stringify(outcome));
   for(const [origin,manifest] of [['https://cas-tx.com/vmap/',cas],['https://voteranomaly.com/',domain]]) {
-    const checks=['index.html','sitemap.xml','share/v-map-logo-v2.png',...Object.keys(manifest).filter(file=>file.startsWith('assets/') && (file.endsWith('.js')||file.endsWith('.css')))];
+    const checks=['index.html','winners/index.html','sitemap.xml','share/v-map-logo-v2.png',...Object.keys(manifest).filter(file=>file.startsWith('data/winners/')),...Object.keys(manifest).filter(file=>file.startsWith('assets/') && (file.endsWith('.js')||file.endsWith('.css')))];
     await Promise.all(checks.map(file=>verify(origin,file,manifest[file])));
   }
   outcome=JSON.parse(ssh(prelude+receiptPrelude+`

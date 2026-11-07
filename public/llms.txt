@@ -5,6 +5,7 @@
 Snapshot: 2026-11-06. 2026 returns are incomplete provisional imported snapshots, not live or certified national results. Missing data is not zero. There is no 2026 presidential election. Review flags are exploratory prompts for source review, never fraud/error findings or race calls. Race votes are not actual ballots or eligible-voter turnout.
 
 ## Pages
+- [Winning candidates and reported leaders](https://cas-tx.com/vmap/winners/)
 - [Interactive map](https://cas-tx.com/vmap/)
 - [About](https://cas-tx.com/vmap/about/)
 - [Methodology and own-history review thresholds](https://cas-tx.com/vmap/methodology/)
