@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
 import {COUNTY_SOURCES} from '../src/coverage-sources.js';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const ORIGIN='https://cas-tx.com/vmap/';
+const ORIGIN='https://voteranomaly.com/';
 const GITHUB='https://github.com/ExJtac/v-map';
 const ANALYTICS='<script async src="https://www.googletagmanager.com/gtag/js?id=G-7K67FPGPPG"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-7K67FPGPPG");</script>';
 const OFFICES=['president','senate','house','governor'];

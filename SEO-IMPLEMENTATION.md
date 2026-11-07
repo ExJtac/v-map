@@ -1,16 +1,16 @@
 # Crawlable V-Map documentation
 
-Current status update — November 6, 2026: primary origin is `https://voteranomaly.com/`, with preserved CAS-TX mount. The latest public sitemap has **five** HTML URLs: map, winners, about, methodology and coverage. The new winners page is a separate Vite entry whose candidate cards are currently client-rendered; the three explanatory documentation pages retain substantive initial HTML. See `SEO-AI-GROWTH-PLAN.md` for the new read-only audit, primary-domain canonical-consolidation recommendation and current Google Search generative AI controls/reporting. Older observations below are explicitly historical implementation evidence, not a fresh indexing or performance claim.
+Current implementation update — November 6, 2026: primary identity is `https://voteranomaly.com/`, with the CAS-TX mount preserved as a secondary access route. Source metadata for the map and three generated documentation pages now targets the primary domain. Root integrates the same identity and source-backed initial content for the separate winners entry. The sitemap has **five** primary canonical URLs: map, winners, about, methodology and coverage. Both artifact variants must pass `scripts/verify-seo-canonicals.mjs` before publication. This is an implementation/check record, not evidence of indexing, ranking or AI citation gains.
 
 Added a deterministic static generator, `scripts/build-seo-pages.mjs`, and five public outputs:
 
 - `/vmap/about/`: project purpose, supported offices, historical range, source limits, open-source contribution and support links.
 - `/vmap/methodology/`: source reconciliation, held records, the five schema3 own-history review screens, qualified scope, ballot/race-vote distinctions and source references.
 - `/vmap/coverage/`: all imported office/year combinations, current2026 source presence, qualified comparison counts and geographic limitations.
-- `/vmap/sitemap.xml`: five canonical HTML URLs in the current release: the app, `/winners/` and the three pages above. The CAS-TX variant currently self-canonicalizes separately; see the primary-domain consolidation finding in the growth plan.
+- `/vmap/sitemap.xml`: five canonical HTML URLs in the current release: the app, `/winners/` and the three pages above. The CAS-TX sitemap advertises the same primary canonical URLs; it does not advertise a second canonical copy.
 - `/vmap/llms.txt`: explanatory navigation and limitations, explicitly not a Google/Gemini ranking requirement or submission mechanism.
 
-Pages contain substantive initial HTML, normal crawlable links, unique titles/descriptions, self-canonicals, truthful WebPage metadata and self-contained responsive CSS. They require no client JavaScript or external fonts. No ratings, images, separate county routes or unsupported nationwide-coverage claims are generated.
+Pages contain substantive initial HTML, normal crawlable links, unique titles/descriptions, primary-domain canonicals, truthful WebPage metadata and self-contained responsive CSS. They require no client JavaScript or external fonts. No ratings, images, separate county routes or unsupported nationwide-coverage claims are generated.
 
 ## Build order
 
@@ -34,10 +34,19 @@ Qualified own-history union: Senate873assessed/661flagged; House67/19; Governor1
 
 ## Historical implementation checks
 
-The original four-URL checks below describe the earlier release. The current read-only HTML/XML audit verified five exact sitemap URLs per origin, HTTP 200 and one H1/self-canonical for each sampled page, and no X-Robots exclusion. Receipt: `/tmp/vmap-seo-public-audit-20261106.json`. It also confirmed the alternate-host self-canonical conflict and absence of candidate cards in the winners page initial HTML.
+The original four-URL checks below describe the earlier release. The pre-repair read-only HTML/XML audit verified five exact sitemap URLs per origin, HTTP 200 and one H1/self-canonical for each sampled page, and no X-Robots exclusion. Receipt: `/tmp/vmap-seo-public-audit-20261106.json`. It also confirmed the alternate-host self-canonical conflict and absence of candidate cards in the winners page initial HTML.
 
 - Generator then `--check`: passed, including exact deterministic output equality and all upstream freshness assertions. Raw logs: `/tmp/vmap-seo-generate.log` and `/tmp/vmap-seo-check.log`.
 - Independent Python XML/HTML parser: four exact sitemap URLs, one H1 and self-canonical per page, parseable WebPage JSON-LD, and every local linked file/page target exists.
 - Generator checks: no executable external script, image, rating markup, `noindex`, malformed placeholder or noncanonical relative link.
 
-This subagent did not modify root metadata, robots policy, server configuration, package scripts or anomaly files. It did not deploy, inspect authenticated Search Console, request indexing or establish Google/Gemini inclusion. Root must verify actual production responses and perform any authorized Search Console submission. Follow the separate `SEO-INDEXING-AUDIT.md` for the observed public-site and official Google documentation findings.
+The earlier documentation subagent did not modify root metadata, robots policy, server configuration, package scripts or anomaly files. It did not deploy, inspect authenticated Search Console, request indexing or establish Google/Gemini inclusion. Root must verify actual production responses and perform any authorized Search Console submission. Follow the separate `SEO-INDEXING-AUDIT.md` for the observed public-site and official Google documentation findings.
+
+
+## Primary-domain canonical consolidation
+
+The map's canonical, Open Graph identity, preview-image URLs and WebApplication URL now use voteranomaly.com directly. The documentation generator emits primary canonical/OG/structured identities, primary navigation and a five-URL primary sitemap for both packages. CAS-mounted application assets and local app navigation still use Vite's `/vmap/` base; the root-mounted variant uses `/`. No redirects or server blocks are changed. The domain builder no longer assumes legacy CAS canonicals need replacing after a build; source identity is already correct. It checks generated SEO source freshness and validates the five packaged root pages and asset targets.
+
+`node scripts/verify-seo-canonicals.mjs --sources` checks all five source identities, primary logo previews, structured page URLs and source sitemap. The default invocation additionally checks artifact directories when present; `--require-artifacts` requires both `dist/` and `dist-domain/` and verifies each mount's local targets. Use the required-artifact check only after both variants have been built. This detects wrong or duplicate canonicals, inconsistent OG/structured identity, wrong preview images, stale secondary sitemap identities, missing files and incorrect mounted asset paths. It does not establish Google's selected canonical or prove crawler indexing.
+
+The canonical implementation specialist changed only the assigned metadata/generator/domain/verifier/documentation files and regenerated the three docs, sitemap and llms navigation. Root owns winners prerendering, package integration, final builds, public-origin verification and deployment. No election records, source holds, anomaly calculations, services, DNS, Search Console settings or crawler-training permissions are changed by this repair.

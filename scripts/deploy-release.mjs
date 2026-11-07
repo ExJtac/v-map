@@ -17,6 +17,8 @@ if(!/^[a-f0-9]{40}$/.test(commit))throw new Error('Invalid source revision.');
 run('npm',['run','build:hosted'],{stdio:'inherit'});
 run('node',['scripts/build-domain.mjs'],{stdio:'inherit'});
 run('npm',['run','verify:packaged'],{stdio:'inherit'});
+run('node',['scripts/verify-seo-canonicals.mjs','--require-artifacts'],{stdio:'inherit'});
+run('node',['scripts/verify-winners-prerender.mjs','--require-artifacts'],{stdio:'inherit'});
 clean();
 if(run('git',['rev-parse','HEAD']).trim()!==commit)throw new Error('Source changed during build.');
 const configuration=JSON.parse(fs.readFileSync('.vmap-deploy.local.json','utf8'));

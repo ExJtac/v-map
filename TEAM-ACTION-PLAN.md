@@ -2,6 +2,10 @@
 
 Prepared November 6, 2026, Mountain time. This is a coordinated manual work plan, not evidence that the work below has been executed or that agents run continuously. Advertising and new marketing subscriptions: **$0**. Existing hosting, staff time and development-agent usage are separate costs; no savings or audience outcome is assumed.
 
+## Manual execution update — November 6 evening
+
+The following sections retain the original planning baseline. Primary-domain canonical consolidation and initial-HTML candidate rendering have now been implemented and locally checked; the release receipt, rather than this planning baseline, records production completion. The candidate pilot produced 12 private first-pass inventories (six per party), with 102/102 independent structural checks passed and all profiles held for further evidence review. See [CANDIDATE-PILOT-STATUS.md](CANDIDATE-PILOT-STATUS.md). Reviewable organic launch copy, a demonstration storyboard and a newsroom template are prepared in [MARKETING-LAUNCH-ASSETS.md](MARKETING-LAUNCH-ASSETS.md) and the public promotion kit; no messages or posts were sent. The recurring schedule remains paused.
+
 ## Confirmed starting point
 
 - The primary site is https://voteranomaly.com/; the CAS-TX map remains a secondary access point. Both currently ship source `5ab2e78d3e2ea193eb94a7f05bf0f24f518e1621`.

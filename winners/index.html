@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Winning candidates & reported race leaders | V-Map</title>
   <meta name="description" content="An ordered directory of reported election leaders, candidate vote shares and margins for U.S. Senate, House, Governor and presidential state returns, with source links and provisional-status labels." />
-  <link rel="canonical" href="https://cas-tx.com/vmap/winners/" />
+  <link rel="canonical" href="https://voteranomaly.com/winners/" />
   <meta property="og:title" content="Winning candidates & reported race leaders | V-Map" />
   <meta property="og:description" content="Browse ordered election results by office and state. Provisional leads remain distinct from declared winners." />
-  <meta property="og:url" content="https://cas-tx.com/vmap/winners/" />
+  <meta property="og:url" content="https://voteranomaly.com/winners/" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://cas-tx.com/vmap/share/v-map-logo-v2.png" />
+  <meta property="og:image" content="https://voteranomaly.com/share/v-map-logo-v2.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://cas-tx.com/vmap/share/v-map-logo-v2.png" />
+  <meta name="twitter:image" content="https://voteranomaly.com/share/v-map-logo-v2.png" />
   <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K67FPGPPG"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-7K67FPGPPG');</script>
@@ -26,21 +26,21 @@
     <div class="directory-intro"><p class="eyebrow">THE PEOPLE BEHIND THE RETURNS</p><h1>Winning candidates<br />& reported leaders.</h1><p>Browse election results in order, with each candidate’s reported vote count, share and lead margin. Choose an office, state or election year to narrow the list.</p></div>
     <aside class="directory-notice"><strong>A lead is not a race call.</strong> Current imports are provisional. V-Map does not declare winners from incomplete counts or a “100% precincts” label. Entries below identify reported vote leaders; source-held or tied races remain unavailable. Coverage is incomplete.</aside>
     <form class="directory-controls" id="directory-controls" aria-label="Filter and order candidates">
-      <label>Election year<select id="directory-year" disabled><option>Loading…</option></select></label>
-      <label>Office<select id="directory-office"><option value="">All offices</option><option value="president">President · state popular vote</option><option value="senate">U.S. Senate</option><option value="house">U.S. House</option><option value="governor">Governor</option></select></label>
-      <label>State<select id="directory-state"><option value="">All states</option></select></label>
-      <label>Party<select id="directory-party"><option value="">All parties</option><option value="Democrat">Democratic</option><option value="Republican">Republican</option><option value="Other">Other parties</option></select></label>
-      <label>Show<select id="directory-status"><option value="leaders">Reported leaders</option><option value="all">All imported races</option><option value="held">Held, tied or unavailable</option></select></label>
-      <label>Put in order<select id="directory-sort"><option value="office">Office, then state / district</option><option value="margin">Largest lead margin first</option><option value="share">Highest vote share first</option><option value="name">Candidate name A–Z</option></select></label>
-      <label class="directory-search">Find a candidate or place<input id="directory-search" type="search" placeholder="Candidate name, state or district" /></label>
+      <label>Election year<select id="directory-year" disabled><option value="2026">2026</option></select></label>
+      <label>Office<select id="directory-office" disabled><option value="">All offices</option><option value="president">President · state popular vote</option><option value="senate">U.S. Senate</option><option value="house">U.S. House</option><option value="governor">Governor</option></select></label>
+      <label>State<select id="directory-state" disabled><option value="">All states</option></select></label>
+      <label>Party<select id="directory-party" disabled><option value="">All parties</option><option value="Democrat">Democratic</option><option value="Republican">Republican</option><option value="Other">Other parties</option></select></label>
+      <label>Show<select id="directory-status" disabled><option value="leaders">Reported leaders</option><option value="all">All imported races</option><option value="held">Held, tied or unavailable</option></select></label>
+      <label>Put in order<select id="directory-sort" disabled><option value="office">Office, then state / district</option><option value="margin">Largest lead margin first</option><option value="share">Highest vote share first</option><option value="name">Candidate name A–Z</option></select></label>
+      <label class="directory-search">Find a candidate or place<input id="directory-search" type="search" disabled placeholder="Candidate name, state or district" /></label>
     </form>
-    <div class="directory-summary" id="directory-summary" role="status">Loading the election directory…</div>
+    <div class="directory-summary" id="directory-summary" role="status"><!--vmap:summary--></div>
     <p class="directory-scope" id="directory-scope">Statewide Governor and Senate races and full House district returns are listed once per contest. County portions are not treated as election-wide outcomes.</p>
     <div class="directory-results-heading"><h2 id="directory-heading" tabindex="-1">Ordered results</h2><p id="directory-order-note">Order: President, Senate, House, Governor; states A–Z; districts numerically.</p></div>
-    <ol id="candidate-results" class="candidate-results" aria-label="Ordered election candidates"></ol>
+    <ol id="candidate-results" class="candidate-results" aria-label="Ordered election candidates" data-prerender-year="2026" data-prerender-sha=""><!--vmap:candidates--></ol>
     <nav class="directory-pagination" aria-label="Candidate list pages"><button type="button" id="directory-previous" disabled>← Previous</button><span id="directory-page"></span><button type="button" id="directory-next" disabled>Next →</button></nav>
     <p id="directory-error" role="alert" hidden></p><button type="button" id="directory-retry" hidden>Retry loading results</button>
-    <noscript><p>Enable JavaScript to filter this directory, or download the <a href="%BASE_URL%data/winners/2026.json">2026 ordered candidate records</a>.</p></noscript>
+    <noscript><p>The full default 2026 reported-leader list is available on this page without JavaScript. Enable JavaScript for filters and historical years, or download the <a href="%BASE_URL%data/winners/2026.json">2026 ordered candidate records</a>.</p></noscript>
     <footer class="directory-footer"><a href="%BASE_URL%coverage/">Coverage & missing data</a><a href="%BASE_URL%methodology/">Source methodology</a><a href="https://github.com/ExJtac/v-map">Contribute a source</a><a href="%BASE_URL%">Back to the map</a></footer>
   </main>
   <script type="module" src="../src/winners.js"></script>

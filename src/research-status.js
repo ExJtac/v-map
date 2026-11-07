@@ -12,7 +12,7 @@ export function initResearchStatus() {
   function render() {
     banner.hidden=false;
     if (!status?.schedulerConfigured) {title.textContent='V-MAP AI-assisted election research';detail.textContent='Verified county data and review signals are published as they become available.';return;}
-    if(status.schedulerStatus==='PAUSED') {title.textContent='V-MAP research checks are paused';detail.textContent=`Verified election data remain available. ${status.lastVerifiedCheckAt?`Latest successful check: ${date(status.lastVerifiedCheckAt)} MT.`:''}${status.lastPublishedAt?` Latest publication: ${date(status.lastPublishedAt)} MT.`:''}`;banner.classList.add('research-delayed');return;}
+    if(status.schedulerStatus==='PAUSED') {title.textContent='V-MAP research continues with AI assistance';detail.textContent=`Manual research batches are reviewed before publication. Automatic five-minute updates are not running. Verified election data remain available. ${status.lastVerifiedCheckAt?`Latest successful check: ${date(status.lastVerifiedCheckAt)} MT.`:''}${status.lastPublishedAt?` Latest publication: ${date(status.lastPublishedAt)} MT.`:''}`;banner.classList.add('research-delayed');return;}
     const stale=!researchIsRecent(status);
     title.textContent=stale?'V-MAP Research update is delayed':'V-MAP Research is being updated every 5 minutes';
     banner.classList.toggle('research-delayed',stale);

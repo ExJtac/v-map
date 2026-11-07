@@ -1,61 +1,85 @@
-# Share V-Map
+# Share V-Map — draft launch copy
 
-V-Map is an open-source U.S. election-history map at [voteranomaly.com](https://voteranomaly.com/). Explore President, U.S. Senate, U.S. House and Governor returns by state and county, with source links, population references and available historical comparisons.
+Prepared November 6, 2026, Mountain time. **All copy below is DRAFT, ready for human review, and has not been sent or posted.** No campaign, subscription or automated outreach is running from this document. The advertising/new-tool budget is $0; staff time and existing hosting still have costs.
 
-2026 coverage is incomplete and provisional. Review borders identify changes worth checking; they do not establish fraud, an error or an election outcome. Candidate votes are not the same as actual ballots cast, resident population or eligible-voter turnout. Read the [methodology](https://voteranomaly.com/methodology/) and [coverage](https://voteranomaly.com/coverage/) before describing a result.
+V-Map is a free, open-source election-history explorer at [voteranomaly.com](https://voteranomaly.com/). Available features include state-to-county navigation, two-finger mobile map zoom with one-finger page scrolling, selected-place results, source links, historical graphs and an [ordered candidate directory](https://voteranomaly.com/winners/).
 
-## Short introduction
+**2026 coverage is incomplete and provisional.** Reported leaders are not confirmed winners. Review borders are prompts to check sources, not findings of fraud or error. Race votes, ballots cast, population and eligible-voter turnout are different measures. Read the [coverage](https://voteranomaly.com/coverage/) and [methodology](https://voteranomaly.com/methodology/) before describing a result. There is no 2026 presidential election; historical presidential directory entries are state popular-vote leaders, not national Electoral College outcomes.
 
-> Explore your county's election history with V-Map. Choose an office and year, inspect available returns and follow the original sources. Historical comparisons and provisional review signals show their limits. Free to explore, open source, and built for source checking: https://voteranomaly.com/
+## DRAFT short post 1 — mobile county demo
 
-## Short social post
+> V-Map is live. Explore available county election returns, check original sources and view historical graphs. On mobile, pinch with two fingers to zoom the map; swipe with one to scroll the page. 2026 data are partial and provisional. Free and open source: https://voteranomaly.com/
 
-> We’re building V-Map: a free, open-source map of U.S. election returns and historical county comparisons. Try your county, check the sources, and tell us where the data or interface needs work. 2026 coverage is partial and provisional. https://voteranomaly.com/
+Suggested off-site campaign link, after replacing `owned_social` with the actual platform:
 
-## Developer-community draft
+`https://voteranomaly.com/?utm_source=owned_social&utm_medium=organic_social&utm_campaign=vmap_launch_2026&utm_content=mobile_demo_01`
 
-Title: **Show HN: V-Map, an open-source county election-history explorer**
+## DRAFT short post 2 — ordered candidate directory
 
-> I’m building V-Map to make available state and county election returns easier to explore and verify. It covers President, Senate, House and Governor within a 2006–2026 window, with source attribution, population references and visible gaps. House county/district portions and Senate seat comparisons need particular care; unsupported comparisons stay unavailable.
+> Browse V-Map’s reported election leaders by office, state and district. Filter and sort vote counts, shares and lead margins; follow original sources. 2026 coverage is partial and provisional. Held races stay unavailable. https://voteranomaly.com/winners/
+
+Suggested off-site campaign link:
+
+`https://voteranomaly.com/winners/?utm_source=owned_social&utm_medium=organic_social&utm_campaign=vmap_launch_2026&utm_content=directory_demo_01`
+
+The November 6 snapshot has 330 provisional leader rows and eight held/unavailable rows in 338 imported 2026 contests. These are dated contest-row counts, not a complete winner census or verified person count. Recheck the page before using a number in a caption.
+
+## DRAFT 40-second mobile demonstration
+
+Storyboard only; no video was recorded by this document.
+
+| Time | Show | Caption / narration |
+| --- | --- | --- |
+| 0–5 seconds | V-Map's primary address and office/year controls | “Explore available election returns, with their sources.” |
+| 5–12 seconds | Select a state, then a county | Name the office, year, county and state being shown. |
+| 12–20 seconds | Pinch the map with two fingers, then make a separate one-finger page swipe | “Two fingers zoom the map. One finger scrolls the page.” |
+| 20–28 seconds | Selected-place results with status, source date and metric labels visible | “These are reported counts. Keep the denominator and provisional status in view.” |
+| 28–35 seconds | Open an original-source link, then show a qualified historical graph | “Follow the source. Compare only the supported years and scope.” |
+| 35–40 seconds | Return to the map or directory; show the primary address | “Try V-Map, share useful feedback, or contribute an authoritative source.” |
+
+DRAFT accompanying caption:
+
+> A short look at V-Map: office → state → county → reported results → original source → available history. Two fingers zoom the mobile map; one finger scrolls the page. The 2026 layer is incomplete and provisional. A review border does not establish why a change occurred. Explore: https://voteranomaly.com/
+
+Pick a supported route and verify the original source immediately before recording. A navigation example is `https://voteranomaly.com/?office=governor&year=2026&county=48479`; it is not a claim about that county. Keep axes, denominator, comparison year, source date and provisional/held labels visible. Do not crop them out or present an unavailable value as zero.
+
+## DRAFT human newsroom pitch
+
+Subject: **Open-source county election map — a source-checking walkthrough for [verified local beat]**
+
+> Hello [name],
 >
-> The app is usable without an account. I’d welcome feedback on the map interaction, accessibility, source reconciliation and statistical presentation. Review flags are exploratory prompts, not findings of wrongdoing. Code: https://github.com/ExJtac/v-map — tool: https://voteranomaly.com/
-
-Use this draft only if the human maker submits it and can participate in the discussion. Follow the [Show HN guidelines](https://news.ycombinator.com/showhn.html); do not turn the submission into a fundraiser or request coordinated votes.
-
-## Local community draft
-
-> I’m working on an open-source map that lets people inspect available county election returns and their sources. If sharing tools is allowed here, I’d appreciate feedback on how it handles our area and any authoritative sources we have missed. The current 2026 layer is incomplete and provisional, and a review flag is not evidence of fraud. Tool: https://voteranomaly.com/ — coverage: https://voteranomaly.com/coverage/
-
-Check the community's rules before posting; do not repeat this across many communities or imply moderator approval.
-
-## Individually reviewed newsroom pitch draft
-
-Subject: **Open-source county election map — source and usability feedback**
-
-> Hello,
+> I'm James, working on V-Map, a free, open-source tool for exploring available election returns and their original sources. I thought it might be useful for [one specific, verified reason relevant to this newsroom or beat].
 >
-> I’m building V-Map, a free, open-source tool for exploring available county election returns, source records and qualified historical comparisons. I’m reaching out because [one specific, verified reason this is relevant to this newsroom or reporter].
+> The map supports state/county navigation, selected-place results and qualified historical graphs. The candidate directory can be filtered by office and state/district. The 2026 imports are incomplete and provisional; the tool does not declare winners or treat a review flag as proof of an error.
 >
-> The tool is at https://voteranomaly.com/. Its methodology and coverage pages explain the provisional 2026 data, missing sources, seat/boundary constraints and distinction between candidate votes and ballots. Review flags are prompts for checking sources, not allegations or race calls.
+> A checked local example is [office/year/place, exact metric and source link]. Coverage and methodology are at https://voteranomaly.com/coverage/ and https://voteranomaly.com/methodology/.
 >
-> Would a short technical walkthrough or a reproducible local example be useful? We welcome corrections and authoritative missing sources through https://github.com/ExJtac/v-map/issues.
+> Would a short source-checking walkthrough be useful? We welcome factual corrections and authoritative missing sources through https://github.com/ExJtac/v-map/issues.
 >
 > James / V-Map
 
-Replace the bracketed reason with a real reason before use. This is a draft, not a record of a message sent or a relationship with a newsroom.
+This is a template, not a selected recipient, a sent message or a newsroom relationship. Replace every bracketed field with verified facts and review the actual recipient and wording before any send. Do not use private or confidential-tip channels to promote the app.
 
-## Caption for a county graph
+Optional off-site link for an individually reviewed pitch:
 
-> [County, state] · [Office] · [Election years]. [Describe the actual metric and its denominator.] Source: [original publisher and link], retrieved [date]. [Comparison/coverage limits]. Current-cycle counts are provisional where indicated. A large change or review border does not establish why it occurred.
+`https://voteranomaly.com/?utm_source=newsroom_demo&utm_medium=email&utm_campaign=vmap_launch_2026&utm_content=local_source_walkthrough_01`
 
-Do not fill those fields from memory or present an unavailable observation as zero. Include the full axis/legend and comparison year when sharing a graph. Do not crop away source or provisional labels. If the current app cannot restore a selected county from a shared URL, include the county, office and year in the text so readers can reproduce the view manually.
+## Share image and support wording
 
-## Support and contribute
+Use the existing [V-Map logo preview](https://voteranomaly.com/share/v-map-logo-v2.png), not the payment QR. Suggested alt text: “V-Map logo and voteranomaly.com website address.” Old message previews can remain cached. No new illustration or screenshot was created for this kit.
 
-**Support the research and platform.** Help verify public sources, fill coverage gaps and keep V-Map available to everyone: https://voteranomaly.com/#support.
+DRAFT optional support sentence:
 
-Support is optional. Do not describe it as a tax-deductible gift or claim a payment was received from a wallet click. The support page displays current payment options; share that page rather than an expiring Lightning invoice.
+> **Support the research and platform.** Help verify public sources, fill coverage gaps and keep V-Map available to everyone: https://voteranomaly.com/#support.
 
-Contribute code or a source-backed correction at [GitHub](https://github.com/ExJtac/v-map). A useful correction names the office, election year, county/district/seat, election stage and original authoritative source. Do not supply private voter information.
+Support is optional. Contributions do not change the same documented source and review standards applied to everyone. Do not imply tax deductibility, nonprofit status, endorsement, payment settlement or a guaranteed finding. A support click or copied wallet request is not a verified donation. Share the support page rather than an expiring Lightning invoice; recheck its displayed payment status on or after November 9.
 
-The V-Map logo/share illustration uses the existing project mark. Original application/art code is MIT licensed; source datasets and dependencies retain their own terms. Sharing this project does not imply any source publisher, community or newsroom endorses it.
+## Before a human publishes
+
+- Recheck the live route, original source, date, status and current feature behavior; keep unsupported observations unavailable.
+- Review the destination's current rules. Adapt to one relevant audience; do not mass-post, solicit coordinated votes or imply an endorsement. [Show HN rules](https://news.ycombinator.com/showhn.html), [Reddit community guidance](https://support.reddithelp.com/hc/en-us/articles/28012014962580-How-do-I-keep-spam-out-of-my-community), [IRE listserv policy](https://www.ire.org/resources/listservs/).
+- Use UTMs only on copied off-site distribution links. Replace generic sources with the actual platform; never put a recipient's identity, wallet data or inferred political preference in tracking parameters. Do not add UTMs to ordinary internal navigation.
+- Record the actual post/message URL, time and authorization after a send. Drafts remain drafts until then. Measure real visits and useful actions; no traffic or donation forecast is supplied here.
+
+Original application/art code is MIT licensed; source datasets retain their own terms. The app, this kit and a source citation do not imply a publisher, community or newsroom endorses V-Map.
