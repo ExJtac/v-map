@@ -1,0 +1,2333 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-07T06:59:25.815649+00:00",
+  "scope": "A dated 12-candidate source-verification pilot: six Republican and six Democratic subjects, two per party in each office. Selected original statements and related records are shown with known public-account links and explicit gaps. This is not a complete social, campaign or voting history.",
+  "methodology": "The same source and context standards apply to every party and any topic. Campaign wording, account publications, recorded votes, legislation and executive acts remain distinct. Original dates, qualifications, related prior-office actions and source limits are retained. A missing post or archive gap is not proof of deletion; election-night leads are not winner declarations. Readers can inspect the full sources and draw their own conclusions.",
+  "coverage": {
+    "statements": 17,
+    "actions": 10,
+    "accounts": 63,
+    "archives": 21,
+    "subjects": 12,
+    "postElectionStatements": 4,
+    "authenticatedDeletedPosts": 0
+  },
+  "review": {
+    "status": "source_reviewed",
+    "reviewers": [
+      "Independent AI-assisted original-source review",
+      "Integration review"
+    ],
+    "scope": "Selected factual records and links only; no promise or priority verdicts.",
+    "inputHashes": {
+      "republican": "6d0be9cdf2b2d80efcbd67658a50f14c8c5fada660c3d805aeb48d92ba3ab0e7",
+      "democrat": "00ade6bdccb9aa89664b195317fd8279a939d95d7a71673d5a16f4e8167b8770"
+    },
+    "reviewReceiptSha256": "294937decad17b31fcfc196b78ea6190ce7904fbb49e9bea54097038e8205b29"
+  },
+  "subjects": [
+    {
+      "name": "Barry Moore",
+      "identity": {
+        "status": "confirmed",
+        "evidenceUrls": [
+          "https://barrymoore.house.gov/about",
+          "https://barrymooreforalabama.com/issues/"
+        ],
+        "notes": "Public person matched across the cited official public identity source and candidate campaign source. This is not outcome qualification or authentication of every campaign claim."
+      },
+      "outcome": {
+        "status": "reported_leader",
+        "sourceUrls": [
+          "https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001305"
+        ],
+        "note": "Preserved frozen-roster provisional status; no proper dated official named winner declaration/certification obtained or promoted by this verification pass."
+      },
+      "statements": [
+        {
+          "id": "moore-campaign-01",
+          "date": null,
+          "dateBasis": "No visible original date for this exact campaign wording. Retrieval time and archive capture are not substituted for publication time.",
+          "phase": "campaign",
+          "attribution": "Barry Moore for U.S. Senate; campaign-published text; individual speech or composition not authenticated",
+          "quote": "In the Senate, Barry will be a champion for border security and immigration enforcement.",
+          "context": "The campaign’s immigration section links future Senate advocacy with a description of prior House legislation and specific enforcement proposals. This excerpt is campaign-published wording, not an authenticated personal speech. The date of this exact wording is unknown.",
+          "sourceUrl": "https://barrymooreforalabama.com/issues/",
+          "fullSourceUrl": "https://barrymooreforalabama.com/issues/",
+          "locator": "Border Security and Immigration section; future Senate sentence; neighboring retrospective H.R.1 paragraph",
+          "verified": true,
+          "verificationScope": "Verified as wording/context on the original campaign publication; not verification of underlying campaign factual claims, individual authorship or a dated prior pledge.",
+          "limits": [
+            "Prospective Senate support plus retrospective House record claim; no objective target, deadline or appropriation condition specified in the quoted commitment.",
+            "A Senator can introduce, sponsor, amend and vote on federal legislation and appropriations; passage, implementation and removals require other institutions and legal processes.",
+            "The retained excerpt is 25 words or fewer; the full original source is linked. No campaign claim is scored as true/false or kept/broken.",
+            "An archive response carries WordPress page metadata dated August2025; metadata does not establish when this exact sentence was first written or spoken."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "moore-official-action-01",
+          "date": "2025-07-03",
+          "type": "recorded_vote",
+          "recordId": "house-2025-190",
+          "billId": "119-hr-1",
+          "title": "House vote on Senate amendment to H.R.1",
+          "description": "On July 3, 2025, the House Clerk records Moore (AL) voting Aye on the motion to concur in the Senate amendment to H.R.1. The motion passed 218–214.",
+          "sourceUrl": "https://clerk.house.gov/Votes/2025190?BillNum=h.r.1&RollCallNum=190",
+          "relatedStatementIds": [
+            "moore-campaign-01"
+          ],
+          "relationship": "not_yet_assessable",
+          "officeAtTime": "U.S. House member, Alabama; prior to any prospective Senate term.",
+          "question": "On Motion to Concur in the Senate Amendment",
+          "stage": "House concurrence in Senate amendment",
+          "verified": true,
+          "limits": [
+            "The House agreed to the Senate amendment to H.R.1. This is an agreement vote on a legislative package, not personal execution of border enforcement or proof of its practical outcomes.",
+            "A specific vote/action is not a complete policy record, enacted implementation, measured outcome, overall priority finding or promise verdict.",
+            "Chronology with an undated campaign page remains unestablished.",
+            "Office at the time: U.S. House member, Alabama; prior to any prospective Senate term.",
+            "Vote question: On Motion to Concur in the Senate Amendment",
+            "Legislative stage: House concurrence in Senate amendment"
+          ]
+        }
+      ],
+      "accounts": [
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/RepBarryMoore/",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "https://barrymoore.house.gov/about"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/repbarrymoore",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "https://barrymoore.house.gov/about"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "X",
+          "url": "https://x.com/repbarrymoore",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "https://barrymoore.house.gov/about"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "empty_reader",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/BarryMooreforSenate",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261104193816/https://barrymooreforalabama.com/issues/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "throttled",
+          "aliases": [],
+          "notes": "Linked by an inspected archived campaign page at its capture date; current control not independently verified. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "YouTube",
+          "url": "https://www.youtube.com/@barrymooreforcongress",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261104193816/https://barrymooreforalabama.com/issues/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by an inspected archived campaign page at its capture date; current control not independently verified. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "YouTube",
+          "url": "https://www.youtube.com/@barrymooreforsenate",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261104193816/https://barrymooreforalabama.com/issues/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by an inspected archived campaign page at its capture date; current control not independently verified. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "X",
+          "url": "https://x.com/BMooreSenate",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261104193816/https://barrymooreforalabama.com/issues/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "unavailable",
+          "aliases": [],
+          "notes": "Linked by an inspected archived campaign page at its capture date; current control not independently verified. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        }
+      ],
+      "archives": [
+        {
+          "originalUrl": "https://barrymooreforalabama.com/issues/",
+          "archiveUrl": "http://web.archive.org/web/20261104193816/https://barrymooreforalabama.com/issues/",
+          "captureDate": "2026-11-04T19:38:16+00:00",
+          "contentReviewed": true,
+          "deletionStatus": "not_established",
+          "notes": [
+            "Inspected the exact retained campaign excerpt in readable replay text; exact normalized match found.",
+            "Capture timestamp is separate from unknown original publication date.",
+            "Embedded media, full thread, outbound links and live/capture mixing not authenticated; no deleted-content finding."
+          ]
+        }
+      ],
+      "id": "pilot-r-senate-01",
+      "party": "Republican",
+      "office": "senate",
+      "state": "Alabama",
+      "district": null,
+      "recordLinks": [],
+      "coverage": {
+        "cutoff": "2026-11-06",
+        "timezone": "America/Denver",
+        "checkedPlatforms": [
+          "X",
+          "Facebook"
+        ],
+        "postElectionSearch": "No original statement dated after election day was verified in this bounded review. This is a coverage gap, not a finding that none exists. Search window: 2026-11-04 through 2026-11-06. Public campaign-domain, name/date and known-handle/date web searches; original profile access attempted; third-party snippets/mirrors not promoted to original evidence.",
+        "archiveSearch": "1 archived URL/capture record(s) inspected or checked. Capture dates do not establish original publication dates or author deletion. This is not a complete archive or social-post census. No sourced exact missing/deleted post URL qualified for claim-level authentication; no deletion conclusion.",
+        "limits": "Stopped additional social/network research after Facebook throttling/temporary-block responses. No alternate-access retry, login bypass or archive save. Not an exhaustive two-year social history, campaign history, post-election inventory or complete voting record. No complete defined activity window/denominator supports priority-shift analysis. Activity on another issue does not alone contradict a pledge. No full official voting/action directory was inspected beyond selected roll calls; no broader directory URL guessed. Only listed profile attempts/access receipts and primary-link inventory. Instagram/YouTube links were inventoried where present, not their post histories. Public personal accounts not inferred from badges or names."
+      },
+      "publicationNotes": [
+        "These selected, source-checked records are not a complete promise inventory or governing record. No fulfillment, reversal, honesty or overall-priority rating is assigned.",
+        "Campaign publications and account posts are attributed to the cited source; personal speech or composition is not assumed. Unknown chronology and prospective-term limits remain visible."
+      ],
+      "review": {
+        "status": "source_reviewed",
+        "scope": "Selected original-source facts and context only; incomplete lanes remain explicitly unassessed."
+      }
+    },
+    {
+      "name": "Mary Peltola",
+      "identity": {
+        "status": "confirmed",
+        "evidenceUrls": [
+          "https://www.elections.alaska.gov/candidates/?election=26GENR",
+          "https://www.fec.gov/data/candidate/S6AK00276/?cycle=2026&election_full=true",
+          "https://marypeltola.com/press/releases/mary-peltola-announces-policy-plan-to-take-action-on-alaskas-affordability-crisis/"
+        ],
+        "notes": "Identity supported by official person/candidacy sources and the published campaign page. Prior FEC/member sources identify the person and office; they do not declare this election winner."
+      },
+      "outcome": {
+        "status": "reported_leader",
+        "sourceUrls": [
+          "https://www.elections.alaska.gov/enr/26GENR/results/GA_ENR_Precinct_State_of_Alaska.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ak.csv"
+        ],
+        "note": "Frozen provisional roster status preserved. Candidacy, current office, prepared speeches, social assertions, campaign victory forecasts and media calls do not qualify an official named election outcome."
+      },
+      "statements": [
+        {
+          "id": "pilot-d-senate-02-campaign-1",
+          "date": "2026-05-11",
+          "dateBasis": "Displayed campaign release publication date",
+          "phase": "campaign",
+          "attribution": "Campaign website publication attributed to Mary Peltola’s campaign; not proof of personal composition or authenticated spoken delivery.",
+          "quote": "Eliminate federal income tax entirely for working Alaskans earning less than $92,000 per year",
+          "context": "The dated affordability plan presents this tax proposal alongside energy, childcare, shipping and competition measures. It is a campaign policy bullet, not a personally authenticated speech excerpt or a verified description of existing law.",
+          "sourceUrl": "https://marypeltola.com/press/releases/mary-peltola-announces-policy-plan-to-take-action-on-alaskas-affordability-crisis/",
+          "fullSourceUrl": "https://marypeltola.com/press/releases/mary-peltola-announces-policy-plan-to-take-action-on-alaskas-affordability-crisis/",
+          "locator": "Key points → Lower Taxes, Higher Wages; original release lines 40–53",
+          "verified": true,
+          "sourceReviewed": true,
+          "personallyAuthoredOrDeliveredVerified": false,
+          "conditions": "Working Alaskans earning less than $92,000 per year; definition of earnings, filing status, phaseout and implementation details are not specified in this selected excerpt. The release frames action as service in the U.S. Senate.",
+          "deadline": null,
+          "officeAuthority": "A senator can propose, sponsor and vote on legislation; cannot individually change federal income-tax law. Passage and implementation depend on the constitutional legislative process.",
+          "limits": [
+            "Verified as published campaign wording, not an independent finding about the underlying claims.",
+            "No whole-platform promise, credibility, policy-reversal or priority verdict.",
+            "Publication chronology is unresolved where date is unknown.",
+            "Conditions: Working Alaskans earning less than $92,000 per year; definition of earnings, filing status, phaseout and implementation details are not specified in this selected excerpt. The release frames action as service in the U.S. Senate.",
+            "Office authority: A senator can propose, sponsor and vote on legislation; cannot individually change federal income-tax law. Passage and implementation depend on the constitutional legislative process.",
+            "No explicit deadline is stated in the selected passage."
+          ]
+        },
+        {
+          "id": "pilot-d-senate-02-native-post-1",
+          "date": "2026-11-06T21:52:55.413Z",
+          "dateBasis": "Original public AT Protocol record createdAt; indexing timestamp retained separately.",
+          "phase": "after_election",
+          "attribution": "Text published by the primary-linked marypeltola.com Bluesky account; personal composition is not authenticated.",
+          "quote": "Every ballot will be counted fairly and accurately, and that takes time.",
+          "context": "Account text says ballots remain under count and expresses confidence about the eventual outcome. The confidence statement is a campaign position, not an official winner declaration. An external link card was present; its destination/content was not verified.",
+          "sourceUrl": "https://bsky.app/profile/marypeltola.com/post/3mzoelbl3d725",
+          "fullSourceUrl": "https://bsky.app/profile/marypeltola.com/post/3mzoelbl3d725",
+          "locator": "at://did:plc:ide2vqngbg3noiesdeskb2er/app.bsky.feed.post/3mzoelbl3d725",
+          "verified": true,
+          "sourceReviewed": true,
+          "personallyAuthoredOrDeliveredVerified": false,
+          "nativePost": {
+            "did": "did:plc:ide2vqngbg3noiesdeskb2er",
+            "uri": "at://did:plc:ide2vqngbg3noiesdeskb2er/app.bsky.feed.post/3mzoelbl3d725",
+            "cid": "bafyreibkyvhm7jdemrqrcgphy2xf2zi27qozvzlijmupcgs3wto4u5ubuy",
+            "createdAt": "2026-11-06T21:52:55.413Z",
+            "indexedAt": "2026-11-06T21:52:57.488Z",
+            "isReply": false,
+            "parentContext": "No reply parent in returned record. Descendant replies were not collected.",
+            "isQuotePost": false,
+            "embedType": "app.bsky.embed.external#view",
+            "feedRepostWrapper": "Not retained; no claim about feed repost wrappers. Original post author DID/URI preserved.",
+            "audiovisualOrExternalContentReviewed": false
+          },
+          "limits": [
+            "Only accessible original post text and record metadata reviewed.",
+            "Two public feed items requested, not a full account history or edit/deletion history.",
+            "Not an official election-outcome or term-status source."
+          ],
+          "retrievalApiUrl": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=marypeltola.com&limit=2&filter=posts_no_replies"
+        }
+      ],
+      "actions": [],
+      "accounts": [
+        {
+          "platform": "Bluesky",
+          "url": "https://bsky.app/profile/marypeltola.com",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261106222056/https://marypeltola.com/",
+            "https://marypeltola.com/press/releases/mary-peltola-announces-policy-plan-to-take-action-on-alaskas-affordability-crisis/",
+            "https://marypeltola.com/press/releases/mary-peltola-launches-campaign-to-serve-as-alaskas-voice-in-the-united-states-senate/",
+            "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=marypeltola.com&limit=2&filter=posts_no_replies"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "public_api_text_accessible",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim. API author handle/DID matched the primary-linked profile. This attributes text to the account, not personal composition. No login or restriction bypass."
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/marypeltola",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261106222056/https://marypeltola.com/",
+            "https://marypeltola.com/press/releases/mary-peltola-announces-policy-plan-to-take-action-on-alaskas-affordability-crisis/",
+            "https://marypeltola.com/press/releases/mary-peltola-launches-campaign-to-serve-as-alaskas-voice-in-the-united-states-senate/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim."
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/marypeltola/",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261106222056/https://marypeltola.com/",
+            "https://marypeltola.com/press/releases/mary-peltola-announces-policy-plan-to-take-action-on-alaskas-affordability-crisis/",
+            "https://marypeltola.com/press/releases/mary-peltola-launches-campaign-to-serve-as-alaskas-voice-in-the-united-states-senate/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim."
+        },
+        {
+          "platform": "TikTok",
+          "url": "https://www.tiktok.com/@mary_peltola",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261106222056/https://marypeltola.com/",
+            "https://marypeltola.com/press/releases/mary-peltola-announces-policy-plan-to-take-action-on-alaskas-affordability-crisis/",
+            "https://marypeltola.com/press/releases/mary-peltola-launches-campaign-to-serve-as-alaskas-voice-in-the-united-states-senate/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim."
+        },
+        {
+          "platform": "X",
+          "url": "https://x.com/MaryPeltola",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261106222056/https://marypeltola.com/",
+            "https://marypeltola.com/press/releases/mary-peltola-announces-policy-plan-to-take-action-on-alaskas-affordability-crisis/",
+            "https://marypeltola.com/press/releases/mary-peltola-launches-campaign-to-serve-as-alaskas-voice-in-the-united-states-senate/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "forbidden",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim. X/twitter URL variants may refer to one handle; not counted as distinct people. Account staff composition is unknown."
+        }
+      ],
+      "archives": [
+        {
+          "originalUrl": "https://marypeltola.com/",
+          "archiveUrl": "http://web.archive.org/web/20261106222056/https://marypeltola.com/",
+          "captureDate": "2026-11-06T22:20:56+00:00",
+          "contentReviewed": true,
+          "deletionStatus": "not_established",
+          "notes": "Visible replay shows campaign branding, a Senate-campaign appeal, policy navigation, campaign disclaimer and outgoing public social links. No archived social post body was reviewed. Actual replay HTML, Wayback toolbar/wombat markers and matching Memento header were inspected. Only visible text/links were reviewed; images, audio, scripts, forms and embedded social/live resources were not verified as contemporaneous. Capture time is not the original publication time.",
+          "contentScope": "homepage visible text and outgoing links only",
+          "receiptSha256": "c1bf910d48132d3a7723cf68f65880b0b5b34bad859c97f0424982b2ba951bac"
+        },
+        {
+          "originalUrl": "https://x.com/MaryPeltola",
+          "archiveUrl": "http://web.archive.org/web/20261104195808/https://x.com/marypeltola",
+          "captureDate": "2026-11-04T19:58:08+00:00",
+          "contentReviewed": false,
+          "deletionStatus": "not_established",
+          "notes": "One exact known-account URL availability check returned capture metadata. That social-profile replay was not opened. No exact missing post was authenticated, and missing/forbidden live content is not evidence of deletion."
+        }
+      ],
+      "id": "pilot-d-senate-02",
+      "party": "Democrat",
+      "office": "senate",
+      "state": "Alaska",
+      "district": null,
+      "recordLinks": [],
+      "coverage": {
+        "cutoff": "2026-11-07T06:53:05.764811+00:00",
+        "timezone": "America/Denver",
+        "checkedPlatforms": [
+          "Bluesky",
+          "Facebook",
+          "Instagram",
+          "TikTok",
+          "X"
+        ],
+        "postElectionSearch": "1 original statement(s) dated after election day verified in this review. Native feed selection was limited to 2 records. X forbidden profiles were not retried, bypassed or treated as deletion. Campaign webpages remain campaign-attributed where social body unavailable.",
+        "archiveSearch": "2 archived URL/capture record(s) inspected or checked. Capture dates do not establish original publication dates or author deletion. This is not a complete archive or social-post census. 1 known social-account URL availability check(s); social-profile replay content was not verified.",
+        "limits": "Topic-agnostic bounded examples, not all statements, votes or posts. Known primary links are not a complete official/campaign/personal account census; no verified public-personal account expansion in this pass. Parent/thread context: selected native records have no reply parent; descendant replies and full media/external sources were not reviewed. Introduced proposals, cosponsorship and signed orders have distinct procedural meanings; no roll-call vote selected here. Inventory of primary-linked platforms; bodies were not opened on every listed platform. Actual access attempts are in receipts."
+      },
+      "publicationNotes": [
+        "These selected, source-checked records are not a complete promise inventory or governing record. No fulfillment, reversal, honesty or overall-priority rating is assigned.",
+        "Campaign publications and account posts are attributed to the cited source; personal speech or composition is not assumed. Unknown chronology and prospective-term limits remain visible."
+      ],
+      "review": {
+        "status": "source_reviewed",
+        "scope": "Selected original-source facts and context only; incomplete lanes remain explicitly unassessed."
+      }
+    },
+    {
+      "name": "Tom Cotton",
+      "identity": {
+        "status": "confirmed",
+        "evidenceUrls": [
+          "https://www.cotton.senate.gov/about-tom/",
+          "https://tomcotton.com/issues/"
+        ],
+        "notes": "Public person matched across the cited official public identity source and candidate campaign source. This is not outcome qualification or authentication of every campaign claim."
+      },
+      "outcome": {
+        "status": "reported_leader",
+        "sourceUrls": [
+          "https://arkansas.tally-enr.com/",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ar.csv"
+        ],
+        "note": "Preserved frozen-roster provisional status; no proper dated official named winner declaration/certification obtained or promoted by this verification pass."
+      },
+      "statements": [
+        {
+          "id": "cotton-campaign-01",
+          "date": null,
+          "dateBasis": "No visible original date for this exact campaign wording. Retrieval time and archive capture are not substituted for publication time.",
+          "phase": "campaign",
+          "attribution": "Cotton for Senate; campaign-published text; individual speech or composition not authenticated",
+          "quote": "His position is simple: the right amount of illegal immigration is zero",
+          "context": "The campaign gives an immigration policy goal alongside descriptions of earlier border and legal-immigration positions, including a Laken Riley Act vote. It does not give a completion deadline or an individual guarantee of an outcome.",
+          "sourceUrl": "https://tomcotton.com/issues/",
+          "fullSourceUrl": "https://tomcotton.com/issues/",
+          "locator": "Immigration & Our Sovereignty section; policy-goal sentence after RAISE Act discussion",
+          "verified": true,
+          "verificationScope": "Verified as wording/context on the original campaign publication; not verification of underlying campaign factual claims, individual authorship or a dated prior pledge.",
+          "limits": [
+            "Ongoing position; no explicit completion date, metric or promise to achieve the goal unilaterally.",
+            "A Senator votes on legislation and funding. Federal agencies and courts administer immigration law; one vote cannot establish all real-world outcomes.",
+            "The retained excerpt is 25 words or fewer; the full original source is linked. No campaign claim is scored as true/false or kept/broken."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "cotton-official-action-01",
+          "date": "2025-01-20",
+          "type": "recorded_vote",
+          "recordId": "senate-2025-7",
+          "billId": "119-s-5",
+          "title": "Senate passage vote on S.5 as amended",
+          "description": "On January 20, 2025, the Senate records Cotton (R-AR) voting Yea on passage of S.5 as amended. The bill passed this Senate vote 64–35.",
+          "sourceUrl": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.htm",
+          "relatedStatementIds": [
+            "cotton-campaign-01"
+          ],
+          "relationship": "related",
+          "officeAtTime": "U.S. Senator, Arkansas.",
+          "question": "On Passage of the Bill (S. 5, As Amended)",
+          "stage": "Senate passage as amended",
+          "verified": true,
+          "limits": [
+            "A Senate passage vote on S.5 as amended, distinct from cloture, final enactment, appropriations and implementation. The page identifies a custody-related measure; this record alone does not prove deportation outcomes.",
+            "A specific vote/action is not a complete policy record, enacted implementation, measured outcome, overall priority finding or promise verdict.",
+            "Chronology with an undated campaign page remains unestablished.",
+            "Office at the time: U.S. Senator, Arkansas.",
+            "Vote question: On Passage of the Bill (S. 5, As Amended)",
+            "Legislative stage: Senate passage as amended"
+          ]
+        }
+      ],
+      "accounts": [
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/SenatorTomCotton",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "https://www.cotton.senate.gov/about-tom/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "YouTube",
+          "url": "https://www.youtube.com/channel/UCxrZsasJfxOVUEOnhed5doA",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "https://www.cotton.senate.gov/about-tom/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "X",
+          "url": "https://x.com/SenTomCotton",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "https://www.cotton.senate.gov/about-tom/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "unavailable",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/TomCottonAR/",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261107054113/https://tomcotton.com/issues/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "temporary_block_page",
+          "aliases": [],
+          "notes": "Linked by an inspected archived campaign page at its capture date; current control not independently verified. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/tomcottonar/",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261107054113/https://tomcotton.com/issues/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by an inspected archived campaign page at its capture date; current control not independently verified. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "YouTube",
+          "url": "https://www.youtube.com/channel/UCVhTgeGOPys80LYsNwAxyUQ",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261107054113/https://tomcotton.com/issues/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by an inspected archived campaign page at its capture date; current control not independently verified. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "X",
+          "url": "https://x.com/TomCottonAR",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261107054113/https://tomcotton.com/issues/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "unavailable",
+          "aliases": [],
+          "notes": "Linked by an inspected archived campaign page at its capture date; current control not independently verified. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        }
+      ],
+      "archives": [
+        {
+          "originalUrl": "https://tomcotton.com/issues/",
+          "archiveUrl": "http://web.archive.org/web/20261107054113/https://tomcotton.com/issues/",
+          "captureDate": "2026-11-07T05:41:13+00:00",
+          "contentReviewed": true,
+          "deletionStatus": "not_established",
+          "notes": [
+            "Inspected the exact retained campaign excerpt in readable replay text; exact normalized match found.",
+            "Capture timestamp is separate from unknown original publication date.",
+            "Embedded media, full thread, outbound links and live/capture mixing not authenticated; no deleted-content finding."
+          ]
+        }
+      ],
+      "id": "pilot-r-senate-05",
+      "party": "Republican",
+      "office": "senate",
+      "state": "Arkansas",
+      "district": null,
+      "recordLinks": [],
+      "coverage": {
+        "cutoff": "2026-11-06",
+        "timezone": "America/Denver",
+        "checkedPlatforms": [
+          "X",
+          "Facebook"
+        ],
+        "postElectionSearch": "No original statement dated after election day was verified in this bounded review. This is a coverage gap, not a finding that none exists. Search window: 2026-11-04 through 2026-11-06. Public campaign-domain, name/date and known-handle/date web searches; original profile access attempted; third-party snippets/mirrors not promoted to original evidence.",
+        "archiveSearch": "1 archived URL/capture record(s) inspected or checked. Capture dates do not establish original publication dates or author deletion. This is not a complete archive or social-post census. No sourced exact missing/deleted post URL qualified for claim-level authentication; no deletion conclusion.",
+        "limits": "Stopped additional social/network research after Facebook throttling/temporary-block responses. No alternate-access retry, login bypass or archive save. Not an exhaustive two-year social history, campaign history, post-election inventory or complete voting record. No complete defined activity window/denominator supports priority-shift analysis. Activity on another issue does not alone contradict a pledge. No full official voting/action directory was inspected beyond selected roll calls; no broader directory URL guessed. Only listed profile attempts/access receipts and primary-link inventory. Instagram/YouTube links were inventoried where present, not their post histories. Public personal accounts not inferred from badges or names."
+      },
+      "publicationNotes": [
+        "These selected, source-checked records are not a complete promise inventory or governing record. No fulfillment, reversal, honesty or overall-priority rating is assigned.",
+        "Campaign publications and account posts are attributed to the cited source; personal speech or composition is not assumed. Unknown chronology and prospective-term limits remain visible."
+      ],
+      "review": {
+        "status": "source_reviewed",
+        "scope": "Selected original-source facts and context only; incomplete lanes remain explicitly unassessed."
+      }
+    },
+    {
+      "name": "John W. Hickenlooper",
+      "identity": {
+        "status": "confirmed",
+        "evidenceUrls": [
+          "https://www.fec.gov/data/candidate/S0CO00575/?cycle=2026&election_full=true",
+          "https://www.hickenlooper.senate.gov/about/",
+          "https://hickenlooper.com/issues/"
+        ],
+        "notes": "Identity supported by official person/candidacy sources and the published campaign page. Prior FEC/member sources identify the person and office; they do not declare this election winner."
+      },
+      "outcome": {
+        "status": "reported_leader",
+        "sourceUrls": [
+          "https://results.enr.clarityelections.com/CO/127407/",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/co.csv"
+        ],
+        "note": "Frozen provisional roster status preserved. Candidacy, current office, prepared speeches, social assertions, campaign victory forecasts and media calls do not qualify an official named election outcome."
+      },
+      "statements": [
+        {
+          "id": "pilot-d-senate-08-campaign-1",
+          "date": null,
+          "dateBasis": "No publication date displayed; date unknown. Observed at retrieval only.",
+          "phase": "campaign",
+          "attribution": "Campaign website publication attributed to John W. Hickenlooper’s campaign; not proof of personal composition or authenticated spoken delivery.",
+          "quote": "In the Senate, he co-sponsors the PRO Act to strengthen workers’ rights",
+          "context": "The campaign’s Investing in American Workers section describes union support and cosponsorship, followed by desired wage, benefit and working-condition outcomes. The selected wording asserts a legislative step; it does not assert enactment or guarantee these outcomes.",
+          "sourceUrl": "https://hickenlooper.com/issues/",
+          "fullSourceUrl": "https://hickenlooper.com/issues/",
+          "locator": "Create an Economy That Works for Everyone → Investing in American Workers",
+          "verified": true,
+          "sourceReviewed": true,
+          "personallyAuthoredOrDeliveredVerified": false,
+          "conditions": "No express measurable deadline or guarantee in the selected statement. The page is undated, so its posting chronology relative to the action is unresolved.",
+          "deadline": null,
+          "officeAuthority": "A senator may cosponsor and vote on a bill; cosponsorship is support for a proposal and does not itself amend labor law or determine negotiated wages.",
+          "limits": [
+            "Verified as published campaign wording, not an independent finding about the underlying claims.",
+            "No whole-platform promise, credibility, policy-reversal or priority verdict.",
+            "Publication chronology is unresolved where date is unknown.",
+            "Conditions: No express measurable deadline or guarantee in the selected statement. The page is undated, so its posting chronology relative to the action is unresolved.",
+            "Office authority: A senator may cosponsor and vote on a bill; cosponsorship is support for a proposal and does not itself amend labor law or determine negotiated wages.",
+            "No explicit deadline is stated in the selected passage."
+          ]
+        },
+        {
+          "id": "pilot-d-senate-08-native-post-1",
+          "date": "2026-11-04T21:12:58.389Z",
+          "dateBasis": "Original public AT Protocol record createdAt; indexing timestamp retained separately.",
+          "phase": "after_election",
+          "attribution": "Text published by the primary-linked hickenlooper.senate.gov Bluesky account; personal composition is not authenticated.",
+          "quote": "We’re fired up to deliver for Coloradans",
+          "context": "The complete accessible text lists healthcare-price transparency, forest policy, data-center costs, the Iran war and reducing costs. This one post is not an activity denominator or proof that any campaign priority was abandoned. No media embed is present on this selected post.",
+          "sourceUrl": "https://bsky.app/profile/hickenlooper.senate.gov/post/3mzjbfyodi22z",
+          "fullSourceUrl": "https://bsky.app/profile/hickenlooper.senate.gov/post/3mzjbfyodi22z",
+          "locator": "at://did:plc:wgy2pchnptmdldcsyhmfgs5i/app.bsky.feed.post/3mzjbfyodi22z",
+          "verified": true,
+          "sourceReviewed": true,
+          "personallyAuthoredOrDeliveredVerified": false,
+          "nativePost": {
+            "did": "did:plc:wgy2pchnptmdldcsyhmfgs5i",
+            "uri": "at://did:plc:wgy2pchnptmdldcsyhmfgs5i/app.bsky.feed.post/3mzjbfyodi22z",
+            "cid": "bafyreiffw6umq37yk2gxcupg5bzcxcqhapnmlbitx4ltaylqog2mr6aiji",
+            "createdAt": "2026-11-04T21:12:58.389Z",
+            "indexedAt": "2026-11-04T21:12:58.582Z",
+            "isReply": false,
+            "parentContext": "No reply parent in returned record. Descendant replies were not collected.",
+            "isQuotePost": false,
+            "embedType": null,
+            "feedRepostWrapper": "Not retained; no claim about feed repost wrappers. Original post author DID/URI preserved.",
+            "audiovisualOrExternalContentReviewed": false
+          },
+          "limits": [
+            "Only accessible original post text and record metadata reviewed.",
+            "Two public feed items requested, not a full account history or edit/deletion history.",
+            "Not an official election-outcome or term-status source."
+          ],
+          "retrievalApiUrl": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=hickenlooper.senate.gov&limit=2&filter=posts_no_replies"
+        }
+      ],
+      "actions": [
+        {
+          "id": "pilot-d-senate-08-action-1",
+          "date": "2025-03-05",
+          "type": "introduced_bill_cosponsorship",
+          "recordId": "119th Congress S.852, introduced Senate (IS)",
+          "title": "S. 852 (IS) — Richard L. Trumka Protecting the Right to Organize Act of 2025",
+          "description": "GovInfo’s introduced-version metadata lists John W. Hickenlooper among cosponsors. Sanders introduced the bill; it was read twice and referred to the Senate HELP Committee.",
+          "sourceUrl": "https://www.govinfo.gov/app/details/BILLS-119s852is",
+          "relatedStatementIds": [
+            "pilot-d-senate-08-campaign-1"
+          ],
+          "relationship": "supports_narrow_claim",
+          "phase": "prior_record",
+          "limits": [
+            "No final passage, enactment, implementation, wage/benefit effect or complete current legislative status is established by this introduced-version record.",
+            "Where the campaign page is undated, this record is prior legislative history; it is not established as later fulfillment."
+          ],
+          "scopeException": null,
+          "verified": true
+        }
+      ],
+      "accounts": [
+        {
+          "platform": "Bluesky",
+          "url": "https://bsky.app/profile/hickenlooper.senate.gov",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261105055701/https://www.hickenlooper.senate.gov/",
+            "https://www.hickenlooper.senate.gov/about/",
+            "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=hickenlooper.senate.gov&limit=2&filter=posts_no_replies"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "public_api_text_accessible",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim. API author handle/DID matched the primary-linked profile. This attributes text to the account, not personal composition. No login or restriction bypass."
+        },
+        {
+          "platform": "TikTok",
+          "url": "https://tiktok.com/@senatorhick",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261105055701/https://www.hickenlooper.senate.gov/",
+            "https://www.hickenlooper.senate.gov/about/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim."
+        },
+        {
+          "platform": "X",
+          "url": "https://twitter.com/senatorhick",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261105055701/https://www.hickenlooper.senate.gov/",
+            "https://www.hickenlooper.senate.gov/about/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim. X/twitter URL variants may refer to one handle; not counted as distinct people. Account staff composition is unknown."
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/SenatorHick",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261105055701/https://www.hickenlooper.senate.gov/",
+            "https://www.hickenlooper.senate.gov/about/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim."
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/senatorhick/",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261105055701/https://www.hickenlooper.senate.gov/",
+            "https://www.hickenlooper.senate.gov/about/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim."
+        },
+        {
+          "platform": "YouTube",
+          "url": "https://www.youtube.com/channel/UCU6pcq-AZA9wnmIPBj6ePwQ",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261105055701/https://www.hickenlooper.senate.gov/",
+            "https://www.hickenlooper.senate.gov/about/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim."
+        },
+        {
+          "platform": "YouTube",
+          "url": "https://www.youtube.com/channel/UC82O0Byp_ny13O0LkO1UpUg",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "https://hickenlooper.com/issues/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": ""
+        }
+      ],
+      "archives": [
+        {
+          "originalUrl": "https://www.hickenlooper.senate.gov/",
+          "archiveUrl": "http://web.archive.org/web/20261105055701/https://www.hickenlooper.senate.gov/",
+          "captureDate": "2026-11-05T05:57:01+00:00",
+          "contentReviewed": true,
+          "deletionStatus": "not_established",
+          "notes": "Visible replay shows official Senate constituent services, dated news teasers and outgoing official social links. It is a homepage snapshot, not proof of the underlying articles, videos or every historical account post. Actual replay HTML, Wayback toolbar/wombat markers and matching Memento header were inspected. Only visible text/links were reviewed; images, audio, scripts, forms and embedded social/live resources were not verified as contemporaneous. Capture time is not the original publication time.",
+          "contentScope": "homepage visible text and outgoing links only",
+          "receiptSha256": "c765bdc437dfa74f081f9545b603c4dc754c5c173c284293f7a5566e5a0b1e88"
+        },
+        {
+          "originalUrl": "https://bsky.app/profile/hickenlooper.senate.gov",
+          "archiveUrl": "http://web.archive.org/web/20260930230201/https://bsky.app/profile/hickenlooper.senate.gov",
+          "captureDate": "2026-09-30T23:02:01+00:00",
+          "contentReviewed": false,
+          "deletionStatus": "not_established",
+          "notes": "One exact known-account URL availability check returned capture metadata. That social-profile replay was not opened. No exact missing post was authenticated, and missing/forbidden live content is not evidence of deletion."
+        }
+      ],
+      "id": "pilot-d-senate-08",
+      "party": "Democrat",
+      "office": "senate",
+      "state": "Colorado",
+      "district": null,
+      "recordLinks": [
+        {
+          "label": "Official introduced-bill record",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119s852is",
+          "scope": "Selected introduced version only; not complete vote/enactment history"
+        }
+      ],
+      "coverage": {
+        "cutoff": "2026-11-07T06:53:05.764811+00:00",
+        "timezone": "America/Denver",
+        "checkedPlatforms": [
+          "Bluesky",
+          "Facebook",
+          "Instagram",
+          "TikTok",
+          "X",
+          "YouTube"
+        ],
+        "postElectionSearch": "1 original statement(s) dated after election day verified in this review. Native feed selection was limited to 2 records. X forbidden profiles were not retried, bypassed or treated as deletion. Campaign webpages remain campaign-attributed where social body unavailable.",
+        "archiveSearch": "2 archived URL/capture record(s) inspected or checked. Capture dates do not establish original publication dates or author deletion. This is not a complete archive or social-post census. 1 known social-account URL availability check(s); social-profile replay content was not verified.",
+        "limits": "Topic-agnostic bounded examples, not all statements, votes or posts. Known primary links are not a complete official/campaign/personal account census; no verified public-personal account expansion in this pass. Parent/thread context: selected native records have no reply parent; descendant replies and full media/external sources were not reviewed. Introduced proposals, cosponsorship and signed orders have distinct procedural meanings; no roll-call vote selected here. Inventory of primary-linked platforms; bodies were not opened on every listed platform. Actual access attempts are in receipts."
+      },
+      "publicationNotes": [
+        "These selected, source-checked records are not a complete promise inventory or governing record. No fulfillment, reversal, honesty or overall-priority rating is assigned.",
+        "Campaign publications and account posts are attributed to the cited source; personal speech or composition is not assumed. Unknown chronology and prospective-term limits remain visible."
+      ],
+      "review": {
+        "status": "source_reviewed",
+        "scope": "Selected original-source facts and context only; incomplete lanes remain explicitly unassessed."
+      }
+    },
+    {
+      "name": "Jerry Carl",
+      "identity": {
+        "status": "confirmed",
+        "evidenceUrls": [
+          "https://history.house.gov/People/Listing/C/CARL,-Jerry-L--(C001054)/",
+          "https://jerrycarlforcongress.com/"
+        ],
+        "notes": "Public person matched across the cited official public identity source and candidate campaign source. This is not outcome qualification or authentication of every campaign claim."
+      },
+      "outcome": {
+        "status": "reported_leader",
+        "sourceUrls": [
+          "https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001305",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/al.csv"
+        ],
+        "note": "Preserved frozen-roster provisional status; no proper dated official named winner declaration/certification obtained or promoted by this verification pass."
+      },
+      "statements": [
+        {
+          "id": "carl-campaign-01",
+          "date": null,
+          "dateBasis": "No visible original date for this exact campaign wording. Retrieval time and archive capture are not substituted for publication time.",
+          "phase": "campaign",
+          "attribution": "Jerry Carl for Congress; campaign-published text; individual speech or composition not authenticated",
+          "quote": "Jerry will always do whatever it takes to keep the American people safe.",
+          "context": "This broad commitment follows a border-policy paragraph claiming prior support for border legislation. The record below shows a specific earlier House vote; the page does not identify a measurable safety target or deadline.",
+          "sourceUrl": "https://jerrycarlforcongress.com/issues/",
+          "fullSourceUrl": "https://jerrycarlforcongress.com/issues/",
+          "locator": "Kick Out Illegals & Build the Wall section; final sentence after retrospective border-legislation claim",
+          "verified": true,
+          "verificationScope": "Verified as wording/context on the original campaign publication; not verification of underlying campaign factual claims, individual authorship or a dated prior pledge.",
+          "limits": [
+            "Open-ended policy commitment. No precise bill number, appropriation amount, completion date or measurable safety outcome in the quoted sentence.",
+            "A House member can propose and vote on federal legislation and funding. A single chamber’s passage does not enact a law or establish an individual enforcement result.",
+            "The retained excerpt is 25 words or fewer; the full original source is linked. No campaign claim is scored as true/false or kept/broken."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "carl-official-action-01",
+          "date": "2023-05-11",
+          "type": "recorded_vote",
+          "recordId": "house-2023-209",
+          "billId": "118-hr-2",
+          "title": "House passage vote on H.R.2",
+          "description": "On May 11, 2023, the House Clerk records Carl (Republican, Alabama) voting Yea on passage of H.R.2, the Secure the Border Act. The House vote passed 219–213.",
+          "sourceUrl": "https://clerk.house.gov/Votes/2023209",
+          "relatedStatementIds": [
+            "carl-campaign-01"
+          ],
+          "relationship": "related",
+          "officeAtTime": "U.S. House member, Alabama; historical 118th Congress record.",
+          "question": "On Passage",
+          "stage": "House passage",
+          "verified": true,
+          "limits": [
+            "House passage of the Secure the Border Act. The record proves this House vote, not Senate passage, presidential signature or implemented border policy. Earlier career record traced because the current campaign makes a retrospective border-bill claim.",
+            "A specific vote/action is not a complete policy record, enacted implementation, measured outcome, overall priority finding or promise verdict.",
+            "Chronology with an undated campaign page remains unestablished.",
+            "Office at the time: U.S. House member, Alabama; historical 118th Congress record.",
+            "Vote question: On Passage",
+            "Legislative stage: House passage"
+          ]
+        }
+      ],
+      "accounts": [],
+      "archives": [
+        {
+          "originalUrl": "https://jerrycarlforcongress.com/issues/",
+          "archiveUrl": null,
+          "captureDate": null,
+          "contentReviewed": false,
+          "deletionStatus": "no_capture",
+          "notes": [
+            "One exact-URL availability query returned no closest capture. This does not establish complete absence from archives or deletion."
+          ]
+        },
+        {
+          "originalUrl": "https://jerrycarlforcongress.com/",
+          "archiveUrl": "http://web.archive.org/web/20261104004155/https://jerrycarlforcongress.com/",
+          "captureDate": "2026-11-04T00:41:55+00:00",
+          "contentReviewed": true,
+          "deletionStatus": "not_established",
+          "notes": [
+            "Inspected public campaign/official homepage text for subject identity and public links. This is not a replay of the exact retained policy passage.",
+            "Capture timestamp is not original publication time; no media completeness, authorship or deletion assertion."
+          ]
+        }
+      ],
+      "id": "pilot-r-house-01",
+      "party": "Republican",
+      "office": "house",
+      "state": "Alabama",
+      "district": "1",
+      "recordLinks": [],
+      "coverage": {
+        "cutoff": "2026-11-06",
+        "timezone": "America/Denver",
+        "checkedPlatforms": [
+          "X",
+          "Facebook"
+        ],
+        "postElectionSearch": "No original statement dated after election day was verified in this bounded review. This is a coverage gap, not a finding that none exists. Search window: 2026-11-04 through 2026-11-06. Public campaign-domain, name/date and known-handle/date web searches; original profile access attempted; third-party snippets/mirrors not promoted to original evidence.",
+        "archiveSearch": "2 archived URL/capture record(s) inspected or checked. Capture dates do not establish original publication dates or author deletion. This is not a complete archive or social-post census. No sourced exact missing/deleted post URL qualified for claim-level authentication; no deletion conclusion.",
+        "limits": "Stopped additional social/network research after Facebook throttling/temporary-block responses. No alternate-access retry, login bypass or archive save. Not an exhaustive two-year social history, campaign history, post-election inventory or complete voting record. No complete defined activity window/denominator supports priority-shift analysis. Activity on another issue does not alone contradict a pledge. No full official voting/action directory was inspected beyond selected roll calls; no broader directory URL guessed. Only listed profile attempts/access receipts and primary-link inventory. Instagram/YouTube links were inventoried where present, not their post histories. Public personal accounts not inferred from badges or names."
+      },
+      "publicationNotes": [
+        "These selected, source-checked records are not a complete promise inventory or governing record. No fulfillment, reversal, honesty or overall-priority rating is assigned.",
+        "Campaign publications and account posts are attributed to the cited source; personal speech or composition is not assumed. Unknown chronology and prospective-term limits remain visible."
+      ],
+      "review": {
+        "status": "source_reviewed",
+        "scope": "Selected original-source facts and context only; incomplete lanes remain explicitly unassessed."
+      }
+    },
+    {
+      "name": "Shomari C. Figures",
+      "identity": {
+        "status": "confirmed",
+        "evidenceUrls": [
+          "https://clerk.house.gov/Members/F000481",
+          "https://www.fec.gov/data/candidate/H4AL02170/?cycle=2026&election_full=true",
+          "https://www.figuresforcongress.com/"
+        ],
+        "notes": "Identity supported by official person/candidacy sources and the published campaign page. Prior FEC/member sources identify the person and office; they do not declare this election winner."
+      },
+      "outcome": {
+        "status": "reported_leader",
+        "sourceUrls": [
+          "https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001305",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/al.csv"
+        ],
+        "note": "Frozen provisional roster status preserved. Candidacy, current office, prepared speeches, social assertions, campaign victory forecasts and media calls do not qualify an official named election outcome."
+      },
+      "statements": [
+        {
+          "id": "pilot-d-house-01-campaign-1",
+          "date": null,
+          "dateBasis": "No publication date displayed; date unknown. Observed at retrieval only.",
+          "phase": "campaign",
+          "attribution": "Campaign website publication attributed to Shomari C. Figures’s campaign; not proof of personal composition or authenticated spoken delivery.",
+          "quote": "Introduced legislation to give tax breaks to parents for their children's extracurricular activities",
+          "context": "The campaign homepage lists this under Supporting Families beside separate proposals for first-time-parent credits and baby-item tariff exemptions. The wording says legislation was introduced; it does not say families already receive an enacted benefit. Only this displayed original statement is selected, not every linked platform item.",
+          "sourceUrl": "https://www.figuresforcongress.com/",
+          "fullSourceUrl": "https://www.figuresforcongress.com/",
+          "locator": "Supporting Families → first displayed bullet",
+          "verified": true,
+          "sourceReviewed": true,
+          "personallyAuthoredOrDeliveredVerified": false,
+          "conditions": "The homepage excerpt does not specify eligibility, deduction amounts or effective dates. Those details require the bill text and amendments rather than inference from a campaign summary.",
+          "deadline": null,
+          "officeAuthority": "A House member may introduce and vote on legislation. Introduction and committee referral do not create an enforceable federal tax deduction.",
+          "limits": [
+            "Verified as published campaign wording, not an independent finding about the underlying claims.",
+            "No whole-platform promise, credibility, policy-reversal or priority verdict.",
+            "Publication chronology is unresolved where date is unknown.",
+            "Conditions: The homepage excerpt does not specify eligibility, deduction amounts or effective dates. Those details require the bill text and amendments rather than inference from a campaign summary.",
+            "Office authority: A House member may introduce and vote on legislation. Introduction and committee referral do not create an enforceable federal tax deduction.",
+            "No explicit deadline is stated in the selected passage."
+          ]
+        },
+        {
+          "id": "pilot-d-house-01-native-post-1",
+          "date": "2026-10-28T20:14:46.711Z",
+          "dateBasis": "Original public AT Protocol record createdAt; indexing timestamp retained separately.",
+          "phase": "prior_record",
+          "attribution": "Text published by the primary-linked repscfigures.bsky.social Bluesky account; personal composition is not authenticated.",
+          "quote": "Today is National First Responders Day",
+          "context": "The account’s October 28 text recognizes first responders as part of a bill spotlight. Its video embed was not watched/transcribed, so no claims about the full audiovisual statement or a specific bill from the video are made.",
+          "sourceUrl": "https://bsky.app/profile/repscfigures.bsky.social/post/3myxkvijipc2e",
+          "fullSourceUrl": "https://bsky.app/profile/repscfigures.bsky.social/post/3myxkvijipc2e",
+          "locator": "at://did:plc:bpmqnn3ungi5m7wcjbnrv6m5/app.bsky.feed.post/3myxkvijipc2e",
+          "verified": true,
+          "sourceReviewed": true,
+          "personallyAuthoredOrDeliveredVerified": false,
+          "nativePost": {
+            "did": "did:plc:bpmqnn3ungi5m7wcjbnrv6m5",
+            "uri": "at://did:plc:bpmqnn3ungi5m7wcjbnrv6m5/app.bsky.feed.post/3myxkvijipc2e",
+            "cid": "bafyreibju5njnj77ynpcwesifwhx2atlakcfl4wdum6tvzl6du6b6rbrg4",
+            "createdAt": "2026-10-28T20:14:46.711Z",
+            "indexedAt": "2026-10-28T20:14:49.387Z",
+            "isReply": false,
+            "parentContext": "No reply parent in returned record. Descendant replies were not collected.",
+            "isQuotePost": false,
+            "embedType": "app.bsky.embed.video#view",
+            "feedRepostWrapper": "Not retained; no claim about feed repost wrappers. Original post author DID/URI preserved.",
+            "audiovisualOrExternalContentReviewed": false
+          },
+          "limits": [
+            "Only accessible original post text and record metadata reviewed.",
+            "Two public feed items requested, not a full account history or edit/deletion history.",
+            "Not an official election-outcome or term-status source."
+          ],
+          "retrievalApiUrl": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=repscfigures.bsky.social&limit=2&filter=posts_no_replies"
+        }
+      ],
+      "actions": [
+        {
+          "id": "pilot-d-house-01-action-1",
+          "date": "2026-06-24",
+          "type": "introduced_bill",
+          "recordId": "119th Congress H.R.9426, introduced House (IH)",
+          "title": "H.R. 9426 (IH) — Affordable Youth Enrichment Opportunities Act",
+          "description": "GovInfo lists Figures as sponsor; he introduced the Affordable Youth Enrichment Opportunities Act with McIver, and it was referred to House Ways and Means. The stated subject is a deduction for qualified youth-program expenditures.",
+          "sourceUrl": "https://www.govinfo.gov/app/details/BILLS-119hr9426ih/related",
+          "relatedStatementIds": [
+            "pilot-d-house-01-campaign-1"
+          ],
+          "relationship": "supports_narrow_claim",
+          "phase": "prior_record",
+          "limits": [
+            "The introduced-version record does not establish passage, enactment, effective benefits or full current status. Full bill provisions were not opened in this bounded action slot.",
+            "Where the campaign page is undated, this record is prior legislative history; it is not established as later fulfillment."
+          ],
+          "scopeException": null,
+          "verified": true
+        }
+      ],
+      "accounts": [
+        {
+          "platform": "Bluesky",
+          "url": "https://bsky.app/profile/repscfigures.bsky.social",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261104011220/https://figures.house.gov/",
+            "https://figures.house.gov/",
+            "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=repscfigures.bsky.social&limit=2&filter=posts_no_replies"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "public_api_text_accessible",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim. API author handle/DID matched the primary-linked profile. This attributes text to the account, not personal composition. No login or restriction bypass."
+        },
+        {
+          "platform": "X",
+          "url": "https://twitter.com/repscfigures",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261104011220/https://figures.house.gov/",
+            "https://figures.house.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim. X/twitter URL variants may refer to one handle; not counted as distinct people. Account staff composition is unknown."
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/61571773900898/",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261104011220/https://figures.house.gov/",
+            "https://figures.house.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim."
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/people/Rep-Shomari-Figures/61571773900898/",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261104011220/https://figures.house.gov/",
+            "https://figures.house.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim."
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/repscfigures/",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261104011220/https://figures.house.gov/",
+            "https://figures.house.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim."
+        },
+        {
+          "platform": "X",
+          "url": "https://x.com/repscfigures",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261104011220/https://figures.house.gov/",
+            "https://figures.house.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "forbidden",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim. X/twitter URL variants may refer to one handle; not counted as distinct people. Account staff composition is unknown."
+        }
+      ],
+      "archives": [
+        {
+          "originalUrl": "https://figures.house.gov/",
+          "archiveUrl": "http://web.archive.org/web/20261104011220/https://figures.house.gov/",
+          "captureDate": "2026-11-04T01:12:20+00:00",
+          "contentReviewed": true,
+          "deletionStatus": "not_established",
+          "notes": "Visible replay shows the official House homepage, constituent services and dated October news teasers, plus public social links. Embedded social/media completeness was not tested. Actual replay HTML, Wayback toolbar/wombat markers and matching Memento header were inspected. Only visible text/links were reviewed; images, audio, scripts, forms and embedded social/live resources were not verified as contemporaneous. Capture time is not the original publication time.",
+          "contentScope": "homepage visible text and outgoing links only",
+          "receiptSha256": "8763b332a683d445fcc2c9b870ecd71ab120b35b58aac9fc16e1d38cc2f41612"
+        },
+        {
+          "originalUrl": "https://x.com/repscfigures",
+          "archiveUrl": "http://web.archive.org/web/20261021081813/https://x.com/repscfigures",
+          "captureDate": "2026-10-21T08:18:13+00:00",
+          "contentReviewed": false,
+          "deletionStatus": "not_established",
+          "notes": "One exact known-account URL availability check returned capture metadata. That social-profile replay was not opened. No exact missing post was authenticated, and missing/forbidden live content is not evidence of deletion."
+        }
+      ],
+      "id": "pilot-d-house-01",
+      "party": "Democrat",
+      "office": "house",
+      "state": "Alabama",
+      "district": "2",
+      "recordLinks": [
+        {
+          "label": "Official introduced-bill record",
+          "url": "https://www.govinfo.gov/app/details/BILLS-119hr9426ih/related",
+          "scope": "Selected introduced version only; not complete vote/enactment history"
+        }
+      ],
+      "coverage": {
+        "cutoff": "2026-11-07T06:53:05.764811+00:00",
+        "timezone": "America/Denver",
+        "checkedPlatforms": [
+          "Bluesky",
+          "Facebook",
+          "Instagram",
+          "X"
+        ],
+        "postElectionSearch": "No original statement dated after election day was verified in this bounded review. This is a coverage gap, not a finding that none exists. Native feed selection was limited to 2 records. X forbidden profiles were not retried, bypassed or treated as deletion. Campaign webpages remain campaign-attributed where social body unavailable.",
+        "archiveSearch": "2 archived URL/capture record(s) inspected or checked. Capture dates do not establish original publication dates or author deletion. This is not a complete archive or social-post census. 1 known social-account URL availability check(s); social-profile replay content was not verified.",
+        "limits": "Topic-agnostic bounded examples, not all statements, votes or posts. Known primary links are not a complete official/campaign/personal account census; no verified public-personal account expansion in this pass. Parent/thread context: selected native records have no reply parent; descendant replies and full media/external sources were not reviewed. Introduced proposals, cosponsorship and signed orders have distinct procedural meanings; no roll-call vote selected here. Inventory of primary-linked platforms; bodies were not opened on every listed platform. Actual access attempts are in receipts."
+      },
+      "publicationNotes": [
+        "These selected, source-checked records are not a complete promise inventory or governing record. No fulfillment, reversal, honesty or overall-priority rating is assigned.",
+        "Campaign publications and account posts are attributed to the cited source; personal speech or composition is not assumed. Unknown chronology and prospective-term limits remain visible."
+      ],
+      "review": {
+        "status": "source_reviewed",
+        "scope": "Selected original-source facts and context only; incomplete lanes remain explicitly unassessed."
+      }
+    },
+    {
+      "name": "Begich, Nick",
+      "identity": {
+        "status": "confirmed",
+        "evidenceUrls": [
+          "https://begich.house.gov/about",
+          "https://www.alaskansfornickbegich.com/solutions"
+        ],
+        "notes": "Public person matched across the cited official public identity source and candidate campaign source. This is not outcome qualification or authentication of every campaign claim."
+      },
+      "outcome": {
+        "status": "reported_leader",
+        "sourceUrls": [
+          "https://www.elections.alaska.gov/enr/26GENR/results/GA_ENR_Precinct_State_of_Alaska.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ak.csv"
+        ],
+        "note": "Preserved frozen-roster provisional status; no proper dated official named winner declaration/certification obtained or promoted by this verification pass."
+      },
+      "statements": [
+        {
+          "id": "begich-campaign-01",
+          "date": null,
+          "dateBasis": "No visible original date for this exact campaign wording. Retrieval time and archive capture are not substituted for publication time.",
+          "phase": "campaign",
+          "attribution": "Nick for Alaska campaign site; campaign-published text; individual speech or composition not authenticated",
+          "quote": "Nick is still in this fight, backing prevention, standing with Alaska law enforcement",
+          "context": "The campaign retells an earlier anti-fentanyl pledge and claims it was kept through legislative support. The retained excerpt describes continued advocacy. V-Map does not adopt the campaign’s kept-promise characterization; the action below is only the specified House vote.",
+          "sourceUrl": "https://www.alaskansfornickbegich.com/solutions",
+          "fullSourceUrl": "https://www.alaskansfornickbegich.com/solutions",
+          "locator": "Securing the Border and Protecting Kids section; final paragraph following the campaign’s kept-promise assertion",
+          "verified": true,
+          "verificationScope": "Verified as wording/context on the original campaign publication; not verification of underlying campaign factual claims, individual authorship or a dated prior pledge.",
+          "limits": [
+            "Ongoing prevention/enforcement commitment combined with an undated retrospective pledge description. No promised reduction target or completion deadline supplied in this passage.",
+            "A House member can sponsor, cosponsor and vote on legislation; criminal enforcement, public-health implementation and measured drug harm are not solely controlled by that member.",
+            "The retained excerpt is 25 words or fewer; the full original source is linked. No campaign claim is scored as true/false or kept/broken."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "begich-official-action-01",
+          "date": "2025-02-06",
+          "type": "recorded_vote",
+          "recordId": "house-2025-33",
+          "billId": "119-hr-27",
+          "title": "House passage vote on H.R.27",
+          "description": "On February 6, 2025, the House Clerk records Begich (Republican, Alaska) voting Yea on passage of H.R.27, the HALT Fentanyl Act. The House vote passed 312–108.",
+          "sourceUrl": "https://clerk.house.gov/Votes/2025033",
+          "relatedStatementIds": [
+            "begich-campaign-01"
+          ],
+          "relationship": "related",
+          "officeAtTime": "U.S. House member, Alaska at-large.",
+          "question": "On Passage",
+          "stage": "House passage",
+          "verified": true,
+          "limits": [
+            "House passage vote on H.R.27. This is a recorded legislative action; the receipt alone does not establish cosponsorship, subsequent enactment of this exact bill, implementation, prevention investment or reduced fentanyl harm.",
+            "A specific vote/action is not a complete policy record, enacted implementation, measured outcome, overall priority finding or promise verdict.",
+            "Chronology with an undated campaign page remains unestablished.",
+            "Office at the time: U.S. House member, Alaska at-large.",
+            "Vote question: On Passage",
+            "Legislative stage: House passage"
+          ]
+        }
+      ],
+      "accounts": [
+        {
+          "platform": "Facebook",
+          "url": "https://facebook.com/RepNickBegich",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "https://begich.house.gov/about"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://instagram.com/RepNickBegich",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "https://begich.house.gov/about"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "X",
+          "url": "https://x.com/RepNickBegich",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "https://begich.house.gov/about"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "unavailable",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "X",
+          "url": "https://twitter.com/NickforAlaska",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261010021533/https://www.alaskansfornickbegich.com/solutions"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "empty_reader",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames. Independent linkage reviewed in the archived primary page at 2026-10-10T02:15:33+00:00; this does not authenticate current account control or individual post authorship."
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/NickforAlaska",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261010021533/https://www.alaskansfornickbegich.com/solutions"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "temporary_block_page",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames. Independent linkage reviewed in the archived primary page at 2026-10-10T02:15:33+00:00; this does not authenticate current account control or individual post authorship."
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/NickforAlaska",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261010021533/https://www.alaskansfornickbegich.com/solutions"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames. Independent linkage reviewed in the archived primary page at 2026-10-10T02:15:33+00:00; this does not authenticate current account control or individual post authorship."
+        },
+        {
+          "platform": "YouTube",
+          "url": "https://www.youtube.com/@NickforAlaska",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261010021533/https://www.alaskansfornickbegich.com/solutions"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames. Independent linkage reviewed in the archived primary page at 2026-10-10T02:15:33+00:00; this does not authenticate current account control or individual post authorship."
+        }
+      ],
+      "archives": [
+        {
+          "originalUrl": "https://www.alaskansfornickbegich.com/solutions",
+          "archiveUrl": "http://web.archive.org/web/20261010021533/https://www.alaskansfornickbegich.com/solutions",
+          "captureDate": "2026-10-10T02:15:33+00:00",
+          "contentReviewed": true,
+          "deletionStatus": "not_established",
+          "notes": [
+            "Inspected the exact retained campaign excerpt in readable replay text; exact normalized match found.",
+            "Capture timestamp is separate from unknown original publication date.",
+            "Embedded media, full thread, outbound links and live/capture mixing not authenticated; no deleted-content finding."
+          ]
+        }
+      ],
+      "id": "pilot-r-house-02",
+      "party": "Republican",
+      "office": "house",
+      "state": "Alaska",
+      "district": "0",
+      "recordLinks": [],
+      "coverage": {
+        "cutoff": "2026-11-06",
+        "timezone": "America/Denver",
+        "checkedPlatforms": [
+          "X",
+          "Facebook"
+        ],
+        "postElectionSearch": "No original statement dated after election day was verified in this bounded review. This is a coverage gap, not a finding that none exists. Search window: 2026-11-04 through 2026-11-06. Public campaign-domain, name/date and known-handle/date web searches; original profile access attempted; third-party snippets/mirrors not promoted to original evidence.",
+        "archiveSearch": "1 archived URL/capture record(s) inspected or checked. Capture dates do not establish original publication dates or author deletion. This is not a complete archive or social-post census. No sourced exact missing/deleted post URL qualified for claim-level authentication; no deletion conclusion.",
+        "limits": "Stopped additional social/network research after Facebook throttling/temporary-block responses. No alternate-access retry, login bypass or archive save. Not an exhaustive two-year social history, campaign history, post-election inventory or complete voting record. No complete defined activity window/denominator supports priority-shift analysis. Activity on another issue does not alone contradict a pledge. No full official voting/action directory was inspected beyond selected roll calls; no broader directory URL guessed. Only listed profile attempts/access receipts and primary-link inventory. Instagram/YouTube links were inventoried where present, not their post histories. Public personal accounts not inferred from badges or names."
+      },
+      "publicationNotes": [
+        "These selected, source-checked records are not a complete promise inventory or governing record. No fulfillment, reversal, honesty or overall-priority rating is assigned.",
+        "Campaign publications and account posts are attributed to the cited source; personal speech or composition is not assumed. Unknown chronology and prospective-term limits remain visible."
+      ],
+      "review": {
+        "status": "source_reviewed",
+        "scope": "Selected original-source facts and context only; incomplete lanes remain explicitly unassessed."
+      }
+    },
+    {
+      "name": "Amish Shah",
+      "identity": {
+        "status": "confirmed",
+        "evidenceUrls": [
+          "https://www.fec.gov/data/candidate/H4AZ01194/?cycle=2026&election_full=true",
+          "https://www.azleg.gov/house-member/?legislator=1908&legislature=54&session=121",
+          "https://www.amishforarizona.com/issues"
+        ],
+        "notes": "Identity supported by official person/candidacy sources and the published campaign page. Prior FEC/member sources identify the person and office; they do not declare this election winner."
+      },
+      "outcome": {
+        "status": "reported_leader",
+        "sourceUrls": [
+          "https://app.enhancedvoting.com/cdn/results/Arizona/export-110326GeneralElection.json"
+        ],
+        "note": "Frozen provisional roster status preserved. Candidacy, current office, prepared speeches, social assertions, campaign victory forecasts and media calls do not qualify an official named election outcome."
+      },
+      "statements": [
+        {
+          "id": "pilot-d-house-04-campaign-1",
+          "date": null,
+          "dateBasis": "No publication date displayed; date unknown. Observed at retrieval only.",
+          "phase": "campaign",
+          "attribution": "Campaign website publication attributed to Amish Shah’s campaign; not proof of personal composition or authenticated spoken delivery.",
+          "quote": "In Congress, Amish will work to expand coverage, protect Medicare, and lower prescription drug prices.",
+          "context": "The campaign healthcare section describes patient affordability and prospective work in Congress. Adjacent passages discuss prior state work and separate reproductive-health positions. The quote preserves the limited commitment to work toward objectives, not a guaranteed enacted result.",
+          "sourceUrl": "https://www.amishforarizona.com/issues",
+          "fullSourceUrl": "https://www.amishforarizona.com/issues",
+          "locator": "healthcare → paragraph beginning All Arizonans deserve",
+          "verified": true,
+          "sourceReviewed": true,
+          "personallyAuthoredOrDeliveredVerified": false,
+          "conditions": "Conditional on congressional service; no numeric coverage/drug-price target, deadline or bill identifier is specified in the selected sentence. Page publication date is not displayed.",
+          "deadline": null,
+          "officeAuthority": "A House member can sponsor, amend and vote on federal legislation and conduct authorized oversight; cannot individually change Medicare or set all prescription prices.",
+          "limits": [
+            "Verified as published campaign wording, not an independent finding about the underlying claims.",
+            "No whole-platform promise, credibility, policy-reversal or priority verdict.",
+            "Publication chronology is unresolved where date is unknown.",
+            "Conditions: Conditional on congressional service; no numeric coverage/drug-price target, deadline or bill identifier is specified in the selected sentence. Page publication date is not displayed.",
+            "Office authority: A House member can sponsor, amend and vote on federal legislation and conduct authorized oversight; cannot individually change Medicare or set all prescription prices.",
+            "No explicit deadline is stated in the selected passage."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "pilot-d-house-04-action-1",
+          "date": null,
+          "type": "introduced_bill",
+          "recordId": "Arizona HB2517, 56th Legislature, 2nd Regular Session (2024), introduced version",
+          "title": "HB2517 — 56th Legislature, 2nd Regular Session — Introduced version",
+          "description": "Introduced text identifies Representative Shah as introducer and proposes comprehensive AHCCCS obesity-treatment coverage, with stated prior-authorization conditions and notice requirements.",
+          "sourceUrl": "https://www.azleg.gov/legtext/56leg/2r/bills/hb2517p.htm",
+          "relatedStatementIds": [
+            "pilot-d-house-04-campaign-1"
+          ],
+          "relationship": "related",
+          "phase": "prior_record",
+          "limits": [
+            "The introduced text does not establish enactment, a recorded vote, implementation or current bill disposition. The words “Be it enacted” in a bill draft are not evidence it became law.",
+            "Where the campaign page is undated, this record is prior legislative history; it is not established as later fulfillment.",
+            "Historical scope: 2024. historical state-health proposal contextual lead; not evidence of federal-term fulfillment",
+            "The opened introduced-version text identifies the 2024 second regular session, not a calendar introduction date. No more precise date is inferred.",
+            "Context only; excluded from any baseline action census, priority denominator or federal-term promise assessment."
+          ],
+          "scopeException": {
+            "outsideBaseline": true,
+            "baselineStart": "2024-11-07",
+            "knownDateYear": 2024,
+            "knownDatePrecision": "legislative_session_year_only",
+            "exactActionDate": null,
+            "exactDateUncertainty": "The opened introduced-version text identifies the 2024 second regular session, not a calendar introduction date. No more precise date is inferred.",
+            "reason": "historical state-health proposal contextual lead; not evidence of federal-term fulfillment",
+            "assessmentUse": "Context only; excluded from any baseline action census, priority denominator or federal-term promise assessment."
+          },
+          "verified": true
+        }
+      ],
+      "accounts": [
+        {
+          "platform": "X",
+          "url": "https://twitter.com/DrAmishShah",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261106233326/https://www.amishforarizona.com/",
+            "https://www.amishforarizona.com/issues"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. X/twitter URL variants may refer to one handle; not counted as distinct people. Account staff composition is unknown."
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/AmishShahMD/",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261106233326/https://www.amishforarizona.com/",
+            "https://www.amishforarizona.com/issues"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory."
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/dr.amishshah/",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261106233326/https://www.amishforarizona.com/",
+            "https://www.amishforarizona.com/issues"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory."
+        }
+      ],
+      "archives": [
+        {
+          "originalUrl": "https://www.amishforarizona.com/",
+          "archiveUrl": "http://web.archive.org/web/20261106233326/https://www.amishforarizona.com/",
+          "captureDate": "2026-11-06T23:33:26+00:00",
+          "contentReviewed": true,
+          "deletionStatus": "not_established",
+          "notes": "Visible replay shows campaign biography/appeal and outgoing Twitter, Facebook and Instagram URLs. This confirms what the captured page displayed, not the truth of all campaign record claims. Actual replay HTML, Wayback toolbar/wombat markers and matching Memento header were inspected. Only visible text/links were reviewed; images, audio, scripts, forms and embedded social/live resources were not verified as contemporaneous. Capture time is not the original publication time.",
+          "contentScope": "homepage visible text and outgoing links only",
+          "receiptSha256": "035a8e0a665dc48941e476948b861216e32a690006c91f4854d1a22cc40fd158"
+        },
+        {
+          "originalUrl": "https://x.com/DrAmishShah",
+          "archiveUrl": "http://web.archive.org/web/20261023102227/https://x.com/DrAmishShah",
+          "captureDate": "2026-10-23T10:22:27+00:00",
+          "contentReviewed": false,
+          "deletionStatus": "not_established",
+          "notes": "One exact known-account URL availability check returned capture metadata. That social-profile replay was not opened. No exact missing post was authenticated, and missing/forbidden live content is not evidence of deletion."
+        }
+      ],
+      "id": "pilot-d-house-04",
+      "party": "Democrat",
+      "office": "house",
+      "state": "Arizona",
+      "district": "1",
+      "recordLinks": [
+        {
+          "label": "Official introduced-bill record",
+          "url": "https://www.azleg.gov/legtext/56leg/2r/bills/hb2517p.htm",
+          "scope": "Selected introduced version only; not complete vote/enactment history"
+        }
+      ],
+      "coverage": {
+        "cutoff": "2026-11-07T06:53:05.764811+00:00",
+        "timezone": "America/Denver",
+        "checkedPlatforms": [
+          "Facebook",
+          "Instagram",
+          "X"
+        ],
+        "postElectionSearch": "No original statement dated after election day was verified in this bounded review. This is a coverage gap, not a finding that none exists. X forbidden profiles were not retried, bypassed or treated as deletion. Campaign webpages remain campaign-attributed where social body unavailable.",
+        "archiveSearch": "2 archived URL/capture record(s) inspected or checked. Capture dates do not establish original publication dates or author deletion. This is not a complete archive or social-post census. 1 known social-account URL availability check(s); social-profile replay content was not verified.",
+        "limits": "Topic-agnostic bounded examples, not all statements, votes or posts. Known primary links are not a complete official/campaign/personal account census; no verified public-personal account expansion in this pass. Parent/thread context: selected native records have no reply parent; descendant replies and full media/external sources were not reviewed. Introduced proposals, cosponsorship and signed orders have distinct procedural meanings; no roll-call vote selected here. Inventory of primary-linked platforms; bodies were not opened on every listed platform. Actual access attempts are in receipts."
+      },
+      "publicationNotes": [
+        "These selected, source-checked records are not a complete promise inventory or governing record. No fulfillment, reversal, honesty or overall-priority rating is assigned.",
+        "Campaign publications and account posts are attributed to the cited source; personal speech or composition is not assumed. Unknown chronology and prospective-term limits remain visible."
+      ],
+      "review": {
+        "status": "source_reviewed",
+        "scope": "Selected original-source facts and context only; incomplete lanes remain explicitly unassessed."
+      }
+    },
+    {
+      "name": "Tommy Tuberville",
+      "identity": {
+        "status": "confirmed",
+        "evidenceUrls": [
+          "https://www.tuberville.senate.gov/about/",
+          "https://www.coachforgovernor.com/issues"
+        ],
+        "notes": "Public person matched across the cited official public identity source and candidate campaign source. This is not outcome qualification or authentication of every campaign claim."
+      },
+      "outcome": {
+        "status": "reported_leader",
+        "sourceUrls": [
+          "https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001305",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/al.csv"
+        ],
+        "note": "Preserved frozen-roster provisional status; no proper dated official named winner declaration/certification obtained or promoted by this verification pass."
+      },
+      "statements": [
+        {
+          "id": "tuberville-campaign-01",
+          "date": null,
+          "dateBasis": "No visible original date for this exact campaign wording. Retrieval time and archive capture are not substituted for publication time.",
+          "phase": "campaign",
+          "attribution": "Coach for Governor campaign site; campaign-published text; individual speech or composition not authenticated",
+          "quote": "As Governor, I will back the blue, enforce the law, and work with President Trump to deport illegal alien criminals.",
+          "context": "The campaign expressly conditions this commitment on serving as Governor and cooperating with the President. The related record is a prior U.S. Senate vote, not an Alabama executive action or implementation of the future commitment.",
+          "sourceUrl": "https://www.coachforgovernor.com/issues",
+          "fullSourceUrl": "https://www.coachforgovernor.com/issues",
+          "locator": "Securing the Border and Deporting Criminals section; final sentence beginning As Governor",
+          "verified": true,
+          "verificationScope": "Verified as wording/context on the original campaign publication; not verification of underlying campaign factual claims, individual authorship or a dated prior pledge.",
+          "limits": [
+            "Explicit condition: as Governor; also requires federal cooperation. No date, numeric removal target or specified state action in the quoted commitment.",
+            "The Governor can direct lawful state executive actions within state authority. Federal deportation and federal legislation are distinct. Senate votes are prior federal actions, not actions as Governor.",
+            "The retained excerpt is 25 words or fewer; the full original source is linked. No campaign claim is scored as true/false or kept/broken."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "tuberville-official-action-01",
+          "date": "2025-01-20",
+          "type": "recorded_vote",
+          "recordId": "senate-2025-7",
+          "billId": "119-s-5",
+          "title": "Prior Senate passage vote on S.5 as amended",
+          "description": "On January 20, 2025, the Senate records Tuberville (R-AL) voting Yea on passage of S.5 as amended. The bill passed this Senate vote 64–35.",
+          "sourceUrl": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.htm",
+          "relatedStatementIds": [
+            "tuberville-campaign-01"
+          ],
+          "relationship": "not_yet_assessable",
+          "officeAtTime": "U.S. Senator, Alabama; this was not an act as Governor.",
+          "question": "On Passage of the Bill (S. 5, As Amended)",
+          "stage": "Senate passage as amended",
+          "verified": true,
+          "limits": [
+            "Tuberville’s Senate vote for passage of S.5 as amended is prior federal legislative activity. It neither exercises Alabama Governor powers nor proves any deportation or state policy implementation.",
+            "A specific vote/action is not a complete policy record, enacted implementation, measured outcome, overall priority finding or promise verdict.",
+            "Chronology with an undated campaign page remains unestablished.",
+            "Office at the time: U.S. Senator, Alabama; this was not an act as Governor.",
+            "Vote question: On Passage of the Bill (S. 5, As Amended)",
+            "Legislative stage: Senate passage as amended"
+          ]
+        }
+      ],
+      "accounts": [
+        {
+          "platform": "X",
+          "url": "https://twitter.com/sentuberville",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261021082922/https://www.tuberville.senate.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames. Independent linkage reviewed in the archived primary page at 2026-10-21T08:29:22+00:00; this does not authenticate current account control or individual post authorship."
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/SenatorTuberville/",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261021082922/https://www.tuberville.senate.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames. Independent linkage reviewed in the archived primary page at 2026-10-21T08:29:22+00:00; this does not authenticate current account control or individual post authorship."
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/sentuberville/",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261021082922/https://www.tuberville.senate.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames. Independent linkage reviewed in the archived primary page at 2026-10-21T08:29:22+00:00; this does not authenticate current account control or individual post authorship."
+        },
+        {
+          "platform": "YouTube",
+          "url": "https://www.youtube.com/c/SenTuberville/",
+          "type": "official_office",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261021082922/https://www.tuberville.senate.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames. Independent linkage reviewed in the archived primary page at 2026-10-21T08:29:22+00:00; this does not authenticate current account control or individual post authorship."
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/CoachForGov",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "https://www.coachforgovernor.com/issues"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "throttled",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/coachforgov/",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "https://www.coachforgovernor.com/issues"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "YouTube",
+          "url": "https://www.youtube.com/@CoachforGov",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "https://www.coachforgovernor.com/issues"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened_link_inventory_only",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        },
+        {
+          "platform": "X",
+          "url": "https://x.com/CoachForGov",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "https://www.coachforgovernor.com/issues"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "unavailable",
+          "aliases": [],
+          "notes": "Linked by a current official/campaign page or the cited public Governors Association directory. A website association is not proof of individual post authorship. Immutable account IDs and former handles were not established; URL/case variants are not asserted to be renames."
+        }
+      ],
+      "archives": [
+        {
+          "originalUrl": "https://www.coachforgovernor.com/issues",
+          "archiveUrl": null,
+          "captureDate": null,
+          "contentReviewed": false,
+          "deletionStatus": "no_capture",
+          "notes": [
+            "One exact-URL availability query returned no closest capture. This does not establish complete absence from archives or deletion."
+          ]
+        },
+        {
+          "originalUrl": "https://www.tuberville.senate.gov/",
+          "archiveUrl": "http://web.archive.org/web/20261021082922/https://www.tuberville.senate.gov/",
+          "captureDate": "2026-10-21T08:29:22+00:00",
+          "contentReviewed": true,
+          "deletionStatus": "not_established",
+          "notes": [
+            "Inspected public campaign/official homepage text for subject identity and public links. This is not a replay of the exact retained policy passage.",
+            "Capture timestamp is not original publication time; no media completeness, authorship or deletion assertion."
+          ]
+        }
+      ],
+      "id": "pilot-r-governor-01",
+      "party": "Republican",
+      "office": "governor",
+      "state": "Alabama",
+      "district": null,
+      "recordLinks": [],
+      "coverage": {
+        "cutoff": "2026-11-06",
+        "timezone": "America/Denver",
+        "checkedPlatforms": [
+          "X",
+          "Facebook"
+        ],
+        "postElectionSearch": "No original statement dated after election day was verified in this bounded review. This is a coverage gap, not a finding that none exists. Search window: 2026-11-04 through 2026-11-06. Public campaign-domain, name/date and known-handle/date web searches; original profile access attempted; third-party snippets/mirrors not promoted to original evidence.",
+        "archiveSearch": "2 archived URL/capture record(s) inspected or checked. Capture dates do not establish original publication dates or author deletion. This is not a complete archive or social-post census. No sourced exact missing/deleted post URL qualified for claim-level authentication; no deletion conclusion.",
+        "limits": "Stopped additional social/network research after Facebook throttling/temporary-block responses. No alternate-access retry, login bypass or archive save. Not an exhaustive two-year social history, campaign history, post-election inventory or complete voting record. No complete defined activity window/denominator supports priority-shift analysis. Activity on another issue does not alone contradict a pledge. No full official voting/action directory was inspected beyond selected roll calls; no broader directory URL guessed. Only listed profile attempts/access receipts and primary-link inventory. Instagram/YouTube links were inventoried where present, not their post histories. Public personal accounts not inferred from badges or names."
+      },
+      "publicationNotes": [
+        "These selected, source-checked records are not a complete promise inventory or governing record. No fulfillment, reversal, honesty or overall-priority rating is assigned.",
+        "Campaign publications and account posts are attributed to the cited source; personal speech or composition is not assumed. Unknown chronology and prospective-term limits remain visible."
+      ],
+      "review": {
+        "status": "source_reviewed",
+        "scope": "Selected original-source facts and context only; incomplete lanes remain explicitly unassessed."
+      }
+    },
+    {
+      "name": "Jonathan S. Kreiss-Tomkins",
+      "identity": {
+        "status": "confirmed",
+        "evidenceUrls": [
+          "https://www.elections.alaska.gov/candidates/?election=26GENR",
+          "https://www.jktforak.com/platform"
+        ],
+        "notes": "Official Alaska candidate table under GOVERNOR / LIEUTENANT GOVERNOR names Jonathan S. “JKT” Kreiss-Tomkins / Zac Johnson. Campaign page identifies Jonathan as governor candidate. Certified in that filing table means candidate filing status, not winner certification. Zac Johnson is a running mate, not an added pilot subject."
+      },
+      "outcome": {
+        "status": "reported_leader",
+        "sourceUrls": [
+          "https://www.elections.alaska.gov/enr/26GENR/results/GA_ENR_Precinct_State_of_Alaska.csv",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ak.csv"
+        ],
+        "note": "Frozen provisional roster status preserved. Candidacy, current office, prepared speeches, social assertions, campaign victory forecasts and media calls do not qualify an official named election outcome."
+      },
+      "statements": [
+        {
+          "id": "pilot-d-governor-02-campaign-1",
+          "date": null,
+          "dateBasis": "No publication date displayed; date unknown. Observed at retrieval only.",
+          "phase": "campaign",
+          "attribution": "Campaign website publication attributed to Jonathan S. Kreiss-Tomkins’s campaign; not proof of personal composition or authenticated spoken delivery.",
+          "quote": "Pass a constitutional amendment to “forward fund” education",
+          "context": "The platform’s school section pairs forward funding with school-budget predictability, broader funding support, teacher retention and retirement proposals. The selected commitment concerns funding timing and a constitutional mechanism, not a promise that all educational outcomes improve immediately.",
+          "sourceUrl": "https://www.jktforak.com/platform",
+          "fullSourceUrl": "https://www.jktforak.com/platform",
+          "locator": "Support Our Schools → constitutional forward-funding bullet and following explanation",
+          "verified": true,
+          "sourceReviewed": true,
+          "personallyAuthoredOrDeliveredVerified": false,
+          "conditions": "A proposed constitutional amendment; exact language, voting thresholds, funding formula and implementation schedule are not supplied in this selected statement. The platform is undated.",
+          "deadline": null,
+          "officeAuthority": "A governor cannot unilaterally amend the state constitution. Exact legislative/referral/ratification requirements and any legally available mechanisms must be verified from Alaska primary law before assigning responsibility.",
+          "limits": [
+            "Verified as published campaign wording, not an independent finding about the underlying claims.",
+            "No whole-platform promise, credibility, policy-reversal or priority verdict.",
+            "Publication chronology is unresolved where date is unknown.",
+            "Conditions: A proposed constitutional amendment; exact language, voting thresholds, funding formula and implementation schedule are not supplied in this selected statement. The platform is undated.",
+            "Office authority: A governor cannot unilaterally amend the state constitution. Exact legislative/referral/ratification requirements and any legally available mechanisms must be verified from Alaska primary law before assigning responsibility.",
+            "No explicit deadline is stated in the selected passage."
+          ]
+        },
+        {
+          "id": "pilot-d-governor-02-after-interview-1",
+          "date": "2026-11-04",
+          "dateBasis": "Publisher says interview took place Wednesday afternoon after November 3 election; article published November 5 at 9:33 AM AKST. Interview clock time not supplied.",
+          "publishedAt": "2026-11-05T09:33:00-09:00",
+          "phase": "after_election",
+          "attribution": "KCAW’s Hope McKenney interview transcript, republished by Alaska Public Media; labeled lightly edited for length and clarity.",
+          "quote": "Very high on the list is public education",
+          "context": "Asked what he would prioritize if he became governor, Kreiss-Tomkins discusses education funding and retirement proposals, then housing, energy and childcare costs. The conditional question and still-unresolved count are retained; the interview is not a winner declaration.",
+          "sourceUrl": "https://alaskapublic.org/news/politics/elections/2026-11-05/democrat-jonathan-kreiss-tomkins-reflects-on-lead-in-alaska-governors-race",
+          "fullSourceUrl": "https://alaskapublic.org/news/politics/elections/2026-11-05/democrat-jonathan-kreiss-tomkins-reflects-on-lead-in-alaska-governors-race",
+          "locator": "Original interview transcript, interviewer’s conditional governor question and ensuing two answer paragraphs, lines 385–387",
+          "verified": true,
+          "sourceReviewed": true,
+          "personallyAuthoredOrDeliveredVerified": false,
+          "limits": [
+            "Transcript, not an independent audio comparison; audio not played.",
+            "Publisher’s editing disclosure means this is not represented as a verbatim unedited recording.",
+            "Future gubernatorial-term proposals are not yet assessable for fulfillment."
+          ]
+        }
+      ],
+      "actions": [],
+      "accounts": [
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/jktforak/",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261106222134/https://www.jktforak.com/",
+            "https://www.jktforak.com/platform",
+            "https://www.jktforak.com/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim."
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/jktforak/",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261106222134/https://www.jktforak.com/",
+            "https://www.jktforak.com/platform",
+            "https://www.jktforak.com/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim."
+        },
+        {
+          "platform": "X",
+          "url": "https://x.com/jktforak",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261106222134/https://www.jktforak.com/",
+            "https://www.jktforak.com/platform",
+            "https://www.jktforak.com/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "forbidden",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. Primary outgoing link also directly observed in the frozen first pass; no broader ownership claim. X/twitter URL variants may refer to one handle; not counted as distinct people. Account staff composition is unknown."
+        }
+      ],
+      "archives": [
+        {
+          "originalUrl": "https://www.jktforak.com/",
+          "archiveUrl": "http://web.archive.org/web/20261106222134/https://www.jktforak.com/",
+          "captureDate": "2026-11-06T22:21:34+00:00",
+          "contentReviewed": true,
+          "deletionStatus": "not_established",
+          "notes": "Visible replay identifies Jonathan Kreiss-Tomkins as the gubernatorial candidate, provides a separate Meet Zac Johnson link, campaign disclaimer and outgoing social links. Snapshot is not an election result. Actual replay HTML, Wayback toolbar/wombat markers and matching Memento header were inspected. Only visible text/links were reviewed; images, audio, scripts, forms and embedded social/live resources were not verified as contemporaneous. Capture time is not the original publication time.",
+          "contentScope": "homepage visible text and outgoing links only",
+          "receiptSha256": "77aa4f85384ce8a3093bee546cf42b8e2eeb657c5d638ccfd125f100af542db5"
+        },
+        {
+          "originalUrl": "https://x.com/jktforak",
+          "archiveUrl": "http://web.archive.org/web/20261101210037/https://x.com/jktforak",
+          "captureDate": "2026-11-01T21:00:37+00:00",
+          "contentReviewed": false,
+          "deletionStatus": "not_established",
+          "notes": "One exact known-account URL availability check returned capture metadata. That social-profile replay was not opened. No exact missing post was authenticated, and missing/forbidden live content is not evidence of deletion."
+        }
+      ],
+      "id": "pilot-d-governor-02",
+      "party": "Democrat",
+      "office": "governor",
+      "state": "Alaska",
+      "district": null,
+      "recordLinks": [],
+      "coverage": {
+        "cutoff": "2026-11-07T06:53:05.764811+00:00",
+        "timezone": "America/Denver",
+        "checkedPlatforms": [
+          "Facebook",
+          "Instagram",
+          "X"
+        ],
+        "postElectionSearch": "1 original statement(s) dated after election day verified in this review. X forbidden profiles were not retried, bypassed or treated as deletion. Campaign webpages remain campaign-attributed where social body unavailable.",
+        "archiveSearch": "2 archived URL/capture record(s) inspected or checked. Capture dates do not establish original publication dates or author deletion. This is not a complete archive or social-post census. 1 known social-account URL availability check(s); social-profile replay content was not verified.",
+        "limits": "Topic-agnostic bounded examples, not all statements, votes or posts. Known primary links are not a complete official/campaign/personal account census; no verified public-personal account expansion in this pass. Parent/thread context: selected native records have no reply parent; descendant replies and full media/external sources were not reviewed. Introduced proposals, cosponsorship and signed orders have distinct procedural meanings; no roll-call vote selected here. Inventory of primary-linked platforms; bodies were not opened on every listed platform. Actual access attempts are in receipts."
+      },
+      "publicationNotes": [
+        "These selected, source-checked records are not a complete promise inventory or governing record. No fulfillment, reversal, honesty or overall-priority rating is assigned.",
+        "Campaign publications and account posts are attributed to the cited source; personal speech or composition is not assumed. Unknown chronology and prospective-term limits remain visible."
+      ],
+      "review": {
+        "status": "source_reviewed",
+        "scope": "Selected original-source facts and context only; incomplete lanes remain explicitly unassessed."
+      }
+    },
+    {
+      "name": "Katie Hobbs",
+      "identity": {
+        "status": "confirmed",
+        "evidenceUrls": [
+          "https://azsos.gov/lieutenant-governor-hobbs-katie",
+          "https://katiehobbs.org/in-tucson-katie-hobbs-hosts-affordability-roundtable-with-joanna-mendoza/",
+          "https://azgovernor.gov/executive-orders"
+        ],
+        "notes": "AZSOS ticket summary identifies Katie Hobbs and Lt. Gov. John Giles (PND); campaign source and signed governor order support person/role identity. Giles’s separate prepared remarks are not attributed to Hobbs."
+      },
+      "outcome": {
+        "status": "reported_leader",
+        "sourceUrls": [
+          "https://electionresults.utah.gov/results/public/Arizona/elections/110326GeneralElection",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/az.csv"
+        ],
+        "note": "Frozen provisional roster status preserved. Candidacy, current office, prepared speeches, social assertions, campaign victory forecasts and media calls do not qualify an official named election outcome."
+      },
+      "statements": [
+        {
+          "id": "pilot-d-governor-04-campaign-1",
+          "date": "2026-05-30",
+          "dateBasis": "Displayed campaign release publication date",
+          "phase": "campaign",
+          "attribution": "Campaign website publication attributed to Katie Hobbs’s campaign; not proof of personal composition or authenticated spoken delivery.",
+          "quote": "So I am committed to keep fighting to make Arizona more affordable",
+          "context": "The campaign release attributes these words to Hobbs at a May 30 Tucson roundtable, where tariffs, household costs, healthcare and gas prices were discussed. It also cites claimed first-term steps. These descriptions are campaign framing, not independent measurements of causal effects.",
+          "sourceUrl": "https://katiehobbs.org/in-tucson-katie-hobbs-hosts-affordability-roundtable-with-joanna-mendoza/",
+          "fullSourceUrl": "https://katiehobbs.org/in-tucson-katie-hobbs-hosts-affordability-roundtable-with-joanna-mendoza/",
+          "locator": "May 30 roundtable → paragraph explicitly attributing words to Gov. Katie Hobbs",
+          "verified": true,
+          "sourceReviewed": true,
+          "personallyAuthoredOrDeliveredVerified": false,
+          "conditions": "A broad continuing-effort commitment; no numeric affordability target or deadline. State authority differs across taxes, utilities, housing, healthcare and federal tariffs.",
+          "deadline": null,
+          "officeAuthority": "The governor can exercise lawful executive powers, propose budgets and sign/veto legislation, but does not control federal tariffs or all market prices. Exact order authority and constraints require operative text.",
+          "limits": [
+            "Verified as published campaign wording, not an independent finding about the underlying claims.",
+            "No whole-platform promise, credibility, policy-reversal or priority verdict.",
+            "Publication chronology is unresolved where date is unknown.",
+            "Conditions: A broad continuing-effort commitment; no numeric affordability target or deadline. State authority differs across taxes, utilities, housing, healthcare and federal tariffs.",
+            "Office authority: The governor can exercise lawful executive powers, propose budgets and sign/veto legislation, but does not control federal tariffs or all market prices. Exact order authority and constraints require operative text.",
+            "No explicit deadline is stated in the selected passage."
+          ]
+        },
+        {
+          "id": "pilot-d-governor-04-after-prepared-1",
+          "date": "2026-11-04",
+          "dateBasis": "Displayed campaign release date; the text is explicitly prepared remarks, not verified delivered audio/video.",
+          "phase": "after_election",
+          "attribution": "Katie Hobbs campaign’s prepared governor remarks; separate John Giles section excluded from attribution.",
+          "quote": "And we will keep expanding apprenticeship opportunities",
+          "context": "In the governor’s separate prepared-remarks section, this future second-term proposal appears alongside water, border, school-funding and housing proposals. Claims of prior accomplishments elsewhere in the speech are not independently adopted. Her campaign describes a race call, which is not used here to upgrade official outcome status.",
+          "sourceUrl": "https://katiehobbs.org/governor-katie-hobbs-and-lieutenant-governor-elect-john-giles-deliver-remarks-at-victory-rally/",
+          "fullSourceUrl": "https://katiehobbs.org/governor-katie-hobbs-and-lieutenant-governor-elect-john-giles-deliver-remarks-at-victory-rally/",
+          "locator": "Governor Katie Hobbs → Remarks as prepared for delivery → second-term proposal block, lines 128–138",
+          "verified": true,
+          "sourceReviewed": true,
+          "personallyAuthoredOrDeliveredVerified": false,
+          "limits": [
+            "Verified as campaign-published prepared text; actual delivery/wording not authenticated.",
+            "Apprenticeship proposal has no directly matched implementation record in this selected action example.",
+            "Future-term proposal is not yet assessable; no priority-shift inference."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "pilot-d-governor-04-action-1",
+          "date": "2026-10-13",
+          "type": "signed_executive_order",
+          "recordId": "Arizona Executive Order 2026-03",
+          "title": "Agricultural transport and dyed-diesel emergency directives",
+          "description": "Signed October 13. To the extent permitted by law, directs ADOT to treat qualifying agricultural loads of 80,001–90,800 pounds as nonreducible for permitting on non-interstate highways and waive fees for permits issued. Directs covered state agencies to deprioritize dyed-diesel enforcement for specified agricultural uses on non-interstate roads. Requires ADOT staff notification/training by October 16. Effective October 16 through December 31, 2026 unless rescinded earlier. The order preserves applicable law and existing agency powers; defined agency exclusions apply.",
+          "sourceUrl": "https://azgovernor.gov/file/64759/download?token=tif5Tujj",
+          "relatedStatementIds": [
+            "pilot-d-governor-04-campaign-1"
+          ],
+          "relationship": "related",
+          "effectiveDate": "2026-10-16",
+          "expirationDate": "2026-12-31",
+          "earlyTermination": "Earlier rescission",
+          "locator": "Signed PDF pages 1–3, especially operative paragraphs 2–4 and 7–11; signature date on page 3",
+          "sourceSha256": "975b6cdb5a40c98ddd51bf4720f55897b218bbfcda23b7a77fe6bdc5f3d2d764",
+          "limits": [
+            "All three rendered pages visually inspected. Public official download worked with normal curl/TLS while Python request returned 403; both receipts retained.",
+            "This verifies issuance and operative text, not compliance, implementation, measured fuel/food savings or fulfillment of broad affordability promises.",
+            "Non-interstate and agricultural-use conditions matter; federal interstate accommodation is encouraged rather than commanded.",
+            "Treating qualifying loads as nonreducible for permitting and waiving fees for permits issued does not guarantee every permit will be issued."
+          ],
+          "verified": true
+        }
+      ],
+      "accounts": [
+        {
+          "platform": "X",
+          "url": "https://twitter.com/GovernorHobbs",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261024130003/https://azgovernor.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory. X/twitter URL variants may refer to one handle; not counted as distinct people. Account staff composition is unknown."
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/GovernorHobbs",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261024130003/https://azgovernor.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory."
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/govhobbs",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261024130003/https://azgovernor.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory."
+        },
+        {
+          "platform": "YouTube",
+          "url": "https://www.youtube.com/@GovernorHobbs",
+          "type": "official",
+          "ownershipEvidenceUrls": [
+            "http://web.archive.org/web/20261024130003/https://azgovernor.gov/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "Outgoing link inspected on dated public primary-domain replay; historical link evidence does not establish an exhaustive current account inventory."
+        },
+        {
+          "platform": "Facebook",
+          "url": "http://facebook.com/hobbskatie",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "https://katiehobbs.org/in-tucson-katie-hobbs-hosts-affordability-roundtable-with-joanna-mendoza/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": ""
+        },
+        {
+          "platform": "Instagram",
+          "url": "http://instagram.com/katie4az",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "https://katiehobbs.org/in-tucson-katie-hobbs-hosts-affordability-roundtable-with-joanna-mendoza/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": ""
+        },
+        {
+          "platform": "X",
+          "url": "http://twitter.com/katiehobbs",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "https://katiehobbs.org/in-tucson-katie-hobbs-hosts-affordability-roundtable-with-joanna-mendoza/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": "X/twitter URL variants may refer to one handle; not counted as distinct people. Account staff composition is unknown."
+        },
+        {
+          "platform": "YouTube",
+          "url": "http://youtube.com/@KatieHobbsAZ",
+          "type": "campaign",
+          "ownershipEvidenceUrls": [
+            "https://katiehobbs.org/in-tucson-katie-hobbs-hosts-affordability-roundtable-with-joanna-mendoza/"
+          ],
+          "ownershipStatus": "primary_linked",
+          "accessStatus": "not_opened",
+          "notes": ""
+        }
+      ],
+      "archives": [
+        {
+          "originalUrl": "https://azgovernor.gov/",
+          "archiveUrl": "http://web.archive.org/web/20261024130003/https://azgovernor.gov/",
+          "captureDate": "2026-10-24T13:00:03+00:00",
+          "contentReviewed": true,
+          "deletionStatus": "not_established",
+          "notes": "Visible replay shows the governor office homepage, dated October news teasers, constituent services and outgoing official account links. It predates Election Day and contains no verified later election outcome. Actual replay HTML, Wayback toolbar/wombat markers and matching Memento header were inspected. Only visible text/links were reviewed; images, audio, scripts, forms and embedded social/live resources were not verified as contemporaneous. Capture time is not the original publication time.",
+          "contentScope": "homepage visible text and outgoing links only",
+          "receiptSha256": "14da0e1118164d16881b8669e8c5960b308d5d038815edb87074374a243067f9"
+        },
+        {
+          "originalUrl": "https://x.com/GovernorHobbs",
+          "archiveUrl": "http://web.archive.org/web/20261015183836/https://x.com/GovernorHobbs",
+          "captureDate": "2026-10-15T18:38:36+00:00",
+          "contentReviewed": false,
+          "deletionStatus": "not_established",
+          "notes": "One exact known-account URL availability check returned capture metadata. That social-profile replay was not opened. No exact missing post was authenticated, and missing/forbidden live content is not evidence of deletion."
+        }
+      ],
+      "id": "pilot-d-governor-04",
+      "party": "Democrat",
+      "office": "governor",
+      "state": "Arizona",
+      "district": null,
+      "recordLinks": [
+        {
+          "label": "Official Arizona executive-order directory",
+          "url": "https://azgovernor.gov/executive-orders",
+          "scope": "Order index; operative selected signed PDF separately linked"
+        }
+      ],
+      "coverage": {
+        "cutoff": "2026-11-07T06:53:05.764811+00:00",
+        "timezone": "America/Denver",
+        "checkedPlatforms": [
+          "Facebook",
+          "Instagram",
+          "X",
+          "YouTube"
+        ],
+        "postElectionSearch": "1 original statement(s) dated after election day verified in this review. X forbidden profiles were not retried, bypassed or treated as deletion. Campaign webpages remain campaign-attributed where social body unavailable.",
+        "archiveSearch": "2 archived URL/capture record(s) inspected or checked. Capture dates do not establish original publication dates or author deletion. This is not a complete archive or social-post census. 1 known social-account URL availability check(s); social-profile replay content was not verified.",
+        "limits": "Topic-agnostic bounded examples, not all statements, votes or posts. Known primary links are not a complete official/campaign/personal account census; no verified public-personal account expansion in this pass. Parent/thread context: selected native records have no reply parent; descendant replies and full media/external sources were not reviewed. Introduced proposals, cosponsorship and signed orders have distinct procedural meanings; no roll-call vote selected here. Inventory of primary-linked platforms; bodies were not opened on every listed platform. Actual access attempts are in receipts."
+      },
+      "publicationNotes": [
+        "These selected, source-checked records are not a complete promise inventory or governing record. No fulfillment, reversal, honesty or overall-priority rating is assigned.",
+        "Campaign publications and account posts are attributed to the cited source; personal speech or composition is not assumed. Unknown chronology and prospective-term limits remain visible."
+      ],
+      "review": {
+        "status": "source_reviewed",
+        "scope": "Selected original-source facts and context only; incomplete lanes remain explicitly unassessed."
+      }
+    },
+    {
+      "name": "Sarah Huckabee Sanders",
+      "identity": {
+        "status": "confirmed",
+        "evidenceUrls": [
+          "https://www.usa.gov/states/arkansas",
+          "https://www.sarahforgovernor.com/2026/"
+        ],
+        "notes": "Public person matched across the cited official public identity source and candidate campaign source. This is not outcome qualification or authentication of every campaign claim."
+      },
+      "outcome": {
+        "status": "reported_leader",
+        "sourceUrls": [
+          "https://arkansas.tally-enr.com/",
+          "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+          "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/ar.csv"
+        ],
+        "note": "Preserved frozen-roster provisional status; no proper dated official named winner declaration/certification obtained or promoted by this verification pass."
+      },
+      "statements": [
+        {
+          "id": "sanders-campaign-01",
+          "date": "2026-05-12",
+          "dateBasis": "Visible May12,2026 date on campaign Afford transcript entry.",
+          "phase": "campaign",
+          "attribution": "Sarah for Governor; campaign-published text; transcript labels this line as Governor Sarah Sanders, audiovisual recording unverified",
+          "quote": "I eliminated the grocery tax, cut the income tax by 25% and will keep fighting to get it to zero.",
+          "context": "The published Afford ad transcript combines retrospective grocery- and income-tax claims with future advocacy for zero income tax. Those clauses concern different taxes and timeframes. The campaign labels the speaker; the underlying audiovisual recording and individual composition were not independently authenticated.",
+          "sourceUrl": "https://www.sarahforgovernor.com/2026/",
+          "fullSourceUrl": "https://www.sarahforgovernor.com/2026/",
+          "locator": "May 12, 2026 entry, Afford (:30) transcript; line attributed to Governor Sarah Sanders",
+          "verified": true,
+          "verificationScope": "Verified as wording/context on the original campaign publication; not verification of underlying campaign factual claims, individual authorship or a dated prior pledge.",
+          "limits": [
+            "Future clause is keep fighting, with no deadline for zero income tax. Past grocery/income-tax claims require separate legal definitions, baseline rates and attribution checks.",
+            "The Governor can propose policy, sign or veto measures and administer enacted tax law; the legislature also acts. State grocery-tax exemptions do not establish removal of every local tax, and a tax-law change alone does not measure price effects.",
+            "The retained excerpt is 25 words or fewer; the full original source is linked. No campaign claim is scored as true/false or kept/broken."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "id": "sanders-official-action-01",
+          "date": "2025-04-22",
+          "type": "related_legislative_enactment_record",
+          "recordId": "AR-2025-Act1008",
+          "billId": "AR-2025-HB1685",
+          "title": "Related state legislative record: HB1685 became Act1008",
+          "description": "The Arkansas Legislature’s HB1685 record gives April 22, 2025 as the Act date and records notification that the bill became Act1008. The bill title concerns exemption from state sales and use taxes on groceries. This record alone does not document Sanders personally signing it.",
+          "sourceUrl": "https://www.arkleg.state.ar.us/Bills/Detail?id=HB1685&ddBienniumSession=2025%2F2025R",
+          "relatedStatementIds": [
+            "sanders-campaign-01"
+          ],
+          "relationship": "related",
+          "officeAtTime": "State legislative enactment record during Sanders’s current Governor term; personal signature attribution not established by this record.",
+          "question": null,
+          "stage": "state_enactment_notification",
+          "verified": true,
+          "limits": [
+            "The state legislative record identifies HB1685 becoming Act1008 and an earlier transmission to the Governor’s Office. Its title concerns state sales/use taxes on groceries. This is an enactment record, not by itself evidence of the Governor’s signature, implementation details or income-tax elimination.",
+            "A specific vote/action is not a complete policy record, enacted implementation, measured outcome, overall priority finding or promise verdict.",
+            "The campaign transcript is dated May12,2026; the related legislative Act notification predates it on April22,2025.",
+            "Related state record, not evidence of Sanders’s individual signature or administrative implementation. State/local tax scope, income-tax percentage and the future zero-income-tax aspiration require separate evidence.",
+            "Office at the time: State legislative enactment record during Sanders’s current Governor term; personal signature attribution not established by this record.",
+            "Legislative stage: state_enactment_notification"
+          ]
+        }
+      ],
+      "accounts": [
+        {
+          "platform": "X",
+          "url": "https://twitter.com/SarahHuckabee",
+          "type": "public_person_used_for_governor_communications",
+          "ownershipEvidenceUrls": [
+            "https://www.nga.org/governors/social/"
+          ],
+          "ownershipStatus": "directory_listed",
+          "accessStatus": "unavailable",
+          "aliases": [],
+          "notes": "Listed in the National Governors Association directory; current account control and post authorship not verified."
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/SarahHuckabeeSanders",
+          "type": "public_person_used_for_governor_communications",
+          "ownershipEvidenceUrls": [
+            "https://www.nga.org/governors/social/"
+          ],
+          "ownershipStatus": "directory_listed",
+          "accessStatus": "throttled",
+          "aliases": [],
+          "notes": "Listed in the National Governors Association directory; current account control and post authorship not verified."
+        }
+      ],
+      "archives": [
+        {
+          "originalUrl": "https://www.sarahforgovernor.com/2026/",
+          "archiveUrl": null,
+          "captureDate": null,
+          "contentReviewed": false,
+          "deletionStatus": "no_capture",
+          "notes": [
+            "One exact-URL availability query returned no closest capture. This does not establish complete absence from archives or deletion."
+          ]
+        },
+        {
+          "originalUrl": "https://governor.arkansas.gov/",
+          "archiveUrl": "http://web.archive.org/web/20261021051033/https://governor.arkansas.gov/",
+          "captureDate": "2026-10-21T05:10:33+00:00",
+          "contentReviewed": true,
+          "deletionStatus": "not_established",
+          "notes": [
+            "Inspected public campaign/official homepage text for subject identity and public links. This is not a replay of the exact retained policy passage.",
+            "Capture timestamp is not original publication time; no media completeness, authorship or deletion assertion."
+          ]
+        }
+      ],
+      "id": "pilot-r-governor-05",
+      "party": "Republican",
+      "office": "governor",
+      "state": "Arkansas",
+      "district": null,
+      "recordLinks": [],
+      "coverage": {
+        "cutoff": "2026-11-06",
+        "timezone": "America/Denver",
+        "checkedPlatforms": [
+          "X",
+          "Facebook"
+        ],
+        "postElectionSearch": "No original statement dated after election day was verified in this bounded review. This is a coverage gap, not a finding that none exists. Search window: 2026-11-04 through 2026-11-06. Public campaign-domain, name/date and known-handle/date web searches; original profile access attempted; third-party snippets/mirrors not promoted to original evidence.",
+        "archiveSearch": "2 archived URL/capture record(s) inspected or checked. Capture dates do not establish original publication dates or author deletion. This is not a complete archive or social-post census. No sourced exact missing/deleted post URL qualified for claim-level authentication; no deletion conclusion.",
+        "limits": "Stopped additional social/network research after Facebook throttling/temporary-block responses. No alternate-access retry, login bypass or archive save. Not an exhaustive two-year social history, campaign history, post-election inventory or complete voting record. No complete defined activity window/denominator supports priority-shift analysis. Activity on another issue does not alone contradict a pledge. No full official voting/action directory was inspected beyond selected roll calls; no broader directory URL guessed. Only listed profile attempts/access receipts and primary-link inventory. Instagram/YouTube links were inventoried where present, not their post histories. Public personal accounts not inferred from badges or names."
+      },
+      "publicationNotes": [
+        "These selected, source-checked records are not a complete promise inventory or governing record. No fulfillment, reversal, honesty or overall-priority rating is assigned.",
+        "Campaign publications and account posts are attributed to the cited source; personal speech or composition is not assumed. Unknown chronology and prospective-term limits remain visible."
+      ],
+      "review": {
+        "status": "source_reviewed",
+        "scope": "Selected original-source facts and context only; incomplete lanes remain explicitly unassessed."
+      }
+    }
+  ]
+}

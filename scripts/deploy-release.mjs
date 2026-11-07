@@ -19,6 +19,7 @@ run('node',['scripts/build-domain.mjs'],{stdio:'inherit'});
 run('npm',['run','verify:packaged'],{stdio:'inherit'});
 run('node',['scripts/verify-seo-canonicals.mjs','--require-artifacts'],{stdio:'inherit'});
 run('node',['scripts/verify-winners-prerender.mjs','--require-artifacts'],{stdio:'inherit'});
+run('node',['scripts/verify-accountability.mjs','--require-artifacts'],{stdio:'inherit'});
 clean();
 if(run('git',['rev-parse','HEAD']).trim()!==commit)throw new Error('Source changed during build.');
 const configuration=JSON.parse(fs.readFileSync('.vmap-deploy.local.json','utf8'));
@@ -96,7 +97,7 @@ except Exception as error:
  raise
 print(json.dumps(record))
 `);
-function verify(origin,file,expected) {
+function verifyOnce(origin,file,expected) {
   return new Promise((resolve,reject)=>{
     // Check the configured origin with normal TLS hostname/certificate validation.
     const request=https.get(new URL(file==='index.html'?'':file,origin),response=>{
@@ -104,13 +105,23 @@ function verify(origin,file,expected) {
     });request.setTimeout(30000,()=>request.destroy(new Error('Live origin verification timed out.')));request.on('error',reject);
   });
 }
+async function verify(origin,file,expected) {
+  // Retry only transient resolver failures; retain normal TLS and exact hash checks.
+  for(let attempt=0;attempt<3;attempt++){
+    try{return await verifyOnce(origin,file,expected);}
+    catch(error){
+      if(attempt===2||!['ENOTFOUND','EAI_AGAIN'].includes(error.code))throw error;
+      await new Promise(resolve=>setTimeout(resolve,250*(attempt+1)));
+    }
+  }
+}
 let outcome=JSON.parse(promotion);
 const localReceipt=path.join(receipt,'release.json');
 try {
   // Persist the successful pointer swap before making any public requests.
   fs.writeFileSync(localReceipt,JSON.stringify(outcome));
   for(const [origin,manifest] of [['https://cas-tx.com/vmap/',cas],['https://voteranomaly.com/',domain]]) {
-    const checks=['index.html','winners/index.html','sitemap.xml','share/v-map-logo-v2.png',...Object.keys(manifest).filter(file=>file.startsWith('data/winners/')),...Object.keys(manifest).filter(file=>file.startsWith('assets/') && (file.endsWith('.js')||file.endsWith('.css')))];
+    const checks=['index.html','winners/index.html','accountability/index.html','data/candidates/pilot-2026.json','sitemap.xml','share/v-map-logo-v2.png',...Object.keys(manifest).filter(file=>file.startsWith('data/winners/')),...Object.keys(manifest).filter(file=>file.startsWith('assets/') && (file.endsWith('.js')||file.endsWith('.css')))];
     await Promise.all(checks.map(file=>verify(origin,file,manifest[file])));
   }
   outcome=JSON.parse(ssh(prelude+receiptPrelude+`

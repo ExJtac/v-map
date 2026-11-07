@@ -9,6 +9,7 @@ export const PRIMARY_ORIGIN = 'https://voteranomaly.com/';
 const pages = [
   {route:'', file:'index.html', source:'index.html'},
   {route:'winners/', file:'winners/index.html', source:'winners/index.html'},
+  {route:'accountability/', file:'accountability/index.html', source:'accountability/index.html'},
   {route:'about/', file:'about/index.html', source:'public/about/index.html'},
   {route:'methodology/', file:'methodology/index.html', source:'public/methodology/index.html'},
   {route:'coverage/', file:'coverage/index.html', source:'public/coverage/index.html'},
@@ -40,7 +41,7 @@ export function verifyPageIdentity(html, route, label) {
 }
 function sitemap(file,label) {
   const body=fs.readFileSync(file,'utf8'),locations=[...body.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-  assert.equal(locations.length,pages.length,`${label}: exactly five canonical sitemap entries required`);
+  assert.equal(locations.length,pages.length,`${label}: exactly ${pages.length} canonical sitemap entries required`);
   assert.deepEqual([...locations].sort(),pages.map(page=>PRIMARY_ORIGIN+page.route).sort(),`${label}: sitemap must contain only primary page identities`);
 }
 function mountedAssets(html,directory,base,label) {

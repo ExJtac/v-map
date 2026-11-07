@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What they said & what they did | V-Map candidate accountability</title>
+  <meta name="description" content="A source-linked, nonpartisan 12-candidate pilot comparing campaign and public statements with documented official actions, original sources, public-account links and explicit research gaps." />
+  <link rel="canonical" href="https://voteranomaly.com/accountability/" />
+  <meta property="og:title" content="What they said & what they did | V-Map" />
+  <meta property="og:description" content="Read original statements in context alongside the official record. Explore the 12-candidate pilot and follow the full sources." />
+  <meta property="og:url" content="https://voteranomaly.com/accountability/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://voteranomaly.com/share/v-map-logo-v2.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://voteranomaly.com/share/v-map-logo-v2.png" />
+  <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K67FPGPPG"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-7K67FPGPPG');</script>
+</head>
+<body>
+  <a class="accountability-skip" href="#accountability-results">Skip to candidate records</a>
+  <header class="site-header accountability-header">
+    <a class="brand" href="%BASE_URL%" aria-label="V-Map home"><img class="brand-logo" src="%BASE_URL%share/v-map-mark.png" width="40" height="40" alt="" />V-Map</a>
+    <nav class="accountability-nav" aria-label="Main navigation"><a href="%BASE_URL%">Explore the map</a><a href="%BASE_URL%winners/">Winners & leaders</a><a href="%BASE_URL%accountability/" aria-current="page">Statements & actions</a><a href="%BASE_URL%#support">Support V-Map</a></nav>
+  </header>
+  <main class="accountability-page">
+    <section class="accountability-intro" aria-labelledby="accountability-heading">
+      <p class="accountability-eyebrow">CANDIDATE ACCOUNTABILITY · 2026 PILOT</p>
+      <h1 id="accountability-heading">What they said.<br />What they did.</h1>
+      <p class="accountability-lead">Original statements, their context, and the documented record. Follow the full sources and draw your own conclusions.</p>
+      <div id="accountability-introduction"><!--vmap:accountability-introduction--></div>
+    </section>
+    <aside class="accountability-notice" aria-label="How to read this pilot"><strong>Same evidence standards. Every party. Any topic.</strong><p>This dated manual pilot covers 12 candidates; it is not a complete campaign, social-media or governing history. A statement is not an action, a bill introduction is not an enacted policy, and an election-day result is not a sworn-in date. Post-election statements remain separate from official acts. Unknown dates and unavailable records stay visible.</p><p>These records do not assign kept/broken-promise, honesty or overall-priority scores. Review limitations before interpreting a comparison.</p></aside>
+    <form id="accountability-controls" class="accountability-controls" aria-label="Filter the accountability pilot">
+      <label class="accountability-search">Find a candidate, state or source topic<input id="accountability-search" type="search" placeholder="Name, state, bill or statement topic" disabled /></label>
+      <label>Office<select id="accountability-office" disabled><option value="">All offices</option><option value="senate">U.S. Senate</option><option value="house">U.S. House</option><option value="governor">Governor</option></select></label>
+      <label>Party<select id="accountability-party" disabled><option value="">All parties</option><option value="Democrat">Democratic</option><option value="Republican">Republican</option><option value="Other">Other parties</option></select></label>
+      <button id="accountability-reset" type="reset" disabled>Reset filters</button>
+    </form>
+    <p id="accountability-summary" class="accountability-summary" role="status"><!--vmap:accountability-summary--></p>
+    <p id="accountability-error" class="accountability-error" role="alert" hidden></p>
+    <nav id="accountability-jump-links" class="accountability-jump-links" aria-label="Jump to a candidate"><!--vmap:accountability-jump-links--></nav>
+    <div id="accountability-results" class="accountability-results" data-prerender-sha=""><!--vmap:accountability-candidates--></div>
+    <noscript><p>All 12 pilot records and source links are available above without JavaScript. Enable JavaScript to filter the view.</p></noscript>
+    <section class="accountability-reading-guide" aria-labelledby="accountability-guide-heading"><h2 id="accountability-guide-heading">Read the record in context</h2><div><p><strong>Words and authorship.</strong> Campaign website text is attributed to the campaign. It is not automatically a transcript of the candidate speaking. Short excerpts link to the full original text, interview, thread or recording when verified.</p><p><strong>Actions and authority.</strong> Votes retain their exact question and legislative stage. Prior-office actions are dated as prior records. A prospective commitment is not broken simply because the new term has not begun.</p><p><strong>Archives and missing evidence.</strong> Archive capture time differs from original publication time. A missing post is not proof its author deleted it. Account linkage does not establish that every post or the full history was reviewed.</p><p><strong>Interpretation and corrections.</strong> Following through on a promise, reversing a position and changing priorities are different questions. A few selected records cannot establish a whole governing agenda. Corrections should identify the candidate, exact item and original source.</p></div></section>
+    <footer class="accountability-footer"><a href="%BASE_URL%data/candidates/pilot-2026.json">Download the pilot source records</a><a href="%BASE_URL%methodology/">Election-data methodology</a><a href="https://github.com/ExJtac/v-map/issues" target="_blank" rel="noopener noreferrer">Submit a source or correction ↗</a><a href="%BASE_URL%">Back to the map</a></footer>
+  </main>
+  <script type="module" src="../src/accountability.js"></script>
+</body>
+</html>

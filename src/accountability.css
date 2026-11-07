@@ -1,0 +1,85 @@
+.accountability-header{height:auto;min-height:86px;justify-content:space-between;padding-top:18px;padding-bottom:18px}
+.accountability-nav,.accountability-footer{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;font-size:16px}
+.accountability-nav a,.accountability-footer a{color:#285840;text-underline-offset:4px}
+.accountability-nav [aria-current]{font-weight:750}
+.accountability-page{max-width:1260px;margin:0 auto;padding:44px 28px 64px;font-size:17px;line-height:1.65}
+.accountability-page *{min-width:0}
+.accountability-page a{overflow-wrap:anywhere;text-underline-offset:4px}
+.accountability-skip{position:absolute;left:-9999px;top:10px;z-index:10;background:white;padding:12px}
+.accountability-skip:focus{left:16px}
+.accountability-intro{max-width:980px}
+.accountability-eyebrow{font-size:13px;letter-spacing:1.6px;color:#45695d;font-weight:750}
+.accountability-intro h1{font-size:clamp(38px,6vw,70px);line-height:1.04;letter-spacing:-2px;margin:18px 0 26px}
+.accountability-lead{font-size:21px;line-height:1.55;max-width:830px}
+.accountability-scope,.accountability-methodology{font-size:16px;color:#52695f;max-width:90ch}
+.accountability-notice{padding:23px 26px;background:#faf3df;border:1px solid #dbceaa;border-left:4px solid #9b7931;border-radius:10px;margin:28px 0 30px}
+.accountability-notice>strong{font-size:19px;color:#3d4e38}
+.accountability-notice p{font-size:16px;line-height:1.65;margin:10px 0 0;max-width:105ch}
+.accountability-controls{display:grid;grid-template-columns:minmax(240px,2fr) minmax(145px,1fr) minmax(145px,1fr) auto;gap:16px;align-items:end;padding:22px;border:1px solid #cbd9ce;border-radius:12px;background:white}
+.accountability-controls label{display:grid;gap:8px;font-size:15px;font-weight:750}
+.accountability-controls input,.accountability-controls select,.accountability-controls button{font:inherit;font-size:17px;line-height:1.35;width:100%;padding:12px;border:1px solid #97ad9f;border-radius:7px;background:white;color:#234b3a;min-height:49px}
+.accountability-controls button{background:#edf3ee;font-size:15px;font-weight:700;white-space:normal}
+.accountability-controls :disabled{opacity:.6;cursor:default}
+.accountability-summary{font-size:16px;font-weight:700;color:#496353;margin:21px 0 15px}
+.accountability-error{padding:14px 18px;border:1px solid #d8c39d;background:#fff6e5;border-radius:8px}
+.accountability-jump-links{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 30px}
+.accountability-jump-links a{padding:7px 11px;background:#eaf1eb;border:1px solid #ccdcd0;border-radius:6px;font-size:14px;font-weight:650;color:#28543b;text-decoration:none}
+.accountability-person{background:white;border:1px solid #c4d6c9;border-radius:14px;margin:0 0 30px;scroll-margin-top:24px;overflow-wrap:anywhere}
+.accountability-person-header{display:flex;justify-content:space-between;align-items:start;gap:20px;padding:26px 28px 18px}
+.accountability-place{font-size:14px;font-weight:750;letter-spacing:.7px;text-transform:uppercase;color:#526d5e;margin:0 0 8px}
+.accountability-person-header h2{font-size:30px;line-height:1.2;letter-spacing:-.7px;margin:0 0 14px}
+.accountability-person-header h2 a{text-decoration:none;color:#244d3d}
+.accountability-tags{display:flex;flex-wrap:wrap;gap:8px;font-size:13px;font-weight:700}
+.accountability-tags span{background:#eaf1eb;padding:5px 9px;border-radius:5px;color:#355b43}
+.accountability-permalink{font-size:13px;font-weight:700;max-width:145px;color:#426d50;margin-top:4px}
+.accountability-person-scope{padding:0 28px 20px;color:#52685b;border-bottom:1px solid #dce5df}
+.accountability-person-scope p{margin:5px 0;font-size:14px;line-height:1.65}
+.accountability-small-links{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;margin-top:10px;color:#386345}
+.accountability-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.accountability-lane{padding:23px 28px 26px}
+.accountability-lane+.accountability-lane{border-left:1px solid #dce5df;background:#fbfcf9}
+.accountability-lane-heading{display:flex;gap:12px;align-items:baseline;margin-bottom:22px}
+.accountability-lane-heading>span{font-size:12px;font-weight:750;letter-spacing:1px;color:#65806d}
+.accountability-lane-heading h3{font-size:18px;line-height:1.4;margin:0;color:#35533e}
+.accountability-subheading{font-size:14px;font-weight:750;color:#51694f;line-height:1.5;margin:0 0 14px}
+.accountability-after-election{padding-top:23px;margin-top:25px;border-top:1px solid #dae5dd}
+.accountability-evidence+.accountability-evidence{margin-top:28px;padding-top:25px;border-top:1px solid #dae5dd}
+.accountability-evidence-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 14px;font-size:12px;font-weight:750;color:#637660;letter-spacing:.2px}
+.accountability-attribution{font-size:14px;font-weight:650;color:#4c6655;margin:10px 0}
+.accountability-statement blockquote{margin:15px 0 18px;padding:2px 0 2px 17px;border-left:3px solid #6d9b7a}
+.accountability-statement blockquote p{font-size:21px;font-weight:650;line-height:1.55;color:#233f31;margin:0}
+.accountability-context{font-size:16px;line-height:1.75;margin:13px 0}
+.accountability-action h4{font-size:19px;line-height:1.5;margin:12px 0 8px}
+.accountability-record-id{font-size:13px;font-weight:750;color:#5e7061;margin:8px 0}
+.accountability-record-directories{border-top:1px solid #dae5dd;margin-top:24px;padding-top:16px}
+.accountability-record-directories h4{font-size:16px;margin:0 0 10px}
+.accountability-record-directories ul{padding-left:19px;font-size:14px}
+.accountability-record-directories li{margin:14px 0}
+.accountability-relationship{font-size:13px;font-weight:750;color:#41604a;background:#edf2e9;border-left:2px solid #91aa83;padding:9px 12px;margin:16px 0}
+.accountability-note{font-size:14px;line-height:1.65;color:#5a6d5e;margin:10px 0}
+.accountability-note strong{font-weight:700}
+.accountability-source-links{display:flex;flex-wrap:wrap;gap:12px 18px;margin:19px 0}
+.accountability-source-link{font-size:15px;line-height:1.6;font-weight:750;color:#285b3d}
+.accountability-gap{border:1px dashed #c5d4c8;background:#f5f8f2;padding:15px 17px;border-radius:6px;font-size:15px;line-height:1.75;color:#526650}
+.accountability-publication-note{padding:15px 28px;background:#f5f6ed;border-top:1px solid #dee4d7;font-size:14px;line-height:1.7;color:#59664e;margin:0}
+.accountability-publication-note+.accountability-publication-note{border-top:0;padding-top:0}
+.accountability-coverage{border-top:1px solid #dce5df}
+.accountability-coverage>summary{padding:19px 28px;font-size:15px;font-weight:750;color:#365641;cursor:pointer;line-height:1.6}
+.accountability-coverage>summary span{font-size:12px;font-weight:550;color:#687a6b;display:inline-block;margin-left:12px}
+.accountability-coverage-content{padding:0 28px 25px}
+.accountability-coverage h4{font-size:17px;margin:22px 0 8px}
+.accountability-record-list{list-style:none;padding:0;margin:16px 0 24px}
+.accountability-record-list>li{padding:16px 18px;border:1px solid #dce5dd;border-radius:7px;background:#fafcf8;margin-top:12px}
+.accountability-record-heading{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;font-size:15px}
+.accountability-record-heading a{font-size:14px;color:#315f40}
+.accountability-empty{padding:30px 0}
+.accountability-reading-guide{padding:10px 0 24px;margin-top:40px}
+.accountability-reading-guide h2{font-size:28px;letter-spacing:-.6px;margin-bottom:22px}
+.accountability-reading-guide>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 34px}
+.accountability-reading-guide p{margin:0 0 16px;font-size:15px;line-height:1.75;color:#526957}
+.accountability-reading-guide strong{color:#2c4c37}
+.accountability-footer{border-top:1px solid #cddbd0;padding-top:28px;margin-top:20px;font-size:14px;align-items:start}
+.accountability-page :is(a,button,input,select,summary):focus-visible{outline:3px solid #9b7931;outline-offset:4px}
+@media(max-width:900px){.accountability-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.accountability-search{grid-column:1/-1}.accountability-controls button{grid-column:1/-1;justify-self:start;width:auto;min-width:140px}.accountability-header{gap:20px;align-items:start}.accountability-nav{justify-content:flex-end;font-size:14px;gap:10px 15px}}
+@media(max-width:700px){.accountability-header{flex-direction:column;align-items:start;padding:20px}.accountability-nav{justify-content:flex-start}.accountability-page{padding:28px 18px 46px}.accountability-intro h1{letter-spacing:-1px;font-size:clamp(37px,10vw,54px)}.accountability-lead{font-size:19px}.accountability-notice{padding:19px}.accountability-controls{padding:17px;gap:14px}.accountability-person-header{padding:22px 20px 16px;flex-direction:column;gap:8px}.accountability-person-header h2{font-size:28px}.accountability-permalink{max-width:none}.accountability-person-scope{padding:0 20px 19px}.accountability-comparison{grid-template-columns:1fr}.accountability-lane{padding:23px 20px}.accountability-lane+.accountability-lane{border-left:0;border-top:1px solid #dce5df}.accountability-statement blockquote p{font-size:20px}.accountability-publication-note{padding:15px 20px}.accountability-coverage>summary{padding:18px 20px}.accountability-coverage>summary span{display:block;margin-left:0;margin-top:5px}.accountability-coverage-content{padding:0 20px 22px}.accountability-record-list>li{padding:14px}.accountability-reading-guide>div{grid-template-columns:1fr}.accountability-footer{gap:14px 20px}}
+@media(max-width:370px){.accountability-controls{grid-template-columns:1fr}.accountability-search,.accountability-controls button{grid-column:auto}.accountability-person-header h2{font-size:25px}}

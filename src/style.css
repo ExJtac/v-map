@@ -1847,3 +1847,10 @@ html { scrollbar-gutter: stable; }
 @media (pointer:coarse) { #map-gestures { display:none; } }
 
 .winners-nav-link { color:#285840; font-size:14px; font-weight:700; text-underline-offset:4px; }
+.map-site-header { height:auto; min-height:86px; padding-block:16px; }
+.map-site-header .brand { flex-shrink:0; }
+.map-site-header .header-actions { flex-wrap:wrap; }
+@media(max-width:680px) {
+  .map-site-header { flex-direction:column; align-items:flex-start; gap:14px; min-height:70px; padding:16px 5%; }
+  .map-site-header .header-actions { margin-left:0; justify-content:flex-start; gap:12px; }
+}
