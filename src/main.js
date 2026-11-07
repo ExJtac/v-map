@@ -99,10 +99,10 @@ let selectedState = null,
   countyError = "",
   elections;
 let mapGestures = false, pageScrollIntent = 0;
-document.addEventListener('wheel', event => { if (!event.ctrlKey && !event.metaKey) pageScrollIntent++; }, {passive:true});
+document.addEventListener('wheel', event => { if (!event.ctrlKey && !event.metaKey) { pageScrollIntent++; if(!event.target.closest('#us-map'))setMapGestures(false); } }, {passive:true});
 document.addEventListener('touchmove', () => { if (!mapGestures) pageScrollIntent++; }, {passive:true});
 const mapZoom = zoom()
-  .filter(event => event.type === 'wheel' ? (event.ctrlKey || event.metaKey) : event.type.startsWith('touch') ? mapGestures : !event.button)
+  .filter(event => event.type === 'wheel' ? (event.ctrlKey || event.metaKey || (mapGestures && (event.deltaY < 0 ? currentZoom.k < 450 : currentZoom.k > 1))) : event.type.startsWith('touch') ? mapGestures : !event.button)
   .wheelDelta(event => -event.deltaY * (event.deltaMode === 1 ? .05 : event.deltaMode ? .5 : .002))
   .scaleExtent([1, 450])
   .extent([
@@ -123,7 +123,13 @@ const mapZoom = zoom()
       .attr("font-size", 10 / currentZoom.k);
   });
 svg.call(mapZoom).on("dblclick.zoom", null);
-svg.node().addEventListener('wheel',event=>{if(event.ctrlKey || event.metaKey)event.preventDefault();},{passive:false});
+svg.node().addEventListener('wheel',event=>{
+  if(event.ctrlKey || event.metaKey)event.preventDefault();
+  else if(mapGestures && ((event.deltaY > 0 && currentZoom.k <= 1) || (event.deltaY < 0 && currentZoom.k >= 450)))setMapGestures(false);
+},{passive:false});
+svg.node().addEventListener('pointerdown',event=>{if(event.pointerType==='mouse' && event.button===0)setMapGestures(true);});
+document.addEventListener('pointerdown',event=>{if(!event.target.closest('#map-stage,#map-gestures'))setMapGestures(false);});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')setMapGestures(false);});
 function moveTo(t) {
   svg.interrupt();
   if (reducedMotion) { svg.call(mapZoom.transform, t); return Promise.resolve(true); }
@@ -204,7 +210,7 @@ const paths = select("#states")
   .attr("aria-label", (s) => s.properties.name)
   .attr("aria-pressed", "false")
   .on("click", (e, s) => {
-    if (!e.defaultPrevented) selectState(s);
+    if (!e.defaultPrevented) { if(e.pointerType!=='touch')setMapGestures(true); selectState(s); }
   })
   .on("keydown", (e, s) => keyboard(e, () => selectState(s)));
 const labelPositions = {
@@ -416,7 +422,7 @@ async function selectState(state, { showDetails = true } = {}) {
       .attr("aria-pressed", "false")
       .on("click", (e, c) => {
         e.stopPropagation();
-        if (!e.defaultPrevented) selectCounty(c);
+        if (!e.defaultPrevented) { if(e.pointerType!=='touch')setMapGestures(true); selectCounty(c); }
       })
       .on("keydown", (e, c) => keyboard(e, () => selectCounty(c)));
     select("#county-labels")
@@ -523,11 +529,13 @@ $("#clear-selection").addEventListener("click", clearSelection);
 $("#national-view").addEventListener("click", clearSelection);
 $("#state-crumb").addEventListener("click", returnToState);
 $("#back-to-state").addEventListener("click", returnToState);
-$("#zoom-in").addEventListener("click", () => {
+$("#zoom-in").addEventListener("click", event => {
+  if(event.pointerType!=='touch')setMapGestures(true);
   svg.interrupt();
   svg.call(mapZoom.scaleBy, 1.6);
 });
-$("#zoom-out").addEventListener("click", () => {
+$("#zoom-out").addEventListener("click", event => {
+  if(event.pointerType!=='touch')setMapGestures(true);
   svg.interrupt();
   svg.call(mapZoom.scaleBy, 1 / 1.6);
 });
@@ -644,14 +652,16 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && e.target.closest("#us-map"))
     selectedCounty ? returnToState() : clearSelection();
 });
-$('#map-gestures').addEventListener('click', event => {
-  mapGestures = !mapGestures;
-  event.currentTarget.setAttribute('aria-pressed',String(mapGestures));
-  event.currentTarget.textContent = mapGestures ? 'Return to page scrolling' : 'Enable touch map gestures';
-  svg.classed('map-gestures-enabled',mapGestures);
-  $('#map-scroll-help').textContent = mapGestures ? 'Touch gestures move the map. Turn gestures off to scroll the page.' : 'Scroll to move the page. Ctrl/⌘ + scroll or + / − zooms the map.';
-});
-$('#back-to-map').addEventListener('click', () => $('.map-topline').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'}));
+function setMapGestures(enabled) {
+  mapGestures = enabled;
+  const button = $('#map-gestures');
+  button.setAttribute('aria-pressed',String(enabled));
+  button.textContent = enabled ? 'Return to page scrolling' : 'Enable map zoom & gestures';
+  svg.classed('map-gestures-enabled',enabled);
+  $('#map-scroll-help').textContent = enabled ? 'Scroll to zoom the map. Scroll outside the map, press Esc, or turn map zoom off to scroll the page.' : 'Click the map to scroll-zoom, or use + / −. On touchscreens, enable map gestures to pinch-zoom.';
+}
+$('#map-gestures').addEventListener('click', () => setMapGestures(!mapGestures));
+$('#back-to-map').addEventListener('click', event => { if(event.pointerType!=='touch')setMapGestures(true); $('.map-topline').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'}); });
 $('#jump-statistics').addEventListener('click', () => $('#statistical-review').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'}));
 $('#jump-history').addEventListener('click', () => $('#history-charts').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'}));
 $('#show-selected-results').addEventListener('click', () => {if(selectedCounty)openSelectedDetails(selectedCounty,'county');else $('#map-tooltip').scrollIntoView({block:'start',behavior:reducedMotion?'auto':'smooth'});});
