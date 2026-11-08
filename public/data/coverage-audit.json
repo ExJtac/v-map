@@ -146,6 +146,14 @@
     {
       "name": "house-completion-wa",
       "priority": 200
+    },
+    {
+      "name": "house-completion-fl",
+      "priority": 220
+    },
+    {
+      "name": "house-completion-vt",
+      "priority": 220
     }
   ],
   "coverage": [
@@ -581,11 +589,11 @@
       "mappableCounties": 3095,
       "statesWithCountyReturns": 49,
       "statesWithReturns": 50,
-      "heldRecords": 1212,
+      "heldRecords": 1119,
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 0,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 1237
+      "resolvedSourceOverlaps": 1373
     },
     {
       "office": "house",
@@ -611,11 +619,11 @@
       "mappableCounties": 2002,
       "statesWithCountyReturns": 32,
       "statesWithReturns": 37,
-      "heldRecords": 187,
+      "heldRecords": 193,
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 2680,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 1199
+      "resolvedSourceOverlaps": 1339
     },
     {
       "office": "governor",

@@ -5,7 +5,7 @@
   "status": "incomplete",
   "explanation": "Numerical screening, source context and resolved investigations are separate stages. Context reports do not close a case or establish wrongdoing. Missing comparisons remain unavailable.",
   "inputHashes": {
-    "public/data/anomalies-2026.json": "27d1cc75a752e95adad28ad54aa0db0cceb5531e6e8a3da1bf8eb1637aab07d8",
+    "public/data/anomalies-2026.json": "d14477fefb77d220d451428827e49979d63a6b2ba1b2e4110872aff285c5102b",
     "public/data/county-reviews/2026.json": "c5b5488450b8d2354ab96703943797be1c0f4db43826c16c90aca24f8daf52ea",
     "node_modules/us-atlas/counties-albers-10m.json": "a674dfa31b625e92635f32684a61ae135b05a91507f17f2d5164833237fecf46",
     "public/data/congress-scope-2026.json": "c4fb936aca2c48d4690ec5b30d29677f70e57b0e2dff48b864902aca0f60a4e4"
@@ -13,34 +13,36 @@
   "offices": {
     "house": {
       "referenceCounties": 3142,
-      "numericallyAssessed": 1143,
-      "notAssessed": 1999,
-      "flaggedCounties": 351,
+      "numericallyAssessed": 1219,
+      "notAssessed": 1923,
+      "flaggedCounties": 357,
       "proxyOnlyFlaggedCounties": 20,
       "publishedSourceContextCases": 1,
       "flaggedWithSourceContext": 1,
       "completedInvestigations": 0,
       "screenCoverage": {
         "partyCountChange": {
-          "assessed": 1048,
-          "flagged": 224
+          "assessed": 1116,
+          "flagged": 230
         },
         "shareSwing": {
-          "assessed": 1048,
-          "flagged": 169
+          "assessed": 1116,
+          "flagged": 174
         },
         "raceVoteChange": {
-          "assessed": 1143,
+          "assessed": 1219,
           "flagged": 24
         },
         "racePopulationChange": {
-          "assessed": 1141,
+          "assessed": 1217,
           "flagged": 46
         }
       },
       "notAssessedReasons": {
-        "Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.": 721,
+        "Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.": 640,
         "No imported 2026 county contest for this office.": 1140,
+        "Source quality hold: Complete countywide facts for2022held: this county has at least one block-defined unpublished portion in this source year, including explicitly unopposed non-tallies where applicable. Preserve published counts; missing portion is not zero.": 3,
+        "Source quality hold: Complete countywide facts for2026held: this county has at least one block-defined unpublished portion in this source year, including explicitly unopposed non-tallies where applicable. Preserve published counts; missing portion is not zero.": 2,
         "Source quality hold: Unresolved source write-in category is unclassified; countywide party comparison held pending sourced semantics.": 1,
         "Two-party minimum of 500 each year or 100 votes for each prior party not met.": 8,
         "Kentucky House historical comparison is held: the existing imported 2022 county baseline matches only 5 of 17 FEC candidate and write-in controls. A qualified historical source is still required": 120,
@@ -926,33 +928,34 @@
       "offices": {
         "house": {
           "referenceCounties": 67,
-          "numericallyAssessed": 0,
-          "notAssessed": 67,
-          "flaggedCounties": 0,
+          "numericallyAssessed": 62,
+          "notAssessed": 5,
+          "flaggedCounties": 6,
           "proxyOnlyFlaggedCounties": 0,
           "publishedSourceContextCases": 0,
           "flaggedWithSourceContext": 0,
           "completedInvestigations": 0,
           "screenCoverage": {
             "partyCountChange": {
-              "assessed": 0,
-              "flagged": 0
+              "assessed": 54,
+              "flagged": 6
             },
             "shareSwing": {
-              "assessed": 0,
-              "flagged": 0
+              "assessed": 54,
+              "flagged": 5
             },
             "raceVoteChange": {
-              "assessed": 0,
+              "assessed": 62,
               "flagged": 0
             },
             "racePopulationChange": {
-              "assessed": 0,
+              "assessed": 62,
               "flagged": 0
             }
           },
           "notAssessedReasons": {
-            "Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.": 67
+            "Source quality hold: Complete countywide facts for2022held: this county has at least one block-defined unpublished portion in this source year, including explicitly unopposed non-tallies where applicable. Preserve published counts; missing portion is not zero.": 3,
+            "Source quality hold: Complete countywide facts for2026held: this county has at least one block-defined unpublished portion in this source year, including explicitly unopposed non-tallies where applicable. Preserve published counts; missing portion is not zero.": 2
           }
         },
         "senate": {
@@ -4181,8 +4184,8 @@
       "offices": {
         "house": {
           "referenceCounties": 14,
-          "numericallyAssessed": 0,
-          "notAssessed": 14,
+          "numericallyAssessed": 14,
+          "notAssessed": 0,
           "flaggedCounties": 0,
           "proxyOnlyFlaggedCounties": 0,
           "publishedSourceContextCases": 0,
@@ -4190,25 +4193,23 @@
           "completedInvestigations": 0,
           "screenCoverage": {
             "partyCountChange": {
-              "assessed": 0,
+              "assessed": 14,
               "flagged": 0
             },
             "shareSwing": {
-              "assessed": 0,
+              "assessed": 14,
               "flagged": 0
             },
             "raceVoteChange": {
-              "assessed": 0,
+              "assessed": 14,
               "flagged": 0
             },
             "racePopulationChange": {
-              "assessed": 0,
+              "assessed": 14,
               "flagged": 0
             }
           },
-          "notAssessedReasons": {
-            "Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.": 14
-          }
+          "notAssessedReasons": {}
         },
         "senate": {
           "referenceCounties": 14,
@@ -5209,6 +5210,19 @@
       "county": "Bay",
       "stateFips": "12",
       "state": "Florida",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "12005",
+      "county": "Bay",
+      "stateFips": "12",
+      "state": "Florida",
       "office": "senate",
       "flagIds": [
         "senate-party-count-change"
@@ -5286,6 +5300,20 @@
       "priority": "party_pattern_review"
     },
     {
+      "fips": "12069",
+      "county": "Lake",
+      "stateFips": "12",
+      "state": "Florida",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
       "fips": "12093",
       "county": "Okeechobee",
       "stateFips": "12",
@@ -5293,6 +5321,20 @@
       "office": "senate",
       "flagIds": [
         "senate-party-count-change"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "12097",
+      "county": "Osceola",
+      "stateFips": "12",
+      "state": "Florida",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",
@@ -5317,10 +5359,52 @@
       "county": "Polk",
       "stateFips": "12",
       "state": "Florida",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "12105",
+      "county": "Polk",
+      "stateFips": "12",
+      "state": "Florida",
       "office": "senate",
       "flagIds": [
         "senate-party-count-change",
         "senate-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "12111",
+      "county": "St. Lucie",
+      "stateFips": "12",
+      "state": "Florida",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
+      ],
+      "sourceContext": "not_reviewed",
+      "investigationStatus": "unresolved",
+      "priority": "party_pattern_review"
+    },
+    {
+      "fips": "12127",
+      "county": "Volusia",
+      "stateFips": "12",
+      "state": "Florida",
+      "office": "house",
+      "flagIds": [
+        "house-party-count-change",
+        "house-share-swing"
       ],
       "sourceContext": "not_reviewed",
       "investigationStatus": "unresolved",

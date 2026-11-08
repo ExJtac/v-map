@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "year": 2026,
   "snapshotDate": "2026-11-07",
-  "updatedAt": "2026-11-07T23:33:16.960917+00:00",
+  "updatedAt": "2026-11-08T00:00:16.262595+00:00",
   "sourceHashes": {
-    "winners": "3cf4bdcaaca9d6b21a89bde97acd9f542a2b76c4219d57683afc2eb9694333ab",
+    "winners": "2adebdab79de7573c0fca61540fbbe656aeb50d158b34c097ba20ad60a206e17",
     "pilot": "1bfd2da42d6595f296eabcc9f789b327bfffca326e1a7669b4396168f7cd0962",
     "portraits": "4cccda679817d26a9ae20ad6997438da9191034a802d07d4ba5606afb35427f2"
   },
@@ -8361,27 +8361,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Jimmy Patronis",
           "party": "Republican",
-          "votes": 181723,
-          "share": 62.56084881951569,
-          "margin": 26.95387538987999
+          "votes": 181944,
+          "share": 62.52156283289234,
+          "margin": 26.877083261743586
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|1|general|false|candidate|",
@@ -8426,27 +8428,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Austin Rogers",
           "party": "Republican",
-          "votes": 160968,
-          "share": 52.133696074621064,
-          "margin": 4.26739214924213
+          "votes": 161177,
+          "share": 52.08667269906929,
+          "margin": 4.173345398138572
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -8472,27 +8476,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Kat Cammack",
           "party": "Republican",
-          "votes": 165313,
-          "share": 55.14514073747907,
-          "margin": 12.157996917719112
+          "votes": 165660,
+          "share": 55.14243297761149,
+          "margin": 12.154569239270094
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|3|general|false|candidate|",
@@ -8537,27 +8543,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Aaron Bean",
           "party": "Republican",
-          "votes": 151114,
-          "share": 50.215331038241196,
-          "margin": 2.0998099238366144
+          "votes": 151206,
+          "share": 50.213365125013695,
+          "margin": 2.0971218123914492
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|4|general|false|candidate|",
@@ -8602,27 +8610,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "John H. Rutherford",
           "party": "Republican",
-          "votes": 187917,
-          "share": 56.425092632072015,
-          "margin": 12.85018526414403
+          "votes": 188062,
+          "share": 56.410025676097234,
+          "margin": 12.82785016677465
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|5|general|false|candidate|",
@@ -8667,27 +8677,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Randy Fine",
           "party": "Republican",
-          "votes": 195252,
-          "share": 58.94560154087205,
-          "margin": 19.015761937682836
+          "votes": 195385,
+          "share": 58.93504581842751,
+          "margin": 19.00755898481567
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|6|general|false|candidate|",
@@ -8732,27 +8744,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Ryan Elijah",
           "party": "Republican",
-          "votes": 161189,
-          "share": 49.72559593036707,
-          "margin": 0.5247457250653234
+          "votes": 161300,
+          "share": 49.71428923668687,
+          "margin": 0.5026906741787742
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -8778,27 +8792,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Mike Haridopolos",
           "party": "Republican",
-          "votes": 169863,
-          "share": 53.17374604396946,
-          "margin": 6.34749208793892
+          "votes": 169928,
+          "share": 53.16979301929003,
+          "margin": 6.3395860385800775
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|8|general|false|candidate|",
@@ -8843,27 +8859,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Darren Soto",
           "party": "Democrat",
-          "votes": 143174,
-          "share": 50.25924014729474,
-          "margin": 0.5184802945894809
+          "votes": 143314,
+          "share": 50.26409747406373,
+          "margin": 0.5281949481274683
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|9|general|false|candidate|",
@@ -8908,27 +8926,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Joe Strada",
           "party": "Republican",
-          "votes": 193518,
-          "share": 52.934370221647185,
-          "margin": 6.950580035614543
+          "votes": 193588,
+          "share": 52.92832633866933,
+          "margin": 6.939344643272135
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -8954,27 +8974,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Gus Michael Bilirakis",
           "party": "Republican",
-          "votes": 150746,
-          "share": 52.738264331544435,
-          "margin": 6.800005597576249
+          "votes": 150869,
+          "share": 52.734066425720215,
+          "margin": 6.792872272749515
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -9000,27 +9022,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Anna Paulina Luna",
           "party": "Republican",
-          "votes": 155117,
-          "share": 49.479738178477554,
-          "margin": 0.8028810574935565
+          "votes": 155189,
+          "share": 49.475402414647284,
+          "margin": 0.7941492464986978
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|13|general|false|candidate|",
@@ -9065,27 +9089,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Kathy Castor",
           "party": "Democrat",
-          "votes": 153586,
-          "share": 51.20984278879016,
-          "margin": 5.330510311254855
+          "votes": 153785,
+          "share": 51.21864300654118,
+          "margin": 5.356500539546781
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|14|general|false|candidate|",
@@ -9130,27 +9156,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Laurel Lee",
           "party": "Republican",
-          "votes": 163251,
-          "share": 54.30097691266328,
-          "margin": 8.601953825326552
+          "votes": 163372,
+          "share": 54.2884961104299,
+          "margin": 8.585632017758106
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|15|general|false|candidate|",
@@ -9195,27 +9223,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Sydney Gruters",
           "party": "Republican",
-          "votes": 175512,
-          "share": 51.21013978974642,
-          "margin": 4.251172208946427
+          "votes": 175650,
+          "share": 51.203194916118875,
+          "margin": 4.2376364616887
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -9241,27 +9271,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Greg Steube",
           "party": "Republican",
-          "votes": 209055,
-          "share": 58.45517611629799,
-          "margin": 18.31067043589378
+          "votes": 209186,
+          "share": 58.452252881592734,
+          "margin": 18.305553615089067
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -9287,27 +9319,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Scott Franklin",
           "party": "Republican",
-          "votes": 137590,
-          "share": 50.350576731658755,
-          "margin": 3.668979448445459
+          "votes": 137704,
+          "share": 50.33427273292175,
+          "margin": 3.6395337361420284
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|18|general|false|candidate|",
@@ -9352,27 +9386,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Jim Schwartzel",
           "party": "Republican",
-          "votes": 198668,
-          "share": 61.125794194114114,
-          "margin": 23.481070104456716
+          "votes": 198765,
+          "share": 61.12084870848709,
+          "margin": 23.47478474784748
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -9398,27 +9434,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Debbie Wasserman Schultz",
           "party": "Democrat",
-          "votes": 182554,
-          "share": 74.3585670352946,
-          "margin": 52.623368159507955
+          "votes": 182712,
+          "share": 74.36204244096604,
+          "margin": 52.630379396514535
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|20|general|false|candidate|",
@@ -9463,27 +9501,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Brian Mast",
           "party": "Republican",
-          "votes": 183773,
-          "share": 53.946638407547766,
-          "margin": 9.20075031483281
+          "votes": 184324,
+          "share": 53.88787052223206,
+          "margin": 9.086949022221832
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|21|general|false|candidate|",
@@ -9528,27 +9568,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Pia Dandiya",
           "party": "Democrat",
-          "votes": 153047,
-          "share": 51.89212465203962,
-          "margin": 3.784249304079232
+          "votes": 153177,
+          "share": 51.90399707233766,
+          "margin": 3.8079941446753143
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -9574,27 +9616,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Lois Frankel",
           "party": "Democrat",
-          "votes": 169831,
-          "share": 65.64607838210794,
-          "margin": 31.29215676421589
+          "votes": 170028,
+          "share": 65.65624191499303,
+          "margin": 31.31248382998606
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|23|general|false|candidate|",
@@ -9622,10 +9666,10 @@
       }
     },
     {
-      "id": "p2026-e0cb3823",
-      "path": "people/2026/house-12-oliver-g-gilbert-e0cb3823/",
-      "displayName": "Oliver G. Gilbert",
-      "reportedName": "Oliver G. Gilbert",
+      "id": "p2026-90d33ad6",
+      "path": "people/2026/house-12-oliver-g-gilbert-iii-90d33ad6/",
+      "displayName": "Oliver G. Gilbert III",
+      "reportedName": "Oliver G. Gilbert III",
       "personStatus": "source_record",
       "election": {
         "key": "house|2026|district||12|24|general|false|candidate|",
@@ -9639,27 +9683,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
-          "name": "Oliver G. Gilbert",
+          "name": "Oliver G. Gilbert III",
           "party": "Democrat",
-          "votes": 164819,
-          "share": 80.65406429071264,
-          "margin": 61.30812858142528
+          "votes": 164890,
+          "share": 80.64815901709903,
+          "margin": 61.306589192784756
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": null,
       "accountability": null,
@@ -9685,27 +9731,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Jared Moskowitz",
           "party": "Democrat",
-          "votes": 143753,
-          "share": 51.26419319867625,
-          "margin": 4.623844573776104
+          "votes": 143919,
+          "share": 51.26817660427903,
+          "margin": 4.64487492786355
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|25|general|false|candidate|",
@@ -9750,27 +9798,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Mario Diaz-Balart",
           "party": "Republican",
-          "votes": 114547,
-          "share": 49.87460269081726,
-          "margin": 0.7715417773326947
+          "votes": 114578,
+          "share": 49.8590102870272,
+          "margin": 0.7415014534124732
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|26|general|false|candidate|",
@@ -9815,27 +9865,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Maria Elvira Salazar",
           "party": "Republican",
-          "votes": 124474,
-          "share": 50.22515252267665,
-          "margin": 0.4503050453533038
+          "votes": 124528,
+          "share": 50.21978819676891,
+          "margin": 0.43957639353782374
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|27|general|false|candidate|",
@@ -9880,27 +9932,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "Carlos A. Gimenez",
           "party": "Republican",
-          "votes": 124978,
-          "share": 52.89850165072379,
-          "margin": 7.254296114450182
+          "votes": 125030,
+          "share": 52.89454090093749,
+          "margin": 7.2465055674010905
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "modern-official-fl-2026"
+          "fl-official-house-2026-county-pass6"
         ],
         "sourceLinks": [
-          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt"
+          "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+          "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+          "https://floridaelectionwatch.gov/Downloads"
         ],
         "sourceUpdatedAt": null,
-        "retrievedAt": "2026-11-06T18:04:16.299477+00:00",
-        "timestampBasis": "retrieval time; state download does not provide a source-wide count timestamp"
+        "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+        "timestampBasis": "Source count-update timestamp unknown"
       },
       "portrait": {
         "recordKey": "house|2026|district||12|28|general|false|candidate|",
@@ -17768,27 +17822,29 @@
         "stage": "general",
         "special": false,
         "contestType": null,
-        "electionDate": null,
+        "electionDate": "2026-11-03",
         "leader": {
           "name": "BECCA BALINT",
           "party": "Democrat",
           "votes": 198758,
-          "share": 63.804693268273894,
-          "margin": 33.604057654649935
+          "share": 65.2360712234348,
+          "margin": 34.35792237630262
         },
         "status": "Provisional reported leader",
         "holdReasons": [],
         "provisional": true,
         "certifiedCount": false,
         "sourceIds": [
-          "house-repair-vt2026"
+          "vt-official-house-2026-native-classified"
         ],
         "sourceLinks": [
-          "https://static.electionresults.vermont.gov/elections/68d61e96-1d28-4210-8c1d-8e90512ae105-f-20261106141804.json"
+          "https://static.electionresults.vermont.gov/elections/68d61e96-1d28-4210-8c1d-8e90512ae105-f-20261107185807.json",
+          "https://static.electionresults.vermont.gov/elections/68d61e96-1d28-4210-8c1d-8e90512ae105.json",
+          "https://electionresults.vermont.gov/"
         ],
-        "sourceUpdatedAt": "2026-11-06T14:18:00-05:00",
-        "retrievedAt": "2026-11-06T19:19:38.738027+00:00",
-        "timestampBasis": null
+        "sourceUpdatedAt": null,
+        "retrievedAt": "2026-11-08T00:00:16.262595+00:00",
+        "timestampBasis": "Election-global metadata display clock; not county count-update, timezone unstated"
       },
       "portrait": {
         "recordKey": "house|2026|district||50|0|general|false|candidate|",

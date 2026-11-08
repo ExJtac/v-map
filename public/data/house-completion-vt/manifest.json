@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "vt-official-house-2022-town-canvass": {
+      "title": "Vermont official2022General House town returns and canvass",
+      "url": "https://vt2.elstats.civera.com/api/download_contest/157890_table.csv?split_party=false",
+      "sourceUrl": "https://electionarchive.vermont.gov/contest/157890",
+      "officialCanvassUrl": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2022_general_election_official_report_canvassing_committee_vermont_statewide_public_questions.pdf",
+      "sha256": "7e3d8c1bec89b89d9c6d1db2d11cf1383ec7a6aa1c734d7fa74304499c37750d",
+      "sourceUpdatedAt": null,
+      "retrievedAt": "2026-11-07T23:59:47.774602+00:00",
+      "license": "Official government election facts; source attribution retained"
+    },
+    "vt-official-house-2026-native-classified": {
+      "title": "Vermont2026official native House town returns with original UI category labels",
+      "url": "https://static.electionresults.vermont.gov/elections/68d61e96-1d28-4210-8c1d-8e90512ae105-f-20261107185807.json",
+      "sourceUrl": "https://electionresults.vermont.gov/",
+      "sha256": "28b3517ad85603be19a0855ffe05cb8f6e7f8e1b848f7367385951c01b2a01d9",
+      "officialGeographyMetadataUrl": "https://static.electionresults.vermont.gov/elections/68d61e96-1d28-4210-8c1d-8e90512ae105.json",
+      "officialGeographyMetadataSha256": "607c8a8a63d6d9ac1d2e87219391666c10a6a2be200c2d0c5a2b259f3c3858ac",
+      "classificationUiUrl": "https://electionresults.vermont.gov/chunk-3WQ2LQCO.js",
+      "classificationUiSha256": "6d7af6eacc27e1f9b3c191e8a6a9deb19b4ac856ac3aa2227cc876f595526ada",
+      "sourceUpdatedAt": null,
+      "sourceSnapshotTimestampRaw": "11/07/2026 06:58 PM",
+      "sourceTimestampBasis": "Election-global display metadata, timezone unspecified; not county count-update",
+      "asOf": "2026-11-08T00:00:16.262595+00:00",
+      "asOfBasis": "Actual federal-body retrievaltime, not source count-update",
+      "retrievedAt": "2026-11-08T00:00:16.262595+00:00",
+      "license": "Official government election facts; source attribution retained"
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-vt/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 15,
+      "stateCount": 1
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-vt/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 15,
+      "stateCount": 1
+    }
+  ],
+  "limitations": [
+    "Both source inventories cover all14counties in the single statewide at-large House contest. District0 is the normalized at-large convention; the source does not print a numbered district.",
+    "2022counts come exclusively from explicit official town aggregates, excluding60nestedprecinct rows to avoid double counting. All247towns map uniquely to counties through the retained2022MEDSLgeography crosschecked against the current official map; six explicit name/designator correspondences preserve separate city/town identities. No candidate counts from the flagged research release are reused.",
+    "The seven old historical surname/initial holds are superseded only by complete direct primary candidate/write-in aggregate vectors. No write-in person identity, party, eligibility, typo expansion, or missing count is inferred.",
+    "2026source wc entries remain sourceWriteInEntries, with exact rawnames/IDs/counts retained. Names such as BLANK or FICTIOUS appearing inside that source bucket are not silently moved to accounting or treated as verified people. Blank-party write-in names resembling a nominee are not assigned that nominee party.",
+    "Native current display/export code explicitly maps sv to Overvotes and bv to BlankVotes. Those known accounting fields are excluded from race votes. Source sc/TotalVotes includes candidate/write-in/overvote/blank counts and is separately retained, never used as candidatevotes or unique countywide voters.",
+    "2026is unofficial/provisional; all flags are not winner or counting-completion declarations. General metadata lastUpdatedDate is an election-global display clock without an explicit timezone, not a county count-update. asOf references exact retrievaltime with a knownUTCoffset; sourceUpdatedAt remains null.",
+    "The newly retrieved current federal body is byte-identical to the earlierNov6snapshot even though the newly retrieved metadata displaysNov7lastUpdatedDate. No changed candidate counts or county refresh clock is claimed.",
+    "Historical candidate/write-in votes are282026, not291955ballot/accounting total. Current candidate/write-in votes are304675, not311510sourceaccounting total. Neither is distinct persons or eligible-voter turnout.",
+    "Different candidates, competition and provisional reporting limit interpretation. County-geography compatibility is bounded to fullCensusroster/sourcecrosswalk/substantial-change reference, not every minor cartographic adjustment or same-candidate causality."
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-08T00:16:39.909370+00:00",
+    "evidenceSha256": "05c7f40b5430fa920d11638509f6c17e65501498735b004b0d138d0173640626",
+    "approvalReceiptSha256": "657732070781c54d5c9c2d307382b2b23de6a19e9ee69ce90203ec0593dee70a",
+    "approvedManifestProposalSha256": "dff09120645207a29cf152f085bfd2ba1f9273ba2fb0e157f81285529b1b48bc"
+  },
+  "normalizedPayloadHashes": {
+    "public/data/house-completion-vt/house-2022.json": "e2e2810e54d23a6d9bea4514ad66ffb4868e3276613f1daacc8aa460fefd9a01",
+    "public/data/house-completion-vt/house-2026.json": "cdd1724258637ab1f7d139f1eaabaaa5dde39981e73e65169d3417149d1b6074"
+  }
+}

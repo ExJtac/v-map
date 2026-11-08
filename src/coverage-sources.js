@@ -36,4 +36,6 @@ export const COUNTY_SOURCES = Object.freeze([
   { name: "senate-state-oh-pass4", priority: 180 },
   { name: "house-completion-sc", priority: 200 },
   { name: "house-completion-wa", priority: 200 },
+  { name: "house-completion-fl", priority: 220 },
+  { name: "house-completion-vt", priority: 220 },
 ]);

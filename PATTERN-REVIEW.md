@@ -33,23 +33,23 @@ Legacy `shareShift` and `partyGrowth` retain the advanced symmetric peer screens
 | Actual ballots/residents | global | 58 | 3084 | 22 |
 | partyCountChange | president | 0 | 3142 | 0 |
 | partyCountChange | senate | 1294 | 1848 | 90 |
-| partyCountChange | house | 1048 | 2094 | 224 |
+| partyCountChange | house | 1116 | 2026 | 230 |
 | partyCountChange | governor | 984 | 2158 | 290 |
 | raceVoteChange | president | 0 | 3142 | 0 |
 | raceVoteChange | senate | 1563 | 1579 | 80 |
-| raceVoteChange | house | 1143 | 1999 | 24 |
+| raceVoteChange | house | 1219 | 1923 | 24 |
 | raceVoteChange | governor | 1013 | 2129 | 50 |
 | racePopulationChange | president | 0 | 3142 | 0 |
 | racePopulationChange | senate | 1560 | 1582 | 1067 |
-| racePopulationChange | house | 1141 | 2001 | 46 |
+| racePopulationChange | house | 1217 | 1925 | 46 |
 | racePopulationChange | governor | 1011 | 2131 | 76 |
 | shareSwing | president | 0 | 3142 | 0 |
 | shareSwing | senate | 1294 | 1848 | 200 |
-| shareSwing | house | 1048 | 2094 | 169 |
+| shareSwing | house | 1116 | 2026 | 174 |
 | shareSwing | governor | 984 | 2158 | 295 |
 | Own-history union | president | 0 | 3142 | 0 |
 | Own-history union | senate | 1563 | 1579 | 1111 |
-| Own-history union | house | 1143 | 1999 | 351 |
+| Own-history union | house | 1219 | 1923 | 357 |
 | Own-history union | governor | 1013 | 2129 | 495 |
 
 ### Reviewed Senate seat/ballot scope: 13
@@ -139,6 +139,7 @@ These totals use only qualified party-comparison counties, not necessarily compl
 | senate | 56 | 23 | -10.539263 | -38.335689 | -8.337976 | -34.055539 | 22 |
 | senate | 01 | 66 | -17.584599 | -34.072787 | -25.238434 | -33.877925 | 61 |
 | senate | 08 | 62 | -25.359246 | -46.776757 | -11.739711 | -32.962563 | 57 |
+| house | 12 | 54 | 30.065682 | -7.739317 | 23.355014 | -8.887709 | 6 |
 | house | 13 | 157 | 24.422652 | -10.414032 | 20.746888 | -10.084649 | 30 |
 | house | 16 | 42 | 33.728272 | 4.825701 | 27.555682 | 2.489684 | 14 |
 | house | 19 | 99 | 25.891996 | -4.53665 | 25.775076 | -6.604986 | 29 |
@@ -148,6 +149,7 @@ These totals use only qualified party-comparison counties, not necessarily compl
 | house | 39 | 88 | 29.477933 | -6.073326 | 30.516186 | -5.687376 | 20 |
 | house | 45 | 35 | 54.260929 | 0.32861 | 45.471914 | -2.311464 | 28 |
 | house | 49 | 27 | 38.040846 | -28.871169 | 46.434494 | -26.662777 | 20 |
+| house | 50 | 14 | 12.614593 | 20.002041 | 11.870204 | 21.119821 | 0 |
 | house | 51 | 133 | 33.068137 | -2.906606 | 40.239342 | 0.918582 | 66 |
 | house | 53 | 32 | 0.566858 | -19.866205 | 9.0156 | -18.296459 | 11 |
 | house | 54 | 55 | 20.624424 | -15.869348 | 11.832947 | -15.818934 | 13 |
@@ -194,11 +196,13 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 ### house: partyCountChange
 
 - 1140: No imported 2026 county contest for this office.
-- 721: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
+- 640: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
 - 120: Kentucky House historical comparison is held: the existing imported 2022 county baseline matches only 5 of 17 FEC candidate and write-in controls. A qualified historical source is still required
-- 82: Both explicitly identified Democratic and Republican candidates are required; Other votes are not reassigned.
+- 90: Both explicitly identified Democratic and Republican candidates are required; Other votes are not reassigned.
 - 23: Two-party minimum of 500 each year or 100 votes for each prior party not met.
 - 7: Source quality hold: Archived2022CD3county/district vectors predate the signedDecember22amendment; Perez+9/Kent+5statewide, county allocation unknown. Original counts retained for source inventory only; excluded from comparison and state fact aggregation.
+- 3: Source quality hold: Complete countywide facts for2022held: this county has at least one block-defined unpublished portion in this source year, including explicitly unopposed non-tallies where applicable. Preserve published counts; missing portion is not zero.
+- 2: Source quality hold: Complete countywide facts for2026held: this county has at least one block-defined unpublished portion in this source year, including explicitly unopposed non-tallies where applicable. Preserve published counts; missing portion is not zero.
 - 1: Source quality hold: Unresolved source write-in category is unclassified; countywide party comparison held pending sourced semantics.
 
 ### governor: partyCountChange
@@ -224,10 +228,12 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 ### house: raceVoteChange
 
 - 1140: No imported 2026 county contest for this office.
-- 721: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
+- 640: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
 - 120: Kentucky House historical comparison is held: the existing imported 2022 county baseline matches only 5 of 17 FEC candidate and write-in controls. A qualified historical source is still required
 - 10: Fewer than 500 reported candidate/write-in race votes in either year.
 - 7: Source quality hold: Archived2022CD3county/district vectors predate the signedDecember22amendment; Perez+9/Kent+5statewide, county allocation unknown. Original counts retained for source inventory only; excluded from comparison and state fact aggregation.
+- 3: Source quality hold: Complete countywide facts for2022held: this county has at least one block-defined unpublished portion in this source year, including explicitly unopposed non-tallies where applicable. Preserve published counts; missing portion is not zero.
+- 2: Source quality hold: Complete countywide facts for2026held: this county has at least one block-defined unpublished portion in this source year, including explicitly unopposed non-tallies where applicable. Preserve published counts; missing portion is not zero.
 - 1: Source quality hold: Unresolved source write-in category is unclassified; countywide party comparison held pending sourced semantics.
 
 ### governor: raceVoteChange
@@ -253,10 +259,12 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 ### house: racePopulationChange
 
 - 1140: No imported 2026 county contest for this office.
-- 721: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
+- 640: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
 - 120: Kentucky House historical comparison is held: the existing imported 2022 county baseline matches only 5 of 17 FEC candidate and write-in controls. A qualified historical source is still required
 - 10: Fewer than 500 reported candidate/write-in race votes in either year.
 - 7: Source quality hold: Archived2022CD3county/district vectors predate the signedDecember22amendment; Perez+9/Kent+5statewide, county allocation unknown. Original counts retained for source inventory only; excluded from comparison and state fact aggregation.
+- 3: Source quality hold: Complete countywide facts for2022held: this county has at least one block-defined unpublished portion in this source year, including explicitly unopposed non-tallies where applicable. Preserve published counts; missing portion is not zero.
+- 2: Source quality hold: Complete countywide facts for2026held: this county has at least one block-defined unpublished portion in this source year, including explicitly unopposed non-tallies where applicable. Preserve published counts; missing portion is not zero.
 - 2: Exact 2025 and 2022 resident populations unavailable or below 1,000.
 - 1: Source quality hold: Unresolved source write-in category is unclassified; countywide party comparison held pending sourced semantics.
 
@@ -284,11 +292,13 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 ### house: shareSwing
 
 - 1140: No imported 2026 county contest for this office.
-- 721: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
+- 640: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
 - 120: Kentucky House historical comparison is held: the existing imported 2022 county baseline matches only 5 of 17 FEC candidate and write-in controls. A qualified historical source is still required
-- 82: Both explicitly identified Democratic and Republican candidates are required; Other votes are not reassigned.
+- 90: Both explicitly identified Democratic and Republican candidates are required; Other votes are not reassigned.
 - 23: Two-party minimum of 500 each year or 100 votes for each prior party not met.
 - 7: Source quality hold: Archived2022CD3county/district vectors predate the signedDecember22amendment; Perez+9/Kent+5statewide, county allocation unknown. Original counts retained for source inventory only; excluded from comparison and state fact aggregation.
+- 3: Source quality hold: Complete countywide facts for2022held: this county has at least one block-defined unpublished portion in this source year, including explicitly unopposed non-tallies where applicable. Preserve published counts; missing portion is not zero.
+- 2: Source quality hold: Complete countywide facts for2026held: this county has at least one block-defined unpublished portion in this source year, including explicitly unopposed non-tallies where applicable. Preserve published counts; missing portion is not zero.
 - 1: Source quality hold: Unresolved source write-in category is unclassified; countywide party comparison held pending sourced semantics.
 
 ### governor: shareSwing
@@ -311,6 +321,7 @@ Full exact current/prior counts, own changes, peer context, source dates, inclus
 | 10003 | New Castle | senate | senate-race-population-change | neutral | -14.997075pp | senate-completion-official-de-2026-browser; modern-heideman-v1-senate-de_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 10005 | Sussex | senate | senate-race-population-change | neutral | -11.49276pp | senate-completion-official-de-2026-browser; modern-heideman-v1-senate-de_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 12005 | Bay | senate | senate-party-count-change | democrat | Democrat: 42.716711%; opponent -5.600403% | senate-completion-official-fl-2026-pass3; senate-completion-official-fl-2022; U.S. Senate Class III roster/term; FEC Federal Elections2022original workbook; FEC2026congressional calendar, general date November3; Official Congressional Directory February20,2026, Moody biography PDFphysical66/printed55 |
+| 12005 | Bay | house | house-party-count-change | democrat | Democrat: 47.96531%; opponent -7.880728% | fl-official-house-2026-county-pass6; fl-official-house-2022-county-pass6; Florida original official2022download form; Florida official2026download directory; Florida official2026House district controls; Florida Legislature2022published congressional block-equivalency; Florida Legislature2026published congressional block-equivalency |
 | 12005 | Bay | governor | governor-party-count-change | democrat | Democrat: 46.810021%; opponent -7.992014% | modern-official-fl-2026; modern-medsl-governor-2022-fl |
 | 12019 | Clay | governor | governor-party-count-change | democrat | Democrat: 45.27426%; opponent -12.025204% | modern-official-fl-2026; modern-medsl-governor-2022-fl |
 | 12019 | Clay | governor | governor-share-swing | democrat | D share 10.456666pp | modern-official-fl-2026; modern-medsl-governor-2022-fl |
@@ -334,6 +345,8 @@ Full exact current/prior counts, own changes, peer context, source dates, inclus
 | 12051 | Hendry | governor | governor-share-swing | democrat | D share 18.862686pp | modern-official-fl-2026; modern-medsl-governor-2022-fl |
 | 12057 | Hillsborough | governor | governor-share-swing | democrat | D share 10.532823pp | modern-official-fl-2026; modern-medsl-governor-2022-fl |
 | 12059 | Holmes | governor | governor-party-count-change | democrat | Democrat: 45.028143%; opponent -14.950113% | modern-official-fl-2026; modern-medsl-governor-2022-fl |
+| 12069 | Lake | house | house-party-count-change | democrat | Democrat: 106.780649%; opponent -6.755898% | fl-official-house-2026-county-pass6; fl-official-house-2022-county-pass6; Florida original official2022download form; Florida official2026download directory; Florida official2026House district controls; Florida Legislature2022published congressional block-equivalency; Florida Legislature2026published congressional block-equivalency |
+| 12069 | Lake | house | house-share-swing | democrat | D share 17.556535pp | fl-official-house-2026-county-pass6; fl-official-house-2022-county-pass6; Florida original official2022download form; Florida official2026download directory; Florida official2026House district controls; Florida Legislature2022published congressional block-equivalency; Florida Legislature2026published congressional block-equivalency |
 | 12069 | Lake | governor | governor-party-count-change | democrat | Democrat: 40.067327%; opponent -4.636041% | modern-official-fl-2026; modern-medsl-governor-2022-fl |
 | 12093 | Okeechobee | senate | senate-party-count-change | democrat | Democrat: 46.889089%; opponent -9.07173% | senate-completion-official-fl-2026-pass3; senate-completion-official-fl-2022; U.S. Senate Class III roster/term; FEC Federal Elections2022original workbook; FEC2026congressional calendar, general date November3; Official Congressional Directory February20,2026, Moody biography PDFphysical66/printed55 |
 | 12093 | Okeechobee | governor | governor-party-count-change | democrat | Democrat: 61.231361%; opponent -13.217471% | modern-official-fl-2026; modern-medsl-governor-2022-fl |
@@ -341,16 +354,24 @@ Full exact current/prior counts, own changes, peer context, source dates, inclus
 | 12095 | Orange | governor | governor-share-swing | democrat | D share 11.412429pp | modern-official-fl-2026; modern-medsl-governor-2022-fl |
 | 12097 | Osceola | senate | senate-party-count-change | democrat | Democrat: 54.912137%; opponent 3.07067% | senate-completion-official-fl-2026-pass3; senate-completion-official-fl-2022; U.S. Senate Class III roster/term; FEC Federal Elections2022original workbook; FEC2026congressional calendar, general date November3; Official Congressional Directory February20,2026, Moody biography PDFphysical66/printed55 |
 | 12097 | Osceola | senate | senate-share-swing | democrat | D share 10.075491pp | senate-completion-official-fl-2026-pass3; senate-completion-official-fl-2022; U.S. Senate Class III roster/term; FEC Federal Elections2022original workbook; FEC2026congressional calendar, general date November3; Official Congressional Directory February20,2026, Moody biography PDFphysical66/printed55 |
+| 12097 | Osceola | house | house-party-count-change | democrat | Democrat: 53.603271%; opponent 1.78013% | fl-official-house-2026-county-pass6; fl-official-house-2022-county-pass6; Florida original official2022download form; Florida official2026download directory; Florida official2026House district controls; Florida Legislature2022published congressional block-equivalency; Florida Legislature2026published congressional block-equivalency |
+| 12097 | Osceola | house | house-share-swing | democrat | D share 10.053109pp | fl-official-house-2026-county-pass6; fl-official-house-2022-county-pass6; Florida original official2022download form; Florida official2026download directory; Florida official2026House district controls; Florida Legislature2022published congressional block-equivalency; Florida Legislature2026published congressional block-equivalency |
 | 12097 | Osceola | governor | governor-party-count-change | democrat | Democrat: 61.075822%; opponent -2.512424% | modern-official-fl-2026; modern-medsl-governor-2022-fl |
 | 12097 | Osceola | governor | governor-share-swing | democrat | D share 12.448123pp | modern-official-fl-2026; modern-medsl-governor-2022-fl |
 | 12101 | Pasco | governor | governor-share-swing | democrat | D share 10.089086pp | modern-official-fl-2026; modern-medsl-governor-2022-fl |
 | 12105 | Polk | senate | senate-party-count-change | democrat | Democrat: 44.752677%; opponent -5.795307% | senate-completion-official-fl-2026-pass3; senate-completion-official-fl-2022; U.S. Senate Class III roster/term; FEC Federal Elections2022original workbook; FEC2026congressional calendar, general date November3; Official Congressional Directory February20,2026, Moody biography PDFphysical66/printed55 |
 | 12105 | Polk | senate | senate-share-swing | democrat | D share 10.382231pp | senate-completion-official-fl-2026-pass3; senate-completion-official-fl-2022; U.S. Senate Class III roster/term; FEC Federal Elections2022original workbook; FEC2026congressional calendar, general date November3; Official Congressional Directory February20,2026, Moody biography PDFphysical66/printed55 |
+| 12105 | Polk | house | house-party-count-change | democrat | Democrat: 339.136437%; opponent -9.899621% | fl-official-house-2026-county-pass6; fl-official-house-2022-county-pass6; Florida original official2022download form; Florida official2026download directory; Florida official2026House district controls; Florida Legislature2022published congressional block-equivalency; Florida Legislature2026published congressional block-equivalency |
+| 12105 | Polk | house | house-share-swing | democrat | D share 31.144369pp | fl-official-house-2026-county-pass6; fl-official-house-2022-county-pass6; Florida original official2022download form; Florida official2026download directory; Florida official2026House district controls; Florida Legislature2022published congressional block-equivalency; Florida Legislature2026published congressional block-equivalency |
 | 12105 | Polk | governor | governor-party-count-change | democrat | Democrat: 49.998753%; opponent -10.281679% | modern-official-fl-2026; modern-medsl-governor-2022-fl |
 | 12105 | Polk | governor | governor-share-swing | democrat | D share 12.384533pp | modern-official-fl-2026; modern-medsl-governor-2022-fl |
+| 12111 | St. Lucie | house | house-party-count-change | democrat | Democrat: 44.728941%; opponent -7.282406% | fl-official-house-2026-county-pass6; fl-official-house-2022-county-pass6; Florida original official2022download form; Florida official2026download directory; Florida official2026House district controls; Florida Legislature2022published congressional block-equivalency; Florida Legislature2026published congressional block-equivalency |
+| 12111 | St. Lucie | house | house-share-swing | democrat | D share 10.982435pp | fl-official-house-2026-county-pass6; fl-official-house-2022-county-pass6; Florida original official2022download form; Florida official2026download directory; Florida official2026House district controls; Florida Legislature2022published congressional block-equivalency; Florida Legislature2026published congressional block-equivalency |
 | 12111 | St. Lucie | governor | governor-party-count-change | democrat | Democrat: 42.677875%; opponent -8.678166% | modern-official-fl-2026; modern-medsl-governor-2022-fl |
 | 12111 | St. Lucie | governor | governor-share-swing | democrat | D share 11.033282pp | modern-official-fl-2026; modern-medsl-governor-2022-fl |
 | 12117 | Seminole | governor | governor-share-swing | democrat | D share 11.046566pp | modern-official-fl-2026; modern-medsl-governor-2022-fl |
+| 12127 | Volusia | house | house-party-count-change | democrat | Democrat: 134.394468%; opponent -10.733364% | fl-official-house-2026-county-pass6; fl-official-house-2022-county-pass6; Florida original official2022download form; Florida official2026download directory; Florida official2026House district controls; Florida Legislature2022published congressional block-equivalency; Florida Legislature2026published congressional block-equivalency |
+| 12127 | Volusia | house | house-share-swing | democrat | D share 21.0863pp | fl-official-house-2026-county-pass6; fl-official-house-2022-county-pass6; Florida original official2022download form; Florida official2026download directory; Florida official2026House district controls; Florida Legislature2022published congressional block-equivalency; Florida Legislature2026published congressional block-equivalency |
 | 13001 | Appling | senate | senate-race-population-change | neutral | -12.217599pp | ga-senate-official-2026-11-07; modern-heideman-v1-senate-ga_medsl_2020; U.S. Senate Class II: 2021–2027 term, including Georgia; Heideman v1.0.0 county results with MEDSL source register and fixed correction receipts; FEC Federal Elections 2020: Georgia full-term, physical PDF page 78 / printed page 73; Georgia SOS historical index: November 3, 2020 General and January 5, 2021 Federal Runoff; Georgia SOS 2026 calendar: November 3 general and conditional December 1 runoff; Georgia official2026Senate county breakdown, directly retrieved; Georgia official2026whole-election Senate controls, separately retrieved; census2025 |
 | 13003 | Atkinson | senate | senate-race-population-change | neutral | -10.85645pp | ga-senate-official-2026-11-07; modern-heideman-v1-senate-ga_medsl_2020; U.S. Senate Class II: 2021–2027 term, including Georgia; Heideman v1.0.0 county results with MEDSL source register and fixed correction receipts; FEC Federal Elections 2020: Georgia full-term, physical PDF page 78 / printed page 73; Georgia SOS historical index: November 3, 2020 General and January 5, 2021 Federal Runoff; Georgia SOS 2026 calendar: November 3 general and conditional December 1 runoff; Georgia official2026Senate county breakdown, directly retrieved; Georgia official2026whole-election Senate controls, separately retrieved; census2025 |
 | 13003 | Atkinson | house | house-party-count-change | democrat | Democrat: 52.32816%; opponent -11.436782% | house-completion-ga2026-official; modern-heideman-v1-house-ga_medsl_2022; Pinned Heideman/MEDSL source county vectors and provenance; Gwinnett official2022 complete county results archive; Gwinnett actual county named-write-in row, PDFpage5; FEC2022 general candidate controls; Georgia2026 direct whole-election and House summaries |
@@ -2947,12 +2968,18 @@ Full exact current/prior counts, own changes, peer context, source dates, inclus
 - [Paul Heideman U.S. county-level election results 1990–2024](https://github.com/pmheideman/us-county-election-results/releases/download/v1.0.0/us_county_election_results_v1.0.0.zip)
 - [U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election](https://www.senate.gov/senators/Class_II.htm)
 - [Census Vintage 2025 county population estimates](https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/counties/totals/co-est2025-alldata.csv)
-- [Florida Division of Elections direct Nov3 2026 unofficial county returns](https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt)
+- [Florida DOS original 2026 House county result download](https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt)
 - [Florida Division of Elections November 8, 2022 General Election official Senate county table](https://results.elections.myflorida.com/DetailRpt.Asp?DATAMODE=&DIST=&ELECTIONDATE=11/8/2022&GRP=&PARTY=&RACE=USS)
 - [U.S. Senate Class III roster/term](https://www.senate.gov/senators/Class_III.htm)
 - [FEC2022 diagnostic controls, one disagreement retained](https://www.fec.gov/documents/5676/federalelections2022.xlsx)
 - [FEC2026congressional calendar, general date November3](https://www.fec.gov/resources/cms-content/documents/2026pdates.pdf)
 - [Official Congressional Directory February20,2026, Moody biography PDFphysical66/printed55](https://www.govinfo.gov/content/pkg/CDIR-2026-02-20/pdf/CDIR-2026-02-20.pdf)
+- [Florida DOS original 2022 House county result download](https://results.elections.myflorida.com/ResultsExtract.Asp)
+- [Florida original official2022download form](https://results.elections.myflorida.com/downloadresults.asp?ElectionDate=11%2F8%2F2022)
+- [Florida official2026download directory](https://floridaelectionwatch.gov/Downloads)
+- [Florida official2026House district controls](https://floridaelectionwatch.gov/FederalOffices/USRepresentative)
+- [Florida Legislature2022published congressional block-equivalency](https://www.edr.state.fl.us/Content/redistricting/2020redistricting/P000C0109.txt)
+- [Florida Legislature2026published congressional block-equivalency](https://www.edr.state.fl.us/Content/redistricting/2026redistricting/EOGPCRP2026.txt)
 - [MEDSL 2022 FL official precinct returns](https://raw.githubusercontent.com/MEDSL/2022-elections-official/a8126c5790b8d1f438a3e63c3506cdcdc7406d9f/individual_states/2022-fl-local-precinct-general.zip)
 - [Georgia official2026Senate county breakdown, directly retrieved](https://results.sos.ga.gov/results/public/api/elections/Georgia/11032026GeneralAndSpecialElection/data/ballot-item/01000000-3a82-a359-4042-08df23e5ff36)
 - [Heideman county-district source register (candidate county sums)](https://doi.org/10.5281/zenodo.22976553)

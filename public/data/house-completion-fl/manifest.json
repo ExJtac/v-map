@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "fl-official-house-2022-county-pass6": {
+      "title": "Florida DOS original 2022 House county result download",
+      "url": "https://results.elections.myflorida.com/ResultsExtract.Asp",
+      "sha256": "38dc8a11148b4ac6b7c020299e44346df51892c1dc115e549b6697e488b6cd3a",
+      "retrievedAt": "2026-11-07T23:59:03.528144+00:00",
+      "sourceUpdatedAt": null,
+      "countingClockBasis": "Unknown; retrieval and asset HTTPLastModified not vote-update timestamps",
+      "license": "Official government election facts; original attribution retained",
+      "sourceAccess": "Native HTTPS POST of observed official form",
+      "formUrl": "https://results.elections.myflorida.com/downloadresults.asp?ElectionDate=11%2F8%2F2022",
+      "formFields": {
+        "ElectionDate": "11/8/2022",
+        "OfficialResults": "Y",
+        "PartyRaces": "N",
+        "DataMode": "",
+        "FormsButton2": "Download"
+      },
+      "controlUrl": "https://www.fec.gov/documents/5676/federalelections2022.xlsx",
+      "controlSha256": "cdb258ea23803e50d752bcea19faa39b3c201eb960094bcb556c3a38c2350897"
+    },
+    "fl-official-house-2026-county-pass6": {
+      "title": "Florida DOS original 2026 House county result download",
+      "url": "https://flelectionfiles.floridados.gov/enightfilespublic/20261103_ElecResultsFL.txt",
+      "sha256": "c09cac94fa7be2df9bbdc8f3bc18e1a29be6d540105d53e3e6229c9723178da3",
+      "retrievedAt": "2026-11-07T22:02:32.746481+00:00",
+      "sourceUpdatedAt": null,
+      "countingClockBasis": "Unknown; retrieval and asset HTTPLastModified not vote-update timestamps",
+      "license": "Official government election facts; original attribution retained",
+      "sourceAccess": "Native HTTPS GET of official listed bulk download",
+      "sourceUrl": "https://floridaelectionwatch.gov/Downloads",
+      "controlUrl": "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+      "controlSha256": "4b12e62e4b958a3493d950a5857d296e1c9c4aebbfc0707674cc0c000fd82955",
+      "sourceAssetLastModified": "Fri, 06 Nov 2026 23:10:54 GMT",
+      "status": "1st Set of Unofficial Returns",
+      "candidateCatalogSha256": "c1dcb0b34cdbd63fd6d50c3907fdf7a92fbe6dca1ce39e26bfd8105ee9a660cc"
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-fl/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 121,
+      "stateCount": 1
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-fl/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 125,
+      "stateCount": 1
+    }
+  ],
+  "limitations": [
+    "Candidate votes including named write-ins are not ballots cast or distinct voters.",
+    "2026 is first-set unofficial provisional returns; precinct reporting is not counting completion or certification.",
+    "Source count-update clocks are unknown. Retrieval times and HTTP asset Last-Modified are not vote-update clocks.",
+    "2022 district5 and2026 district10 are explicitly unopposed non-tallies; neither is zero, and no missing county/party/category is allocated or inferred.",
+    "Primary block-equivalency geography also has unpublished portions2022 Marion|12 and Orange|7;2026 Hillsborough|16 and Orange|7. No zero-population or zero-vote assumption is made.",
+    "Paired comparisons retain the union of five county holds. Source incompleteness holds apply precisely to2022Duval/Marion/Orange/StJohns and2026Orange/Hillsborough; this preserves63historical and65current complete county facts. At most62county comparisons may qualify, subject to independent review and app guards.",
+    "Congressional boundaries changed in2026. Countywide complete-scope comparisons do not match the same seats,candidates,contestation or cause; district numbering is not a same-seat guarantee.",
+    "County compatibility uses complete2024Census roster and identical2020Censusblock identities in both primary published plans, plus retained substantial-change reference; minor geographic corrections are not individually adjudicated.",
+    "Historical district controls come independently from FEC2022 general-election worksheet; current controls are actually published official whole-district HTML tables. Historical Unopposed is nonnumeric, not a fabricated result.",
+    "No outcome or named winner is promoted. A source candidate-catalog status is used only to explain a published non-tally."
+  ],
+  "review": {
+    "status": "approved_conditional_countywide_source_scope",
+    "reviewedAt": "2026-11-08T00:28:05.845909+00:00",
+    "approvalReceiptSha256": "ec9333c1efd2ff86ffa11aa42232adaa2d1b0d91d54cf0588c2764a2bb98152f",
+    "evidenceSha256": "4f4ddb144c5fb3a3bb35cfc2a09f4aeea1b4dc765feb1fd957dc799cfb5fcf98",
+    "approvedContractProposalSha256": "852c647b95c80bc2a5c9d2182943d786deebab8428d841fe52c2e1c87d47943c",
+    "normalizedSourceHashes": {
+      "public/data/house-completion-fl/house-2022.json": "239ab455f93caadc3657bab563c3994e53bd59c2b7cf8ea6a94adf21752439aa",
+      "public/data/house-completion-fl/house-2026.json": "b0139603f0f943cd28bbf44f83ea7615d057f6624ae24c1809aa1251b567f724"
+    }
+  },
+  "stateFactsQualified": false,
+  "stateFactsReason": "Only27published numeric House races of28in each year:2022district5/current2026district10are explicit unopposed non-tallies, not zero. Whole-state aggregate/facts/comparisons withheld; actual published district summaries retained.",
+  "conditionalCoverage": {
+    "countyIdentities": 67,
+    "publishedPortions": {
+      "2022": 94,
+      "2026": 98
+    },
+    "heldCountyFipsByYear": {
+      "2022": [
+        "12031",
+        "12083",
+        "12095",
+        "12109"
+      ],
+      "2026": [
+        "12057",
+        "12095"
+      ]
+    },
+    "pairedComparisonHeldCountyFips": [
+      "12031",
+      "12057",
+      "12083",
+      "12095",
+      "12109"
+    ],
+    "maximumPairedCounties": 62,
+    "maximumSingleYearCountyFacts": {
+      "2022": 63,
+      "2026": 65
+    },
+    "publishedNumericDistrictSummariesPerYear": 27,
+    "fullCongressionalDistrictCount": 28
+  }
+}

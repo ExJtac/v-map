@@ -39,6 +39,7 @@ function appendQuickResults(container, rows, office, year, id, contestFiltered =
   let aggregate = office==='house' && !contestFiltered && String(id).length===5 ? auditedHouseCounts(getPatternReviewReport(),id,year) : null;
   if(office==='house'&&!contestFiltered&&(!aggregate||aggregate.reason))aggregate=scopedHouseFacts(rows,getPatternReviewReport(),id,year,String(id).length===5?'county':'state');
   if (rows.length !== 1 && (!aggregate || aggregate.reason)) {
+    if(aggregate?.stateAggregateHeld)container.append(node('p','county-tip-note source-quality-hold',aggregate.reason));
     container.append(node('p','county-tip-note',office==='house'?`${rows.length} actual district portions are listed separately. Qualified historical comparisons use complete countywide aggregates where the source scope has been independently verified.`:`${rows.length} separate contests are available below; they are not added into one county vote total.`));
     if(office==='house') {
       const table=node('table','quick-portions',''),head=node('tr','','');

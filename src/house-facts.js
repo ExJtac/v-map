@@ -15,6 +15,7 @@ export function scopedHouseFacts(rows,report,id,year,level='county'){
  if(!['county','state'].includes(level))return {reason:'Unsupported House geography.'};
  const scope=houseFactScope(report,id,year);
  if(!scope)return {reason:'Complete source-qualified House facts are unavailable for this state and year.'};
+ if(level==='state'&&scope.stateFactsQualified===false)return {reason:scope.stateFactsReason||'A complete statewide House aggregate is not source-qualified.',stateAggregateHeld:true};
  const state=String(id).slice(0,2),sourceRows=(rows||[]).filter(row=>row.stateFips===state&&row.geoLevel===(level==='state'?'district':'county')&&(level==='state'||row.countyFips===id)&&row.special===false&&normalizedStage(row.stage)==='general'&&(!row.contestType||row.contestType==='candidate'));
  const expected=level==='state'?[...new Set(scope.intersections.map(key=>key.split('|')[1]))].sort():scope.intersections.filter(key=>key.startsWith(id+'|')).sort(),keys=sourceRows.map(row=>level==='state'?String(Number(row.district)):`${row.countyFips}|${Number(row.district)}`).sort();
  if(!expected.length||new Set(keys).size!==keys.length||JSON.stringify(keys)!==JSON.stringify(expected))return {reason:'Complete actual House district portions are unavailable for this county and year.'};

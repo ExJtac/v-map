@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "year": 2026,
   "sourceHashes": {
-    "winners": "3cf4bdcaaca9d6b21a89bde97acd9f542a2b76c4219d57683afc2eb9694333ab",
+    "winners": "2adebdab79de7573c0fca61540fbbe656aeb50d158b34c097ba20ad60a206e17",
     "pilot": "1bfd2da42d6595f296eabcc9f789b327bfffca326e1a7669b4396168f7cd0962",
     "portraits": "4cccda679817d26a9ae20ad6997438da9191034a802d07d4ba5606afb35427f2"
   },
@@ -1232,10 +1232,10 @@
       }
     },
     {
-      "id": "p2026-e0cb3823",
-      "path": "people/2026/house-12-oliver-g-gilbert-e0cb3823/",
-      "displayName": "Oliver G. Gilbert",
-      "reportedName": "Oliver G. Gilbert",
+      "id": "p2026-90d33ad6",
+      "path": "people/2026/house-12-oliver-g-gilbert-iii-90d33ad6/",
+      "displayName": "Oliver G. Gilbert III",
+      "reportedName": "Oliver G. Gilbert III",
       "portrait": null
     },
     {
