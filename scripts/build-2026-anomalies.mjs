@@ -135,6 +135,7 @@ export function buildActualReport({mirrorParties=false}={}) {
   const inputHashes={};
   const read=name=>{const bytes=fs.readFileSync(path.join(root,name));inputHashes[name]=crypto.createHash('sha256').update(bytes).digest('hex');return JSON.parse(bytes);};
   for(const name of ['src/2026-anomalies.js','src/county-data.js','src/source-holds.js','src/coverage-sources.js','scripts/build-2026-anomalies.mjs'])inputHashes[name]=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,name))).digest('hex');
+  if(fs.existsSync(path.join(root,'public/data/source-reviews/pa-2026.json')))read('public/data/source-reviews/pa-2026.json');
   const atlas=read('node_modules/us-atlas/counties-albers-10m.json');
   const mapCounties=atlas.objects.counties.geometries.map(c=>({fips:String(c.id).padStart(5,'0'),name:c.properties.name}));
   const manifests=COUNTY_SOURCES.map(s=>({...s,manifest:read(`public/data/${s.name}/manifest.json`)}));

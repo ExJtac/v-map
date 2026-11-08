@@ -186,12 +186,14 @@ export function resolveElectionSources(base, compound) {
       (hold) =>
         row.geoLevel === (hold.geoLevel || "state") &&
         row.stateFips === hold.stateFips &&
+        (!hold.sourceId || row.sourceId === hold.sourceId) &&
         (!hold.contestId || row.contestId === hold.contestId),
     );
     if (!holds.length) return row;
     return {
       ...row,
       sourceNeedsReview: true,
+      ...(holds.some(hold=>hold.sourceQualityNote)?{sourceQualityNote:[row.sourceQualityNote,...holds.map(hold=>hold.sourceQualityNote)].filter(Boolean).join(' ')}:{}),
       reviewReasons: [
         ...(row.reviewReasons || []),
         ...holds.map((hold) => hold.reason),

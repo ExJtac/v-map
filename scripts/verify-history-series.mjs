@@ -66,3 +66,5 @@ for(const [state,contract]of Object.entries(audit.comparabilityContracts.senateS
  }
 }
 console.log('Reviewed special Senate history uses2022and2026only; missing special years are never inferred.');
+
+const combinedAccounting={geoLevel:'county',countyFips:'45001',stateFips:'45',stage:'general',special:false,candidates:[{name:'Named D',party:'Democrat',votes:600},{name:'Named R',party:'Republican',votes:400}],reportingCategories:[{category:'overUnderVotes',votes:5000},{category:'reportedBallotTotal',votes:6000}]};assert.equal(qualifiedRaceCounts([combinedAccounting],{office:'governor',year:2022,level:'county',id:'45001'}).total,1000);combinedAccounting.reportingCategories[0].category='unknownCombinedField';assert.ok(qualifiedRaceCounts([combinedAccounting],{office:'governor',year:2022,level:'county',id:'45001'}).reason);

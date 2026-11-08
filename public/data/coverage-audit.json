@@ -138,6 +138,14 @@
     {
       "name": "senate-state-oh-pass4",
       "priority": 180
+    },
+    {
+      "name": "house-completion-sc",
+      "priority": 200
+    },
+    {
+      "name": "house-completion-wa",
+      "priority": 200
     }
   ],
   "coverage": [
@@ -567,17 +575,17 @@
     {
       "office": "house",
       "year": 2022,
-      "records": 4118,
-      "countyContestRecords": 3683,
+      "records": 4119,
+      "countyContestRecords": 3684,
       "uniqueCounties": 3095,
       "mappableCounties": 3095,
       "statesWithCountyReturns": 49,
       "statesWithReturns": 50,
-      "heldRecords": 1204,
+      "heldRecords": 1212,
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 0,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 1115
+      "resolvedSourceOverlaps": 1237
     },
     {
       "office": "house",
@@ -603,11 +611,11 @@
       "mappableCounties": 2002,
       "statesWithCountyReturns": 32,
       "statesWithReturns": 37,
-      "heldRecords": 86,
+      "heldRecords": 187,
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 2680,
       "unmatchedCountyFips": [],
-      "resolvedSourceOverlaps": 1076
+      "resolvedSourceOverlaps": 1199
     },
     {
       "office": "governor",
@@ -926,7 +934,7 @@
       "mappableCounties": 1230,
       "statesWithCountyReturns": 18,
       "statesWithReturns": 24,
-      "heldRecords": 0,
+      "heldRecords": 68,
       "unitemizedRunnerUpRecords": 0,
       "provisionalRecords": 1252,
       "unmatchedCountyFips": [],

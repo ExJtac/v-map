@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "status": "temporary_source_quality_hold",
+  "reviewedAt": "2026-11-07T23:54:32.944178+00:00",
+  "approvalReceiptSha256": "73a0db8f44e330c5f5f74c1711a2bc7078cecf23f4378cd5ee09f90b47db9f14",
+  "sourceId": "modern-current-2026-pa",
+  "year": 2026,
+  "stateFips": "42",
+  "offices": [
+    "governor",
+    "house"
+  ],
+  "geoLevels": [
+    "county",
+    "district",
+    "state"
+  ],
+  "reason": "The saved Pennsylvania 2026 source is under review. Current official feeds are labeled “Unofficial, Testing,” and the saved import’s production status has not been verified. Counts are retained as source evidence and withheld from comparisons and reported-leader listings pending a verified ordinary-results source.",
+  "determination": "Ordinary-results production status of this specific saved official-attributed2026source is not established after exact current-event/choice correspondence to publisher feeds explicitly marked Testing. Temporary source-qualityhold is justified pending verification; originalNov6snapshot testing lineage is not proven.",
+  "sourceCaptureBasis": "Complete rendered original public Chrome XMLbody text, not nativeXMLnetworkbytes; capture hashes retained. Independent review parsed retained full bodies; no duplicatefetch.",
+  "captureHashes": {
+    "current-feed-county-browser-dom.txt": "80417d317ec30d470e329a3b2a161379547e7811d6a069a4efce42ea1a28c398",
+    "current-feed-office-browser-dom.txt": "c2909d19fe53dc9ca775139da87df2105db1241bfdfae8a3f10a89239bab1ede",
+    "current-feed-link-listing-browser-dom.txt": "c6f3faed0c1dfd24d546204b9fc02bdca477be66579898afc78b3a242cc54337"
+  },
+  "sourceRawClocks": {
+    "lastBuildDate": "Nov 7 2026 4:14PM",
+    "countyPubDate": "Sat, 07 Nov 2026, 16:14:00 EST",
+    "officePubDate": "Sat, 07 Nov 2026, 16:14:01 EST",
+    "earlierSavedImportFetch": "2026-11-06T15:07:22+00:00"
+  },
+  "savedCsvSha256": "752c52421f1a1e3d66a08f64c75f784c6e12745542e4b6d74baac1dc87d19f0d",
+  "normalizedCurrentSourcePins": {
+    "public/data/modern-counties/governor-2026.json": "62a7a5763d6b07718db563b1874e1697e8cae96683d89c7a6b89b5fed7462ace",
+    "public/data/modern-counties/house-2026.json": "b913548b93b0b71b73cc0311e5e4ce91efce19d7dc3c0871d3dea90cc929892c"
+  },
+  "checks": {
+    "countyChoiceKeys": 369,
+    "countyChoicesMatchingEarlierCounts": 241,
+    "countyChoicesWithDifferentCounts": 128,
+    "stateChoiceKeys": 37,
+    "stateChoicesMatchingEarlierCounts": 16,
+    "stateChoicesWithDifferentCounts": 21
+  },
+  "sources": [
+    {
+      "title": "Pennsylvania official 2026 results by county feed",
+      "url": "https://www.electionreturns.pa.gov/electionFeed.aspx?ID=82&FeedName=2026+General+Election+-+Results+by+County"
+    },
+    {
+      "title": "Pennsylvania official 2026 results by office feed",
+      "url": "https://www.electionreturns.pa.gov/electionFeed.aspx?ID=83&FeedName=2026+General+Election+-+Results+by+Office"
+    }
+  ],
+  "limitations": [
+    "This review does not establish savedimport was created fromTestingfeed, fabrication, electionerror or wrongdoing; sourceURLroot alone was insufficient.",
+    "Exactcounts differ in128county cells and21statecontrols; do not describe fullnumericidentity or exact original fetchlineage.",
+    "Temporaryhold is a dataqualitydecision, not a new numericalanomaly or completed investigation. No paidcall/publicedit/deploy/scheduleaction byreviewer."
+  ],
+  "requalification": "Requires independently reviewed ordinary-results production provenance and exact county, candidate, round and state controls, or a separately approved new source. A generic unofficial banner alone does not clear this hold."
+}

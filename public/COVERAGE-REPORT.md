@@ -30,9 +30,9 @@ Snapshot: November 6, 2026. Counts below are source-backed imported coverage aft
 | house | 2016 | 49 | 3108 | 5016 | 1751 |
 | house | 2018 | 49 | 3111 | 3706 | 159 |
 | house | 2020 | 49 | 3110 | 4197 | 1431 |
-| house | 2022 | 49 | 3095 | 3683 | 1204 |
+| house | 2022 | 49 | 3095 | 3684 | 1212 |
 | house | 2024 | 49 | 3083 | 4903 | 1209 |
-| house | 2026 | 32 | 2002 | 2377 | 86 |
+| house | 2026 | 32 | 2002 | 2377 | 187 |
 | governor | 2006 | 35 | 2148 | 2149 | 63 |
 | governor | 2007 | 3 | 266 | 266 | 6 |
 | governor | 2008 | 11 | 566 | 566 | 3 |
@@ -53,7 +53,7 @@ Snapshot: November 6, 2026. Counts below are source-backed imported coverage aft
 | governor | 2023 | 3 | 266 | 266 | 0 |
 | governor | 2024 | 11 | 564 | 564 | 207 |
 | governor | 2025 | 2 | 154 | 154 | 0 |
-| governor | 2026 | 18 | 1230 | 1230 | 0 |
+| governor | 2026 | 18 | 1230 | 1230 | 68 |
 
 - Counts describe imported records, not an assertion every election or county is covered.
 - Alaska reports by election district; no unsupported county allocation is made.

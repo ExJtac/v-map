@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "wa-official-house-2022-county-and-state-csv": {
+      "title": "Washington SOS2022General official county and statewide result CSVs",
+      "url": "https://results.vote.wa.gov/results/20221108/export/20221108_AllCounties.csv",
+      "sourceUrl": "https://results.vote.wa.gov/results/20221108/export.html",
+      "sha256": "94ef81554adf043090baeeee2bd3579b703d6cc7141dcbcea0ed9fffec89c6b8",
+      "stateControlUrl": "https://results.vote.wa.gov/results/20221108/export/20221108_AllState.csv",
+      "stateControlSha256": "1afe3bd333cab1ae547cf03decc3b237bee768b6bcc8486da6388bd05071a2c3",
+      "retrievedAt": "2026-11-07T23:31:53.068392+00:00",
+      "historicalStatus": "OriginalDecember7certified totals; CD3supersededDecember22andheld until amendedcountyallocation sourced",
+      "certificationUrl": "https://www.sos.wa.gov/sites/default/files/2023-05/official%20canvass%20of%20the%20returns%20g2022_%20certification%2012%2007%202022.pdf",
+      "amendmentUrl": "https://www.sos.wa.gov/sites/default/files/2023-05/amended-results-state-certification-cong-3.pdf",
+      "license": "Official government election facts; original source attribution retained",
+      "sourceUpdatedAt": null
+    },
+    "wa-official-house-2026-district-1": {
+      "title": "Washington SOS2026General CongressionalDistrict1 original candidate and county breakdown API",
+      "url": "https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-bcf8-08df15c0a829",
+      "sourceUrl": "https://results.votewa.gov/results/public/washington/elections/20261103",
+      "authorityUrl": "https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets",
+      "sha256": "982871acb01108e0f1af429aeaa21c9ca9eb324ee9e9f759cd15f3040ab43be8",
+      "retrievedAt": "2026-11-07T23:33:11.135691+00:00",
+      "sourceUpdatedAt": null,
+      "asOf": "2026-11-07T22:43:30.948457Z",
+      "asOfBasis": "Election-global source snapshot; not county count-update",
+      "license": "Official government election facts; original source attribution retained"
+    },
+    "wa-official-house-2026-district-2": {
+      "title": "Washington SOS2026General CongressionalDistrict2 original candidate and county breakdown API",
+      "url": "https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-306c-08df15c0a82a",
+      "sourceUrl": "https://results.votewa.gov/results/public/washington/elections/20261103",
+      "authorityUrl": "https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets",
+      "sha256": "617942eafc416290e08fe0e6e23cff53e3e9b33b7fbc0e6405dcb9bbe92c29a9",
+      "retrievedAt": "2026-11-07T23:33:11.787204+00:00",
+      "sourceUpdatedAt": null,
+      "asOf": "2026-11-07T22:43:30.948457Z",
+      "asOfBasis": "Election-global source snapshot; not county count-update",
+      "license": "Official government election facts; original source attribution retained"
+    },
+    "wa-official-house-2026-district-3": {
+      "title": "Washington SOS2026General CongressionalDistrict3 original candidate and county breakdown API",
+      "url": "https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-4779-08df15c0a82a",
+      "sourceUrl": "https://results.votewa.gov/results/public/washington/elections/20261103",
+      "authorityUrl": "https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets",
+      "sha256": "232dedb6cd0b1314a7a8e332785e15c92fc473eba576cea6f8d84901ae13e33d",
+      "retrievedAt": "2026-11-07T23:33:12.469824+00:00",
+      "sourceUpdatedAt": null,
+      "asOf": "2026-11-07T22:43:30.948457Z",
+      "asOfBasis": "Election-global source snapshot; not county count-update",
+      "license": "Official government election facts; original source attribution retained"
+    },
+    "wa-official-house-2026-district-4": {
+      "title": "Washington SOS2026General CongressionalDistrict4 original candidate and county breakdown API",
+      "url": "https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-5bf3-08df15c0a82a",
+      "sourceUrl": "https://results.votewa.gov/results/public/washington/elections/20261103",
+      "authorityUrl": "https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets",
+      "sha256": "d8778bb971e478482be4a3c6a28d4ba38133912a15b148acfff498736af2cfa3",
+      "retrievedAt": "2026-11-07T23:33:13.062436+00:00",
+      "sourceUpdatedAt": null,
+      "asOf": "2026-11-07T22:43:30.948457Z",
+      "asOfBasis": "Election-global source snapshot; not county count-update",
+      "license": "Official government election facts; original source attribution retained"
+    },
+    "wa-official-house-2026-district-5": {
+      "title": "Washington SOS2026General CongressionalDistrict5 original candidate and county breakdown API",
+      "url": "https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-6f41-08df15c0a82a",
+      "sourceUrl": "https://results.votewa.gov/results/public/washington/elections/20261103",
+      "authorityUrl": "https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets",
+      "sha256": "6c0f14ab6f449a2bf061c33b5b295552d06a3afb38aac693192a41edd78fc531",
+      "retrievedAt": "2026-11-07T23:33:14.058974+00:00",
+      "sourceUpdatedAt": null,
+      "asOf": "2026-11-07T22:43:30.948457Z",
+      "asOfBasis": "Election-global source snapshot; not county count-update",
+      "license": "Official government election facts; original source attribution retained"
+    },
+    "wa-official-house-2026-district-6": {
+      "title": "Washington SOS2026General CongressionalDistrict6 original candidate and county breakdown API",
+      "url": "https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-84fb-08df15c0a82a",
+      "sourceUrl": "https://results.votewa.gov/results/public/washington/elections/20261103",
+      "authorityUrl": "https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets",
+      "sha256": "f1d7c1b0eee725654906258a2782312041e45444dc8cccec2c14b4bbdbe3567d",
+      "retrievedAt": "2026-11-07T23:33:14.731511+00:00",
+      "sourceUpdatedAt": null,
+      "asOf": "2026-11-07T22:43:30.948457Z",
+      "asOfBasis": "Election-global source snapshot; not county count-update",
+      "license": "Official government election facts; original source attribution retained"
+    },
+    "wa-official-house-2026-district-7": {
+      "title": "Washington SOS2026General CongressionalDistrict7 original candidate and county breakdown API",
+      "url": "https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-97f2-08df15c0a82a",
+      "sourceUrl": "https://results.votewa.gov/results/public/washington/elections/20261103",
+      "authorityUrl": "https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets",
+      "sha256": "acc4290c3239b69ff3c8224242ce427c6d7211ab7da17efe659891999ddceb9c",
+      "retrievedAt": "2026-11-07T23:33:15.220914+00:00",
+      "sourceUpdatedAt": null,
+      "asOf": "2026-11-07T22:43:30.948457Z",
+      "asOfBasis": "Election-global source snapshot; not county count-update",
+      "license": "Official government election facts; original source attribution retained"
+    },
+    "wa-official-house-2026-district-8": {
+      "title": "Washington SOS2026General CongressionalDistrict8 original candidate and county breakdown API",
+      "url": "https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-ab7f-08df15c0a82a",
+      "sourceUrl": "https://results.votewa.gov/results/public/washington/elections/20261103",
+      "authorityUrl": "https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets",
+      "sha256": "0979c84d757b4309b504dc751d018d77f68af465aafc39d321283b6057f2d299",
+      "retrievedAt": "2026-11-07T23:33:15.672035+00:00",
+      "sourceUpdatedAt": null,
+      "asOf": "2026-11-07T22:43:30.948457Z",
+      "asOfBasis": "Election-global source snapshot; not county count-update",
+      "license": "Official government election facts; original source attribution retained"
+    },
+    "wa-official-house-2026-district-9": {
+      "title": "Washington SOS2026General CongressionalDistrict9 original candidate and county breakdown API",
+      "url": "https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-bd9b-08df15c0a82a",
+      "sourceUrl": "https://results.votewa.gov/results/public/washington/elections/20261103",
+      "authorityUrl": "https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets",
+      "sha256": "0769898525e9aba3af6db00a4d3805478c60902c82e269cfae93ece7a706ef43",
+      "retrievedAt": "2026-11-07T23:33:16.319905+00:00",
+      "sourceUpdatedAt": null,
+      "asOf": "2026-11-07T22:43:30.948457Z",
+      "asOfBasis": "Election-global source snapshot; not county count-update",
+      "license": "Official government election facts; original source attribution retained"
+    },
+    "wa-official-house-2026-district-10": {
+      "title": "Washington SOS2026General CongressionalDistrict10 original candidate and county breakdown API",
+      "url": "https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-d064-08df15c0a82a",
+      "sourceUrl": "https://results.votewa.gov/results/public/washington/elections/20261103",
+      "authorityUrl": "https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets",
+      "sha256": "0ab7a87a32a679255f1f17e21e22dd4829790c422963090e877a555a8a3f20d0",
+      "retrievedAt": "2026-11-07T23:33:16.960917+00:00",
+      "sourceUpdatedAt": null,
+      "asOf": "2026-11-07T22:43:30.948457Z",
+      "asOfBasis": "Election-global source snapshot; not county count-update",
+      "license": "Official government election facts; original source attribution retained"
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-wa/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 60,
+      "stateCount": 1
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-wa/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 60,
+      "stateCount": 1
+    }
+  ],
+  "limitations": [
+    "Candidate votes including explicit write-ins are not ballots cast or distinct voters.",
+    "Washington candidate party labels are self-expressed preferences, not nomination or voter affiliation. Blank write-in party remains Other.",
+    "Actual complete county/district inventories are independent per year; this is a countywide race-vote comparison, not matched-seat or same-candidate causal inference.",
+    "2026 returns are unofficial, provisional and not certified; election source explicitly says results before November24 certification are unofficial. Reporting units reporting does not mean counting is complete.",
+    "2026 election-global asOf/lastUpdated/publishDate and county reporting-status clocks are preserved separately; county count-update timestamp is not established.",
+    "No missing geographic portions or absent major-party candidates were converted to zero; source-explicit zero candidate cells were retained.",
+    "2022CD3 archived county/district vectors predate the signed2022-12-22 amendment: all7CD3county portions AND its whole-district summary remain held; no14vote county allocation. Other9districts match the signed2022-12-07 certification; CD9named totals also match2022-12-16 amendment.",
+    "2022 source gives no count-update timestamp; Primary county/state controls exactly reconcile; FEC is independently checked with every disagreement preserved, not silently forced to match. County compatibility uses full Census2024 roster and retained Census substantial-change reference, not an adjudication of every minor cartographic correction."
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T23:45:37.214264+00:00",
+    "evidenceSha256": "00dbf55af72484090b3cb4d67a521c03b2ba051c5a2800a9ebe5a2efaa285505",
+    "approvalReceiptSha256": "a8c20f07f8487defa22ebe00ff4d884f1bd49f3d19ada903d576cc8cdda51ccf",
+    "approvedManifestProposalSha256": "ec91632506f8e8319f55c51abc4795b4f35e1798d09646654e36a53ae57daa34"
+  },
+  "normalizedPayloadHashes": {
+    "public/data/house-completion-wa/house-2022.json": "b5a5c2b0d1e65a894054c26996e5f140ed7da7008b292220673ccabf3d019f37",
+    "public/data/house-completion-wa/house-2026.json": "ff87e6928f8615bc3b5ac34ca42489acb3013d17879f9e791c43e5c6a9072ad0"
+  }
+}

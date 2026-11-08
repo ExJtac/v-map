@@ -1,6 +1,6 @@
 /** Pure history qualification: missing observations are gaps, never zero votes. */
 const integer = value => Number.isInteger(value) && value >= 0;
-const excluded = new Set(['overvotes','undervotes','invalidBallots','blankBallots','exhaustedBallots','reportedBallotTotal','absentNomineeSlot']);
+const excluded = new Set(['overvotes','undervotes','overUnderVotes','invalidBallots','blankBallots','exhaustedBallots','reportedBallotTotal','absentNomineeSlot']);
 const writeIns = new Set(['unattributedWriteIns','sourceWriteInEntries','namedWriteIns']);
 const class1 = new Set('04 06 09 10 12 15 18 23 24 25 26 27 28 29 30 31 32 34 35 36 38 39 42 44 47 48 49 50 51 53 54 55 56'.split(' '));
 const class2 = new Set('01 02 05 08 10 13 16 17 19 20 21 22 23 25 26 27 28 30 31 33 34 35 37 40 41 44 45 46 47 48 51 54 56'.split(' '));

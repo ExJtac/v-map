@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionYear": 2026,
-  "retrievedAt": "2026-11-07T22:06:13.298021+00:00",
+  "retrievedAt": "2026-11-07T23:33:16.960917+00:00",
   "status": "unofficial-snapshot",
   "offices": [
     {
@@ -22,7 +22,7 @@
       "countyContestRecords": 2377,
       "records": 2680,
       "provisionalRecords": 2680,
-      "retrievedAt": "2026-11-07T22:05:50.007815+00:00"
+      "retrievedAt": "2026-11-07T23:33:16.960917+00:00"
     },
     {
       "office": "governor",

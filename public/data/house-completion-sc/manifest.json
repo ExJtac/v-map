@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-07",
+  "sources": {
+    "sc-official-house-2022-district-1-historical-csv": {
+      "title": "SouthCarolinaElectionCommission2022GeneralCD1 official historical county and district CSV",
+      "url": "https://sc.elstats.civera.com/api/download_contest/2185_table.csv?split_party=false",
+      "sourceUrl": "https://electionhistory.scvotes.gov/contest/2185",
+      "authorityUrl": "https://www.scvotes.gov/elections-statistics/election-results/",
+      "sha256": "e9194f49f4182c8c87586524029ba372b354986a8c06316b34991ba70dbe8d5a",
+      "retrievedAt": "2026-11-07T23:36:26.577873+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Official government election facts; source attribution retained"
+    },
+    "sc-official-house-2022-district-2-historical-csv": {
+      "title": "SouthCarolinaElectionCommission2022GeneralCD2 official historical county and district CSV",
+      "url": "https://sc.elstats.civera.com/api/download_contest/2223_table.csv?split_party=false",
+      "sourceUrl": "https://electionhistory.scvotes.gov/contest/2223",
+      "authorityUrl": "https://www.scvotes.gov/elections-statistics/election-results/",
+      "sha256": "bc6cbf5d49eb6caf60eb07cb2d83ece6f493a8c8436b1c5805bd244482d21ae4",
+      "retrievedAt": "2026-11-07T23:36:27.340943+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Official government election facts; source attribution retained"
+    },
+    "sc-official-house-2022-district-3-historical-csv": {
+      "title": "SouthCarolinaElectionCommission2022GeneralCD3 official historical county and district CSV",
+      "url": "https://sc.elstats.civera.com/api/download_contest/2283_table.csv?split_party=false",
+      "sourceUrl": "https://electionhistory.scvotes.gov/contest/2283",
+      "authorityUrl": "https://www.scvotes.gov/elections-statistics/election-results/",
+      "sha256": "958ad73c6704c6843762a761a434bcd1e9f65bb36840dbab72ee4b7ec7549f33",
+      "retrievedAt": "2026-11-07T23:36:28.089682+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Official government election facts; source attribution retained"
+    },
+    "sc-official-house-2022-district-4-historical-csv": {
+      "title": "SouthCarolinaElectionCommission2022GeneralCD4 official historical county and district CSV",
+      "url": "https://sc.elstats.civera.com/api/download_contest/2314_table.csv?split_party=false",
+      "sourceUrl": "https://electionhistory.scvotes.gov/contest/2314",
+      "authorityUrl": "https://www.scvotes.gov/elections-statistics/election-results/",
+      "sha256": "02714aad78c0b3236524b6c7adf75ac08806f9b18c7e9ee27f5418c9897d4f08",
+      "retrievedAt": "2026-11-07T23:36:28.695094+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Official government election facts; source attribution retained"
+    },
+    "sc-official-house-2022-district-5-historical-csv": {
+      "title": "SouthCarolinaElectionCommission2022GeneralCD5 official historical county and district CSV",
+      "url": "https://sc.elstats.civera.com/api/download_contest/2209_table.csv?split_party=false",
+      "sourceUrl": "https://electionhistory.scvotes.gov/contest/2209",
+      "authorityUrl": "https://www.scvotes.gov/elections-statistics/election-results/",
+      "sha256": "84d3375259745045f3969fe07ffb87fa45bef9fa7d4525da6bc19ade008137bc",
+      "retrievedAt": "2026-11-07T23:36:29.474814+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Official government election facts; source attribution retained"
+    },
+    "sc-official-house-2022-district-6-historical-csv": {
+      "title": "SouthCarolinaElectionCommission2022GeneralCD6 official historical county and district CSV",
+      "url": "https://sc.elstats.civera.com/api/download_contest/2218_table.csv?split_party=false",
+      "sourceUrl": "https://electionhistory.scvotes.gov/contest/2218",
+      "authorityUrl": "https://www.scvotes.gov/elections-statistics/election-results/",
+      "sha256": "167649a55c1ed0e20eec0074eb7309bd8ea73e96cc6336b8661b27381a8be27c",
+      "retrievedAt": "2026-11-07T23:36:30.243654+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Official government election facts; source attribution retained"
+    },
+    "sc-official-house-2022-district-7-historical-csv": {
+      "title": "SouthCarolinaElectionCommission2022GeneralCD7 official historical county and district CSV",
+      "url": "https://sc.elstats.civera.com/api/download_contest/2202_table.csv?split_party=false",
+      "sourceUrl": "https://electionhistory.scvotes.gov/contest/2202",
+      "authorityUrl": "https://www.scvotes.gov/elections-statistics/election-results/",
+      "sha256": "796cfbbf958e36c507c54aff0a273ff67847e9053341a8223b0e54c5d6f7cc1d",
+      "retrievedAt": "2026-11-07T23:36:30.876163+00:00",
+      "sourceUpdatedAt": null,
+      "license": "Official government election facts; source attribution retained"
+    },
+    "modern-current-2026-sc": {
+      "file": "results-2026-sc.csv",
+      "url": "https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/sc.csv",
+      "sourceUrl": "https://github.com/pushbuild/us-2026-election-results/tree/73b20975fc0a66da90688d372b4c619609fee9cb",
+      "title": "Pushbuild2026 SC official-source returns snapshot",
+      "version": "73b20975fc0a66da90688d372b4c619609fee9cb",
+      "license": "CC0-1.0 research snapshot; original official-source URLs retained per contest",
+      "asOf": "2026-11-06T10:02:00-05:00",
+      "sha256": "4fb5000045c378ad0acf219276caf1b0f014b8d84316a515872dc53cf42167fd",
+      "readmeFile": "results-2026-README.md",
+      "resultStatus": "unofficial",
+      "countingStatus": "counting",
+      "snapshotDate": "2026-11-06"
+    }
+  },
+  "coverage": [
+    {
+      "office": "house",
+      "year": 2022,
+      "url": "/data/house-completion-sc/house-2022.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 63,
+      "stateCount": 1
+    },
+    {
+      "office": "house",
+      "year": 2026,
+      "url": "/data/house-completion-sc/house-2026.json",
+      "geoLevels": [
+        "county",
+        "district"
+      ],
+      "rows": 63,
+      "stateCount": 1
+    }
+  ],
+  "limitations": [
+    "Candidate votes including source-explicit generic write-ins are not ballots cast or distinct voters.",
+    "2022direct official historical agency CSVs positively replace prior research-vector discrepancies including source-name JeffDan versus primary JeffDuncan; all old originals remain unchanged.",
+    "2026current vectors and whole-district controls share the exact pinned registered research extract, not a fresh independent primary body; live official2026host returned403, access receipt retained.",
+    "2026returns are provisional/unofficial and not certified, no count-completion or winner claim. Unknown source count-update times remain null; retrieval time is explicitly labeled.",
+    "District and candidate changes/contestation affect countywide comparisons; all source-actual district portions are summed independently each year, not matched-seat causality. Absent opposing-party candidates are unavailable, not inferred zero.",
+    "County geography is matched to the full46county Census2024 roster with retained Census substantial-change reference; no claim every minor cartographic correction was adjudicated.",
+    "2022Overvotes/Undervotes and TotalBallotsCast are separately retained source reporting categories, excluded from candidate-vote totals; they are district-portion quantities, not distinct countywide persons."
+  ],
+  "review": {
+    "status": "approved",
+    "reviewedAt": "2026-11-07T23:47:25.333369+00:00",
+    "evidenceSha256": "3912c92b003ef62a0d4dac02156c0ec13439c07dda5c425124922f73f3be3017",
+    "approvalReceiptSha256": "da29a7d3221a6a328e5e925a9235269d63634dc2d9fde49ffaad8c594c14d521",
+    "approvedManifestProposalSha256": "b7825551af30f4efeecd5cea932be322fac68c4a5475f425238d9ec7a4f24af9"
+  },
+  "normalizedPayloadHashes": {
+    "public/data/house-completion-sc/house-2022.json": "791a30857b48446f876a0468464882ecedc9b5bb45516f559cbb589b2a75e598",
+    "public/data/house-completion-sc/house-2026.json": "44ff5b8d4552fa75b845fc033b218acad14e3b36c32d0dc7953d4c62581093ca"
+  }
+}

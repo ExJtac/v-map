@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "year": 2026,
   "sourceHashes": {
-    "winners": "9beabe86c8351a734aab0086ba4f72361d6a9c9b00925e6cf8e77ee313af2937",
+    "winners": "3cf4bdcaaca9d6b21a89bde97acd9f542a2b76c4219d57683afc2eb9694333ab",
     "pilot": "1bfd2da42d6595f296eabcc9f789b327bfffca326e1a7669b4396168f7cd0962",
     "portraits": "4cccda679817d26a9ae20ad6997438da9191034a802d07d4ba5606afb35427f2"
   },
@@ -1984,155 +1984,6 @@
       }
     },
     {
-      "id": "p2026-29570954",
-      "path": "people/2026/house-42-bob-harvie-29570954/",
-      "displayName": "Bob Harvie",
-      "reportedName": "Bob Harvie",
-      "portrait": null
-    },
-    {
-      "id": "p2026-b533a62a",
-      "path": "people/2026/house-42-brendan-f-boyle-b533a62a/",
-      "displayName": "Brendan F Boyle",
-      "reportedName": "Brendan F Boyle",
-      "portrait": {
-        "src": "people-photos/B001296.jpg",
-        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide B001296"
-      }
-    },
-    {
-      "id": "p2026-c2804092",
-      "path": "people/2026/house-42-chris-rabb-c2804092/",
-      "displayName": "Chris Rabb",
-      "reportedName": "Chris Rabb",
-      "portrait": null
-    },
-    {
-      "id": "p2026-d2e84907",
-      "path": "people/2026/house-42-madeleine-dean-d2e84907/",
-      "displayName": "Madeleine Dean",
-      "reportedName": "Madeleine Dean",
-      "portrait": {
-        "src": "people-photos/D000631.jpg",
-        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide D000631"
-      }
-    },
-    {
-      "id": "p2026-9dc74a3a",
-      "path": "people/2026/house-42-mary-gay-scanlon-9dc74a3a/",
-      "displayName": "Mary Gay Scanlon",
-      "reportedName": "Mary Gay Scanlon",
-      "portrait": {
-        "src": "people-photos/S001205.jpg",
-        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001205"
-      }
-    },
-    {
-      "id": "p2026-b3e2232a",
-      "path": "people/2026/house-42-chrissy-houlahan-b3e2232a/",
-      "displayName": "Chrissy Houlahan",
-      "reportedName": "Chrissy Houlahan",
-      "portrait": {
-        "src": "people-photos/H001085.jpg",
-        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide H001085"
-      }
-    },
-    {
-      "id": "p2026-17d6f19f",
-      "path": "people/2026/house-42-bob-brooks-17d6f19f/",
-      "displayName": "Bob Brooks",
-      "reportedName": "Bob Brooks",
-      "portrait": null
-    },
-    {
-      "id": "p2026-9e286e98",
-      "path": "people/2026/house-42-paige-cognetti-9e286e98/",
-      "displayName": "Paige Cognetti",
-      "reportedName": "Paige Cognetti",
-      "portrait": null
-    },
-    {
-      "id": "p2026-809dbddc",
-      "path": "people/2026/house-42-dan-meuser-809dbddc/",
-      "displayName": "Dan Meuser",
-      "reportedName": "Dan Meuser",
-      "portrait": null
-    },
-    {
-      "id": "p2026-00554a9d",
-      "path": "people/2026/house-42-janelle-stelson-00554a9d/",
-      "displayName": "Janelle Stelson",
-      "reportedName": "Janelle Stelson",
-      "portrait": null
-    },
-    {
-      "id": "p2026-b58950b6",
-      "path": "people/2026/house-42-lloyd-k-smucker-b58950b6/",
-      "displayName": "Lloyd K Smucker",
-      "reportedName": "Lloyd K Smucker",
-      "portrait": {
-        "src": "people-photos/S001199.jpg",
-        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide S001199"
-      }
-    },
-    {
-      "id": "p2026-e5bb5521",
-      "path": "people/2026/house-42-summer-lee-e5bb5521/",
-      "displayName": "Summer Lee",
-      "reportedName": "Summer Lee",
-      "portrait": {
-        "src": "people-photos/L000602.jpg",
-        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide L000602"
-      }
-    },
-    {
-      "id": "p2026-25b47ec2",
-      "path": "people/2026/house-42-john-joyce-25b47ec2/",
-      "displayName": "John Joyce",
-      "reportedName": "John Joyce",
-      "portrait": {
-        "src": "people-photos/J000302.jpg",
-        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide J000302"
-      }
-    },
-    {
-      "id": "p2026-1cb620b7",
-      "path": "people/2026/house-42-guy-reschenthaler-1cb620b7/",
-      "displayName": "Guy Reschenthaler",
-      "reportedName": "Guy Reschenthaler",
-      "portrait": {
-        "src": "people-photos/R000610.jpg",
-        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide R000610"
-      }
-    },
-    {
-      "id": "p2026-62a28b6a",
-      "path": "people/2026/house-42-glenn-gt-thompson-62a28b6a/",
-      "displayName": "Glenn Gt Thompson",
-      "reportedName": "Glenn Gt Thompson",
-      "portrait": null
-    },
-    {
-      "id": "p2026-45630f47",
-      "path": "people/2026/house-42-mike-kelly-45630f47/",
-      "displayName": "Mike Kelly",
-      "reportedName": "Mike Kelly",
-      "portrait": {
-        "src": "people-photos/K000376.jpg",
-        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide K000376"
-      }
-    },
-    {
-      "id": "p2026-6dbff186",
-      "path": "people/2026/house-42-chris-deluzio-6dbff186/",
-      "displayName": "Chris Deluzio",
-      "reportedName": "Chris Deluzio",
-      "portrait": {
-        "src": "people-photos/D000530.jpg",
-        "attribution": "U.S. Government Publishing Office, Congressional Pictorial Directory (119th Congress); Bioguide D000530"
-      }
-    },
-    {
       "id": "p2026-ae869dce",
       "path": "people/2026/house-44-gabriel-amo-dem-ae869dce/",
       "displayName": "Gabriel Amo (DEM)",
@@ -2964,13 +2815,6 @@
       "path": "people/2026/governor-39-amy-acton-david-pepper-e08f85e9/",
       "displayName": "Amy Acton / David Pepper",
       "reportedName": "Amy Acton / David Pepper",
-      "portrait": null
-    },
-    {
-      "id": "p2026-843d8858",
-      "path": "people/2026/governor-42-josh-shapiro-davis-austin-843d8858/",
-      "displayName": "Josh Shapiro / Davis, Austin",
-      "reportedName": "Josh Shapiro / Davis, Austin",
       "portrait": null
     },
     {

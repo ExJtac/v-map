@@ -18,7 +18,7 @@ const notAssessed=reason=>({status:'not-assessed',flags:[],reason});
 const regular=r=>!r.special && ['general','gen','g'].includes(String(r.stage||'general').toLowerCase()) && (!r.contestType || r.contestType==='candidate');
 function qualityReason(r, prior=false) {
   if (!r) return 'Matching source record unavailable.';
-  if (r.sourceNeedsReview || r.sourceTotalConflict || r.voteTotalMismatch) return r.sourceQualityNote?`Source quality hold: ${r.sourceQualityNote}`:'Source quality hold or inconsistent totals.';
+  if (r.sourceNeedsReview || r.sourceTotalConflict || r.voteTotalMismatch) {const reason=r.sourceQualityNote||r.sourceReviewReason;return reason?`Source quality hold: ${reason}`:'Source quality hold or inconsistent totals.';}
   if (r.incomplete) return 'Source explicitly marks incomplete coverage.';
   if (r.boundaryChanged || r.boundaryIncompatible || r.boundaryNote || r.geographicCoverageNote) return 'Geographic boundary or jurisdiction comparability is unproven.';
   if (prior && (r.provisional || r.unofficial)) return 'Prior baseline is provisional or unofficial.';
@@ -46,7 +46,7 @@ function partyInput(row, prior, criteria, reviewedNovemberPair=false) {
   if (!reviewedNovemberPair&&(!regular(row)||!regular(prior)))return {reason:'Comparable regular general-election contests not established.'};
   for(const r of [row,prior]) {
     if (!Array.isArray(r.candidates)||r.candidates.some(c=>!Number.isInteger(c.votes)||c.votes<0))return {reason:'Candidate count missing, nonintegral or negative.'};
-    if (r.candidates.some(c=>/^(OTHER|ALL OTHER CANDIDATES.*|OTHER CANDIDATES)$/i.test(c.name||'')) || (r.reportingCategories||[]).some(c=>/unitemized|other.*candidates|candidates.*aggregat|sourceReportingCategory/i.test(c.category||'') || c.votes===null)) return {reason:'Unitemized candidates or unclassified/missing reporting categories prevent a qualified party comparison.'};
+    if (r.candidates.some(c=>/^(OTHER|ALL OTHER CANDIDATES.*|OTHER CANDIDATES)$/i.test(c.name||'')) || (r.reportingCategories||[]).some(c=>!/^(overvotes|undervotes|overUnderVotes|invalidBallots|blankBallots|spoiledBallots|exhaustedBallots|absentNomineeSlot|reportedBallotTotal|writeins?|writeInVotes|unqualifiedWriteIns|unattributedWriteIns|sourceWriteInEntries|namedWriteIns)$/i.test(c.category||'') || c.votes===null)) return {reason:'Unitemized candidates or unclassified/missing reporting categories prevent a qualified party comparison.'};
     if (r.suppressElectionWinner || r.winnerEligible===false)return {reason:'Ballot question or conditional contest is not comparable to a regular candidate election.'};
   }
   const counts=r=>{const d=r.candidates.filter(c=>c.party==='Democrat'),p=r.candidates.filter(c=>c.party==='Republican');return d.length&&p.length?{democrat:d.reduce((n,c)=>n+c.votes,0),republican:p.reduce((n,c)=>n+c.votes,0)}:null;};
@@ -141,7 +141,7 @@ function raceVoteInput(row,prior,criteria,reviewedNovemberPair=false) {
     let total=r.candidates.reduce((n,c)=>n+c.votes,0);const included=[],excluded=[];
     for(const c of r.reportingCategories||[]) {
       const category=String(c.category||'');
-      if(/^(overvotes|undervotes|invalidBallots|blankBallots|spoiledBallots|exhaustedBallots|absentNomineeSlot|reportedBallotTotal)$/i.test(category)){excluded.push({...c});continue;}
+      if(/^(overvotes|undervotes|overUnderVotes|invalidBallots|blankBallots|spoiledBallots|exhaustedBallots|absentNomineeSlot|reportedBallotTotal)$/i.test(category)){excluded.push({...c});continue;}
       if(/^(writeins?|writeInVotes|unqualifiedWriteIns|unattributedWriteIns|sourceWriteInEntries)$/i.test(category)&&Number.isInteger(c.votes)&&c.votes>=0){total+=c.votes;included.push({...c});continue;}
       return {reason:'Unclassified, missing or unitemized reporting categories prevent a qualified race-vote total.'};
     }

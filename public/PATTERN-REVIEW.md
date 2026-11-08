@@ -33,24 +33,24 @@ Legacy `shareShift` and `partyGrowth` retain the advanced symmetric peer screens
 | Actual ballots/residents | global | 58 | 3084 | 22 |
 | partyCountChange | president | 0 | 3142 | 0 |
 | partyCountChange | senate | 1294 | 1848 | 90 |
-| partyCountChange | house | 981 | 2161 | 204 |
-| partyCountChange | governor | 1051 | 2091 | 290 |
+| partyCountChange | house | 1048 | 2094 | 224 |
+| partyCountChange | governor | 984 | 2158 | 290 |
 | raceVoteChange | president | 0 | 3142 | 0 |
 | raceVoteChange | senate | 1563 | 1579 | 80 |
-| raceVoteChange | house | 1065 | 2077 | 14 |
-| raceVoteChange | governor | 1080 | 2062 | 50 |
+| raceVoteChange | house | 1143 | 1999 | 24 |
+| raceVoteChange | governor | 1013 | 2129 | 50 |
 | racePopulationChange | president | 0 | 3142 | 0 |
 | racePopulationChange | senate | 1560 | 1582 | 1067 |
-| racePopulationChange | house | 1063 | 2079 | 32 |
-| racePopulationChange | governor | 1078 | 2064 | 76 |
+| racePopulationChange | house | 1141 | 2001 | 46 |
+| racePopulationChange | governor | 1011 | 2131 | 76 |
 | shareSwing | president | 0 | 3142 | 0 |
 | shareSwing | senate | 1294 | 1848 | 200 |
-| shareSwing | house | 981 | 2161 | 151 |
-| shareSwing | governor | 1051 | 2091 | 295 |
+| shareSwing | house | 1048 | 2094 | 169 |
+| shareSwing | governor | 984 | 2158 | 295 |
 | Own-history union | president | 0 | 3142 | 0 |
 | Own-history union | senate | 1563 | 1579 | 1111 |
-| Own-history union | house | 1065 | 2077 | 312 |
-| Own-history union | governor | 1080 | 2062 | 495 |
+| Own-history union | house | 1143 | 1999 | 351 |
+| Own-history union | governor | 1013 | 2129 | 495 |
 
 ### Reviewed Senate seat/ballot scope: 13
 
@@ -146,8 +146,10 @@ These totals use only qualified party-comparison counties, not necessarily compl
 | house | 30 | 43 | 27.460573 | 2.112161 | 27.477785 | 0.45403 | 16 |
 | house | 37 | 100 | 32.890088 | -10.43995 | 31.893356 | -10.886827 | 39 |
 | house | 39 | 88 | 29.477933 | -6.073326 | 30.516186 | -5.687376 | 20 |
+| house | 45 | 35 | 54.260929 | 0.32861 | 45.471914 | -2.311464 | 28 |
 | house | 49 | 27 | 38.040846 | -28.871169 | 46.434494 | -26.662777 | 20 |
 | house | 51 | 133 | 33.068137 | -2.906606 | 40.239342 | 0.918582 | 66 |
+| house | 53 | 32 | 0.566858 | -19.866205 | 9.0156 | -18.296459 | 11 |
 | house | 54 | 55 | 20.624424 | -15.869348 | 11.832947 | -15.818934 | 13 |
 | house | 56 | 22 | 30.467409 | -24.373429 | 35.810907 | -24.487286 | 10 |
 | house | 04 | 14 | 28.623915 | -20.083501 | 5.524644 | -17.186835 | 3 |
@@ -161,7 +163,6 @@ These totals use only qualified party-comparison counties, not necessarily compl
 | governor | 26 | 2 | 13.839592 | 5.58802 | 4.593915 | 6.891774 | 0 |
 | governor | 27 | 87 | 19.609342 | 7.735318 | 13.523557 | 7.598231 | 1 |
 | governor | 39 | 88 | 55.560991 | -20.953688 | 61.88121 | -17.454655 | 85 |
-| governor | 42 | 67 | -0.724605 | -14.785799 | -3.495022 | -15.912637 | 0 |
 | governor | 46 | 61 | -9.643515 | -10.970986 | -13.850416 | -10.931845 | 5 |
 | governor | 48 | 222 | 47.127695 | 2.026044 | 59.099358 | -3.455213 | 178 |
 | governor | 55 | 2 | 8.050347 | -8.323163 | 8.007559 | -7.244325 | 0 |
@@ -193,16 +194,18 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 ### house: partyCountChange
 
 - 1140: No imported 2026 county contest for this office.
-- 806: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
+- 721: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
 - 120: Kentucky House historical comparison is held: the existing imported 2022 county baseline matches only 5 of 17 FEC candidate and write-in controls. A qualified historical source is still required
-- 71: Both explicitly identified Democratic and Republican candidates are required; Other votes are not reassigned.
+- 82: Both explicitly identified Democratic and Republican candidates are required; Other votes are not reassigned.
 - 23: Two-party minimum of 500 each year or 100 votes for each prior party not met.
+- 7: Source quality hold: Archived2022CD3county/district vectors predate the signedDecember22amendment; Perez+9/Kent+5statewide, county allocation unknown. Original counts retained for source inventory only; excluded from comparison and state fact aggregation.
 - 1: Source quality hold: Unresolved source write-in category is unclassified; countywide party comparison held pending sourced semantics.
 
 ### governor: partyCountChange
 
 - 1912: No imported 2026 county contest for this office.
 - 121: Source quality hold or inconsistent totals.
+- 67: Source quality hold: The saved Pennsylvania 2026 source is under review. Current official feeds are labeled “Unofficial, Testing,” and the saved import’s production status has not been verified. Counts are retained as source evidence and withheld from comparisons and reported-leader listings pending a verified ordinary-results source.
 - 43: Two-party minimum of 500 each year or 100 votes for each prior party not met.
 - 13: Unitemized candidates or unclassified/missing reporting categories prevent a qualified party comparison.
 - 1: Both explicitly identified Democratic and Republican candidates are required; Other votes are not reassigned.
@@ -221,15 +224,17 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 ### house: raceVoteChange
 
 - 1140: No imported 2026 county contest for this office.
-- 806: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
+- 721: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
 - 120: Kentucky House historical comparison is held: the existing imported 2022 county baseline matches only 5 of 17 FEC candidate and write-in controls. A qualified historical source is still required
 - 10: Fewer than 500 reported candidate/write-in race votes in either year.
+- 7: Source quality hold: Archived2022CD3county/district vectors predate the signedDecember22amendment; Perez+9/Kent+5statewide, county allocation unknown. Original counts retained for source inventory only; excluded from comparison and state fact aggregation.
 - 1: Source quality hold: Unresolved source write-in category is unclassified; countywide party comparison held pending sourced semantics.
 
 ### governor: raceVoteChange
 
 - 1912: No imported 2026 county contest for this office.
 - 121: Source quality hold or inconsistent totals.
+- 67: Source quality hold: The saved Pennsylvania 2026 source is under review. Current official feeds are labeled “Unofficial, Testing,” and the saved import’s production status has not been verified. Counts are retained as source evidence and withheld from comparisons and reported-leader listings pending a verified ordinary-results source.
 - 15: Fewer than 500 reported candidate/write-in race votes in either year.
 - 13: Unclassified, missing or unitemized reporting categories prevent a qualified race-vote total.
 - 1: A unique matching regular 2022 county contest is unavailable.
@@ -248,9 +253,10 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 ### house: racePopulationChange
 
 - 1140: No imported 2026 county contest for this office.
-- 806: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
+- 721: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
 - 120: Kentucky House historical comparison is held: the existing imported 2022 county baseline matches only 5 of 17 FEC candidate and write-in controls. A qualified historical source is still required
 - 10: Fewer than 500 reported candidate/write-in race votes in either year.
+- 7: Source quality hold: Archived2022CD3county/district vectors predate the signedDecember22amendment; Perez+9/Kent+5statewide, county allocation unknown. Original counts retained for source inventory only; excluded from comparison and state fact aggregation.
 - 2: Exact 2025 and 2022 resident populations unavailable or below 1,000.
 - 1: Source quality hold: Unresolved source write-in category is unclassified; countywide party comparison held pending sourced semantics.
 
@@ -258,6 +264,7 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 
 - 1912: No imported 2026 county contest for this office.
 - 121: Source quality hold or inconsistent totals.
+- 67: Source quality hold: The saved Pennsylvania 2026 source is under review. Current official feeds are labeled “Unofficial, Testing,” and the saved import’s production status has not been verified. Counts are retained as source evidence and withheld from comparisons and reported-leader listings pending a verified ordinary-results source.
 - 15: Fewer than 500 reported candidate/write-in race votes in either year.
 - 13: Unclassified, missing or unitemized reporting categories prevent a qualified race-vote total.
 - 2: Exact 2025 and 2022 resident populations unavailable or below 1,000.
@@ -277,16 +284,18 @@ Webb D27156→40593 (49.480778%), R16409→17299 (5.423853%). RuleAflags it beca
 ### house: shareSwing
 
 - 1140: No imported 2026 county contest for this office.
-- 806: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
+- 721: Complete comparable county-district coverage and county identity are not established; no district allocation is inferred.
 - 120: Kentucky House historical comparison is held: the existing imported 2022 county baseline matches only 5 of 17 FEC candidate and write-in controls. A qualified historical source is still required
-- 71: Both explicitly identified Democratic and Republican candidates are required; Other votes are not reassigned.
+- 82: Both explicitly identified Democratic and Republican candidates are required; Other votes are not reassigned.
 - 23: Two-party minimum of 500 each year or 100 votes for each prior party not met.
+- 7: Source quality hold: Archived2022CD3county/district vectors predate the signedDecember22amendment; Perez+9/Kent+5statewide, county allocation unknown. Original counts retained for source inventory only; excluded from comparison and state fact aggregation.
 - 1: Source quality hold: Unresolved source write-in category is unclassified; countywide party comparison held pending sourced semantics.
 
 ### governor: shareSwing
 
 - 1912: No imported 2026 county contest for this office.
 - 121: Source quality hold or inconsistent totals.
+- 67: Source quality hold: The saved Pennsylvania 2026 source is under review. Current official feeds are labeled “Unofficial, Testing,” and the saved import’s production status has not been verified. Counts are retained as source evidence and withheld from comparisons and reported-leader listings pending a verified ordinary-results source.
 - 43: Two-party minimum of 500 each year or 100 votes for each prior party not met.
 - 13: Unitemized candidates or unclassified/missing reporting categories prevent a qualified party comparison.
 - 1: Both explicitly identified Democratic and Republican candidates are required; Other votes are not reassigned.
@@ -1799,50 +1808,98 @@ Full exact current/prior counts, own changes, peer context, source dates, inclus
 | 41069 | Wheeler | senate | senate-race-population-change | neutral | -12.408986pp | senate-current-official-or-2026; senate-completion-official-or-2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45001 | Abbeville | senate | senate-race-population-change | neutral | -14.969887pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45003 | Aiken | senate | senate-race-population-change | neutral | -13.022349pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45003 | Aiken | house | house-party-count-change | democrat | Democrat: 64.456534%; opponent 1.958193% | modern-current-2026-sc; sc-official-house-2022-district-2-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45003 | Aiken | house | house-share-swing | democrat | D share 11.182243pp | modern-current-2026-sc; sc-official-house-2022-district-2-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45005 | Allendale | senate | senate-race-population-change | neutral | -11.594445pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45005 | Allendale | house | house-party-count-change | democrat | Democrat: 52.406832%; opponent 0.938086% | modern-current-2026-sc; sc-official-house-2022-district-6-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45007 | Anderson | senate | senate-race-population-change | neutral | -13.520658pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45009 | Bamberg | senate | senate-race-population-change | neutral | -12.673925pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45011 | Barnwell | senate | senate-race-population-change | neutral | -13.037362pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45011 | Barnwell | house | house-party-count-change | democrat | Democrat: 49.432739%; opponent 2.635046% | modern-current-2026-sc; sc-official-house-2022-district-2-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45013 | Beaufort | senate | senate-race-population-change | neutral | -10.071094pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45015 | Berkeley | senate | senate-race-population-change | neutral | -12.052992pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45015 | Berkeley | house | house-party-count-change | democrat | Democrat: 59.63058%; opponent 3.857552% | modern-current-2026-sc; sc-official-house-2022-district-1-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45015 | Berkeley | house | house-share-swing | democrat | D share 10.667433pp | modern-current-2026-sc; sc-official-house-2022-district-1-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45017 | Calhoun | senate | senate-race-population-change | neutral | -17.333752pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45017 | Calhoun | house | house-share-swing | democrat | D share 10.09039pp | modern-current-2026-sc; sc-official-house-2022-district-6-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45019 | Charleston | senate | senate-race-population-change | neutral | -13.410861pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45021 | Cherokee | senate | senate-race-population-change | neutral | -14.624662pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45021 | Cherokee | house | house-party-count-change | democrat | Democrat: 70.032964%; opponent -5.86559% | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45021 | Cherokee | house | house-share-swing | democrat | D share 11.405607pp | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45023 | Chester | senate | senate-race-population-change | neutral | -12.273259pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45023 | Chester | house | house-party-count-change | democrat | Democrat: 73.660205%; opponent -0.623946% | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45023 | Chester | house | house-share-swing | democrat | D share 13.661313pp | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45025 | Chesterfield | senate | senate-race-population-change | neutral | -12.741434pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45027 | Clarendon | senate | senate-race-population-change | neutral | -10.480533pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45029 | Colleton | senate | senate-race-population-change | neutral | -15.262114pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45031 | Darlington | senate | senate-race-population-change | neutral | -14.201545pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45031 | Darlington | house | house-party-count-change | democrat | Democrat: 48.599731%; opponent -4.17655% | modern-current-2026-sc; sc-official-house-2022-district-7-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45031 | Darlington | house | house-share-swing | democrat | D share 10.866251pp | modern-current-2026-sc; sc-official-house-2022-district-7-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45033 | Dillon | senate | senate-race-population-change | neutral | -14.196386pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45035 | Dorchester | senate | senate-race-population-change | neutral | -12.766097pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45035 | Dorchester | house | house-party-count-change | democrat | Democrat: 55.397327%; opponent 2.515457% | modern-current-2026-sc; sc-official-house-2022-district-1-historical-csv; sc-official-house-2022-district-6-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45035 | Dorchester | house | house-share-swing | democrat | D share 10.330468pp | modern-current-2026-sc; sc-official-house-2022-district-1-historical-csv; sc-official-house-2022-district-6-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45037 | Edgefield | senate | senate-race-population-change | neutral | -15.567261pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45037 | Edgefield | house | house-race-vote-change | neutral | 6691→10797; 61.366014% | modern-current-2026-sc; sc-official-house-2022-district-3-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45037 | Edgefield | house | house-race-population-change | neutral | 11.688398pp | modern-current-2026-sc; sc-official-house-2022-district-3-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract; census2025 |
 | 45039 | Fairfield | senate | senate-race-population-change | neutral | -10.581456pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45039 | Fairfield | house | house-party-count-change | democrat | Democrat: 41.852652%; opponent -3.214756% | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45041 | Florence | senate | senate-race-population-change | neutral | -11.917969pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45041 | Florence | house | house-party-count-change | democrat | Democrat: 48%; opponent -4.580251% | modern-current-2026-sc; sc-official-house-2022-district-6-historical-csv; sc-official-house-2022-district-7-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45041 | Florence | house | house-share-swing | democrat | D share 10.925159pp | modern-current-2026-sc; sc-official-house-2022-district-6-historical-csv; sc-official-house-2022-district-7-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45043 | Georgetown | senate | senate-race-population-change | neutral | -10.8571pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45045 | Greenville | senate | senate-race-population-change | neutral | -12.091348pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45045 | Greenville | house | house-race-vote-change | neutral | 138968→214113; 54.0736% | modern-current-2026-sc; sc-official-house-2022-district-3-historical-csv; sc-official-house-2022-district-4-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45045 | Greenville | house | house-race-population-change | neutral | 11.394335pp | modern-current-2026-sc; sc-official-house-2022-district-3-historical-csv; sc-official-house-2022-district-4-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract; census2025 |
 | 45047 | Greenwood | senate | senate-race-population-change | neutral | -11.269193pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45047 | Greenwood | house | house-race-vote-change | neutral | 16615→24498; 47.44508% | modern-current-2026-sc; sc-official-house-2022-district-3-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45047 | Greenwood | house | house-race-population-change | neutral | 10.833556pp | modern-current-2026-sc; sc-official-house-2022-district-3-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract; census2025 |
 | 45049 | Hampton | senate | senate-race-population-change | neutral | -13.702421pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45051 | Horry | senate | senate-race-population-change | neutral | -12.420612pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45051 | Horry | house | house-party-count-change | democrat | Democrat: 54.073439%; opponent 10.097326% | modern-current-2026-sc; sc-official-house-2022-district-7-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45053 | Jasper | house | house-race-vote-change | neutral | 11089→17370; 56.641717% | modern-current-2026-sc; sc-official-house-2022-district-1-historical-csv; sc-official-house-2022-district-6-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45053 | Jasper | house | house-race-population-change | neutral | 10.498601pp | modern-current-2026-sc; sc-official-house-2022-district-1-historical-csv; sc-official-house-2022-district-6-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract; census2025 |
 | 45055 | Kershaw | senate | senate-share-swing | democrat | D share 10.324243pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election |
 | 45055 | Kershaw | senate | senate-race-population-change | neutral | -15.913005pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45055 | Kershaw | house | house-party-count-change | democrat | Democrat: 62.533018%; opponent -4.773221% | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45055 | Kershaw | house | house-share-swing | democrat | D share 12.648685pp | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45057 | Lancaster | senate | senate-race-population-change | neutral | -14.210012pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45057 | Lancaster | house | house-party-count-change | democrat | Democrat: 70.918367%; opponent 2.393513% | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45057 | Lancaster | house | house-share-swing | democrat | D share 12.090126pp | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45059 | Laurens | senate | senate-race-population-change | neutral | -12.571907pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45059 | Laurens | house | house-race-vote-change | neutral | 15926→23323; 46.446063% | modern-current-2026-sc; sc-official-house-2022-district-3-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45061 | Lee | senate | senate-race-population-change | neutral | -10.746594pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45063 | Lexington | senate | senate-share-swing | democrat | D share 10.658815pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election |
 | 45063 | Lexington | senate | senate-race-population-change | neutral | -12.620111pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45063 | Lexington | house | house-party-count-change | democrat | Democrat: 45.665214%; opponent 0.517967% | modern-current-2026-sc; sc-official-house-2022-district-2-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45065 | McCormick | house | house-race-vote-change | neutral | 3103→5452; 75.700935% | modern-current-2026-sc; sc-official-house-2022-district-3-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45065 | McCormick | house | house-race-population-change | neutral | 21.432193pp | modern-current-2026-sc; sc-official-house-2022-district-3-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract; census2025 |
 | 45067 | Marion | senate | senate-race-population-change | neutral | -10.862009pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45067 | Marion | house | house-party-count-change | democrat | Democrat: 52.406299%; opponent 11.63871% | modern-current-2026-sc; sc-official-house-2022-district-7-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45067 | Marion | house | house-race-population-change | neutral | 10.225127pp | modern-current-2026-sc; sc-official-house-2022-district-7-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract; census2025 |
 | 45069 | Marlboro | senate | senate-race-population-change | neutral | -15.006191pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45071 | Newberry | senate | senate-race-population-change | neutral | -12.992079pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45071 | Newberry | house | house-race-vote-change | neutral | 9930→14327; 44.27996% | modern-current-2026-sc; sc-official-house-2022-district-3-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45071 | Newberry | house | house-race-population-change | neutral | 10.316467pp | modern-current-2026-sc; sc-official-house-2022-district-3-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract; census2025 |
 | 45073 | Oconee | senate | senate-race-population-change | neutral | -12.891292pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45075 | Orangeburg | senate | senate-race-population-change | neutral | -12.030654pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45077 | Pickens | senate | senate-race-population-change | neutral | -11.59207pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45079 | Richland | house | house-party-count-change | democrat | Democrat: 41.339661%; opponent -2.949712% | modern-current-2026-sc; sc-official-house-2022-district-2-historical-csv; sc-official-house-2022-district-6-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45081 | Saluda | senate | senate-race-population-change | neutral | -13.409932pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45083 | Spartanburg | senate | senate-share-swing | democrat | D share 10.270802pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election |
 | 45083 | Spartanburg | senate | senate-race-population-change | neutral | -13.752162pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45083 | Spartanburg | house | house-party-count-change | democrat | Democrat: 1308.642995%; opponent -9.161497% | modern-current-2026-sc; sc-official-house-2022-district-4-historical-csv; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45083 | Spartanburg | house | house-share-swing | democrat | D share 38.989093pp | modern-current-2026-sc; sc-official-house-2022-district-4-historical-csv; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45083 | Spartanburg | house | house-race-vote-change | neutral | 79337→118957; 49.938868% | modern-current-2026-sc; sc-official-house-2022-district-4-historical-csv; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45085 | Sumter | senate | senate-race-population-change | neutral | -11.747884pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45085 | Sumter | house | house-party-count-change | democrat | Democrat: 44.004386%; opponent -5.745573% | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; sc-official-house-2022-district-6-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45085 | Sumter | house | house-share-swing | democrat | D share 10.383861pp | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; sc-official-house-2022-district-6-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45087 | Union | senate | senate-race-population-change | neutral | -13.578157pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45087 | Union | house | house-party-count-change | democrat | Democrat: 45.471914%; opponent -6.06574% | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 45089 | Williamsburg | senate | senate-race-population-change | neutral | -12.390533pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 45091 | York | senate | senate-race-population-change | neutral | -13.022405pp | modern-current-2026-sc; modern-heideman-v1-senate-sc_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
+| 45091 | York | house | house-party-count-change | democrat | Democrat: 64.149895%; opponent -1.743028% | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
+| 45091 | York | house | house-share-swing | democrat | D share 12.463029pp | modern-current-2026-sc; sc-official-house-2022-district-5-historical-csv; SC official historical source authority; SC official current election source authority; Registered pinned2026research extract |
 | 46003 | Aurora | senate | senate-race-population-change | neutral | -16.906115pp | modern-official-sd-senate-2026; modern-heideman-v1-senate-sd_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 46005 | Beadle | senate | senate-race-population-change | neutral | -12.540468pp | modern-official-sd-senate-2026; modern-heideman-v1-senate-sd_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 46007 | Bennett | governor | governor-share-swing | democrat | D share 10.46581pp | modern-official-sd-governor-2026; modern-medsl-governor-2022-sd |
@@ -2351,6 +2408,20 @@ Full exact current/prior counts, own changes, peer context, source dates, inclus
 | 51820 | Waynesboro | house | house-party-count-change | democrat | Democrat: 51.133578%; opponent 3.871625% | house-repair-va2026-6; house-completion-va2022-6; Census: 2024 county Gazetteer; Census: substantial county changes in the 2020s; Virginia 2022 officialstateCongresssummarywithlocalitysourceJSONlinks; Virginia 2026 officialunofficialHousefeeds |
 | 51830 | Williamsburg | house | house-party-count-change | democrat | Democrat: 51.968974%; opponent 3.623188% | house-repair-va2026-1; house-completion-va2022-1; Census: 2024 county Gazetteer; Census: substantial county changes in the 2020s; Virginia 2022 officialstateCongresssummarywithlocalitysourceJSONlinks; Virginia 2026 officialunofficialHousefeeds |
 | 51830 | Williamsburg | house | house-race-population-change | neutral | 10.609073pp | house-repair-va2026-1; house-completion-va2022-1; Census: 2024 county Gazetteer; Census: substantial county changes in the 2020s; Virginia 2022 officialstateCongresssummarywithlocalitysourceJSONlinks; Virginia 2026 officialunofficialHousefeeds; census2025 |
+| 53001 | Adams | house | house-share-swing | democrat | D share 11.454629pp | wa-official-house-2026-district-4; wa-official-house-2026-district-5; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General |
+| 53005 | Benton | house | house-share-swing | democrat | D share 13.864754pp | wa-official-house-2026-district-4; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General |
+| 53009 | Clallam | house | house-race-population-change | neutral | -19.783568pp | wa-official-house-2026-district-6; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General; census2025 |
+| 53019 | Ferry | house | house-race-population-change | neutral | -13.571058pp | wa-official-house-2026-district-5; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General; census2025 |
+| 53021 | Franklin | house | house-share-swing | democrat | D share 18.442095pp | wa-official-house-2026-district-4; wa-official-house-2026-district-5; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General |
+| 53045 | Mason | house | house-race-population-change | neutral | -12.972875pp | wa-official-house-2026-district-6; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General; census2025 |
+| 53055 | San Juan | house | house-race-population-change | neutral | -13.565971pp | wa-official-house-2026-district-2; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General; census2025 |
+| 53065 | Stevens | house | house-race-vote-change | neutral | 22759→12654; -44.400018% | wa-official-house-2026-district-5; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General |
+| 53065 | Stevens | house | house-race-population-change | neutral | -21.660481pp | wa-official-house-2026-district-5; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General; census2025 |
+| 53071 | Walla Walla | house | house-share-swing | democrat | D share 10.119131pp | wa-official-house-2026-district-5; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General |
+| 53071 | Walla Walla | house | house-race-vote-change | neutral | 24094→12110; -49.738524% | wa-official-house-2026-district-5; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General |
+| 53071 | Walla Walla | house | house-race-population-change | neutral | -19.428317pp | wa-official-house-2026-district-5; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General; census2025 |
+| 53075 | Whitman | house | house-race-population-change | neutral | -10.53393pp | wa-official-house-2026-district-5; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General; census2025 |
+| 53077 | Yakima | house | house-share-swing | democrat | D share 16.381082pp | wa-official-house-2026-district-4; wa-official-house-2022-county-and-state-csv; WA SOS official2022export; WA SOS2026archive authority; Official2026General |
 | 54001 | Barbour | senate | senate-race-vote-change | neutral | 6618→3511; -46.947718% | senate-current-official-wv-2026; modern-heideman-v1-senate-wv_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election |
 | 54001 | Barbour | senate | senate-race-population-change | neutral | -20.020945pp | senate-current-official-wv-2026; modern-heideman-v1-senate-wv_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election; census2025 |
 | 54003 | Berkeley | senate | senate-party-count-change | democrat | Republican: -51.223582%; opponent -8.356913% | senate-current-official-wv-2026; modern-heideman-v1-senate-wv_medsl_2020; U.S. Senate: Class II seats, 2021–2027 term following the November 2020 election |
@@ -3058,7 +3129,16 @@ Full exact current/prior counts, own changes, peer context, source dates, inclus
 - [Ohio Secretary of State2026unofficial House county returns](https://liveresults.ohiosos.gov/Api/v1/Contest/GetContestDetailsObject?contestName=Representative+to+Congress&contestObjectId=_55A742EA578509A3E0633390EE0AE290&resultsLevel=County&countyId=)
 - [Oregon Secretary of State: 2026 provisional Senate county API and state-page controls](https://orresultswebservices.azureedge.us/ResultsAjax.svc/GetMapData?type=FED&category=CTY&raceID=300038695&osn=110010001&county=0&party=0)
 - [Oregon Secretary of State: November 3, 2020 General Election Abstract, Senate county table (original document mirrored by UCSB)](https://www.presidency.ucsb.edu/sites/default/files/election_data/or-2020.pdf)
-- [Pushbuild2026 SC official-source returns snapshot](https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/sc.csv)
+- [Registered pinned2026research extract](https://raw.githubusercontent.com/pushbuild/us-2026-election-results/73b20975fc0a66da90688d372b4c619609fee9cb/data/sc.csv)
+- [SouthCarolinaElectionCommission2022GeneralCD2 official historical county and district CSV](https://sc.elstats.civera.com/api/download_contest/2223_table.csv?split_party=false)
+- [SC official historical source authority](https://electionhistory.scvotes.gov/)
+- [SC official current election source authority](https://www.scvotes.gov/elections-statistics/election-results/)
+- [SouthCarolinaElectionCommission2022GeneralCD6 official historical county and district CSV](https://sc.elstats.civera.com/api/download_contest/2218_table.csv?split_party=false)
+- [SouthCarolinaElectionCommission2022GeneralCD1 official historical county and district CSV](https://sc.elstats.civera.com/api/download_contest/2185_table.csv?split_party=false)
+- [SouthCarolinaElectionCommission2022GeneralCD5 official historical county and district CSV](https://sc.elstats.civera.com/api/download_contest/2209_table.csv?split_party=false)
+- [SouthCarolinaElectionCommission2022GeneralCD7 official historical county and district CSV](https://sc.elstats.civera.com/api/download_contest/2202_table.csv?split_party=false)
+- [SouthCarolinaElectionCommission2022GeneralCD3 official historical county and district CSV](https://sc.elstats.civera.com/api/download_contest/2283_table.csv?split_party=false)
+- [SouthCarolinaElectionCommission2022GeneralCD4 official historical county and district CSV](https://sc.elstats.civera.com/api/download_contest/2314_table.csv?split_party=false)
 - [SouthDakota official2026 county Senate results](https://sdresws.azurewebsites.us/ResultsAjax.svc/GetMapData?type=SWR&category=CTY&raceID=14412&osn=110&county=0&party=0)
 - [SouthDakota official2026 county Governor results](https://sdresws.azurewebsites.us/ResultsAjax.svc/GetMapData?type=SWR&category=CTY&raceID=14896&osn=205&county=0&party=0)
 - [MEDSL 2022 SD official precinct returns](https://raw.githubusercontent.com/MEDSL/2022-elections-official/a8126c5790b8d1f438a3e63c3506cdcdc7406d9f/individual_states/2022-sd-local-precinct-general.zip)
@@ -3091,6 +3171,14 @@ Full exact current/prior counts, own changes, peer context, source dates, inclus
 - [Virginia Department of Elections2026general official results feed, House district10](https://enr.elections.virginia.gov/results/public/api/elections/virginia/2026-November-General/data/ballot-item/01000000-f030-c43d-7d2f-08df1fee5314)
 - [Virginia Department of Elections2022official House locality returns](https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(10).json)
 - [Virginia Department of Elections2022official House locality returns](https://results.elections.virginia.gov/vaelections/2022%20November%20General/Json/Member_House_of_Representatives_(07).json)
+- [Washington SOS2026General CongressionalDistrict4 original candidate and county breakdown API](https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-5bf3-08df15c0a82a)
+- [Washington SOS2026General CongressionalDistrict5 original candidate and county breakdown API](https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-6f41-08df15c0a82a)
+- [Washington SOS2022General official county and statewide result CSVs](https://results.vote.wa.gov/results/20221108/export/20221108_AllCounties.csv)
+- [WA SOS official2022export](https://results.vote.wa.gov/results/20221108/export.html)
+- [WA SOS2026archive authority](https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets)
+- [Official2026General](https://results.votewa.gov/results/public/washington/elections/20261103)
+- [Washington SOS2026General CongressionalDistrict6 original candidate and county breakdown API](https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-84fb-08df15c0a82a)
+- [Washington SOS2026General CongressionalDistrict2 original candidate and county breakdown API](https://results.votewa.gov/results/public/api/elections/washington/20261103/data/ballot-item/54c40000-9064-bbec-306c-08df15c0a82a)
 - [West Virginia Secretary of State Clarity: 2026 provisional Senate county vectors and statewide controls](https://results.enr.clarityelections.com/WV/127496/385637/json/details.json)
 - [WestVirginia2022officialwrite-incountyappendix](https://sos.wv.gov/media/463/download?inline=)
 - [Wyoming Secretary of State: 2026 unofficial statewide candidates summary, Senate county table](https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf)

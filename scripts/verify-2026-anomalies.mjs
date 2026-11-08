@@ -23,6 +23,12 @@ const currentRow=f=>f.elections['governor-2026'].results[0];
 const priorRow=f=>f.elections['governor-2022'].results[0];
 const currentBallot=f=>f.turnout.counties[target][1];
 const priorBallot=f=>f.turnout.counties[target][0];
+// A combined over/undervote column is source accounting, never candidate votes.
+{
+ const input=fixture();input.elections['governor-2022'].results[0].reportingCategories=[{category:'overUnderVotes',votes:99000,name:'CombinedOvervotes/Undervotes'}];input.elections['governor-2026'].results[0].reportingCategories=[{category:'overUnderVotes',votes:0,name:'CombinedOvervotes/Undervotes'}];
+ const screen=buildPatternReview(input).counties['06001'].offices.governor.reviewScreens.raceVoteChange;assert.equal(screen.status,'assessed');assert.equal(screen.evidence.priorRaceVotes,10000);assert.equal(screen.evidence.currentRaceVotes,10000);assert.equal(screen.flags.length,0);
+ input.elections['governor-2022'].results[0].reportingCategories[0].category='unknownCombinedField';assert.equal(buildPatternReview(input).counties['06001'].offices.governor.reviewScreens.raceVoteChange.status,'not-assessed');assert.equal(buildPatternReview(input).counties['06001'].offices.governor.reviewScreens.partyCountChange.status,'not-assessed');
+}
 function shifted(){const f=fixture();currentRow(f).candidates[0].votes=6500;currentRow(f).candidates[1].votes=3500;return f;}
 let f=fixture();currentBallot(f).ballotsCast=5100;let r=buildPatternReview(f);
 assert.equal(r.counties[target].participation.flags.length,1,'51 ballots/100 residents vs30 peers AND own30 baseline flagged');

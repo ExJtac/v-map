@@ -34,6 +34,8 @@ const change = value => Number.isFinite(value) ? `${value >= 0 ? '+' : ''}${valu
 const node = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; e.textContent = text; return e; };
 function appendQuickResults(container, rows, office, year, id, contestFiltered = false) {
   if (office === 'geography' || !rows?.length) return;
+  const sourceHold=rows.find(row=>row.sourceNeedsReview&&row.sourceQualityNote);
+  if(sourceHold)container.append(node('p','county-tip-note source-quality-hold',sourceHold.sourceQualityNote));
   let aggregate = office==='house' && !contestFiltered && String(id).length===5 ? auditedHouseCounts(getPatternReviewReport(),id,year) : null;
   if(office==='house'&&!contestFiltered&&(!aggregate||aggregate.reason))aggregate=scopedHouseFacts(rows,getPatternReviewReport(),id,year,String(id).length===5?'county':'state');
   if (rows.length !== 1 && (!aggregate || aggregate.reason)) {

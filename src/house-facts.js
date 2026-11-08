@@ -1,7 +1,7 @@
 /** Source-qualified single-year totals. Never enables historical anomaly screens. */
 import {normalizedStage} from './county-data.js';
 const integer=value=>Number.isInteger(value)&&value>=0;
-const excluded=/^(overvotes|undervotes|invalidBallots|blankBallots|spoiledBallots|exhaustedBallots|absentNomineeSlot|reportedBallotTotal)$/i;
+const excluded=/^(overvotes|undervotes|overUnderVotes|invalidBallots|blankBallots|spoiledBallots|exhaustedBallots|absentNomineeSlot|reportedBallotTotal)$/i;
 const writeIns=/^(unattributedWriteIns|sourceWriteInEntries|namedWriteIns)$/i;
 const accountingName=/^(?:OVER ?VOTES?|UNDER ?VOTES?|BLANK(?:S| BALLOTS?| VOTES?)?|INVALID(?: BALLOTS?| VOTES?)?|SPOILED(?: BALLOTS?| VOTES?)?|EXHAUSTED BALLOTS?|TOTAL (?:VOTES|BALLOTS) CAST)$/i;
 export function houseFactScope(report,id,year){
@@ -20,7 +20,7 @@ export function scopedHouseFacts(rows,report,id,year,level='county'){
  if(!expected.length||new Set(keys).size!==keys.length||JSON.stringify(keys)!==JSON.stringify(expected))return {reason:'Complete actual House district portions are unavailable for this county and year.'};
  let total=0;const party={Democrat:null,Republican:null},sourceIds=new Set();
  for(const row of sourceRows){
-  if(row.stateFips!==String(id).slice(0,2)||(row.office!=null&&row.office!=='house')||(row.year!=null&&row.year!==year)||row.sourceNeedsReview||row.sourceTotalConflict||row.voteTotalMismatch||row.incomplete||row.boundaryChanged||row.boundaryIncompatible||row.boundaryNote||row.geographicCoverageNote||row.suppressElectionWinner||row.winnerEligible===false||(year<2026&&(row.provisional||row.unofficial)))return {reason:row.sourceQualityNote||'Source, geographic or historical status hold on a House portion.'};
+  if(row.stateFips!==String(id).slice(0,2)||(row.office!=null&&row.office!=='house')||(row.year!=null&&row.year!==year)||row.sourceNeedsReview||row.sourceTotalConflict||row.voteTotalMismatch||row.incomplete||row.boundaryChanged||row.boundaryIncompatible||row.boundaryNote||row.geographicCoverageNote||row.suppressElectionWinner||row.winnerEligible===false||(year<2026&&(row.provisional||row.unofficial)))return {reason:row.sourceQualityNote||row.sourceReviewReason||'Source, geographic or historical status hold on a House portion.'};
   const file=`public${row.sourceSelection?.url}`;
   if(!scope.pinnedFileHashes?.[file]||scope.pinnedFileHashes[file]!==report.inputHashes?.[file]||!file.endsWith(`house-${year}.json`))return {reason:'A House portion comes from an unqualified source file.'};
   if(!row.candidates?.length||row.candidates.some(c=>!integer(c.votes)||typeof c.name!=='string'||!c.name.trim()||(/^(OTHER|OTHERS|ALL OTHER CANDIDATES.*|OTHER CANDIDATES)$/i.test(c.name)||accountingName.test(c.name))))return {reason:'Complete named candidate counts are unavailable for a House portion.'};
